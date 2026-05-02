@@ -368,4 +368,4 @@ Buffer for things that break.
 3. Add one-line status: "Just finished Session N. [Any blockers?]"
 4. I'll pick up where we left off
 
-That's it. The doc is the memory.
+That's it. The doc is the memory. 
