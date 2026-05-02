@@ -137,13 +137,15 @@ Then we resume.
 - Wrote `src/explore_data.py`: prints row counts, columns, date range, tournament types
 - **Result:** 49,287 total rows. 49,215 played matches available for training. 72 future fixtures including all 72 WC group stage matches. Dataset current through 2026-03-31. **No supplementary data source needed for v1.**
 
-**Session 4 — Clean and filter the data (← NEXT)**
-- Write `src/clean_data.py`: load CSV, parse dates, filter to matches from 2018-01-01 onwards
-- Split data: rows with scores → `data/processed/matches_clean.csv` (training set); rows without scores → `data/processed/fixtures_2026.csv` (the WC schedule, free win)
-- Drop any remaining rows with missing scores in the training set
-- Standardize team names (some sources use "USA" vs "United States" etc.)
+**Session 4 — Clean and filter the data ✅ DONE**
+- Wrote `src/clean_data.py`: load CSV, parse dates, filter to matches from 2018-01-01 onwards
+- Split data: 7,952 played matches → `data/processed/matches_clean.csv` (training set); 72 unplayed → `data/processed/fixtures_2026.csv` (entire WC group stage)
+- Standardized team names via `TEAM_NAME_MAP` (United States→USA, Korea Republic→South Korea, Czechia→Czech Republic, etc.)
+- All 48 qualified teams verified present and consistently named
+- **Convention locked in:** run all scripts from project root (`python src/script.py`), not from inside `src/`
+- **Note for later:** internal team names use dataset conventions (Turkey, Czech Republic, Ivory Coast). When we build the dashboard in Week 5 we'll map these to official display names (Türkiye, Czechia, Côte d'Ivoire). Don't change them now — internal consistency is what matters for the model.
 
-**Session 5 — Implement basic Elo**
+**Session 5 — Implement basic Elo (← NEXT)**
 - Write `src/elo.py`: `EloSystem` class with `expected_score`, `update_match`, `get_rating`
 - Methods to apply K differentiation by match type (friendly vs qualifier vs major tournament)
 - No margin-of-victory yet — keep it simple
@@ -354,7 +356,8 @@ Buffer for things that break.
 - **Session 1 (2026-05-01):** Project setup complete. Repo live on GitHub. Folder structure, venv, .gitignore, requirements.txt, initial commit pushed.
 - **Session 2 (2026-05-01):** Walked through Elo intuition. Confirmed understanding via worked examples: Argentina vs Saudi Arabia upset (~27 Elo gain) and equal-rated draw (0 change).
 - **Session 3 (2026-05-01):** Kaggle dataset explored. 49,287 rows, current through 2026-03-31. 49,215 played matches for training, 72 future fixtures (entire WC group stage included). No supplementary data source needed. File: `src/explore_data.py`.
-- **Session 4 (NEXT):** Clean and filter data, split played matches from future fixtures.
+- **Session 4 (2026-05-02):** Wrote `src/clean_data.py`. Filtered to 2018+, parsed dates, standardized team names, split played matches from future fixtures. Outputs: `matches_clean.csv` (7,952 matches) and `fixtures_2026.csv` (72 WC group-stage matches). All 48 qualified teams present and verified against official sources. Convention locked in: run scripts from project root.
+- **Session 5 (NEXT):** Implement basic Elo system in `src/elo.py`.
 
 ---
 
