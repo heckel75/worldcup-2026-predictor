@@ -364,9 +364,10 @@ Buffer for things that break.
 
 ## 8. How to get back into a chat session
 
-1. Open new chat
-2. Paste this entire doc
-3. Add one-line status: "Just finished Session N. [Any blockers?]"
-4. I'll pick up where we left off
+PROJECT.md is loaded automatically into every new chat via project files, so you don't need to paste it. Just:
+
+1. Make sure the project file is up to date (replace it with your latest local version if you've edited it since the last chat)
+2. Open a new chat and say: "ready for Session N" (add any blockers if relevant)
+3. I'll pick up where we left off
 
 That's it. The doc is the memory. 
