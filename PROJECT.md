@@ -357,7 +357,8 @@ Buffer for things that break.
 - **Session 2 (2026-05-01):** Walked through Elo intuition. Confirmed understanding via worked examples: Argentina vs Saudi Arabia upset (~27 Elo gain) and equal-rated draw (0 change).
 - **Session 3 (2026-05-01):** Kaggle dataset explored. 49,287 rows, current through 2026-03-31. 49,215 played matches for training, 72 future fixtures (entire WC group stage included). No supplementary data source needed. File: `src/explore_data.py`.
 - **Session 4 (2026-05-02):** Wrote `src/clean_data.py`. Filtered to 2018+, parsed dates, standardized team names, split played matches from future fixtures. Outputs: `matches_clean.csv` (7,952 matches) and `fixtures_2026.csv` (72 WC group-stage matches). All 48 qualified teams present and verified against official sources. Convention locked in: run scripts from project root.
-- **Session 5 (NEXT):** Implement basic Elo system in `src/elo.py`.
+- **Session 5 (2026-05-03):** Basic Elo system implemented in src/elo.py. EloSystem class with expected_score, update_match, get_rating, top_n. K varies by match type (friendly 20 / qualifier 30 / major 50 / WC 60). Ran full historical pass on 7,952 matches: 282 teams rated. Top 5: Spain 1919, Morocco 1876, Argentina 1860, France 1834, Japan 1815. African and Asian teams over-rated (no MoV yet), Brazil under-rated at #20 — both expected; Session 6 fixes.
+- **Session 6 (← Next):** Add margin-of-victory multiplier and home advantage to Elo system.
 
 ---
 
