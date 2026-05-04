@@ -376,4 +376,5 @@ PROJECT.md is loaded automatically into every new chat via project files, so you
 
 
 Then open a new chat and say: "ready for Session N" (add any blockers if relevant).
-Repo: https://github.com/heckel75/worldcup-2026-predictor
+
+**Repo:** https://github.com/heckel75/worldcup-2026-predictor
