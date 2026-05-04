@@ -20,6 +20,7 @@ def main():
             home_score=int(row["home_score"]),
             away_score=int(row["away_score"]),
             tournament=row["tournament"],
+            neutral=row['neutral'], 
         )
 
     print(f"\nTotal teams rated: {len(elo.ratings)}")
