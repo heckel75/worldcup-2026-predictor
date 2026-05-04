@@ -145,23 +145,26 @@ Then we resume.
 - **Convention locked in:** run all scripts from project root (`python src/script.py`), not from inside `src/`
 - **Note for later:** internal team names use dataset conventions (Turkey, Czech Republic, Ivory Coast). When we build the dashboard in Week 5 we'll map these to official display names (Türkiye, Czechia, Côte d'Ivoire). Don't change them now — internal consistency is what matters for the model.
 
-**Session 5 — Implement basic Elo (← NEXT)**
+**Session 5 — Implement basic Elo ✅ DONE**
 - Write `src/elo.py`: `EloSystem` class with `expected_score`, `update_match`, `get_rating`
 - Methods to apply K differentiation by match type (friendly vs qualifier vs major tournament)
 - No margin-of-victory yet — keep it simple
 - Test on first 100 matches manually, sanity-check ratings
 
-**Session 6 — Add margin-of-victory and home advantage**
-- Add the multiplier formula: 1.0 / 1.5 / (11 + diff)/8
-- Add 60-Elo home advantage applied only when match is in home team's country
-- Re-run on full data, compare top teams to public Elo rankings (eloratings.net) as a sanity check
-- **Deliverable:** `data/processed/elo_ratings_2026.csv` with current ratings for all 48 WC teams
+**Session 6 — Add margin-of-victory and home advantage  ✅ DONE**
+- Added MoV multiplier (1.0 / 1.5 / (11+diff)/8) and 60-Elo home advantage to src/elo.py
+- expected_score gained an optional home_advantage flag; update_match gained an optional neutral parameter
+- Wrote src/save_wc_ratings.py to dump the 48 WC teams to data/processed/elo_ratings_2026.csv
+- Compared to eloratings.net: top 2 (Spain, Argentina) match exactly; France/England/Brazil/Netherlands/Portugal under-rated; Morocco/Japan/Senegal/Australia/Nigeria over-rated
+- Diagnosed as confederation-pool drift from 8-year cold start (see §6)
+- Deliverable: data/processed/elo_ratings_2026.csv — committed but contains drifted ratings; Session 7 will fix
 
-**Session 7 — Buffer / debugging / sanity checks**
-- Originally planned to supplement recent data — not needed, dataset is current through March 2026
-- Use this slot for debugging or catching up if Sessions 3–6 ran long
-- Sanity-check Elo ratings against public sources (eloratings.net)
-- Update `PROJECT.md` with notes on what worked, what surprised you
+**Session 7 — Seed initial ratings from public source (← NEXT)**
+- Hand-collect or scrape eloratings.net top ~80 teams as of Jan 1, 2018
+- Add a seed_ratings(dict) method to EloSystem (or accept a seed dict in __init__)
+- Re-run historical pass on the same 7,952 matches, starting from seeds instead of 1500
+- Re-compare top 20 vs eloratings.net — expect Brazil, Netherlands, Portugal back in elite tier
+- Re-save data/processed/elo_ratings_2026.csv
 
 ---
 
@@ -346,6 +349,7 @@ Buffer for things that break.
 - **Polymarket liquidity for some markets:** smaller-team matches may have thin Polymarket markets that produce noisy probabilities. Need to flag low-liquidity warnings.
 - **Claude API costs:** with 104 matches and re-generation after each, costs could add up. Cache aggressively, only regenerate when inputs actually change.
 - **Calibration before tournament:** with no live results, the calibration page will be empty for week 1. Plan: backfill with backtest results from Euro 2024 to demonstrate calibration even before WC starts.
+- **Confederation-pool drift in Elo:** Pure Elo from a 2018 cold start over-rates AFCON/AFC teams and under-rates CONMEBOL/some UEFA teams — intra-confederation matches dominate and inter-confederation calibration is sparse. Plan: Session 7 seeds Jan 2018 starting ratings from eloratings.net so the 8 years of data refines real seeds instead of discovering global structure from scratch.
 
 ---
 
@@ -358,7 +362,8 @@ Buffer for things that break.
 - **Session 3 (2026-05-01):** Kaggle dataset explored. 49,287 rows, current through 2026-03-31. 49,215 played matches for training, 72 future fixtures (entire WC group stage included). No supplementary data source needed. File: `src/explore_data.py`.
 - **Session 4 (2026-05-02):** Wrote `src/clean_data.py`. Filtered to 2018+, parsed dates, standardized team names, split played matches from future fixtures. Outputs: `matches_clean.csv` (7,952 matches) and `fixtures_2026.csv` (72 WC group-stage matches). All 48 qualified teams present and verified against official sources. Convention locked in: run scripts from project root.
 - **Session 5 (2026-05-03):** Basic Elo system implemented in src/elo.py. EloSystem class with expected_score, update_match, get_rating, top_n. K varies by match type (friendly 20 / qualifier 30 / major 50 / WC 60). Ran full historical pass on 7,952 matches: 282 teams rated. Top 5: Spain 1919, Morocco 1876, Argentina 1860, France 1834, Japan 1815. African and Asian teams over-rated (no MoV yet), Brazil under-rated at #20 — both expected; Session 6 fixes.
-- **Session 6 (← Next):** Add margin-of-victory multiplier and home advantage to Elo system.
+- **Session 6 (2026-05-04):** Added MoV multiplier and 60-Elo home advantage to src/elo.py. New top 5: Spain 2015, Argentina 1960, Morocco 1931, France 1925, Japan 1888. Top 2 match eloratings.net exactly; rest of table shows confederation-pool drift (Brazil at #13 vs public #5, Morocco at #3 vs public ~#12). Saved data/processed/elo_ratings_2026.csv and src/save_wc_ratings.py. Fix deferred to Session 7.
+- **Session 7 (← NEXT):** Seed initial ratings from public source to correct confederation drift.
 
 ---
 
@@ -367,7 +372,8 @@ Buffer for things that break.
 PROJECT.md is loaded automatically into every new chat via project files, so you don't need to paste it. Just:
 
 1. Make sure the project file is up to date (replace it with your latest local version if you've edited it since the last chat)
-2. Open a new chat and say: "ready for Session N" (add any blockers if relevant)
-3. I'll pick up where we left off
+2. **Push current code to GitHub before asking for changes** — Claude can then fetch the current state of any source file directly instead of guessing
 
-That's it. The doc is the memory. 
+
+Then open a new chat and say: "ready for Session N" (add any blockers if relevant).
+Repo: https://github.com/heckel75/worldcup-2026-predictor
