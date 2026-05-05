@@ -57,9 +57,15 @@ def mov_multiplier(goal_diff: int) -> float:
 
 
 class EloSystem:
-    def __init__(self, default_rating: float = 1500.0):
+    def __init__(
+        self,
+        default_rating: float = 1500.0,
+        seed_ratings: dict[str, float] | None = None,
+    ):
         self.default_rating = default_rating
-        self.ratings: dict[str, float] = {}
+        # Pre-populate with seeds (defensive copy so callers can't mutate our state).
+        # Teams not in seeds will fall back to default_rating on first lookup.
+        self.ratings: dict[str, float] = dict(seed_ratings) if seed_ratings else {}
 
     def get_rating(self, team: str) -> float:
         """Return a team's rating; new teams start at default_rating."""

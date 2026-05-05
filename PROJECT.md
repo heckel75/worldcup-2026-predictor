@@ -159,7 +159,7 @@ Then we resume.
 - Diagnosed as confederation-pool drift from 8-year cold start (see §6)
 - Deliverable: data/processed/elo_ratings_2026.csv — committed but contains drifted ratings; Session 7 will fix
 
-**Session 7 — Seed initial ratings from public source (← NEXT)**
+**Session 7 — Seed initial ratings from public source ✅ DONE**
 - Hand-collect or scrape eloratings.net top ~80 teams as of Jan 1, 2018
 - Add a seed_ratings(dict) method to EloSystem (or accept a seed dict in __init__)
 - Re-run historical pass on the same 7,952 matches, starting from seeds instead of 1500
@@ -172,7 +172,7 @@ Then we resume.
 
 **Goal:** given two teams, output P(home win), P(draw), P(away win) and an expected scoreline distribution.
 
-**Session 8 — Understand Poisson goals (no code)**
+**Session 8 — Understand Poisson goals (no code) (← NEXT)**
 - Why football scores are roughly Poisson-distributed
 - What "expected goals" (λ) means in this context
 - Why Dixon-Coles modifies basic Poisson (handles low-scoring draws better)
@@ -349,7 +349,7 @@ Buffer for things that break.
 - **Polymarket liquidity for some markets:** smaller-team matches may have thin Polymarket markets that produce noisy probabilities. Need to flag low-liquidity warnings.
 - **Claude API costs:** with 104 matches and re-generation after each, costs could add up. Cache aggressively, only regenerate when inputs actually change.
 - **Calibration before tournament:** with no live results, the calibration page will be empty for week 1. Plan: backfill with backtest results from Euro 2024 to demonstrate calibration even before WC starts.
-- **Confederation-pool drift in Elo:** Pure Elo from a 2018 cold start over-rates AFCON/AFC teams and under-rates CONMEBOL/some UEFA teams — intra-confederation matches dominate and inter-confederation calibration is sparse. Plan: Session 7 seeds Jan 2018 starting ratings from eloratings.net so the 8 years of data refines real seeds instead of discovering global structure from scratch.
+- **Confederation-pool drift in Elo:**  ✅ Mostly resolved in Session 7 by seeding Jan 2018 ratings from eloratings.net (101 teams). Top 5 WC ratings now match public Elo order. Residual drift remains for some CAF/AFC/CONCACAF teams (Morocco, Japan, Mexico) — this is a structural limit of pure Elo with sparse inter-confederation data and won't be eliminated without architectural changes. Acceptable for v1; revisit if Dixon-Coles backtest in Week 2 shows it materially hurts predictions.
 
 ---
 
@@ -363,7 +363,8 @@ Buffer for things that break.
 - **Session 4 (2026-05-02):** Wrote `src/clean_data.py`. Filtered to 2018+, parsed dates, standardized team names, split played matches from future fixtures. Outputs: `matches_clean.csv` (7,952 matches) and `fixtures_2026.csv` (72 WC group-stage matches). All 48 qualified teams present and verified against official sources. Convention locked in: run scripts from project root.
 - **Session 5 (2026-05-03):** Basic Elo system implemented in src/elo.py. EloSystem class with expected_score, update_match, get_rating, top_n. K varies by match type (friendly 20 / qualifier 30 / major 50 / WC 60). Ran full historical pass on 7,952 matches: 282 teams rated. Top 5: Spain 1919, Morocco 1876, Argentina 1860, France 1834, Japan 1815. African and Asian teams over-rated (no MoV yet), Brazil under-rated at #20 — both expected; Session 6 fixes.
 - **Session 6 (2026-05-04):** Added MoV multiplier and 60-Elo home advantage to src/elo.py. New top 5: Spain 2015, Argentina 1960, Morocco 1931, France 1925, Japan 1888. Top 2 match eloratings.net exactly; rest of table shows confederation-pool drift (Brazil at #13 vs public #5, Morocco at #3 vs public ~#12). Saved data/processed/elo_ratings_2026.csv and src/save_wc_ratings.py. Fix deferred to Session 7.
-- **Session 7 (← NEXT):** Seed initial ratings from public source to correct confederation drift.
+- **Session 7 (2026-05-06):** Seeded EloSystem from eloratings.net Jan 2018 ratings (101 teams in data/raw/elo_seeds_2018.csv). One-line change to EloSystem.__init__ adds an optional seed_ratings dict; save_wc_ratings.py loads seeds before rebuilding ratings. New WC top 5 — Spain / Argentina / France / England / Portugal — now matches public Elo order exactly. Brazil back at #7, Netherlands #10, Germany #11; Morocco dropped from #3 to #8. Residual confederation-pool drift remains for Morocco/Japan/Mexico/Algeria but is much smaller than Session 6. Absolute ratings run ~50–80 points higher than eloratings.net (different K/MoV constants — expected, doesn't affect predictions).
+**Session 8 — Understand Poisson goals (no code) (← NEXT)**
 
 ---
 
