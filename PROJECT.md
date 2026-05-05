@@ -374,7 +374,9 @@ PROJECT.md is loaded automatically into every new chat via project files, so you
 
 1. Make sure the project file is up to date (replace it with your latest local version if you've edited it since the last chat)
 2. **Push current code to GitHub before asking for changes** — Claude can then fetch the current state of any source file directly instead of guessing
-
+3. **Paste raw GitHub URLs of files we'll likely touch** at the start of the session, e.g.
+https://raw.githubusercontent.com/heckel75/worldcup-2026-predictor/main/src/elo.py
+Claude can fetch URLs you paste but cannot guess them. Two or three URLs upfront beats pasting full file contents during the conversation.
 
 Then open a new chat and say: "ready for Session N" (add any blockers if relevant).
 
