@@ -177,11 +177,11 @@ Then we resume.
 - What "expected goals" (λ) means in this context
 - Why Dixon-Coles modifies basic Poisson (handles low-scoring draws better)
 
-**Session 9 — Compute team attack/defense strengths from Elo and history (← NEXT)**
+**Session 9 — Compute team attack/defense strengths from Elo and history ✅ DONE**
 - Convert each team's Elo to expected goals scored and conceded
 - Validate: does France's expected goals against minnows look right?
 
-**Session 10 — Implement Dixon-Coles**
+**Session 10 — Implement Dixon-Coles (← NEXT)**
 - Write `src/dixon_coles.py`
 - Function: `predict_match(home_team, away_team, neutral=True) -> dict`
 - Returns: P(home/draw/away), expected goals each side, P(scorelines)
@@ -365,7 +365,8 @@ Buffer for things that break.
 - **Session 6 (2026-05-04):** Added MoV multiplier and 60-Elo home advantage to src/elo.py. New top 5: Spain 2015, Argentina 1960, Morocco 1931, France 1925, Japan 1888. Top 2 match eloratings.net exactly; rest of table shows confederation-pool drift (Brazil at #13 vs public #5, Morocco at #3 vs public ~#12). Saved data/processed/elo_ratings_2026.csv and src/save_wc_ratings.py. Fix deferred to Session 7.
 - **Session 7 (2026-05-06):** Seeded EloSystem from eloratings.net Jan 2018 ratings (101 teams in data/raw/elo_seeds_2018.csv). One-line change to EloSystem.__init__ adds an optional seed_ratings dict; save_wc_ratings.py loads seeds before rebuilding ratings. New WC top 5 — Spain / Argentina / France / England / Portugal — now matches public Elo order exactly. Brazil back at #7, Netherlands #10, Germany #11; Morocco dropped from #3 to #8. Residual confederation-pool drift remains for Morocco/Japan/Mexico/Algeria but is much smaller than Session 6. Absolute ratings run ~50–80 points higher than eloratings.net (different K/MoV constants — expected, doesn't affect predictions).
 - **Session 8 — Understand Poisson goals (no code) (2026-05-06)** Walked through the Dixon-Coles math conceptually. Locked in: we model goals (not outcomes); each team gets a per-match λ; independent Poisson over (λ_H, λ_A) gives a scoreline probability grid from which W/D/L follows; Dixon-Coles adjusts only the (0,0), (0,1), (1,0), (1,1) cells via a single ρ parameter to fix Poisson's mild empirical miss on low-scoring draws. Time-weighting decision deferred to Session 11.
-- **Session 9 — Compute team attack/defense strengths from Elo and history (← NEXT)**
+- **Session 9 — Compute team attack/defense strengths from Elo and history (2026-05-07)** Built the Elo→expected-goals mapping.
+- **Session 10 — Compute team attack/defense strengths from Elo and history (← NEXT)**
 
 ---
 
