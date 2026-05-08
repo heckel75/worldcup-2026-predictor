@@ -37,7 +37,7 @@ import pandas as pd
 from strengths import elo_to_lambdas
 
 
-DEFAULT_RHO = -0.1
+DEFAULT_RHO = -0.027
 DEFAULT_MAX_GOALS = 10
 
 
