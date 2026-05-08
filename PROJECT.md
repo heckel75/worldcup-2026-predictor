@@ -181,12 +181,12 @@ Then we resume.
 - Convert each team's Elo to expected goals scored and conceded
 - Validate: does France's expected goals against minnows look right?
 
-**Session 10 — Implement Dixon-Coles (← NEXT)**
+**Session 10 — Implement Dixon-Coles ✅ DONE**
 - Write `src/dixon_coles.py`
 - Function: `predict_match(home_team, away_team, neutral=True) -> dict`
 - Returns: P(home/draw/away), expected goals each side, P(scorelines)
 
-**Session 11 — Fit and validate**
+**Session 11 — Fit and validate (← NEXT)**
 - Use historical data to tune the model's parameters
 - Backtest on Euro 2024 + Copa America 2024 (matches the model never saw)
 - **Deliverable:** model accuracy and log loss numbers we trust
@@ -366,7 +366,8 @@ Buffer for things that break.
 - **Session 7 (2026-05-06):** Seeded EloSystem from eloratings.net Jan 2018 ratings (101 teams in data/raw/elo_seeds_2018.csv). One-line change to EloSystem.__init__ adds an optional seed_ratings dict; save_wc_ratings.py loads seeds before rebuilding ratings. New WC top 5 — Spain / Argentina / France / England / Portugal — now matches public Elo order exactly. Brazil back at #7, Netherlands #10, Germany #11; Morocco dropped from #3 to #8. Residual confederation-pool drift remains for Morocco/Japan/Mexico/Algeria but is much smaller than Session 6. Absolute ratings run ~50–80 points higher than eloratings.net (different K/MoV constants — expected, doesn't affect predictions).
 - **Session 8 — Understand Poisson goals (no code) (2026-05-06)** Walked through the Dixon-Coles math conceptually. Locked in: we model goals (not outcomes); each team gets a per-match λ; independent Poisson over (λ_H, λ_A) gives a scoreline probability grid from which W/D/L follows; Dixon-Coles adjusts only the (0,0), (0,1), (1,0), (1,1) cells via a single ρ parameter to fix Poisson's mild empirical miss on low-scoring draws. Time-weighting decision deferred to Session 11.
 - **Session 9 — Compute team attack/defense strengths from Elo and history (2026-05-07)** Built the Elo→expected-goals mapping.
-- **Session 10 — Compute team attack/defense strengths from Elo and history (← NEXT)**
+- **Session 10 — Implement Dixon-Coles (2026-05-08)** Wrote src/dixon_coles.py. predict_from_lambdas builds a Poisson scoreline grid, applies the Dixon-Coles τ correction on the four low-score cells with placeholder ρ = −0.1, renormalizes, and aggregates to W/D/L. predict_match(home, away, ratings, neutral=True) is the team-name wrapper that calls elo_to_lambdas first. Sanity block passes all four invariants (sums to 1, symmetry, mismatch, DC draw > plain Poisson draw). USA-Mexico shows Mexico-favored — known Session 7 residual drift, not a new bug. ρ-fitting and Euro 2024 / Copa 2024 backtest deferred to Session 11.
+- **Session 11 — Fit and validate (← NEXT)**
 
 ---
 
