@@ -139,6 +139,20 @@ def actual_outcome(gh: int, ga: int) -> int:
     if gh == ga: return 1
     return 2
 
+def _metrics(probs: np.ndarray, actuals: np.ndarray) -> dict:
+    """Compute n / accuracy / log loss / Brier from aligned arrays."""
+    n = len(probs)
+    if n == 0:
+        return {"n": 0, "accuracy": float("nan"),
+                "log_loss": float("nan"), "brier": float("nan")}
+    preds = probs.argmax(axis=1)
+    accuracy = float((preds == actuals).mean())
+    actual_probs = np.clip(probs[np.arange(n), actuals], 1e-12, None)
+    log_loss = float(-np.log(actual_probs).mean())
+    onehot = np.zeros_like(probs)
+    onehot[np.arange(n), actuals] = 1.0
+    brier = float(np.mean(np.sum((probs - onehot) ** 2, axis=1)))
+    return {"n": n, "accuracy": accuracy, "log_loss": log_loss, "brier": brier} 
 
 def backtest(test_df: pd.DataFrame, rho: float) -> dict:
     n = len(test_df)
@@ -150,18 +164,8 @@ def backtest(test_df: pd.DataFrame, rho: float) -> dict:
         probs[i] = wdl_from_grid(grid)
         actuals[i] = actual_outcome(int(row.home_score), int(row.away_score))
 
-    preds = probs.argmax(axis=1)
-    accuracy = float((preds == actuals).mean())
-
-    actual_probs = np.clip(probs[np.arange(n), actuals], 1e-12, None)
-    log_loss = float(-np.log(actual_probs).mean())
-
-    onehot = np.zeros_like(probs)
-    onehot[np.arange(n), actuals] = 1.0
-    brier = float(np.mean(np.sum((probs - onehot) ** 2, axis=1)))
-
-    return {"n": n, "accuracy": accuracy, "log_loss": log_loss,
-            "brier": brier, "probs": probs, "actuals": actuals}
+    m = _metrics(probs, actuals)
+    return {**m, "probs": probs, "actuals": actuals}
 
 
 # --- main ---------------------------------------------------------------------
@@ -179,6 +183,8 @@ def main() -> None:
     train = matches[matches["date"] < TEST_START].copy()
     test  = matches[(matches["date"] >= TEST_START) &
                     (matches["date"] <= TEST_END)].copy()
+    test = test.reset_index(drop=True)
+    
     print(f"  train: {len(train):,}   test: {len(test):,}")
 
     if len(test) == 0:
@@ -219,6 +225,24 @@ def main() -> None:
     print(f"  always home : {home_acc:.3f}")
     print(f"  higher Elo  : {elo_acc:.3f}")
 
+    # Per-tournament breakdown
+    print("\nPer-tournament breakdown:")
+    print(f"  {'tournament':<35} {'n':>4}  {'acc':>5}  {'log_loss':>8}  {'brier':>5}")
+    print(f"  {'-'*35} {'-'*4}  {'-'*5}  {'-'*8}  {'-'*5}")
+    for tname, sub in test.groupby("tournament"):
+        pos = sub.index.values
+        m = _metrics(res["probs"][pos], res["actuals"][pos])
+        print(f"  {tname:<35} {m['n']:>4}  "
+              f"{m['accuracy']:>5.3f}  {m['log_loss']:>8.3f}  {m['brier']:>5.3f}")
+
+    # Combined Euro + Copa headline (Session 11's "intended target")
+    majors_mask = test["tournament"].str.contains("Euro|Copa", case=False, na=False)
+    if majors_mask.any():
+        pos = np.where(majors_mask.values)[0]
+        m = _metrics(res["probs"][pos], res["actuals"][pos])
+        print(f"  {'>> MAJORS (Euro + Copa)':<35} {m['n']:>4}  "
+              f"{m['accuracy']:>5.3f}  {m['log_loss']:>8.3f}  {m['brier']:>5.3f}")
+
     # 4. Save per-match predictions for the calibration page later
     out = test[["date", "home_team", "away_team",
                 "home_score", "away_score", "tournament"]].copy()
@@ -229,8 +253,6 @@ def main() -> None:
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     out.to_csv(OUT_PATH, index=False)
     print(f"\nSaved per-match predictions: {OUT_PATH}")
-    print(f"\nIf you trust rho_hat={rho_hat:+.4f}, update the default in "
-          f"dixon_coles.py from -0.10 to this value.")
 
 
 if __name__ == "__main__":

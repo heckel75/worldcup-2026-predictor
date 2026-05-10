@@ -36,7 +36,10 @@ import pandas as pd
 
 from strengths import elo_to_lambdas
 
-
+""""
+The literature typically finds ρ ≈ −0.10 to −0.15, and our fitted −0.027 is on the small side — likely because our training set mixes friendlies with competitive matches. 
+Filed as a possible post-v1 refinement (fit ρ separately by match type, or only on competitive matches).
+"""
 DEFAULT_RHO = -0.027
 DEFAULT_MAX_GOALS = 10
 

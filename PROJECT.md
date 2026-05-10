@@ -191,7 +191,7 @@ Then we resume.
 - Backtest on Euro 2024 + Copa America 2024 (matches the model never saw)
 - **Deliverable:** model accuracy and log loss numbers we trust
 
-**Session 12 — Buffer / refinement (← NEXT)**
+**Session 12 — Buffer / refinement ✅ DONE**
 - Address whatever the backtest revealed
 - Update `PROJECT.md`
 
@@ -201,7 +201,7 @@ Then we resume.
 
 **Goal:** simulate the entire World Cup 10,000 times and report each team's probability of reaching each round.
 
-**Session 13 — Encode the 2026 bracket**
+**Session 13 — Encode the 2026 bracket (← NEXT)**
 - Hard-code 12 groups, all 48 teams, group-stage fixture list
 - Encode tiebreaker rules (points, GD, goals, head-to-head, fair play)
 - Encode knockout bracket structure including the new Round of 32
@@ -350,6 +350,7 @@ Buffer for things that break.
 - **Claude API costs:** with 104 matches and re-generation after each, costs could add up. Cache aggressively, only regenerate when inputs actually change.
 - **Calibration before tournament:** with no live results, the calibration page will be empty for week 1. Plan: backfill with backtest results from Euro 2024 to demonstrate calibration even before WC starts.
 - **Confederation-pool drift in Elo:**  ✅ Mostly resolved in Session 7 by seeding Jan 2018 ratings from eloratings.net (101 teams). Top 5 WC ratings now match public Elo order. Residual drift remains for some CAF/AFC/CONCACAF teams (Morocco, Japan, Mexico) — this is a structural limit of pure Elo with sparse inter-confederation data and won't be eliminated without architectural changes. Acceptable for v1; revisit if Dixon-Coles backtest in Week 2 shows it materially hurts predictions.
+- **Model is biased** ~4pp away from draws toward away wins. Confirmed by 5-bin reliability check on 290 backtest matches. Acceptable for v1, but the divergence detector in Week 4 should not flag a 4–5pp gap on draw probabilities as a real divergence — it's our known bias. Possibly traceable to the small fitted ρ (−0.027 vs literature norm of −0.10 to −0.15); a future refinement is to fit ρ on competitive matches only.
 
 ---
 
@@ -368,6 +369,7 @@ Buffer for things that break.
 - **Session 9 — Compute team attack/defense strengths from Elo and history (2026-05-07)** Built the Elo→expected-goals mapping.
 - **Session 10 — Implement Dixon-Coles (2026-05-08)** Wrote src/dixon_coles.py. predict_from_lambdas builds a Poisson scoreline grid, applies the Dixon-Coles τ correction on the four low-score cells with placeholder ρ = −0.1, renormalizes, and aggregates to W/D/L. predict_match(home, away, ratings, neutral=True) is the team-name wrapper that calls elo_to_lambdas first. Sanity block passes all four invariants (sums to 1, symmetry, mismatch, DC draw > plain Poisson draw). USA-Mexico shows Mexico-favored — known Session 7 residual drift, not a new bug. ρ-fitting and Euro 2024 / Copa 2024 backtest deferred to Session 11.
 - **Session 11 (2026-05-08):** Wrote src/backtest.py. Walked Elo forward across 7,952 matches, fit Dixon-Coles ρ via MLE on 5,882 pre-2024-06 training matches → ρ̂ = -0.027 (placeholder was -0.10). Backtested on Jun-Jul 2024 (290 matches total). On the intended target (Euro 2024 + Copa América, 83 matches): acc 0.530 / log loss 0.978 / Brier 0.583. Per-tournament: Copa 0.863 log loss (21% better than random), Euro 1.051 (4% better) — gap is structural, Euro has clustered Elos and many genuine coin flips, not fixable without out-of-scope data. Predictions saved to data/processed/backtest_2024.csv for the calibration page. Next: update ρ default in dixon_coles.py, fold per-tournament reporting into backtest.py.
+- **Session 12 (2026-05-08):** Wrote src/check_calibration.py for a 5-bin reliability check on the 290 backtest predictions. Home-win probabilities are excellently calibrated (max gap 4.8pp, only at top end). Draws systematically under-predicted by ~4pp; away wins over-predicted by a matching ~3pp — small enough to ship, but worth offsetting in the divergence detector in Week 4. Added per-tournament breakdown to backtest.py via a shared _metrics() helper and a "MAJORS (Euro + Copa)" combined line. Reproduces Session 11 numbers exactly. Key finding from the breakdown: full-window accuracy (0.638) is inflated by friendlies and qualifiers; on Euro 2024 specifically (the closest analog to a major tournament with clustered Elos) accuracy is 0.490 and log loss 1.051. This — not the full-window number — is what we should expect for WC matches, and is what we'll communicate on the methodology page.
 
 ---
 
