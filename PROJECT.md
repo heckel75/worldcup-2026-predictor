@@ -201,12 +201,12 @@ Then we resume.
 
 **Goal:** simulate the entire World Cup 10,000 times and report each team's probability of reaching each round.
 
-**Session 13 — Encode the 2026 bracket (← NEXT)**
+**Session 13 — Encode the 2026 bracket ✅ DONE**
 - Hard-code 12 groups, all 48 teams, group-stage fixture list
 - Encode tiebreaker rules (points, GD, goals, head-to-head, fair play)
 - Encode knockout bracket structure including the new Round of 32
 
-**Session 14 — Simulate one tournament**
+**Session 14 — Simulate one tournament (← NEXT)**
 - Function: `simulate_tournament(model, ratings) -> dict of results`
 - Plays out all 104 matches given current model, returns winner + path of every team
 
@@ -370,6 +370,7 @@ Buffer for things that break.
 - **Session 10 — Implement Dixon-Coles (2026-05-08)** Wrote src/dixon_coles.py. predict_from_lambdas builds a Poisson scoreline grid, applies the Dixon-Coles τ correction on the four low-score cells with placeholder ρ = −0.1, renormalizes, and aggregates to W/D/L. predict_match(home, away, ratings, neutral=True) is the team-name wrapper that calls elo_to_lambdas first. Sanity block passes all four invariants (sums to 1, symmetry, mismatch, DC draw > plain Poisson draw). USA-Mexico shows Mexico-favored — known Session 7 residual drift, not a new bug. ρ-fitting and Euro 2024 / Copa 2024 backtest deferred to Session 11.
 - **Session 11 (2026-05-08):** Wrote src/backtest.py. Walked Elo forward across 7,952 matches, fit Dixon-Coles ρ via MLE on 5,882 pre-2024-06 training matches → ρ̂ = -0.027 (placeholder was -0.10). Backtested on Jun-Jul 2024 (290 matches total). On the intended target (Euro 2024 + Copa América, 83 matches): acc 0.530 / log loss 0.978 / Brier 0.583. Per-tournament: Copa 0.863 log loss (21% better than random), Euro 1.051 (4% better) — gap is structural, Euro has clustered Elos and many genuine coin flips, not fixable without out-of-scope data. Predictions saved to data/processed/backtest_2024.csv for the calibration page. Next: update ρ default in dixon_coles.py, fold per-tournament reporting into backtest.py.
 - **Session 12 (2026-05-08):** Wrote src/check_calibration.py for a 5-bin reliability check on the 290 backtest predictions. Home-win probabilities are excellently calibrated (max gap 4.8pp, only at top end). Draws systematically under-predicted by ~4pp; away wins over-predicted by a matching ~3pp — small enough to ship, but worth offsetting in the divergence detector in Week 4. Added per-tournament breakdown to backtest.py via a shared _metrics() helper and a "MAJORS (Euro + Copa)" combined line. Reproduces Session 11 numbers exactly. Key finding from the breakdown: full-window accuracy (0.638) is inflated by friendlies and qualifiers; on Euro 2024 specifically (the closest analog to a major tournament with clustered Elos) accuracy is 0.490 and log loss 1.051. This — not the full-window number — is what we should expect for WC matches, and is what we'll communicate on the methodology page.
+- **Session 13 (2026-05-11):** Encoded the 2026 bracket in src/bracket.py — all 12 groups by FIFA letter (cross-checked against fixtures_2026.csv), the 16-match R32 with FIFA's slot syntax (1A/2C/3CEFHI), and the R16/QF/SF/final tree as match-ID source references. Tiebreaker function rank_group implements FIFA 2026's rules (h2h-first for 3+ tied, overall-only for 2-tied) with a recursive fallback for sub-ties; rank_third_place implements the separate non-h2h ranking. Sanity check passes: 48 teams match, 12 × 6 fixtures, R32 covers all winners/runners-up + 8 third-place slot families, and a hand-built 3-way h2h cycle self-test confirms order. Third-place R32 slot resolution (the 495-row Annex C table) deferred to Session 16 as planned.
 
 ---
 
