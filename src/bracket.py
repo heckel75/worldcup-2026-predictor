@@ -234,8 +234,18 @@ def _break_by_overall(
     all_matches: Sequence[Mapping],
     fifa_ranks: Optional[Mapping[str, int]],
 ) -> list[str]:
-    """Final fallback: overall GD, goals, then FIFA world ranking."""
-    stats = _aggregate_stats(all_matches, set(teams))
+    """Final fallback: overall GD, goals, then FIFA world ranking.
+
+    Infer the full group's teams from the match list. Passing only the
+    tied subset would filter out matches against non-tied teams via
+    `_aggregate_stats`' "both teams in set" rule, which would silently
+    reduce this to a head-to-head comparison.
+    """
+    group_teams: set[str] = set()
+    for m in all_matches:
+        group_teams.add(m["home_team"])
+        group_teams.add(m["away_team"])
+    stats = _aggregate_stats(all_matches, group_teams)
 
     def key(t: str) -> tuple:
         s = stats[t]
@@ -262,7 +272,11 @@ def rank_third_place(
     stats: dict[str, dict[str, int]] = {}
     for t in third_place_teams:
         g = TEAM_TO_GROUP[t]
-        stats[t] = _aggregate_stats(group_matches_by_letter[g], {t})[t]
+        # Pass the full group's teams so `_aggregate_stats` doesn't filter
+        # out matches against non-third-placed teams (the "both teams in
+        # set" rule would otherwise zero out everything).
+        g_teams = set(GROUPS[g])
+        stats[t] = _aggregate_stats(group_matches_by_letter[g], g_teams)[t]
 
     def key(t: str) -> tuple:
         s = stats[t]
@@ -344,6 +358,7 @@ def _sanity_check() -> bool:
     print("✅ R16/QF/SF source matches all reference earlier rounds correctly")
 
     _self_test_tiebreakers()
+    _self_test_two_way_tie()
     return True
 
 
@@ -366,6 +381,44 @@ def _self_test_tiebreakers() -> None:
     order = rank_group(teams, matches)
     assert order == ["B", "A", "C", "D"], f"tiebreaker self-test failed: {order}"
     print("✅ Tiebreaker self-test (3-way h2h cycle): order is B > A > C > D")
+
+
+def _self_test_two_way_tie() -> None:
+    """
+    Two-way tie at the top, exercised against the OVERALL-criteria path:
+
+      B beats A 1-0    (B wins the head-to-head)
+      A beats C 4-0    (A blasts C)
+      B beats C 1-0    (B narrowly beats C)
+      A beats D 4-0    (A blasts D)
+      D beats B 1-0    (D upsets B)
+      C beats D 1-0
+
+      Points:   A=6, B=6, C=3, D=3.
+      Overall:  A GD=+7, B GD=+1.
+      H2H:      B beats A.
+
+    FIFA 2026 says two-way ties skip H2H and use OVERALL criteria, so A
+    should finish ahead of B. A pre-fix _break_by_overall (which silently
+    only counted matches between the tied pair) would put B first.
+    """
+    teams = ["A", "B", "C", "D"]
+    m = lambda h, a, hs, as_: {
+        "home_team": h, "away_team": a, "home_score": hs, "away_score": as_,
+    }
+    matches = [
+        m("A", "B", 0, 1),
+        m("A", "C", 4, 0),
+        m("B", "C", 1, 0),
+        m("A", "D", 4, 0),
+        m("B", "D", 0, 1),
+        m("C", "D", 1, 0),
+    ]
+    order = rank_group(teams, matches)
+    assert order[0] == "A" and order[1] == "B", (
+        f"two-way tie self-test failed: expected A,B,... got {order}"
+    )
+    print("✅ Two-way-tie self-test (overall GD beats H2H): A > B")
 
 
 if __name__ == "__main__":
