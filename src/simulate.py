@@ -2,8 +2,14 @@
 Simulate one full World Cup 2026 tournament.
 
 Session 14: plays all 104 matches given current ratings + fixtures, and
-returns a dict describing the entire bracket. Session 15 will wrap this
-in a 10,000-iteration Monte Carlo loop.
+returns a dict describing the entire bracket. Session 15 wraps this in a
+10,000-iteration Monte Carlo loop.
+
+Session 16: replaced the backtracking third-place slot placeholder with
+FIFA's published Annex C lookup (the 495-row table mapping "which 8 of
+the 12 thirds advance" → "which R32 slot each one fills"). The Annex C
+data lives in data/raw/r32_annex_c.csv (built by src/build_annex_c.py);
+bracket.resolve_third_place_slots does the lookup.
 
 Two kinds of match sampling:
   - Group stage  -> sample a SCORELINE from the Dixon-Coles grid
@@ -11,12 +17,6 @@ Two kinds of match sampling:
   - Knockout     -> sample a WINNER from W/D/L; the draw mass is split
                     50/50 between sides (penalty shootouts ≈ coin flips
                     at international level).
-
-PLACEHOLDER for Session 16: the third-place slot assignment uses
-backtracking to find ANY valid assignment that respects each slot's
-allowed-groups constraint. Session 16 replaces this with FIFA's
-published Annex C lookup (the 495-row table mapping "which 8 of the
-12 thirds advance" -> "which R32 slot each one fills").
 
 v1 simplification: every match uses neutral=True. The three hosts
 (USA, Mexico, Canada) play their group games at home and probably
@@ -46,6 +46,7 @@ from bracket import (
     FINAL_MATCH,
     rank_group,
     rank_third_place,
+    resolve_third_place_slots,
     _aggregate_stats,
 )
 from dixon_coles import predict_match
@@ -91,60 +92,38 @@ def _sample_ko_winner(
 
 
 # ----------------------------------------------------------------------
-# Third-place slot assignment (PLACEHOLDER for Session 16)
+# Third-place R32 slot assignment (FIFA Annex C)
 # ----------------------------------------------------------------------
 
-def _third_place_slots() -> list[tuple[int, str]]:
-    """The 8 R32 slots whose source is a third-placed team, in match order.
-
-    Returns [(match_id, slot_str), ...] e.g. [(74, "3ABCDF"), ...].
-    """
-    return [
-        (mid, slot)
-        for mid, a, b in R32_BRACKET
-        for slot in (a, b)
-        if slot.startswith("3")
-    ]
-
-
 def _assign_thirds(top_8_thirds: list[str]) -> dict[int, str]:
-    """Map R32 match_id -> third-placed team for the 8 advancing thirds.
+    """Map R32 match_id → third-placed team for the 8 advancing thirds,
+    per FIFA's Annex C (495-row published lookup).
 
-    PLACEHOLDER. Walks the 8 slots in match order, trying each remaining
-    third in ranked order; backtracks if a slot has no compatible team
-    left. Returns the first valid assignment. FIFA's Annex C gives a
-    different, deterministic assignment based on which 8 advanced;
-    Session 16 swaps that in.
+    The lookup in bracket.resolve_third_place_slots returns
+    {slot_id: group_letter} — e.g. {"1A": "E", ...} meaning "at slot 1A,
+    group E's third-placed team plays". We translate to {match_id: team}.
     """
-    slots = _third_place_slots()
     team_group = {t: TEAM_TO_GROUP[t] for t in top_8_thirds}
+    group_to_team = {g: t for t, g in team_group.items()}
+    qualifying_groups = set(team_group.values())
 
-    def recurse(
-        i: int,
-        taken: set[str],
-        assignment: dict[int, str],
-    ) -> Optional[dict[int, str]]:
-        if i == len(slots):
-            return dict(assignment)
-        mid, slot_str = slots[i]
-        allowed = set(slot_str[1:])
-        for t in top_8_thirds:
-            if t in taken or team_group[t] not in allowed:
-                continue
-            assignment[mid] = t
-            result = recurse(i + 1, taken | {t}, assignment)
-            if result is not None:
-                return result
-            del assignment[mid]
-        return None
+    slot_to_group = resolve_third_place_slots(qualifying_groups)
 
-    result = recurse(0, set(), {})
-    if result is None:
-        raise RuntimeError(
-            f"No valid third-place slot assignment for {top_8_thirds}. "
-            "This shouldn't happen with FIFA's slot patterns — investigate."
+    # Each R32 match that involves a 3rd-place team has exactly one "1X"
+    # slot (the group winner) and one "3..." slot. The "1X" tells us which
+    # Annex C key applies to that match.
+    assignment: dict[int, str] = {}
+    for mid, slot_a, slot_b in R32_BRACKET:
+        winner_slot = next(
+            (s for s in (slot_a, slot_b) if s.startswith("1")), None
         )
-    return result
+        third_slot = next(
+            (s for s in (slot_a, slot_b) if s.startswith("3")), None
+        )
+        if third_slot is None:
+            continue  # match between two runners-up — no 3rd-place team
+        assignment[mid] = group_to_team[slot_to_group[winner_slot]]
+    return assignment
 
 
 # ----------------------------------------------------------------------
@@ -185,7 +164,7 @@ def simulate_tournament(
                                 winner, loser}]
         team_furthest_round : {team_name: ROUND_LABEL}
 
-    `team_furthest_round` is what Session 15 will aggregate over many runs
+    `team_furthest_round` is what Session 15 aggregates over many runs
     to compute P(reach R16), P(win cup), etc.
     """
     rng = rng if rng is not None else np.random.default_rng()

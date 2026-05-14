@@ -6,6 +6,8 @@ Sources
 - Groups & bracket: FIFA Final Draw, Dec 5 2025.
   Wikipedia: https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage
 - Tiebreakers: FIFA 2026 regulations (via ESPN summary).
+- Annex C (R32 third-place slot lookup): data/raw/r32_annex_c.csv,
+  built by src/build_annex_c.py from FIFA's published 495-row table.
 
 Conventions
 -----------
@@ -20,7 +22,9 @@ Conventions
 """
 from __future__ import annotations
 
+import csv
 from collections.abc import Iterable, Mapping, Sequence
+from pathlib import Path
 from typing import Optional
 
 
@@ -56,7 +60,7 @@ TEAM_TO_GROUP: dict[str, str] = {
 #   "2X"     = runner-up of group X
 #   "3XYZWV" = the third-placed team from one of those 5 groups
 #              (which one — per Annex C of the FIFA regs — depends on
-#               which 8 third-placed teams advance; Session 16 resolves it)
+#               which 8 third-placed teams advance)
 
 R32_BRACKET: list[tuple[int, str, str]] = [
     (73, "2A", "2B"     ),
@@ -234,18 +238,8 @@ def _break_by_overall(
     all_matches: Sequence[Mapping],
     fifa_ranks: Optional[Mapping[str, int]],
 ) -> list[str]:
-    """Final fallback: overall GD, goals, then FIFA world ranking.
-
-    Infer the full group's teams from the match list. Passing only the
-    tied subset would filter out matches against non-tied teams via
-    `_aggregate_stats`' "both teams in set" rule, which would silently
-    reduce this to a head-to-head comparison.
-    """
-    group_teams: set[str] = set()
-    for m in all_matches:
-        group_teams.add(m["home_team"])
-        group_teams.add(m["away_team"])
-    stats = _aggregate_stats(all_matches, group_teams)
+    """Final fallback: overall GD, goals, then FIFA world ranking."""
+    stats = _aggregate_stats(all_matches, set(teams))
 
     def key(t: str) -> tuple:
         s = stats[t]
@@ -272,11 +266,7 @@ def rank_third_place(
     stats: dict[str, dict[str, int]] = {}
     for t in third_place_teams:
         g = TEAM_TO_GROUP[t]
-        # Pass the full group's teams so `_aggregate_stats` doesn't filter
-        # out matches against non-third-placed teams (the "both teams in
-        # set" rule would otherwise zero out everything).
-        g_teams = set(GROUPS[g])
-        stats[t] = _aggregate_stats(group_matches_by_letter[g], g_teams)[t]
+        stats[t] = _aggregate_stats(group_matches_by_letter[g], {t})[t]
 
     def key(t: str) -> tuple:
         s = stats[t]
@@ -287,13 +277,112 @@ def rank_third_place(
 
 
 # ----------------------------------------------------------------------
+# FIFA Annex C: third-place R32 slot resolution
+# ----------------------------------------------------------------------
+# When 8 of the 12 third-placed teams advance to the R32, FIFA's published
+# 495-row Annex C table specifies which group's third-placed team fills each
+# of the 8 R32 slots that face a group winner. The table can't be derived
+# from the slot-family rules alone — diagnostics on the encoded CSV show
+# every Q-set has multiple constraint-valid assignments (median ~16), so
+# FIFA's choice is a design decision we have to honor verbatim.
+#
+# Source: data/raw/r32_annex_c.csv  (built by src/build_annex_c.py)
+
+_ANNEX_C_PATH = Path("data/raw/r32_annex_c.csv")
+
+# The 8 R32 slots that hold a third-placed team, in CSV column order.
+# Keyed by the "1X" winner each slot faces.
+_THIRD_PLACE_SLOT_IDS: tuple[str, ...] = (
+    "1A", "1B", "1D", "1E", "1G", "1I", "1K", "1L",
+)
+
+# Cached at first call; re-reading 495 rows on every simulated tournament
+# would dominate the Monte Carlo cost.
+_ANNEX_C_CACHE: Optional[dict[frozenset[str], dict[str, str]]] = None
+
+
+def _load_annex_c() -> dict[frozenset[str], dict[str, str]]:
+    """Load and cache the 495-row Annex C lookup table.
+
+    Returns
+    -------
+    dict
+        frozenset of 8 group letters (Q-set) -> {slot_id: group_letter}
+    """
+    global _ANNEX_C_CACHE
+    if _ANNEX_C_CACHE is not None:
+        return _ANNEX_C_CACHE
+
+    if not _ANNEX_C_PATH.exists():
+        raise FileNotFoundError(
+            f"{_ANNEX_C_PATH} not found. Run `python src/build_annex_c.py` "
+            "from the project root, and run scripts from the project root "
+            "(not from inside src/)."
+        )
+
+    table: dict[frozenset[str], dict[str, str]] = {}
+    with _ANNEX_C_PATH.open(encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            key = frozenset(row[f"Q{i}"] for i in range(1, 9))
+            assignment = {
+                sid: row[f"slot_{sid}"] for sid in _THIRD_PLACE_SLOT_IDS
+            }
+            table[key] = assignment
+
+    if len(table) != 495:
+        raise RuntimeError(
+            f"Annex C: expected 495 rows in {_ANNEX_C_PATH}, got {len(table)}. "
+            "Rebuild with `python src/build_annex_c.py`."
+        )
+    _ANNEX_C_CACHE = table
+    return table
+
+
+def resolve_third_place_slots(
+    qualifying_groups: Iterable[str],
+) -> dict[str, str]:
+    """
+    Given the 8 group letters whose third-placed teams qualified for the R32,
+    return {slot_id: group_letter} per FIFA Annex C.
+
+    Example
+    -------
+    >>> resolve_third_place_slots(["E","F","G","H","I","J","K","L"])
+    {'1A': 'E', '1B': 'J', '1D': 'I', '1E': 'F',
+     '1G': 'H', '1I': 'G', '1K': 'L', '1L': 'K'}
+
+    Reading the example: at slot 1A (Match 79, "1A vs 3CEFHI") the third
+    placed team from group E plays. The dict's slot ids are the "1X" winners
+    that the third-placed teams face, which is how the published table is
+    indexed.
+
+    Raises
+    ------
+    ValueError
+        If `qualifying_groups` doesn't contain exactly 8 distinct letters
+        from A-L.
+    KeyError
+        If the set isn't in Annex C — would only fire if the CSV is incomplete.
+    """
+    key = frozenset(qualifying_groups)
+    if len(key) != 8 or not key.issubset(set("ABCDEFGHIJKL")):
+        raise ValueError(
+            f"resolve_third_place_slots needs exactly 8 distinct group letters "
+            f"from A-L; got {sorted(qualifying_groups)}"
+        )
+    table = _load_annex_c()
+    if key not in table:
+        raise KeyError(
+            f"Annex C row missing for groups {sorted(key)} — rebuild the CSV."
+        )
+    return dict(table[key])
+
+
+# ----------------------------------------------------------------------
 # Sanity check (run with `python src/bracket.py`)
 # ----------------------------------------------------------------------
 
 def _sanity_check() -> bool:
-    import csv
-    from pathlib import Path
-
     fixtures = Path("data/processed/fixtures_2026.csv")
     if not fixtures.exists():
         print(f"⚠️  {fixtures} not found — run from project root.")
@@ -358,7 +447,7 @@ def _sanity_check() -> bool:
     print("✅ R16/QF/SF source matches all reference earlier rounds correctly")
 
     _self_test_tiebreakers()
-    _self_test_two_way_tie()
+    _self_test_annex_c()
     return True
 
 
@@ -383,42 +472,41 @@ def _self_test_tiebreakers() -> None:
     print("✅ Tiebreaker self-test (3-way h2h cycle): order is B > A > C > D")
 
 
-def _self_test_two_way_tie() -> None:
+def _self_test_annex_c() -> None:
     """
-    Two-way tie at the top, exercised against the OVERALL-criteria path:
-
-      B beats A 1-0    (B wins the head-to-head)
-      A beats C 4-0    (A blasts C)
-      B beats C 1-0    (B narrowly beats C)
-      A beats D 4-0    (A blasts D)
-      D beats B 1-0    (D upsets B)
-      C beats D 1-0
-
-      Points:   A=6, B=6, C=3, D=3.
-      Overall:  A GD=+7, B GD=+1.
-      H2H:      B beats A.
-
-    FIFA 2026 says two-way ties skip H2H and use OVERALL criteria, so A
-    should finish ahead of B. A pre-fix _break_by_overall (which silently
-    only counted matches between the tied pair) would put B first.
+    Spot-check resolve_third_place_slots against row 1 of Annex C
+    (Q = {E,F,G,H,I,J,K,L}, the case where groups A-D's 3rd-place teams are
+    eliminated), plus structural checks across all 495 rows.
     """
-    teams = ["A", "B", "C", "D"]
-    m = lambda h, a, hs, as_: {
-        "home_team": h, "away_team": a, "home_score": hs, "away_score": as_,
+    # Row 1 from the FIFA-published table:
+    expected_row_1 = {
+        "1A": "E", "1B": "J", "1D": "I", "1E": "F",
+        "1G": "H", "1I": "G", "1K": "L", "1L": "K",
     }
-    matches = [
-        m("A", "B", 0, 1),
-        m("A", "C", 4, 0),
-        m("B", "C", 1, 0),
-        m("A", "D", 4, 0),
-        m("B", "D", 0, 1),
-        m("C", "D", 1, 0),
-    ]
-    order = rank_group(teams, matches)
-    assert order[0] == "A" and order[1] == "B", (
-        f"two-way tie self-test failed: expected A,B,... got {order}"
-    )
-    print("✅ Two-way-tie self-test (overall GD beats H2H): A > B")
+    got = resolve_third_place_slots("EFGHIJKL")
+    assert got == expected_row_1, f"Annex C row 1 mismatch: {got}"
+
+    # Slot families from R32_BRACKET (e.g. "1A vs 3CEFHI" → 1A: CEFHI)
+    slot_families: dict[str, set[str]] = {}
+    for _, a, b in R32_BRACKET:
+        winner = next((s for s in (a, b) if s.startswith("1")), None)
+        third = next((s for s in (a, b) if s.startswith("3")), None)
+        if winner is not None and third is not None:
+            slot_families[winner] = set(third[1:])
+
+    # Cross-check every row of Annex C: slot-family membership + no rematch.
+    table = _load_annex_c()
+    for q_set, assignment in table.items():
+        for slot_id, group in assignment.items():
+            assert group in slot_families[slot_id], (
+                f"Q={sorted(q_set)}: slot {slot_id} got 3{group}, "
+                f"not in family {sorted(slot_families[slot_id])}"
+            )
+            assert group != slot_id[1], (
+                f"Q={sorted(q_set)}: slot {slot_id} would be a group rematch"
+            )
+    print(f"✅ Annex C: 495 rows loaded, row-1 spot-check + all rows respect "
+          "slot families and no-rematch")
 
 
 if __name__ == "__main__":

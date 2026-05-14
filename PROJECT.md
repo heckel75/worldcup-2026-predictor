@@ -215,12 +215,12 @@ Then we resume.
 - Aggregate per team: P(advance from group), P(reach R16), P(reach QF), ..., P(win cup)
 - Save snapshots so we can compute "what changed since yesterday"
 
-**Session 16 — Handle the Round of 32 quirk (← NEXT)**
+**Session 16 — Handle the Round of 32 quirk ✅ DONE**
 - 495 possible bracket configurations depending on which 8 third-place teams advance
 - Implement the actual FIFA rules for which 3rd-place teams go where
 - Validate against FIFA's published bracket logic
 
-**Session 17 — Buffer / sanity checks**
+**Session 17 — Buffer / sanity checks (← NEXT)**
 - Compare title odds to bookmakers — are we wildly off anywhere?
 - If yes, debug. If no, document the agreement
 
@@ -373,6 +373,7 @@ Buffer for things that break.
 - **Session 13 (2026-05-11):** Encoded the 2026 bracket in src/bracket.py — all 12 groups by FIFA letter (cross-checked against fixtures_2026.csv), the 16-match R32 with FIFA's slot syntax (1A/2C/3CEFHI), and the R16/QF/SF/final tree as match-ID source references. Tiebreaker function rank_group implements FIFA 2026's rules (h2h-first for 3+ tied, overall-only for 2-tied) with a recursive fallback for sub-ties; rank_third_place implements the separate non-h2h ranking. Sanity check passes: 48 teams match, 12 × 6 fixtures, R32 covers all winners/runners-up + 8 third-place slot families, and a hand-built 3-way h2h cycle self-test confirms order. Third-place R32 slot resolution (the 495-row Annex C table) deferred to Session 16 as planned.
 - **Session 14 (2026-05-12:)** Wrote src/simulate.py with simulate_tournament(ratings, fixtures, rng) -> dict that plays all 104 matches end-to-end: group scorelines sampled from the Dixon-Coles grid, knockout winners from W/D/L with the draw mass split 50/50 (penalties ≈ coin flips at international level), and a backtracking placeholder assigning the 8 advancing third-place teams to R32 slot families — respects FIFA's group-letter constraints but not Annex C, which Session 16 swaps in. Sampling primitives tested in isolation against analytical distributions (max 0.002 error over 200k samples). Output dict includes team_furthest_round per team, ready for Session 15's Monte Carlo aggregation. Caught and fixed two latent bugs in bracket.py with the same root cause — _break_by_overall and rank_third_place were both passing too-narrow team sets to _aggregate_stats, which silently zeroed out the relevant stats; first run revealed it via Group E (Ivory Coast +6 GD finishing behind Germany +2) and Group D. Added a two-way-tie self-test alongside the existing 3-way h2h test so this can't regress. All matches use neutral=True for v1; host-country group advantage deferred. Open v1 limit: groups where two teams tie on every overall metric (e.g. Group K with Portugal & Colombia in the seed=42 run) fall back to stable sort because we don't pass FIFA world rankings — small effect, address if it shows up.
 - **Session 15 (2026-05-13):** Wrote src/monte_carlo.py — wraps simulate_tournament in a 10k loop, tallies per-team furthest-round outcomes, and saves a dated snapshot CSV (data/processed/snapshots/YYYY-MM-DD.csv). Date-based seed (int(YYYYMMDD)) for daily reproducibility. Runtime ~65s for 10k sims on the dev machine. Four sanity checks built in (per-team monotonicity + exact column sums of 32/16/8/4/2/1 for the six rounds), all pass. First real title odds: Spain 28.3%, Argentina 19.8%, France 12.6%, England 5.7%, Portugal 4.6% — top 3 = 60.7% of title probability, materially more concentrated than the sportsbook consensus (~45-55%). Spain's 28% and Brazil's 3.0% will be the two headline model-vs-market divergences once Week 4 lands; Brazil's gap traces to the Session 7 confederation drift already documented in §6. Snapshot infrastructure is the foundation for the "what changed today" panel (Session 26).
+- **Session 16 (2026-05-14):** Encoded FIFA's 495-row Annex C R32 third-place lookup in data/raw/r32_annex_c.csv, built from the Wikipedia transcription via src/build_annex_c.py. Validation at build-time and module-load: every row has 8 distinct qualifying group letters, every slot assignment is drawn from the qualifying set, all 495 rows respect the slot families encoded in R32_BRACKET (e.g. "1A vs 3CEFHI"), and no row would produce a same-group R32 rematch. Diagnostic finding (in src/annex_c_diagnostics.py): 0 of 495 Q-sets are forced by the constraints alone (median ~16 valid assignments, max 214) — Annex C is a genuine FIFA design choice, not derivable. Added resolve_third_place_slots(qualifying_groups) → {slot_id: group_letter} to bracket.py with module-level caching; replaced simulate._assign_thirds's backtracking placeholder with a 6-line Annex C lookup. Old-vs-new diff on 3 sample Q-sets: 10/24 slot assignments changed — placeholder was wrong on the majority of Q-sets even though constraint-respecting. Re-ran monte_carlo.py (seed 20260514): top-3 concentration 60.7% → 61.9%, Spain +1.7pp (largest move; partly confounded with seed change from 20260513 baseline, MC noise ≈±0.5pp), rest of top-5 within ±0.7pp.
 ---
 
 ## 8. How to get back into a chat session
@@ -381,10 +382,16 @@ PROJECT.md is loaded automatically into every new chat via project files, so you
 
 1. Make sure the project file is up to date (replace it with your latest local version if you've edited it since the last chat)
 2. **Push current code to GitHub before asking for changes** — Claude can then fetch the current state of any source file directly instead of guessing
-3. **Paste raw GitHub URLs of files we'll likely touch** at the start of the session, e.g.
-https://raw.githubusercontent.com/heckel75/worldcup-2026-predictor/main/src/elo.py
-Claude can fetch URLs you paste but cannot guess them. Two or three URLs upfront beats pasting full file contents during the conversation.
-
-Then open a new chat and say: "ready for Session N" (add any blockers if relevant).
+3. Open a new chat and say "ready for Session N" (add any blockers if relevant). Claude will reply with the raw-GitHub URLs of the files it needs; paste them in one block and we resume.
 
 **Repo:** https://github.com/heckel75/worldcup-2026-predictor
+
+## 9. Working protocol (Claude follows these every session)
+
+**At session start.** After reading PROJECT.md and identifying the session, Claude lists every file likely to be touched and provides raw-GitHub URLs in the form `https://raw.githubusercontent.com/heckel75/worldcup-2026-predictor/main/<path>`. Then waits. No work begins until files are pasted. Asking for "one more file" mid-session is a workflow failure — Claude should over-include rather than under-include.
+
+**One step per response.** Each reply corresponds to one discrete step: one file change, one test run, one explanation, or one decision. After each step, Claude waits for the user. Bundling steps makes course-correction harder and gets in the way of the user actually doing the step.
+
+**At session end.** Claude proposes two one-line additions for the user to paste:
+1. **Session log line** for §7 (one bullet summarizing what got built, decided, or blocked).
+2. **Commit message** for the Git commit covering the session's changes — short, imperative, scoped (e.g. `Session 16: add FIFA Annex C lookup for R32 third-place slots`).
