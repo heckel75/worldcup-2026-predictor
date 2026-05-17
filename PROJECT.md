@@ -230,13 +230,13 @@ Then we resume.
 
 **Goal:** pull sportsbook + Polymarket data, compute divergences, generate Claude commentary.
 
-**Session 18 — The Odds API integration (← NEXT)**
+**Session 18 — The Odds API integration ✅ DONE**
 - Sign up for free tier (500 req/month)
 - Pull World Cup outright winner odds + per-match odds
 - Strip vig, compute fair probabilities
 - Save `data/processed/sportsbook_odds.csv`
 
-**Session 19 — Polymarket integration**
+**Session 19 — Polymarket integration (← NEXT)**
 - Hit Gamma API for World Cup markets
 - Match Polymarket markets to our matches
 - Save `data/processed/polymarket_odds.csv`
