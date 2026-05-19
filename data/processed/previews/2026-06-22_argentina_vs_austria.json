@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-22_argentina_vs_austria",
+  "home_team": "Argentina",
+  "away_team": "Austria",
+  "date": "2026-06-22",
+  "input_hash": "c3d8b7433ea8f8aca758bf6d126974e548ff100c",
+  "generated_at": "2026-05-19T13:45:56+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Argentina decisively, assigning a 76% win probability against Austria's 4%. This reflects a substantial gap in the forecast: Argentina is projected as a heavy favorite, while Austria has only a small chance of victory on a neutral ground.\n\nThe expected distribution shows Argentina dominant but not overwhelming in absolute terms. A draw carries nearly 20% probability in the model, suggesting the match remains competitive enough that a stalemate outcome is plausible. Austria's path to victory is narrow but not implausible at 4%, indicating the underdog carries genuine uncertainty rather than negligible odds.\n\nModel and sportsbook estimates diverge meaningfully. The market prices Argentina's win probability 20 percentage points lower than the model, at 56%, and assigns Austria nearly five times the model's win chance. The draw lies closer between the two sources. This gap suggests the market prices substantially more competitive odds than the statistical forecast; the dashboard does not adjudicate which approach is correct."
+}

@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-16_argentina_vs_algeria",
+  "home_team": "Argentina",
+  "away_team": "Algeria",
+  "date": "2026-06-16",
+  "input_hash": "d3de4dc86e07346f705e9cd235f9b2403fc86096",
+  "generated_at": "2026-05-19T13:44:25+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model backs Argentina as a decisive favorite, assigning a 76% win probability against Algeria's 4%. That 72-percentage-point gap reflects a sharp asymmetry in expected strength. Algeria's underdog position is narrow in isolation, but the model rates Argentina's advantage as substantial.\n\nThe W/D/L distribution shows Argentina favored across most plausible scorelines, yet a draw emerges as the second-most likely single outcome at 20%. This suggests the match carries competitive texture: while Argentina enters as clear favorites, Algeria is not forecast to be wholly outmatched. A 1–1 result or low-scoring Argentina victory remains reasonably probable.\n\nModel and market diverge meaningfully on the tails. The market assigns Algeria 13% win probability—more than triple the model's 3.8%—and places the gap at about 10 percentage points. Both sources align on the draw near 20% and on Argentina's overall edge. The dashboard does not adjudicate which view of Algeria's chances is correct; sportsbooks may incorporate information or uncertainty the model does not capture."
+}

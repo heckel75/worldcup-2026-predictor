@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-11_south_korea_vs_czech_republic",
+  "home_team": "South Korea",
+  "away_team": "Czech Republic",
+  "date": "2026-06-11",
+  "input_hash": "1921f8182fa9fe7250ca9954110b3c9184a314b8",
+  "generated_at": "2026-05-19T13:43:18+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors South Korea at 49%, compared to Czech Republic's 20% win probability. This represents a clear gap between the two sides in the forecast, though South Korea's majority chance still reflects meaningful uncertainty.\n\nThe expected shape shows South Korea as the stronger side, but the fixture remains genuinely competitive. A draw at 30% is the second-most-likely outcome, suggesting the teams are close enough that a split result is plausible. The 28-percentage-point gap between South Korea's win probability and Czech Republic's reflects a moderate rather than dominant edge.\n\nThe model and sportsbooks diverge meaningfully here. The market prices South Korea at 36% and Czech Republic at 35%—essentially even—while the model separates them by 28 points in South Korea's favor. This 13-point gap between model and market for South Korea indicates genuine disagreement between the two sources on the balance of play. The dashboard does not claim to know which assessment is correct."
+}

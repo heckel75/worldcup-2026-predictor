@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-13_brazil_vs_morocco",
+  "home_team": "Brazil",
+  "away_team": "Morocco",
+  "date": "2026-06-13",
+  "input_hash": "fb1579f3a25dcfd193aa683748f3a543c30c9409",
+  "generated_at": "2026-05-19T13:43:33+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model assigns Brazil a 37% win probability, making them the statistical favorite, though the margin over Morocco's 32% chance is narrow. A draw at 32% rounds to a substantial share of the outcome space, suggesting the teams are closer in expected strength than Brazil's favorite status alone implies.\n\nThe spread across outcomes reflects a competitive match. Brazil's edge in win probability is modest—roughly 5 percentage points above Morocco—while the draw probability nearly matches Morocco's outright win chance. This distribution indicates the result remains genuinely uncertain across all three scenarios, with no dominant outcome emerging from the model's estimate.\n\nThe sportsbook consensus diverges meaningfully from the model. Books price Brazil at 59% to win, a gap of roughly 22 percentage points above the model's 37%. The market correspondingly compresses Morocco to 17% and the draw to 24%. This substantial spread reflects stronger backer confidence in Brazil than the statistical forecast supports. The dashboard does not adjudicate between these sources; the discrepancy merits scrutiny from bettors and analysts."
+}

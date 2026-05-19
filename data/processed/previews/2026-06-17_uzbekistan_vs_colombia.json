@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-17_uzbekistan_vs_colombia",
+  "home_team": "Uzbekistan",
+  "away_team": "Colombia",
+  "date": "2026-06-17",
+  "input_hash": "e1b3263ac599dafc7fd68ff9972020dd798a2a16",
+  "generated_at": "2026-05-19T13:44:36+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "Colombia enters as the model's favorite with a 57% win probability, holding a commanding edge over Uzbekistan's 16% chance. The gap reflects a substantial disparity in expected performance, though the underdog retains genuine scope for an upset.\n\nThe draw emerges as a meaningful outcome at 27%, suggesting the match has competitive texture beyond a binary result. Colombia's advantage is clear, yet a third of the probability mass concentrates outside an outright home victory, indicating the model sees this as neither a heavy favorite scenario nor a mismatch.\n\nThe model and sportsbook consensus diverge meaningfully on Colombia's prospects. Bookmakers price Colombia 10 percentage points higher at 67%, while rating Uzbekistan 4 points lower and the draw 6 points lower than the model. The dashboard does not adjudicate which assessment is correct; the gap warrants noting that market sentiment leans more decisively toward Colombia than the statistical model does."
+}

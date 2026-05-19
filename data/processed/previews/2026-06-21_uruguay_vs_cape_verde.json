@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-21_uruguay_vs_cape_verde",
+  "home_team": "Uruguay",
+  "away_team": "Cape Verde",
+  "date": "2026-06-21",
+  "input_hash": "486b82491b4435527c1777d07c774a88ee148031",
+  "generated_at": "2026-05-19T13:45:44+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model assigns Uruguay a 74% chance of victory, with Cape Verde's win probability at just 5%. This is a heavily lopsided fixture by the model's estimate, though the underdog retains a non-negligible path to an upset.\n\nThe draw emerges as the second-most likely outcome at 21%, suggesting Uruguay may not run away with the match despite its commanding favorite status. The gap between a Uruguay win and a Cape Verde win is substantial—nearly 69 percentage points—indicating the model expects clear separation in quality, yet the presence of significant draw probability reflects competitive uncertainty in the ninety minutes themselves.\n\nModel and market diverge notably here. The sportsbooks assign Cape Verde 13% win probability, roughly 8 percentage points higher than the model, while scaling back Uruguay's win rate to 66%. Both sources agree on draw likelihood at around 21%. The dashboard makes no claim about which is correct; the gap may reflect bookmaker caution on a less-familiar matchup or genuine disagreement on relative strength."
+}

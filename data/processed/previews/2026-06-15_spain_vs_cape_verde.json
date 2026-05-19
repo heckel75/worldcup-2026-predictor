@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-15_spain_vs_cape_verde",
+  "home_team": "Spain",
+  "away_team": "Cape Verde",
+  "date": "2026-06-15",
+  "input_hash": "e3b18096c25e5b69e1b906147169e7a8bf29549a",
+  "generated_at": "2026-05-19T13:44:10+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model forecasts a dominant Spain victory at 91%, leaving Cape Verde a 9% chance via draw and no realistic path to a win. The sportsbook consensus aligns closely, pricing Spain at 87%, though it assigns 4 percentage points to a Cape Verde upset where the model sees none.\n\nThe win–draw–loss spread reflects a heavily lopsided matchup. The 91-point gap between Spain's win probability and Cape Verde's signals a large quality differential. A draw remains plausible—roughly one in eleven outcomes—but a Cape Verde victory registers as negligible under the model's framework, making this among the most asymmetric contests in the tournament.\n\nModel and market are broadly aligned on Spain's dominance, diverging mainly on Cape Verde's tail risk. The sportsbook adds 3–4 percentage points to the underdog's win probability, a modest but visible difference. The dashboard presents both readings without adjudicating which better reflects true match conditions; the gap is narrow enough that either could reflect market caution or model conservatism."
+}

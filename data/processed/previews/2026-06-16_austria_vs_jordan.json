@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-16_austria_vs_jordan",
+  "home_team": "Austria",
+  "away_team": "Jordan",
+  "date": "2026-06-16",
+  "input_hash": "94972b039d9be3b2f28e0e590f70a510aa9fa2d4",
+  "generated_at": "2026-05-19T13:44:29+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Austria at 41%, a narrow edge over Jordan's 28% win probability. The sportsbooks show much stronger conviction in an Austrian victory, rating it at 71%, nearly 30 percentage points higher than the model's assessment.\n\nThe model's forecast points to a competitive match. The draw probability of 31% is substantial—more likely than either side winning outright—suggesting the teams are close enough in strength that a stalemate ranks among the three most probable outcomes. The gap between Austria's 41% and Jordan's 28% indicates asymmetry, but not dominance; the range of plausible results remains wide.\n\nThe divergence between model and market is striking. Sportsbooks assign Austria more than 70 pp more win probability than the model does, while trimming the draw down to 18%. The model sees a tighter, more open contest; the market is substantially more confident in Austrian superiority. The dashboard offers both estimates without claiming to resolve which better reflects true match conditions."
+}

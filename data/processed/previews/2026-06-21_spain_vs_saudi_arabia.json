@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-21_spain_vs_saudi_arabia",
+  "home_team": "Spain",
+  "away_team": "Saudi Arabia",
+  "date": "2026-06-21",
+  "input_hash": "59669c87bb61072f731f5adcef4f95891d36833b",
+  "generated_at": "2026-05-19T13:45:40+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Spain decisively, assigning a 90% win probability. Saudi Arabia's chance stands at essentially zero in the model's forecast, whereas the underdog carries a 10% draw probability—the only realistic path away from a Spanish victory.\n\nThe outcome distribution reflects a heavily asymmetric matchup. Spain's dominance is so pronounced that the draw represents the second-most-probable result, at one in ten. A Saudi Arabia win falls outside the model's credible range, leaving little competitive uncertainty in the expected shape of play.\n\nThe model and market diverge meaningfully on Spain's win probability: the model puts it at 90%, while sportsbook consensus sits at 84%, a gap of 6 percentage points. The sportsbook assigns Saudi Arabia a 4% chance—materially higher than the model's near-zero forecast—and similarly prices the draw 2 points lower. The dashboard does not arbitrate between these readings, though the differences suggest the market perceives greater upside risk for the underdog than the statistical model does."
+}

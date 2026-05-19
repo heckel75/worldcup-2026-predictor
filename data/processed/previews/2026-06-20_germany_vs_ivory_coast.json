@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-20_germany_vs_ivory_coast",
+  "home_team": "Germany",
+  "away_team": "Ivory Coast",
+  "date": "2026-06-20",
+  "input_hash": "cf2e0da93685d5dfe030ba2507a16d265b11ccf7",
+  "generated_at": "2026-05-19T13:45:17+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Germany at 61%, with Ivory Coast given a 12% chance of victory. This represents a substantial gap: Germany enters as a clear favorite, though the implied margin between the two leaves room for upset probability that reflects genuine match uncertainty at this stage of the tournament.\n\nThe draw probability of 27% sits at the high end of typical knockout-round spreads, suggesting a competitive fixture where a stalemate remains plausible. The win-probability gap between the teams narrows considerably when draws are factored in—both sides carry meaningful chances to avoid defeat. This points toward a match where defensive solidity and set-piece execution may prove decisive.\n\nModel and sportsbook are closely aligned on the Germany win probability, differing by only 0.2 percentage points. The market assigns draw odds about 4 points lower than the model, while correspondingly pricing Ivory Coast roughly 4 points higher. These gaps are modest enough that both sources suggest a similar competitive landscape, though the market leans slightly toward a decisive result and a stronger Ivory Coast case than the model's estimate."
+}

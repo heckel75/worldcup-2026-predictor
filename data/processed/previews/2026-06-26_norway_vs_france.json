@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-26_norway_vs_france",
+  "home_team": "Norway",
+  "away_team": "France",
+  "date": "2026-06-26",
+  "input_hash": "2ebd3985fb78336f288adf7e2104601f23e41856",
+  "generated_at": "2026-05-19T13:47:12+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favours France to win with a 59% probability, leaving Norway with a 15% chance of victory. The remaining likelihood pools into a draw at 27%, suggesting a competitive but asymmetric contest in which the favourite retains a clear edge.\n\nThe spread indicates France should be expected to control the match, though not with overwhelming dominance. A draw emerges as a plausible outcome—nearly as likely as a Norway win—which reflects meaningful uncertainty about which team will break the deadlock. The gap between France's win probability and a draw is modest, hinting the match could easily drift toward stalemate rather than resolve decisively.\n\nNo sportsbook consensus has yet formed for this fixture, so the model's forecast stands without market comparison. The dashboard does not claim to resolve which forecast approach will prove more accurate once prices emerge."
+}

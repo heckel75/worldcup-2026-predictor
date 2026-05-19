@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-27_panama_vs_england",
+  "home_team": "Panama",
+  "away_team": "England",
+  "date": "2026-06-27",
+  "input_hash": "b0e605a5b0e615bd2d45c8f8dcfd5b64ab2c8169",
+  "generated_at": "2026-05-19T13:47:30+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors England at 61%, with Panama assigned a 13% chance of victory. The draw probability of 26% sits between the two outcomes, reflecting meaningful uncertainty despite England's clear baseline advantage.\n\nThe forecast shows England as the stronger side in expected output, yet the 26% draw probability and Panama's double-digit win chance indicate this is not a heavily skewed matchup. A draw ranks as the second-most likely single outcome, suggesting the teams remain competitive enough that separation may require extra time or a settled moment rather than dominance.\n\nNo sportsbook consensus has formed yet for this fixture. Once market odds appear, they will provide a second lens for comparison; the dashboard makes no claim to outforecast commercial bookmakers, only to represent the model's statistical view independently."
+}

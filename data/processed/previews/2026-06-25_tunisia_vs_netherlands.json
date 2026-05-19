@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-25_tunisia_vs_netherlands",
+  "home_team": "Tunisia",
+  "away_team": "Netherlands",
+  "date": "2026-06-25",
+  "input_hash": "2b3553841a054110e5b56d5f4d11abec0a4fdc0e",
+  "generated_at": "2026-05-19T13:46:53+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors the Netherlands with a 69% win probability, leaving Tunisia with a 9% chance of victory. The gap reflects a substantial disparity in forecast strength between the two sides.\n\nA draw emerges as a meaningful outcome at 22% probability, indicating that a stalemate is more than twice as likely as a Tunisian win. The spread across outcomes—Netherlands heavily favored but neither a dominant nor negligible underdog upset—suggests a match with some competitive texture rather than a foregone conclusion, though the Netherlands is the clear expected winner.\n\nNo sportsbook consensus is available yet to compare against the model's assessment."
+}

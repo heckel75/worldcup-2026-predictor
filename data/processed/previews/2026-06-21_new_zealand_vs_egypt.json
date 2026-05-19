@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-21_new_zealand_vs_egypt",
+  "home_team": "New Zealand",
+  "away_team": "Egypt",
+  "date": "2026-06-21",
+  "input_hash": "e2e2bc3946f811a520ca903c0c811124dca43cd6",
+  "generated_at": "2026-05-19T13:45:37+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favours Egypt with a 43% win probability, while New Zealand's chances stand at 26%. The draw emerges as a plausible outcome at 31%, suggesting a competitive but unbalanced contest where the favourite holds a material edge.\n\nThe gap between Egypt's win probability and New Zealand's is substantial, yet the high draw probability indicates the teams are expected to be close enough in execution that a goalless or tied result is nearly as likely as an Egyptian victory. This spread reflects a match with meaningful uncertainty, where neither side is prohibitively favoured.\n\nThe sportsbook consensus diverges notably from the model. Books assign Egypt 55% compared to the model's 43%, a gap of 12 percentage points, and price New Zealand lower at 19% versus 26%. The draw shrinks to 26% in the market consensus. This divergence is meaningful; the dashboard does not adjudicate which source is more accurate."
+}

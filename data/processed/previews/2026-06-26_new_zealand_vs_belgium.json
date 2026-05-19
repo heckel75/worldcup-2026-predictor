@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-26_new_zealand_vs_belgium",
+  "home_team": "New Zealand",
+  "away_team": "Belgium",
+  "date": "2026-06-26",
+  "input_hash": "744bb72483bd98a99caa73bf91d345d5b7477535",
+  "generated_at": "2026-05-19T13:46:59+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "Belgium emerges as the model's clear favorite, assigned a 57% chance of victory. New Zealand carries a 16% win probability, leaving the teams roughly 41 percentage points apart in the model's assessment.\n\nThe draw carries meaningful probability at 27%, suggesting a competitive match rather than a one-sided affair. Belgium's advantage is substantial but not overwhelming; the model does not project a heavily favored outcome in either regular-time direction. A close, low-scoring contest remains plausible within the forecast range.\n\nNo sportsbook consensus is available yet. The dashboard will update market alignment once betting lines emerge."
+}

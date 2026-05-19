@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-27_jordan_vs_argentina",
+  "home_team": "Jordan",
+  "away_team": "Argentina",
+  "date": "2026-06-27",
+  "input_hash": "b9ada314331ff6fd66817765eec29548c6afc3cd",
+  "generated_at": "2026-05-19T13:47:21+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Argentina heavily, assigning them a 78% win probability. Jordan's chances are modest at 5%, reflecting a substantial gap in the forecast.\n\nThe spread reflects a pronounced asymmetry. Argentina's draw probability sits at 18%, suggesting the model sees a competitive gap large enough that a stalemate is plausible but Argentina is far more likely to secure three points outright. Jordan's low win rate indicates the model does not expect an upset.\n\nNo sportsbook consensus is available yet, so direct comparison between the model and market pricing is not possible at this stage."
+}

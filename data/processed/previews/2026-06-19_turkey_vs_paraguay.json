@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-19_turkey_vs_paraguay",
+  "home_team": "Turkey",
+  "away_team": "Paraguay",
+  "date": "2026-06-19",
+  "input_hash": "647d2a4bfa72f56da0026c0b0704bfaf1df29fa9",
+  "generated_at": "2026-05-19T13:45:13+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Turkey as the favorite with a 48% win probability, substantially ahead of Paraguay's 21% chance. Turkey holds a clear edge in the underlying forecast, though the gap is not insurmountable given the neutral venue and the statistical noise inherent in match prediction.\n\nThe draw carries meaningful weight at 30%, indicating a genuinely competitive fixture where neither side is heavily favored to break through. The spread across outcomes—near parity between a Turkey win and a stalemate, with Paraguay's upset probability trailing notably—suggests a match likely to be closely contested but tilted toward the stronger-rated side.\n\nThe model and sportsbook consensus align on the draw at 30%, but diverge on the decisive outcomes: the model gives Turkey 48% to win versus the market's 42%, a gap of 6 percentage points. Conversely, the market assigns Paraguay 28% compared to the model's 21%. The dashboard does not claim certainty about which assessment is correct; this represents a genuine disagreement between the two sources on the relative strength of the underdog."
+}

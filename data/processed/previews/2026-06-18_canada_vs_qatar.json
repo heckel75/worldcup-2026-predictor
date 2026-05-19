@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-18_canada_vs_qatar",
+  "home_team": "Canada",
+  "away_team": "Qatar",
+  "date": "2026-06-18",
+  "input_hash": "818e00272cd30e519ce29cbe574f60f7fdab46e5",
+  "generated_at": "2026-05-19T13:44:58+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Canada at 80%, assigning Qatar only a 2% chance of victory. This represents a heavily asymmetric matchup in the model's view, with the underdog facing a steep margin.\n\nThe win-draw-loss spread reflects a lopsided contest. Canada's dominance in the model's frame leaves meaningful probability for a draw at 18%, but Qatar's win probability is marginal. The fixture is unlikely to be closely competitive according to these figures; a Canada victory or stalemate far outweigh a Qatar upset.\n\nThe model and sportsbook consensus diverge substantially. Books price Canada's win at 61%, some 19 percentage points lower than the model, and assign Qatar 15 times the model's win probability. The market perceives significantly more competitive balance than the statistical forecast. The dashboard does not adjudicate between these sources, but the gap warrants attention from users comparing methodologies."
+}

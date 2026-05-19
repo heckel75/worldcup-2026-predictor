@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-20_netherlands_vs_sweden",
+  "home_team": "Netherlands",
+  "away_team": "Sweden",
+  "date": "2026-06-20",
+  "input_hash": "85ffd55a3a07f5af7751a3eba6135fefc9c18886",
+  "generated_at": "2026-05-19T13:45:25+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors the Netherlands at 68% to win, with Sweden's chances at 8%—a gap reflecting a clear differential in strength according to the statistical forecast. Sweden's path to victory is narrow but not impossible; it sits roughly one-eighth of the model's assessment of a Dutch win.\n\nThe expected distribution suggests competitive balance in the near term, with draws plausible at 24%. However, the spread between Netherlands and Sweden is pronounced enough that the match leans toward a decisive outcome. The model implies the Dutch are likely to control play and create more decisive moments, though a single goal could shift the narrative considerably.\n\nThe model and sportsbook consensus diverge meaningfully on Sweden's chances. Books assign Sweden 19% to win—more than double the model's 8%—while the Dutch rate drops from 68% to 56% in the market. Both sources broadly agree a draw sits near one-quarter probability. The dashboard does not adjudicate which view is more accurate; the 11-point gap on the underdog reflects genuine disagreement between the two approaches."
+}

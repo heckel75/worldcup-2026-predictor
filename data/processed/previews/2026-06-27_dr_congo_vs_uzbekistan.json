@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-27_dr_congo_vs_uzbekistan",
+  "home_team": "DR Congo",
+  "away_team": "Uzbekistan",
+  "date": "2026-06-27",
+  "input_hash": "cee4750b77c677be2dbdba0eb2353a6e11bc4656",
+  "generated_at": "2026-05-19T13:47:27+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "Uzbekistan emerges as the model's favored outcome, assigned a 49% win probability. DR Congo holds a 22% chance of victory, placing them as the clear underdog in this neutral-venue encounter.\n\nThe draw probability of 30% reflects a moderately competitive match. The gap between Uzbekistan's win likelihood and a draw is modest, suggesting the contest carries genuine uncertainty in the final result. DR Congo's win probability trails both other outcomes noticeably, yet remains plausible rather than negligible.\n\nNo sportsbook consensus is available at this stage. The dashboard forecast stands alone pending market data; future updates will permit direct comparison between the model and bookmaker assessments."
+}

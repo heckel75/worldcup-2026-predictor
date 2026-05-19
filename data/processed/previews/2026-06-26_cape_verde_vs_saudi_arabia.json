@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-26_cape_verde_vs_saudi_arabia",
+  "home_team": "Cape Verde",
+  "away_team": "Saudi Arabia",
+  "date": "2026-06-26",
+  "input_hash": "15074d1edefffb84c53845af424a220a8c6963c3",
+  "generated_at": "2026-05-19T13:47:02+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Saudi Arabia with a 38.5% win probability, while Cape Verde has a 30% chance to win. The underdog carries meaningful upset potential, with less than 8 percentage points separating the two outright outcomes.\n\nThe forecast reflects a closely matched contest. A draw holds the highest single probability at 31%, suggesting the teams are evenly balanced enough that neither pulling ahead is the likeliest scenario. The three outcomes cluster within a narrow band, indicating genuine competitive uncertainty rather than a heavily skewed matchup.\n\nNo sportsbook consensus is available yet. Once betting lines emerge, the dashboard will compare market odds to the model's probabilities to identify any meaningful divergence between the two estimates."
+}

@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-24_canada_vs_switzerland",
+  "home_team": "Canada",
+  "away_team": "Switzerland",
+  "date": "2026-06-24",
+  "input_hash": "d013a5d2fb37b6efa12117db9ecea5fe3c0b125c",
+  "generated_at": "2026-05-19T13:46:23+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Switzerland with a 36.3% win probability, making them the slight favorite, while Canada carries a 32.2% chance of victory. The underdog designation is marginal; Switzerland's edge amounts to just 4 percentage points, suggesting a closely matched pairing.\n\nThe draw lands at 31.5%, occupying meaningful ground in the outcome distribution. No single result dominates; the three-way spread is relatively even, with all outcomes within 5 percentage points of one another. This points to a competitive match where either team could plausibly advance, and a stalemate remains a realistic possibility.\n\nNo sportsbook consensus is available at this stage. Once market odds emerge on major books, comparison with the model's 36–32–32 split will clarify whether professional bettors align with the statistical forecast or price one side differently."
+}

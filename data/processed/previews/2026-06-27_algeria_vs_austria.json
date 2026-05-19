@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-27_algeria_vs_austria",
+  "home_team": "Algeria",
+  "away_team": "Austria",
+  "date": "2026-06-27",
+  "input_hash": "72390bab2368deb34ff22a66cfd261d4a170b614",
+  "generated_at": "2026-05-19T13:47:18+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Algeria at 35%, a narrow lead over Austria's 33% win probability. The underdog advantage is modest; the two sides sit within 2 percentage points of each other in the forecast, suggesting a tightly matched encounter.\n\nThe 31.6% draw probability indicates a genuine three-way contest. The spread across outcomes is flat enough that no single result dominates; all three scenarios carry meaningful likelihood. This competitive structure points to a match where either team's performance could tip the balance, without clear separation in expected quality.\n\nNo sportsbook consensus is available yet, so direct model-market comparison cannot be made at this stage. The dashboard will update when bookmaker odds emerge."
+}

@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-25_ecuador_vs_germany",
+  "home_team": "Ecuador",
+  "away_team": "Germany",
+  "date": "2026-06-25",
+  "input_hash": "9239a85bee8c7e1115ec4dba157fcf9babb0494e",
+  "generated_at": "2026-05-19T13:46:47+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Germany as slight favorite with a 35% win probability, leaving Ecuador at 33.5%—a separation of just 1.5 percentage points. This is a closely matched contest in the model's assessment, with the underdog positioned nearly level with the projected stronger side.\n\nThe draw outcome carries meaningful weight at 32%, suggesting the match is likely to be competitive and tactically constrained. The narrow spread across all three outcomes (win probabilities clustered in the low-to-mid 30s) indicates minimal predictive separation; either team's victory remains plausible, and a stalemate represents a genuine possibility rather than a tail event.\n\nNo sportsbook consensus is available yet, so a model-market comparison cannot be made at this stage. The dashboard will update that contrast once bookmaker pricing materializes."
+}

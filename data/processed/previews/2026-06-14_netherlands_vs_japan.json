@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-14_netherlands_vs_japan",
+  "home_team": "Netherlands",
+  "away_team": "Japan",
+  "date": "2026-06-14",
+  "input_hash": "cf6a033fb3ef0a944c8922fd840862d9ebae7795",
+  "generated_at": "2026-05-19T13:43:56+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Netherlands as a slight favorite at 36% to win, but the margin over Japan (33%) is narrow. A draw registers at 32%, making this a genuinely competitive three-way contest where no outcome dominates the probability landscape.\n\nThe spread across win, draw, and loss outcomes is relatively flat, indicating the model sees this as evenly matched. Netherlands holds a modest edge, yet Japan's win probability sits just 2 percentage points below the favorite, and the draw probability rivals both outright outcomes. The match is likely to be competitive and could plausibly finish level.\n\nThe sportsbook consensus diverges noticeably from the model. Books assign Netherlands 47% to win—an 11 percentage-point premium over the model's estimate—while compressing Japan's chances to 27%, some 6 points below the model. The draw drops to 26% in the market view. This suggests sportsbooks lean more heavily toward a Netherlands victory than the statistical forecast supports. The dashboard makes no claim about which assessment is correct."
+}

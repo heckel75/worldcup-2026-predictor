@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-11_mexico_vs_south_africa",
+  "home_team": "Mexico",
+  "away_team": "South Africa",
+  "date": "2026-06-11",
+  "input_hash": "92bbf3e173053a6f68047bb5ce8cf773f9b50140",
+  "generated_at": "2026-05-19T13:43:15+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Mexico at 76%, assigning South Africa just 4% odds of victory. Mexico enters as a strong favorite, though the model accords the underdog a modest but non-negligible chance and rates a draw as plausible at 20%.\n\nThe win-loss spread reveals an asymmetric match. Mexico's forecast win probability substantially exceeds the draw rate, suggesting the model expects Mexico to control play and press for three points rather than settle for a point. South Africa's 4% win probability reflects limited pathways to victory under the model's assessment. A draw remains a secondary outcome, roughly one-in-five, rather than a tightly contested toss-up.\n\nThe model and market diverge meaningfully on South Africa's prospects. Sportsbooks assign South Africa 14% odds—roughly three times the model's 4% estimate. Conversely, the market credits Mexico with 63% versus the model's 76%, a gap of 13 percentage points. Both sources agree Mexico is favored and a draw is secondary, but the market sees substantially more volatility and upset potential than the model does. The dashboard makes no claim about which assessment is correct."
+}

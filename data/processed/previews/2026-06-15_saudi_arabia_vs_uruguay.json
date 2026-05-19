@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-15_saudi_arabia_vs_uruguay",
+  "home_team": "Saudi Arabia",
+  "away_team": "Uruguay",
+  "date": "2026-06-15",
+  "input_hash": "a312174fa942da367d05becce94a21a299d3bedd",
+  "generated_at": "2026-05-19T13:44:14+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Uruguay as a heavy favourite with a 67% win probability, leaving Saudi Arabia just 10% chance of victory. The gap between the two reflects a substantial disparity in the forecast, though the underdog retains a small but non-negligible path to an upset.\n\nA draw sits at 23% under the model, suggesting the match carries competitive texture despite Uruguay's edge. The 24-point gap between Uruguay's win probability and Saudi Arabia's reflects a lopsided matchup, yet the draw probability indicates the contest is unlikely to be a rout; margins could remain tight for stretches.\n\nThe model and sportsbook consensus align closely across all three outcomes, with gaps of 5 percentage points or smaller. Uruguay's advantage narrows marginally in the market (63% vs 67%), while Saudi Arabia's chances widen slightly (15% vs 10%). Polymarket data for this fixture is not yet available."
+}

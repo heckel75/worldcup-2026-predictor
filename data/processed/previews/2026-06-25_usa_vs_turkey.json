@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-25_usa_vs_turkey",
+  "home_team": "USA",
+  "away_team": "Turkey",
+  "date": "2026-06-25",
+  "input_hash": "6b138351ef338a5cd29805615e5e1a2a1a91b008",
+  "generated_at": "2026-05-19T13:46:36+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "Turkey enters as the model's favorite with a 46% win probability, compared to USA's 24% chance of victory. The gap of roughly 22 percentage points reflects a material advantage for Turkey in the statistical forecast.\n\nThe draw outcome carries meaningful weight at 30%, suggesting this match is unlikely to be settled decisively. The spread across all three outcomes—win for Turkey, draw, and USA victory—indicates a competitive fixture where a stalemate remains a plausible result, even as Turkey holds the edge.\n\nNo sportsbook consensus is available yet, so direct comparison between model and market is not possible at this stage. The dashboard will update as odds emerge closer to the fixture date."
+}

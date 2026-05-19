@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-16_iraq_vs_norway",
+  "home_team": "Iraq",
+  "away_team": "Norway",
+  "date": "2026-06-16",
+  "input_hash": "3d3c42a12f8e438db311e4161aec303cb1d49a51",
+  "generated_at": "2026-05-19T13:44:21+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Norway at 64% to win, with Iraq's chances assessed at 12%. The underdog faces a steep task, though the model assigns a meaningful draw probability of 25%, suggesting the match will not necessarily be a runaway.\n\nThe win-loss spread is wide, reflecting a clear gap in expected quality. Norway's advantage is substantial, but the 25% draw rate indicates the contest carries enough variance that neither side winning outright is the dominant outcome. A Norway victory remains most likely, yet Iraq retains paths to avoid defeat.\n\nThe market is notably more bullish on Norway, pricing the favorite at 75% compared to the model's 64%—a gap of 11 percentage points. The market also compresses the draw to 16%, eight points below the model estimate. This divergence suggests the sportsbooks view Norway's edge as wider and the match as less competitive. The dashboard does not adjudicate between these forecasts."
+}

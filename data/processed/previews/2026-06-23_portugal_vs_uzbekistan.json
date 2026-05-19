@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-23_portugal_vs_uzbekistan",
+  "home_team": "Portugal",
+  "away_team": "Uzbekistan",
+  "date": "2026-06-23",
+  "input_hash": "262cb40ef808019236e739462631c77f65f9dc06",
+  "generated_at": "2026-05-19T13:46:03+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Portugal at 62% to win, with Uzbekistan's chances of an upset standing at 11%. The gap reflects a clear hierarchy, though not an overwhelming one — Portugal remains vulnerable to a result other than victory.\n\nThe draw emerges as the second-likeliest outcome at 26%, suggesting the match has genuine competitive texture. A one-goal margin appears plausible across all three outcomes, indicating neither team is forecast to dominate possession or create a runaway scenario. The spread widens from draw to Uzbekistan win, implying Portugal's advantage is material but not dominant.\n\nThe sportsbook consensus shifts the needle sharply toward Portugal, elevating their win probability to 78% while compressing the draw to 15% and Uzbekistan to 7%. This represents a gap of roughly 16 percentage points in Portugal's favor and 11 points against the draw compared to the model. The divergence suggests the market is more confident in a Portuguese victory than the statistical forecast. No Polymarket consensus is available yet."
+}

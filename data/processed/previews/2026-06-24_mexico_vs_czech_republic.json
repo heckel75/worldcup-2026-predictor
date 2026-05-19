@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-24_mexico_vs_czech_republic",
+  "home_team": "Mexico",
+  "away_team": "Czech Republic",
+  "date": "2026-06-24",
+  "input_hash": "e736434931c0bb290d7c6f58ac4de08213a2775c",
+  "generated_at": "2026-05-19T13:46:16+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "Mexico enters as the model's clear favorite, projected to win at 62%, while Czech Republic holds an 11% chance of victory. The substantial gap reflects a marked asymmetry in the statistical outlook between the two sides.\n\nThe draw carries meaningful weight at 26%, indicating a plausible outcome despite Mexico's advantage. The win probabilities do not overlap heavily, suggesting the model sees Mexico as the likely victor, but the one-in-four draw probability signals that a stalemate remains a competitive possibility rather than a remote scenario.\n\nNo sportsbook consensus is available yet, so direct comparison between model and market cannot be made at this stage."
+}

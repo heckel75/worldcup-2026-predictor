@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-13_qatar_vs_switzerland",
+  "home_team": "Qatar",
+  "away_team": "Switzerland",
+  "date": "2026-06-13",
+  "input_hash": "2461188b99b94a4a405fc7c7e25bec589cd7811c",
+  "generated_at": "2026-05-19T13:43:29+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model backs Switzerland at 79%, assigning Qatar only a 4% chance of victory. The underdog faces a steep task in a matchup where the favorite is heavily favored by the statistical forecast.\n\nThe 79–17–4 split suggests Switzerland is expected to control the match decisively. A draw at 17% remains plausible but carries limited weight; the dominant probability lies with a Swiss win, indicating limited competitiveness in the model's baseline scenario.\n\nThe model and market are substantially aligned on a Switzerland victory, differing by roughly 6 percentage points. Both assign similar draw probability. The sportsbooks credit Qatar with nearly 2.5 times the model's win probability, a meaningful gap that reflects divergent assessments of Qatar's attacking or defensive capacity. The dashboard does not adjudicate between these views."
+}

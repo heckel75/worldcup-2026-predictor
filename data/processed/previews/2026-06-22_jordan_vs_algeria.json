@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-22_jordan_vs_algeria",
+  "home_team": "Jordan",
+  "away_team": "Algeria",
+  "date": "2026-06-22",
+  "input_hash": "bdbbc0c0e44881ea29443ba2ad7d4804a7bd2d8e",
+  "generated_at": "2026-05-19T13:45:59+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Algeria as the favorite with a 38% win probability, while Jordan sits at 30%. The gap is modest—roughly 8 percentage points separate the two outright outcomes, suggesting a competitive encounter rather than a heavily lopsided affair.\n\nThe draw carries near-parity with the Jordan win probability at 31%, occupying the second-largest outcome bucket. No single result commands a commanding majority in the model's forecast; all three outcomes fall within a 8pp band. This distribution points to a match where tactical setup, execution, and fine margins will likely determine the winner, with a stalemate a genuine possibility.\n\nThe market diverges notably from the model on Algeria, assigning them 54% compared to the model's 38%—a gap of 16 percentage points. The market also depresses both Jordan's win odds and the draw likelihood. The dashboard does not adjudicate between these sources; the divergence flags that market participants and the statistical model weight the matchup differently."
+}

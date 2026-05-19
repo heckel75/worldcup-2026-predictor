@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-23_colombia_vs_dr_congo",
+  "home_team": "Colombia",
+  "away_team": "DR Congo",
+  "date": "2026-06-23",
+  "input_hash": "2f310d1fefabf4207e91228af7252a3539961071",
+  "generated_at": "2026-05-19T13:46:07+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Colombia decisively, assigning a 74% win probability against a 5% chance for DR Congo. This represents a substantial gap: Colombia is rated as a much stronger team in the statistical forecast. DR Congo's underdog position leaves limited room for an upset outcome.\n\nThe expected match profile shows Colombia as clear favorites, yet a draw emerges as a meaningful possibility at 21%. The win-loss gap is wide enough to suggest Colombia should control much of the contest, but the 21-point probability for a stalemate indicates the fixture is not a foregone conclusion and competitive pressure could keep the result close.\n\nThe model and sportsbook consensus diverge noticeably. Books assign Colombia 63% to win—roughly 11 percentage points lower than the model—while rating DR Congo's chances at 14%, nearly triple the model's 5% estimate. The model sees this as a more lopsided matchup than the market does. The dashboard does not adjudicate between these forecasts; both reflect legitimate interpretations of the available data."
+}

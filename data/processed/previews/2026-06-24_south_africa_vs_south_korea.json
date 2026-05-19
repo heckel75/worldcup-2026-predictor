@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-24_south_africa_vs_south_korea",
+  "home_team": "South Africa",
+  "away_team": "South Korea",
+  "date": "2026-06-24",
+  "input_hash": "b3f3457dd3021797feb51f41d22a0fd1bdaa4d51",
+  "generated_at": "2026-05-19T13:46:19+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors South Korea with a 62% win probability, positioning them as clear favorites. South Africa faces a steeper path, carrying only a 13% chance of victory in this neutral-venue matchup.\n\nThe 49-percentage-point gap between the favorites' win probability and the underdog's reflects a notably asymmetric contest. A draw emerges as plausible at 25%, suggesting the match could prove competitive enough to avoid a decisive result, though South Korea's advantage in the model's baseline assessment is substantial.\n\nNo sportsbook consensus is available yet, so direct comparison between model and market expectations cannot be made at this time."
+}

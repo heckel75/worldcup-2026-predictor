@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-16_france_vs_senegal",
+  "home_team": "France",
+  "away_team": "Senegal",
+  "date": "2026-06-16",
+  "input_hash": "253d5860239efce82e219e2aff361c04c450af32",
+  "generated_at": "2026-05-19T13:44:17+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favours France with a 65% win probability, leaving Senegal a modest 10% chance to upset on a neutral ground. France enters as the clear favourite, though the margin is not overwhelming; Senegal's path to victory, while unlikely, remains statistically meaningful.\n\nThe expected outcome centres on a France win, but the 25% draw probability signals genuine competitive scope. A stalemate or a Senegal victory would not constitute a surprise result by forecast standards. The match sits in the moderately decisive zone—France is favoured but the contest is not heavily skewed toward a runaway home side effect or a mismatch in quality.\n\nThe model and sportsbook consensus align closely on all three outcomes, with gaps under 5 percentage points. Both sources rank France as a clear but not overwhelming favourite. The minor divergence reflects standard industry variance rather than a meaningful disagreement. Polymarket has not yet posted a per-match contract for this fixture."
+}

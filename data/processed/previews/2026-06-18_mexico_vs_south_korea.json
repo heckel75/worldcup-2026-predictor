@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-18_mexico_vs_south_korea",
+  "home_team": "Mexico",
+  "away_team": "South Korea",
+  "date": "2026-06-18",
+  "input_hash": "915c7afd9890bd01cf11838f8dcacaaa8c80e8f7",
+  "generated_at": "2026-05-19T13:44:51+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Mexico as the favorite with a 49% win probability, compared to South Korea's 21% chance. Mexico edges the consensus expectation, though by a modest margin that reflects meaningful uncertainty around the outcome.\n\nThe 30% draw probability indicates a competitive fixture where neither team is heavily favored to win in regular time. The spread between Mexico's win chances and South Korea's is material—roughly 28 percentage points—but the substantial draw likelihood suggests the match could be tightly contested. A stalemate remains a plausible result.\n\nModel and sportsbook are closely aligned across all three outcomes, with gaps under 2 percentage points on each line. Both sources converge on Mexico as the slight favorite in a match where the underdog retains genuine winning chances and a draw is far from negligible. No Polymarket consensus has yet formed for this match."
+}

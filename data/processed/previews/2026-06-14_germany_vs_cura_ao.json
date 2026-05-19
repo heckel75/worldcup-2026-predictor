@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-14_germany_vs_cura_ao",
+  "home_team": "Germany",
+  "away_team": "Curaçao",
+  "date": "2026-06-14",
+  "input_hash": "780cff60c806c60d16961085fee4fc1f27759b6c",
+  "generated_at": "2026-05-19T13:43:44+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favours Germany at 83%, with Curaçao given a 1% chance of victory. The underdog's implied path to a positive result rests almost entirely on a draw, which the model rates at 16%.\n\nThe spread reflects a heavily asymmetric matchup. Germany's win probability is substantially higher than the combined alternatives, yet the model does not compress the draw outcome to negligible levels. A Curaçao upset is classified as remote; the competitive frame is whether Germany controls the match decisively or allows extended resistance through a stalemate.\n\nThe sportsbook consensus and model diverge meaningfully. Bookmakers assign Germany a 92% win probability—roughly 9 percentage points higher—and shrink the draw to 6%, nearly a third of the model's estimate. Both sources agree on the direction and broad magnitude of Germany's advantage, but the market is materially more confident in a decisive outcome. No Polymarket data is available yet."
+}

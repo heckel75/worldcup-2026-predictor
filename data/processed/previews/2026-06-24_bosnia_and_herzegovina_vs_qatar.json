@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-24_bosnia_and_herzegovina_vs_qatar",
+  "home_team": "Bosnia and Herzegovina",
+  "away_team": "Qatar",
+  "date": "2026-06-24",
+  "input_hash": "8624edb0508dd0d7e70e31d68254771d2dba9e41",
+  "generated_at": "2026-05-19T13:46:25+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Bosnia and Herzegovina with a 44.8% win probability, giving them a modest edge over Qatar's 24.3% chance. The gap between the two sides is meaningful but not dominant, leaving room for either team to advance from this matchup.\n\nThe 30.9% draw probability indicates a reasonably competitive contest. The spread across outcomes is moderately wide—Bosnia and Herzegovina's advantage is present but constrained, and a stalemate ranks as a plausible result. This suggests a match where the underdog retains genuine hope rather than facing overwhelming pressure.\n\nNo sportsbook consensus has yet formed for this fixture. The dashboard presents the model's assessment in isolation; once betting markets develop, comparison may reveal whether bookmakers assign materially different probabilities to either side."
+}

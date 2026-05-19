@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-19_scotland_vs_morocco",
+  "home_team": "Scotland",
+  "away_team": "Morocco",
+  "date": "2026-06-19",
+  "input_hash": "f7b9e84195bbea33d61e22cd697c48c56b91e5e1",
+  "generated_at": "2026-05-19T13:45:01+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model backs Morocco as the clear favorite, assigning them a 63% win probability, while Scotland's chances sit at 12%. The gap reflects a substantial disparity in the model's view of the matchup.\n\nThe draw emerges as a plausible outcome at 25%, yet Morocco's advantage is pronounced. Scotland's path to victory is narrow; the model expects Morocco to control the game in a likely lopsided contest rather than a tightly contested affair.\n\nThe model and sportsbooks diverge meaningfully here. Books award Scotland nearly double the model's win probability and give the draw a higher chance, while trimming Morocco's win probability to 45%. This 18-percentage-point gap on Morocco's outcome is material. The dashboard does not adjudicate between these views, but the divergence flags a notable disagreement over Scotland's competitive standing in this fixture."
+}

@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-20_ecuador_vs_cura_ao",
+  "home_team": "Ecuador",
+  "away_team": "Curaçao",
+  "date": "2026-06-20",
+  "input_hash": "77fd99f80f5928c30aa0e0f6897e44f93a4e2aae",
+  "generated_at": "2026-05-19T13:45:21+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Ecuador with an 82% win probability, leaving Curaçao with only a 2% chance of victory. The gap reflects a substantial expected difference in strength between the two sides, though the model's assessment is more pessimistic about Curaçao's prospects than the sportsbook consensus.\n\nThe forecast centers on an Ecuador win but assigns meaningful probability to a draw at 17%. The model's win-loss split (82–2) is much tighter at the top than at the bottom, indicating Ecuador enters as clear favorite without the match appearing predetermined. A draw remains plausible enough to shape tactical consideration but does not represent the modal outcome.\n\nThe model and market align on the broad picture: Ecuador is substantially favored, and a draw sits in the mid-teens. However, they diverge notably on Curaçao's tail probability. The model assigns 2%, while the sportsbook consensus is 7.5%—a gap of roughly 5 percentage points. The dashboard does not claim certainty about which view is correct; the discrepancy may reflect differences in how each source evaluates lower-probability scenarios."
+}

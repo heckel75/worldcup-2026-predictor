@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-27_croatia_vs_ghana",
+  "home_team": "Croatia",
+  "away_team": "Ghana",
+  "date": "2026-06-27",
+  "input_hash": "025fa3c78885b8c1bb437484efaf714013bfb2c3",
+  "generated_at": "2026-05-19T13:47:33+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model gives Croatia a strong favorite status at 81% win probability, leaving Ghana only a 2% chance of victory. The differential reflects a substantial gap in the statistical forecast between the two sides on this neutral ground.\n\nThe spread across outcomes shows Croatia commanding the match shape. A draw at 17% remains plausible but is considerably less likely than a Croatian win. Ghana's underdog position is severe; the model sees this as a highly asymmetric contest rather than a competitive encounter.\n\nNo sportsbook consensus is available yet, so no comparison between model and market can be made at this stage."
+}

@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-17_portugal_vs_dr_congo",
+  "home_team": "Portugal",
+  "away_team": "DR Congo",
+  "date": "2026-06-17",
+  "input_hash": "f82959a7deaaacb6a04b737e7b5ee05cfca40a7d",
+  "generated_at": "2026-05-19T13:44:32+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favours Portugal at 76% to win, with DR Congo offered only a 4% chance of victory. The underdog faces a decisive deficit in the forecast, though the 20% draw probability signals meaningful uncertainty in the match outcome.\n\nThe win-draw-loss spread reflects a heavily tilted contest. Portugal's dominance across the model's range leaves little room for a DR Congo upset, yet the one-in-five draw chance indicates the match is not modeled as a rout. Competitive resilience from the underdog, even in defeat, appears plausible within the statistical framework.\n\nThe model and sportsbook consensus align closely on Portugal's win probability, diverging by only 1 percentage point. The market assigns DR Congo 9% compared to the model's 4%, a gap of 5 percentage points, while backing the draw more modestly at 17% versus 20%. These differences lie within typical variance between statistical and betting-market views; the dashboard does not adjudicate between them."
+}

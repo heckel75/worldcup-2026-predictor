@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-24_scotland_vs_brazil",
+  "home_team": "Scotland",
+  "away_team": "Brazil",
+  "date": "2026-06-24",
+  "input_hash": "ea8020ac07219af33c01658449b67f43b41eb8fc",
+  "generated_at": "2026-05-19T13:46:29+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "Brazil enters as a strong favorite with a 64% modeled probability of victory, leaving Scotland with an 11% chance to win on a neutral ground. The underdog's path to three points is narrow, though not without theoretical possibility.\n\nThe draw emerges as a credible outcome at 24%, making this a genuinely three-way contest rather than a binary affair. Scotland's 11% win probability sits meaningfully below both the draw likelihood and Brazil's dominance, suggesting the model expects Scotland to be competitive in limiting goals but unlikely to convert pressure into a result.\n\nThe model and sportsbook consensus align closely across all three outcomes, with gaps of 1–2 percentage points. Brazil's edge widens slightly in the market to 68%, while the draw compresses to 20%, but these shifts fall within typical variance. No meaningful divergence exists between the two sources."
+}

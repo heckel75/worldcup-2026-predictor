@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-27_colombia_vs_portugal",
+  "home_team": "Colombia",
+  "away_team": "Portugal",
+  "date": "2026-06-27",
+  "input_hash": "01f0a26005adffdf7056c5996fd80f718d3eceff",
+  "generated_at": "2026-05-19T13:47:24+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Portugal a slight favorite at 35%, with Colombia trailing at 33%. The gap between them is narrow—roughly 2 percentage points—suggesting a closely matched contest. Portugal's edge in the forecast reflects a marginal statistical advantage, but Colombia's win probability remains substantial.\n\nThe spread across outcomes reveals a competitive match. A draw registers at 32%, making it nearly as likely as either team's individual victory. The three outcomes are bunched together, indicating genuine uncertainty about how the fixture will unfold. Neither side commands a commanding lead in the model's assessment.\n\nThe sportsbook consensus diverges from the model on Portugal. The market prices Portugal at 43%, a gap of roughly 8 percentage points higher than the model's 35%. Bookmakers see Colombia at 28% and a draw at 29%, both slightly lower than the statistical forecast. The model and market agree the match is close, but the books lean more decisively toward Portugal."
+}

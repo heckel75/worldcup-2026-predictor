@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-21_belgium_vs_iran",
+  "home_team": "Belgium",
+  "away_team": "Iran",
+  "date": "2026-06-21",
+  "input_hash": "60a6141ee0b54a87b77dfd677352a2841390ed13",
+  "generated_at": "2026-05-19T13:45:33+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model's forecast treats this as a close contest, with Belgium favored at 35% but only marginally ahead of Iran at 33%. The gap between the two is narrow enough to suggest genuine competitive uncertainty. Belgium's win probability exceeds Iran's by just 2 percentage points, placing neither team in decisive favorite territory.\n\nThe draw sits at 32%, a substantial slice of the probability space that points to a relatively balanced matchup. Neither team commands the model's confidence decisively; the three outcomes are distributed fairly evenly across the range. This suggests a competitive fixture where stalemate is a realistic outcome and either team carries meaningful chances to win within normal time.\n\nThe sportsbook consensus diverges sharply from the model. Books assign Belgium 67% to win—a gap of 31 percentage points above the model's 35%—while compressing Iran to just 12%. The market views this as a clear Belgium advantage; the model sees it as nearly even. Draw probability widens this gap further: the model gives 32%, books only 21%. The dashboard presents both views without claiming superiority for either source."
+}

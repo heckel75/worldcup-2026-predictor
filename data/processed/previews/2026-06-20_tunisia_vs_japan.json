@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-20_tunisia_vs_japan",
+  "home_team": "Tunisia",
+  "away_team": "Japan",
+  "date": "2026-06-20",
+  "input_hash": "7b6bdc97712daf8ba3940860663bab8460f01ddb",
+  "generated_at": "2026-05-19T13:45:29+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Japan with a 69% win probability, substantially ahead of Tunisia's 9% chance. This gap reflects a decisive asymmetry in the forecast, though the 22% draw probability suggests the match carries meaningful uncertainty despite the clear favorite.\n\nThe outcome distribution shows Japan as the likely winner, but the draw sits at nearly one-quarter of all outcomes, indicating competitive conditions are plausible. Tunisia's path to victory is narrow in the model's view, yet the combined non-Japan probability (31%) is not negligible, meaning upsets or stalemates remain within the realm of statistical possibility.\n\nThe model and sportsbook consensus diverge materially across all three outcomes. The market assigns Tunisia 20.6% (12 percentage points higher than the model), draw 28.3% (6pp higher), and Japan 51.1% (18pp lower). The gap suggests the books view this as a more open contest. The dashboard does not claim to know which assessment is correct; this divergence warrants attention from users calibrating their own views."
+}

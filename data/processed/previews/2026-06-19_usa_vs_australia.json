@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-19_usa_vs_australia",
+  "home_team": "USA",
+  "away_team": "Australia",
+  "date": "2026-06-19",
+  "input_hash": "a11d79893398927ad5dfda138b5b0526545a6c0a",
+  "generated_at": "2026-05-19T13:45:10+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Australia as the clear favorite at 46%, while the sportsbook consensus strongly backs the USA at 55%. This divergence is substantial. The model assigns the USA only a 24% win probability, roughly half the market's assessment.\n\nThe model's distribution leans toward a competitive match with meaningful draw probability. A draw is expected to occur in roughly 30% of simulations, indicating neither side commands dominance. Australia's 46% win rate and the USA's 24% suggest the model sees a meaningful gap, though draws compress the outcome space considerably.\n\nThe model and market diverge markedly—roughly 31 percentage points separate their USA win estimates. The dashboard does not claim to resolve which interpretation is correct. Polymarket data for this fixture has not yet been posted. The disagreement is material enough that backers of either side should note the split before assessing value."
+}

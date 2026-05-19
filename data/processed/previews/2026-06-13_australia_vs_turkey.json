@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-13_australia_vs_turkey",
+  "home_team": "Australia",
+  "away_team": "Turkey",
+  "date": "2026-06-13",
+  "input_hash": "7c08ee899edb6248e5c88858b74ae5cc30009d78",
+  "generated_at": "2026-05-19T13:43:40+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favours Australia at 35%, with Turkey at 33% and a draw at 32%. The forecast treats this as a competitive three-way contest, with the favourite's edge narrow enough that the underdog holds a plausible path to victory.\n\nThe W/D/L spread reflects genuine uncertainty. Australia's slight lead over Turkey sits within a tight band, and the draw probability—nearly a third—suggests the match could resolve through regulation without a winner. No outcome commands strong dominance; all three results fall in the realistic range.\n\nThe model and market diverge notably. The sportsbook consensus backs Turkey at 52%, a gap of roughly 19 percentage points above the model's assessment, while pricing Australia at 21%—about 14 points below the model. The market is substantially more bullish on Turkey. The dashboard does not adjudicate between these sources; the disparity warrants attention from users comparing forecast approaches."
+}

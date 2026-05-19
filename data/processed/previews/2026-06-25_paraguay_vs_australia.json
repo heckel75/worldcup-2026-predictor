@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-25_paraguay_vs_australia",
+  "home_team": "Paraguay",
+  "away_team": "Australia",
+  "date": "2026-06-25",
+  "input_hash": "7b31494d0050b1058c51f04d687512977f5dc1e9",
+  "generated_at": "2026-05-19T13:46:40+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Australia as the favorite, assigning them a 46% win probability against Paraguay's 24%. The underdog holds a roughly one-in-four chance of victory in this neutral-venue matchup.\n\nThe draw emerges as the single most likely outcome at 30%, creating a relatively balanced three-way competitive scenario. The spread between Australia's win probability and Paraguay's is material but not commanding; the match is forecast as moderately competitive rather than heavily tilted, with all three outcomes plausible.\n\nNo sportsbook consensus is currently available for this fixture. Once market odds appear, they can be compared against the model's estimates to identify any material divergences in how each source assesses the teams' relative strength."
+}

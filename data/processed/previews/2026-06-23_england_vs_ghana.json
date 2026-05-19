@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-23_england_vs_ghana",
+  "home_team": "England",
+  "away_team": "Ghana",
+  "date": "2026-06-23",
+  "input_hash": "839c12a914666f15bdf1014bbb3ad113824a51c4",
+  "generated_at": "2026-05-19T13:46:10+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors England decisively, assigning them an 87% win probability. Ghana's chance registers at 0%, while a draw holds 13%. This represents a substantial gap between the two sides in the model's estimation.\n\nThe W/D/L distribution reflects a wide separation in expected quality. England's win probability dominates the outcome space, with the draw as the only realistic alternative to an England victory. The model treats a Ghana upset as effectively impossible within its framework, suggesting little competitive balance on the underlying ratings.\n\nThe sportsbook consensus diverges meaningfully from the model. Books price England at 71%, some 16 percentage points lower, and assign Ghana 11% — a material difference. The market also rates a draw more highly at 19% versus the model's 13%. The dashboard does not claim to know which assessment is more accurate; the divergence likely reflects different methodologies, information sets, or risk adjustment across the markets."
+}
