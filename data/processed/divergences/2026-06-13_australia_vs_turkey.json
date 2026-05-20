@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-13_australia_vs_turkey",
+  "home_team": "Australia",
+  "away_team": "Turkey",
+  "date": "2026-06-13",
+  "kind": "commentary",
+  "divergence_type": "disagree_on_favorite",
+  "max_gap_pp": 19.2,
+  "input_hash": "c4dbc5cfbac0f06fd52b68d7b960478b3d33b461",
+  "generated_at": "2026-05-20T12:46:42+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model favors Australia at 35%, while the market strongly favors Turkey at 52%, a 19-percentage-point gap on the Turkey win outcome. The gap is substantial enough to suggest the market is pricing in information the model cannot access—most likely recent lineup changes, injuries, or form shifts that have moved Turkish prospects upward or Australian prospects downward since the model's last update. The sportsbook consensus also depresses Australia's win probability to 21%, 14 points below the model's estimate. This dashboard surfaces the divergence as a signal worth monitoring; neither source has proven advantage without access to current team news."
+}

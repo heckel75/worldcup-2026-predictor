@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-16_austria_vs_jordan",
+  "home_team": "Austria",
+  "away_team": "Jordan",
+  "date": "2026-06-16",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 29.5,
+  "input_hash": "eec3e0bd882e06236ff1a604bc64199251b1040d",
+  "generated_at": "2026-05-20T12:49:31+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The sportsbook consensus assigns Austria a 70% win probability versus the model's 41%, a 29-percentage-point gap favoring the bookmakers' confidence in an Austrian victory. This sharpening of conviction could reflect real-time information the model cannot access—recent form, lineup changes, or injury news—that has shifted the balance toward Austria since the model's last update. The market also compresses the draw and Jordan win probabilities much more aggressively than the model does, suggesting bettors see a clearer outcome ahead. The dashboard flags this as a meaningful signal of asymmetric information: the market may be pricing in developments that have narrowed the match's competitive range."
+}

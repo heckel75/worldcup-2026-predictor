@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-13_brazil_vs_morocco",
+  "home_team": "Brazil",
+  "away_team": "Morocco",
+  "date": "2026-06-13",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 22.3,
+  "input_hash": "24e77dea9e3b711b56eb3ddc9a659eb7fd1f92d4",
+  "generated_at": "2026-05-20T12:46:37+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market assigns Brazil a 59% win probability versus the model's 37%, a 22-percentage-point gap favoring the home side. This confidence gap could reflect recent form, injury status, or lineup availability that the model has not yet incorporated. Morocco's win probability shows an even starker divergence—the market prices it at 17% while the model sees 32%, suggesting the market may have information about readiness or personnel that substantially weakens Morocco's prospects. The dashboard flags this as a signal: both sources agree Brazil is favored, but the sportsbooks are pricing a more decisive edge, warranting attention to lineup and form data released near kickoff."
+}

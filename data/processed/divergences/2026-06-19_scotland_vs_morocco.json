@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-19_scotland_vs_morocco",
+  "home_team": "Scotland",
+  "away_team": "Morocco",
+  "date": "2026-06-19",
+  "kind": "commentary",
+  "divergence_type": "model_over_concentrated",
+  "max_gap_pp": 18.4,
+  "input_hash": "1f454217260597ee24311b82cb2cbd3e61308e0a",
+  "generated_at": "2026-05-20T12:49:36+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market assigns Morocco a 45% win probability versus the model's 64%, a 19-point gap favoring the model's confidence in the favorite. The sportsbook consensus also elevates Scotland's chances to 26% from 12%, a 14-point swing. This tempering of Morocco's advantage could reflect recent lineup changes, injury updates, or shifts in form that the model's last update did not capture. Both sources agree Morocco is favored, but the market's more cautious pricing suggests real-money flows may be responding to information unavailable to the statistical forecast. The divergence surfaces a signal worth monitoring rather than a verdict on which outlook is sound."
+}

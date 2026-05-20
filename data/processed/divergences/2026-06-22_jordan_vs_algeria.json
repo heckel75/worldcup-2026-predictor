@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-22_jordan_vs_algeria",
+  "home_team": "Jordan",
+  "away_team": "Algeria",
+  "date": "2026-06-22",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 15.9,
+  "input_hash": "44258044fa38b0f22d7ba2eecff8e9718e0849ef",
+  "generated_at": "2026-05-20T12:49:46+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market assigns Algeria a 54% win probability versus the model's 38%, a 16-percentage-point gap favoring the underdog view built into the ratings. The model and market agree Algeria are favored, but the market's sharper confidence suggests access to information the model cannot see—recent form, injury status, or lineup changes since the model's last update could all be narrowing Algeria's perceived vulnerabilities. The sportsbook consensus is also more skeptical of Jordan's chances (20% vs. 30%), reflecting the same tightening. This dashboard flags the divergence as a signal: real-money flows are pricing in factors the Elo-based forecast does not capture, without determining which source better reflects the actual match outcome."
+}

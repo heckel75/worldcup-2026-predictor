@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-22_argentina_vs_austria",
+  "home_team": "Argentina",
+  "away_team": "Austria",
+  "date": "2026-06-22",
+  "kind": "commentary",
+  "divergence_type": "model_over_concentrated",
+  "max_gap_pp": 19.9,
+  "input_hash": "e099f4f5bf2e858f16a0d3f710f22f4307520f8a",
+  "generated_at": "2026-05-20T12:49:43+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model assigns Argentina a 76% win probability while the market prices it at 56%, a 20-point gap favoring the model's conviction. The market simultaneously widens Austria's chances to 18% versus the model's 3.8%, suggesting real-money flows are hedging against an upset. Recent form, injuries to key players, or lineup changes since the model's last training data could explain why bookmakers are pricing in substantially more uncertainty around this matchup. The dashboard flags this divergence as a signal worth monitoring; it does not indicate which assessment will prove more accurate."
+}

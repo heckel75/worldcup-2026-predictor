@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-23_england_vs_ghana",
+  "home_team": "England",
+  "away_team": "Ghana",
+  "date": "2026-06-23",
+  "kind": "commentary",
+  "divergence_type": "model_over_concentrated",
+  "max_gap_pp": 16.4,
+  "input_hash": "95bcd5cc6453a36d292d775738055a9c381898dc",
+  "generated_at": "2026-05-20T12:49:52+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model assigns England a 87% win probability while the market is substantially less confident at 71%—a 16-percentage-point gap favoring the model's conviction. This divergence primarily flows through the Ghana win outcome, where the market prices in a 11% chance against the model's near-zero forecast. The market's hedging could reflect recent lineup changes, injury concerns, or unexpected form developments that the model's Elo ratings have not yet fully incorporated. Because the model operates on historical strength alone and lacks real-time information about squad availability or momentum shifts, sportsbook pricing may be capturing late-breaking news the dashboard cannot see. The gap surfaces a genuine tension: whether England's underlying quality translates to the overwhelming odds the model suggests, or whether contemporary factors warrant the market's more cautious posture."
+}

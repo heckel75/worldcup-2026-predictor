@@ -1,0 +1,9 @@
+{
+  "match_key": "2026-06-19_usa_vs_australia",
+  "home_team": "USA",
+  "away_team": "Australia",
+  "date": "2026-06-19",
+  "kind": "note",
+  "note_reason": "host advantage not modeled in v1",
+  "generated_at": "2026-05-20T12:24:36+00:00"
+}

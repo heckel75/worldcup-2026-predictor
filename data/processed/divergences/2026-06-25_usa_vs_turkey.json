@@ -1,0 +1,9 @@
+{
+  "match_key": "2026-06-25_usa_vs_turkey",
+  "home_team": "USA",
+  "away_team": "Turkey",
+  "date": "2026-06-25",
+  "kind": "note",
+  "note_reason": "host advantage not modeled in v1",
+  "generated_at": "2026-05-20T12:24:36+00:00"
+}

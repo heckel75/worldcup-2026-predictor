@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-13_haiti_vs_scotland",
+  "home_team": "Haiti",
+  "away_team": "Scotland",
+  "date": "2026-06-13",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 22.9,
+  "input_hash": "8fda8ed785052c64af225f817a8ee9bdc9eb4bd4",
+  "generated_at": "2026-05-20T12:46:40+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market assigns Scotland a 66% win probability versus the model's 43%, a 23-percentage-point gap favoring the market's confidence in a Scotland victory. The sportsbooks also compress Haiti's chances to 13% from 26%, a 13-point markdown. This sharpening of market conviction could reflect recent lineup news, injury developments, or current form trajectories unavailable to the model's last update. The dashboard surfaces this as a signal worth monitoring: either the market has spotted concrete team information that shifts the picture materially toward Scotland, or both sources are pricing the same fundamentals but with different risk tolerances. Neither interpretation is certain from the numbers alone."
+}

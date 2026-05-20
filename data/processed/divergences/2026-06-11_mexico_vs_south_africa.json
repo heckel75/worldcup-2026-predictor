@@ -1,0 +1,9 @@
+{
+  "match_key": "2026-06-11_mexico_vs_south_africa",
+  "home_team": "Mexico",
+  "away_team": "South Africa",
+  "date": "2026-06-11",
+  "kind": "note",
+  "note_reason": "host advantage not modeled in v1",
+  "generated_at": "2026-05-20T12:24:36+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-23_portugal_vs_uzbekistan",
+  "home_team": "Portugal",
+  "away_team": "Uzbekistan",
+  "date": "2026-06-23",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 16.2,
+  "input_hash": "0cd3ab5bd0a3757a9b5ee7405ecd2c0198eed0d5",
+  "generated_at": "2026-05-20T12:49:49+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market is notably more confident in Portugal's win, pricing it 16 percentage points higher than the model at 78% versus 62%. The market also compresses the draw and Uzbekistan win probabilities below the model's forecasts. This sharpened conviction could reflect recent form, injury status, or lineup news that the model has not yet incorporated—information typically available to sharp bettors and reflected in real-money flows. The dashboard surfaces this divergence as a signal worth monitoring, though it does not establish which assessment better reflects true match likelihood."
+}

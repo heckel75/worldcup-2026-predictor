@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-23_panama_vs_croatia",
+  "home_team": "Panama",
+  "away_team": "Croatia",
+  "date": "2026-06-23",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 15.9,
+  "input_hash": "e78e32686e9358eef20c2f8c39d9f7e5d93bafa8",
+  "generated_at": "2026-05-20T12:49:55+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market assigns Croatia a 64% win probability versus the model's 48%, a 16-percentage-point gap favoring the stronger team. The sportsbook also reduces Panama's chances to 13% from 22%, suggesting real-money flows are pricing in information the model cannot access—most likely recent form, lineup changes, or injury status for one or both sides. The model's broader distribution reflects only historical ratings; the market's tighter confidence around a Croatia victory may reflect current squad condition or momentum the statistical baseline has not yet absorbed. The dashboard flags this as a signal worth monitoring rather than a judgment on which estimate is sounder."
+}
