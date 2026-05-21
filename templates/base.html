@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}World Cup 2026 Predictor{% endblock %}</title>
+  <link rel="stylesheet" href="{{ root }}style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="{{ root }}index.html">World&nbsp;Cup&nbsp;2026 Predictor</a>
+    <nav class="site-nav">
+      <a href="{{ root }}index.html">Tournament</a>
+      <a href="{{ root }}calibration.html">Calibration</a>
+      <a href="{{ root }}about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Forecast generated {{ generated_at }}{% if snapshot_date %} · snapshot {{ snapshot_date }}{% endif %}.
+    </p>
+    <p>
+      Probabilities are model and market estimates, not statements of certainty.
+      See the <a href="{{ root }}about.html">methodology</a>.
+    </p>
+  </footer>
+</body>
+</html>

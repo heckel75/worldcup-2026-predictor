@@ -1,0 +1,128 @@
+/* ------------------------------------------------------------------
+   World Cup 2026 Predictor — placeholder styles (Session 23)
+
+   This is a clean baseline, NOT the final design. Session 24 commits to
+   a real aesthetic. Everything themeable lives in the :root block below,
+   so that pass is mostly editing variables rather than rewriting rules.
+   ------------------------------------------------------------------ */
+
+:root {
+  --bg:        #fbfbf9;
+  --surface:   #ffffff;
+  --text:      #1c1d22;
+  --muted:     #6b7280;
+  --accent:    #1a7f5a;   /* placeholder; revisit in Session 24 */
+  --border:    #e7e7e2;
+  --radius:    8px;
+  --maxw:      880px;
+
+  /* Placeholder font stack. Session 24 swaps in a distinctive display +
+     body pairing; keeping a system stack here avoids loading web fonts
+     before the design is decided. */
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.55;
+}
+
+/* --- header / nav ------------------------------------------------- */
+
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 1.25rem;
+  font-size: 0.95rem;
+}
+.site-nav a:hover { color: var(--accent); }
+
+/* --- main --------------------------------------------------------- */
+
+.site-main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.lede {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+  max-width: 60ch;
+}
+
+/* --- odds table --------------------------------------------------- */
+
+.odds-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.odds-table th,
+.odds-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: right;
+  border-bottom: 1px solid var(--border);
+}
+
+.odds-table th:nth-child(2),
+.odds-table td:nth-child(2) { text-align: left; }   /* team name */
+
+.odds-table th {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  background: var(--bg);
+}
+
+.odds-table tbody tr:last-child td { border-bottom: none; }
+.odds-table tbody tr:hover { background: var(--bg); }
+
+/* --- footer ------------------------------------------------------- */
+
+.site-footer {
+  max-width: var(--maxw);
+  margin: 2rem auto 3rem;
+  padding: 1.25rem 1.5rem 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.site-footer a { color: var(--accent); }

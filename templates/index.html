@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Tournament forecast · World Cup 2026{% endblock %}
+
+{% block content %}
+<h1>World Cup 2026 — title forecast</h1>
+<p class="lede">
+  Model-simulated probability of each qualified team winning the tournament.
+  This page is a placeholder; the bracket visual lands in a later session.
+</p>
+
+<table class="odds-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Team</th>
+      <th>Champion</th>
+      <th>Reach final</th>
+      <th>Advance from group</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for t in teams %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ t.team }}</td>
+      <td>{{ "%.1f"|format(t.p_champion * 100) }}%</td>
+      <td>{{ "%.1f"|format(t.p_final * 100) }}%</td>
+      <td>{{ "%.1f"|format(t.p_advance * 100) }}%</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
