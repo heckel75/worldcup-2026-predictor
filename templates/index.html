@@ -3,32 +3,41 @@
 {% block title %}Tournament forecast · World Cup 2026{% endblock %}
 
 {% block content %}
-<h1>World Cup 2026 — title forecast</h1>
+<h1>World Cup 2026 — the forecast</h1>
 <p class="lede">
-  Model-simulated probability of each qualified team winning the tournament.
-  This page is a placeholder; the bracket visual lands in a later session.
+  Each team's model-estimated chance of reaching every stage, from
+  advancing out of the group to lifting the trophy. Greener means more
+  likely to still be playing; the gold column is the title race itself.
+  Ranked by championship odds.
 </p>
 
-<table class="odds-table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Team</th>
-      <th>Champion</th>
-      <th>Reach final</th>
-      <th>Advance from group</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for t in teams %}
-    <tr>
-      <td>{{ loop.index }}</td>
-      <td>{{ t.team }}</td>
-      <td>{{ "%.1f"|format(t.p_champion * 100) }}%</td>
-      <td>{{ "%.1f"|format(t.p_final * 100) }}%</td>
-      <td>{{ "%.1f"|format(t.p_advance * 100) }}%</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<div class="tree-wrap">
+  <table class="tree">
+    <thead>
+      <tr>
+        <th class="col-rank">#</th>
+        <th class="col-team">Team</th>
+        {% for label in survival_labels %}
+        <th>{{ label }}</th>
+        {% endfor %}
+        <th class="col-champ">Champion</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for t in teams %}
+      <tr>
+        <td class="col-rank">{{ loop.index }}</td>
+        <td class="col-team">
+          <span class="team-name">{{ t.name }}</span>
+          <span class="group-badge">{{ t.group }}</span>
+        </td>
+        {% for c in t.survival %}
+        <td class="prob {{ c.tier }}">{{ c.text }}</td>
+        {% endfor %}
+        <td class="prob col-champ {{ t.champ.tier }}">{{ t.champ.text }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 {% endblock %}

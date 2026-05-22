@@ -7,19 +7,49 @@
    ------------------------------------------------------------------ */
 
 :root {
-  --bg:        #fbfbf9;
-  --surface:   #ffffff;
-  --text:      #1c1d22;
-  --muted:     #6b7280;
-  --accent:    #1a7f5a;   /* placeholder; revisit in Session 24 */
-  --border:    #e7e7e2;
-  --radius:    8px;
-  --maxw:      880px;
+  /* --- surfaces & ink (editorial warm-paper theme) ----------------- */
+  --bg:        #f7f5ef;   /* warm paper */
+  --surface:   #fffdf8;   /* card / table background, a touch brighter */
+  --text:      #1b1a17;   /* near-black ink, warm */
+  --muted:     #6f6a5f;   /* secondary text, warm grey */
+  --border:    #e4e0d6;   /* hairlines */
+  --accent:    #1f7a4d;   /* deep pitch green — links, hover */
+  --accent-gold: #c98a12; /* champion accent, matches the gold ramp */
 
-  /* Placeholder font stack. Session 24 swaps in a distinctive display +
-     body pairing; keeping a system stack here avoids loading web fonts
-     before the design is decided. */
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* --- survival ramp: green, applied to advance→final cells -------- *
+   * The generator buckets each probability and tags the cell with a   *
+   * tier class (.t-surv-0 … .t-surv-5). Greener = more likely alive.  *
+   * Buckets: 0=<1%  1=1–10%  2=10–25%  3=25–50%  4=50–75%  5=75–100%   */
+  --t-surv-0: transparent;
+  --t-surv-1: #eaf3ec;
+  --t-surv-2: #cfe6d4;
+  --t-surv-3: #a6d4b0;
+  --t-surv-4: #79c08c;
+  --t-surv-5: #4ea96e;
+
+  /* --- champion ramp: gold, the hero column ------------------------ *
+   * Finer scale at the low end because title odds are compressed:     *
+   * Buckets: 0=<1%  1=1–3%  2=3–8%  3=8–15%  4=15–25%  5=25%+          */
+  --t-champ-0: transparent;
+  --t-champ-1: #f6ecd2;
+  --t-champ-2: #f0dca6;
+  --t-champ-3: #ecc971;
+  --t-champ-4: #e3ad3c;
+  --t-champ-5: #d4901a;
+
+  /* --- type system (linked in base.html next step) ----------------- *
+   * Fraunces       — editorial serif, headlines + hero numbers        *
+   * Hanken Grotesk — clean humanist sans, body + table text           *
+   * Spline Sans Mono — tabular figures for every probability cell     */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body:    "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  --font-mono:    "Spline Sans Mono", ui-monospace, "SF Mono", monospace;
+
+  /* --- geometry ---------------------------------------------------- */
+  --radius:    10px;
+  --maxw:      1080px;   /* widened: the grid is 8 columns now */
+  --shadow:    0 1px 2px rgba(27, 26, 23, 0.04),
+               0 8px 24px rgba(27, 26, 23, 0.05);
 }
 
 * { box-sizing: border-box; }
@@ -71,9 +101,13 @@ body {
 }
 
 h1 {
-  font-size: 1.6rem;
-  letter-spacing: -0.02em;
-  margin: 0.5rem 0 0.25rem;
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0.5rem 0 0.35rem;
 }
 
 .lede {
@@ -82,39 +116,113 @@ h1 {
   max-width: 60ch;
 }
 
-/* --- odds table --------------------------------------------------- */
+/* --- tournament tree: forecast survival grid ---------------------- *
+ * A FiveThirtyEight-style grid. Each row is a team; each column is a  *
+ * round; each cell is shaded by P(team reaches that round). The six   *
+ * survival columns use the green ramp; the Champion column uses the   *
+ * gold ramp and is the visual hero. Tier classes (.t-surv-N /         *
+ * .t-champ-N) are written by generate_site.py — see :root for the     *
+ * bucket boundaries each tier maps to.                                */
 
-.odds-table {
+.tree-wrap {
+  overflow-x: auto;                  /* horizontal scroll on phones */
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.tree {
   width: 100%;
   border-collapse: collapse;
   font-variant-numeric: tabular-nums;
+}
+
+/* header row — sticky so it stays put while scrolling 48 teams */
+.tree thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.odds-table th,
-.odds-table td {
-  padding: 0.5rem 0.75rem;
-  text-align: right;
-  border-bottom: 1px solid var(--border);
-}
-
-.odds-table th:nth-child(2),
-.odds-table td:nth-child(2) { text-align: left; }   /* team name */
-
-.odds-table th {
-  font-size: 0.78rem;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  padding: 0.7rem 0.55rem;
+  border-bottom: 1.5px solid var(--border);
+  white-space: nowrap;
+  text-align: center;
+}
+.tree thead th.col-rank,
+.tree thead th.col-team { text-align: left; }
+.tree thead th.col-champ { color: var(--accent-gold); }
+
+/* body cells */
+.tree tbody td.col-rank {
+  text-align: left;
+  width: 2.5rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+.tree tbody td.col-team { text-align: left; white-space: nowrap; }
+
+/* hover: darken every cell uniformly, including the colored ones */
+.tree tbody tr:hover td {
+  box-shadow: inset 0 0 0 9999px rgba(27, 26, 23, 0.05);
+}
+
+/* rank + team */
+.col-rank {
+  text-align: left;
+  width: 2.5rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+.col-team { text-align: left; white-space: nowrap; }
+.team-name { font-weight: 500; }
+.group-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.05rem 0.42rem;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   color: var(--muted);
   background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  vertical-align: middle;
 }
 
-.odds-table tbody tr:last-child td { border-bottom: none; }
-.odds-table tbody tr:hover { background: var(--bg); }
+/* probability cells — mono figures so digits line up across rows */
+.prob {
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  color: var(--text);
+}
 
+/* survival ramp (green) */
+.t-surv-0 { background: var(--t-surv-0); color: var(--muted); }
+.t-surv-1 { background: var(--t-surv-1); }
+.t-surv-2 { background: var(--t-surv-2); }
+.t-surv-3 { background: var(--t-surv-3); }
+.t-surv-4 { background: var(--t-surv-4); }
+.t-surv-5 { background: var(--t-surv-5); }
+
+/* champion column — the hero: gold ramp, bolder, divider on its left */
+.tree th.col-champ,
+.tree td.col-champ { border-left: 1.5px solid var(--border); }
+.prob.col-champ { font-size: 0.98rem; font-weight: 600; }
+.t-champ-0 { background: var(--t-champ-0); color: var(--muted); }
+.t-champ-1 { background: var(--t-champ-1); }
+.t-champ-2 { background: var(--t-champ-2); }
+.t-champ-3 { background: var(--t-champ-3); }
+.t-champ-4 { background: var(--t-champ-4); }
+.t-champ-5 { background: var(--t-champ-5); }
 /* --- footer ------------------------------------------------------- */
 
 .site-footer {
