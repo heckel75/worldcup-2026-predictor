@@ -389,6 +389,7 @@ Buffer for things that break.
 - **Session 23 (2026-05-21):** Scaffolded the static site. generate_site.py lives at repo root and is a pure data-consumer (reads the newest snapshot by filename, never imports the model). Jinja2 inheritance: templates/base.html is the shared shell (head/nav/footer + {% block content %}, every link {{root}}-prefixed so Session 25 subpages work without touching it); templates/index.html extends it and lists title odds. static/style.css is a deliberately plain baseline with all theming in a :root variables block for Session 24. Generator copies static/ → docs/ and writes docs/.nojekyll. Builds clean — docs/index.html renders all 48 teams ranked (Spain 30.0% → South Africa 0.0%). Added jinja2>=3.1 to requirements.txt. Convention: docs/ is 100% build output and must be committed (GitHub Pages serves from it).
 - **Session 24 (2026-05-22):** Built the tournament forecast page — replaced the placeholder table with a FiveThirtyEight-style survival grid (green ramp for advance→final, gold "hero" ramp for the champion column on its own finer scale) and committed the real editorial aesthetic in style.css (Fraunces / Hanken Grotesk / Spline Sans Mono, warm-paper theme, tier classes driven by :root boundaries). generate_site.py now owns presentation: a DISPLAY_NAMES map (Türkiye/Czechia/Côte d'Ivoire/Cabo Verde), a group-letter table duplicated from bracket.py to keep the generator decoupled from the model layer, and the tier-bucketing logic. Decision: the pre-tournament page is the survival grid; a literal populated bracket is deferred until June, when group results resolve the R32 slots.
 - **Session 25 (2026-05-23):** Built per-match pages — new templates/match.html (extends base.html, root="../") and a 72-fixture loop in generate_site.py writing docs/matches/<key>.html. Three stacked probability bars (model-corrected / sportsbook / Polymarket) reusing the Session 24 type system with a dedicated W/D/L colour trio; graceful degradation for no-book matchday-3 rows and the still-header-only Polymarket file. Divergence callout reads divergences/<key>.json: commentary rows get a deterministically-computed headline gap plus Claude's paragraph, host rows get a muted caveat note. Preview prose from previews/<key>.json with an explicit Claude-authored credit. Index grid intentionally not linked yet. Fixed a Windows date-format bug (%-d) and pandas NaN handling for absent markets.
+- **(2026-05-23):** Switched the working model to Claude Code in VS Code for repo work, with planning chats as the design layer — see new §10. Created CLAUDE.md in repo root (imports PROJECT.md via @PROJECT.md, adds working rhythm + hard conventions). Sessions 1–25 were built in planning chats; Session 26 onward uses Claude Code.
 ---
 
 ## 8. How to get back into a chat session
@@ -410,3 +411,37 @@ PROJECT.md is loaded automatically into every new chat via project files, so you
 **At session end.** Claude proposes two one-line additions for the user to paste:
 1. **Session log line** for §7 (one bullet summarizing what got built, decided, or blocked).
 2. **Commit message** for the Git commit covering the session's changes — short, imperative, scoped (e.g. `Session 16: add FIFA Annex C lookup for R32 third-place slots`).
+
+## 10. Working model: Claude Code in VS Code + planning chat (from Session 26)
+
+Two separate Claude surfaces with NO live link between them. The user is the
+bridge; nothing syncs automatically.
+
+- **Planning chat** (claude.ai / app): Claude runs on Anthropic's servers and has
+  **no access to the repo**. Used to think through a session, decide the approach,
+  and produce a written work order. It works from THIS doc, not from your files.
+- **Claude Code** (VS Code extension): Claude runs on the user's machine with full
+  repo access — reads/edits files in place, runs scripts, shows diffs. Does the
+  actual implementation.
+- **Shared memory = CLAUDE.md + PROJECT.md only.** `CLAUDE.md` in the repo root
+  imports this file via `@PROJECT.md` and Claude Code auto-reads it every session.
+  Keep PROJECT.md current at each session end — it is the handoff between surfaces.
+
+### Per-session loop
+1. **Plan in a chat.** Output is a work order (files, changes, checks, commit
+   message), written from PROJECT.md — not from fetched code.
+2. **Execute in Claude Code.** Paste the work order. Use plan mode (Shift+Tab) for
+   non-trivial work; review every diff before accepting (don't auto-accept); run
+   scripts from the project root; one logical change per commit with a
+   `Session N: …` message; push.
+3. **Close in the chat.** Paste an error/output/diff only if something's off;
+   otherwise confirm. Claude gives the one-line §7 log entry.
+
+### What this supersedes
+- §8 (push before each session, paste raw GitHub URLs) is **obsolete for Claude
+  Code work** — it reads the disk directly. If you ever plan in a chat and need it
+  to see a file, **paste the file's contents**, not a raw URL: planning-chat
+  raw-GitHub fetches proved stale/cached (they ate the start of Session 25). Don't
+  relitigate fetch staleness — paste, or rely on PROJECT.md.
+- §9 "one step per response" — in Claude Code, **plan mode is that review
+  checkpoint**, so the same safety holds with less friction.
