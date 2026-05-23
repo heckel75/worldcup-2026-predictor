@@ -234,3 +234,182 @@ h1 {
   font-size: 0.85rem;
 }
 .site-footer a { color: var(--accent); }
+
+/* --- per-match page (Session 25) --------------------------------- *
+ * Three stacked probability bars (model / sportsbook / Polymarket),  *
+ * one outcome trio per bar so the segment boundaries line up across  *
+ * sources and divergence reads at a glance. Reuses the Session 24    *
+ * type system and warm-paper palette; W/D/L gets its own colour trio *
+ * (green / sand / clay) so survival-green and champion-gold keep     *
+ * their meaning on the grid page. This block is self-contained: it   *
+ * adds its own :root vars and is safe to append.                     */
+
+:root {
+  --home: #2f8f5b;   /* home win — pitch green */
+  --draw: #d8d0bf;   /* draw     — warm sand   */
+  --away: #c46a3f;   /* away win — clay        */
+}
+
+.crumb { margin: 0 0 1.25rem; font-size: 0.9rem; }
+.crumb a { color: var(--muted); text-decoration: none; }
+.crumb a:hover { color: var(--accent); }
+
+.match-head { margin-bottom: 1.75rem; }
+.match-meta {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.match-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.match-title .mt-v {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--muted);
+}
+
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 0.9rem;
+}
+
+/* comparison card */
+.compare {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.4rem 1.5rem 1.6rem;
+  margin-bottom: 1.75rem;
+}
+.compare-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.2rem;
+}
+.compare-head .section-label { margin: 0; }
+
+.legend {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.legend li { display: flex; align-items: center; gap: 0.4rem; }
+.sw { width: 0.8rem; height: 0.8rem; border-radius: 3px; display: inline-block; }
+.sw-home { background: var(--home); }
+.sw-draw { background: var(--draw); }
+.sw-away { background: var(--away); }
+
+/* one source row: fixed label column + flexible bar */
+.bar-row {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+.bar-row:last-child { margin-bottom: 0; }
+.bar-label { font-size: 0.92rem; font-weight: 600; line-height: 1.2; }
+.bar-sub {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+.bar {
+  display: flex;
+  height: 2.6rem;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg);
+}
+.seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+}
+.seg-pct {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 0 0.3rem;
+}
+.seg-home { background: var(--home); }
+.seg-away { background: var(--away); }
+.seg-home .seg-pct, .seg-away .seg-pct { color: #fff; }
+.seg-draw { background: var(--draw); }
+.seg-draw .seg-pct { color: var(--text); }
+
+.bar-absent {
+  align-items: center;
+  padding: 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  background: var(--bg);
+  border: 1px dashed var(--border);
+}
+.bar-row--empty .bar-label { color: var(--muted); }
+
+/* divergence callout */
+.divergence {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: #f1f6f1;
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 1.75rem;
+}
+.divergence--note {
+  border-left-color: var(--muted);
+  background: var(--surface);
+}
+.divergence-tag {
+  margin: 0 0 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+.divergence--note .divergence-tag { color: var(--muted); }
+.divergence-headline {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.divergence-text { margin: 0; }
+
+/* preview prose */
+.preview { max-width: 64ch; }
+.preview p { margin: 0 0 0.85rem; }
+.preview-credit { margin-top: 1.1rem; font-size: 0.8rem; color: var(--muted); }
+.preview-credit a { color: var(--accent); }

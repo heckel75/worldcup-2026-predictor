@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}{{ m.home_display }} v {{ m.away_display }} · World Cup 2026{% endblock %}
+
+{% block content %}
+<p class="crumb"><a href="{{ root }}index.html">← Tournament forecast</a></p>
+
+<header class="match-head">
+  <p class="match-meta">Group {{ m.group }} · {{ m.date_human }} · neutral venue</p>
+  <h1 class="match-title">
+    <span class="mt-home">{{ m.home_display }}</span>
+    <span class="mt-v">v</span>
+    <span class="mt-away">{{ m.away_display }}</span>
+  </h1>
+</header>
+
+<section class="compare">
+  <div class="compare-head">
+    <h2 class="section-label">Three views of the match</h2>
+    <ul class="legend">
+      <li><span class="sw sw-home"></span>{{ m.home_display }}</li>
+      <li><span class="sw sw-draw"></span>Draw</li>
+      <li><span class="sw sw-away"></span>{{ m.away_display }}</li>
+    </ul>
+  </div>
+
+  {% for s in m.sources %}
+  <div class="bar-row{% if not s.available %} bar-row--empty{% endif %}">
+    <div class="bar-label">
+      {{ s.label }}{% if s.sub %}<span class="bar-sub">{{ s.sub }}</span>{% endif %}
+    </div>
+    {% if s.available %}
+    <div class="bar" role="img" aria-label="{{ s.aria }}">
+      {% for seg in s.segments %}
+      <div class="seg seg-{{ seg.cls }}" style="flex-basis: {{ seg.w }}%">
+        {% if seg.show %}<span class="seg-pct">{{ seg.pct }}</span>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="bar bar-absent">{{ s.absent_text }}</div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+{% if m.divergence %}
+<aside class="divergence divergence--{{ m.divergence.tone }}">
+  <p class="divergence-tag">{{ m.divergence.label }}</p>
+  {% if m.divergence.headline %}
+  <p class="divergence-headline">{{ m.divergence.headline }}</p>
+  {% endif %}
+  <p class="divergence-text">{{ m.divergence.text }}</p>
+</aside>
+{% endif %}
+
+<section class="preview">
+  <h2 class="section-label">Preview</h2>
+  {% for para in m.preview_paras %}
+  <p>{{ para }}</p>
+  {% endfor %}
+  <p class="preview-credit">
+    Written by Claude from the figures above — it has no squad, injury, or form
+    data. See the <a href="{{ root }}about.html">methodology</a>.
+  </p>
+</section>
+{% endblock %}

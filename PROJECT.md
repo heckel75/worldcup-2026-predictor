@@ -271,11 +271,11 @@ Then we resume.
 - Visual bracket showing current title odds for each team
 - Color-coded by probability tier
 
-**Session 25 — Per-match pages  (← NEXT)**
+**Session 25 — Per-match pages  ✅ DONE**
 - One HTML page per upcoming match
 - Three probability bars side by side, Claude preview, divergence note
 
-**Session 26 — "What changed today" panel**
+**Session 26 — "What changed today" panel  (← NEXT)**
 - Diff today's snapshot vs yesterday's
 - Top 5 movers, top 3 fresh divergences
 - This is the habit-forming feature — get it right
@@ -388,6 +388,7 @@ Buffer for things that break.
 - **Session 22 (2026-05-20):** Wrote src/generate_divergences.py — divergence_type-branched commentary on top of the Session 21 preview pipeline. Three buckets per match (commentary / note / skip), mutually exclusive by construction; 14 flagged matches → Claude commentaries, 9 host-excluded → deterministic one-line note records (no LLM), 49 → skip. One system prompt + three framing notes selected by divergence_type; PROMPT_VERSION + divergence_type in input_hash so category flips auto-invalidate. v1 failed on two arithmetic patterns hand-checked on the 4-match smoke test — Australia-Turkey combined two outcomes into a fabricated "31pp opposite-direction gap" and Ivory Coast-Ecuador shipped decimal percentages with a "nearly equal 29 vs 16" comparative; v2 added an explicit no-combined-gap rule, round-half-up integer-percentage rule, expanded prohibited-categories list (tactics/formations/strategy/momentum), and reshaped the disagree_on_favorite framing to "two facts, one outcome's gap". Residual: occasional imprecise comparatives ("roughly half" when actually a third) survive — documented in §6 as a methodology disclosure rather than chased with v3. ~$0.05 for 14 commentaries; sibling-file architecture means preview cache untouched. Output: data/processed/divergences/*.json, 23 files.
 - **Session 23 (2026-05-21):** Scaffolded the static site. generate_site.py lives at repo root and is a pure data-consumer (reads the newest snapshot by filename, never imports the model). Jinja2 inheritance: templates/base.html is the shared shell (head/nav/footer + {% block content %}, every link {{root}}-prefixed so Session 25 subpages work without touching it); templates/index.html extends it and lists title odds. static/style.css is a deliberately plain baseline with all theming in a :root variables block for Session 24. Generator copies static/ → docs/ and writes docs/.nojekyll. Builds clean — docs/index.html renders all 48 teams ranked (Spain 30.0% → South Africa 0.0%). Added jinja2>=3.1 to requirements.txt. Convention: docs/ is 100% build output and must be committed (GitHub Pages serves from it).
 - **Session 24 (2026-05-22):** Built the tournament forecast page — replaced the placeholder table with a FiveThirtyEight-style survival grid (green ramp for advance→final, gold "hero" ramp for the champion column on its own finer scale) and committed the real editorial aesthetic in style.css (Fraunces / Hanken Grotesk / Spline Sans Mono, warm-paper theme, tier classes driven by :root boundaries). generate_site.py now owns presentation: a DISPLAY_NAMES map (Türkiye/Czechia/Côte d'Ivoire/Cabo Verde), a group-letter table duplicated from bracket.py to keep the generator decoupled from the model layer, and the tier-bucketing logic. Decision: the pre-tournament page is the survival grid; a literal populated bracket is deferred until June, when group results resolve the R32 slots.
+- **Session 25 (2026-05-23):** Built per-match pages — new templates/match.html (extends base.html, root="../") and a 72-fixture loop in generate_site.py writing docs/matches/<key>.html. Three stacked probability bars (model-corrected / sportsbook / Polymarket) reusing the Session 24 type system with a dedicated W/D/L colour trio; graceful degradation for no-book matchday-3 rows and the still-header-only Polymarket file. Divergence callout reads divergences/<key>.json: commentary rows get a deterministically-computed headline gap plus Claude's paragraph, host rows get a muted caveat note. Preview prose from previews/<key>.json with an explicit Claude-authored credit. Index grid intentionally not linked yet. Fixed a Windows date-format bug (%-d) and pandas NaN handling for absent markets.
 ---
 
 ## 8. How to get back into a chat session
