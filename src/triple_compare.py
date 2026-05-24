@@ -26,6 +26,7 @@ Run from project root:
 """
 from __future__ import annotations
 
+import datetime as dt
 import sys
 from pathlib import Path
 
@@ -283,6 +284,13 @@ def main() -> None:
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(OUT_PATH, index=False)
     print(f"\nSaved {len(df)} rows -> {OUT_PATH}")
+
+    # 7b. Dated divergence snapshot (mirrors monte_carlo.py pattern) ------
+    div_snap_dir = Path("data/processed/divergence_snapshots")
+    div_snap_dir.mkdir(parents=True, exist_ok=True)
+    div_snap_path = div_snap_dir / f"{dt.date.today().isoformat()}.csv"
+    df.to_csv(div_snap_path, index=False)
+    print(f"Snapshot  {len(df)} rows -> {div_snap_path}")
 
     # 8. Top-10 ranked table -----------------------------------------------
     print(f"\nTop 10 model-vs-book divergences "
