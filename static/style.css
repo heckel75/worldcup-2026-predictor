@@ -413,3 +413,97 @@ h1 {
 .preview p { margin: 0 0 0.85rem; }
 .preview-credit { margin-top: 1.1rem; font-size: 0.8rem; color: var(--muted); }
 .preview-credit a { color: var(--accent); }
+
+/* --- what-changed panel (Session 26) --------------------------------- *
+ * Card above the survival grid. Pre-tournament it shows a baseline      *
+ * message; once results move probabilities it shows two mover tables    *
+ * (title odds / group advance) plus a fresh-divergences list.           */
+
+.changes {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.4rem 1.5rem 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.changes-block-title {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 0.55rem;
+}
+
+.changes-empty {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.changes-tables {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 560px) {
+  .changes-tables { grid-template-columns: 1fr; }
+}
+
+/* mover tables */
+.movers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.movers-table td {
+  padding: 0.25rem 0;
+  font-size: 0.88rem;
+  vertical-align: baseline;
+}
+.mover-name  { font-weight: 500; }
+.mover-arrow,
+.mover-delta {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  padding-left: 0.5rem;
+  white-space: nowrap;
+}
+.mover-up   { color: #2f8f5b; }  /* --home pitch green */
+.mover-down { color: #c46a3f; }  /* --away clay        */
+
+/* fresh divergences */
+.fresh-divs {
+  margin-top: 1.1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.fresh-div-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.fresh-div-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  font-size: 0.88rem;
+  flex-wrap: wrap;
+}
+.fresh-div-item a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+.fresh-div-item a:hover { text-decoration: underline; }
+.fresh-div-gap  { font-family: var(--font-mono); font-size: 0.82rem; }
+.fresh-div-type { color: var(--muted); font-size: 0.82rem; }

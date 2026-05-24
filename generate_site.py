@@ -23,7 +23,11 @@ import datetime as dt
 import json
 import re
 import shutil
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent / "src"))
+import whats_changed
 
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -31,6 +35,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 TEMPLATES_DIR = Path("templates")
 STATIC_DIR = Path("static")
 SNAPSHOTS_DIR = Path("data/processed/snapshots")
+DIVERGENCE_SNAPS_DIR = Path("data/processed/divergence_snapshots")
 TRIPLE_PATH = Path("data/processed/triple_compare.csv")
 PREVIEWS_DIR = Path("data/processed/previews")
 DIVERGENCES_DIR = Path("data/processed/divergences")
@@ -350,6 +355,36 @@ def build_site() -> None:
     teams = _load_teams(snapshot)
     matches = _load_matches()
 
+    # --- what-changed diff data ------------------------------------------
+    prev_snap_path, _ = whats_changed._two_newest(SNAPSHOTS_DIR)
+    prev_snap_df = pd.read_csv(prev_snap_path) if prev_snap_path else None
+    curr_snap_df = pd.read_csv(snapshot)
+
+    prev_div_path, _ = whats_changed._two_newest(DIVERGENCE_SNAPS_DIR)
+    prev_div_df = pd.read_csv(prev_div_path) if prev_div_path else None
+    curr_div_df = pd.read_csv(TRIPLE_PATH) if TRIPLE_PATH.exists() else None
+
+    title_movers   = whats_changed.compute_title_movers(prev_snap_df, curr_snap_df)
+    advance_movers = whats_changed.compute_advance_movers(prev_snap_df, curr_snap_df)
+    fresh_divs = (
+        whats_changed.compute_fresh_divergences(prev_div_df, curr_div_df)
+        if curr_div_df is not None else []
+    )
+
+    for m in title_movers + advance_movers:
+        m["team_display"] = disp(m["team"])
+        delta_pp = round(m["delta"] * 100, 1)
+        m["delta_fmt"] = f"+{delta_pp:.1f}pp" if delta_pp > 0 else f"{delta_pp:.1f}pp"
+
+    for d in fresh_divs:
+        d["home_display"] = disp(d["home_team"])
+        d["away_display"] = disp(d["away_team"])
+        d["match_url"] = (
+            f"matches/{match_key(d['date'], d['home_team'], d['away_team'])}.html"
+        )
+        d["div_type_label"] = DIV_LABELS.get(d["divergence_type"], d["divergence_type"])
+        d["magnitude_fmt"] = f"{round(d['magnitude'] * 100)}pp"
+
     env = _build_env()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -360,6 +395,9 @@ def build_site() -> None:
         env, "index.html", OUTPUT_DIR / "index.html",
         teams=teams,
         survival_labels=[label for _, label in SURVIVAL_COLS],
+        title_movers=title_movers,
+        advance_movers=advance_movers,
+        fresh_divergences=fresh_divs,
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
     )
 
@@ -374,7 +412,7 @@ def build_site() -> None:
     _copy_static()
     (OUTPUT_DIR / ".nojekyll").touch()
 
-    print(f"✅ Built site → {OUTPUT_DIR}/")
+    print(f"Built site -> {OUTPUT_DIR}/")
     print(f"   snapshot : {snapshot.name} ({len(teams)} teams)")
     print(f"   pages    : index.html + {len(matches)} match pages")
 

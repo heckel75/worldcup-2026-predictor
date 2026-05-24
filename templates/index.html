@@ -11,6 +11,64 @@
   Ranked by championship odds.
 </p>
 
+{# ---- What changed today ------------------------------------------- #}
+<section class="changes">
+  <p class="section-label">What changed today</p>
+  {% if not title_movers and not advance_movers and not fresh_divergences %}
+    <p class="changes-empty">Pre-tournament baseline — movers and fresh divergences go live once results start moving probabilities.</p>
+  {% else %}
+    <div class="changes-tables">
+      <div>
+        <p class="changes-block-title">Title odds</p>
+        {% if title_movers %}
+        <table class="movers-table">
+          {% for m in title_movers %}
+          <tr>
+            <td class="mover-name">{{ m.team_display }}</td>
+            <td class="mover-arrow mover-{{ m.direction }}">{% if m.direction == "up" %}↑{% else %}↓{% endif %}</td>
+            <td class="mover-delta mover-{{ m.direction }}">{{ m.delta_fmt }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+        {% else %}
+        <p class="changes-empty">No moves above threshold today.</p>
+        {% endif %}
+      </div>
+      <div>
+        <p class="changes-block-title">Advance from group</p>
+        {% if advance_movers %}
+        <table class="movers-table">
+          {% for m in advance_movers %}
+          <tr>
+            <td class="mover-name">{{ m.team_display }}</td>
+            <td class="mover-arrow mover-{{ m.direction }}">{% if m.direction == "up" %}↑{% else %}↓{% endif %}</td>
+            <td class="mover-delta mover-{{ m.direction }}">{{ m.delta_fmt }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+        {% else %}
+        <p class="changes-empty">No moves above threshold today.</p>
+        {% endif %}
+      </div>
+    </div>
+    {% if fresh_divergences %}
+    <div class="fresh-divs">
+      <p class="changes-block-title">Fresh divergences</p>
+      <ul class="fresh-div-list">
+        {% for d in fresh_divergences %}
+        <li class="fresh-div-item">
+          <a href="{{ root }}{{ d.match_url }}">{{ d.home_display }} vs {{ d.away_display }}</a>
+          <span class="fresh-div-gap">{{ d.magnitude_fmt }} gap</span>
+          <span class="fresh-div-type">{{ d.div_type_label }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  {% endif %}
+</section>
+
+{# ---- Survival grid ------------------------------------------------ #}
 <div class="tree-wrap">
   <table class="tree">
     <thead>
