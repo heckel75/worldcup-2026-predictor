@@ -27,6 +27,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
+import calibration
 import whats_changed
 
 import pandas as pd
@@ -41,6 +42,7 @@ PREVIEWS_DIR = Path("data/processed/previews")
 DIVERGENCES_DIR = Path("data/processed/divergences")
 OUTPUT_DIR = Path("docs")
 MATCHES_OUT = OUTPUT_DIR / "matches"
+WC_PREDS_PATH = Path("data/processed/wc_predictions.csv")
 
 
 # ----------------------------------------------------------------------
@@ -349,6 +351,63 @@ def _copy_static() -> None:
             shutil.copy2(item, OUTPUT_DIR / item.name)
 
 
+# ----------------------------------------------------------------------
+# Calibration page (Session 27)
+# ----------------------------------------------------------------------
+
+_CAL_SVG_SIZE = 280
+_CAL_SVG_PAD  = 32   # pixels of padding on every side
+
+
+def _cal_svg(summary: dict) -> dict:
+    """Convert reliability bins to SVG pixel coords for the diagram."""
+    plot = _CAL_SVG_SIZE - 2 * _CAL_SVG_PAD
+    dots = []
+    for b in summary["bins"]:
+        if b["mean_pred"] is None or b["obs_freq"] is None:
+            continue
+        x = round(_CAL_SVG_PAD + b["mean_pred"] * plot, 1)
+        y = round(_CAL_SVG_SIZE - _CAL_SVG_PAD - b["obs_freq"] * plot, 1)
+        r = max(5, min(12, b["n"] // 8))
+        dots.append({
+            "x": x, "y": y, "r": r,
+            "label": (f"{round(b['mean_pred'] * 100)}% predicted, "
+                      f"{round(b['obs_freq'] * 100)}% actual "
+                      f"(n={b['n']})"),
+        })
+    return {
+        "size": _CAL_SVG_SIZE,
+        "pad":  _CAL_SVG_PAD,
+        "plot": plot,
+        "dots": dots,
+        "diag": {
+            "x1": _CAL_SVG_PAD, "y1": _CAL_SVG_SIZE - _CAL_SVG_PAD,
+            "x2": _CAL_SVG_SIZE - _CAL_SVG_PAD, "y2": _CAL_SVG_PAD,
+        },
+    }
+
+
+def _fmt_cal(summary: dict) -> dict:
+    """Pre-format a calibration summary dict for the template."""
+    rows = []
+    for r in summary["per_outcome"]:
+        gap_pp = r["gap"] * 100
+        rows.append({
+            "outcome":   r["outcome"],
+            "pred":      f"{r['pred'] * 100:.1f}%",
+            "obs":       f"{r['obs'] * 100:.1f}%",
+            "gap":       f"+{gap_pp:.1f}pp" if gap_pp >= 0 else f"{gap_pp:.1f}pp",
+            "highlight": r["outcome"] == "Draw",
+        })
+    return {
+        "label":    summary["label"],
+        "n":        summary["n"],
+        "brier":    f"{summary['brier']:.3f}",
+        "accuracy": f"{summary['accuracy'] * 100:.1f}%",
+        "rows":     rows,
+    }
+
+
 def build_site() -> None:
     snapshot = _latest_snapshot()
     snapshot_date = snapshot.stem  # filename is the date
@@ -409,12 +468,35 @@ def build_site() -> None:
             root="../", generated_at=generated_at, snapshot_date=snapshot_date,
         )
 
+    # --- calibration page (top-level: root="") ---
+    wc_df = calibration.load_wc_predictions(str(WC_PREDS_PATH))
+    if wc_df is not None:
+        primary_sum = calibration.summarize(wc_df, "Live WC predictions")
+        use_wc = True
+    else:
+        primary_sum = calibration.summarize(
+            calibration.load_backtest(majors_only=True),
+            "Backtest — Euro 2024 + Copa América",
+        )
+        use_wc = False
+    full_sum = calibration.summarize(
+        calibration.load_backtest(), "Full backtest (2024, all competitions)"
+    )
+    _render_page(
+        env, "calibration.html", OUTPUT_DIR / "calibration.html",
+        primary=_fmt_cal(primary_sum),
+        full=_fmt_cal(full_sum),
+        svg=_cal_svg(primary_sum),
+        use_wc=use_wc,
+        root="", generated_at=generated_at, snapshot_date=snapshot_date,
+    )
+
     _copy_static()
     (OUTPUT_DIR / ".nojekyll").touch()
 
     print(f"Built site -> {OUTPUT_DIR}/")
     print(f"   snapshot : {snapshot.name} ({len(teams)} teams)")
-    print(f"   pages    : index.html + {len(matches)} match pages")
+    print(f"   pages    : index.html + calibration.html + {len(matches)} match pages")
 
 
 if __name__ == "__main__":

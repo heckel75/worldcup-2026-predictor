@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}Calibration · World Cup 2026 Predictor{% endblock %}
+
+{% block content %}
+<h1>Calibration</h1>
+<p class="lede">How well do the probabilities match what actually happened?</p>
+
+<h2 class="section-label">{{ primary.label }} (n&nbsp;=&nbsp;{{ primary.n }})</h2>
+
+<div class="cal-stats">
+  <div class="stat-card">
+    <span class="stat-val">{{ primary.brier }}</span>
+    <span class="stat-meta">Brier score — lower is better · random ≈ 0.667</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-val">{{ primary.accuracy }}</span>
+    <span class="stat-meta">Match accuracy · random ≈ 37%</span>
+  </div>
+</div>
+
+<p class="cal-secondary">
+  Full backtest ({{ full.label }}, n&nbsp;=&nbsp;{{ full.n }}):
+  Brier {{ full.brier }}, accuracy {{ full.accuracy }} — inflated by friendlies and qualifiers.
+</p>
+
+<h2 class="section-label">Reliability diagram — pooled outcomes</h2>
+<div class="cal-diagram">
+  <svg width="{{ svg.size }}" height="{{ svg.size }}"
+       viewBox="0 0 {{ svg.size }} {{ svg.size }}"
+       aria-label="Reliability diagram: predicted probability vs observed frequency">
+
+    <!-- axes -->
+    <line x1="{{ svg.pad }}" y1="{{ svg.pad }}"
+          x2="{{ svg.pad }}" y2="{{ svg.size - svg.pad }}"
+          stroke="var(--border)" stroke-width="1"/>
+    <line x1="{{ svg.pad }}" y1="{{ svg.size - svg.pad }}"
+          x2="{{ svg.size - svg.pad }}" y2="{{ svg.size - svg.pad }}"
+          stroke="var(--border)" stroke-width="1"/>
+
+    <!-- axis labels: 0% and 100% ticks -->
+    <text x="{{ svg.pad }}" y="{{ svg.size - svg.pad + 14 }}"
+          text-anchor="middle" font-size="10" fill="var(--muted)">0%</text>
+    <text x="{{ svg.size - svg.pad }}" y="{{ svg.size - svg.pad + 14 }}"
+          text-anchor="middle" font-size="10" fill="var(--muted)">100%</text>
+    <text x="{{ svg.pad - 6 }}" y="{{ svg.size - svg.pad }}"
+          text-anchor="end" dominant-baseline="middle"
+          font-size="10" fill="var(--muted)">0%</text>
+    <text x="{{ svg.pad - 6 }}" y="{{ svg.pad }}"
+          text-anchor="end" dominant-baseline="middle"
+          font-size="10" fill="var(--muted)">100%</text>
+
+    <!-- axis captions -->
+    <text x="{{ svg.pad + svg.plot // 2 }}" y="{{ svg.size - 4 }}"
+          text-anchor="middle" font-size="9" fill="var(--muted)">Predicted probability</text>
+    <text x="10" y="{{ svg.pad + svg.plot // 2 }}"
+          text-anchor="middle" font-size="9" fill="var(--muted)"
+          transform="rotate(-90, 10, {{ svg.pad + svg.plot // 2 }})">Observed frequency</text>
+
+    <!-- perfect calibration diagonal -->
+    <line x1="{{ svg.diag.x1 }}" y1="{{ svg.diag.y1 }}"
+          x2="{{ svg.diag.x2 }}" y2="{{ svg.diag.y2 }}"
+          stroke="var(--muted)" stroke-width="1"
+          stroke-dasharray="4 4" opacity="0.6"/>
+
+    <!-- bin dots -->
+    {% for d in svg.dots %}
+    <circle cx="{{ d.x }}" cy="{{ d.y }}" r="{{ d.r }}"
+            fill="var(--accent)" opacity="0.75">
+      <title>{{ d.label }}</title>
+    </circle>
+    {% endfor %}
+  </svg>
+  <p style="font-size:0.78rem;color:var(--muted);margin:0.4rem 0 0;">
+    Each dot is a probability bin pooling home-win, draw, and away-win predictions.
+    Dots on the dashed diagonal = perfect calibration.
+    Dot size scales with sample count.
+  </p>
+</div>
+
+<h2 class="section-label">Per-outcome summary</h2>
+<div class="cal-table-wrap">
+  <table class="cal-table">
+    <thead>
+      <tr>
+        <th>Outcome</th>
+        <th>Predicted (avg)</th>
+        <th>Observed</th>
+        <th>Gap</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in primary.rows %}
+      <tr{% if r.highlight %} class="cal-row-highlight"{% endif %}>
+        <td>{{ r.outcome }}</td>
+        <td>{{ r.pred }}</td>
+        <td>{{ r.obs }}</td>
+        <td>{{ r.gap }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="cal-note">
+  {% if use_wc %}
+  <p>Statistics are from live World Cup matches. The reliability diagram and table will
+     fill in as results come in.</p>
+  {% else %}
+  <p>These figures come from a backtest on Euro 2024 and Copa América 2024 —
+     matches the model never saw during training. The tournament has not yet begun,
+     so there are no live WC results to track. This page will switch to live WC data
+     once the tournament starts and results are recorded.</p>
+  {% endif %}
+  <p>Known limitations: on Euro-like fields with clustered Elo ratings (the closest
+     analog to World Cup group play) the model hits roughly 49% match accuracy and
+     a Brier score of around 1.05 per outcome — only marginally better than random.
+     Draws are systematically under-predicted by ~4 percentage points, with away wins
+     over-predicted by a matching amount. These biases are corrected in the per-match
+     probability displays; see the <a href="{{ root }}about.html">methodology</a>
+     for details.</p>
+</div>
+{% endblock %}
