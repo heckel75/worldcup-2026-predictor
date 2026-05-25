@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import pandas as pd; df = pd.read_csv\\('d:/WinProjects/worldcup-2026-predictor/data/processed/backtest_2024.csv'\\); print\\(df['tournament'].value_counts\\(\\).to_string\\(\\)\\)\")"
+    ]
+  }
+}
