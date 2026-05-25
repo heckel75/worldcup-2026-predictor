@@ -395,6 +395,7 @@ Buffer for things that break.
 - **(2026-05-23):** Switched the working model to Claude Code in VS Code for repo work, with planning chats as the design layer — see new §10. Created CLAUDE.md in repo root (imports PROJECT.md via @PROJECT.md, adds working rhythm + hard conventions). Sessions 1–25 were built in planning chats; Session 26 onward uses Claude Code.
 - **Session 26 (2026-05-24):** Built the "What changed today" panel. Added daily divergence snapshots (`data/processed/divergence_snapshots/`) from `triple_compare.py`, mirroring the MC snapshot pattern, so fresh divergences can be diffed over time. New pure, self-tested `src/whats_changed.py` computes top-5 title-odds movers, top-5 group-advance movers (with a `MIN_MOVE_PP=0.5` floor so MC noise ≈±0.5pp doesn't show as movement), and top-3 fresh divergences (newly-flagged vs prior snapshot). `generate_site.py` renders the panel on `index.html` with match-page links and a pre-tournament baseline empty state; survival grid untouched.
 - **Session 27 (2026-05-25):** Built the calibration tracker. New pure, self-tested src/calibration.py (pooled reliability bins, per-outcome predicted-vs-observed, multi-class Brier, accuracy) with a regression anchor reproducing Session 11's majors numbers (n=83, Brier 0.583, acc 0.530). generate_site.py renders docs/calibration.html — inline-SVG reliability diagram + per-outcome table seeded from backtest_2024.csv (majors framing primary), labeled as pre-tournament backtest. Added header-only data/processed/wc_predictions.csv as the dormant live ledger; live append deferred to Session 29.
+- **(2026-05-25):** Formalized the per-session loop in §9 — explain-and-decide is now a hard checkpoint *before* any work order; close-out always ends by asking whether the way of working should change.
 ---
 
 ## 8. How to get back into a chat session
@@ -407,15 +408,17 @@ PROJECT.md is loaded automatically into every new chat via project files, so you
 
 **Repo:** https://github.com/heckel75/worldcup-2026-predictor
 
-## 9. Working protocol (Claude follows these every session)
+## 9. Per-session loop (planning chat ↔ Claude Code)
 
-**At session start.** After reading PROJECT.md and identifying the session, Claude lists every file likely to be touched and provides raw-GitHub URLs in the form `https://raw.githubusercontent.com/heckel75/worldcup-2026-predictor/main/<path>`. Then waits. No work begins until files are pasted. Asking for "one more file" mid-session is a workflow failure — Claude should over-include rather than under-include.
+Every session follows these five steps in order. Each is its own turn; the chat waits for the user between them.
 
-**One step per response.** Each reply corresponds to one discrete step: one file change, one test run, one explanation, or one decision. After each step, Claude waits for the user. Bundling steps makes course-correction harder and gets in the way of the user actually doing the step.
+1. **User says "ready for Session N."** Claude explains the session — what it builds, what it reuses, and the real decisions to make — then asks the user to decide. Claude stops and waits. No work order yet.
+2. **User answers the decisions.** Claude then sends the Claude Code work order (files to read first, changes, checks, commit message).
+3. **User runs it in Claude Code and reports back.** Paste an error/output/diff only if something's off; otherwise just confirm done. Claude Code does not commit/push on its own — the user drives git after reviewing diffs.
+4. **Claude sends the close-out:** the PROJECT.md updates (§5 status + NEXT pointer, any §6 risk additions, §7 log line) and the commit message.
+5. **Claude asks whether the user wants any change to the way of working** before moving on.
 
-**At session end.** Claude proposes two one-line additions for the user to paste:
-1. **Session log line** for §7 (one bullet summarizing what got built, decided, or blocked).
-2. **Commit message** for the Git commit covering the session's changes — short, imperative, scoped (e.g. `Session 16: add FIFA Annex C lookup for R32 third-place slots`).
+Still in force from the old §9: one logical step per response; over-include rather than under-include files to read; in Claude Code, plan mode (Shift+Tab) is the review checkpoint.
 
 ## 10. Working model: Claude Code in VS Code + planning chat (from Session 26)
 
