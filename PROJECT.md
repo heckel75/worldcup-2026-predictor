@@ -452,4 +452,4 @@ bridge; nothing syncs automatically.
   raw-GitHub fetches proved stale/cached (they ate the start of Session 25). Don't
   relitigate fetch staleness — paste, or rely on PROJECT.md.
 - §9 "one step per response" — in Claude Code, **plan mode is that review
-  checkpoint**, so the same safety holds with less friction.
+  checkpoint**, so the same safety holds with less friction. 
