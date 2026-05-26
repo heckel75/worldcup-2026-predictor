@@ -286,7 +286,7 @@ Then we resume.
 - Reliability diagram + Brier score
 - Live as soon as the tournament starts producing results
 
-**Session 28 — Deploy to GitHub Pages (← NEXT)**
+**Session 28 — Deploy to GitHub Pages ✅ DONE**
 - Configure repo to serve `docs/` as Pages site
 - Register custom subdomain if desired (optional)
 - Test the full regeneration flow end to end
@@ -297,7 +297,7 @@ Then we resume.
 
 **Goal:** dashboard is robust, regeneration is one command, you trust the system.
 
-**Session 29 — End-to-end update script**
+**Session 29 — End-to-end update script (← NEXT)**
 - One script that: pulls fresh data → updates ratings → re-runs simulation → regenerates Claude commentary → rebuilds site → commits and pushes
 - Logs everything, handles errors, never silently fails
 
@@ -396,6 +396,7 @@ Buffer for things that break.
 - **Session 26 (2026-05-24):** Built the "What changed today" panel. Added daily divergence snapshots (`data/processed/divergence_snapshots/`) from `triple_compare.py`, mirroring the MC snapshot pattern, so fresh divergences can be diffed over time. New pure, self-tested `src/whats_changed.py` computes top-5 title-odds movers, top-5 group-advance movers (with a `MIN_MOVE_PP=0.5` floor so MC noise ≈±0.5pp doesn't show as movement), and top-3 fresh divergences (newly-flagged vs prior snapshot). `generate_site.py` renders the panel on `index.html` with match-page links and a pre-tournament baseline empty state; survival grid untouched.
 - **Session 27 (2026-05-25):** Built the calibration tracker. New pure, self-tested src/calibration.py (pooled reliability bins, per-outcome predicted-vs-observed, multi-class Brier, accuracy) with a regression anchor reproducing Session 11's majors numbers (n=83, Brier 0.583, acc 0.530). generate_site.py renders docs/calibration.html — inline-SVG reliability diagram + per-outcome table seeded from backtest_2024.csv (majors framing primary), labeled as pre-tournament backtest. Added header-only data/processed/wc_predictions.csv as the dormant live ledger; live append deferred to Session 29.
 - **(2026-05-25):** Formalized the per-session loop in §9 — explain-and-decide is now a hard checkpoint *before* any work order; close-out always ends by asking whether the way of working should change.
+- **Session 28 (2026-05-26):** Deployed the site to GitHub Pages — Settings → Pages, "Deploy from a branch," main / /docs. Default URL (no custom domain for v1): https://heckel75.github.io/worldcup-2026-predictor/. Pre-deploy audit confirmed zero root-absolute links (href="/", src="/", url(/)) so the subfolder URL doesn't break asset/subpage links; .nojekyll present. Verified live: index survival grid, a match page (root="../" resolves), and calibration.html (inline-SVG reliability diagram, majors framing) all render styled. Classic branch-deploy doesn't surface in the Actions tab — the Settings → Pages "currently being built from /docs" message is the real status indicator. No code changes; docs/ rebuilt and committed under the earlier Session 28 commit. Site-build half of the loop proven end-to-end; full data→site pipeline is Session 29.
 ---
 
 ## 8. How to get back into a chat session
