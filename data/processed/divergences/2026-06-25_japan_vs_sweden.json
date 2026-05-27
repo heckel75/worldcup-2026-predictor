@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-25_japan_vs_sweden",
+  "home_team": "Japan",
+  "away_team": "Sweden",
+  "date": "2026-06-25",
+  "kind": "commentary",
+  "divergence_type": "model_over_concentrated",
+  "max_gap_pp": 22.1,
+  "input_hash": "8efd353922b9dd6f2156467e69f4cfd4557cf950",
+  "generated_at": "2026-05-27T10:21:03+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model assigns Japan a 68% win probability while the market settles at 46%, a 22-percentage-point gap favoring the model's confidence in a Japan victory. The market's more cautious stance on Japan, paired with its markedly higher assessment of Sweden's chances (27% vs. 8%), suggests sportsbooks may be pricing in recent form shifts, injury or lineup changes, or other current information unavailable to the model's last training update. Both sources rank Japan as favorite, but the market's compressed spread across all three outcomes reflects genuine uncertainty that the statistical model does not capture. The divergence functions as a flag: either the model overestimates Japan's edge based on historical Elo strength, or the market is overcorrecting for late-breaking conditions. Neither reading is inherently superior."
+}

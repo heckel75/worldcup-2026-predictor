@@ -3,9 +3,9 @@
   "home_team": "Senegal",
   "away_team": "Iraq",
   "date": "2026-06-26",
-  "input_hash": "c5e01ecf4164866ea18c0417b322e4dc7aa32c7e",
-  "generated_at": "2026-05-19T13:47:15+00:00",
+  "input_hash": "b15252a7f62d739497364ee82ee97422bb41f97a",
+  "generated_at": "2026-05-27T10:20:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Senegal at 62%, with Iraq positioned as a clear underdog at 12%. Senegal's win probability exceeds the draw likelihood by a meaningful margin, indicating the model expects the stronger side to convert that edge into a result.\n\nThe 26% draw probability suggests moderate competitive balance; a stalemate is plausible but the model leans toward a Senegal victory. The gap between first and second outcomes spans roughly 36 percentage points, reflecting a match tilted toward one side rather than a toss-up. Iraq's 12% win chance represents a small but non-negligible tail scenario.\n\nNo sportsbook consensus is currently available for this fixture. Once market pricing emerges, comparison with the model's 62% Senegal win probability will clarify whether public and algorithmic assessments align or diverge on the strength differential between the two sides."
+  "preview_text": "The statistical model favors Senegal to win at 62%, with Iraq's victory probability at 11%. Senegal enters as a clear favorite, though the 51-percentage-point gap reflects a competitive match rather than a foregone conclusion.\n\nThe draw carries material weight at 26%, making this a three-way contest with realistic outcomes across all results. Senegal's lead is substantial but not overwhelming; Iraq's 11% win chance and the high draw likelihood suggest the match will remain competitive throughout, particularly if the underdog can contain early pressure.\n\nModel and sportsbook consensus are tightly aligned across all three outcomes, with gaps of 1 percentage point on the Senegal win and under 4 percentage points on both alternative results. This convergence indicates broad agreement on the fixture's probable shape. Polymarket data is not yet available."
 }

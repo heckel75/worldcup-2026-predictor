@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-27_panama_vs_england",
+  "home_team": "Panama",
+  "away_team": "England",
+  "date": "2026-06-27",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 16.6,
+  "input_hash": "3cadfe19784e890fe2e78ed3ad027a03665c6d6f",
+  "generated_at": "2026-05-27T10:21:13+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market assigns England a 77.5% win probability versus the model's 60.9%—a 17-percentage-point gap favoring the favorite. The market also reduces Panama's chances to 7.8%, nearly half the model's 13.3% estimate. Both sources rank England as clear favorites, but sportsbooks are pricing in substantially higher conviction. This gap could reflect recent lineup news, injury status, or form information unavailable to the model at its last update. The dashboard flags this as a meaningful divergence: the market is either discounting Panama's underlying strength or incorporating concrete team intelligence that shifts the match fundamentally in England's favor."
+}

@@ -3,9 +3,9 @@
   "home_team": "Japan",
   "away_team": "Sweden",
   "date": "2026-06-25",
-  "input_hash": "8e9b829d00ca4515f5330783be441689d10665ab",
-  "generated_at": "2026-05-19T13:46:50+00:00",
+  "input_hash": "a034fdddda78fe325da3444e941d32a9c7ce8083",
+  "generated_at": "2026-05-27T10:19:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Japan with a 68% win probability, leaving Sweden with just an 8% chance of victory. This represents a substantial gap, positioning Japan as the clear favorite in a match where the underdog's path to three points appears narrow.\n\nThe draw emerges as a meaningful outcome at 24%, reflecting moderate uncertainty in the match result. The spread between Japan's win probability and the combined chances for Sweden or a stalemate is pronounced but not extreme; Japan's advantage is genuine yet leaves room for alternative scenarios. The fixture leans competitive rather than one-sided in structure.\n\nNo sportsbook consensus is currently available for this fixture, so comparison between the model's assessment and market pricing cannot yet be made. The dashboard will update that analysis once early odds emerge."
+  "preview_text": "The model favors Japan at 68%, assessing a substantial edge over Sweden's 8% win probability. This marks a confident lean toward the favorite, though the underdog retains a mathematical path to victory.\n\nThe draw sits at 24%, reflecting a gap between the two most likely outcomes but not an enormous one. The model's spread suggests Japan as clear preference, yet the combination of a draw and a Swedish win totals 32%, leaving room for competitive match dynamics and upset potential within the forecast range.\n\nModel and sportsbook diverge markedly here. The market compresses Japan's win probability to 46%, a 22-percentage-point swing downward, while elevating Sweden to 27%. The draw widens slightly to 28%. This substantial disagreement suggests either the market is pricing in contextual factors beyond the model's inputs or applying different weighting to match structure. The dashboard offers both views without claiming superiority for either."
 }

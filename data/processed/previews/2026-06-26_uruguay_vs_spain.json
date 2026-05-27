@@ -3,9 +3,9 @@
   "home_team": "Uruguay",
   "away_team": "Spain",
   "date": "2026-06-26",
-  "input_hash": "d9a6a361883b0b928500d3091b0befd623567817",
-  "generated_at": "2026-05-19T13:47:05+00:00",
+  "input_hash": "0ef9d1944fef488920bddca6656ab3698de55866",
+  "generated_at": "2026-05-27T10:20:02+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Spain enters as the model's strong favorite, with a 71% win probability that reflects a substantial advantage over Uruguay's 8% chance. The gap widens further when comparing the headline outcomes: Spain's favored status outpaces the underdog by roughly 63 percentage points.\n\nThe match shows meaningful separation across the draw line. While a draw carries 21% probability—a non-trivial share—the model concentrates most mass on an outright Spanish victory. This distribution suggests a competitive encounter with material two-way risk, though a Spain win remains the overwhelmingly likeliest single outcome.\n\nNo sportsbook consensus is available yet for this fixture. Once market odds appear, the dashboard will compare model and market assessments to identify any material divergence in the probability landscape."
+  "preview_text": "Spain enters as the model's clear favorite with a 71% win probability, while Uruguay's chances sit at 8%. The gap reflects a substantial disparity in the forecast; the underdog would need a significant upset to claim three points on a neutral ground.\n\nThe model projects Spain to win outright in roughly seven of ten instances, with draws comprising one-fifth of outcomes. Uruguay's path to victory is narrow, suggesting the match will more likely be decided than deadlocked. The 71–8 split indicates Spain controls the modal outcome decisively, though the 21% draw probability leaves room for a stalemate.\n\nModel and market diverge meaningfully here. The sportsbook consensus grants Uruguay nearly 18%, some 10 percentage points higher than the model's 8%, and prices Spain at 58%—13 points lower. The books assign draws slightly more weight at 24% versus 21%. This gap suggests the market views Uruguay's chances as materially stronger than the statistical forecast does. The dashboard does not adjudicate between the two; bettors should consider which lens better reflects the actual competitive balance."
 }

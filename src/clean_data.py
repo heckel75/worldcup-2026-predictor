@@ -8,7 +8,8 @@ import pandas as pd
 from pathlib import Path
 
 # --- config ---
-RAW_PATH = Path("data/raw/results.csv")
+RAW_PATH    = Path("data/raw/results.csv")
+MANUAL_PATH = Path("data/raw/wc_results_manual.csv")
 PROCESSED_DIR = Path("data/processed")
 TRAINING_PATH = PROCESSED_DIR / "matches_clean.csv"
 FIXTURES_PATH = PROCESSED_DIR / "fixtures_2026.csv"
@@ -31,9 +32,16 @@ TEAM_NAME_MAP = {
 def main():
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
-    # 1. Load
+    # 1. Load Kaggle dataset
     df = pd.read_csv(RAW_PATH)
     print(f"Loaded {len(df):,} rows from {RAW_PATH}")
+
+    # 1b. Concat hand-maintained WC results (manual rows first so they win dedup)
+    if MANUAL_PATH.exists():
+        manual_df = pd.read_csv(MANUAL_PATH)
+        if len(manual_df) > 0:
+            df = pd.concat([manual_df, df], ignore_index=True)
+            print(f"Prepended {len(manual_df):,} manual rows from {MANUAL_PATH}")
 
     # 2. Parse dates
     df["date"] = pd.to_datetime(df["date"])
@@ -45,6 +53,13 @@ def main():
     # 4. Standardize team names (both home and away columns)
     df["home_team"] = df["home_team"].replace(TEAM_NAME_MAP)
     df["away_team"] = df["away_team"].replace(TEAM_NAME_MAP)
+
+    # 4b. Dedup: keep the first occurrence (manual row) when both sources have the match
+    before = len(df)
+    df = df.drop_duplicates(subset=["date", "home_team", "away_team"], keep="first")
+    dropped = before - len(df)
+    if dropped:
+        print(f"Dropped {dropped} duplicate row(s) (manual source takes precedence)")
 
     # 5. Split played vs unplayed.
     # Future fixtures have NaN in score columns.

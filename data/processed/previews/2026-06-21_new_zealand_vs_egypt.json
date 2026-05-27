@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Egypt",
   "date": "2026-06-21",
-  "input_hash": "e2e2bc3946f811a520ca903c0c811124dca43cd6",
-  "generated_at": "2026-05-19T13:45:37+00:00",
+  "input_hash": "f6dc144d43eb2f2b4ec8d0fca4c1a3edbc61700c",
+  "generated_at": "2026-05-27T10:18:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Egypt with a 43% win probability, while New Zealand's chances stand at 26%. The draw emerges as a plausible outcome at 31%, suggesting a competitive but unbalanced contest where the favourite holds a material edge.\n\nThe gap between Egypt's win probability and New Zealand's is substantial, yet the high draw probability indicates the teams are expected to be close enough in execution that a goalless or tied result is nearly as likely as an Egyptian victory. This spread reflects a match with meaningful uncertainty, where neither side is prohibitively favoured.\n\nThe sportsbook consensus diverges notably from the model. Books assign Egypt 55% compared to the model's 43%, a gap of 12 percentage points, and price New Zealand lower at 19% versus 26%. The draw shrinks to 26% in the market consensus. This divergence is meaningful; the dashboard does not adjudicate which source is more accurate."
+  "preview_text": "The model favors Egypt, assigning the team a 43% chance of victory compared to New Zealand's 26%. The underdog carries meaningful upside but enters as a clear second choice under this framework.\n\nThe most striking feature of the forecast is the elevated draw probability at 31%, suggesting the teams are closer in competitive terms than the win odds alone imply. A stalemate is nearly as likely as an Egypt victory, which points to a tightly contested match where one-goal margins or goalless outcomes are plausible outcomes. The 17-point gap between Egypt's win rate and New Zealand's reflects a moderate rather than dominant edge.\n\nModel and sportsbook probabilities diverge across all three outcomes. The market rates Egypt's win probability roughly 11 percentage points higher than the model, while also compressing the draw down by 5 points and lowering New Zealand's chances by 6 points. This suggests the market is more confident in an Egyptian victory. The dashboard does not determine which assessment is more accurate; the divergence merits observation but no endorsement of either source."
 }

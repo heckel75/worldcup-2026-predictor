@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Haiti",
   "date": "2026-06-19",
-  "input_hash": "09b787660bff13b44994008bb957fdee33164617",
-  "generated_at": "2026-05-19T13:45:06+00:00",
+  "input_hash": "36d77a9e619e97ca0399d73313abe511b3ec390d",
+  "generated_at": "2026-05-27T10:18:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model forecasts a Brazil victory at 76%, with Haiti holding only a 4% chance to win. Brazil enters as a clear favorite; Haiti's path to points depends substantially on avoiding defeat rather than securing victory. The remaining probability mass concentrates on a draw at 20%.\n\nThe win-draw-loss spread reflects a moderately competitive match by model standards. A 15-point gap between the top two outcomes indicates Brazil should dominate possession and chances, yet a one-in-five draw probability suggests Haiti can plausibly frustrate play long enough to escape with a point. This is not a mismatch predicted to be a rout.\n\nThe sportsbook consensus diverges noticeably from the model. Books assign Brazil a 90% win probability—14 percentage points above the model's 76%—and compress Haiti's chances to 3%. The market views this as substantially more lopsided; the model sees materially higher draw risk. Both sources agree on a Brazil lean, but the consensus is meaningfully more confident in a decisive outcome. No Polymarket data is yet available for cross-reference."
+  "preview_text": "The model projects Brazil to win with a 76% probability, with Haiti's chances of an upset capped at 4%. This asymmetry reflects a substantial gap in the forecast, though not one so wide as to render the underdog entirely implausible from a statistical standpoint.\n\nThe draw carries meaningful weight in the model's view at 20%, suggesting the match has scope for a stalemate outcome. The win probabilities favour Brazil decisively, but the presence of a one-in-five draw probability indicates the model expects a competitive fixture rather than a rout. The gap between Brazil and Haiti remains substantial across all three outcomes.\n\nThe sportsbook consensus shifts materially toward Brazil, pricing a win at 89% while compressing the draw to 8% and Haiti's chances to 3%. The books are more confident in a Brazil victory by roughly 13 percentage points than the model. Both sources agree on the hierarchy; they diverge on how wide the margin should be. No Polymarket contract is currently available for comparison."
 }

@@ -66,12 +66,26 @@
     
   </div>
   
-  <div class="bar-row bar-row--empty">
+  <div class="bar-row">
     <div class="bar-label">
-      Sportsbook
+      Sportsbook<span class="bar-sub">26 books, vig stripped</span>
     </div>
     
-    <div class="bar bar-absent">No consensus market posted yet.</div>
+    <div class="bar" role="img" aria-label="Sportsbook: South Africa 27%, draw 29%, South Korea 45%">
+      
+      <div class="seg seg-home" style="flex-basis: 26.78%">
+        <span class="seg-pct">27%</span>
+      </div>
+      
+      <div class="seg seg-draw" style="flex-basis: 28.53%">
+        <span class="seg-pct">29%</span>
+      </div>
+      
+      <div class="seg seg-away" style="flex-basis: 44.69%">
+        <span class="seg-pct">45%</span>
+      </div>
+      
+    </div>
     
   </div>
   
@@ -87,15 +101,23 @@
 </section>
 
 
+<aside class="divergence divergence--commentary">
+  <p class="divergence-tag">Market hedges more than the model</p>
+  
+  <p class="divergence-headline">The model puts South Korea 17 pp higher than the market — 62% vs 45%.</p>
+  
+  <p class="divergence-text">The market assigns South Korea a 44% win probability versus the model&#39;s 62%, a 18-percentage-point gap favoring the underdog narrative in the sportsbook consensus. This hedging pattern—where the market flattens the favorite&#39;s odds relative to the model—typically reflects real-money flows responding to recent lineup changes, injury concerns, or form shifts that the model&#39;s last update may not capture. The model operates on static ratings and cannot see breaking news; the market prices dynamically. Both sources agree South Korea is favored, but the market&#39;s caution on that advantage warrants attention as a signal that something may have shifted since the model was trained. Neither reading should be treated as definitive; the gap itself is the story worth monitoring.</p>
+</aside>
+
 
 <section class="preview">
   <h2 class="section-label">Preview</h2>
   
-  <p>The model favors South Korea with a 62% win probability, positioning them as clear favorites. South Africa faces a steeper path, carrying only a 13% chance of victory in this neutral-venue matchup.</p>
+  <p>South Korea enters as the model&#39;s clear favorite, with a 62% win probability compared to South Africa&#39;s 13%. The gap reflects a substantial asymmetry in expected performance, though the underdog retains a non-trivial chance of an upset.</p>
   
-  <p>The 49-percentage-point gap between the favorites&#39; win probability and the underdog&#39;s reflects a notably asymmetric contest. A draw emerges as plausible at 25%, suggesting the match could prove competitive enough to avoid a decisive result, though South Korea&#39;s advantage in the model&#39;s baseline assessment is substantial.</p>
+  <p>The draw carries meaningful probability at 25%, suggesting this match is less likely to be a blowout than the win percentages alone might imply. South Korea&#39;s advantage is material but not overwhelming; the model indicates a competitive contest in which a single goal or defensive lapse could shift the outcome. The spread across outcomes points to genuine uncertainty around the final result.</p>
   
-  <p>No sportsbook consensus is available yet, so direct comparison between model and market expectations cannot be made at this time.</p>
+  <p>The sportsbook consensus diverges from the model in a notable direction. Books assign South Africa 27% to win versus the model&#39;s 13%—a 14-percentage-point gap—and rate South Korea&#39;s chances at 45% rather than 62%. The market also places the draw slightly higher at 29%. This represents a meaningful difference in degree of confidence around the underdog, though both sources favor South Korea. No Polymarket consensus is yet available for this fixture.</p>
   
   <p class="preview-credit">
     Written by Claude from the figures above — it has no squad, injury, or form
@@ -107,7 +129,7 @@
 
   <footer class="site-footer">
     <p>
-      Forecast generated 2026-05-26 13:19 · snapshot 2026-05-14.
+      Forecast generated 2026-05-27 12:21 · snapshot 2026-05-27.
     </p>
     <p>
       Probabilities are model and market estimates, not statements of certainty.

@@ -3,9 +3,9 @@
   "home_team": "Egypt",
   "away_team": "Iran",
   "date": "2026-06-26",
-  "input_hash": "877aa9138ae402782b06701b76aebb460ee7f2a5",
-  "generated_at": "2026-05-19T13:46:57+00:00",
+  "input_hash": "ec244ccdd7c19accc56c3cfff173e04e426a74e7",
+  "generated_at": "2026-05-27T10:19:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Iran emerges as the model's favorite with a 48% win probability, while Egypt's chances stand at 23%. The gap reflects a meaningful edge in the statistical forecast, though it stops well short of a dominant prediction.\n\nThe draw probability of 30% suggests this match carries genuine competitive balance despite Iran's higher win likelihood. The trio of outcomes—Iran 48%, draw 30%, Egypt 23%—spreads across the probability space without one outcome heavily suppressing the others. A stalemate remains a plausible result, indicating the teams are not vastly separated in expected strength.\n\nNo sportsbook consensus is available yet. The model's probabilities can be tracked against market prices once they emerge; early discrepancies, if they appear, will be visible on the dashboard as odds stabilize."
+  "preview_text": "The model favours Iran to win, assigning the team a 48% probability compared to Egypt's 23%. Iran emerges as a clear favourite in the statistical forecast, though Egypt retains a meaningful chance at victory and a draw ranks as the single most likely outcome.\n\nThe spread between Iran's win probability and Egypt's is substantial, suggesting a moderately uneven match in the model's view. A draw at 30% remains plausible, reflecting the inherent variability in single-match outcomes and the neutral venue. The model rates Iran as roughly twice as likely to win as Egypt, but does not treat the result as predetermined.\n\nModel and sportsbook consensus diverge notably here. The market elevates Egypt's win probability to 39%, a gap of 16 percentage points above the model, and compresses Iran's advantage to just 30%. Both sources agree a draw is likely around 30%, but they diverge sharply on the binary outcome. The dashboard does not claim to know which assessment is correct; the divergence is substantial enough to warrant close attention."
 }

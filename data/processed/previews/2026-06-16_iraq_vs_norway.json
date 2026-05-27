@@ -3,9 +3,9 @@
   "home_team": "Iraq",
   "away_team": "Norway",
   "date": "2026-06-16",
-  "input_hash": "3d3c42a12f8e438db311e4161aec303cb1d49a51",
-  "generated_at": "2026-05-19T13:44:21+00:00",
+  "input_hash": "8a62cab2f9c2ff5d40ae5a918f74dfb5a669701d",
+  "generated_at": "2026-05-27T10:17:37+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Norway at 64% to win, with Iraq's chances assessed at 12%. The underdog faces a steep task, though the model assigns a meaningful draw probability of 25%, suggesting the match will not necessarily be a runaway.\n\nThe win-loss spread is wide, reflecting a clear gap in expected quality. Norway's advantage is substantial, but the 25% draw rate indicates the contest carries enough variance that neither side winning outright is the dominant outcome. A Norway victory remains most likely, yet Iraq retains paths to avoid defeat.\n\nThe market is notably more bullish on Norway, pricing the favorite at 75% compared to the model's 64%—a gap of 11 percentage points. The market also compresses the draw to 16%, eight points below the model estimate. This divergence suggests the sportsbooks view Norway's edge as wider and the match as less competitive. The dashboard does not adjudicate between these forecasts."
+  "preview_text": "The model favours Norway at 64% to win, with Iraq positioned as a clear underdog at 12%. The gap reflects a substantial disparity in the forecast; Norway is heavily favoured to take the match, though not at prohibitive odds.\n\nThe draw carries material weight in the model's assessment at 25%, suggesting a reasonably competitive encounter rather than a runaway outcome. The spread across all three outcomes indicates meaningful uncertainty around Norway's margin of victory, even as their win probability remains dominant. A draw emerges as the likeliest alternative to a Norway success.\n\nThe market consensus diverges from the model on both tail outcomes. Sportsbooks price Norway's win probability 13 percentage points higher at 76%, while assigning the draw only 15% rather than 25%. This systematic shift compresses Iraq's chances further, to 8%. The dashboard does not adjudicate between these divergent views; both reflect coherent but distinct assessments of the match."
 }

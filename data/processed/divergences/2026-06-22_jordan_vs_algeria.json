@@ -5,10 +5,10 @@
   "date": "2026-06-22",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 15.9,
-  "input_hash": "44258044fa38b0f22d7ba2eecff8e9718e0849ef",
-  "generated_at": "2026-05-20T12:49:46+00:00",
+  "max_gap_pp": 15.1,
+  "input_hash": "29d98b2061c99661b9c7c0d5ef69e8c1a8cc7aab",
+  "generated_at": "2026-05-27T10:20:52+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Algeria a 54% win probability versus the model's 38%, a 16-percentage-point gap favoring the underdog view built into the ratings. The model and market agree Algeria are favored, but the market's sharper confidence suggests access to information the model cannot see—recent form, injury status, or lineup changes since the model's last update could all be narrowing Algeria's perceived vulnerabilities. The sportsbook consensus is also more skeptical of Jordan's chances (20% vs. 30%), reflecting the same tightening. This dashboard flags the divergence as a signal: real-money flows are pricing in factors the Elo-based forecast does not capture, without determining which source better reflects the actual match outcome."
+  "commentary_text": "The market prices Algeria to win at 53%, a 15-percentage-point edge over the model's 38%. Both sources favor Algeria, but the sportsbook consensus is substantially more bullish, while the model sees a tighter three-way outcome. The market's sharper conviction on an Algeria victory could reflect recent lineup news, injury updates, or current form data unavailable to the model's last training window. The model, built on Elo ratings and goal-scoring patterns, may not yet incorporate real-time roster or conditioning information that money flows have already priced in. This dashboard surfaces the gap as a signal worth monitoring rather than a judgment on which forecast will prove correct."
 }

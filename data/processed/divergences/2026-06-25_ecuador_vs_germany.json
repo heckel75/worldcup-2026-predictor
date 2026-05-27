@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-25_ecuador_vs_germany",
+  "home_team": "Ecuador",
+  "away_team": "Germany",
+  "date": "2026-06-25",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 21.4,
+  "input_hash": "ccf5f0b29555c2c6022fb6e79f2c2d3d511a4636",
+  "generated_at": "2026-05-27T10:21:00+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market gives Germany a 21-percentage-point edge over the model on the win outcome, pricing them at 56% versus the model's 35%, while both sources treat Ecuador and the draw as roughly comparable long shots. This substantial sharpening of confidence in Germany may reflect recent form, lineup availability, or injury status that the model's last update did not capture. The market also compresses the draw probability notably lower than the model suggests. The dashboard presents this gap as a signal worth monitoring rather than a definitive verdict on which forecast better reflects the true match dynamics."
+}

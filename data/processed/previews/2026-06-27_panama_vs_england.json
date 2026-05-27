@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "b0e605a5b0e615bd2d45c8f8dcfd5b64ab2c8169",
-  "generated_at": "2026-05-19T13:47:30+00:00",
+  "input_hash": "4af2e9eb21f61d5f480b94c53e66c96317d72495",
+  "generated_at": "2026-05-27T10:20:30+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors England at 61%, with Panama assigned a 13% chance of victory. The draw probability of 26% sits between the two outcomes, reflecting meaningful uncertainty despite England's clear baseline advantage.\n\nThe forecast shows England as the stronger side in expected output, yet the 26% draw probability and Panama's double-digit win chance indicate this is not a heavily skewed matchup. A draw ranks as the second-most likely single outcome, suggesting the teams remain competitive enough that separation may require extra time or a settled moment rather than dominance.\n\nNo sportsbook consensus has formed yet for this fixture. Once market odds appear, they will provide a second lens for comparison; the dashboard makes no claim to outforecast commercial bookmakers, only to represent the model's statistical view independently."
+  "preview_text": "The model favors England at 61%, with Panama's win probability at 13%. This represents a clear gap in quality, though the underdog retains a meaningful chance of avoiding defeat.\n\nThe forecast suggests competitive conditions. A draw sits at 26%, making it the second-most-likely outcome. The win-probability spread of roughly 48 percentage points indicates England are favored, but the relatively high draw probability reflects the possibility of a tightly contested match where neither side pulls decisively clear.\n\nThe sportsbook consensus moves notably in England's favor, rating them at 78% and Panama at just 8%—a 16-point gap from the model's England projection and a 5-point gap on Panama. The books also price draws lower at 15%. This divergence suggests sportsbooks view the match as less competitive than the model estimates. No Polymarket data is available yet."
 }

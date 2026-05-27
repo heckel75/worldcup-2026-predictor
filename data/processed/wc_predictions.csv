@@ -1,1 +1,1 @@
-home_team,away_team,p_home,p_draw,p_away,outcome
+match_key,date,home_team,away_team,p_home,p_draw,p_away,forecast_ts,outcome

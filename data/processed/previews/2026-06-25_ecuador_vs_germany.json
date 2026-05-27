@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Germany",
   "date": "2026-06-25",
-  "input_hash": "9239a85bee8c7e1115ec4dba157fcf9babb0494e",
-  "generated_at": "2026-05-19T13:46:47+00:00",
+  "input_hash": "04c579e59812a286392159856db2ad151b9b5fe3",
+  "generated_at": "2026-05-27T10:19:36+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Germany as slight favorite with a 35% win probability, leaving Ecuador at 33.5%—a separation of just 1.5 percentage points. This is a closely matched contest in the model's assessment, with the underdog positioned nearly level with the projected stronger side.\n\nThe draw outcome carries meaningful weight at 32%, suggesting the match is likely to be competitive and tactically constrained. The narrow spread across all three outcomes (win probabilities clustered in the low-to-mid 30s) indicates minimal predictive separation; either team's victory remains plausible, and a stalemate represents a genuine possibility rather than a tail event.\n\nNo sportsbook consensus is available yet, so a model-market comparison cannot be made at this stage. The dashboard will update that contrast once bookmaker pricing materializes."
+  "preview_text": "The model favors Germany at 35% to win, with Ecuador given a 34-percentage-point underdog case at 34%. The two outcomes sit in a narrow band, with draws assessed at 32%, making this a tightly competitive fixture by the statistical forecast.\n\nThe spread across outcomes reflects genuine uncertainty. Germany's modest four-point advantage over Ecuador masks a scenario in which a draw is nearly as likely as either team's outright victory. No outcome commands strong confidence; all three results fall within a plausible range, suggesting the teams are closely matched on the model's inputs.\n\nThe sportsbook consensus departs significantly from the model, assigning Germany a 56% win probability—roughly 21 percentage points higher than the statistical forecast—while cutting Ecuador to 19%. The market judges the match far less competitive. No Polymarket data is yet available. The dashboard does not claim to know which assessment is more accurate; users should weigh both sources against their own judgment."
 }

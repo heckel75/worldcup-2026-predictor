@@ -3,9 +3,9 @@
   "home_team": "Croatia",
   "away_team": "Ghana",
   "date": "2026-06-27",
-  "input_hash": "025fa3c78885b8c1bb437484efaf714013bfb2c3",
-  "generated_at": "2026-05-19T13:47:33+00:00",
+  "input_hash": "a831185b983f3f5697d2d50458382221db68097f",
+  "generated_at": "2026-05-27T10:20:34+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model gives Croatia a strong favorite status at 81% win probability, leaving Ghana only a 2% chance of victory. The differential reflects a substantial gap in the statistical forecast between the two sides on this neutral ground.\n\nThe spread across outcomes shows Croatia commanding the match shape. A draw at 17% remains plausible but is considerably less likely than a Croatian win. Ghana's underdog position is severe; the model sees this as a highly asymmetric contest rather than a competitive encounter.\n\nNo sportsbook consensus is available yet, so no comparison between model and market can be made at this stage."
+  "preview_text": "The model assigns Croatia a dominant 81% win probability, leaving Ghana with just a 2% chance of victory. This represents a decisive forecast heavily favoring the European side, with the underdog positioned as a substantial outsider.\n\nThe spread across outcomes reveals a match the model expects to be largely one-sided. Croatia's win probability towers over both the draw at 17% and Ghana's slim upset window, suggesting the model anticipates a fairly comfortable result rather than a closely contested encounter.\n\nThe model and sportsbook diverge meaningfully here. Books price Croatia's win at 54%, some 27 percentage points below the model's 81%. Conversely, books give Ghana 20% implied probability versus the model's 2%—an 18-point gap in the opposite direction. The draw sits closer together (17% model, 26% books), but the underdog's probability spreads remain substantial. The dashboard presents both views without claiming certainty about which better reflects true match dynamics."
 }

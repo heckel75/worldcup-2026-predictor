@@ -3,9 +3,9 @@
   "home_team": "Iran",
   "away_team": "New Zealand",
   "date": "2026-06-15",
-  "input_hash": "aaaa0babe0a48526425804900105abccf692375f",
-  "generated_at": "2026-05-19T13:44:06+00:00",
+  "input_hash": "6670246e2afff5641937b6800e90c258ed0199dd",
+  "generated_at": "2026-05-27T10:17:29+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Iran at 60%, substantially ahead of New Zealand's 12% win probability. This 48-percentage-point gap reflects a strong home-field or competitive advantage in the forecast. New Zealand enters as a clear underdog, though not without a path to upset.\n\nThe draw carries meaningful weight at 27%, suggesting the match could settle on a single goal or narrow margin rather than decisive play. The win probabilities are skewed toward Iran, but the draw probability indicates this is not a lopsided mismatch—competitive scorelines remain plausible from the model's perspective.\n\nModel and sportsbook diverge notably. The books assign Iran 53% (down 7 percentage points from the model) and New Zealand 21% (up 8 percentage points). The draw sits nearly level between sources. The dashboard does not claim to know which forecast is more accurate. No Polymarket consensus is yet available for this match."
+  "preview_text": "The model favors Iran at 60%, compared to New Zealand's 12% win probability. This represents a substantial gap: Iran is rated as a heavy favorite, while the underdog's path to victory is narrow. The draw stands at 27% in the model's view, offering a significant alternative outcome.\n\nThe spread reflects a competitive but lopsided match in the model's assessment. A New Zealand win remains possible but unlikely; Iran's advantage is pronounced without being overwhelming. The 27% draw probability suggests the match could resolve to a stalemate at meaningful frequency, though Iran's outright victory is the single likeliest outcome.\n\nModel and market diverge notably on the tail outcomes. Both agree on the draw (27%), but the sportsbook consensus credits New Zealand with a 9 percentage point higher win probability (22% vs. 12%), while assigning Iran 9 points lower (51% vs. 60%). The dashboard does not adjudicate which assessment is more accurate. No Polymarket consensus is available yet."
 }

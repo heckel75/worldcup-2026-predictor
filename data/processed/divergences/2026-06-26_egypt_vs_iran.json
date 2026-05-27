@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-26_egypt_vs_iran",
+  "home_team": "Egypt",
+  "away_team": "Iran",
+  "date": "2026-06-26",
+  "kind": "commentary",
+  "divergence_type": "disagree_on_favorite",
+  "max_gap_pp": 17.2,
+  "input_hash": "4977e464bdd1afd81855e7947f160567c59ae8f6",
+  "generated_at": "2026-05-27T10:21:05+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model favors Iran at 48%, while the market favors Egypt at 39%—a 17-percentage-point gap on the Egypt win probability. The draw sits nearly level across both sources at 30%. This divergence suggests the market is pricing in information the model cannot see: recent lineup changes, injury updates, or current form shifts that materially improve Egypt's prospects relative to the statistical baseline. The dashboard surfaces this conflict as a signal for further investigation rather than a judgment on which estimate is sounder."
+}

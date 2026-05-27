@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-24_south_africa_vs_south_korea",
+  "home_team": "South Africa",
+  "away_team": "South Korea",
+  "date": "2026-06-24",
+  "kind": "commentary",
+  "divergence_type": "model_over_concentrated",
+  "max_gap_pp": 17.1,
+  "input_hash": "c3dc568b70abfc556a7c577e54c86b946298fb70",
+  "generated_at": "2026-05-27T10:20:55+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market assigns South Korea a 44% win probability versus the model's 62%, a 18-percentage-point gap favoring the underdog narrative in the sportsbook consensus. This hedging pattern—where the market flattens the favorite's odds relative to the model—typically reflects real-money flows responding to recent lineup changes, injury concerns, or form shifts that the model's last update may not capture. The model operates on static ratings and cannot see breaking news; the market prices dynamically. Both sources agree South Korea is favored, but the market's caution on that advantage warrants attention as a signal that something may have shifted since the model was trained. Neither reading should be treated as definitive; the gap itself is the story worth monitoring."
+}

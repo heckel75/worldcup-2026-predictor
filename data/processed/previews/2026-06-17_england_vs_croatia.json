@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "Croatia",
   "date": "2026-06-17",
-  "input_hash": "d4415702c8805ca2365726337df7aad2f58d3115",
-  "generated_at": "2026-05-19T13:44:40+00:00",
+  "input_hash": "19e9342510f055c4e0f88c765831fc327f2f3339",
+  "generated_at": "2026-05-27T10:17:51+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates England as slight favorite with a 49% win probability, while Croatia's chance to prevail stands at 21%. This represents a meaningful gap, though England's advantage is not commanding—the model does not project overwhelming dominance from the higher-ranked side.\n\nThe draw at 30% suggests competitive balance despite England's edge. A one-goal margin or stalemate are plausible outcomes; the spread across the three results is fairly broad, indicating genuine uncertainty about how the match will unfold rather than a heavily skewed contest.\n\nThe sportsbook consensus leans more heavily toward an England victory, assigning them 56%, a gap of 7 percentage points above the model. The market also compresses the draw probability to 25% while Croatia drifts to 19%. This divergence suggests the books are pricing England's advantage more steeply than the statistical forecast. The dashboard makes no claim as to which view is more accurate. Polymarket has not yet posted a per-match contract for this fixture."
+  "preview_text": "The model rates England as favorite with a 49% win probability, against Croatia's 21%. England's edge reflects the numerical inputs available to the statistical forecast, yet the gap is moderate enough that a Croatia upset remains plausible at better than one-in-five odds.\n\nThe draw emerges as a meaningful outcome at 30%, tilting the match toward competitive balance. The spread across outcomes—with England favored but neither team commanding more than half the probability mass—suggests a genuinely contested fixture rather than a heavily one-sided affair. A stalemate or a narrow England victory are both well-represented scenarios.\n\nThe sportsbook consensus shifts the England probability to 54%, a gap of roughly 5 percentage points above the model. The books also trim the draw to 26% while Croatia's chance dips slightly to 20%. The divergence is modest; both sources rank England first and converge on Croatia as underdog. The dashboard does not claim to know which probability set proves more accurate."
 }

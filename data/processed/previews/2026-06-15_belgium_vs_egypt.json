@@ -3,9 +3,9 @@
   "home_team": "Belgium",
   "away_team": "Egypt",
   "date": "2026-06-15",
-  "input_hash": "49345427b15a453e68d4ce06ad7297ce78808eca",
-  "generated_at": "2026-05-19T13:44:03+00:00",
+  "input_hash": "5d14d15c1cb3b946c93a3d84738e062a9d0b9dea",
+  "generated_at": "2026-05-27T10:17:25+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Belgium at 50%, with Egypt at 20% and a draw accounting for 30%. Belgium holds a clear edge, but the margin is moderate; Egypt's win probability sits within the realm of plausible tournament outcomes rather than representing a long shot.\n\nThe spread reflects a competitive match with meaningful uncertainty. A draw is the second-most-likely outcome at nearly 30%, suggesting the teams are close enough in strength that a stalemate remains a genuine possibility. Belgium's win is far from dominant, and the 30-point gap between the favorite and underdog leaves room for tactical or chance variation.\n\nThe sportsbook consensus tilts more heavily toward Belgium at 57%, a gap of 7 percentage points above the model. The books assign slightly lower draw probability at 24%, while Egypt's 19% is nearly aligned with the model's 20%. The dashboard does not claim to know which assessment is more accurate; the divergence is modest but worth noting."
+  "preview_text": "The model assigns Belgium a 50% chance of victory, making them the statistical favorite, while Egypt's win probability stands at 20%. A draw carries a 30% likelihood under the model's estimate, suggesting this match has genuine competitive uncertainty built into the forecast.\n\nThe win-draw-loss spread reflects a moderately competitive fixture. Belgium's edge is real but not commanding; Egypt remains capable of producing a result. The 30% draw probability indicates the teams are close enough in quality that a stalemate is a plausible outcome rather than an outlier possibility.\n\nThe sportsbook consensus elevates Belgium to 56% and reduces Egypt to 19%, a 6-point shift in Belgium's favor compared to the model. The draw contracts to 24%. The two sources diverge meaningfully on Belgium's chances; the market is more confident in the favorite than the statistical model. The dashboard does not adjudicate between them."
 }

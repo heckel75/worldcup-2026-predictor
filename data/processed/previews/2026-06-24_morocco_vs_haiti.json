@@ -3,9 +3,9 @@
   "home_team": "Morocco",
   "away_team": "Haiti",
   "date": "2026-06-24",
-  "input_hash": "4ce24057f79daaf0cceb6bb493d80b0651a00afb",
-  "generated_at": "2026-05-19T13:46:34+00:00",
+  "input_hash": "88d8b5bf0328a3dccdda19a07e934f9eee8c5ac4",
+  "generated_at": "2026-05-27T10:19:24+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Morocco as a heavy favorite, assigning a 75% win probability against Haiti's 5% chance. Morocco's advantage in the forecast reflects a substantial gap in expected performance, though the remaining quarter of outcomes distribute across a draw and Haitian victory.\n\nThe W/D/L spread indicates a moderately wide separation between the two outcomes. A draw emerges as a meaningful secondary scenario at 21%, suggesting Morocco may not dominate possession and chances throughout; Haiti retains paths to avoid defeat. The match is unlikely to be genuinely competitive in terms of chances created, but the draw probability signals enough variability in match outcomes that a stalemate remains plausible rather than a long shot.\n\nNo sportsbook consensus has yet formed for this fixture. Without market odds, the dashboard cannot compare model and betting-market views. The model's forecast stands as the available reference point pending later published betting lines."
+  "preview_text": "The model favors Morocco at 75% to win, with Haiti's upset probability standing at only 5%. Morocco enters as a clear favorite on the forecast dashboard, though the underdog retains a small but non-zero path to victory.\n\nThe 21% draw probability suggests a moderately competitive match rather than a rout. Morocco's three-to-one win edge over Haiti does not foreclose a stalemate; the spread is wide enough to make a Moroccan victory the most likely single outcome, yet tight enough that neither side's elimination from contention appears imminent in regulation.\n\nThe model and sportsbook consensus align closely on Morocco's winning chances, diverging by only 4 percentage points. Market-implied Haiti win probability is noticeably higher at 11%, compared to the model's 5% — a gap of 6 points that warrants attention. The dashboard makes no claim about which assessment is correct. Polymarket has not yet published odds for this fixture."
 }

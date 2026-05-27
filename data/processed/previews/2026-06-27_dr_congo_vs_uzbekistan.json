@@ -3,9 +3,9 @@
   "home_team": "DR Congo",
   "away_team": "Uzbekistan",
   "date": "2026-06-27",
-  "input_hash": "cee4750b77c677be2dbdba0eb2353a6e11bc4656",
-  "generated_at": "2026-05-19T13:47:27+00:00",
+  "input_hash": "c2119eed730ce911e934e5207a80472f1a69d305",
+  "generated_at": "2026-05-27T10:20:26+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Uzbekistan emerges as the model's favored outcome, assigned a 49% win probability. DR Congo holds a 22% chance of victory, placing them as the clear underdog in this neutral-venue encounter.\n\nThe draw probability of 30% reflects a moderately competitive match. The gap between Uzbekistan's win likelihood and a draw is modest, suggesting the contest carries genuine uncertainty in the final result. DR Congo's win probability trails both other outcomes noticeably, yet remains plausible rather than negligible.\n\nNo sportsbook consensus is available at this stage. The dashboard forecast stands alone pending market data; future updates will permit direct comparison between the model and bookmaker assessments."
+  "preview_text": "The model identifies Uzbekistan as the clear favourite at 49%, while DR Congo's win probability sits at 22%. The underdog's path to victory is notably narrower than the favourite's. A draw at 30% represents a substantial possibility and emerges as nearly as likely as an Uzbekistan win in the model's assessment.\n\nThe win-draw-loss spread shows Uzbekistan holding a meaningful edge, yet the probabilities remain compressed enough that the outcome is not heavily skewed toward any single result. The 30% draw probability indicates the match has reasonable potential to end level. Competitive balance exists, though Uzbekistan enters as the stronger force according to the statistical forecast.\n\nThe sportsbook consensus diverges meaningfully from the model. Books assign DR Congo 38% (16 percentage points above the model), Uzbekistan 33% (15 points below), and the draw nearly identical at 29%. The market prices DR Congo substantially higher, suggesting bookmakers either weight different inputs or discount the model's Elo-based approach. The dashboard makes no claim regarding which source is more reliable for this matchup."
 }

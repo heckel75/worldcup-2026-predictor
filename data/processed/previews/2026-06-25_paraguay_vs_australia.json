@@ -3,9 +3,9 @@
   "home_team": "Paraguay",
   "away_team": "Australia",
   "date": "2026-06-25",
-  "input_hash": "7b31494d0050b1058c51f04d687512977f5dc1e9",
-  "generated_at": "2026-05-19T13:46:40+00:00",
+  "input_hash": "ce741f2054bb9c9c00633d1e8e749c8b457e0dfa",
+  "generated_at": "2026-05-27T10:19:28+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Australia as the favorite, assigning them a 46% win probability against Paraguay's 24%. The underdog holds a roughly one-in-four chance of victory in this neutral-venue matchup.\n\nThe draw emerges as the single most likely outcome at 30%, creating a relatively balanced three-way competitive scenario. The spread between Australia's win probability and Paraguay's is material but not commanding; the match is forecast as moderately competitive rather than heavily tilted, with all three outcomes plausible.\n\nNo sportsbook consensus is currently available for this fixture. Once market odds appear, they can be compared against the model's estimates to identify any material divergences in how each source assesses the teams' relative strength."
+  "preview_text": "The model favors Australia at 46% to win, with Paraguay at 24% and a draw at 30%. Australia holds a clear edge in the forecast, though the underdog's one-in-four chance is not negligible. The model rates this as a competitive fixture rather than a blowout.\n\nThe spread across outcomes suggests moderate separation. Australia's near-five-point advantage over the draw reflects a mild lean toward decisive play, but the 30% draw probability indicates the sides are close enough that a stalemate remains plausible. No single outcome dominates; the match is forecast to be contested.\n\nThe sportsbook consensus diverges notably from the model. Books rate Paraguay's win probability at 44%, roughly double the model's 24%—a gap of roughly 20 percentage points. The market also prices Australia's chances at 27%, nearly half the model's 46%. The draw sits at 29%, in close agreement with the model's 30%. This material disagreement on the favorite reflects genuine uncertainty; the dashboard does not adjudicate between statistical and market judgments."
 }

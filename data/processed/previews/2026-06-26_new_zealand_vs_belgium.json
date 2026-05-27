@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Belgium",
   "date": "2026-06-26",
-  "input_hash": "744bb72483bd98a99caa73bf91d345d5b7477535",
-  "generated_at": "2026-05-19T13:46:59+00:00",
+  "input_hash": "06663f7b43da697fa4d4910d438f8112d600d79c",
+  "generated_at": "2026-05-27T10:19:55+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Belgium emerges as the model's clear favorite, assigned a 57% chance of victory. New Zealand carries a 16% win probability, leaving the teams roughly 41 percentage points apart in the model's assessment.\n\nThe draw carries meaningful probability at 27%, suggesting a competitive match rather than a one-sided affair. Belgium's advantage is substantial but not overwhelming; the model does not project a heavily favored outcome in either regular-time direction. A close, low-scoring contest remains plausible within the forecast range.\n\nNo sportsbook consensus is available yet. The dashboard will update market alignment once betting lines emerge."
+  "preview_text": "The model favors Belgium to win at 57%, with New Zealand's chance at 16% and a draw at 27%. Belgium holds a substantial edge in the forecast, though the model assigns New Zealand a meaningful winning probability rather than treating the match as heavily one-sided.\n\nThe outcome distribution reflects a competitive gap tilted toward Belgium. The draw probability at 27% indicates the model sees a plausible path to a stalemate; this is not an expected rout. However, the 41-percentage-point margin between Belgium's win chance and New Zealand's signals the model expects Belgium to control much of the match, with the underdog relying on fortune or a tactical surprise to claim three points.\n\nThe market diverges from the model meaningfully. Sportsbooks price Belgium's win at 74%, a 16-percentage-point gap above the model's 57%, while compressing New Zealand's winning chance to 10% and the draw to 16%. The dashboard does not adjudicate which assessment is more accurate; the gap suggests the market is more confident in Belgium's dominance than the statistical forecast warrants."
 }

@@ -3,9 +3,9 @@
   "home_team": "Czech Republic",
   "away_team": "South Africa",
   "date": "2026-06-18",
-  "input_hash": "65683e307c2cb57cb6f8df34b73058c5a586eb0a",
-  "generated_at": "2026-05-19T13:44:48+00:00",
+  "input_hash": "c4f343728c354449bede1154a8f3f8ea478a4b9f",
+  "generated_at": "2026-05-27T10:17:58+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Czech Republic with a 51% win probability, giving them a modest edge over South Africa at 19%. The margin reflects a mismatch in underlying strength between the two, though not a dominant forecast; the underdog retains a genuine chance.\n\nThe 29.6% draw probability sits between the win chances, suggesting a competitive match with plausible outcomes across all three results. The spread is neither tight nor wide—Czech Republic is favored but the fixture carries meaningful uncertainty, with nearly three in ten scenarios ending level.\n\nThe model and sportsbook consensus are closely aligned. Both assign Czech Republic a 46–51% win rate and South Africa roughly 19–24%, with draws near 30%. The largest divergence is a 4.7 percentage-point gap on South Africa's win probability, well within normal variance between forecast methods. No Polymarket data is yet available for this fixture."
+  "preview_text": "The model favors Czech Republic at 51%, with South Africa given a 19% chance of victory. The 32-percentage-point gap reflects a clear home-field advantage in the model's assessment, though South Africa remains plausible as an underdog.\n\nThe 30% draw probability signals a moderately competitive match. Czech Republic is the statistical favorite, but the spread across outcomes—no single result dominating—suggests the contest carries genuine uncertainty. A stalemate ranks as the second-likeliest outcome, indicating the teams are not far apart in attacking or defensive capacity by the model's measure.\n\nThe model and sportsbook consensus diverge noticeably. Books assign Czech Republic 6 percentage points less winning probability than the model, while crediting South Africa 5.6 points more. The draw estimate is nearly identical across both sources. No Polymarket contract exists yet for this fixture."
 }

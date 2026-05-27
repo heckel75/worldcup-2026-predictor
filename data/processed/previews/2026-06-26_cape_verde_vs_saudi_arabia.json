@@ -3,9 +3,9 @@
   "home_team": "Cape Verde",
   "away_team": "Saudi Arabia",
   "date": "2026-06-26",
-  "input_hash": "15074d1edefffb84c53845af424a220a8c6963c3",
-  "generated_at": "2026-05-19T13:47:02+00:00",
+  "input_hash": "d50b1fda739e4ed0adad941b2ddd8bec64b18570",
+  "generated_at": "2026-05-27T10:19:58+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Saudi Arabia with a 38.5% win probability, while Cape Verde has a 30% chance to win. The underdog carries meaningful upset potential, with less than 8 percentage points separating the two outright outcomes.\n\nThe forecast reflects a closely matched contest. A draw holds the highest single probability at 31%, suggesting the teams are evenly balanced enough that neither pulling ahead is the likeliest scenario. The three outcomes cluster within a narrow band, indicating genuine competitive uncertainty rather than a heavily skewed matchup.\n\nNo sportsbook consensus is available yet. Once betting lines emerge, the dashboard will compare market odds to the model's probabilities to identify any meaningful divergence between the two estimates."
+  "preview_text": "The statistical model rates Saudi Arabia as a slight favorite with a 39% win probability, while Cape Verde holds a 30% chance of victory. The remaining 31% probability centers on a draw outcome, suggesting a competitive encounter with meaningful paths to all three results.\n\nThe win-draw-loss distribution reflects a closely matched pair. Saudi Arabia's three-point edge in win probability is modest, and the draw probability sits nearly level with Cape Verde's outright win chance. This spread indicates the match is unlikely to be heavily one-sided; competitive play and a stalemate both register as plausible scenarios.\n\nThe model and sportsbook consensus are closely aligned across all three outcomes, with gaps under 3 percentage points in each column. Both sources converge on Saudi Arabia as the marginal favorite and treat a draw as a live possibility. No Polymarket contract data is yet available for this fixture."
 }

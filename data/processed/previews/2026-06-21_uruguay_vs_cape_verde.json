@@ -3,9 +3,9 @@
   "home_team": "Uruguay",
   "away_team": "Cape Verde",
   "date": "2026-06-21",
-  "input_hash": "486b82491b4435527c1777d07c774a88ee148031",
-  "generated_at": "2026-05-19T13:45:44+00:00",
+  "input_hash": "bed57ee612013f536ef7f6c1b4a989f332cbe7cc",
+  "generated_at": "2026-05-27T10:18:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assigns Uruguay a 74% chance of victory, with Cape Verde's win probability at just 5%. This is a heavily lopsided fixture by the model's estimate, though the underdog retains a non-negligible path to an upset.\n\nThe draw emerges as the second-most likely outcome at 21%, suggesting Uruguay may not run away with the match despite its commanding favorite status. The gap between a Uruguay win and a Cape Verde win is substantial—nearly 69 percentage points—indicating the model expects clear separation in quality, yet the presence of significant draw probability reflects competitive uncertainty in the ninety minutes themselves.\n\nModel and market diverge notably here. The sportsbooks assign Cape Verde 13% win probability, roughly 8 percentage points higher than the model, while scaling back Uruguay's win rate to 66%. Both sources agree on draw likelihood at around 21%. The dashboard makes no claim about which is correct; the gap may reflect bookmaker caution on a less-familiar matchup or genuine disagreement on relative strength."
+  "preview_text": "The model favors Uruguay at 74%, leaving Cape Verde with a 5% win probability. This represents a decisive edge, though the underdog retains a small but non-zero upset window. The model's implied strength differential positions Uruguay as a clear favorite in absolute terms.\n\nThe 21% draw probability suggests the match is unlikely to remain deadlocked—a decisive outcome is more probable than a stalemate. The gap between Uruguay's win chance and Cape Verde's (69 percentage points) indicates an asymmetric contest, though the 21% draw possibility implies the underdog has enough structural plausibility to occasionally equalize rather than collapse entirely.\n\nModel and market diverge meaningfully on the tail. The sportsbook consensus gives Cape Verde 14.6%, a 10-percentage-point premium over the model's 4.9% forecast. The market also credits Uruguay at 63%, some 11 points below the model. On draws, the two sources converge near 22%. The dashboard makes no claim about which assessment is correct; the discrepancy reflects genuine uncertainty about relative strength at this stage."
 }

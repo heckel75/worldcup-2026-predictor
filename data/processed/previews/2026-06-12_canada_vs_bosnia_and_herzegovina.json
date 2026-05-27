@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Bosnia and Herzegovina",
   "date": "2026-06-12",
-  "input_hash": "fa20ab3127f9fddec93252b49d63d954a758a0bc",
-  "generated_at": "2026-05-19T13:43:22+00:00",
+  "input_hash": "55a76d8c23e1f52d5e58bccc76d0032908d2d23d",
+  "generated_at": "2026-05-27T10:17:03+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model makes Canada a strong favorite at 73%, assigning Bosnia and Herzegovina just a 5% chance of victory. This 68-percentage-point gap reflects a substantial disparity in the forecast. The underdog's win probability sits well below the draw outcome at 22%.\n\nThe W/D/L spread suggests Canada is expected to control the match, though a draw remains a meaningful possibility at roughly one in five outcomes. The model sees Bosnia and Herzegovina as unlikely to prevail outright, implying the contest leans toward either a Canadian victory or a stalemate rather than a competitive three-way race.\n\nModel and sportsbook diverge meaningfully here. The market prices Canada at 53%, draw at 26%, and Bosnia and Herzegovina at 21%—a 20-percentage-point gap favoring the underdog compared to the model. The dashboard does not adjudicate which assessment is more accurate. No Polymarket contract has yet been posted for this fixture."
+  "preview_text": "The model favors Canada at 73%, substantially ahead of Bosnia and Herzegovina's 5% win probability. This represents a decisive edge in the forecast, leaving the underdog with minimal chances of an outright victory on a neutral pitch.\n\nThe model's spread indicates a competitive but asymmetric match. Canada's win probability nearly eclipses the combined chances of a draw (22%) and Bosnia and Herzegovina victory, suggesting the favorite is expected to control play. A draw remains plausible at just over one in five, but Bosnia and Herzegovina faces a steep hill to secure points.\n\nThe model and sportsbook consensus diverge meaningfully here. The market credits Bosnia and Herzegovina with 22% win odds—more than four times the model's 5% assessment—while pricing Canada at 52% rather than 73%. The 21-percentage-point gap between model and market on a Canada win is substantial. This dashboard does not adjudicate between these sources; the divergence reflects genuine uncertainty about match outcomes that no single approach resolves."
 }

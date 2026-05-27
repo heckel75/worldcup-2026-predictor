@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Qatar",
   "date": "2026-06-18",
-  "input_hash": "818e00272cd30e519ce29cbe574f60f7fdab46e5",
-  "generated_at": "2026-05-19T13:44:58+00:00",
+  "input_hash": "e34a5a5cdfa6500117ca5dce47e0e88728cd52f0",
+  "generated_at": "2026-05-27T10:18:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Canada at 80%, assigning Qatar only a 2% chance of victory. This represents a heavily asymmetric matchup in the model's view, with the underdog facing a steep margin.\n\nThe win-draw-loss spread reflects a lopsided contest. Canada's dominance in the model's frame leaves meaningful probability for a draw at 18%, but Qatar's win probability is marginal. The fixture is unlikely to be closely competitive according to these figures; a Canada victory or stalemate far outweigh a Qatar upset.\n\nThe model and sportsbook consensus diverge substantially. Books price Canada's win at 61%, some 19 percentage points lower than the model, and assign Qatar 15 times the model's win probability. The market perceives significantly more competitive balance than the statistical forecast. The dashboard does not adjudicate between these sources, but the gap warrants attention from users comparing methodologies."
+  "preview_text": "The model favors Canada strongly, assigning a 80% win probability against a 2% chance for Qatar. The underdog is given minimal probability of victory, though a draw registers at 18%, indicating some residual uncertainty about competitive balance.\n\nThe forecast implies a heavily skewed match shape. Canada's dominant win probability reflects an expected performance gap, yet the draw probability suggests this is not modeled as a blowout—Qatar has a genuine path to a result without defeat, even if outright victory appears remote by the model's assessment.\n\nThe model and sportsbooks diverge materially here. The books assign Qatar 15% win probability compared to the model's 2%—a gap of 13 percentage points—and credit a draw at 23% versus the model's 18%. Sportsbooks price Canada considerably tighter at 62% to the model's 80%. This substantial disagreement likely reflects different information or methodology; the dashboard offers no judgment on which source is more reliable."
 }

@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-27_dr_congo_vs_uzbekistan",
+  "home_team": "DR Congo",
+  "away_team": "Uzbekistan",
+  "date": "2026-06-27",
+  "kind": "commentary",
+  "divergence_type": "disagree_on_favorite",
+  "max_gap_pp": 15.7,
+  "input_hash": "4bef4c7347415710976fd4d0d46b4d713baa88e9",
+  "generated_at": "2026-05-27T10:21:11+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model favors Uzbekistan at 49%, while the market favors DR Congo at 38%—a 16-percentage-point gap on the home-win probability. The draw probability is nearly identical across both sources at 30%. The gap on Uzbekistan's win probability itself spans 15 percentage points in the opposite direction. This divergence may reflect information about recent form, injuries, or lineup changes that the model's last update did not capture, or differences in how each source weights historical strength against current team status. The dashboard flags this as a signal worth monitoring rather than a verdict on which assessment is more reliable."
+}

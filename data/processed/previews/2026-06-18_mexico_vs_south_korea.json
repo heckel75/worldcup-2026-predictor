@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "South Korea",
   "date": "2026-06-18",
-  "input_hash": "915c7afd9890bd01cf11838f8dcacaaa8c80e8f7",
-  "generated_at": "2026-05-19T13:44:51+00:00",
+  "input_hash": "6d33ef6da4ff5f0b4fd7d8a6616bdb9fcb26b3e1",
+  "generated_at": "2026-05-27T10:18:02+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Mexico as the favorite with a 49% win probability, compared to South Korea's 21% chance. Mexico edges the consensus expectation, though by a modest margin that reflects meaningful uncertainty around the outcome.\n\nThe 30% draw probability indicates a competitive fixture where neither team is heavily favored to win in regular time. The spread between Mexico's win chances and South Korea's is material—roughly 28 percentage points—but the substantial draw likelihood suggests the match could be tightly contested. A stalemate remains a plausible result.\n\nModel and sportsbook are closely aligned across all three outcomes, with gaps under 2 percentage points on each line. Both sources converge on Mexico as the slight favorite in a match where the underdog retains genuine winning chances and a draw is far from negligible. No Polymarket consensus has yet formed for this match."
+  "preview_text": "The model rates Mexico as favorite with a 49% win probability, roughly double South Korea's 21% chance. The draw emerges as a secondary outcome at 30%, suggesting the match has meaningful uncertainty despite the tilted odds.\n\nThe win-draw-loss spread reflects a competitive but asymmetric contest. Mexico holds a clear edge, yet the substantial draw probability indicates neither side is heavily favored to settle the matter in regular time. South Korea retains enough upside to avoid being a heavy underdog, making this more than a one-sided affair.\n\nModel and sportsbook are closely aligned. Mexico sits at 49% versus 51%, the draw at 30% versus 27%, and South Korea at 21% versus 22%. These gaps fall within normal variance across forecast sources. No Polymarket data is available yet."
 }

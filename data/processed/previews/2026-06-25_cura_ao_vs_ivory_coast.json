@@ -3,9 +3,9 @@
   "home_team": "Curaçao",
   "away_team": "Ivory Coast",
   "date": "2026-06-25",
-  "input_hash": "be3f5a9507c40e0fe516b3816c6164e35a1a84fb",
-  "generated_at": "2026-05-19T13:46:43+00:00",
+  "input_hash": "79cb10dfd4a7230ce5561155b204c88b14916126",
+  "generated_at": "2026-05-27T10:19:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Ivory Coast enters as the model's clear favorite, assessed at a 61% win probability. Curaçao holds a 14% chance of victory, placing it in underdog territory with a substantial gap to the favored outcome.\n\nThe spread across outcomes reflects a competitive but tilted match. A draw carries 26% probability, a meaningful figure that sits between the two decisive outcomes. Ivory Coast's advantage is pronounced enough to register as the likely winner, yet the 26-point gap between their win rate and Curaçao's suggests the match remains far from predetermined; draws occur in roughly a quarter of such contests under these conditions.\n\nNo sportsbook consensus is available yet for this fixture. Once market odds emerge, they will provide a comparison point to test whether professional bettors align with the model's assessment or diverge in their judgment of each team's true strength."
+  "preview_text": "The model rates Ivory Coast as clear favorites with a 61% win probability, while Curaçao's path to victory stands at just 14%. The underdog's modest chance reflects a substantial gap between the two forecasts.\n\nThe draw emerges as a meaningful outcome at 26%, the second-most likely result. This relatively elevated draw probability suggests the match may prove competitive in stretches despite Ivory Coast's advantage. The 47-percentage-point gap from favorite to underdog indicates Ivory Coast enters as heavy favorites, yet the three-way split carries enough uncertainty that a stalemate or upset carries non-trivial probability.\n\nThe model and sportsbooks diverge meaningfully on the favorite. Books assign Ivory Coast 72% compared to the model's 61%, a gap of 11 percentage points. Conversely, books price Curaçao's chances at 10% versus the model's 14%. The draw probability also widens notably: 26% from the model versus 18% from consensus. These differences suggest the market views Ivory Coast's superiority as larger than the statistical model does. The dashboard does not determine which assessment proves more accurate."
 }

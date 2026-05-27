@@ -3,9 +3,9 @@
   "home_team": "South Korea",
   "away_team": "Czech Republic",
   "date": "2026-06-11",
-  "input_hash": "1921f8182fa9fe7250ca9954110b3c9184a314b8",
-  "generated_at": "2026-05-19T13:43:18+00:00",
+  "input_hash": "4a9ac0262205083f31dcfeffc254efdc04484ed2",
+  "generated_at": "2026-05-27T10:16:59+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea at 49%, compared to Czech Republic's 20% win probability. This represents a clear gap between the two sides in the forecast, though South Korea's majority chance still reflects meaningful uncertainty.\n\nThe expected shape shows South Korea as the stronger side, but the fixture remains genuinely competitive. A draw at 30% is the second-most-likely outcome, suggesting the teams are close enough that a split result is plausible. The 28-percentage-point gap between South Korea's win probability and Czech Republic's reflects a moderate rather than dominant edge.\n\nThe model and sportsbooks diverge meaningfully here. The market prices South Korea at 36% and Czech Republic at 35%—essentially even—while the model separates them by 28 points in South Korea's favor. This 13-point gap between model and market for South Korea indicates genuine disagreement between the two sources on the balance of play. The dashboard does not claim to know which assessment is correct."
+  "preview_text": "The model favors South Korea at 49% to win, well ahead of Czech Republic's 20.9% chance. This represents a clear lean toward the higher-rated team in the matchup. Czech Republic's path to victory remains modest under the statistical forecast.\n\nThe draw probability of 30% sits at a meaningful level, suggesting competitive balance in the expected scorelines. The gap between South Korea's win chance and a Czech Republic victory is substantial—roughly 28 percentage points—indicating the model sees this as a moderately decisive matchup rather than a close contest, though a stalemate remains plausible.\n\nThe model and sportsbook consensus diverge notably. Bookmakers assess South Korea's win probability at 35.4%, some 14 percentage points lower than the model's 49%. They rate Czech Republic at 34.6%, nearly double the model's 20.9%. Both sources agree a draw is likely around 30%, but they sharply disagree on the two-team split. The dashboard does not adjudicate which assessment is correct."
 }

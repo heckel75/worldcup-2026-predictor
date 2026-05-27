@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "Portugal",
   "date": "2026-06-27",
-  "input_hash": "01f0a26005adffdf7056c5996fd80f718d3eceff",
-  "generated_at": "2026-05-19T13:47:24+00:00",
+  "input_hash": "cc150957fecfd82cabb93b1912704f657dcf88bc",
+  "generated_at": "2026-05-27T10:20:22+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Portugal a slight favorite at 35%, with Colombia trailing at 33%. The gap between them is narrow—roughly 2 percentage points—suggesting a closely matched contest. Portugal's edge in the forecast reflects a marginal statistical advantage, but Colombia's win probability remains substantial.\n\nThe spread across outcomes reveals a competitive match. A draw registers at 32%, making it nearly as likely as either team's individual victory. The three outcomes are bunched together, indicating genuine uncertainty about how the fixture will unfold. Neither side commands a commanding lead in the model's assessment.\n\nThe sportsbook consensus diverges from the model on Portugal. The market prices Portugal at 43%, a gap of roughly 8 percentage points higher than the model's 35%. Bookmakers see Colombia at 28% and a draw at 29%, both slightly lower than the statistical forecast. The model and market agree the match is close, but the books lean more decisively toward Portugal."
+  "preview_text": "The model favors Portugal at 35%, with Colombia trailing at 33% and a draw at 31.5%. This represents a tightly bunched outcome: all three results fall within a 4-percentage-point band, indicating substantial competitive balance. Portugal's marginal edge reflects only a modest model lean.\n\nThe narrow spread across win probabilities signals an evenly matched contest with genuine draw potential. A draw probability of 31.5% suggests roughly one in three matches with this profile ends level; neither team emerges as a clear control of play. Colombia and Portugal are separated by less than 2 percentage points, making the result genuinely uncertain on the model's reading.\n\nThe sportsbook consensus diverges noticeably from the model, rating Portugal's win probability at 44%—nearly 9 percentage points higher than the model's 35%. The market compresses Colombia's chances to 28% and the draw to 28.5%, suggesting sharper confidence in a Portugal victory. This gap does not indicate an error in either source; the dashboard makes no claim about which better captures true match likelihood."
 }

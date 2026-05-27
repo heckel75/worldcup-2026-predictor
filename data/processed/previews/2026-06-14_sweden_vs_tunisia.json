@@ -3,9 +3,9 @@
   "home_team": "Sweden",
   "away_team": "Tunisia",
   "date": "2026-06-14",
-  "input_hash": "468447d5cb2c51cc75ec689ccacbe509d97900d8",
-  "generated_at": "2026-05-19T13:43:59+00:00",
+  "input_hash": "98cc759ff4bf8aa27bb3cfc66fc3c856177a1b21",
+  "generated_at": "2026-05-27T10:17:22+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model ranks Sweden as the slight favorite with a 40% win probability, but the margin over Tunisia is modest; the underdog sits at 29%, leaving substantial uncertainty in a competitive pairing.\n\nThe draw emerges as a plausible outcome at 31%, only 8 percentage points below Sweden's win rate. This compressed W/D/L distribution suggests a closely matched contest in which a single goal or defensive mishap could determine the result. Neither side holds a commanding edge in the forecast.\n\nThe sportsbook consensus upgrades Sweden to 49% while scaling back both the draw to 28% and Tunisia to 23%, implying greater confidence in a Swedish victory. The gap between model and market is material—roughly 9 percentage points favoring Sweden at the books—signaling either that bookmakers assess Sweden's underlying strength differently or that market pricing reflects factors beyond the model's scope. The dashboard does not adjudicate between these sources."
+  "preview_text": "The model favours Sweden to win at 40%, but the margin is modest; Tunisia's 29% underdog chance sits only 10 percentage points below. Neither team commands the match in probabilistic terms. The sportsbook consensus backs Sweden more decisively at 48%, a 9-point gap over the model's reading.\n\nA draw at 31% emerges as the likeliest single outcome from the model's lens, narrowly outpacing a Swedish victory. The three-way spread is relatively compressed—no result carries dominant weight—suggesting the match will be genuinely competitive rather than tilted heavily toward the favourite. Tunisia's baseline case sits close enough to Sweden's that the outcome remains genuinely uncertain.\n\nThe model and market diverge on Sweden's win probability by roughly 8 percentage points, with the sportsbooks attributing higher confidence to a Swedish victory and lower odds to Tunisia. Both sources treat a draw as plausible but not the most likely scenario. The dashboard does not adjudicate which forecast is more accurate; the gap reflects genuine disagreement between statistical and market pricing."
 }

@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-18_switzerland_vs_bosnia_and_herzegovina",
+  "home_team": "Switzerland",
+  "away_team": "Bosnia and Herzegovina",
+  "date": "2026-06-18",
+  "kind": "commentary",
+  "divergence_type": "model_over_concentrated",
+  "max_gap_pp": 15.6,
+  "input_hash": "9d3a0527752d7cce2c0a77a19ac8c310831baa14",
+  "generated_at": "2026-05-27T10:20:46+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model assigns Switzerland a 76% win probability; the market prices it at 60%, a gap of 16 percentage points favoring the model's confidence. Conversely, the market gives Bosnia and Herzegovina 16% to win versus the model's 4%, an 12-point spread in the opposite direction. Both sources rank Switzerland as favourite, but the market materially hedges that view. This gap could reflect recent lineup changes, injuries affecting either squad, or form shifts the model's training data has not fully captured. The dashboard surfaces this tension as a signal: sportsbooks are pricing in information that narrows Switzerland's edge relative to the statistical baseline."
+}

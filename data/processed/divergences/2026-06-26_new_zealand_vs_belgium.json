@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-26_new_zealand_vs_belgium",
+  "home_team": "New Zealand",
+  "away_team": "Belgium",
+  "date": "2026-06-26",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 16.6,
+  "input_hash": "6c275601f1c3ea61ea8eb33b5a5165291df6beee",
+  "generated_at": "2026-05-27T10:21:09+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market prices Belgium's win at 74%, a 17-percentage-point lift over the model's 57%, while compressing both underdog outcomes sharply downward. The sportsbook consensus shows tighter conviction on a Belgian victory, which could reflect real-money flows responding to recent team form, injury status, or lineup availability that the model's last update did not capture. The model and market align on Belgium as the clear favorite, but the market's steeper confidence suggests bettors may be pricing in information—positive Belgian momentum or diminished New Zealand options—beyond what the statistical baseline reflects. The dashboard flags this gap as a signal worth monitoring, without adjudicating which view will prove correct."
+}

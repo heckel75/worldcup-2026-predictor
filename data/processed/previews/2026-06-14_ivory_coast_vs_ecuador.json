@@ -3,9 +3,9 @@
   "home_team": "Ivory Coast",
   "away_team": "Ecuador",
   "date": "2026-06-14",
-  "input_hash": "2920a63675076abcaddc44e6886233e954520653",
-  "generated_at": "2026-05-19T13:43:47+00:00",
+  "input_hash": "ceadfbcff8472b2891f35309ac7bc559d4db0d96",
+  "generated_at": "2026-05-27T10:17:14+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Ecuador with a 57% win probability, leaving Ivory Coast at 16%. This represents a substantial gap: Ecuador emerges as clear favorite on the statistical forecast, while Ivory Coast's path to victory is judged considerably less likely.\n\nThe draw emerges as a meaningful outcome in the model's distribution at 27%, suggesting the match has realistic potential for a stalemate. However, the win probabilities are not tightly bunched—Ecuador's advantage over Ivory Coast spans a wide margin, indicating the model expects this to be a decidedly uneven contest rather than a close-run affair.\n\nThe sportsbook consensus diverges notably from the model. Books price Ecuador's win at 39%, roughly 17 percentage points below the model's 57%. Conversely, the market assigns Ivory Coast 29%, nearly double the model's 16%. The draw sits closer to parity between sources. This represents a meaningful disagreement: the market views the match as substantially more competitive than the statistical forecast suggests. The dashboard does not adjudicate between these views."
+  "preview_text": "The model favours Ecuador, assigning them a 57% win probability against Ivory Coast's 16%. The underdog Ivory Coast faces a significant deficit in the forecast, with Ecuador positioned as clear favourites on the neutral ground.\n\nThe draw carries meaningful weight at 27%, indicating the match is not heavily skewed toward one outcome despite Ecuador's advantage. The gap between Ecuador's win probability and Ivory Coast's reflects a competitive imbalance rather than a mismatch, with draws representing a plausible result that would satisfy neither outright winner.\n\nThe sportsbook consensus and the model diverge notably. The market rates Ivory Coast's chances substantially higher at 27% versus the model's 16%—an 11-percentage-point gap. Conversely, the market assigns Ecuador only 41% compared to the model's 57%—a 16-point difference. The two sources agree that Ecuador enters as favourite but diverge on the margin of that advantage. The dashboard makes no claim about which reading of the match is correct."
 }

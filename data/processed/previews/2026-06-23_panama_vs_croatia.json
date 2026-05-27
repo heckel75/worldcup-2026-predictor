@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "Croatia",
   "date": "2026-06-23",
-  "input_hash": "b60633872fc1ed7408098670724e51f6be193f09",
-  "generated_at": "2026-05-19T13:46:14+00:00",
+  "input_hash": "1fa080bc840e52458fbbb9ace03cdf28368f8f73",
+  "generated_at": "2026-05-27T10:19:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Croatia at 48%, while Panama is given a 22% chance of victory. The gap reflects a substantial difference in win probability, though the underdog retains meaningful upside.\n\nThe 29.8% draw probability signals a moderately competitive fixture. The 48–22 win split is wide enough to establish a clear favourite, yet the near-30% draw chance suggests the match could plausibly finish level. This indicates competitive balance in the tail, even if Croatia enters as the likely winner.\n\nThe model and sportsbook consensus diverge noticeably. Books price Croatia 16 percentage points higher (63.9% vs 48%), while assigning Panama 10 percentage points lower (12.7% vs 22.2%). Draw odds also compress in the market to 23.4%. These gaps indicate the market views Croatia as substantially stronger; the dashboard does not adjudicate between the two estimates."
+  "preview_text": "The model favours Croatia at 48%, with Panama assigned a 22% chance of victory. The underdog's path to three points is notably narrower than the favourite's, but not negligible in a single-match context.\n\nThe gap between Croatia's win probability and Panama's reflects meaningful asymmetry, yet the draw at 30% remains the second-most likely outcome. This suggests a competitive fixture where neither side dominates the underlying numbers decisively; a stalemate carries real plausibility alongside a Croatia victory.\n\nModel and market diverge on this match. The sportsbook consensus pushes Croatia higher at 61% and compresses Panama to 15%, a gap of roughly 7 percentage points in the favourite's favour. The market also narrows the draw to 24%. Both sources align that Croatia is favoured, but the market prices the underdog more pessimistically and leans toward a decisive result. The dashboard does not adjudicate between these signals."
 }

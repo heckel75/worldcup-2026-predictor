@@ -3,9 +3,9 @@
   "home_team": "Ghana",
   "away_team": "Panama",
   "date": "2026-06-17",
-  "input_hash": "2642cabd3cb8e02e6c4d82b1aadd6219ef4b1ccf",
-  "generated_at": "2026-05-19T13:44:44+00:00",
+  "input_hash": "e29a1dbf5d1d15d3ef44c40545275ee6b4469bb2",
+  "generated_at": "2026-05-27T10:17:55+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Panama is the model's heavy favorite, with a 67% win probability against Ghana's 9.7%. The underdog faces a significant gap, though a draw is plausible at 23%, leaving outcome uncertainty distributed unevenly across the three possible results.\n\nThe model sees this as a moderately competitive match in terms of draw likelihood, but the win probability spread tilts decisively toward Panama. Ghana's path to victory is narrow; Panama's advantage is substantial but not extreme enough to make draws implausible or to suggest a rout is the modal outcome.\n\nThe market diverges sharply from the model. Sportsbooks assign Ghana a 49% win probability—nearly 40 percentage points higher than the model—while pricing Panama at just 24%, roughly 43 points lower. Draw probabilities are close (model 23%, market 26%). The dashboard does not adjudicate which source is correct; the discrepancy is large enough to warrant attention from users comparing statistical and bookmaker views. No Polymarket per-match consensus is available yet."
+  "preview_text": "Panama enters as the model's decisive favorite with a 67% chance of victory, while Ghana's win probability stands at 10%. The underdog faces a steep climb despite the draw representing a plausible outcome at 23%.\n\nThe spread reveals a match tilted sharply toward Panama. Ghana's 10% win chance sits far below the draw probability, suggesting the model expects Panama to control play and likely prevail or stalemate rather than concede. A Panama win represents the most probable single outcome; a draw is more likely than a Ghana victory, pointing to a competitive but fundamentally unbalanced contest.\n\nThe model and sportsbook consensus diverge sharply. The market prices Ghana at 47% to win—roughly 37 percentage points higher than the model—and Panama at just 26%, some 41 points lower. This gap signals substantial disagreement on match dynamics. The dashboard does not adjudicate which source is correct; bettors should weigh both frameworks before deciding."
 }

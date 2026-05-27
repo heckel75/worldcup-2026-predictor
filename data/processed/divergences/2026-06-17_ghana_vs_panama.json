@@ -5,10 +5,10 @@
   "date": "2026-06-17",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 42.8,
-  "input_hash": "e52248d01caedc7a22a789b86ee30dd0a02d7a7b",
-  "generated_at": "2026-05-20T12:49:33+00:00",
+  "max_gap_pp": 41.0,
+  "input_hash": "5f2680a1cfddcd1d197ce521c586d7cc1a1ccf57",
+  "generated_at": "2026-05-27T10:20:44+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Panama at 67%, while the market favors Ghana at 49%—a 39-percentage-point gap on the Ghana win outcome. This stark divergence suggests the market is pricing in information the model's Elo-based framework cannot see: possible recent lineup changes, injury developments, or form swings since the model's last update. The market also assigns Panama only 24%, roughly half the model's assessment. This gap surfaces a fundamental disagreement on match outcome likelihood; neither source has a monopoly on accuracy, and the dashboard flags this as a signal for further scrutiny rather than a verdict on which estimate is sound."
+  "commentary_text": "The model favors Panama at 67%, while the market favors Ghana at 47%—a 37-percentage-point gap on the Ghana win outcome. This reversal could reflect recent lineup changes, injury updates, or shift in form that the statistical model has not yet incorporated. The market is also pricing a notably higher draw probability at 27% versus the model's 23%. The dashboard flags this as a significant structural disagreement rather than a modest recalibration, warranting attention to what on-the-ground information may have emerged since the model's last update."
 }

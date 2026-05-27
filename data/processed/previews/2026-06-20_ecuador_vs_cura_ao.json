@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Curaçao",
   "date": "2026-06-20",
-  "input_hash": "77fd99f80f5928c30aa0e0f6897e44f93a4e2aae",
-  "generated_at": "2026-05-19T13:45:21+00:00",
+  "input_hash": "4d27618087ea545255294d2a3e63b3c8f990cc0a",
+  "generated_at": "2026-05-27T10:18:29+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Ecuador with an 82% win probability, leaving Curaçao with only a 2% chance of victory. The gap reflects a substantial expected difference in strength between the two sides, though the model's assessment is more pessimistic about Curaçao's prospects than the sportsbook consensus.\n\nThe forecast centers on an Ecuador win but assigns meaningful probability to a draw at 17%. The model's win-loss split (82–2) is much tighter at the top than at the bottom, indicating Ecuador enters as clear favorite without the match appearing predetermined. A draw remains plausible enough to shape tactical consideration but does not represent the modal outcome.\n\nThe model and market align on the broad picture: Ecuador is substantially favored, and a draw sits in the mid-teens. However, they diverge notably on Curaçao's tail probability. The model assigns 2%, while the sportsbook consensus is 7.5%—a gap of roughly 5 percentage points. The dashboard does not claim certainty about which view is correct; the discrepancy may reflect differences in how each source evaluates lower-probability scenarios."
+  "preview_text": "The model favors Ecuador at 82%, assigning Curaçao only a 2% chance of victory. This reflects a stark asymmetry: Ecuador enters as a heavy favorite, while an upset ranks among the least likely outcomes in the forecast set.\n\nThe spread across outcomes—win, draw, loss—reveals a match tilted decisively toward one competitor. A draw sits at 17%, making it the only realistic alternative to an Ecuador win. Curaçao's path to points is narrow; the model estimates the contest will be competitive in structure but lopsided in likely outcome.\n\nThe sportsbook consensus diverges from the model on Curaçao's prospects. Books assign the underdog 8%, a gap of 6 percentage points above the model's 2%. Ecuador's win probability aligns more closely, with the market at 76% versus the model at 82%—a 6-point difference in the opposite direction. The dashboard does not adjudicate between these views; both reflect legitimate inference from incomplete information."
 }

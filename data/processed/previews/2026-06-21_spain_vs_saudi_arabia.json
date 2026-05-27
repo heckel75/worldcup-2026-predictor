@@ -3,9 +3,9 @@
   "home_team": "Spain",
   "away_team": "Saudi Arabia",
   "date": "2026-06-21",
-  "input_hash": "59669c87bb61072f731f5adcef4f95891d36833b",
-  "generated_at": "2026-05-19T13:45:40+00:00",
+  "input_hash": "b127bc6aff4d7d255417443097acb648820986f2",
+  "generated_at": "2026-05-27T10:18:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Spain decisively, assigning a 90% win probability. Saudi Arabia's chance stands at essentially zero in the model's forecast, whereas the underdog carries a 10% draw probability—the only realistic path away from a Spanish victory.\n\nThe outcome distribution reflects a heavily asymmetric matchup. Spain's dominance is so pronounced that the draw represents the second-most-probable result, at one in ten. A Saudi Arabia win falls outside the model's credible range, leaving little competitive uncertainty in the expected shape of play.\n\nThe model and market diverge meaningfully on Spain's win probability: the model puts it at 90%, while sportsbook consensus sits at 84%, a gap of 6 percentage points. The sportsbook assigns Saudi Arabia a 4% chance—materially higher than the model's near-zero forecast—and similarly prices the draw 2 points lower. The dashboard does not arbitrate between these readings, though the differences suggest the market perceives greater upside risk for the underdog than the statistical model does."
+  "preview_text": "The model projects Spain to win with 90% probability, reflecting a commanding advantage over Saudi Arabia. The underdog is assigned essentially zero chance of victory in the statistical forecast, a stark asymmetry that signals the model sees a heavily lopsided contest.\n\nThe draw emerges as the only plausible alternative outcome in the model's view, at nearly 10%. Spain's win probability so dominates the spread that the match is expected to be competitive only in the narrow sense that a stalemate remains statistically possible; Saudi Arabia carries no meaningful path to three points.\n\nThe model and sportsbook consensus diverge meaningfully on the underdog. The market assigns Saudi Arabia 7 percentage points—a non-trivial gap that reflects modest, if small, credence in an upset. The market also lowers Spain's win probability to 83%, a 7-point gap favoring the underdog relative to the model. Both sources agree draws are rare. The dashboard does not adjudicate which source better captures true match dynamics."
 }
