@@ -40,11 +40,14 @@ def main():
     df = pd.read_csv(RAW_PATH)
     print(f"Loaded {len(df):,} rows from {RAW_PATH}")
 
-    # 1b. Concat hand-maintained WC results (manual rows first so they win dedup)
+    # 1b. Concat hand-maintained WC results (manual rows first so they win dedup).
+    # Always concat even when the feed has zero data rows: the manual CSV schema
+    # carries the 'advanced' column that historical results.csv lacks, so the
+    # concat is how that column enters df (filled with NaN for historical rows).
     if MANUAL_PATH.exists():
         manual_df = pd.read_csv(MANUAL_PATH)
+        df = pd.concat([manual_df, df], ignore_index=True)
         if len(manual_df) > 0:
-            df = pd.concat([manual_df, df], ignore_index=True)
             print(f"Prepended {len(manual_df):,} manual rows from {MANUAL_PATH}")
 
     # 2. Parse dates
@@ -79,8 +82,8 @@ def main():
     fixtures.to_csv(FIXTURES_PATH, index=False)
 
     # 7. Sanity report — eyeball this output
-    print(f"\nTraining set:  {len(played):,} matches → {TRAINING_PATH}")
-    print(f"Fixtures set:  {len(fixtures):,} matches → {FIXTURES_PATH}")
+    print(f"\nTraining set:  {len(played):,} matches -> {TRAINING_PATH}")
+    print(f"Fixtures set:  {len(fixtures):,} matches -> {FIXTURES_PATH}")
     print(f"\nDate range (training): {played['date'].min().date()} to {played['date'].max().date()}")
     if len(fixtures) > 0:
         print(f"Date range (fixtures): {fixtures['date'].min().date()} to {fixtures['date'].max().date()}")

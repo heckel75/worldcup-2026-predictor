@@ -195,7 +195,7 @@ def _sanity_check(df: pd.DataFrame) -> None:
             f"{col} sums to {got}, expected exactly {exp}"
         )
 
-    print("✅ Monte Carlo sanity checks pass.")
+    print("[OK] Monte Carlo sanity checks pass.")
 
 
 # ----------------------------------------------------------------------
@@ -230,6 +230,13 @@ def build_known_results(
         hg, ag = int(row["home_score"]), int(row["away_score"])
         if (h, a) in group_pairs:
             known[(h, a)] = (hg, ag)
+        elif (a, h) in group_pairs:
+            raise ValueError(
+                f"Group match {h!r} vs {a!r} in the feed is in the wrong "
+                f"orientation — the fixture is registered as {a!r} (home) vs "
+                f"{h!r} (away). Swap home_team/away_team in "
+                f"wc_results_manual.csv."
+            )
         else:
             # Knockout result
             if hg > ag:
@@ -260,12 +267,45 @@ def _load_ratings() -> dict[str, float]:
 
 
 def _load_fixtures() -> list[dict]:
-    df = pd.read_csv("data/processed/fixtures_2026.csv")
-    return df[["home_team", "away_team"]].to_dict("records")
+    """Return ALL 72 WC 2026 group-stage fixtures (played + unplayed).
+
+    simulate_tournament needs the full fixture list even for groups that are
+    already complete — if a group's matches aren't in the fixture list, the
+    simulation produces 0-pt records for every team and ranking becomes
+    arbitrary (invariant B failure once results are pinned via known_results).
+    """
+    # Unplayed fixtures still in fixtures_2026.csv
+    unplayed_df = pd.read_csv("data/processed/fixtures_2026.csv")
+    unplayed = unplayed_df[["home_team", "away_team"]].to_dict("records")
+
+    # Played WC 2026 group-stage fixtures from matches_clean.csv
+    played_df = pd.read_csv("data/processed/matches_clean.csv", parse_dates=["date"])
+    wc_2026 = played_df[
+        (played_df["tournament"] == "FIFA World Cup")
+        & (played_df["date"] >= "2026-06-01")
+        & played_df["home_score"].notna()
+    ]
+    played_group = [
+        {"home_team": str(r["home_team"]), "away_team": str(r["away_team"])}
+        for _, r in wc_2026.iterrows()
+        if TEAM_TO_GROUP.get(r["home_team"]) == TEAM_TO_GROUP.get(r["away_team"])
+        and TEAM_TO_GROUP.get(r["home_team"]) is not None
+    ]
+
+    # played first so known_results always wins; no duplicates since
+    # clean_data.py moves played rows out of fixtures_2026.csv.
+    return played_group + unplayed
 
 
 def _load_played_wc(fixtures: list[dict]) -> dict:
-    """Load played WC group/KO matches from matches_clean.csv and build known_results."""
+    """Load played WC 2026 matches from matches_clean.csv and build known_results.
+
+    group_pairs is built from two sources so it doesn't shrink as matches
+    are played (clean_data.py moves played rows out of fixtures_2026.csv):
+      1. currently-unplayed fixtures (from fixtures_2026.csv)
+      2. any played WC 2026 match where both teams are in the same GROUPS
+         letter (those were group-stage matches, just no longer in fixtures)
+    """
     played_df = pd.read_csv("data/processed/matches_clean.csv", parse_dates=["date"])
     # Restrict to 2026 WC matches only: historical WC KO results (2018, 2022)
     # have draw scorelines that went to penalties but no 'advanced' column.
@@ -279,7 +319,16 @@ def _load_played_wc(fixtures: list[dict]) -> dict:
     if wc_played.empty:
         return {}
 
-    group_pairs = {(fx["home_team"], fx["away_team"]) for fx in fixtures}
+    # Start with currently-unplayed fixture pairs.
+    group_pairs: set[tuple[str, str]] = {
+        (fx["home_team"], fx["away_team"]) for fx in fixtures
+    }
+    # Augment with played group matches (same group = group stage, not KO).
+    for _, row in wc_played.iterrows():
+        h, a = str(row["home_team"]), str(row["away_team"])
+        if TEAM_TO_GROUP.get(h) == TEAM_TO_GROUP.get(a) and TEAM_TO_GROUP.get(h):
+            group_pairs.add((h, a))
+
     return build_known_results(wc_played, group_pairs)
 
 

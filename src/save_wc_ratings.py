@@ -43,10 +43,12 @@ def main():
         )
     print(f"Total teams rated: {len(elo.ratings)}")
 
-    # 3. Pull the 48 WC team names from the fixtures file
-    fixtures = pd.read_csv("data/processed/fixtures_2026.csv")
-    wc_teams = sorted(set(fixtures["home_team"]) | set(fixtures["away_team"]))
-    print(f"WC teams in fixtures: {len(wc_teams)}")
+    # 3. Pull the 48 WC team names from the bracket definition (static source of
+    # truth; using fixtures_2026.csv here is fragile because that file shrinks
+    # as matches are played and moved to matches_clean.csv).
+    from bracket import GROUPS
+    wc_teams = sorted({team for teams in GROUPS.values() for team in teams})
+    print(f"WC teams (from bracket.GROUPS): {len(wc_teams)}")
 
     # 4. Build rating table, sorted high to low
     rows = [(t, round(elo.get_rating(t), 1)) for t in wc_teams]
