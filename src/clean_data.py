@@ -4,12 +4,16 @@ Clean and filter the international football results dataset.
 Splits played matches (training data) from future fixtures (predictions).
 """
 
+import os
 import pandas as pd
 from pathlib import Path
 
 # --- config ---
 RAW_PATH    = Path("data/raw/results.csv")
-MANUAL_PATH = Path("data/raw/wc_results_manual.csv")
+# WC_MANUAL_RESULTS lets the dry-run harness point at a temp feed
+# without touching the real file.
+MANUAL_PATH = Path(os.environ.get("WC_MANUAL_RESULTS",
+                                  "data/raw/wc_results_manual.csv"))
 PROCESSED_DIR = Path("data/processed")
 TRAINING_PATH = PROCESSED_DIR / "matches_clean.csv"
 FIXTURES_PATH = PROCESSED_DIR / "fixtures_2026.csv"

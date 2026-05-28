@@ -106,6 +106,8 @@ def _update_ledger(log_fh) -> tuple[int, int]:
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
 
+        from clock import today as _clock_today  # noqa: PLC0415
+
         ledger_df = pd.read_csv(LEDGER_PATH)
         fixtures_df = pd.read_csv(FIXTURES_PATH, parse_dates=["date"])
         triple_df = pd.read_csv(TRIPLE_PATH, parse_dates=["date"])
@@ -113,7 +115,7 @@ def _update_ledger(log_fh) -> tuple[int, int]:
 
         before_len = len(ledger_df)
 
-        today = dt.date.today()
+        today = _clock_today()
         ledger_df = mod.freeze_new_forecasts(
             ledger_df, fixtures_df, triple_df, today, LEDGER_LOOKAHEAD_DAYS
         )
@@ -170,12 +172,19 @@ def main() -> None:
         stage_results: dict[str, bool] = {}
 
         # --- SOFT stages: market data fetchers ---
-        stage_results["fetch_odds"] = run_stage(
-            "fetch_odds", [py, "src/fetch_odds.py"], log_fh, fatal=False
-        )
-        stage_results["fetch_polymarket"] = run_stage(
-            "fetch_polymarket", [py, "src/fetch_polymarket.py"], log_fh, fatal=False
-        )
+        # Set WC_SKIP_FETCH=1 to skip network fetches (dry runs, API down).
+        skip_fetch = os.environ.get("WC_SKIP_FETCH", "0").strip() == "1"
+        if skip_fetch:
+            _tee("WC_SKIP_FETCH=1 — skipping fetch_odds and fetch_polymarket.", log_fh)
+            stage_results["fetch_odds"] = True
+            stage_results["fetch_polymarket"] = True
+        else:
+            stage_results["fetch_odds"] = run_stage(
+                "fetch_odds", [py, "src/fetch_odds.py"], log_fh, fatal=False
+            )
+            stage_results["fetch_polymarket"] = run_stage(
+                "fetch_polymarket", [py, "src/fetch_polymarket.py"], log_fh, fatal=False
+            )
 
         # --- FATAL stages: data pipeline ---
         run_stage("clean_data",    [py, "src/clean_data.py"],    log_fh, fatal=True)

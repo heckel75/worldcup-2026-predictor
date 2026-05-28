@@ -37,6 +37,7 @@ import numpy as np
 import pandas as pd
 
 from bracket import TEAM_TO_GROUP
+from clock import today as _clock_today
 from simulate import simulate_tournament
 
 
@@ -71,6 +72,7 @@ def run_monte_carlo(
     n_sims: int = 10_000,
     seed: Optional[int] = None,
     progress_every: int = 1000,
+    known_results: Optional[dict] = None,
 ) -> pd.DataFrame:
     """Run n_sims simulated tournaments and return per-team probabilities.
 
@@ -86,6 +88,11 @@ def run_monte_carlo(
         deterministic given the seed.
     progress_every : int
         Print a progress line every K sims. 0 to silence.
+    known_results : dict, optional
+        Pinned results to pass through to simulate_tournament on every
+        iteration. Group results keyed by (home, away) → (hg, ag);
+        knockout results keyed by frozenset({a, b}) → winner string.
+        None means every match is sampled (pre-tournament behaviour).
 
     Returns
     -------
@@ -102,7 +109,9 @@ def run_monte_carlo(
 
     t0 = time.time()
     for i in range(1, n_sims + 1):
-        result = simulate_tournament(ratings, fixtures, rng)
+        result = simulate_tournament(
+            ratings, fixtures, rng, known_results=known_results
+        )
         for team, label in result["team_furthest_round"].items():
             exact[team][STAGE_BY_LABEL[label]] += 1
         if progress_every and i % progress_every == 0:
@@ -141,7 +150,7 @@ def save_snapshot(
     """Save a dated snapshot CSV. Overwrites if same date already exists
     (intentional — re-running for the same day reproduces the same numbers
     because the seed is date-derived)."""
-    date = date or dt.date.today()
+    date = date or _clock_today()
     snap_dir = Path(snapshots_dir)
     snap_dir.mkdir(parents=True, exist_ok=True)
     out_path = snap_dir / f"{date.isoformat()}.csv"
@@ -190,6 +199,58 @@ def _sanity_check(df: pd.DataFrame) -> None:
 
 
 # ----------------------------------------------------------------------
+# Helper: build known_results from a played-matches DataFrame
+# ----------------------------------------------------------------------
+
+def build_known_results(
+    played_wc_df: pd.DataFrame,
+    group_pairs: set[tuple[str, str]],
+) -> dict:
+    """Build a known_results dict from played WC matches for simulate_tournament.
+
+    Parameters
+    ----------
+    played_wc_df : DataFrame
+        Rows from matches_clean.csv filtered to FIFA World Cup rows with
+        scores present. Expected columns: home_team, away_team, home_score,
+        away_score, and optionally advanced (for KO penalty decisions).
+    group_pairs : set of (home, away) tuples
+        The 72 group-stage fixture pairs from fixtures_2026.csv. Used to
+        partition group results from knockout results.
+
+    Returns
+    -------
+    dict
+        Group results: (home, away) → (hg, ag)
+        KO results:    frozenset({a, b}) → winner string
+    """
+    known: dict = {}
+    for _, row in played_wc_df.iterrows():
+        h, a = str(row["home_team"]), str(row["away_team"])
+        hg, ag = int(row["home_score"]), int(row["away_score"])
+        if (h, a) in group_pairs:
+            known[(h, a)] = (hg, ag)
+        else:
+            # Knockout result
+            if hg > ag:
+                winner = h
+            elif ag > hg:
+                winner = a
+            else:
+                adv = row.get("advanced", None)
+                if pd.isna(adv) or not str(adv).strip():
+                    raise ValueError(
+                        f"KO match {h} vs {a} ended {hg}–{ag} (draw after 90') "
+                        f"but 'advanced' column is missing or empty in the feed. "
+                        f"Add the team that advanced (won on penalties) to the "
+                        f"'advanced' column in wc_results_manual.csv."
+                    )
+                winner = str(adv).strip()
+            known[frozenset({h, a})] = winner
+    return known
+
+
+# ----------------------------------------------------------------------
 # CLI
 # ----------------------------------------------------------------------
 
@@ -203,8 +264,27 @@ def _load_fixtures() -> list[dict]:
     return df[["home_team", "away_team"]].to_dict("records")
 
 
+def _load_played_wc(fixtures: list[dict]) -> dict:
+    """Load played WC group/KO matches from matches_clean.csv and build known_results."""
+    played_df = pd.read_csv("data/processed/matches_clean.csv", parse_dates=["date"])
+    # Restrict to 2026 WC matches only: historical WC KO results (2018, 2022)
+    # have draw scorelines that went to penalties but no 'advanced' column.
+    wc_played = played_df[
+        (played_df["tournament"] == "FIFA World Cup")
+        & played_df["home_score"].notna()
+        & played_df["away_score"].notna()
+        & (played_df["date"] >= "2026-06-01")
+    ].copy()
+
+    if wc_played.empty:
+        return {}
+
+    group_pairs = {(fx["home_team"], fx["away_team"]) for fx in fixtures}
+    return build_known_results(wc_played, group_pairs)
+
+
 def main() -> None:
-    today = dt.date.today()
+    today = _clock_today()
     seed = int(today.strftime("%Y%m%d"))
     n_sims = 10_000
 
@@ -217,9 +297,19 @@ def main() -> None:
     ratings = _load_ratings()
     fixtures = _load_fixtures()
     print(f"Loaded {len(ratings)} team ratings and {len(fixtures)} fixtures.")
+
+    known_results = _load_played_wc(fixtures)
+    n_group = sum(1 for k in known_results if isinstance(k, tuple))
+    n_ko    = sum(1 for k in known_results if isinstance(k, frozenset))
+    if known_results:
+        print(f"Known results: {n_group} group match(es), {n_ko} knockout match(es) pinned.")
+    else:
+        print("No played WC results found — full simulation (pre-tournament mode).")
     print()
 
-    df = run_monte_carlo(ratings, fixtures, n_sims=n_sims, seed=seed)
+    df = run_monte_carlo(
+        ratings, fixtures, n_sims=n_sims, seed=seed, known_results=known_results or None
+    )
 
     _sanity_check(df)
 

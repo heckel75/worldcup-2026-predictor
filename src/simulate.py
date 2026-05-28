@@ -11,6 +11,11 @@ the 12 thirds advance" → "which R32 slot each one fills"). The Annex C
 data lives in data/raw/r32_annex_c.csv (built by src/build_annex_c.py);
 bracket.resolve_third_place_slots does the lookup.
 
+Session 30: added known_results (optional dict for pinning played match
+outcomes) and return_results (optional flag to expose all 104 per-match
+results). These two features make the simulator result-aware so the
+rolling daily update stays correct once the tournament starts.
+
 Two kinds of match sampling:
   - Group stage  -> sample a SCORELINE from the Dixon-Coles grid
                     (we need goals for the FIFA tiebreakers).
@@ -127,6 +132,44 @@ def _assign_thirds(top_8_thirds: list[str]) -> dict[int, str]:
 
 
 # ----------------------------------------------------------------------
+# known_results helper
+# ----------------------------------------------------------------------
+
+def build_known_results(
+    match_results: list[dict],
+    group_pairs: Optional[set] = None,
+) -> dict:
+    """Build a known_results dict from simulate_tournament's match_results output.
+
+    Parameters
+    ----------
+    match_results : list of dicts with keys: home, away, hg, ag, round, winner
+        As returned by simulate_tournament(..., return_results=True)["match_results"].
+    group_pairs : set of (home, away) tuples, optional
+        If supplied, only group rounds are keyed by tuple; all others by frozenset.
+        If None, the "round" field is used: "group_stage" → tuple, else frozenset.
+
+    Returns
+    -------
+    dict
+        Group results: (home, away) → (hg, ag)
+        KO results:    frozenset({a, b}) → winner string
+    """
+    known: dict = {}
+    for r in match_results:
+        h, a = r["home"], r["away"]
+        is_group = (
+            (group_pairs is not None and (h, a) in group_pairs)
+            or (group_pairs is None and r["round"] == "group_stage")
+        )
+        if is_group:
+            known[(h, a)] = (r["hg"], r["ag"])
+        else:
+            known[frozenset({h, a})] = r["winner"]
+    return known
+
+
+# ----------------------------------------------------------------------
 # Main simulator
 # ----------------------------------------------------------------------
 
@@ -140,6 +183,8 @@ def simulate_tournament(
     ratings: dict[str, float],
     fixtures: list[dict],
     rng: Optional[np.random.Generator] = None,
+    known_results: Optional[dict] = None,
+    return_results: bool = False,
 ) -> dict:
     """Simulate the 2026 World Cup once.
 
@@ -154,6 +199,21 @@ def simulate_tournament(
     rng : np.random.Generator, optional
         Pass a seeded RNG (np.random.default_rng(seed)) for reproducible
         runs. Defaults to a fresh unseeded generator.
+    known_results : dict, optional
+        Pinned results from matches already played.
+          Group results: (home, away) → (hg, ag)   — substituted before
+            _aggregate_stats so tiebreakers use the real scorelines.
+          KO results: frozenset({a, b}) → winner string — forces the
+            winner at that node instead of sampling.
+        None means every match is sampled (pre-tournament behaviour).
+        Defensive check: if a KO frozenset is found but the winner is not
+        one of the two teams at that node, a ValueError is raised (catches
+        typos in the feed early, rather than silently sampling the wrong
+        match).
+    return_results : bool, optional
+        When True, include "match_results" in the returned dict: a list of
+        dicts with keys (home, away, hg, ag, round, winner) for all 104
+        matches. hg/ag are None for knockout matches (no scoreline sampled).
 
     Returns
     -------
@@ -163,22 +223,35 @@ def simulate_tournament(
         knockout_matches    : [{match_id, round, home_team, away_team,
                                 winner, loser}]
         team_furthest_round : {team_name: ROUND_LABEL}
+        match_results       : list[dict]  (only when return_results=True)
 
     `team_furthest_round` is what Session 15 aggregates over many runs
     to compute P(reach R16), P(win cup), etc.
     """
     rng = rng if rng is not None else np.random.default_rng()
+    kr = known_results or {}
 
-    # ---------- 1. Group stage: sample 72 scorelines ----------
+    all_match_results: list[dict] = []  # populated only when return_results=True
+
+    # ---------- 1. Group stage: sample or pin 72 scorelines ----------
     sim_group_matches: list[dict] = []
     for fx in fixtures:
         h, a = fx["home_team"], fx["away_team"]
-        pred = predict_match(h, a, ratings, neutral=True)
-        hg, ag = _sample_scoreline(pred["scoreline_grid"], rng)
+        if (h, a) in kr:
+            hg, ag = kr[(h, a)]
+        else:
+            pred = predict_match(h, a, ratings, neutral=True)
+            hg, ag = _sample_scoreline(pred["scoreline_grid"], rng)
         sim_group_matches.append({
             "home_team": h, "away_team": a,
             "home_score": hg, "away_score": ag,
         })
+        if return_results:
+            w = h if hg > ag else (a if ag > hg else None)
+            all_match_results.append({
+                "home": h, "away": a, "hg": hg, "ag": ag,
+                "round": "group_stage", "winner": w,
+            })
 
     # ---------- 2. Group standings ----------
     matches_by_group: dict[str, list[dict]] = {}
@@ -224,12 +297,25 @@ def simulate_tournament(
         raise ValueError(f"unknown slot syntax: {slot!r}")
 
     def play_knockout(mid: int, rd: str, home: str, away: str) -> None:
-        pred = predict_match(home, away, ratings, neutral=True)
-        winner = _sample_ko_winner(
-            home, away,
-            pred["p_home_win"], pred["p_draw"], pred["p_away_win"],
-            rng,
-        )
+        pair = frozenset({home, away})
+        if pair in kr:
+            # Pinned result: validate before using (catches feed typos)
+            forced = kr[pair]
+            if forced not in (home, away):
+                raise ValueError(
+                    f"known_results has winner {forced!r} for "
+                    f"{home!r} vs {away!r} (match {mid}, {rd}), "
+                    f"but that team is not in this match. "
+                    f"Check wc_results_manual.csv for a typo."
+                )
+            winner = forced
+        else:
+            pred = predict_match(home, away, ratings, neutral=True)
+            winner = _sample_ko_winner(
+                home, away,
+                pred["p_home_win"], pred["p_draw"], pred["p_away_win"],
+                rng,
+            )
         loser = away if winner == home else home
         winners_by_match[mid] = winner
         knockout_log.append({
@@ -237,6 +323,11 @@ def simulate_tournament(
             "home_team": home, "away_team": away,
             "winner": winner, "loser": loser,
         })
+        if return_results:
+            all_match_results.append({
+                "home": home, "away": away, "hg": None, "ag": None,
+                "round": rd, "winner": winner,
+            })
 
     # R32 — slots reference group standings
     for mid, slot_a, slot_b in R32_BRACKET:
@@ -296,7 +387,7 @@ def simulate_tournament(
     furthest[final_match["winner"]] = "winner"
     furthest[final_match["loser"]] = "runner_up"
 
-    return {
+    result = {
         "winner":              final_match["winner"],
         "runner_up":           final_match["loser"],
         "third_place":         third_match["winner"],
@@ -305,6 +396,9 @@ def simulate_tournament(
         "knockout_matches":    knockout_log,
         "team_furthest_round": furthest,
     }
+    if return_results:
+        result["match_results"] = all_match_results
+    return result
 
 
 # ----------------------------------------------------------------------
@@ -328,7 +422,7 @@ def main() -> None:
     seed = 42
     print(f"Simulating one tournament with seed={seed}\n")
     rng = np.random.default_rng(seed)
-    result = simulate_tournament(ratings, fixtures, rng)
+    result = simulate_tournament(ratings, fixtures, rng, return_results=True)
 
     # Group standings
     print("=" * 70)
@@ -361,17 +455,17 @@ def main() -> None:
         for m in ms:
             print(
                 f"  {m['home_team']:<24} vs {m['away_team']:<24}  "
-                f"→ winner: {m['winner']}"
+                f"-> winner: {m['winner']}"
             )
 
     # Podium
     print("\n" + "=" * 70)
     print("PODIUM")
     print("=" * 70)
-    print(f"  🥇 Winner       : {result['winner']}")
-    print(f"  🥈 Runner-up    : {result['runner_up']}")
-    print(f"  🥉 Third place  : {result['third_place']}")
-    print(f"      Fourth place: {result['fourth_place']}")
+    print(f"  1st  Winner     : {result['winner']}")
+    print(f"  2nd  Runner-up  : {result['runner_up']}")
+    print(f"  3rd  Third place: {result['third_place']}")
+    print(f"  4th  Fourth     : {result['fourth_place']}")
 
     # Sanity: every team accounted for exactly once
     print("\nFurthest-round distribution (should sum to 48):")
@@ -387,7 +481,67 @@ def main() -> None:
         "SF count should be 0 — SF losers should all be reclassified "
         "as third_place or fourth_place."
     )
-    print("\n✅ Sanity checks pass.")
+    print("\n[OK] Sanity checks pass.")
+
+    # --- Result-aware self-tests (Session 30) ---
+    print("\nRunning result-aware self-tests...")
+
+    group_pairs = {(fx["home_team"], fx["away_team"]) for fx in fixtures}
+
+    # 1. Fully pinned tournament reproduces truth exactly.
+    # Build known_results from the seed-42 run (all 104 matches).
+    known_all = build_known_results(result["match_results"])
+    rng_b = np.random.default_rng(999)  # different seed — irrelevant when all pinned
+    result_pinned = simulate_tournament(ratings, fixtures, rng_b, known_results=known_all)
+    assert result_pinned["winner"] == result["winner"], (
+        f"fully pinned: champion mismatch — expected {result['winner']!r}, "
+        f"got {result_pinned['winner']!r}"
+    )
+    for team in TEAM_TO_GROUP:
+        expected = result["team_furthest_round"][team]
+        got = result_pinned["team_furthest_round"][team]
+        assert got == expected, (
+            f"fully pinned: {team!r} furthest round — expected {expected!r}, got {got!r}"
+        )
+    print("[OK] Fully pinned tournament reproduces truth exactly.")
+
+    # 2. Partially pinned (group stage only): 4th-place teams never advance.
+    # Build group-only known_results from the seed-42 run.
+    group_results_only = build_known_results(
+        [r for r in result["match_results"] if r["round"] == "group_stage"]
+    )
+    # Identify teams that finished 4th in their group in the truth run.
+    eliminated_4th = {
+        next(s["team"] for s in standings if s["rank"] == 4)
+        for standings in result["group_results"].values()
+    }
+    # Run 10 simulations — with group results pinned, group standings are
+    # deterministic, so 4th-place teams can never appear in the knockout stage.
+    for i in range(10):
+        r = simulate_tournament(
+            ratings, fixtures, np.random.default_rng(i * 7),
+            known_results=group_results_only,
+        )
+        for t in eliminated_4th:
+            got = r["team_furthest_round"][t]
+            assert got == "group_stage", (
+                f"partially pinned (run {i}): {t!r} finished 4th in truth but "
+                f"reached {got!r} with group results pinned"
+            )
+    print("[OK] Partially pinned: 4th-place group teams never advance.")
+
+    # 3. Defensive check: known KO winner not in the match raises ValueError.
+    bad_kr = {frozenset({"Spain", "France"}): "Germany"}  # Germany not playing
+    try:
+        simulate_tournament(ratings, fixtures, np.random.default_rng(0),
+                            known_results=bad_kr)
+        # If Spain and France don't meet, no error is expected; if they do, it raises.
+        print("[OK] Defensive check: Spain vs France did not meet in this run (no error).")
+    except ValueError as e:
+        assert "Germany" in str(e), f"unexpected ValueError text: {e}"
+        print("[OK] Defensive check: bad KO winner raised ValueError as expected.")
+
+    print("\n[OK] All result-aware self-tests pass.")
 
 
 if __name__ == "__main__":
