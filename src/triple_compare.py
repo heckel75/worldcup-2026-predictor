@@ -173,6 +173,33 @@ def main() -> None:
     print(f"  draw: {bias['draw']:+.4f}")
     print(f"  away: {bias['away']:+.4f}")
 
+    # Early exit when the group stage is complete (fixtures_2026.csv is empty).
+    # All 72 group matches have been played and moved to matches_clean.csv.
+    # Write header-only outputs so downstream consumers have a stable schema.
+    if len(fixtures) == 0:
+        empty_cols = [
+            "date", "home_team", "away_team", "neutral_used",
+            "p_home_model", "p_draw_model", "p_away_model",
+            "p_home_model_corr", "p_draw_model_corr", "p_away_model_corr",
+            "p_home_book", "p_draw_book", "p_away_book", "n_books",
+            "p_home_poly", "p_draw_poly", "p_away_poly", "poly_volume",
+            "div_model_book_home", "div_model_book_draw", "div_model_book_away",
+            "div_model_book_max", "div_model_book_l1",
+            "div_model_poly_l1", "div_book_poly_l1",
+            "divergence_type", "note", "flag_divergent",
+        ]
+        empty_df = pd.DataFrame(columns=empty_cols)
+        OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+        empty_df.to_csv(OUT_PATH, index=False)
+        div_snap_dir = Path("data/processed/divergence_snapshots")
+        div_snap_dir.mkdir(parents=True, exist_ok=True)
+        div_snap_path = div_snap_dir / f"{_clock_today().isoformat()}.csv"
+        empty_df.to_csv(div_snap_path, index=False)
+        print("\nGroup stage complete — no upcoming fixtures to compare.")
+        print(f"  Wrote header-only: {OUT_PATH}")
+        print(f"  Wrote header-only: {div_snap_path}")
+        return
+
     # 2. Run model on every fixture -----------------------------------------
     print(f"\nRunning model on {len(fixtures)} fixtures "
           f"(USE_FIXTURE_NEUTRAL={USE_FIXTURE_NEUTRAL})...")
