@@ -13,6 +13,8 @@ converts it to the H/D/A string convention.
 """
 from __future__ import annotations
 
+import math
+
 import pandas as pd
 
 CANON = ["home_team", "away_team", "p_home", "p_draw", "p_away", "outcome"]
@@ -84,6 +86,16 @@ def reliability_per_outcome(df):
     return t
 
 
+def log_loss(df, eps=1e-7):
+    """Mean negative log-likelihood per match."""
+    s = 0.0
+    for _, m in df.iterrows():
+        p = (m.p_home if m.outcome == "H" else
+             m.p_draw if m.outcome == "D" else m.p_away)
+        s -= math.log(max(eps, p))
+    return s / len(df)
+
+
 def brier_multiclass(df):
     s = 0.0
     for _, m in df.iterrows():
@@ -105,6 +117,7 @@ def summarize(df, label):
         "n":           int(len(df)),
         "brier":       brier_multiclass(df),
         "accuracy":    accuracy(df),
+        "log_loss":    log_loss(df),
         "bins":        reliability_pooled(df).to_dict("records"),
         "per_outcome": reliability_per_outcome(df).to_dict("records"),
     }

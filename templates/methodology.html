@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block title %}Methodology · World Cup 2026 Predictor{% endblock %}
+
+{% block content %}
+<h1>Methodology</h1>
+<p class="lede">How the forecast is built, how accurate it is, and what it can't do.</p>
+
+<h2 class="section-label">How it works</h2>
+<div class="method-prose">
+  <p><strong>Step 1 — Elo ratings.</strong> Every team starts from a seeded rating drawn from
+  <a href="https://www.eloratings.net/">eloratings.net</a> (January 2018), then the full match
+  history from 2018 through the most recent international break is replayed match by match.
+  Each result updates both teams' ratings with two modifications: a margin-of-victory multiplier
+  (larger wins move ratings more) and a 60-point home-advantage adjustment. K factors vary by
+  match type — 20 for friendlies, 30 for qualifiers, 50 for major tournaments, 60 for the World
+  Cup — so recent competitive results carry more weight than older friendlies.</p>
+
+  <p><strong>Step 2 — Dixon-Coles goal model.</strong> Elo ratings are converted into per-match
+  expected-goal parameters using a mapping fit on recent international history. A 2D Poisson
+  probability grid over goal counts (0–8 each side) gives the probability of every possible
+  scoreline; summing the right cells yields P(home win), P(draw), and P(away win). The model
+  uses the <a href="https://www.tandfonline.com/doi/abs/10.1111/1467-9876.00065">Dixon-Coles
+  (1997)</a> low-score correction: probabilities in the 0–0, 1–0, 0–1, and 1–1 cells are
+  slightly adjusted via a single parameter ρ to fix Poisson's mild under-prediction of
+  low-scoring draws. ρ was estimated by maximum likelihood on 5,882 competitive matches
+  before June 2024.</p>
+
+  <p><strong>Step 3 — Monte Carlo simulation.</strong> The entire tournament bracket is
+  simulated 10,000 times. Each run plays out all 104 matches from the group stage through the
+  final, sampling from the Dixon-Coles distributions and applying FIFA's actual tiebreaker rules
+  and the Annex C third-place bracket table. The result is a per-team probability distribution
+  over every round — P(advance from group), P(reach R16), P(reach QF), P(SF), P(Final),
+  P(Champion). Snapshots are saved after each update so probability movements are visible
+  over time.</p>
+
+  <p><strong>Step 4 — Three-way fusion and AI commentary.</strong> For every fixture the model
+  probability sits alongside two market-based estimates: sportsbook odds (vig stripped by
+  proportional normalisation across 37–44 books, sourced from
+  <a href="https://the-odds-api.com/">The Odds API</a>) and Polymarket prediction-market prices
+  (<a href="https://polymarket.com/">Polymarket</a> Gamma API, per-match markets posted close to
+  kickoff). Where all three agree, confidence is higher; where they diverge, the gap is a signal
+  worth examining. A divergence threshold of 15 percentage points flags the most notable gaps,
+  categorised as model-over-concentrated, model-under-concentrated, or disagree-on-favourite.
+  Claude writes a match preview for every fixture and a short divergence note for flagged matches
+  — see below.</p>
+</div>
+
+<h2 class="section-label">How accurate is it</h2>
+
+<div class="cal-stats">
+  <div class="stat-card">
+    <span class="stat-val">{{ stats.accuracy }}</span>
+    <span class="stat-meta">Match accuracy · random ≈ 37%</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-val">{{ stats.brier }}</span>
+    <span class="stat-meta">Brier score · lower is better · random ≈ 0.667</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-val">{{ stats.log_loss }}</span>
+    <span class="stat-meta">Log loss · lower is better · random ≈ 1.099</span>
+  </div>
+</div>
+
+<p class="method-context">
+  Backtest on Euro 2024 and Copa América 2024 — n&nbsp;=&nbsp;{{ stats.n }} matches the model
+  never saw during training. See the <a href="{{ root }}calibration.html">calibration page</a>
+  for the full reliability diagram.
+</p>
+
+<p class="method-context">
+  Euro 2024 alone — the closest analog for World Cup group-stage matches, where many teams
+  have similar Elo ratings — produces {{ stats.euro_accuracy }} match accuracy. Good
+  international-football models top out around 55–60% in ideal conditions; the World Cup
+  group stage is not ideal conditions. The value here is calibrated probabilities and
+  tournament simulation, not nailing every individual game.
+</p>
+
+<h2 class="section-label">Known limitations</h2>
+
+<ul class="method-limits">
+  <li><strong>Model is more concentrated at the top than markets.</strong>
+  Pure Elo + Dixon-Coles assumes peak fitness every game with no injury or squad-rotation
+  uncertainty. Small per-match over-confidence on heavy favourites compounds over a 7-match
+  title path. The two top-rated teams together hold roughly 50% of the model's title
+  probability versus ~34% in Polymarket — treat the exact title-odds figures as directional
+  signals, not precise quantities, especially at the very top of the table.</li>
+
+  <li><strong>A ~{{ stats.draw_gap_pp }}pp draw bias exists and is corrected on match pages.</strong>
+  The raw model under-predicts draws by roughly {{ stats.draw_gap_pp }} percentage points
+  and over-predicts away wins by a matching amount. Per-match probability bars apply a
+  correction derived from the backtest. The <a href="{{ root }}calibration.html">calibration
+  page</a> shows the <em>raw model</em> reliability; the match pages show <em>corrected</em>
+  probabilities. The correction is precisely what closes the draw under-prediction visible
+  on the reliability diagram.</li>
+
+  <li><strong>Residual confederation-pool drift.</strong>
+  Elo ratings update only when teams from different confederations play each other. Teams
+  that rarely face top-rated opposition have ratings shaped largely by within-confederation
+  results, which can leave some CAF, AFC, and CONCACAF teams slightly over- or under-rated
+  relative to global public Elo rankings. This is a structural limit of pure Elo with sparse
+  inter-confederation data.</li>
+
+  <li><strong>Host advantage is not modelled in v1.</strong>
+  All 104 matches are simulated as neutral-venue games, including the 18 group-stage matches
+  played at USA, Mexico, and Canada home venues. An Elo-based home-advantage term
+  (≈ 60 rating points) is supported by the model but was not enabled for v1.</li>
+
+  <li><strong>No player-level data.</strong>
+  Injuries, suspensions, squad rotation, and short-term form are not inputs. When a key player
+  is ruled out before a match, the forecast doesn't know. Market prices often move on such news
+  before we re-run, which is one reason a large sportsbook divergence away from the model is
+  worth examining.</li>
+</ul>
+
+<h2 class="section-label">The AI commentary experiment</h2>
+
+<div class="method-prose">
+  <p>Every match page includes a three-paragraph preview written by Claude (Anthropic's AI),
+  generated from the numerical inputs — the model probabilities, sportsbook odds, and Polymarket
+  prices. The 14 most statistically divergent fixtures also carry a short commentary note
+  explaining the shape of the gap between sources.</p>
+
+  <p>This is explicitly an experiment. The goal is to see whether AI-written synthesis adds
+  genuine value — distilling what the numbers collectively imply about a match — or whether it
+  is decorative. The forecasts themselves are not AI-generated; the probabilities come entirely
+  from Elo ratings, Dixon-Coles, and Monte Carlo simulation. AI writes prose, not predictions.</p>
+
+  <p>Known limitation: the commentary can produce imprecise comparatives and occasionally uses
+  language that isn't grounded in the data inputs. It is not a substitute for reading the actual
+  probability numbers. Judge for yourself whether the prose adds anything.</p>
+</div>
+
+<h2 class="section-label">Data &amp; sources</h2>
+<ul class="method-sources">
+  <li>
+    <a href="https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017"
+       target="_blank" rel="noopener">International Football Results (Kaggle)</a> —
+    historical match results from 1872, maintained through the March 2026 international break.
+    The model's training set.
+  </li>
+  <li>
+    <a href="https://www.eloratings.net/" target="_blank" rel="noopener">eloratings.net</a> —
+    source for the January 2018 seed ratings that initialise the Elo system and prevent
+    confederation-pool drift in the cold start.
+  </li>
+  <li>
+    <a href="https://the-odds-api.com/" target="_blank" rel="noopener">The Odds API</a> —
+    aggregated sportsbook odds for WC group-stage and outright-winner markets, refreshed
+    before each update run. Vig is stripped by proportional normalisation across books.
+  </li>
+  <li>
+    <a href="https://polymarket.com/" target="_blank" rel="noopener">Polymarket</a> Gamma API —
+    prediction-market prices for WC title and group-winner markets. Per-match h2h markets
+    appear close to kickoff and are updated as they become available.
+  </li>
+  <li>Data is refreshed manually before each update run, typically after each match day
+  during the tournament.</li>
+</ul>
+{% endblock %}

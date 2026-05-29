@@ -408,6 +408,32 @@ def _fmt_cal(summary: dict) -> dict:
     }
 
 
+def _methodology_stats(primary_sum: dict, full_sum: dict) -> dict:
+    """Stats for the methodology page: live numbers from calibration + raw backtest.
+
+    draw_gap_pp comes from full_sum (the ~4pp bias that drives the match-page correction),
+    not from primary_sum (majors only — a noisier ~9pp on a smaller sample).
+    """
+    draw_row = next(r for r in full_sum["per_outcome"] if r["outcome"] == "Draw")
+    draw_gap_pp = round(abs(draw_row["gap"]) * 100)
+
+    # Euro-only accuracy: filter raw backtest, reuse calibration.accuracy()
+    bt_raw = pd.read_csv("data/processed/backtest_2024.csv")
+    euro_raw = bt_raw[bt_raw["tournament"] == "UEFA Euro"].copy()
+    euro_df = euro_raw[["home_team", "away_team", "p_home", "p_draw", "p_away"]].copy()
+    euro_df["outcome"] = euro_raw["actual"].map({0: "H", 1: "D", 2: "A"})
+    euro_acc = calibration.accuracy(euro_df)
+
+    return {
+        "n":             primary_sum["n"],
+        "accuracy":      f"{primary_sum['accuracy'] * 100:.1f}%",
+        "brier":         f"{primary_sum['brier']:.3f}",
+        "log_loss":      f"{primary_sum['log_loss']:.3f}",
+        "euro_accuracy": f"{euro_acc * 100:.1f}%",
+        "draw_gap_pp":   draw_gap_pp,
+    }
+
+
 def build_site() -> None:
     snapshot = _latest_snapshot()
     snapshot_date = snapshot.stem  # filename is the date
@@ -491,12 +517,19 @@ def build_site() -> None:
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
     )
 
+    # --- methodology page (top-level: root="") ---
+    _render_page(
+        env, "methodology.html", OUTPUT_DIR / "methodology.html",
+        stats=_methodology_stats(primary_sum, full_sum),
+        root="", generated_at=generated_at, snapshot_date=snapshot_date,
+    )
+
     _copy_static()
     (OUTPUT_DIR / ".nojekyll").touch()
 
     print(f"Built site -> {OUTPUT_DIR}/")
     print(f"   snapshot : {snapshot.name} ({len(teams)} teams)")
-    print(f"   pages    : index.html + calibration.html + {len(matches)} match pages")
+    print(f"   pages    : index.html + calibration.html + methodology.html + {len(matches)} match pages")
 
 
 if __name__ == "__main__":
