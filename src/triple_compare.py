@@ -34,7 +34,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
-from clock import today as _clock_today
+from clock import today as _clock_today, divergence_snapshot_dir as _div_snap_dir
 from dixon_coles import predict_match
 
 # --- configuration ----------------------------------------------------------
@@ -191,7 +191,7 @@ def main() -> None:
         empty_df = pd.DataFrame(columns=empty_cols)
         OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
         empty_df.to_csv(OUT_PATH, index=False)
-        div_snap_dir = Path("data/processed/divergence_snapshots")
+        div_snap_dir = Path(_div_snap_dir())
         div_snap_dir.mkdir(parents=True, exist_ok=True)
         div_snap_path = div_snap_dir / f"{_clock_today().isoformat()}.csv"
         empty_df.to_csv(div_snap_path, index=False)
@@ -314,7 +314,7 @@ def main() -> None:
     print(f"\nSaved {len(df)} rows -> {OUT_PATH}")
 
     # 7b. Dated divergence snapshot (mirrors monte_carlo.py pattern) ------
-    div_snap_dir = Path("data/processed/divergence_snapshots")
+    div_snap_dir = Path(_div_snap_dir())
     div_snap_dir.mkdir(parents=True, exist_ok=True)
     div_snap_path = div_snap_dir / f"{_clock_today().isoformat()}.csv"
     df.to_csv(div_snap_path, index=False)

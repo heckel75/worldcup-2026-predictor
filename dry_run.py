@@ -39,6 +39,7 @@ import os
 import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 import numpy as np
@@ -193,7 +194,8 @@ def _read_snapshot(path: Path) -> pd.DataFrame:
 
 
 def _two_newest_snapshots() -> tuple[Path | None, Path | None]:
-    csvs = sorted(SNAPSHOTS_DIR.glob("*.csv"))
+    snap_dir = Path(os.environ.get("WC_SNAPSHOT_DIR", str(SNAPSHOTS_DIR)))
+    csvs = sorted(snap_dir.glob("*.csv"))
     if not csvs:
         return None, None
     if len(csvs) == 1:
@@ -333,6 +335,24 @@ def main() -> None:
     print(f"Truth seed: {DRY_RUN_SEED}")
     print("=" * 68)
 
+    # ---- Create temp dirs and set env overrides ----------------------------
+    # All three path-override env vars (WC_CLEAN_OUTPUT, WC_SNAPSHOT_DIR,
+    # WC_DIVERGENCE_SNAPSHOT_DIR) are set in os.environ so they propagate
+    # automatically to every subprocess call via {**os.environ, ...}.
+    tmp_root  = tempfile.mkdtemp(prefix="wc_dry_run_")
+    tmp_clean = Path(tmp_root) / "matches_clean.csv"
+    tmp_snaps = Path(tmp_root) / "snapshots"
+    tmp_div   = Path(tmp_root) / "divergence_snapshots"
+    tmp_snaps.mkdir()
+    tmp_div.mkdir()
+    _dry_run_env = {
+        "WC_CLEAN_OUTPUT":            str(tmp_clean),
+        "WC_SNAPSHOT_DIR":            str(tmp_snaps),
+        "WC_DIVERGENCE_SNAPSHOT_DIR": str(tmp_div),
+    }
+    for k, v in _dry_run_env.items():
+        os.environ[k] = v
+
     # ---- Restore pipeline to clean pre-tournament state --------------------
     # Required if a previous dry run left fixtures_2026.csv or
     # elo_ratings_2026.csv in a corrupted state (games played moved out of
@@ -353,10 +373,12 @@ def main() -> None:
         else:
             print(f"  OK: {label}")
 
-    # Clear stale WC-2026 snapshots left by previous dry runs.  Without this,
-    # _two_newest_snapshots() picks old pre-existing files instead of the
-    # current iteration's snapshot, making invariant checks run on wrong data.
-    for snap_dir in [SNAPSHOTS_DIR, DIV_SNAPS_DIR]:
+    # Clear stale WC-2026 snapshots from the (temp) snapshot dirs.
+    # With isolation, these dirs are fresh; this loop is a no-op but kept
+    # for safety in case of interrupted prior runs that leaked temp dirs.
+    eff_snaps = Path(os.environ.get("WC_SNAPSHOT_DIR", str(SNAPSHOTS_DIR)))
+    eff_div   = Path(os.environ.get("WC_DIVERGENCE_SNAPSHOT_DIR", str(DIV_SNAPS_DIR)))
+    for snap_dir in [eff_snaps, eff_div]:
         stale = [p for p in snap_dir.glob("*.csv") if p.stem >= "2026-06-01"]
         for p in stale:
             p.unlink()
@@ -514,7 +536,12 @@ def main() -> None:
         # Clean up temp feed
         if TEMP_FEED_PATH.exists():
             TEMP_FEED_PATH.unlink()
-        print(f"\nLedger restored to original state.  Temp feed deleted.")
+        # Remove env overrides so no subsequent process inherits them
+        for k in _dry_run_env:
+            os.environ.pop(k, None)
+        # Remove temp scratch dirs (matches_clean, snapshots, divergence_snapshots)
+        shutil.rmtree(tmp_root, ignore_errors=True)
+        print(f"\nLedger restored. Temp feed and dry-run scratch dirs deleted.")
 
 
 if __name__ == "__main__":

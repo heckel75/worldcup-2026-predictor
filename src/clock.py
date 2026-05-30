@@ -19,3 +19,21 @@ def today() -> dt.date:
     if raw:
         return dt.date.fromisoformat(raw)
     return dt.date.today()
+
+
+def clean_output_path() -> str:
+    """Path for matches_clean.csv; WC_CLEAN_OUTPUT overrides for dry runs."""
+    raw = os.environ.get("WC_CLEAN_OUTPUT", "").strip()
+    return raw if raw else "data/processed/matches_clean.csv"
+
+
+def snapshot_dir() -> str:
+    """Snapshot directory for MC results; WC_SNAPSHOT_DIR overrides for dry runs."""
+    raw = os.environ.get("WC_SNAPSHOT_DIR", "").strip()
+    return raw if raw else "data/processed/snapshots"
+
+
+def divergence_snapshot_dir() -> str:
+    """Snapshot directory for divergence data; WC_DIVERGENCE_SNAPSHOT_DIR overrides."""
+    raw = os.environ.get("WC_DIVERGENCE_SNAPSHOT_DIR", "").strip()
+    return raw if raw else "data/processed/divergence_snapshots"

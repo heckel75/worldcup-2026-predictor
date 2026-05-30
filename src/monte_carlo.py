@@ -37,7 +37,11 @@ import numpy as np
 import pandas as pd
 
 from bracket import TEAM_TO_GROUP
-from clock import today as _clock_today
+from clock import (
+    today as _clock_today,
+    snapshot_dir as _snapshot_dir,
+    clean_output_path as _clean_output_path,
+)
 from simulate import simulate_tournament
 
 
@@ -279,7 +283,7 @@ def _load_fixtures() -> list[dict]:
     unplayed = unplayed_df[["home_team", "away_team"]].to_dict("records")
 
     # Played WC 2026 group-stage fixtures from matches_clean.csv
-    played_df = pd.read_csv("data/processed/matches_clean.csv", parse_dates=["date"])
+    played_df = pd.read_csv(_clean_output_path(), parse_dates=["date"])
     wc_2026 = played_df[
         (played_df["tournament"] == "FIFA World Cup")
         & (played_df["date"] >= "2026-06-01")
@@ -306,7 +310,7 @@ def _load_played_wc(fixtures: list[dict]) -> dict:
       2. any played WC 2026 match where both teams are in the same GROUPS
          letter (those were group-stage matches, just no longer in fixtures)
     """
-    played_df = pd.read_csv("data/processed/matches_clean.csv", parse_dates=["date"])
+    played_df = pd.read_csv(_clean_output_path(), parse_dates=["date"])
     # Restrict to 2026 WC matches only: historical WC KO results (2018, 2022)
     # have draw scorelines that went to penalties but no 'advanced' column.
     wc_played = played_df[
@@ -362,7 +366,7 @@ def main() -> None:
 
     _sanity_check(df)
 
-    out = save_snapshot(df, date=today)
+    out = save_snapshot(df, snapshots_dir=_snapshot_dir(), date=today)
     print(f"\nSnapshot saved: {out}")
 
     print("\n" + "=" * 70)

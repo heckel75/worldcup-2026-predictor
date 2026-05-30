@@ -5,8 +5,12 @@ Splits played matches (training data) from future fixtures (predictions).
 """
 
 import os
+import sys
 import pandas as pd
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from clock import clean_output_path as _clean_output_path
 
 # --- config ---
 RAW_PATH    = Path("data/raw/results.csv")
@@ -15,6 +19,8 @@ RAW_PATH    = Path("data/raw/results.csv")
 MANUAL_PATH = Path(os.environ.get("WC_MANUAL_RESULTS",
                                   "data/raw/wc_results_manual.csv"))
 PROCESSED_DIR = Path("data/processed")
+# TRAINING_PATH is the default; actual write path is resolved at runtime
+# via _clock.clean_output_path() so dry-run replays redirect to a temp file.
 TRAINING_PATH = PROCESSED_DIR / "matches_clean.csv"
 FIXTURES_PATH = PROCESSED_DIR / "fixtures_2026.csv"
 START_DATE = "2018-01-01"
@@ -35,6 +41,8 @@ TEAM_NAME_MAP = {
 
 def main():
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    training_path = Path(_clean_output_path())
+    training_path.parent.mkdir(parents=True, exist_ok=True)
 
     # 1. Load Kaggle dataset
     df = pd.read_csv(RAW_PATH)
@@ -77,12 +85,23 @@ def main():
     played["home_score"] = played["home_score"].astype(int)
     played["away_score"] = played["away_score"].astype(int)
 
-    # 6. Save
-    played.to_csv(TRAINING_PATH, index=False)
+    # 6. Schema guard: every column in the manual feed must survive to output.
+    # Catches future manual-feed columns (referee, venue, …) that get silently
+    # dropped by a future clean_data change before they reach matches_clean.csv.
+    if MANUAL_PATH.exists():
+        missing = [c for c in manual_df.columns if c not in played.columns]
+        if missing:
+            raise ValueError(
+                f"Column(s) from {MANUAL_PATH} were dropped during processing: "
+                f"{missing}. Update clean_data.py to carry them through explicitly."
+            )
+
+    # 7. Save
+    played.to_csv(training_path, index=False)
     fixtures.to_csv(FIXTURES_PATH, index=False)
 
-    # 7. Sanity report — eyeball this output
-    print(f"\nTraining set:  {len(played):,} matches -> {TRAINING_PATH}")
+    # 8. Sanity report — eyeball this output
+    print(f"\nTraining set:  {len(played):,} matches -> {training_path}")
     print(f"Fixtures set:  {len(fixtures):,} matches -> {FIXTURES_PATH}")
     print(f"\nDate range (training): {played['date'].min().date()} to {played['date'].max().date()}")
     if len(fixtures) > 0:

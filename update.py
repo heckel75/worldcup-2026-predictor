@@ -106,12 +106,12 @@ def _update_ledger(log_fh) -> tuple[int, int]:
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
 
-        from clock import today as _clock_today  # noqa: PLC0415
+        from clock import today as _clock_today, clean_output_path as _clean_output_path  # noqa: PLC0415
 
         ledger_df = pd.read_csv(LEDGER_PATH)
         fixtures_df = pd.read_csv(FIXTURES_PATH, parse_dates=["date"])
         triple_df = pd.read_csv(TRIPLE_PATH, parse_dates=["date"])
-        played_df = pd.read_csv(PLAYED_PATH, parse_dates=["date"])
+        played_df = pd.read_csv(_clean_output_path(), parse_dates=["date"])
 
         before_len = len(ledger_df)
 
