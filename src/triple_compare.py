@@ -16,9 +16,8 @@ Pipeline:
      divergence_type per match (disagree_on_favorite /
      model_over_concentrated / model_under_concentrated). Session 22's
      Claude commentary uses divergence_type to pick the right prompt shape.
-  6. Flag matches whose max single-outcome |gap| >= DIV_FLAG_THRESHOLD,
-     excluding host-country home matches (we don't model host advantage
-     in v1 -- see PROJECT.md §6; decision deferred to Session 33).
+  6. Flag matches whose max single-outcome |gap| >= DIV_FLAG_THRESHOLD.
+     Session 33: host advantage is now modelled, so no matches are excluded.
   7. Write data/processed/triple_compare.csv and print the top-10 gaps.
 
 Run from project root:
@@ -46,19 +45,16 @@ BOOK_PATH      = Path("data/processed/sportsbook_odds.csv")
 POLY_PATH      = Path("data/processed/polymarket_odds.csv")
 OUT_PATH       = Path("data/processed/triple_compare.csv")
 
-# v1: mirror simulate.py / monte_carlo.py, which use neutral=True everywhere.
-# Flip to True in Session 33 if we decide to model host advantage; the
-# fixtures CSV already carries the real neutral flag.
-USE_FIXTURE_NEUTRAL = False
+# Session 33: use each fixture's actual neutral flag so per-match bars
+# match the simulation (which now applies a 60-Elo home advantage for
+# USA/Mexico/Canada's 9 home group matches).
+USE_FIXTURE_NEUTRAL = True
 
 # Flag a match if max single-outcome |model_corr - book| >= this.
 # Raised from 0.08 after the Session 20 first run flagged 28/50 matches.
 # At 0.15 we surface ~10-15 genuinely interesting gaps; the bias correction
 # handles the small structural offsets (+/-3-4pp draw/away) on its own.
 DIV_FLAG_THRESHOLD = 0.15
-
-# Hosts: home matches systematically under-priced by model in v1.
-HOST_TEAMS = {"USA", "Mexico", "Canada"}
 
 
 # --- bias correction --------------------------------------------------------
@@ -286,26 +282,13 @@ def main() -> None:
     df["divergence_type"] = df.apply(classify_divergence, axis=1)
 
     # 6. Note + flag --------------------------------------------------------
-    fx_neutral = {
-        (fx.home_team, fx.away_team): bool(fx.neutral)
-        for fx in fixtures.itertuples(index=False)
-    }
-
-    def make_note(row) -> str:
-        key = (row["home_team"], row["away_team"])
-        real_neutral = fx_neutral.get(key, True)
-        if (not real_neutral
-                and row["home_team"] in HOST_TEAMS
-                and row["neutral_used"]):
-            return "host advantage not modeled in v1"
-        return ""
-
-    df["note"] = df.apply(make_note, axis=1)
+    # Session 33: host advantage is now modelled (neutral_used=False for host
+    # home matches), so no matches are excluded from flagging.
+    df["note"] = ""
 
     df["flag_divergent"] = (
         (df["div_model_book_max"] >= DIV_FLAG_THRESHOLD)
         & df["p_home_book"].notna()
-        & (df["note"] == "")
     )
 
     # 7. Save ---------------------------------------------------------------
@@ -359,9 +342,9 @@ def main() -> None:
               f"{flag:>3}  {r['note']}")
 
     n_flag = int(df["flag_divergent"].sum())
-    n_note = int((df["note"] != "").sum())
+    n_host = int((~df["neutral_used"]).sum())
     print(f"\n{n_flag} matches flagged divergent. "
-          f"{n_note} host-match notes attached (excluded from flag).")
+          f"{n_host} host home matches (neutral_used=False, host advantage applied).")
 
     # Type breakdown across all matches with sportsbook data
     have_book = df["p_home_book"].notna()

@@ -102,10 +102,11 @@
   relative to global public Elo rankings. This is a structural limit of pure Elo with sparse
   inter-confederation data.</li>
 
-  <li><strong>Host advantage is not modelled in v1.</strong>
-  All 104 matches are simulated as neutral-venue games, including the 18 group-stage matches
-  played at USA, Mexico, and Canada home venues. An Elo-based home-advantage term
-  (≈ 60 rating points) is supported by the model but was not enabled for v1.</li>
+  <li><strong>Host advantage is modelled for group-stage home matches only.</strong>
+  USA, Mexico, and Canada each receive a 60-Elo home-advantage term for their 9 group-stage
+  home matches (the fixtures where they appear as home team). This shifts their win probability
+  by roughly 2–4 pp per match. All knockout matches are still simulated as neutral-venue games —
+  host-nation venues are not guaranteed in the knockout stage, so we make no assumption there.</li>
 
   <li><strong>No player-level data.</strong>
   Injuries, suspensions, squad rotation, and short-term form are not inputs. When a key player

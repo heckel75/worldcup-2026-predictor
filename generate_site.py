@@ -251,8 +251,7 @@ def _load_divergence(key: str, row, home_name, away_name) -> dict | None:
         return None
 
     if rec.get("kind") == "note":
-        return {"tone": "note", "label": "Caveat",
-                "headline": None, "text": rec.get("note_reason", "")}
+        return None  # stale pre-Session-33 cache; host advantage is now modelled
 
     has_book = pd.notna(row["p_home_book"])
     return {
@@ -281,6 +280,9 @@ def _build_match(row) -> dict:
     home_d, away_d = disp(home), disp(away)
     key = match_key(row["date"], home, away)
 
+    neutral_used = bool(row.get("neutral_used", True))
+    venue_label = "neutral venue" if neutral_used else f"home venue — {home_d}"
+
     sources = [_source("Model",
                        row["p_home_model_corr"], row["p_draw_model_corr"],
                        row["p_away_model_corr"], home_d, away_d,
@@ -307,6 +309,7 @@ def _build_match(row) -> dict:
         "away_display": away_d,
         "group":        TEAM_GROUP.get(home, "?"),
         "date_human":   _date_human(row["date"]),
+        "venue_label":  venue_label,
         "sources":      sources,
         "divergence":   _load_divergence(key, row, home_d, away_d),
         "preview_paras": _load_preview(key),
@@ -364,7 +367,7 @@ def _cal_svg(summary: dict) -> dict:
     plot = _CAL_SVG_SIZE - 2 * _CAL_SVG_PAD
     dots = []
     for b in summary["bins"]:
-        if b["mean_pred"] is None or b["obs_freq"] is None:
+        if pd.isna(b["mean_pred"]) or pd.isna(b["obs_freq"]):
             continue
         x = round(_CAL_SVG_PAD + b["mean_pred"] * plot, 1)
         y = round(_CAL_SVG_SIZE - _CAL_SVG_PAD - b["obs_freq"] * plot, 1)

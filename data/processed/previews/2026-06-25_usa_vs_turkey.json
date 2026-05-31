@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Turkey",
   "date": "2026-06-25",
-  "input_hash": "6b138351ef338a5cd29805615e5e1a2a1a91b008",
-  "generated_at": "2026-05-19T13:46:36+00:00",
+  "input_hash": "5f7580d6a3dce2c51d7f6da52935bb936651a2a4",
+  "generated_at": "2026-05-31T11:58:16+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Turkey enters as the model's favorite with a 46% win probability, compared to USA's 24% chance of victory. The gap of roughly 22 percentage points reflects a material advantage for Turkey in the statistical forecast.\n\nThe draw outcome carries meaningful weight at 30%, suggesting this match is unlikely to be settled decisively. The spread across all three outcomes—win for Turkey, draw, and USA victory—indicates a competitive fixture where a stalemate remains a plausible result, even as Turkey holds the edge.\n\nNo sportsbook consensus is available yet, so direct comparison between model and market is not possible at this stage. The dashboard will update as odds emerge closer to the fixture date."
+  "preview_text": "The model rates Turkey as the slight favorite, assigning a 36% win probability compared to the USA's 32%. The underdog scenario is narrow; a Turkish victory is marginally more likely than an American one, but neither side commands confidence.\n\nThe draw carries substantial weight at 31%, suggesting the model expects a closely matched contest. The three-way spread is tightly clustered: no outcome falls below 31% or exceeds 37%. This points to genuine competitive balance rather than a decisive mismatch, with all three results plausible under the model's framework.\n\nNo sportsbook consensus or derivatives market has yet formed around this match, so direct comparison between the model and market odds is not possible at this stage."
 }

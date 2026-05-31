@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Qatar",
   "date": "2026-06-18",
-  "input_hash": "e34a5a5cdfa6500117ca5dce47e0e88728cd52f0",
-  "generated_at": "2026-05-27T10:18:10+00:00",
+  "input_hash": "2218bece531bd554636bbfe6cad46c90842d6342",
+  "generated_at": "2026-05-31T11:58:01+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Canada strongly, assigning a 80% win probability against a 2% chance for Qatar. The underdog is given minimal probability of victory, though a draw registers at 18%, indicating some residual uncertainty about competitive balance.\n\nThe forecast implies a heavily skewed match shape. Canada's dominant win probability reflects an expected performance gap, yet the draw probability suggests this is not modeled as a blowout—Qatar has a genuine path to a result without defeat, even if outright victory appears remote by the model's assessment.\n\nThe model and sportsbooks diverge materially here. The books assign Qatar 15% win probability compared to the model's 2%—a gap of 13 percentage points—and credit a draw at 23% versus the model's 18%. Sportsbooks price Canada considerably tighter at 62% to the model's 80%. This substantial disagreement likely reflects different information or methodology; the dashboard offers no judgment on which source is more reliable."
+  "preview_text": "The model favors Canada heavily, assigning an 85% win probability against a Qatar side given just 0.2% chance of victory. This 85-percentage-point gap reflects an asymmetric matchup in the model's assessment. Qatar's underdog position is stark, though a draw remains possible at 15%.\n\nThe model's outcome distribution skews sharply toward a Canadian win, with draws plausible but draws and Qatar wins combined accounting for less than 15% of projected outcomes. The spread suggests Canada enters as a strong favorite; competitive margins are unlikely under this forecast, though the small draw probability signals the match is not predetermined.\n\nModel and sportsbook estimates diverge considerably. The market assigns Canada 62% instead of 85%—a 23-percentage-point difference—and grants Qatar 15% rather than 0.2%. The market also prices draws higher at 23% versus 15%. The dashboard makes no claim about which assessment is correct; the gap indicates materially different risk profiles between the two sources."
 }

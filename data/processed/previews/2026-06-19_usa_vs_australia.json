@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Australia",
   "date": "2026-06-19",
-  "input_hash": "9dbb042a925801fcc6bbc5ddf25a462a50632969",
-  "generated_at": "2026-05-27T10:18:17+00:00",
+  "input_hash": "6b52f6ca8bdab523beacfaaaff98a4eb0b03bcbf",
+  "generated_at": "2026-05-31T11:58:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Australia at 46%, while the market consensus strongly backs the USA at 53% to win. That represents a substantial 29-percentage-point gap in the USA win probability between the two sources. Australia's 46% modeled chance against the market's 20% reflects the widest divergence in this fixture.\n\nThe model's spread suggests a competitive encounter centered on the draw at 30%. Australia edges ahead in the win column, but the gap between all three outcomes is moderate; a 1-1 stalemate or either side prevailing remain plausible given the probabilities. The market, by contrast, tilts decisively toward a USA victory, with draws and Australian wins both compressed below their modeled levels.\n\nThe disagreement is stark and material. Sportsbooks assess the USA as clear favorites; the model finds the match substantially closer and tilts toward Australia. The dashboard does not claim to know which assessment is correct. Polymarket has not yet posted a per-match contract for this fixture."
+  "preview_text": "The model rates Australia as the slight favorite, assigning it a 36% win probability, while the USA's win chance stands at 32%. A draw is nearly as likely as an Australian victory, at 32%, suggesting this matchup leans competitive rather than decisive.\n\nThe three-outcome spread reflects genuine uncertainty. Australia's 4-percentage-point edge over the USA is modest; the draw probability sits within 1 point of the USA win line. The model anticipates a closely contested match where no single outcome dominates, with roughly one chance in three for each of the three results.\n\nA stark divergence appears between model and market. Sportsbooks favor the USA at 53%, a gap of 21 percentage points above the model's 32%. The market prices Australian chances at just 21%, or 15 points below the model. Draw odds align more closely, with books at 27% versus the model at 32%. The dashboard does not adjudicate these competing signals; bettors should weigh which source commands greater confidence given their priors on team strength and recent information."
 }

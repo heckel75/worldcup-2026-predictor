@@ -68,21 +68,21 @@
 
 <div class="cal-stats">
   <div class="stat-card">
-    <span class="stat-val">72.2%</span>
+    <span class="stat-val">53.0%</span>
     <span class="stat-meta">Match accuracy · random ≈ 37%</span>
   </div>
   <div class="stat-card">
-    <span class="stat-val">0.440</span>
+    <span class="stat-val">0.583</span>
     <span class="stat-meta">Brier score · lower is better · random ≈ 0.667</span>
   </div>
   <div class="stat-card">
-    <span class="stat-val">0.768</span>
+    <span class="stat-val">0.978</span>
     <span class="stat-meta">Log loss · lower is better · random ≈ 1.099</span>
   </div>
 </div>
 
 <p class="method-context">
-  Backtest on Euro 2024 and Copa América 2024 — n&nbsp;=&nbsp;72 matches the model
+  Backtest on Euro 2024 and Copa América 2024 — n&nbsp;=&nbsp;83 matches the model
   never saw during training. See the <a href="calibration.html">calibration page</a>
   for the full reliability diagram.
 </p>
@@ -120,10 +120,11 @@
   relative to global public Elo rankings. This is a structural limit of pure Elo with sparse
   inter-confederation data.</li>
 
-  <li><strong>Host advantage is not modelled in v1.</strong>
-  All 104 matches are simulated as neutral-venue games, including the 18 group-stage matches
-  played at USA, Mexico, and Canada home venues. An Elo-based home-advantage term
-  (≈ 60 rating points) is supported by the model but was not enabled for v1.</li>
+  <li><strong>Host advantage is modelled for group-stage home matches only.</strong>
+  USA, Mexico, and Canada each receive a 60-Elo home-advantage term for their 9 group-stage
+  home matches (the fixtures where they appear as home team). This shifts their win probability
+  by roughly 2–4 pp per match. All knockout matches are still simulated as neutral-venue games —
+  host-nation venues are not guaranteed in the knockout stage, so we make no assumption there.</li>
 
   <li><strong>No player-level data.</strong>
   Injuries, suspensions, squad rotation, and short-term form are not inputs. When a key player
@@ -181,7 +182,7 @@
 
   <footer class="site-footer">
     <p>
-      Forecast generated 2026-05-30 14:45 · snapshot 2026-05-30.
+      Forecast generated 2026-05-31 14:13 · snapshot 2026-05-31.
     </p>
     <p>
       Probabilities are model and market estimates, not statements of certainty.

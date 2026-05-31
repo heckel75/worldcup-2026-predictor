@@ -280,7 +280,7 @@ def _load_fixtures() -> list[dict]:
     """
     # Unplayed fixtures still in fixtures_2026.csv
     unplayed_df = pd.read_csv("data/processed/fixtures_2026.csv")
-    unplayed = unplayed_df[["home_team", "away_team"]].to_dict("records")
+    unplayed = unplayed_df[["home_team", "away_team", "neutral"]].to_dict("records")
 
     # Played WC 2026 group-stage fixtures from matches_clean.csv
     played_df = pd.read_csv(_clean_output_path(), parse_dates=["date"])
@@ -290,7 +290,11 @@ def _load_fixtures() -> list[dict]:
         & played_df["home_score"].notna()
     ]
     played_group = [
-        {"home_team": str(r["home_team"]), "away_team": str(r["away_team"])}
+        {
+            "home_team": str(r["home_team"]),
+            "away_team": str(r["away_team"]),
+            "neutral": bool(r.get("neutral", True)),
+        }
         for _, r in wc_2026.iterrows()
         if TEAM_TO_GROUP.get(r["home_team"]) == TEAM_TO_GROUP.get(r["away_team"])
         and TEAM_TO_GROUP.get(r["home_team"]) is not None

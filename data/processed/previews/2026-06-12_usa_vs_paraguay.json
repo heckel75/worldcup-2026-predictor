@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Paraguay",
   "date": "2026-06-12",
-  "input_hash": "65701186f4d1336088b7018641971b1fc6e2e8d0",
-  "generated_at": "2026-05-27T10:17:07+00:00",
+  "input_hash": "76e6b1fd2f2f3e424bfe99a7d65e9eff499d7a20",
+  "generated_at": "2026-05-31T11:57:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors a USA win at 36%, but the margin over Paraguay is narrow. Paraguay's 33% win probability places them just 3 percentage points behind, while a draw sits at 32% — suggesting all three outcomes remain genuinely competitive on the model's assessment.\n\nThe spread across win/draw/loss outcomes reflects a close contest with meaningful uncertainty. The 3-point gap between USA and Paraguay win odds indicates no clear favorite in strictly probabilistic terms. A draw at 32% is plausible enough to feature prominently in match expectations, signaling that neither team is projected to dominate decisively.\n\nThe sportsbook consensus diverges notably from the model. Books assign the USA a 48% win probability — a 12-point premium over the model's 36%. Conversely, Paraguay trades at 25% in the market versus 33% on the model, a 8-point gap. The draw splits the difference less dramatically (27% books vs. 32% model). No Polymarket data is available yet. The dashboard does not adjudicate between these divergent readings."
+  "preview_text": "The model rates USA as the narrow favorite at 45% to win, with Paraguay at 24% and a draw standing at 31%. USA edges the underdog but holds no dominant edge in this neutral-venue fixture.\n\nThe predicted outcome distribution suggests competitive balance. The 21-point spread between USA's best chance and Paraguay's win probability leaves room for an upset, while the draw probability of 31% indicates the match could plausibly end level. A one-goal margin separates the modal outcomes rather than a commanding gap.\n\nModel and sportsbook are closely aligned across all three outcomes. The market assigns USA 48%, Paraguay 25%, and a draw 27%—gaps of 3 percentage points or less on each line. Both sources view this as genuinely competitive, with modest odds favoring the USA side. No strong disagreement exists between the forecast and consensus."
 }

@@ -3,7 +3,12 @@
   "home_team": "Canada",
   "away_team": "Qatar",
   "date": "2026-06-18",
-  "kind": "note",
-  "note_reason": "host advantage not modeled in v1",
-  "generated_at": "2026-05-20T12:24:36+00:00"
+  "kind": "commentary",
+  "divergence_type": "model_over_concentrated",
+  "max_gap_pp": 23.3,
+  "input_hash": "a581959ef399e0019d19bf662201cd46a02cc187",
+  "generated_at": "2026-05-31T11:58:26+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model assigns Canada a 85% win probability while the market prices it at 62%, a 23-percentage-point gap favoring the model's confidence. This divergence suggests sportsbook consensus may be pricing in information the statistical model cannot access—recent form swings, lineup changes, or injury developments that have shifted expectations toward a more competitive match than Elo ratings alone would suggest. The market also elevates Qatar's win probability to 15% versus the model's 0.2%, reflecting real-money flows that hedge against upsets. Both sources agree Canada is the clear favorite, but the gap signals the market is hedging more heavily, treating the outcome as less settled than the model's rating implies."
 }

@@ -3,7 +3,12 @@
   "home_team": "Canada",
   "away_team": "Bosnia and Herzegovina",
   "date": "2026-06-12",
-  "kind": "note",
-  "note_reason": "host advantage not modeled in v1",
-  "generated_at": "2026-05-20T12:24:36+00:00"
+  "kind": "commentary",
+  "divergence_type": "model_over_concentrated",
+  "max_gap_pp": 28.1,
+  "input_hash": "838d1ddbab826f5ae2ac0ce5c61b8eee491d7d96",
+  "generated_at": "2026-05-31T11:58:22+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model assigns Canada a 80% win probability while the market prices it at 52%, a gap of 28 percentage points favoring the model's confidence. The market's substantially wider distribution across all three outcomes suggests bettors may be weighing recent form, lineup changes, or injury concerns that the model's last update does not capture. This divergence is notable but not unusual when real-money markets price in late-breaking information the Elo framework cannot see. The dashboard flags this split as a signal worth monitoring rather than evidence that either source has miscalibrated the true likelihood."
 }

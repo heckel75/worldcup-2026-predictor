@@ -23,10 +23,10 @@ Two kinds of match sampling:
                     50/50 between sides (penalty shootouts ≈ coin flips
                     at international level).
 
-v1 simplification: every match uses neutral=True. The three hosts
-(USA, Mexico, Canada) play their group games at home and probably
-deserve some advantage; deferred until we have a divergence-detector
-signal that it matters.
+Session 33: group-stage matches now use the fixture's neutral flag.
+The three hosts (USA, Mexico, Canada) receive a 60-Elo home-advantage
+for their 9 home group matches (neutral=False in fixtures_2026.csv).
+All knockout matches remain neutral=True (host venues not guaranteed).
 
 Run from project root:
     python src/simulate.py
@@ -240,7 +240,8 @@ def simulate_tournament(
         if (h, a) in kr:
             hg, ag = kr[(h, a)]
         else:
-            pred = predict_match(h, a, ratings, neutral=True)
+            neutral = bool(fx.get("neutral", True))
+            pred = predict_match(h, a, ratings, neutral=neutral)
             hg, ag = _sample_scoreline(pred["scoreline_grid"], rng)
         sim_group_matches.append({
             "home_team": h, "away_team": a,
@@ -412,7 +413,7 @@ def _load_ratings() -> dict[str, float]:
 
 def _load_fixtures() -> list[dict]:
     df = pd.read_csv("data/processed/fixtures_2026.csv")
-    return df[["home_team", "away_team"]].to_dict("records")
+    return df[["home_team", "away_team", "neutral"]].to_dict("records")
 
 
 def main() -> None:

@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "input_hash": "d013a5d2fb37b6efa12117db9ecea5fe3c0b125c",
-  "generated_at": "2026-05-19T13:46:23+00:00",
+  "input_hash": "ce147ab44585db17351b6118fd7d82d0f5790a0c",
+  "generated_at": "2026-05-31T11:58:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Switzerland with a 36.3% win probability, making them the slight favorite, while Canada carries a 32.2% chance of victory. The underdog designation is marginal; Switzerland's edge amounts to just 4 percentage points, suggesting a closely matched pairing.\n\nThe draw lands at 31.5%, occupying meaningful ground in the outcome distribution. No single result dominates; the three-way spread is relatively even, with all outcomes within 5 percentage points of one another. This points to a competitive match where either team could plausibly advance, and a stalemate remains a realistic possibility.\n\nNo sportsbook consensus is available at this stage. Once market odds emerge on major books, comparison with the model's 36–32–32 split will clarify whether professional bettors align with the statistical forecast or price one side differently."
+  "preview_text": "Canada enters as the model's favorite at 41%, holding a modest edge over Switzerland's 27% win probability. The 14-percentage-point gap reflects a slight but meaningful advantage in the statistical forecast. Switzerland's 27% chance nonetheless represents a credible path to victory in what the model assesses as a competitive fixture.\n\nThe draw carries material weight at 31%, suggesting neither side is strongly favored to settle the match decisively. The spread across win/draw/loss outcomes is relatively flat; Canada's lead in win probability is modest enough that a stalemate or a Swiss upset remain plausible outcomes. Competitive balance in this range typically signals a close contest that could unfold in multiple ways.\n\nNo sportsbook consensus is available yet. The model's probabilities will be updated as market odds emerge and the match approaches. The dashboard cannot assess divergence between statistical forecast and market pricing until bookmaker data becomes available."
 }
