@@ -326,7 +326,13 @@ Then we resume.
 - Write launch post (Twitter / LinkedIn / wherever)
 - Send to people who tested the original pitch
 
-**Session 35 — Last-minute polish (← NEXT)**
+**Session 35 — Last-minute polish + launch (← NEXT)**
+Do as close to June 11 / launch eve as possible, in one pass — all of it wants the freshest data.
+- Real launch baseline (§6 "Launch baseline is provisional"): download fresh martj42 results.csv → data/raw/ → run update.py → take new baseline snapshot. No code changes. "What changed today" must diff against this June baseline, not 2026-05-31.
+- Re-run src/fetch_polymarket.py (§6 "Polymarket per-match coverage"): per-match h2h markets appear closer to kickoff; this finally populates polymarket_odds.csv → third bar on match pages + per-match divergence layer light up.
+- Fill the {TOKENS} in launch_copy.md with refreshed numbers (gated on the baseline re-pull above).
+- NEW: build a standalone shareable launch graphic (PNG) — the Twitter/Reddit copy leans on "one striking visual" but the survival grid only lives inside the page, not as an exportable image. This is the one genuinely new piece of work.
+- Custom domain (optional, non-blocking): shareability + credibility over the github.io path; ideally before posting widely.
 
 ---
 
