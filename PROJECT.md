@@ -322,11 +322,11 @@ Then we resume.
 - Re-fit model, recompute ratings, run final pre-tournament simulation
 - Take a baseline snapshot
 
-**Session 34 — Sharing plan (← NEXT)**
+**Session 34 — Sharing plan ✅ DONE**
 - Write launch post (Twitter / LinkedIn / wherever)
 - Send to people who tested the original pitch
 
-**Session 35 — Last-minute polish**
+**Session 35 — Last-minute polish (← NEXT)**
 
 ---
 
@@ -408,6 +408,7 @@ Buffer for things that break.
 - **Session 31 (2026-05-29):** Built the methodology page. New `templates/methodology.html` (extends base.html, root="./") rendered by `generate_site.py` to `docs/methodology.html`; nav wired across index/match/calibration. Four sections: how it works (Elo→Dixon-Coles→Monte Carlo→three-way fusion + Claude layer), accuracy (majors backtest n=83: acc 0.530 / log loss 0.978 / Brier 0.583, Euro-2024 0.490 as the honest WC analog, ~55–60% ceiling), limits (top-tier concentration, ~4pp draw/away bias corrected on match pages, confederation drift, calibration-page-raw-vs-match-page-corrected disclosure, host advantage not modeled in v1 — neutral everywhere, revisit Session 33), and the AI-commentary experiment (Claude-generated, forecasts are not, judge for yourself). Backtest numbers read live from backtest_2024.csv. Builds clean, no root-absolute links, live on Pages.
 - **Session 32 (2026-05-30):** Added `WC_CLEAN_OUTPUT` / `WC_SNAPSHOT_DIR` / `WC_DIVERGENCE_SNAPSHOT_DIR` env-var resolvers to `src/clock.py`; wired into `clean_data.py` (dynamic output path + schema guard), `monte_carlo.py`, `triple_compare.py`, `update.py`, and `dry_run.py` (temp-dir isolation, env cleanup in `finally`). `python dry_run.py` → ALL INVARIANTS PASSED, zero contamination of real `data/processed/` paths; `WC_SKIP_FETCH=1 python update.py` runs all 10 stages clean. Dry run surfaced a pre-existing `generate_site.py` NaN-bin crash on the first ~3 live match-days (logged in §6, fix before June 11).
 - **Session 33 (2026-05-31):** Final pre-tournament refresh + host advantage + NaN-bin guard. Kaggle data unchanged (still 7,952 training matches through Mar 31 — martj42 not refreshed upstream; real refresh deferred to early June). simulate.py/monte_carlo.py apply a 60-Elo home bump to the 9 host group-stage matches (neutral=False threaded through the fixture dict); triple_compare.py USE_FIXTURE_NEUTRAL=True, host-exclusion removed (flags 14→26). generate_site.py: match pages show host-aware venue label + caveat from the neutral column, and _cal_svg guards NaN bins. Title odds steady (Spain 29.5 / Argentina 19.8 / France 12.2); USA advance 79.3%. Baseline snapshot 2026-05-31 is provisional — see §6.
+- **Session 34 (2026-06-03):** Wrote launch copy (launch_copy.md) — Twitter thread, LinkedIn post, r/soccer + r/dataisbeautiful Reddit posts, private pitch-tester note. Lead hook across all channels is the divergence angle anchored on the model-vs-market title gap (Spain ~30% model vs ~16% market), chosen over title-odds and calibration framings as the most debate-generating/shareable. Channels: Twitter/LinkedIn/Reddit. Decision: write-now/post-later — all numbers left as {TOKENS} to fill from the early-June re-pull at launch (Session 35), since the May-31 baseline is still on March-31 data. Distribution plan emphasises a public return loop (model-vs-market scoreboard resolving after each match), one striking visual per platform, and riding the pre-kickoff / first-upset news cycle. Custom domain flagged as a Session 35+ shareability/credibility task, non-blocking. No code.
 ---
 
 ## 8. How to get back into a chat session
