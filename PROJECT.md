@@ -323,16 +323,23 @@ Then we resume.
 - Take a baseline snapshot
 
 **Session 34 — Sharing plan ✅ DONE**
-- Write launch post (Twitter / LinkedIn / wherever)
-- Send to people who tested the original pitch
 
-**Session 35 — Last-minute polish + launch (← NEXT)**
+**Session 35a — Polymarket fetcher fix (← NEXT)**
+Unplanned insert from the 2026-06-05 pre-launch check. Its own session because it's
+live-API debugging of unknown size and must not sit on the launch-eve critical path.
+- fetch_polymarket.py returns empty across ALL market types (title/group/per-match) — see §6. Markets exist on the live site; our fetcher can't see them (slug/JSON-shape drift since Sessions 18–19).
+- Re-derive current WC event slugs + market JSON shape from the live Gamma API, update the fetcher, replace the hardcoded "as of 2026-05-17" per-match string with a real live probe.
+- Needs Claude Code. When starting, paste src/fetch_polymarket.py so the work order is written against the actual current code.
+- While here (small, can ride along): link per-match pages so every fixture is browsable (§6) — pages exist since Session 25 but nothing links to non-divergent/non-mover ones. generate_site.py + template change.
+
+**Session 35 — Last-minute polish + launch**
 Do as close to June 11 / launch eve as possible, in one pass — all of it wants the freshest data.
 - Real launch baseline (§6 "Launch baseline is provisional"): download fresh martj42 results.csv → data/raw/ → run update.py → take new baseline snapshot. No code changes. "What changed today" must diff against this June baseline, not 2026-05-31.
-- Re-run src/fetch_polymarket.py (§6 "Polymarket per-match coverage"): per-match h2h markets appear closer to kickoff; this finally populates polymarket_odds.csv → third bar on match pages + per-match divergence layer light up.
+- Re-run src/fetch_polymarket.py (now fixed in 35a): per-match h2h markets populate polymarket_odds.csv → third bar on match pages + per-match divergence layer light up.
 - Fill the {TOKENS} in launch_copy.md with refreshed numbers (gated on the baseline re-pull above).
-- NEW: build a standalone shareable launch graphic (PNG) — the Twitter/Reddit copy leans on "one striking visual" but the survival grid only lives inside the page, not as an exportable image. This is the one genuinely new piece of work.
+- Build a standalone shareable launch graphic (PNG) — the Twitter/Reddit copy leans on "one striking visual" but the survival grid only lives inside the page, not as an exportable image.
 - Custom domain (optional, non-blocking): shareability + credibility over the github.io path; ideally before posting widely.
+- Suggested launch timing: public posts ~June 7–8, re-pulling data the morning you post — late enough for real numbers, early enough to build an audience before kickoff + first-upset amplification.
 
 ---
 
@@ -373,6 +380,8 @@ Buffer for things that break.
 - **Dry run writes June/July snapshots into the real snapshots dir (Session 30):** "clear stale snapshots at startup" operates on the real data/processed/snapshots/. May snapshots survive and sort before June by filename, but the dry run's synthetic-date June/July snapshots are left behind as residue and must be deleted after a run (anything dated June/July 2026 pre-tournament is fake). A WC_SNAPSHOT_DIR override to isolate the harness to a temp dir is the clean fix — deferred, low priority.
 - **generate_site.py NaN calibration-bin crash:** ✅ Resolved in Session 33. `_cal_svg` uses `pd.isna()` to skip empty/NaN reliability bins before `round()`, so the site keeps building through the first live match-days.
 - **Launch baseline is provisional:** The 2026-05-31 snapshot was taken on March-31 data (Kaggle martj42 not yet refreshed past the last international break). The real launch baseline is the early-June re-pull (fold into Session 35 / launch morning): download fresh martj42 results.csv → data/raw/ → run update.py → take a new baseline. No code changes — Session 33 did the structural work. "What changed today" should diff against the June baseline, not 2026-05-31.
+- **Polymarket fetcher returns empty across ALL market types (2026-06-05):** Re-ran src/fetch_polymarket.py 6 days pre-kickoff. Every layer now empty — title slug `2026-fifa-world-cup-winner-595` returns HTTP 200 but parses 0 markets, all 12 group-winner slugs 200-but-empty, all 48 teams "not found"; per-match still prints the hardcoded "as of 2026-05-17" string (a static message, not a live probe). Meanwhile Polymarket's live site has a full WC section (polymarket.com/sports/world-cup/ — games/groups/winner tabs, ~38 active markets). Diagnosis: Polymarket restructured WC markets since Sessions 18–19; the fetcher's hardcoded slugs / expected JSON shape no longer match. CODE fix, not a wait. Scope: re-derive current event slugs + market JSON shape from the live API, update fetch_polymarket.py, replace the static per-match string with a real live probe. Own session (35a) before launch eve.
+- **Per-match pages exist but are unreachable unless flagged (2026-06-05):** Session 25 built docs/matches/<key>.html for all 72 fixtures, but the index grid was "intentionally not linked yet" — the only paths to a match page are the "what changed today" panel and divergence callouts. A fixture that's neither a mover nor divergent has a page nothing links to. Fix: link the survival-grid matches (or add a browsable fixtures list) to their pages in generate_site.py + templates. Small change; pages already built. Folded into Session 35a.
 ---
 
 ## 7. Session log
