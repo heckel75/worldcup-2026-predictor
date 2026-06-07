@@ -324,13 +324,17 @@ Then we resume.
 
 **Session 34 — Sharing plan ✅ DONE**
 
-**Session 35a — Polymarket fetcher fix (← NEXT)**
-Unplanned insert from the 2026-06-05 pre-launch check. Its own session because it's
-live-API debugging of unknown size and must not sit on the launch-eve critical path.
-- fetch_polymarket.py returns empty across ALL market types (title/group/per-match) — see §6. Markets exist on the live site; our fetcher can't see them (slug/JSON-shape drift since Sessions 18–19).
-- Re-derive current WC event slugs + market JSON shape from the live Gamma API, update the fetcher, replace the hardcoded "as of 2026-05-17" per-match string with a real live probe.
-- Needs Claude Code. When starting, paste src/fetch_polymarket.py so the work order is written against the actual current code.
-- While here (small, can ride along): link per-match pages so every fixture is browsable (§6) — pages exist since Session 25 but nothing links to non-divergent/non-mover ones. generate_site.py + template change.
+**Session 35a — Polymarket fetcher fix ✅ DONE**
+Polymarket restructured WC markets since Sessions 18–19; root cause was slug drift, not
+an outage. Fixed fetch_polymarket.py: title slug world-cup-winner, group slug
+world-cup-group-{letter}-winner, hybrid /public-search fallback if a seed slug misses.
+Per-match h2h markets now exist for all 72 group fixtures (series soccer-fifwc/11433 —
+avoid the fif-/10238 decoy series) — wired a real per-match probe: three binary Yes/No
+child markets per event (home-win / draw / away-win), renormalised over the ~0.995
+over-round, teams read from structured event["teams"] on name+ordering (never
+abbreviation — buggy), date from eventDate. polymarket_odds.csv now populates 72/72;
+triple_compare.py per-match join is live. Also linked all 72 fixtures from the index
+(browsable fixtures section) — closes the unreachable-pages gap. NEXT: Session 35 (launch).
 
 **Session 35 — Last-minute polish + launch**
 Do as close to June 11 / launch eve as possible, in one pass — all of it wants the freshest data.
@@ -380,8 +384,9 @@ Buffer for things that break.
 - **Dry run writes June/July snapshots into the real snapshots dir (Session 30):** "clear stale snapshots at startup" operates on the real data/processed/snapshots/. May snapshots survive and sort before June by filename, but the dry run's synthetic-date June/July snapshots are left behind as residue and must be deleted after a run (anything dated June/July 2026 pre-tournament is fake). A WC_SNAPSHOT_DIR override to isolate the harness to a temp dir is the clean fix — deferred, low priority.
 - **generate_site.py NaN calibration-bin crash:** ✅ Resolved in Session 33. `_cal_svg` uses `pd.isna()` to skip empty/NaN reliability bins before `round()`, so the site keeps building through the first live match-days.
 - **Launch baseline is provisional:** The 2026-05-31 snapshot was taken on March-31 data (Kaggle martj42 not yet refreshed past the last international break). The real launch baseline is the early-June re-pull (fold into Session 35 / launch morning): download fresh martj42 results.csv → data/raw/ → run update.py → take a new baseline. No code changes — Session 33 did the structural work. "What changed today" should diff against the June baseline, not 2026-05-31.
-- **Polymarket fetcher returns empty across ALL market types (2026-06-05):** Re-ran src/fetch_polymarket.py 6 days pre-kickoff. Every layer now empty — title slug `2026-fifa-world-cup-winner-595` returns HTTP 200 but parses 0 markets, all 12 group-winner slugs 200-but-empty, all 48 teams "not found"; per-match still prints the hardcoded "as of 2026-05-17" string (a static message, not a live probe). Meanwhile Polymarket's live site has a full WC section (polymarket.com/sports/world-cup/ — games/groups/winner tabs, ~38 active markets). Diagnosis: Polymarket restructured WC markets since Sessions 18–19; the fetcher's hardcoded slugs / expected JSON shape no longer match. CODE fix, not a wait. Scope: re-derive current event slugs + market JSON shape from the live API, update fetch_polymarket.py, replace the static per-match string with a real live probe. Own session (35a) before launch eve.
-- **Per-match pages exist but are unreachable unless flagged (2026-06-05):** Session 25 built docs/matches/<key>.html for all 72 fixtures, but the index grid was "intentionally not linked yet" — the only paths to a match page are the "what changed today" panel and divergence callouts. A fixture that's neither a mover nor divergent has a page nothing links to. Fix: link the survival-grid matches (or add a browsable fixtures list) to their pages in generate_site.py + templates. Small change; pages already built. Folded into Session 35a.
+- ✅ RESOLVED in Session 35a — **Polymarket fetcher returns empty across ALL market types (2026-06-05):** slug drift not an outage; new slugs + hybrid discovery; per-match markets now exist for all 72 group fixtures (series 11433); fetcher populates polymarket_odds.csv 72/72.
+- ✅ RESOLVED in Session 35a — **Per-match pages exist but are unreachable unless flagged (2026-06-05):** new browsable fixtures section on the index links all 72 match pages.
+- **Polymarket ordering and abbreviation are both unreliable (Session 35a):** abbreviation had Curaçao as `kor`; ordering disagrees with FIFA home/away on host matches. The fetcher matches on the unordered team-name pair and orients to the fixture's convention, swapping p_home↔p_away to follow the team (p_draw untouched). Any future code reading Polymarket per-match data must do the same — never trust their home/away slot.
 ---
 
 ## 7. Session log
@@ -424,6 +429,7 @@ Buffer for things that break.
 - **Session 32 (2026-05-30):** Added `WC_CLEAN_OUTPUT` / `WC_SNAPSHOT_DIR` / `WC_DIVERGENCE_SNAPSHOT_DIR` env-var resolvers to `src/clock.py`; wired into `clean_data.py` (dynamic output path + schema guard), `monte_carlo.py`, `triple_compare.py`, `update.py`, and `dry_run.py` (temp-dir isolation, env cleanup in `finally`). `python dry_run.py` → ALL INVARIANTS PASSED, zero contamination of real `data/processed/` paths; `WC_SKIP_FETCH=1 python update.py` runs all 10 stages clean. Dry run surfaced a pre-existing `generate_site.py` NaN-bin crash on the first ~3 live match-days (logged in §6, fix before June 11).
 - **Session 33 (2026-05-31):** Final pre-tournament refresh + host advantage + NaN-bin guard. Kaggle data unchanged (still 7,952 training matches through Mar 31 — martj42 not refreshed upstream; real refresh deferred to early June). simulate.py/monte_carlo.py apply a 60-Elo home bump to the 9 host group-stage matches (neutral=False threaded through the fixture dict); triple_compare.py USE_FIXTURE_NEUTRAL=True, host-exclusion removed (flags 14→26). generate_site.py: match pages show host-aware venue label + caveat from the neutral column, and _cal_svg guards NaN bins. Title odds steady (Spain 29.5 / Argentina 19.8 / France 12.2); USA advance 79.3%. Baseline snapshot 2026-05-31 is provisional — see §6.
 - **Session 34 (2026-06-03):** Wrote launch copy (launch_copy.md) — Twitter thread, LinkedIn post, r/soccer + r/dataisbeautiful Reddit posts, private pitch-tester note. Lead hook across all channels is the divergence angle anchored on the model-vs-market title gap (Spain ~30% model vs ~16% market), chosen over title-odds and calibration framings as the most debate-generating/shareable. Channels: Twitter/LinkedIn/Reddit. Decision: write-now/post-later — all numbers left as {TOKENS} to fill from the early-June re-pull at launch (Session 35), since the May-31 baseline is still on March-31 data. Distribution plan emphasises a public return loop (model-vs-market scoreboard resolving after each match), one striking visual per platform, and riding the pre-kickoff / first-upset news cycle. Custom domain flagged as a Session 35+ shareability/credibility task, non-blocking. No code.
+- **Session 35a (2026-06-07):** Fixed the Polymarket fetcher (dead since the May restructure). Slug swap restored title (world-cup-winner, 48 teams, Spain/France 15.7% top) + groups; new per-match probe under series soccer-fifwc/11433 populates polymarket_odds.csv 72/72 — three binary child markets per event bucketed to W/D/L, teams from structured event["teams"] (name+ordering; abbreviation is buggy: Curaçao shows kor), date from eventDate, host-match orientation flipped to fixture convention on 3 matches (Canada/Mexico/USA, probs follow the team, p_draw untouched). triple_compare join live, no longer a no-op. Linked all 72 fixtures from the index. Two code commits + doc commit.
 ---
 
 ## 8. How to get back into a chat session
@@ -447,6 +453,8 @@ Every session follows these five steps in order. Each is its own turn; the chat 
 5. **Claude asks whether the user wants any change to the way of working** before moving on.
 
 Still in force from the old §9: one logical step per response; over-include rather than under-include files to read; in Claude Code, plan mode (Shift+Tab) is the review checkpoint.
+
+Close-out edits to PROJECT.md are made by Claude Code in-place, not hand-pasted by the user — the planning chat supplies the exact wording, Claude Code applies it, the user reviews the diff before pushing.
 
 ## 10. Working model: Claude Code in VS Code + planning chat (from Session 26)
 
