@@ -349,24 +349,20 @@ Do at launch-time (Tuesday's final Kaggle pull / June 11 morning), in one pass �
 
 **PHASE 1+ (unlocked once Phase 0 commits; planning chat drafts off the real fresh numbers):**
 - Re-run `src/fetch_polymarket.py` (fixed in 35a): per-match h2h markets populate `polymarket_odds.csv` 72/72 → third bar + per-match divergence layer light up with live launch-day numbers.
+- **`docs/CNAME` survival check (NEW — domain gotcha):** setting the Custom domain in repo Settings → Pages writes a `docs/CNAME` file. `generate_site.py` copies `static/` → `docs/` and writes `docs/.nojekyll` on every build — confirm it does NOT wipe `docs/CNAME` when it regenerates (e.g. if it clears/overwrites `docs/`). If the rebuild clobbers CNAME, the custom domain silently unsets on the next `update.py` run and the site falls back to the github.io URL mid-tournament. Fix if needed: have `generate_site.py` write/preserve `docs/CNAME` (treat it like `.nojekyll` — an output the generator owns), so the domain survives every rebuild. Verify by running `python generate_site.py` after the domain is set and confirming `docs/CNAME` still contains the domain.
+- **By-date schedule page (NEW — from pre-launch review):** the 35a fixtures section groups by group letter ("who's in Group H"); add a schedule grouped by date ("what's on today") — the natural daily entry point during the tournament. Pure site code, reuses 35a's match contexts / `DISPLAY_NAMES` / link targets, bucket by `date_iso` instead of group letter. Simple chronological list for now; grows a "today" anchor + today/upcoming/played split during the tournament.
+- **Analytics (NEW — decided pre-launch):** add a privacy-friendly client-side analytics script (Cloudflare Web Analytics or GoatCounter — no cookie banner needed under GDPR, user is in Paris) to `base.html` `<head>` so it lands on every page. GitHub Pages gives no server logs; client-side is how we get visit counts / top pages / referrers (to see where Reddit/Twitter traffic lands). Skip Google Analytics (cookie-consent overhead, overkill).
 - Fill the {TOKENS} in `launch_copy.md` with refreshed numbers (gated on the Phase 0 baseline).
 - Build a standalone shareable launch graphic (PNG) — copy leans on "one striking visual" but the survival grid only lives inside the page, not as an exportable image. Wildcard on time; splittable if the session runs long.
-- Custom domain (optional, non-blocking): shareability + credibility over the github.io path; before posting widely if done at all.
+- **Custom domain (DECIDED pre-launch — needed by launch day):** stay on GitHub Pages, point a custom domain at it (DNS record + Pages "Custom domain" setting + "Enforce HTTPS"). Static site → GitHub Pages serves it free, absorbs launch-day spikes, no deploy-flow change. Self-hosting on own server was considered (for real server logs) but deferred to post-launch — adds uptime responsibility + new deploy plumbing + TLS, all risky on the deadline; revisit as a tested migration after a successful Pages launch, keeping Pages as fallback. Buy + point the domain BEFORE posting widely (changing the URL after people share the github.io link fragments links). All site links are {{root}}-relative (verified Session 28) so the domain swap needs no code change.
 
 **Close-out housekeeping:** record the host-orientation fix in §6 as a GENERAL triple-source concern — both `fetch_polymarket.py` (35a) and `fetch_odds.py` (35 Phase 0) now flip; any future per-match data source needs the same unordered-pair + swap-to-follow-team treatment, never trust a source's home/away slot.
 
 ---
 
-### TOURNAMENT (June 11 – July 19)
-
-Daily ritual (~30–45 min per match day):
-- Pull yesterday's results
-- Run the update script
-- Spot-check Claude output for any obvious mistakes
-- Push the updated site
-- Tweet/share the most interesting movers
-
-Buffer for things that break.
+**TOURNAMENT milestones (post-kickoff, NOT Session 35 — flagged pre-launch so they're not lost):**
+- **Outcome tracking / calibration goes live (first job after June 11 results):** distinct from "divergence" (which means model-vs-market-vs-Polymarket disagreement *before* a match) — this is forecast-vs-reality (did what we predicted happen). Infrastructure exists: Session 27 calibration page + Session 29 `wc_predictions.csv` ledger (freezes each forecast pre-match, attaches result after). Open decision (§6): live ledger logs raw vs bias-corrected probs — doc recommends corrected as the honest "did our published forecast calibrate" measure. Per-match pages can also show "we said X%; result was Y". First real tournament-mode task.
+- **Survival grid → populated knockout bracket (~June 27, group stage ends):** index is a survival grid pre-tournament because R32 slots (1A, 3CEFHI…) can't be filled until groups resolve (§6). Once the group stage finishes, draw the real bracket — it becomes the natural hero view. Don't pre-build (slots unknown until results exist).
 
 ---
 
