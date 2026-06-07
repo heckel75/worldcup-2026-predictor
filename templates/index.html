@@ -98,4 +98,24 @@
     </tbody>
   </table>
 </div>
+
+{# ---- Browse all fixtures ------------------------------------------ #}
+<section class="fixtures">
+  <p class="section-label">All group-stage fixtures</p>
+  <div class="fixtures-groups">
+    {% for g in fixture_groups %}
+    <div class="fixtures-group">
+      <p class="fixtures-group-title">Group {{ g.letter }}</p>
+      <ul class="fixtures-list">
+        {% for f in g.fixtures %}
+        <li class="fixtures-item">
+          <span class="fixtures-date">{{ f.date_human }}</span>
+          <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} vs {{ f.away_display }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 {% endblock %}

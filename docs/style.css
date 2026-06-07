@@ -508,6 +508,62 @@ h1 {
 .fresh-div-gap  { font-family: var(--font-mono); font-size: 0.82rem; }
 .fresh-div-type { color: var(--muted); font-size: 0.82rem; }
 
+/* --- browsable fixtures index (Session 35a) -------------------------- *
+ * Below the survival grid: every group-stage fixture, grouped by letter *
+ * and date-sorted, so pages that aren't movers/divergent are reachable. */
+
+.fixtures { margin-top: 2.25rem; }
+
+.fixtures-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1.1rem;
+}
+
+.fixtures-group {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.2rem 1.1rem;
+}
+
+.fixtures-group-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0 0 0.6rem;
+}
+
+.fixtures-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fixtures-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.2rem 0;
+  font-size: 0.85rem;
+}
+
+.fixtures-date {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.fixtures-item a {
+  color: var(--accent);
+  text-decoration: none;
+  text-align: right;
+}
+.fixtures-item a:hover { text-decoration: underline; }
+
 /* --- calibration page (Session 27) ---------------------------------- */
 
 .cal-stats {

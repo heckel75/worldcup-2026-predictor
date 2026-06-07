@@ -308,12 +308,27 @@ def _build_match(row) -> dict:
         "home_display": home_d,
         "away_display": away_d,
         "group":        TEAM_GROUP.get(home, "?"),
+        "date_iso":     row["date"],
         "date_human":   _date_human(row["date"]),
         "venue_label":  venue_label,
         "sources":      sources,
         "divergence":   _load_divergence(key, row, home_d, away_d),
         "preview_paras": _load_preview(key),
     }
+
+
+def _group_fixtures(matches: list[dict]) -> list[dict]:
+    """Bucket match contexts by group letter (A-L), each date-sorted —
+    a browsable index so every fixture is reachable, not just movers and
+    divergent matches (the per-match pages have existed since Session 25
+    but most had no inbound link)."""
+    by_group: dict[str, list[dict]] = {}
+    for m in matches:
+        by_group.setdefault(m["group"], []).append(m)
+    return [
+        {"letter": letter, "fixtures": sorted(by_group[letter], key=lambda m: m["date_iso"])}
+        for letter in sorted(by_group)
+    ]
 
 
 def _load_matches() -> list[dict]:
@@ -486,6 +501,7 @@ def build_site() -> None:
         title_movers=title_movers,
         advance_movers=advance_movers,
         fresh_divergences=fresh_divs,
+        fixture_groups=_group_fixtures(matches),
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
     )
 
