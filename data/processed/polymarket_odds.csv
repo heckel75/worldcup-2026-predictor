@@ -1,1 +1,73 @@
 commence_time,home_team,away_team,p_home,p_draw,p_away,volume,low_liquidity
+2026-06-11,Mexico,South Africa,0.6884,0.206,0.1055,399073,False
+2026-06-11,South Korea,Czech Republic,0.3596,0.3103,0.33,136863,False
+2026-06-12,Canada,Bosnia and Herzegovina,0.5323,0.2637,0.204,100524,False
+2026-06-12,USA,Paraguay,0.4877,0.2808,0.2315,230776,False
+2026-06-13,Qatar,Switzerland,0.0663,0.1355,0.7982,79548,False
+2026-06-13,Brazil,Morocco,0.5961,0.2414,0.1626,128616,False
+2026-06-13,Haiti,Scotland,0.1429,0.2118,0.6453,99700,False
+2026-06-14,Sweden,Tunisia,0.4975,0.2808,0.2217,8329,True
+2026-06-14,Ivory Coast,Ecuador,0.2663,0.3367,0.397,38902,False
+2026-06-14,Germany,Curaçao,0.9416,0.0389,0.0195,268916,False
+2026-06-14,Australia,Turkey,0.1841,0.2637,0.5522,34141,False
+2026-06-14,Netherlands,Japan,0.4778,0.2611,0.2611,134584,False
+2026-06-15,Iran,New Zealand,0.4975,0.2864,0.2161,52518,False
+2026-06-15,Spain,Cape Verde,0.8946,0.0721,0.0333,113994,False
+2026-06-15,Belgium,Egypt,0.5821,0.2438,0.1741,11878,False
+2026-06-15,Saudi Arabia,Uruguay,0.1244,0.2139,0.6617,21291,False
+2026-06-16,Iraq,Norway,0.0647,0.1343,0.801,34853,False
+2026-06-16,Argentina,Algeria,0.7015,0.204,0.0945,62666,False
+2026-06-16,France,Senegal,0.6716,0.204,0.1244,43136,False
+2026-06-17,Austria,Jordan,0.7387,0.1658,0.0955,18200,False
+2026-06-17,Portugal,DR Congo,0.7612,0.1642,0.0746,38314,False
+2026-06-17,England,Croatia,0.5567,0.2512,0.1921,33337,False
+2026-06-17,Ghana,Panama,0.4627,0.2736,0.2637,23255,False
+2026-06-17,Uzbekistan,Colombia,0.1045,0.204,0.6915,17528,False
+2026-06-18,Mexico,South Korea,0.5323,0.2736,0.194,8342,True
+2026-06-18,Canada,Qatar,0.7313,0.1741,0.0945,14525,False
+2026-06-18,Czech Republic,South Africa,0.4925,0.2836,0.2239,4949,True
+2026-06-18,Switzerland,Bosnia and Herzegovina,0.6059,0.2315,0.1626,6493,True
+2026-06-19,USA,Australia,0.5468,0.2414,0.2118,33432,False
+2026-06-19,Scotland,Morocco,0.2217,0.2808,0.4975,12632,False
+2026-06-19,Brazil,Haiti,0.9077,0.0635,0.0288,59361,False
+2026-06-19,Turkey,Paraguay,0.4286,0.3005,0.2709,4868,True
+2026-06-20,Germany,Ivory Coast,0.6318,0.204,0.1642,19807,False
+2026-06-20,Netherlands,Sweden,0.592,0.2338,0.1741,5241,True
+2026-06-20,Ecuador,Curaçao,0.813,0.1247,0.0623,49470,False
+2026-06-21,New Zealand,Egypt,0.1921,0.2512,0.5567,4891,True
+2026-06-21,Uruguay,Cape Verde,0.68,0.205,0.115,5794,True
+2026-06-21,Tunisia,Japan,0.1724,0.2709,0.5567,5370,True
+2026-06-21,Spain,Saudi Arabia,0.8781,0.0853,0.0366,10257,False
+2026-06-21,Belgium,Iran,0.6915,0.194,0.1144,11002,False
+2026-06-22,Argentina,Austria,0.5961,0.2414,0.1626,9764,True
+2026-06-22,France,Iraq,0.8672,0.0952,0.0376,16243,False
+2026-06-22,Norway,Senegal,0.4581,0.2709,0.2709,12250,False
+2026-06-22,Jordan,Algeria,0.1642,0.2338,0.602,2491,True
+2026-06-23,Panama,Croatia,0.1244,0.2239,0.6517,6886,True
+2026-06-23,Colombia,DR Congo,0.6617,0.2239,0.1144,5089,True
+2026-06-23,Portugal,Uzbekistan,0.785,0.14,0.075,11659,False
+2026-06-23,England,Ghana,0.7387,0.1658,0.0955,9255,True
+2026-06-24,Canada,Switzerland,0.2673,0.2921,0.4406,1840,True
+2026-06-24,Bosnia and Herzegovina,Qatar,0.6256,0.2315,0.1429,3313,True
+2026-06-24,Morocco,Haiti,0.7323,0.1768,0.0909,9116,True
+2026-06-24,Scotland,Brazil,0.1357,0.196,0.6683,6077,True
+2026-06-24,Mexico,Czech Republic,0.52,0.27,0.21,6151,True
+2026-06-24,South Africa,South Korea,0.2365,0.2709,0.4926,1964,True
+2026-06-25,Paraguay,Australia,0.4384,0.3005,0.2611,1337,True
+2026-06-25,USA,Turkey,0.3627,0.2794,0.3578,6521,True
+2026-06-25,Tunisia,Netherlands,0.1366,0.2146,0.6488,7539,True
+2026-06-25,Ecuador,Germany,0.1951,0.2439,0.561,7491,True
+2026-06-25,Curaçao,Ivory Coast,0.0743,0.1485,0.7772,2393,True
+2026-06-25,Japan,Sweden,0.4657,0.2794,0.2549,2888,True
+2026-06-26,Norway,France,0.2157,0.2598,0.5245,5949,True
+2026-06-26,Senegal,Iraq,0.67,0.2069,0.1232,3473,True
+2026-06-26,Cape Verde,Saudi Arabia,0.3676,0.2843,0.348,1699,True
+2026-06-26,Uruguay,Spain,0.1659,0.2439,0.5902,4155,True
+2026-06-26,Egypt,Iran,0.4146,0.3171,0.2683,1842,True
+2026-06-26,New Zealand,Belgium,0.0854,0.1558,0.7588,6424,True
+2026-06-27,Jordan,Argentina,0.0617,0.1204,0.8179,8574,True
+2026-06-27,Panama,England,0.0945,0.1542,0.7512,11265,False
+2026-06-27,Croatia,Ghana,0.5714,0.2611,0.1675,1545,True
+2026-06-27,Colombia,Portugal,0.278,0.278,0.4439,4613,True
+2026-06-27,DR Congo,Uzbekistan,0.4187,0.2906,0.2906,1119,True
+2026-06-27,Algeria,Austria,0.2886,0.2935,0.4179,2994,True
