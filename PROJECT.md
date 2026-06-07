@@ -334,16 +334,26 @@ child markets per event (home-win / draw / away-win), renormalised over the ~0.9
 over-round, teams read from structured event["teams"] on name+ordering (never
 abbreviation — buggy), date from eventDate. polymarket_odds.csv now populates 72/72;
 triple_compare.py per-match join is live. Also linked all 72 fixtures from the index
-(browsable fixtures section) — closes the unreachable-pages gap. NEXT: Session 35 (launch).
+(browsable fixtures section) — closes the unreachable-pages gap. 
 
-**Session 35 — Last-minute polish + launch**
-Do as close to June 11 / launch eve as possible, in one pass — all of it wants the freshest data.
-- Real launch baseline (§6 "Launch baseline is provisional"): download fresh martj42 results.csv → data/raw/ → run update.py → take new baseline snapshot. No code changes. "What changed today" must diff against this June baseline, not 2026-05-31.
-- Re-run src/fetch_polymarket.py (now fixed in 35a): per-match h2h markets populate polymarket_odds.csv → third bar on match pages + per-match divergence layer light up.
-- Fill the {TOKENS} in launch_copy.md with refreshed numbers (gated on the baseline re-pull above).
-- Build a standalone shareable launch graphic (PNG) — the Twitter/Reddit copy leans on "one striking visual" but the survival grid only lives inside the page, not as an exportable image.
-- Custom domain (optional, non-blocking): shareability + credibility over the github.io path; ideally before posting widely.
-- Suggested launch timing: public posts ~June 7–8, re-pulling data the morning you post — late enough for real numbers, early enough to build an audience before kickoff + first-upset amplification.
+**Session 35 — Last-minute polish + launch (← NEXT)**
+Do at launch-time (Tuesday's final Kaggle pull / June 11 morning), in one pass — all of it wants the freshest data. Run phase-by-phase with the planning chat; Phase 0 gates everything.
+
+**Open the launch chat with the planning chat FIRST** ("ready for Session 35", + one line that you've pulled / are pulling the final Kaggle file and today is launch). Phase 0 has live go/no-go judgment (data cutoff, host-row alignment, whether title odds moved) that needs reading the outputs together before committing — don't run it solo and commit on the one morning it can't be redone.
+
+**PHASE 0 — sportsbook fixes + fresh re-pull (gating; run at pull time).** Full work order below so it survives a fresh chat:
+- *Fix 1 — host-match orientation in `fetch_odds.py`:* `parse_h2h_event()` writes p_home/p_away straight from the API with no orientation check; 3 host group-stage matches come back reversed vs fixture convention (Switzerland/Canada, Czech Republic/Mexico, Turkey/USA → fixtures are Canada/Mexico/USA home). Same fix validated for Polymarket in 35a: match each h2h event to a fixture on the unordered team-name pair, orient to the fixture's (home_team, away_team), swap p_home↔p_away to follow the team when orientation differs. Sportsbook h2h is 2-way (no draw) — just the two columns. Print each flipped row. Without this, triple_compare joins correctly-oriented Polymarket against reversed sportsbook on exactly the 3 host matches the launch hook leans on.
+- *Fix 2 — defensive sport-key guard:* `list_world_cup_sports()` matches 6 keys; only men's `soccer_fifa_world_cup`/`_winner` return content today, but a next-cycle qualifier or club-WC key could start posting h2h mid-tournament and flow into `sportsbook_odds.csv` unfiltered (outrights already filters to `qualified`; h2h does not). After parsing h2h, drop any row whose team-pair isn't in `fixtures_2026.csv` (reuse Fix 1's matching). Report dropped rows, don't silently discard.
+- *Then the real launch baseline (§6 "Launch baseline is provisional"):* download fresh martj42 `results.csv` → `data/raw/` (replace the March-31 one) → `python update.py` → take the new June baseline snapshot. Print the max match date in cleaned data + training row count — martj42 lags the maintainer's commits, so confirm what's actually in the file rather than assuming. "What changed today" must diff against this June baseline, not 2026-05-31.
+- *Verify before committing (show the planning chat, then stop):* (1) the flip lines (expect 3 host matches); (2) any Fix-2 dropped rows (expect 0 today); (3) max match date + row count; (4) the 3 host rows in `triple_compare.csv` — confirm model p_home, sportsbook p_home, and p_home_poly ALL now carry the host's win prob (all three bars aligned); (5) title top-6 from the fresh snapshot (Spain/France stable → launch hook holds).
+
+**PHASE 1+ (unlocked once Phase 0 commits; planning chat drafts off the real fresh numbers):**
+- Re-run `src/fetch_polymarket.py` (fixed in 35a): per-match h2h markets populate `polymarket_odds.csv` 72/72 → third bar + per-match divergence layer light up with live launch-day numbers.
+- Fill the {TOKENS} in `launch_copy.md` with refreshed numbers (gated on the Phase 0 baseline).
+- Build a standalone shareable launch graphic (PNG) — copy leans on "one striking visual" but the survival grid only lives inside the page, not as an exportable image. Wildcard on time; splittable if the session runs long.
+- Custom domain (optional, non-blocking): shareability + credibility over the github.io path; before posting widely if done at all.
+
+**Close-out housekeeping:** record the host-orientation fix in §6 as a GENERAL triple-source concern — both `fetch_polymarket.py` (35a) and `fetch_odds.py` (35 Phase 0) now flip; any future per-match data source needs the same unordered-pair + swap-to-follow-team treatment, never trust a source's home/away slot.
 
 ---
 
