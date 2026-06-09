@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Schedule · World Cup 2026{% endblock %}
+
+{% block content %}
+<h1>Group stage schedule</h1>
+<p class="lede">
+  All 72 group-stage fixtures by date. Click any match for the
+  three-way forecast (model, sportsbook, Polymarket).
+</p>
+
+<div class="fixtures-groups">
+  {% for day in schedule_days %}
+  <div class="fixtures-group">
+    <p class="fixtures-group-title">{{ day.date_human }}</p>
+    <ul class="fixtures-list">
+      {% for f in day.fixtures %}
+      <li class="fixtures-item">
+        <span class="fixtures-date">Gr.&nbsp;{{ f.group }}</span>
+        <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} vs {{ f.away_display }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

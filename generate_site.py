@@ -332,6 +332,17 @@ def _group_fixtures(matches: list[dict]) -> list[dict]:
     ]
 
 
+def _by_date(matches: list[dict]) -> list[dict]:
+    """Bucket match contexts by date_iso, chronological — for the schedule page."""
+    by_date: dict[str, list[dict]] = {}
+    for m in matches:
+        by_date.setdefault(m["date_iso"], []).append(m)
+    return [
+        {"date_iso": d, "date_human": _date_human(d), "fixtures": by_date[d]}
+        for d in sorted(by_date)
+    ]
+
+
 def _load_matches() -> list[dict]:
     """All fixtures from triple_compare.csv, in fixture (date) order."""
     if not TRIPLE_PATH.exists():
@@ -544,13 +555,20 @@ def build_site() -> None:
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
     )
 
+    # --- schedule page (top-level: root="") ---
+    _render_page(
+        env, "schedule.html", OUTPUT_DIR / "schedule.html",
+        schedule_days=_by_date(matches),
+        root="", generated_at=generated_at, snapshot_date=snapshot_date,
+    )
+
     _copy_static()
     (OUTPUT_DIR / ".nojekyll").touch()
     (OUTPUT_DIR / "CNAME").write_text(CUSTOM_DOMAIN + "\n")
 
     print(f"Built site -> {OUTPUT_DIR}/")
     print(f"   snapshot : {snapshot.name} ({len(teams)} teams)")
-    print(f"   pages    : index.html + calibration.html + methodology.html + {len(matches)} match pages")
+    print(f"   pages    : index.html + schedule.html + calibration.html + methodology.html + {len(matches)} match pages")
 
 
 if __name__ == "__main__":
