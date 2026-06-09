@@ -3,9 +3,9 @@
   "home_team": "Germany",
   "away_team": "Curaçao",
   "date": "2026-06-14",
-  "input_hash": "780cff60c806c60d16961085fee4fc1f27759b6c",
-  "generated_at": "2026-05-19T13:43:44+00:00",
+  "input_hash": "70e71ee4c29e5d73bee64753d3b44ab1d9d36a00",
+  "generated_at": "2026-06-09T09:58:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Germany at 83%, with Curaçao given a 1% chance of victory. The underdog's implied path to a positive result rests almost entirely on a draw, which the model rates at 16%.\n\nThe spread reflects a heavily asymmetric matchup. Germany's win probability is substantially higher than the combined alternatives, yet the model does not compress the draw outcome to negligible levels. A Curaçao upset is classified as remote; the competitive frame is whether Germany controls the match decisively or allows extended resistance through a stalemate.\n\nThe sportsbook consensus and model diverge meaningfully. Bookmakers assign Germany a 92% win probability—roughly 9 percentage points higher—and shrink the draw to 6%, nearly a third of the model's estimate. Both sources agree on the direction and broad magnitude of Germany's advantage, but the market is materially more confident in a decisive outcome. No Polymarket data is available yet."
+  "preview_text": "The model favors Germany at 84% to win, leaving Curaçao just 1% combined probability of avoiding defeat. The implied outcome is heavily skewed toward a German victory, though the model does assign a non-trivial 15% chance to a draw.\n\nThe win-draw-loss spread reflects a lopsided matchup. Germany's 84% win probability dominates, but the 15% draw probability suggests the encounter may not be entirely one-sided in terms of competitive shape. A Curaçao victory remains extremely improbable under the model at 0.6%, implying the contest is unlikely to turn on a shock result.\n\nThe market consensus diverges meaningfully from the model. Sportsbooks assign Germany 90%, raising the win probability by 6 percentage points and compressing the draw to 7%. Polymarket prices push further toward German dominance at 93%, with draws falling to 4%. The model is more conservative on Germany's chances and more open to a stalemate, while both market sources treat a German win as substantially more likely. The dashboard does not adjudicate which view is correct."
 }

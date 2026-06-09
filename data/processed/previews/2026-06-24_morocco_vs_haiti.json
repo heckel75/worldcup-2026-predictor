@@ -3,9 +3,9 @@
   "home_team": "Morocco",
   "away_team": "Haiti",
   "date": "2026-06-24",
-  "input_hash": "88d8b5bf0328a3dccdda19a07e934f9eee8c5ac4",
-  "generated_at": "2026-05-27T10:19:24+00:00",
+  "input_hash": "bbd7b997d23b1049f904df9d1ee7b0282db50c2b",
+  "generated_at": "2026-06-09T10:01:20+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Morocco at 75% to win, with Haiti's upset probability standing at only 5%. Morocco enters as a clear favorite on the forecast dashboard, though the underdog retains a small but non-zero path to victory.\n\nThe 21% draw probability suggests a moderately competitive match rather than a rout. Morocco's three-to-one win edge over Haiti does not foreclose a stalemate; the spread is wide enough to make a Moroccan victory the most likely single outcome, yet tight enough that neither side's elimination from contention appears imminent in regulation.\n\nThe model and sportsbook consensus align closely on Morocco's winning chances, diverging by only 4 percentage points. Market-implied Haiti win probability is noticeably higher at 11%, compared to the model's 5% — a gap of 6 points that warrants attention. The dashboard makes no claim about which assessment is correct. Polymarket has not yet published odds for this fixture."
+  "preview_text": "The model favors Morocco at 74%, leaving Haiti with a 5% chance of victory. The gap reflects a substantial quality differential in the forecast. Morocco enters as a clear favorite, though not at the overwhelming odds sometimes seen in World Cup matches between vastly unequal sides.\n\nThe win-draw-loss spread suggests a moderately competitive match rather than a one-sided encounter. A draw carries a 21% probability, indicating genuine possibility of a stalemate. Morocco's advantage is real but not insurmountable; the outcome is not heavily concentrated in one scenario.\n\nThe model and sportsbook consensus align closely on Morocco's win probability, separated by roughly 3 percentage points. The more notable divergence appears in Haiti's chances: the market grants Haiti 10%, compared to the model's 5%—a meaningful gap suggesting bookmakers price the underdog more generously than the statistical forecast. Polymarket pricing sits between these two readings. The dashboard does not adjudicate which estimate is more accurate."
 }

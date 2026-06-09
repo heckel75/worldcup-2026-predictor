@@ -3,7 +3,12 @@
   "home_team": "Mexico",
   "away_team": "Czech Republic",
   "date": "2026-06-24",
-  "kind": "note",
-  "note_reason": "host advantage not modeled in v1",
-  "generated_at": "2026-05-20T12:24:36+00:00"
+  "kind": "commentary",
+  "divergence_type": "model_over_concentrated",
+  "max_gap_pp": 19.5,
+  "input_hash": "6bae5d55ec7686ca4d5ba5892aa02cab1551e04c",
+  "generated_at": "2026-06-09T10:03:27+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model favors Mexico to win at 71% versus the sportsbook consensus of 51%, a 20-percentage-point gap on the home-team outcome. The market is also more bullish on Czech Republic at 22%, compared to the model's 7%. This divergence suggests the books are pricing in information the model cannot access—likely recent lineup changes, injury updates, or current form shifts that tilt the matchup closer to even than Elo ratings alone would suggest. The dashboard surfaces this gap as a signal; neither source is inherently correct, but the magnitude of disagreement flags a live uncertainty worth monitoring as kickoff approaches."
 }

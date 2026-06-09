@@ -3,9 +3,9 @@
   "home_team": "Ghana",
   "away_team": "Panama",
   "date": "2026-06-17",
-  "input_hash": "e29a1dbf5d1d15d3ef44c40545275ee6b4469bb2",
-  "generated_at": "2026-05-27T10:17:55+00:00",
+  "input_hash": "5e3143db4482fa36b44071c9b92925de1096b9ab",
+  "generated_at": "2026-06-09T09:59:17+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Panama enters as the model's decisive favorite with a 67% chance of victory, while Ghana's win probability stands at 10%. The underdog faces a steep climb despite the draw representing a plausible outcome at 23%.\n\nThe spread reveals a match tilted sharply toward Panama. Ghana's 10% win chance sits far below the draw probability, suggesting the model expects Panama to control play and likely prevail or stalemate rather than concede. A Panama win represents the most probable single outcome; a draw is more likely than a Ghana victory, pointing to a competitive but fundamentally unbalanced contest.\n\nThe model and sportsbook consensus diverge sharply. The market prices Ghana at 47% to win—roughly 37 percentage points higher than the model—and Panama at just 26%, some 41 points lower. This gap signals substantial disagreement on match dynamics. The dashboard does not adjudicate which source is correct; bettors should weigh both frameworks before deciding."
+  "preview_text": "Panama emerges as the model's clear favorite, projected to win at 65.7%, more than six times the probability assigned to Ghana at 10.5%. The underdog's slim win chance reflects a substantial gap in the forecast.\n\nThe draw carries notable weight at 23.8%, suggesting the match may prove closer than Panama's headline win probability alone indicates. The model's spread—with Panama heavily favored but roughly one-quarter of outcomes predicted as stalemates—points to a contest where Panama enters as stronger but Ghana retains a path to an undefeated result through defensive discipline.\n\nA stark divergence separates the model from market consensus. Sportsbooks and Polymarket both price Ghana's win probability near 46%, almost identical to their draw forecasts at 27–28%, and assign Panama only 26%. This represents roughly a 40-percentage-point gap on Ghana's win chances and a 40-point gap on Panama's. The dashboard does not adjudicate which source better reflects match reality; the disagreement warrants scrutiny from users assessing confidence in either view."
 }

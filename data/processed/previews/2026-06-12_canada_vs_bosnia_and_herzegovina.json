@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Bosnia and Herzegovina",
   "date": "2026-06-12",
-  "input_hash": "622960fd8f3fbd5c04bff9384c8b311521880a83",
-  "generated_at": "2026-05-31T11:57:50+00:00",
+  "input_hash": "5c04b18db4b6bbdf483a0f8e9f672546e161f455",
+  "generated_at": "2026-06-09T09:57:48+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Canada as a heavy favorite, assigning them a 80% win probability. Bosnia and Herzegovina enters as a substantial underdog at 2%, with a draw carrying an 18% chance in the model's assessment.\n\nThe forecast structure suggests a heavily skewed match. Canada's dominant win probability leaves little room for either a competitive result or a Bosnia and Herzegovina upset. A draw remains plausible but unlikely under the model's estimates. The gap between the favorite and underdog probabilities is pronounced, pointing toward a lopsided encounter.\n\nModel and sportsbook consensus diverge sharply. The market assigns Canada only 52% to win—28 percentage points lower than the model—and rates Bosnia and Herzegovina at 22%, roughly ten times the model's estimate. The model sees a much tighter range for draws. This represents a material split; the dashboard does not adjudicate which source better forecasts this match. No Polymarket data is currently available."
+  "preview_text": "The model favors Canada with an 80% win probability, a commanding margin over Bosnia and Herzegovina's 2% chance. The underdog is assigned minimal probability of a decisive victory under the Dixon-Coles framework applied to the teams' Elo ratings.\n\nThe model's spread suggests a heavily skewed match. A Canada win is the dominant outcome, while a draw registers as the only meaningful alternative scenario at 18%. Bosnia and Herzegovina's 2% win probability reflects an extreme asymmetry in the forecast—the model treats a Bosnia upset as nearly impossible rather than merely unlikely.\n\nThe model and sportsbook consensus diverge substantially. The books assign Canada just 53%, roughly 27 percentage points lower than the model, and credit Bosnia and Herzegovina with 21%—nearly ten times the model's estimate. Polymarket pricing aligns closely with sportsbook odds. The dashboard presents both forecasts; whether the model's sharper lean toward Canada or the market's tighter odds better reflect true match probabilities remains an open question."
 }

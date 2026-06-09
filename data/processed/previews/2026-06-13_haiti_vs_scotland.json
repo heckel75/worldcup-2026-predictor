@@ -3,9 +3,9 @@
   "home_team": "Haiti",
   "away_team": "Scotland",
   "date": "2026-06-13",
-  "input_hash": "308419b7d45949e115f1f2550ee374885efd2116",
-  "generated_at": "2026-05-19T13:43:37+00:00",
+  "input_hash": "0de491424a10e64d8fc11620235b7b46c656d8e0",
+  "generated_at": "2026-06-09T09:58:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Scotland at 43%, but assigns Haiti a meaningful 26% chance of victory—nearly double the sportsbook consensus of 13%. The draw sits at 31% in the model's forecast, suggesting the match carries substantial uncertainty rather than a clear favourite outcome.\n\nThe win-draw-loss spread reflects a competitive encounter. Scotland's 17-point edge over Haiti is material but not dominant. A draw at nearly one-in-three probability indicates neither side is strongly favoured to impose control, and the relatively modest gap between Haiti's and the draw probability suggests the underdog has a plausible path to a result.\n\nThe model and sportsbooks diverge meaningfully. The market prices Scotland's win probability 23 percentage points higher than the model does, and Haiti's win probability 12 points lower. This gap is substantial and points to materially different underlying assessments. The dashboard does not determine which view is correct. No Polymarket consensus is available yet."
+  "preview_text": "The model rates Scotland as the favored side at 45% to win, with Haiti holding a 24% win probability. That 21-percentage-point gap reflects Scotland's stronger underlying strength, though the forecast treats this as a competitive match rather than a mismatch.\n\nThe draw probability of 30% is the most likely single outcome, suggesting the teams are sufficiently close in quality that a stalemate carries real weight. Scotland's 45% win chance and Haiti's 24% are separated enough to define a clear direction, but neither side is forecast to overwhelm the other. The match is expected to be contested.\n\nThe sportsbook consensus diverges notably from the model. Books price Scotland at 63%, nearly 18 percentage points above the model's 45%, while Haiti drops to 15% and the draw to 22%. Polymarket pricing aligns closely with the books. The dashboard does not adjudicate between these estimates, but the gap is large enough to flag as material disagreement on Scotland's strength relative to Haiti."
 }

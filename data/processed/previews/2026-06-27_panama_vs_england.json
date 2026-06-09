@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "4af2e9eb21f61d5f480b94c53e66c96317d72495",
-  "generated_at": "2026-05-27T10:20:30+00:00",
+  "input_hash": "ac812e3c5aa7b0125a595ff772e0deb1c973a500",
+  "generated_at": "2026-06-09T10:02:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors England at 61%, with Panama's win probability at 13%. This represents a clear gap in quality, though the underdog retains a meaningful chance of avoiding defeat.\n\nThe forecast suggests competitive conditions. A draw sits at 26%, making it the second-most-likely outcome. The win-probability spread of roughly 48 percentage points indicates England are favored, but the relatively high draw probability reflects the possibility of a tightly contested match where neither side pulls decisively clear.\n\nThe sportsbook consensus moves notably in England's favor, rating them at 78% and Panama at just 8%—a 16-point gap from the model's England projection and a 5-point gap on Panama. The books also price draws lower at 15%. This divergence suggests sportsbooks view the match as less competitive than the model estimates. No Polymarket data is available yet."
+  "preview_text": "The model backs England at 63% to win, with Panama rated at 12% and a draw at 25%. England enters as clear favorite, though the model assigns Panama a non-negligible chance and sees the draw as a plausible outcome—roughly one match in four.\n\nThe spread between England's win probability and a Panama victory is substantial, yet the presence of a 25% draw probability indicates moderate competitive tension. The model does not project a dominant one-sided affair; rather, a match where England is favored to prevail but where neither team's performance outcome is certain.\n\nThe sportsbook consensus shifts the balance more sharply toward England, raising its win probability to 73% while compressing the draw to 17% and Panama to 11%. This represents a meaningful divergence: the market is about 10 percentage points more confident in an England victory and correspondingly skeptical of both a draw and a Panama upset. Polymarket prices align broadly with the sportsbook view. The dashboard offers no judgment on which assessment is more accurate."
 }

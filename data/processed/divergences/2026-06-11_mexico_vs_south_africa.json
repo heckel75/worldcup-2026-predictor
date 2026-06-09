@@ -5,10 +5,10 @@
   "date": "2026-06-11",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 18.3,
-  "input_hash": "698c6fb645115bfb36c106d31a5930700bc5773b",
-  "generated_at": "2026-05-31T11:58:20+00:00",
+  "max_gap_pp": 15.2,
+  "input_hash": "53530c1ba1506ebf1300db05aad7b451ba95c105",
+  "generated_at": "2026-06-09T10:02:37+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model rates Mexico to win at 82% while the market offers 64%, a 18-percentage-point gap favoring the model's confidence in Mexico. The market simultaneously assigns South Africa a 14% win probability versus the model's 1%, suggesting sportsbooks are pricing in material uncertainty the model does not capture. Recent form, lineup news, or injury developments affecting either team could explain why the market is hedging its Mexico conviction—the model's last update may predate shifts in squad availability or momentum that real-money flows now reflect. The dashboard flags this divergence as a signal for monitoring; neither source has proven authority over the other."
+  "commentary_text": "The model assigns Mexico a 83% win probability while the sportsbook consensus stands at 68%—a 15-percentage-point gap favoring the model's confidence in a Mexico victory. The market simultaneously raises South Africa's chances to 11% versus the model's 1%, suggesting real-money flows are pricing in scenarios of upset or competitive balance that the model's Elo-based framework does not capture. This hedging could reflect recent lineup changes, injury concerns, or current form patterns unknown to the model at its last update. The dashboard flags this divergence as a meaningful signal: both sources agree Mexico are favored, but they disagree sharply on the margin of that advantage, indicating asymmetric information or risk assessment between the statistical forecast and live market pricing."
 }

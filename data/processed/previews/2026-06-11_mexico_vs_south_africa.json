@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "South Africa",
   "date": "2026-06-11",
-  "input_hash": "4a650311cda8294a1c306c3fe4d505fe0fe6f704",
-  "generated_at": "2026-05-31T11:57:47+00:00",
+  "input_hash": "6a9a9993945e3c746bd8fcd70f246ac75db8ebe1",
+  "generated_at": "2026-06-09T09:57:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Mexico heavily at 82%, leaving South Africa with only a 1% chance of victory. This asymmetry reflects a strong expected performance gap between the two sides. By contrast, the sportsbook consensus gives South Africa substantially more room—nearly 14% to win—a meaningful difference in how the underdog is valued.\n\nThe model's forecast is dominated by a Mexican win; the draw at 17% is its second-most-likely outcome. This distribution suggests a competitive match where a stalemate remains plausible, but Mexico is expected to exert sufficient control or clinical finishing to secure three points most often. The South African path to victory, in the model's view, is narrow.\n\nModel and market diverge noticeably. The gap on a Mexico win is about 18 percentage points—the model is substantially more confident in Mexico. The sportsbook assigns South Africa more than nine times the model's win probability, and prices the draw 6 percentage points higher. The dashboard does not adjudicate which source better reflects the true match odds. Polymarket data is not yet available."
+  "preview_text": "The model rates Mexico as a strong favorite, assigning an 83% win probability. South Africa's chances stand at less than 1%, leaving a wide gulf between the two sides in the statistical forecast.\n\nThe win-draw-loss spread reflects a heavily asymmetric contest. Mexico's dominant probability leaves little room for South Africa, though a draw at 16% is plausible as a secondary outcome. The match is modeled as decidedly uncompetitive in expectation, with the favorite's baseline advantage substantial.\n\nThe model and market diverge meaningfully here. The sportsbook consensus sits 15 percentage points lower on Mexico (68%) and substantially higher on a South Africa upset (11% versus under 1% from the model). Polymarket prices align closely with the books. The dashboard does not adjudicate between these sources; the gap suggests either the model overestimates Mexico's edge or the market prices in tail risk the Dixon-Coles framework does not capture."
 }

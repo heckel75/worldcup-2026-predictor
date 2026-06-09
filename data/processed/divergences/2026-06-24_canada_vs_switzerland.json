@@ -3,7 +3,12 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "kind": "note",
-  "note_reason": "host advantage not modeled in v1",
-  "generated_at": "2026-05-20T12:24:36+00:00"
+  "kind": "commentary",
+  "divergence_type": "disagree_on_favorite",
+  "max_gap_pp": 17.0,
+  "input_hash": "ded281c13881983428384b33fbd382da3dee392d",
+  "generated_at": "2026-06-09T10:03:33+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model favors Canada at 41%, while the sportsbook consensus favors Switzerland at 45%—a 17-percentage-point gap on the Switzerland win. Both Polymarket and the consensus align closely, suggesting real-money flows are concentrated on a Swiss victory. The gap might reflect recent form, injuries, or lineup changes that have emerged since the model's last update but aren't visible in the static ratings. Alternatively, the model's Elo foundation may be slow to adjust to shifting squad strength. The dashboard surfaces this divergence as a signal worth monitoring, not a judgment on which forecast will prove more accurate."
 }

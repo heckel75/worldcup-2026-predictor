@@ -3,9 +3,9 @@
   "home_team": "Spain",
   "away_team": "Cape Verde",
   "date": "2026-06-15",
-  "input_hash": "e3b18096c25e5b69e1b906147169e7a8bf29549a",
-  "generated_at": "2026-05-19T13:44:10+00:00",
+  "input_hash": "17b94b45d89e63cdcd68d362d72005c96273407e",
+  "generated_at": "2026-06-09T09:58:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model forecasts a dominant Spain victory at 91%, leaving Cape Verde a 9% chance via draw and no realistic path to a win. The sportsbook consensus aligns closely, pricing Spain at 87%, though it assigns 4 percentage points to a Cape Verde upset where the model sees none.\n\nThe win–draw–loss spread reflects a heavily lopsided matchup. The 91-point gap between Spain's win probability and Cape Verde's signals a large quality differential. A draw remains plausible—roughly one in eleven outcomes—but a Cape Verde victory registers as negligible under the model's framework, making this among the most asymmetric contests in the tournament.\n\nModel and market are broadly aligned on Spain's dominance, diverging mainly on Cape Verde's tail risk. The sportsbook adds 3–4 percentage points to the underdog's win probability, a modest but visible difference. The dashboard presents both readings without adjudicating which better reflects true match conditions; the gap is narrow enough that either could reflect market caution or model conservatism."
+  "preview_text": "The model favors Spain at 91%, leaving Cape Verde with a negligible win probability of 0%. The sportsbook consensus aligns closely with the model's Spain assessment at 88%, though it allocates 4% to a Cape Verde victory where the model sees essentially none.\n\nThe expected outcome centers heavily on a Spain victory, but the draw emerges as a material possibility at 9% under the model. This suggests the match, while heavily tilted toward one side, carries enough uncertainty to produce a 1-1 or 0-0 outcome at plausible frequency. The gap between Spain's dominant probability and the draw's single-digit share indicates a competitive asymmetry rather than a formality.\n\nModel and sportsbook probabilities for a Spain win differ by 3 percentage points, well within typical alignment margins. The key divergence lies in the tail: books assign 4% to Cape Verde, while the model rounds to zero. Polymarket pricing sits between these two, offering a marginally tighter Spain figure at 90%. The dashboard does not adjudicate which treatment of low-probability outcomes is correct."
 }

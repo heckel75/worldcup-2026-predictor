@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "Senegal",
   "date": "2026-06-22",
-  "input_hash": "b9be287e37eae9ecbe571d80449effc496125748",
-  "generated_at": "2026-05-19T13:45:52+00:00",
+  "input_hash": "125d5e05d11a2a68fed5480ad689c9021a40509f",
+  "generated_at": "2026-06-09T10:00:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Norway as the slight favorite at 40% to win, with Senegal trailing at 29%. The two sides are separated by roughly 10 percentage points in outright victory probability, indicating a competitive fixture tilted toward the European side but without overwhelming confidence from the statistical forecast.\n\nThe draw carries meaningful weight in the model's distribution at 31%, suggesting this match is likely to be closely contested. The spread across all three outcomes reflects competitive balance: no single result dominates, and the combined chances for either team to avoid defeat (draw or win) remain substantial for both Norway and Senegal.\n\nThe sportsbook consensus leans more heavily toward Norway, pricing a 45% win probability versus the model's 40%—a gap of about 5 percentage points in Norway's favor. The market also assigns slightly lower odds to a draw (28% vs. 31%) and to a Senegal upset (27% vs. 29%). The two sources remain broadly aligned on match structure, though the books show modestly more conviction in the Norwegian advantage. Polymarket data is not yet available."
+  "preview_text": "The model rates Norway as the favorite with a 43% win probability, while Senegal's chances stand at 26%. The gap reflects a meaningful but not overwhelming advantage for Norway in the matchup at the neutral venue.\n\nA draw probability of 31% suggests this contest carries genuine competitive balance. The outcome distribution points to a moderately open match rather than a heavily tilted affair — Norway's edge exists, but Senegal retains a credible path to either a draw or victory.\n\nModel and market consensus align closely across all three outcomes, with gaps under 3 percentage points on Norway's win probability and under 2pp on Senegal's. Polymarket prices track similarly. The broad agreement indicates little daylight between the statistical forecast and sportsbook opinion on this pairing."
 }

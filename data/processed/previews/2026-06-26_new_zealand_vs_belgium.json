@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Belgium",
   "date": "2026-06-26",
-  "input_hash": "06663f7b43da697fa4d4910d438f8112d600d79c",
-  "generated_at": "2026-05-27T10:19:55+00:00",
+  "input_hash": "44292160876e6cf19ce7562b8812fa51f692fb18",
+  "generated_at": "2026-06-09T10:01:52+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Belgium to win at 57%, with New Zealand's chance at 16% and a draw at 27%. Belgium holds a substantial edge in the forecast, though the model assigns New Zealand a meaningful winning probability rather than treating the match as heavily one-sided.\n\nThe outcome distribution reflects a competitive gap tilted toward Belgium. The draw probability at 27% indicates the model sees a plausible path to a stalemate; this is not an expected rout. However, the 41-percentage-point margin between Belgium's win chance and New Zealand's signals the model expects Belgium to control much of the match, with the underdog relying on fortune or a tactical surprise to claim three points.\n\nThe market diverges from the model meaningfully. Sportsbooks price Belgium's win at 74%, a 16-percentage-point gap above the model's 57%, while compressing New Zealand's winning chance to 10% and the draw to 16%. The dashboard does not adjudicate which assessment is more accurate; the gap suggests the market is more confident in Belgium's dominance than the statistical forecast warrants."
+  "preview_text": "The model backs Belgium as a clear favorite with a 65% win probability, while New Zealand is given an 11% chance of victory. The gap between the two reflects a substantial disparity in expected quality, though the underdog retains meaningful probability rather than facing near-elimination odds.\n\nThe draw emerges as the second-most-likely outcome at 24%, a notable cushion above New Zealand's win chance. This spread suggests Belgium should control play but not be so dominant that a stalemate becomes implausible. The match appears competitive enough to avoid a runaway result, yet tilted decisively in the favorite's direction.\n\nModel and sportsbook consensus show a meaningful divergence. The market rates Belgium's win probability 8 percentage points higher than the model, while compressing the draw to 16% -- roughly 8 points below the model's estimate. Polymarket prices align more closely with the sportsbook skew. The dashboard offers its own estimate but makes no claim about which source is correct."
 }

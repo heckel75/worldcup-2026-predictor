@@ -3,9 +3,9 @@
   "home_team": "Senegal",
   "away_team": "Iraq",
   "date": "2026-06-26",
-  "input_hash": "b15252a7f62d739497364ee82ee97422bb41f97a",
-  "generated_at": "2026-05-27T10:20:10+00:00",
+  "input_hash": "e966660def4b472cb753e49fbeb5d90216613904",
+  "generated_at": "2026-06-09T10:02:08+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The statistical model favors Senegal to win at 62%, with Iraq's victory probability at 11%. Senegal enters as a clear favorite, though the 51-percentage-point gap reflects a competitive match rather than a foregone conclusion.\n\nThe draw carries material weight at 26%, making this a three-way contest with realistic outcomes across all results. Senegal's lead is substantial but not overwhelming; Iraq's 11% win chance and the high draw likelihood suggest the match will remain competitive throughout, particularly if the underdog can contain early pressure.\n\nModel and sportsbook consensus are tightly aligned across all three outcomes, with gaps of 1 percentage point on the Senegal win and under 4 percentage points on both alternative results. This convergence indicates broad agreement on the fixture's probable shape. Polymarket data is not yet available."
+  "preview_text": "The model favours Senegal to win at 59%, with Iraq given a 13% chance of victory. The underdog's probability reflects a substantial gap, though not an insurmountable one in a single match.\n\nThe draw carries 27% probability from the model, making it a material outcome. The 32-percentage-point gap between Senegal's win chance and Iraq's suggests the favourite is preferred but the match remains competitive rather than one-sided. A draw would not be an upset.\n\nThe market consensus across sportsbooks and Polymarket prices both favour Senegal more heavily, at 66–67% win probability, versus the model's 59%. The sportsbook and Polymarket readings are tightly aligned with each other. The divergence between model and market is approximately 7–8 percentage points in Senegal's favour. The dashboard does not adjudicate which estimate is more reliable."
 }

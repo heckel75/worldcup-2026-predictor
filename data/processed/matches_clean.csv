@@ -30,7 +30,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-03-22,Bahrain,Palestine,0,0,,Friendly,Riffa,Bahrain,False
 2018-03-22,Belize,Grenada,4,2,,Friendly,Belmopan,Belize,False
 2018-03-22,Burkina Faso,Guinea-Bissau,2,0,,Friendly,Limeil-Brévannes,France,True
-2018-03-22,China PR,Wales,0,6,,Friendly,Nanning,China PR,False
+2018-03-22,China,Wales,0,6,,Friendly,Nanning,China,False
 2018-03-22,Denmark,Panama,1,0,,Friendly,Brøndby,Denmark,False
 2018-03-22,Dominican Republic,Turks and Caicos Islands,4,0,,Friendly,Santo Domingo,Dominican Republic,False
 2018-03-22,Faroe Islands,Latvia,1,1,,Friendly,San Pedro Alcántara,Spain,True
@@ -70,7 +70,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-03-23,Tunisia,Iran,1,0,,Friendly,Radès,Tunisia,False
 2018-03-23,Turkey,Ireland,1,0,,Friendly,Antalya,Turkey,False
 2018-03-23,Ukraine,Saudi Arabia,1,1,,Friendly,Marbella,Spain,True
-2018-03-23,Uruguay,Czech Republic,2,0,,Friendly,Nanning,China PR,True
+2018-03-23,Uruguay,Czech Republic,2,0,,Friendly,Nanning,China,True
 2018-03-24,Angola,Zimbabwe,2,2,,Friendly,Ndola,Zambia,True
 2018-03-24,Armenia,Estonia,0,0,,Friendly,Yerevan,Armenia,False
 2018-03-24,Botswana,Lesotho,1,0,,Friendly,Gaborone,Botswana,False
@@ -100,11 +100,11 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-03-25,Yorkshire,Chagos Islands,6,0,,Friendly,Fitzwilliam,England,False
 2018-03-26,Albania,Norway,0,1,,Friendly,Elbasan,Albania,False
 2018-03-26,Bulgaria,Kazakhstan,2,1,,Friendly,Felcsút,Hungary,True
-2018-03-26,China PR,Czech Republic,1,4,,Friendly,Nanning,China PR,False
+2018-03-26,China,Czech Republic,1,4,,Friendly,Nanning,China,False
 2018-03-26,Curaçao,Bolivia,1,0,,Friendly,Willemstad,Curaçao,False
 2018-03-26,Finland,Malta,5,0,,Friendly,Belek,Turkey,True
 2018-03-26,Portugal,Netherlands,0,3,,Friendly,Geneva,Switzerland,True
-2018-03-26,Wales,Uruguay,0,1,,Friendly,Nanning,China PR,True
+2018-03-26,Wales,Uruguay,0,1,,Friendly,Nanning,China,True
 2018-03-27,Afghanistan,Cambodia,2,1,,AFC Asian Cup qualification,Dushanbe,Tajikistan,True
 2018-03-27,Algeria,Iran,1,2,,Friendly,Graz,Austria,True
 2018-03-27,Armenia,Lithuania,0,1,,Friendly,Yerevan,Armenia,False
@@ -173,7 +173,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-05-20,Jordan,Cyprus,3,0,,Friendly,Amman,Jordan,False
 2018-05-25,Kuwait,Egypt,1,1,,Friendly,Kuwait City,Kuwait,False
 2018-05-25,Kenya,Eswatini,0,1,,Friendly,Machakos,Kenya,False
-2018-05-26,China PR,Myanmar,1,0,,Friendly,Nanjing,China PR,False
+2018-05-26,China,Myanmar,1,0,,Friendly,Nanjing,China,False
 2018-05-26,Saint Barthélemy,Sint Maarten,5,3,,Friendly,Saint-Jean,Saint Barthélemy,False
 2018-05-27,Cameroon,Burkina Faso,0,1,,Friendly,Beauvais,France,True
 2018-05-27,Niger,Central African Republic,3,3,,Friendly,Niamey,Niger,False
@@ -230,7 +230,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-06-01,Angola,Malawi,0,0,,COSAFA Cup,Polokwane,South Africa,True
 2018-06-01,India,Taiwan,5,0,,Intercontinental Cup,Mumbai,India,False
 2018-06-02,El Salvador,Honduras,1,0,,Friendly,Houston,United States,True
-2018-06-02,Thailand,China PR,0,2,,Friendly,Bangkok,Thailand,False
+2018-06-02,Thailand,China,0,2,,Friendly,Bangkok,Thailand,False
 2018-06-02,England,Nigeria,2,1,,Friendly,London,England,False
 2018-06-02,Montenegro,Slovenia,0,2,,Friendly,Podgorica,Montenegro,False
 2018-06-02,Mexico,Scotland,1,0,,Friendly,Mexico City,Mexico,False
@@ -468,7 +468,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-09-07,Ecuador,Jamaica,2,0,,Friendly,Harrison,United States,True
 2018-09-07,South Korea,Costa Rica,2,0,,Friendly,Goyang,South Korea,False
 2018-09-07,Mexico,Uruguay,1,4,,Friendly,Houston,United States,True
-2018-09-07,Qatar,China PR,1,0,,Friendly,Doha,Qatar,False
+2018-09-07,Qatar,China,1,0,,Friendly,Doha,Qatar,False
 2018-09-07,Scotland,Belgium,0,4,,Friendly,Glasgow,Scotland,False
 2018-09-07,Singapore,Mauritius,1,1,,Friendly,Bishan,Singapore,False
 2018-09-07,USA,Brazil,0,2,,Friendly,East Rutherford,United States,False
@@ -537,7 +537,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-09-10,Andorra,Kazakhstan,1,1,,UEFA Nations League,Andorra la Vella,Andorra,False
 2018-09-10,Kosovo,Faroe Islands,2,0,,UEFA Nations League,Pristina,Kosovo,False
 2018-09-10,Malta,Azerbaijan,1,1,,UEFA Nations League,Attard,Malta,False
-2018-09-10,Bahrain,China PR,0,0,,Friendly,East Riffa,Bahrain,False
+2018-09-10,Bahrain,China,0,0,,Friendly,East Riffa,Bahrain,False
 2018-09-10,Cambodia,Malaysia,1,3,,Friendly,Phnom Penh,Cambodia,False
 2018-09-10,Kuwait,Iraq,2,2,,Friendly,Al Farwaniyah,Kuwait,False
 2018-09-10,Kyrgyzstan,Syria,2,1,,Friendly,Bishkek,Kyrgyzstan,False
@@ -641,7 +641,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-10-13,Georgia,Andorra,3,0,,UEFA Nations League,Tbilisi,Georgia,False
 2018-10-13,Armenia,Gibraltar,0,1,,UEFA Nations League,Yerevan,Armenia,False
 2018-10-13,North Macedonia,Liechtenstein,4,1,,UEFA Nations League,Skopje,North Macedonia,False
-2018-10-13,China PR,India,0,0,,Friendly,Suzhou,China PR,False
+2018-10-13,China,India,0,0,,Friendly,Suzhou,China,False
 2018-10-13,Myanmar,Bolivia,0,3,,Friendly,Yangon,Myanmar,False
 2018-10-13,Oman,Philippines,1,1,,Friendly,Al Rayyan,Qatar,True
 2018-10-13,Uzbekistan,North Korea,2,0,,Friendly,Tashkent,Uzbekistan,False
@@ -696,7 +696,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-10-16,Bahrain,Myanmar,4,1,,Friendly,East Riffa,Bahrain,False
 2018-10-16,Belgium,Netherlands,1,1,,Friendly,Brussels,Belgium,False
 2018-10-16,Cambodia,Singapore,1,2,,Friendly,Phnom Penh,Cambodia,False
-2018-10-16,China PR,Syria,2,0,,Friendly,Nanjing,China PR,False
+2018-10-16,China,Syria,2,0,,Friendly,Nanjing,China,False
 2018-10-16,Colombia,Costa Rica,3,1,,Friendly,Harrison,United States,True
 2018-10-16,Denmark,Austria,2,0,,Friendly,Herning,Denmark,False
 2018-10-16,Indonesia,Hong Kong,1,1,,Friendly,Cikarang,Indonesia,False
@@ -871,7 +871,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-11-20,Australia,Lebanon,3,0,,Friendly,Sydney,Australia,False
 2018-11-20,Brazil,Cameroon,1,0,,Friendly,London,England,True
 2018-11-20,Chile,Honduras,4,1,,Friendly,Temuco,Chile,False
-2018-11-20,China PR,Palestine,1,1,,Friendly,Wuhan,China PR,False
+2018-11-20,China,Palestine,1,1,,Friendly,Wuhan,China,False
 2018-11-20,El Salvador,Haiti,1,0,,Friendly,San Salvador,El Salvador,False
 2018-11-20,France,Uruguay,1,0,,Friendly,Paris,France,False
 2018-11-20,Iran,Venezuela,1,1,,Friendly,Doha,Qatar,True
@@ -910,7 +910,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-12-20,Bahrain,Tajikistan,5,0,,Friendly,Isa Town,Bahrain,False
 2018-12-20,Jordan,Kyrgyzstan,0,1,,Friendly,Doha,Qatar,True
 2018-12-23,Qatar,Jordan,2,0,,Friendly,Doha,Qatar,False
-2018-12-24,Iraq,China PR,2,1,,Friendly,Doha,Qatar,True
+2018-12-24,Iraq,China,2,1,,Friendly,Doha,Qatar,True
 2018-12-24,Palestine,Iran,1,1,,Friendly,Doha,Qatar,True
 2018-12-25,Afghanistan,Turkmenistan,0,2,,Friendly,Antalya,Turkey,True
 2018-12-25,Qatar,Kyrgyzstan,1,0,,Friendly,Doha,Qatar,False
@@ -918,7 +918,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2018-12-27,Bahrain,Lebanon,1,0,,Friendly,East Riffa,Bahrain,False
 2018-12-27,India,Oman,0,0,,Friendly,Abu Dhabi,United Arab Emirates,True
 2018-12-27,Qatar,Algeria,0,1,,Friendly,Doha,Qatar,False
-2018-12-28,China PR,Jordan,1,1,,Friendly,Doha,Qatar,True
+2018-12-28,China,Jordan,1,1,,Friendly,Doha,Qatar,True
 2018-12-28,Iraq,Palestine,1,0,,Friendly,Doha,Qatar,True
 2018-12-28,United Arab Emirates,Kuwait,0,2,,Friendly,Dubai,United Arab Emirates,False
 2018-12-29,Bahrain,North Korea,4,0,,Friendly,Isa Town,Bahrain,False
@@ -933,7 +933,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-01-06,Thailand,India,1,4,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
 2019-01-06,Australia,Jordan,0,1,,AFC Asian Cup,Al Ain,United Arab Emirates,True
 2019-01-06,Syria,Palestine,0,0,,AFC Asian Cup,Sharjah,United Arab Emirates,True
-2019-01-07,China PR,Kyrgyzstan,2,1,,AFC Asian Cup,Al Ain,United Arab Emirates,True
+2019-01-07,China,Kyrgyzstan,2,1,,AFC Asian Cup,Al Ain,United Arab Emirates,True
 2019-01-07,South Korea,Philippines,1,0,,AFC Asian Cup,Dubai,United Arab Emirates,True
 2019-01-07,Iran,Yemen,5,0,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
 2019-01-08,Finland,Sweden,1,0,,Friendly,Doha,Qatar,True
@@ -948,7 +948,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-01-11,Estonia,Finland,2,1,,Friendly,Doha,Qatar,True
 2019-01-11,Iceland,Sweden,2,2,,Friendly,Doha,Qatar,True
 2019-01-11,Palestine,Australia,0,3,,AFC Asian Cup,Dubai,United Arab Emirates,True
-2019-01-11,Philippines,China PR,0,3,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
+2019-01-11,Philippines,China,0,3,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
 2019-01-11,Kyrgyzstan,South Korea,0,1,,AFC Asian Cup,Al Ain,United Arab Emirates,True
 2019-01-12,Vietnam,Iran,0,2,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
 2019-01-12,Yemen,Iraq,0,3,,AFC Asian Cup,Sharjah,United Arab Emirates,True
@@ -961,7 +961,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-01-15,Estonia,Iceland,0,0,,Friendly,Doha,Qatar,True
 2019-01-15,Australia,Syria,3,2,,AFC Asian Cup,Al Ain,United Arab Emirates,True
 2019-01-15,Palestine,Jordan,0,0,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
-2019-01-16,South Korea,China PR,2,0,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
+2019-01-16,South Korea,China,2,0,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
 2019-01-16,Kyrgyzstan,Philippines,3,1,,AFC Asian Cup,Dubai,United Arab Emirates,True
 2019-01-16,Iran,Iraq,0,0,,AFC Asian Cup,Dubai,United Arab Emirates,True
 2019-01-16,Vietnam,Yemen,2,0,,AFC Asian Cup,Al Ain,United Arab Emirates,True
@@ -971,13 +971,13 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-01-17,Oman,Turkmenistan,3,1,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
 2019-01-20,Iran,Oman,2,0,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
 2019-01-20,Jordan,Vietnam,1,1,,AFC Asian Cup,Dubai,United Arab Emirates,True
-2019-01-20,Thailand,China PR,1,2,,AFC Asian Cup,Al Ain,United Arab Emirates,True
+2019-01-20,Thailand,China,1,2,,AFC Asian Cup,Al Ain,United Arab Emirates,True
 2019-01-21,Australia,Uzbekistan,0,0,,AFC Asian Cup,Al Ain,United Arab Emirates,True
 2019-01-21,Japan,Saudi Arabia,1,0,,AFC Asian Cup,Sharjah,United Arab Emirates,True
 2019-01-21,United Arab Emirates,Kyrgyzstan,3,2,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,False
 2019-01-22,South Korea,Bahrain,2,1,,AFC Asian Cup,Dubai,United Arab Emirates,True
 2019-01-22,Qatar,Iraq,1,0,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
-2019-01-24,China PR,Iran,0,3,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
+2019-01-24,China,Iran,0,3,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
 2019-01-24,Vietnam,Japan,0,1,,AFC Asian Cup,Dubai,United Arab Emirates,True
 2019-01-25,South Korea,Qatar,0,1,,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True
 2019-01-25,United Arab Emirates,Australia,1,0,,AFC Asian Cup,Al Ain,United Arab Emirates,False
@@ -1216,7 +1216,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-06-07,Lesotho,Zimbabwe,2,2,,COSAFA Cup,Durban,South Africa,True
 2019-06-07,South Africa,Malawi,0,0,,COSAFA Cup,Durban,South Africa,False
 2019-06-07,Argentina,Nicaragua,5,1,,Friendly,San Juan,Argentina,False
-2019-06-07,China PR,Philippines,2,0,,Friendly,Guangzhou,China PR,False
+2019-06-07,China,Philippines,2,0,,Friendly,Guangzhou,China,False
 2019-06-07,Fiji,Tahiti,1,1,,Friendly,Port Vila,Vanuatu,True
 2019-06-07,Ivory Coast,Comoros,3,1,,Friendly,Boulogne-Sur-Mer,Ivory Coast,False
 2019-06-07,Kenya,Madagascar,1,0,,Friendly,Bondoufle,Kenya,False
@@ -1285,7 +1285,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-06-11,Greece,Armenia,2,3,,UEFA Euro qualification,Athens,Greece,False
 2019-06-11,Algeria,Burundi,1,1,,Friendly,Doha,Qatar,True
 2019-06-11,Benin,Guinea,1,0,,Friendly,Marrakech,Morocco,True
-2019-06-11,China PR,Tajikistan,1,0,,Friendly,Guangzhou,China PR,False
+2019-06-11,China,Tajikistan,1,0,,Friendly,Guangzhou,China,False
 2019-06-11,Croatia,Tunisia,1,2,,Friendly,Varaždin,Croatia,False
 2019-06-11,Hong Kong,Taiwan,0,2,,Friendly,Hong Kong,Hong Kong,False
 2019-06-11,Jordan,Indonesia,4,1,,Friendly,Amman,Jordan,False
@@ -1513,7 +1513,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-08-28,Taiwan,Guam,3,0,,Friendly,Kaohsiung,Taiwan,False
 2019-08-29,United Arab Emirates,Dominican Republic,4,0,,Friendly,Riffa,Bahrain,True
 2019-08-30,Belize,Saint Vincent and the Grenadines,1,0,,Friendly,Belmopan,Belize,False
-2019-08-30,China PR,Myanmar,4,1,,Friendly,Xianghe,Egypt,True
+2019-08-30,China,Myanmar,4,1,,Friendly,Xianghe,Egypt,True
 2019-08-30,Malaysia,Jordan,0,1,,Friendly,Kuala Lumpur,Malaysia,False
 2019-08-31,United Arab Emirates,Sri Lanka,5,1,,Friendly,Riffa,Bahrain,True
 2019-09-04,Libya,Burkina Faso,0,1,,Friendly,Marrakech,Morocco,True
@@ -1667,7 +1667,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-09-10,Puerto Rico,Guatemala,0,5,,CONCACAF Nations League,Mayagüez,Puerto Rico,False
 2019-09-10,Turks and Caicos Islands,Guadeloupe,0,3,,CONCACAF Nations League,Providenciales,Turks and Caicos Islands,False
 2019-09-10,Guam,Philippines,1,4,,FIFA World Cup qualification,Dededo,Guam,False
-2019-09-10,Maldives,China PR,0,5,,FIFA World Cup qualification,Malé,Maldives,False
+2019-09-10,Maldives,China,0,5,,FIFA World Cup qualification,Malé,Maldives,False
 2019-09-10,Kuwait,Australia,0,3,,FIFA World Cup qualification,Kuwait City,Kuwait,False
 2019-09-10,Taiwan,Nepal,0,2,,FIFA World Cup qualification,Taipei,Taiwan,False
 2019-09-10,Cambodia,Bahrain,0,1,,FIFA World Cup qualification,Phnom Penh,Cambodia,False
@@ -1731,7 +1731,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-10-10,British Virgin Islands,Bahamas,0,4,,CONCACAF Nations League,Basseterre,Saint Kitts and Nevis,True
 2019-10-10,Sint Maarten,Turks and Caicos Islands,2,5,,CONCACAF Nations League,Willemstad,Curaçao,True
 2019-10-10,Syria,Maldives,2,1,,FIFA World Cup qualification,Dubai,United Arab Emirates,True
-2019-10-10,China PR,Guam,7,0,,FIFA World Cup qualification,Guangzhou,China PR,False
+2019-10-10,China,Guam,7,0,,FIFA World Cup qualification,Guangzhou,China,False
 2019-10-10,Jordan,Kuwait,0,0,,FIFA World Cup qualification,Amman,Jordan,False
 2019-10-10,Australia,Nepal,5,0,,FIFA World Cup qualification,Canberra,Australia,False
 2019-10-10,Iran,Cambodia,14,0,,FIFA World Cup qualification,Tehran,Iran,False
@@ -1848,7 +1848,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-10-15,United States Virgin Islands,Barbados,0,4,,CONCACAF Nations League,Saint Croix,United States Virgin Islands,False
 2019-10-15,Anguilla,Puerto Rico,2,3,,CONCACAF Nations League,The Valley,Anguilla,False
 2019-10-15,Syria,Guam,4,0,,FIFA World Cup qualification,Dubai,United Arab Emirates,True
-2019-10-15,Philippines,China PR,0,0,,FIFA World Cup qualification,Bacolod,Philippines,False
+2019-10-15,Philippines,China,0,0,,FIFA World Cup qualification,Bacolod,Philippines,False
 2019-10-15,Jordan,Nepal,3,0,,FIFA World Cup qualification,Amman,Jordan,False
 2019-10-15,Taiwan,Australia,1,7,,FIFA World Cup qualification,Kaohsiung,Taiwan,False
 2019-10-15,Cambodia,Iraq,0,4,,FIFA World Cup qualification,Phnom Penh,Cambodia,False
@@ -1863,6 +1863,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-10-15,Indonesia,Vietnam,1,3,,FIFA World Cup qualification,Gianyar,Indonesia,False
 2019-10-15,North Korea,South Korea,0,0,,FIFA World Cup qualification,Pyongyang,North Korea,False
 2019-10-15,Sri Lanka,Lebanon,0,3,,FIFA World Cup qualification,Colombo,Sri Lanka,False
+2019-10-19,West Papua,East Turkestan,2,8,,Friendly,The Hague,Netherlands,True
 2019-11-07,Egypt,Liberia,1,0,,Friendly,Alexandria,Egypt,False
 2019-11-07,Nicaragua,Cuba,0,0,,Friendly,Managua,Nicaragua,False
 2019-11-09,Malaysia,Tajikistan,1,0,,Friendly,Kuala Lumpur,Malaysia,False
@@ -1908,7 +1909,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-11-14,Ireland,New Zealand,3,1,,Friendly,Dublin,Republic of Ireland,False
 2019-11-14,Ukraine,Estonia,1,0,,Friendly,Zaporizhia,Ukraine,False
 2019-11-14,Maldives,Philippines,1,2,,FIFA World Cup qualification,Malé,Maldives,False
-2019-11-14,Syria,China PR,2,1,,FIFA World Cup qualification,Dubai,United Arab Emirates,True
+2019-11-14,Syria,China,2,1,,FIFA World Cup qualification,Dubai,United Arab Emirates,True
 2019-11-14,Jordan,Australia,0,1,,FIFA World Cup qualification,Amman,Jordan,False
 2019-11-14,Kuwait,Taiwan,9,0,,FIFA World Cup qualification,Kuwait City,Kuwait,False
 2019-11-14,Iraq,Iran,2,1,,FIFA World Cup qualification,Amman,Jordan,True
@@ -2068,11 +2069,12 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2019-12-05,Qatar,Saudi Arabia,0,1,,Gulf Cup,Al Wakrah,Qatar,False
 2019-12-08,Bahrain,Saudi Arabia,1,0,,Gulf Cup,Doha,Qatar,True
 2019-12-08,Luhansk PR,South Ossetia,4,3,,Friendly,Luhansk,Ukraine,False
-2019-12-10,China PR,Japan,1,2,,EAFF Championship,Busan,South Korea,True
+2019-12-10,China,Japan,1,2,,EAFF Championship,Busan,South Korea,True
 2019-12-11,South Korea,Hong Kong,2,0,,EAFF Championship,Busan,South Korea,False
 2019-12-14,Japan,Hong Kong,5,0,,EAFF Championship,Busan,South Korea,True
-2019-12-15,South Korea,China PR,1,0,,EAFF Championship,Busan,South Korea,False
-2019-12-18,Hong Kong,China PR,0,2,,EAFF Championship,Busan,South Korea,True
+2019-12-14,Tamil Eelam,East Turkestan,3,0,,CONIFA World Cup qualification,Cergy,France,True
+2019-12-15,South Korea,China,1,0,,EAFF Championship,Busan,South Korea,False
+2019-12-18,Hong Kong,China,0,2,,EAFF Championship,Busan,South Korea,True
 2019-12-18,South Korea,Japan,1,0,,EAFF Championship,Busan,South Korea,False
 2019-12-29,Chagos Islands,Panjab,0,6,,Friendly,Horsham,England,True
 2020-01-07,Barbados,Canada,1,4,,Friendly,Irvine,United States,True
@@ -2635,7 +2637,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-05-29,Thailand,Tajikistan,2,2,,Friendly,Sharjah,United Arab Emirates,True
 2021-05-30,Malta,Northern Ireland,0,3,,Friendly,Klagenfurt,Austria,True
 2021-05-30,Switzerland,USA,2,1,,Friendly,St. Gallen,Switzerland,False
-2021-05-30,China PR,Guam,7,0,,FIFA World Cup qualification,Suzhou,China PR,False
+2021-05-30,China,Guam,7,0,,FIFA World Cup qualification,Suzhou,China,False
 2021-05-31,Jordan,Vietnam,1,1,,Friendly,Sharjah,United Arab Emirates,True
 2021-05-31,Turkey,Guinea,0,0,,Friendly,Antalya,Turkey,False
 2021-06-01,Croatia,Armenia,1,1,,Friendly,Velika Gorica,Croatia,False
@@ -2734,7 +2736,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-06-07,Serbia,Jamaica,1,1,,Friendly,Miki,Japan,True
 2021-06-07,Ukraine,Cyprus,4,0,,Friendly,Kharkiv,Ukraine,False
 2021-06-07,Guam,Syria,0,3,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
-2021-06-07,China PR,Philippines,2,0,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
+2021-06-07,China,Philippines,2,0,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
 2021-06-07,Nepal,Jordan,0,3,,FIFA World Cup qualification,Kuwait City,Kuwait,True
 2021-06-07,Australia,Taiwan,5,1,,FIFA World Cup qualification,Kuwait City,Kuwait,True
 2021-06-07,Iraq,Cambodia,4,1,,FIFA World Cup qualification,Arad,Iran,True
@@ -2782,7 +2784,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-06-10,Estonia,Latvia,2,1,,Baltic Cup,Tallinn,Estonia,False
 2021-06-10,South Africa,Uganda,3,2,,Friendly,Johannesburg,South Africa,False
 2021-06-11,Philippines,Guam,3,0,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
-2021-06-11,China PR,Maldives,5,0,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
+2021-06-11,China,Maldives,5,0,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
 2021-06-11,Nepal,Australia,0,3,,FIFA World Cup qualification,Kuwait City,Kuwait,True
 2021-06-11,Kuwait,Jordan,0,0,,FIFA World Cup qualification,Kuwait City,Kuwait,False
 2021-06-11,Cambodia,Iran,0,10,,FIFA World Cup qualification,Isa Town,Bahrain,True
@@ -2823,8 +2825,8 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-06-14,Spain,Sweden,0,0,,UEFA Euro,Seville,Spain,False
 2021-06-14,Argentina,Chile,1,1,,Copa América,Rio de Janeiro,Brazil,True
 2021-06-14,Paraguay,Bolivia,3,1,,Copa América,Goiânia,Brazil,True
-2021-06-15,Philippines,Maldives,1,1,,FIFA World Cup qualification,Suzhou,China PR,True
-2021-06-15,China PR,Syria,3,1,,FIFA World Cup qualification,Suzhou,China PR,False
+2021-06-15,Philippines,Maldives,1,1,,FIFA World Cup qualification,Suzhou,China,True
+2021-06-15,China,Syria,3,1,,FIFA World Cup qualification,Suzhou,China,False
 2021-06-15,Australia,Jordan,1,0,,FIFA World Cup qualification,Kuwait City,Kuwait,True
 2021-06-15,Bahrain,Hong Kong,4,0,,FIFA World Cup qualification,Riffa,Bahrain,False
 2021-06-15,Iran,Iraq,1,0,,FIFA World Cup qualification,Arad,Iran,False
@@ -3025,7 +3027,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-09-02,Iran,Syria,1,0,,FIFA World Cup qualification,Tehran,Iran,False
 2021-09-02,United Arab Emirates,Lebanon,0,0,,FIFA World Cup qualification,Dubai,United Arab Emirates,False
 2021-09-02,Japan,Oman,0,1,,FIFA World Cup qualification,Suita,Japan,False
-2021-09-02,Australia,China PR,3,0,,FIFA World Cup qualification,Doha,Qatar,True
+2021-09-02,Australia,China,3,0,,FIFA World Cup qualification,Doha,Qatar,True
 2021-09-02,Saudi Arabia,Vietnam,3,1,,FIFA World Cup qualification,Riyadh,Saudi Arabia,False
 2021-09-02,Georgia,Kosovo,0,1,,FIFA World Cup qualification,Batumi,Georgia,False
 2021-09-02,Sweden,Spain,2,1,,FIFA World Cup qualification,Stockholm,Sweden,False
@@ -3122,7 +3124,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-09-07,Syria,United Arab Emirates,1,1,,FIFA World Cup qualification,Amman,Jordan,True
 2021-09-07,South Korea,Lebanon,1,0,,FIFA World Cup qualification,Suwon,South Korea,False
 2021-09-07,Iraq,Iran,0,3,,FIFA World Cup qualification,Doha,Qatar,True
-2021-09-07,China PR,Japan,0,1,,FIFA World Cup qualification,Doha,Qatar,True
+2021-09-07,China,Japan,0,1,,FIFA World Cup qualification,Doha,Qatar,True
 2021-09-07,Vietnam,Australia,0,1,,FIFA World Cup qualification,Hanoi,Vietnam,False
 2021-09-07,Oman,Saudi Arabia,0,1,,FIFA World Cup qualification,Muscat,Oman,False
 2021-09-07,Ireland,Serbia,1,1,,FIFA World Cup qualification,Dublin,Republic of Ireland,False
@@ -3140,7 +3142,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-09-07,Russia,Malta,2,0,,FIFA World Cup qualification,Moscow,Russia,False
 2021-09-08,Bulgaria,Georgia,4,1,,Friendly,Sofia,Bulgaria,False
 2021-09-08,Czech Republic,Ukraine,1,1,,Friendly,Plzeň,Czech Republic,False
-2021-09-08,Guatemala,Nicaragua,2,2,,Friendly,Antigua Guatemala City,Guatemala,False
+2021-09-08,Guatemala,Nicaragua,2,2,,Friendly,Antigua Guatemala,Guatemala,False
 2021-09-08,Kosovo,Spain,0,2,,FIFA World Cup qualification,Pristina,Kosovo,False
 2021-09-08,Greece,Sweden,2,1,,FIFA World Cup qualification,Athens,Greece,False
 2021-09-08,Northern Ireland,Switzerland,0,0,,FIFA World Cup qualification,Belfast,Northern Ireland,False
@@ -3178,7 +3180,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-10-07,South Korea,Syria,2,1,,FIFA World Cup qualification,Ansan,South Korea,False
 2021-10-07,United Arab Emirates,Iran,0,1,,FIFA World Cup qualification,Dubai,United Arab Emirates,False
 2021-10-07,Saudi Arabia,Japan,1,0,,FIFA World Cup qualification,Jeddah,Saudi Arabia,False
-2021-10-07,China PR,Vietnam,3,2,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
+2021-10-07,China,Vietnam,3,2,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
 2021-10-07,Australia,Oman,3,1,,FIFA World Cup qualification,Doha,Qatar,True
 2021-10-07,Honduras,Costa Rica,0,0,,FIFA World Cup qualification,San Pedro Sula,Honduras,False
 2021-10-07,USA,Jamaica,2,0,,FIFA World Cup qualification,Austin,United States,False
@@ -3286,7 +3288,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-10-12,United Arab Emirates,Iraq,2,2,,FIFA World Cup qualification,Dubai,United Arab Emirates,False
 2021-10-12,Japan,Australia,2,1,,FIFA World Cup qualification,Saitama,Japan,False
 2021-10-12,Oman,Vietnam,3,1,,FIFA World Cup qualification,Muscat,Oman,False
-2021-10-12,Saudi Arabia,China PR,3,2,,FIFA World Cup qualification,Jeddah,Saudi Arabia,False
+2021-10-12,Saudi Arabia,China,3,2,,FIFA World Cup qualification,Jeddah,Saudi Arabia,False
 2021-10-12,Portugal,Luxembourg,5,0,,FIFA World Cup qualification,Faro-Loulé,Portugal,False
 2021-10-12,Serbia,Azerbaijan,3,1,,FIFA World Cup qualification,Belgrade,Serbia,False
 2021-10-12,Kosovo,Georgia,1,2,,FIFA World Cup qualification,Pristina,Kosovo,False
@@ -3345,7 +3347,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-11-11,Lebanon,Iran,1,2,,FIFA World Cup qualification,Sidon,Lebanon,False
 2021-11-11,Iraq,Syria,1,1,,FIFA World Cup qualification,Al Rayyan,Qatar,True
 2021-11-11,South Korea,United Arab Emirates,1,0,,FIFA World Cup qualification,Goyang,South Korea,False
-2021-11-11,China PR,Oman,1,1,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
+2021-11-11,China,Oman,1,1,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
 2021-11-11,Vietnam,Japan,0,1,,FIFA World Cup qualification,Hanoi,Vietnam,False
 2021-11-11,Australia,Saudi Arabia,0,0,,FIFA World Cup qualification,Sydney,Australia,False
 2021-11-11,Ireland,Portugal,0,0,,FIFA World Cup qualification,Dublin,Republic of Ireland,False
@@ -3451,7 +3453,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2021-11-16,Lebanon,United Arab Emirates,0,1,,FIFA World Cup qualification,Sidon,Lebanon,False
 2021-11-16,Iraq,South Korea,0,3,,FIFA World Cup qualification,Al Rayyan,Qatar,True
 2021-11-16,Syria,Iran,0,3,,FIFA World Cup qualification,Amman,Jordan,True
-2021-11-16,China PR,Australia,1,1,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
+2021-11-16,China,Australia,1,1,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
 2021-11-16,Vietnam,Saudi Arabia,0,1,,FIFA World Cup qualification,Hanoi,Vietnam,False
 2021-11-16,Oman,Japan,0,1,,FIFA World Cup qualification,Muscat,Oman,False
 2021-11-16,Jamaica,USA,1,1,,FIFA World Cup qualification,Kingston,Jamaica,False
@@ -3607,7 +3609,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2022-01-27,Lebanon,South Korea,0,1,,FIFA World Cup qualification,Sidon,Lebanon,False
 2022-01-27,Iran,Iraq,1,0,,FIFA World Cup qualification,Tehran,Iran,False
 2022-01-27,United Arab Emirates,Syria,2,0,,FIFA World Cup qualification,Dubai,United Arab Emirates,False
-2022-01-27,Japan,China PR,2,0,,FIFA World Cup qualification,Saitama,Japan,False
+2022-01-27,Japan,China,2,0,,FIFA World Cup qualification,Saitama,Japan,False
 2022-01-27,Australia,Vietnam,4,0,,FIFA World Cup qualification,Melbourne,Australia,False
 2022-01-27,Saudi Arabia,Oman,1,0,,FIFA World Cup qualification,Jeddah,Saudi Arabia,False
 2022-01-27,Ecuador,Brazil,1,1,,FIFA World Cup qualification,Quito,Ecuador,False
@@ -3637,7 +3639,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2022-02-01,Lebanon,Iraq,1,1,,FIFA World Cup qualification,Sidon,Lebanon,False
 2022-02-01,Iran,United Arab Emirates,1,0,,FIFA World Cup qualification,Tehran,Iran,False
 2022-02-01,Syria,South Korea,0,2,,FIFA World Cup qualification,Dubai,United Arab Emirates,True
-2022-02-01,Vietnam,China PR,3,1,,FIFA World Cup qualification,Hanoi,Vietnam,False
+2022-02-01,Vietnam,China,3,1,,FIFA World Cup qualification,Hanoi,Vietnam,False
 2022-02-01,Japan,Saudi Arabia,2,0,,FIFA World Cup qualification,Saitama,Japan,False
 2022-02-01,Oman,Australia,2,2,,FIFA World Cup qualification,Muscat,Oman,False
 2022-02-01,Bolivia,Chile,2,3,,FIFA World Cup qualification,La Paz,Bolivia,False
@@ -3679,7 +3681,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2022-03-24,Lebanon,Syria,0,3,,FIFA World Cup qualification,Sidon,Lebanon,False
 2022-03-24,Iraq,United Arab Emirates,1,0,,FIFA World Cup qualification,Riyadh,Saudi Arabia,True
 2022-03-24,South Korea,Iran,2,0,,FIFA World Cup qualification,Seoul,South Korea,False
-2022-03-24,China PR,Saudi Arabia,1,1,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
+2022-03-24,China,Saudi Arabia,1,1,,FIFA World Cup qualification,Sharjah,United Arab Emirates,True
 2022-03-24,Vietnam,Oman,0,1,,FIFA World Cup qualification,Hanoi,Vietnam,False
 2022-03-24,Australia,Japan,0,2,,FIFA World Cup qualification,Sydney,Australia,False
 2022-03-24,Solomon Islands,Tahiti,3,1,,FIFA World Cup qualification,Doha,Qatar,True
@@ -3694,7 +3696,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2022-03-24,Sweden,Czech Republic,1,0,,FIFA World Cup qualification,Stockholm,Sweden,False
 2022-03-24,Wales,Austria,2,1,,FIFA World Cup qualification,Cardiff,Wales,False
 2022-03-24,Armenia,Montenegro,1,0,,Friendly,Yerevan,Armenia,False
-2022-03-24,Guatemala,Cuba,1,0,,Friendly,Antigua Guatemala City,Guatemala,False
+2022-03-24,Guatemala,Cuba,1,0,,Friendly,Antigua Guatemala,Guatemala,False
 2022-03-24,Hungary,Serbia,0,1,,Friendly,Budapest,Hungary,False
 2022-03-24,Kosovo,Burkina Faso,5,0,,Friendly,Pristina,Kosovo,False
 2022-03-24,Liberia,Benin,0,4,,Friendly,Antalya,Turkey,True
@@ -3774,7 +3776,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2022-03-29,Syria,Iraq,1,1,,FIFA World Cup qualification,Dubai,United Arab Emirates,True
 2022-03-29,United Arab Emirates,South Korea,1,0,,FIFA World Cup qualification,Dubai,United Arab Emirates,False
 2022-03-29,Japan,Vietnam,1,1,,FIFA World Cup qualification,Saitama,Japan,False
-2022-03-29,Oman,China PR,2,0,,FIFA World Cup qualification,Muscat,Oman,False
+2022-03-29,Oman,China,2,0,,FIFA World Cup qualification,Muscat,Oman,False
 2022-03-29,Saudi Arabia,Australia,1,0,,FIFA World Cup qualification,Jeddah,Saudi Arabia,False
 2022-03-29,Ecuador,Argentina,1,1,,FIFA World Cup qualification,Guayaquil,Ecuador,False
 2022-03-29,Peru,Paraguay,2,0,,FIFA World Cup qualification,Lima,Peru,False
@@ -4168,10 +4170,10 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2022-07-17,Mozambique,Senegal,1,1,,COSAFA Cup,Moses Mabhida Stadium,South Africa,True
 2022-07-17,Namibia,Zambia,0,1,,COSAFA Cup,Moses Mabhida Stadium,South Africa,True
 2022-07-19,Japan,Hong Kong,6,0,,EAFF Championship,Kashima,Japan,False
-2022-07-20,China PR,South Korea,0,3,,EAFF Championship,Toyota,Japan,True
+2022-07-20,China,South Korea,0,3,,EAFF Championship,Toyota,Japan,True
 2022-07-24,South Korea,Hong Kong,3,0,,EAFF Championship,Toyota,Japan,True
-2022-07-24,Japan,China PR,0,0,,EAFF Championship,Toyota,Japan,False
-2022-07-27,China PR,Hong Kong,1,0,,EAFF Championship,Toyota,Japan,True
+2022-07-24,Japan,China,0,0,,EAFF Championship,Toyota,Japan,False
+2022-07-27,China,Hong Kong,1,0,,EAFF Championship,Toyota,Japan,True
 2022-07-27,Japan,South Korea,3,0,,EAFF Championship,Toyota,Japan,False
 2022-08-07,Raetia,Tibet,3,3,,Friendly,Chur,Switzerland,False
 2022-08-31,Mexico,Paraguay,0,1,,Friendly,Atlanta,United States,True
@@ -4562,7 +4564,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-03-23,Hungary,Estonia,1,0,,Friendly,Budapest,Hungary,False
 2023-03-23,Iran,Russia,1,1,,Friendly,Tehran,Iran,False
 2023-03-23,Malaysia,Turkmenistan,1,0,,Friendly,Johor Bahru,Malaysia,False
-2023-03-23,New Zealand,China PR,0,0,,Friendly,Auckland,New Zealand,False
+2023-03-23,New Zealand,China,0,0,,Friendly,Auckland,New Zealand,False
 2023-03-23,Solomon Islands,Vanuatu,2,0,,Friendly,Lautoka,Fiji,True
 2023-03-23,Madagascar,Central African Republic,0,3,,African Cup of Nations qualification,Antananarivo,Madagascar,False
 2023-03-23,Ghana,Angola,1,0,,African Cup of Nations qualification,Kumasi,Ghana,False
@@ -4643,7 +4645,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-03-25,Turks and Caicos Islands,United States Virgin Islands,1,0,,CONCACAF Nations League,Providenciales,Turks and Caicos Islands,False
 2023-03-26,Fiji,Solomon Islands,0,2,,Friendly,Lautoka,Fiji,False
 2023-03-26,Macau,Singapore,0,1,,Friendly,Taipa,Macau,False
-2023-03-26,New Zealand,China PR,2,1,,Friendly,Wellington,New Zealand,False
+2023-03-26,New Zealand,China,2,1,,Friendly,Wellington,New Zealand,False
 2023-03-26,Russia,Iraq,2,0,,Friendly,Saint Petersburg,Russia,False
 2023-03-26,São Tomé and Príncipe,Sierra Leone,0,2,,African Cup of Nations qualification,Agadir,Morocco,True
 2023-03-26,Lesotho,Zambia,0,2,,African Cup of Nations qualification,Soweto,South Africa,True
@@ -4761,7 +4763,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-06-14,South Sudan,Gambia,2,3,,African Cup of Nations qualification,Ismailia,Egypt,True
 2023-06-15,Panama,Canada,0,2,,CONCACAF Nations League,Las Vegas,United States,True
 2023-06-15,USA,Mexico,3,0,,CONCACAF Nations League,Las Vegas,United States,False
-2023-06-15,Argentina,Australia,2,0,,Friendly,Beijing,China PR,True
+2023-06-15,Argentina,Australia,2,0,,Friendly,Beijing,China,True
 2023-06-15,Cambodia,Bangladesh,0,1,,Friendly,Phnom Penh,Cambodia,False
 2023-06-15,Costa Rica,Guatemala,0,1,,Friendly,Carson,United States,True
 2023-06-15,Honduras,Venezuela,0,1,,Friendly,"Washington, D.C.",United States,True
@@ -4774,7 +4776,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-06-16,Martinique,Saint Lucia,3,1,,Gold Cup qualification,Fort Lauderdale,United States,True
 2023-06-16,Curaçao,Saint Kitts and Nevis,1,1,,Gold Cup qualification,Fort Lauderdale,United States,True
 2023-06-16,Chile,Dominican Republic,5,0,,Friendly,Viña del Mar,Chile,False
-2023-06-16,China PR,Myanmar,4,0,,Friendly,Dalian,China PR,False
+2023-06-16,China,Myanmar,4,0,,Friendly,Dalian,China,False
 2023-06-16,Taiwan,Thailand,2,2,,Friendly,Kaohsiung,Taiwan,False
 2023-06-16,Colombia,Iraq,1,0,,Friendly,Valencia,Spain,True
 2023-06-16,South Korea,Peru,0,1,,Friendly,Busan,South Korea,False
@@ -4843,7 +4845,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-06-19,Hong Kong,Thailand,0,1,,Friendly,Hong Kong,Hong Kong,False
 2023-06-19,Indonesia,Argentina,0,2,,Friendly,Jakarta,Indonesia,False
 2023-06-19,Jamaica,Jordan,1,2,,Friendly,Wiener Neustadt,Austria,True
-2023-06-19,Macau,Myanmar,0,2,,Friendly,Dalian,China PR,True
+2023-06-19,Macau,Myanmar,0,2,,Friendly,Dalian,China,True
 2023-06-19,Philippines,Taiwan,2,3,,Friendly,Manila,Philippines,False
 2023-06-19,Ireland,Gibraltar,3,0,,UEFA Euro qualification,Dublin,Republic of Ireland,False
 2023-06-19,France,Greece,1,0,,UEFA Euro qualification,Paris,France,False
@@ -4863,7 +4865,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-06-20,Algeria,Tunisia,1,1,,Friendly,Annaba,Algeria,False
 2023-06-20,Bolivia,Chile,0,0,,Friendly,Santa Cruz,Bolivia,False
 2023-06-20,Brazil,Senegal,2,4,,Friendly,Lisbon,Portugal,True
-2023-06-20,China PR,Palestine,2,0,,Friendly,Dalian,China PR,False
+2023-06-20,China,Palestine,2,0,,Friendly,Dalian,China,False
 2023-06-20,Ecuador,Costa Rica,3,1,,Friendly,Chester,United States,True
 2023-06-20,Germany,Colombia,0,2,,Friendly,Gelsenkirchen,Germany,False
 2023-06-20,Haiti,Trinidad and Tobago,0,0,,Friendly,Palm Beach Gardens,United States,True
@@ -5015,7 +5017,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-09-06,Macau,Bhutan,0,1,,Friendly,Taipa,Macau,False
 2023-09-06,Malta,Gibraltar,1,0,,Friendly,Ta' Qali,Malta,False
 2023-09-06,Oman,Palestine,2,1,,Friendly,Muscat,Oman,False
-2023-09-06,Syria,Malaysia,2,2,,Friendly,Chengdu,China PR,True
+2023-09-06,Syria,Malaysia,2,2,,Friendly,Chengdu,China,True
 2023-09-06,Libya,Equatorial Guinea,1,1,,African Cup of Nations qualification,Benghazi,Libya,False
 2023-09-07,Trinidad and Tobago,Curaçao,1,0,,CONCACAF Nations League,Port of Spain,Trinidad and Tobago,False
 2023-09-07,Panama,Martinique,3,0,,CONCACAF Nations League,Panama City,Panama,False
@@ -5078,7 +5080,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-09-09,Antigua and Barbuda,Guyana,1,5,,CONCACAF Nations League,North Sound,Antigua and Barbuda,False
 2023-09-09,Bahamas,Puerto Rico,1,6,,CONCACAF Nations League,Nassau,Bahamas,False
 2023-09-09,British Virgin Islands,Turks and Caicos Islands,3,1,,CONCACAF Nations League,Road Town,British Virgin Islands,False
-2023-09-09,China PR,Malaysia,1,1,,Friendly,Chengdu,China PR,False
+2023-09-09,China,Malaysia,1,1,,Friendly,Chengdu,China,False
 2023-09-09,Germany,Japan,1,4,,Friendly,Wolfsburg,Germany,False
 2023-09-09,Mexico,Australia,2,2,,Friendly,Arlington,United States,True
 2023-09-09,South Africa,Namibia,0,0,,Friendly,Johannesburg,South Africa,False
@@ -5146,7 +5148,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-09-12,Chile,Colombia,0,0,,FIFA World Cup qualification,Santiago,Chile,False
 2023-09-12,Azerbaijan,Jordan,2,1,,Friendly,Baku,Azerbaijan,False
 2023-09-12,Bahrain,Turkmenistan,1,1,,Friendly,Dubai,United Arab Emirates,True
-2023-09-12,China PR,Syria,0,1,,Friendly,Chengdu,China PR,False
+2023-09-12,China,Syria,0,1,,Friendly,Chengdu,China,False
 2023-09-12,Egypt,Tunisia,1,3,,Friendly,Cairo,Egypt,False
 2023-09-12,Germany,France,2,1,,Friendly,Dortmund,Germany,False
 2023-09-12,Qatar,Russia,1,1,,Friendly,Al Wakrah,Qatar,False
@@ -5176,7 +5178,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-09-12,Romania,Kosovo,2,0,,UEFA Euro qualification,Bucharest,Romania,False
 2023-10-08,Papua New Guinea,Solomon Islands,1,3,,MSG Prime Minister's Cup,New Caledonia,New Caledonia,True
 2023-10-08,New Caledonia,Vanuatu,4,0,,MSG Prime Minister's Cup,New Caledonia,New Caledonia,False
-2023-10-10,China PR,Vietnam,2,0,,Friendly,Dalian,China PR,False
+2023-10-10,China,Vietnam,2,0,,Friendly,Dalian,China,False
 2023-10-11,Wales,Gibraltar,4,0,,Friendly,Wrexham,Wales,False
 2023-10-11,Solomon Islands,Vanuatu,1,0,,MSG Prime Minister's Cup,New Caledonia,New Caledonia,True
 2023-10-11,New Caledonia,Papua New Guinea,3,1,,MSG Prime Minister's Cup,New Caledonia,New Caledonia,False
@@ -5234,7 +5236,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-10-13,Mali,Uganda,1,0,,Friendly,Bamako,Mali,False
 2023-10-13,Nigeria,Saudi Arabia,2,2,,Friendly,Portimão,Portugal,True
 2023-10-13,South Africa,Eswatini,0,0,,Friendly,Johannesburg,South Africa,False
-2023-10-13,Vietnam,Uzbekistan,0,2,,Friendly,Dalian,China PR,True
+2023-10-13,Vietnam,Uzbekistan,0,2,,Friendly,Dalian,China,True
 2023-10-13,Ireland,Greece,0,2,,UEFA Euro qualification,Dublin,Republic of Ireland,False
 2023-10-13,Netherlands,France,1,2,,UEFA Euro qualification,Amsterdam,Netherlands,False
 2023-10-13,Estonia,Azerbaijan,0,2,,UEFA Euro qualification,Tallinn,Estonia,False
@@ -5285,7 +5287,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-10-16,Algeria,Egypt,1,1,,Friendly,Al Ain,United Arab Emirates,True
 2023-10-16,Botswana,Eswatini,2,1,,Friendly,Lobatse,Botswana,False
 2023-10-16,Kenya,Russia,2,2,,Friendly,Antalya,Turkey,True
-2023-10-16,China PR,Uzbekistan,1,2,,Friendly,Dalian,China PR,False
+2023-10-16,China,Uzbekistan,1,2,,Friendly,Dalian,China,False
 2023-10-16,Mozambique,Nigeria,2,3,,Friendly,Albufeira,Portugal,True
 2023-10-16,Senegal,Cameroon,1,0,,Friendly,Lens,France,True
 2023-10-16,Gibraltar,Ireland,0,4,,UEFA Euro qualification,Faro-Loulé,Portugal,True
@@ -5371,7 +5373,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-11-16,Kuwait,India,0,1,,FIFA World Cup qualification,Kuwait City,Kuwait,False
 2023-11-16,Japan,Myanmar,5,0,,FIFA World Cup qualification,Suita,Japan,False
 2023-11-16,Syria,North Korea,1,0,,FIFA World Cup qualification,Jeddah,Saudi Arabia,True
-2023-11-16,Thailand,China PR,1,2,,FIFA World Cup qualification,Bangkok,Thailand,False
+2023-11-16,Thailand,China,1,2,,FIFA World Cup qualification,Bangkok,Thailand,False
 2023-11-16,South Korea,Singapore,5,0,,FIFA World Cup qualification,Seoul,South Korea,False
 2023-11-16,Oman,Taiwan,3,0,,FIFA World Cup qualification,Muscat,Oman,False
 2023-11-16,Malaysia,Kyrgyzstan,4,3,,FIFA World Cup qualification,Kuala Lumpur,Malaysia,False
@@ -5502,7 +5504,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-11-21,Afghanistan,Kuwait,0,4,,FIFA World Cup qualification,Dammam,Saudi Arabia,True
 2023-11-21,Myanmar,North Korea,1,6,,FIFA World Cup qualification,Yangon,Myanmar,False
 2023-11-21,Syria,Japan,0,5,,FIFA World Cup qualification,Jeddah,Saudi Arabia,True
-2023-11-21,China PR,South Korea,0,3,,FIFA World Cup qualification,Shenzhen,China PR,False
+2023-11-21,China,South Korea,0,3,,FIFA World Cup qualification,Shenzhen,China,False
 2023-11-21,Singapore,Thailand,1,3,,FIFA World Cup qualification,Kallang,Singapore,False
 2023-11-21,Taiwan,Malaysia,0,1,,FIFA World Cup qualification,Taipei,Taiwan,False
 2023-11-21,Kyrgyzstan,Oman,1,0,,FIFA World Cup qualification,Bishkek,Kyrgyzstan,False
@@ -5561,7 +5563,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2023-12-02,Solomon Islands,New Caledonia,2,2,,Pacific Games,Solomon Islands,Solomon Islands,False
 2023-12-16,Mexico,Colombia,2,3,,Friendly,Los Angeles,United States,True
 2024-01-01,Japan,Thailand,5,0,,Friendly,Tokyo,Japan,False
-2024-01-01,China PR,Hong Kong,1,2,,Friendly,Abu Dhabi,United Arab Emirates,True
+2024-01-01,China,Hong Kong,1,2,,Friendly,Abu Dhabi,United Arab Emirates,True
 2024-01-02,Indonesia,Libya,0,4,,Friendly,Antalya,Turkey,True
 2024-01-04,Tajikistan,Hong Kong,2,1,,Friendly,Abu Dhabi,United Arab Emirates,True
 2024-01-04,Saudi Arabia,Lebanon,1,0,,Friendly,Doha,Qatar,True
@@ -5601,7 +5603,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-01-12,Qatar,Lebanon,3,0,,AFC Asian Cup,Lusail,Qatar,False
 2024-01-12,Kuwait,Libya,1,3,,Friendly,Cairo,Egypt,True
 2024-01-12,Sweden,Estonia,2,1,,Friendly,Paphos,Cyprus,True
-2024-01-13,China PR,Tajikistan,0,0,,AFC Asian Cup,Doha,Qatar,True
+2024-01-13,China,Tajikistan,0,0,,AFC Asian Cup,Doha,Qatar,True
 2024-01-13,Australia,India,2,0,,AFC Asian Cup,Al Rayyan,Qatar,True
 2024-01-13,Uzbekistan,Syria,0,0,,AFC Asian Cup,Doha,Qatar,True
 2024-01-13,Ivory Coast,Guinea-Bissau,2,0,,African Cup of Nations,Ebimpé,Ivory Coast,False
@@ -5623,7 +5625,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-01-16,Burkina Faso,Mauritania,1,0,,African Cup of Nations,Bouaké,Ivory Coast,True
 2024-01-16,Tunisia,Namibia,0,1,,African Cup of Nations,Korhogo,Ivory Coast,True
 2024-01-16,Mali,South Africa,2,0,,African Cup of Nations,Korhogo,Ivory Coast,True
-2024-01-17,Lebanon,China PR,0,0,,AFC Asian Cup,Doha,Qatar,True
+2024-01-17,Lebanon,China,0,0,,AFC Asian Cup,Doha,Qatar,True
 2024-01-17,Qatar,Tajikistan,1,0,,AFC Asian Cup,Al Khor,Qatar,False
 2024-01-17,Morocco,Tanzania,3,0,,African Cup of Nations,San-Pédro,Ivory Coast,True
 2024-01-17,DR Congo,Zambia,1,1,,African Cup of Nations,San-Pédro,Ivory Coast,True
@@ -5652,7 +5654,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-01-21,South Africa,Namibia,4,0,,African Cup of Nations,Korhogo,Ivory Coast,True
 2024-01-21,Morocco,DR Congo,1,1,,African Cup of Nations,San-Pédro,Ivory Coast,True
 2024-01-21,Zambia,Tanzania,1,1,,African Cup of Nations,San-Pédro,Ivory Coast,True
-2024-01-22,Qatar,China PR,1,0,,AFC Asian Cup,Al Rayyan,Qatar,False
+2024-01-22,Qatar,China,1,0,,AFC Asian Cup,Al Rayyan,Qatar,False
 2024-01-22,Tajikistan,Lebanon,2,1,,AFC Asian Cup,Doha,Qatar,True
 2024-01-22,Guinea-Bissau,Nigeria,0,1,,African Cup of Nations,Abidjan,Ivory Coast,True
 2024-01-22,Ivory Coast,Equatorial Guinea,0,4,,African Cup of Nations,Ebimpé,Ivory Coast,False
@@ -5734,7 +5736,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-03-21,Myanmar,Syria,1,1,,FIFA World Cup qualification,Yangon,Myanmar,False
 2024-03-21,Japan,North Korea,1,0,,FIFA World Cup qualification,Tokyo,Japan,False
 2024-03-21,South Korea,Thailand,1,1,,FIFA World Cup qualification,Seoul,South Korea,False
-2024-03-21,Singapore,China PR,2,2,,FIFA World Cup qualification,Kallang,Singapore,False
+2024-03-21,Singapore,China,2,2,,FIFA World Cup qualification,Kallang,Singapore,False
 2024-03-21,Taiwan,Kyrgyzstan,0,2,,FIFA World Cup qualification,Taipei,Taiwan,False
 2024-03-21,Oman,Malaysia,2,0,,FIFA World Cup qualification,Muscat,Oman,False
 2024-03-21,Iran,Turkmenistan,5,0,,FIFA World Cup qualification,Tehran,Iran,False
@@ -5830,7 +5832,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-03-26,Kuwait,Qatar,1,2,,FIFA World Cup qualification,Al Farwaniyah,Kuwait,False
 2024-03-26,Syria,Myanmar,7,0,,FIFA World Cup qualification,Dammam,Saudi Arabia,True
 2024-03-26,Thailand,South Korea,0,3,,FIFA World Cup qualification,Bangkok,Thailand,False
-2024-03-26,China PR,Singapore,4,1,,FIFA World Cup qualification,Tianjin,China PR,False
+2024-03-26,China,Singapore,4,1,,FIFA World Cup qualification,Tianjin,China,False
 2024-03-26,Kyrgyzstan,Taiwan,5,1,,FIFA World Cup qualification,Bishkek,Kyrgyzstan,False
 2024-03-26,Malaysia,Oman,0,2,,FIFA World Cup qualification,Kuala Lumpur,Malaysia,False
 2024-03-26,Uzbekistan,Hong Kong,3,0,,FIFA World Cup qualification,Tashkent,Uzbekistan,False
@@ -5879,6 +5881,8 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-04-16,Trinidad and Tobago,Guyana,2,0,,Friendly,Port of Spain,Trinidad and Tobago,False
 2024-04-26,Grenada,Saint Vincent and the Grenadines,0,3,,Friendly,Carriacou,Grenada,False
 2024-04-26,Guatemala,Nicaragua,1,1,,Friendly,San Jose,United States,True
+2024-05-21,Galicia,Panama,0,2,,Friendly,Vigo,Spain,False
+2024-05-21,Basque Country,Uruguay,1,1,,Friendly,Bilbao,Spain,False
 2024-05-31,Bolivia,Mexico,0,1,,Friendly,Chicago,United States,True
 2024-05-31,Costa Rica,Uruguay,0,0,,Friendly,San José,Costa Rica,False
 2024-06-01,Greenland,Turkmenistan,0,5,,Friendly,Antalya,Turkey,True
@@ -5928,7 +5932,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-06-06,India,Kuwait,0,0,,FIFA World Cup qualification,Kolkota,India,False
 2024-06-06,Myanmar,Japan,0,5,,FIFA World Cup qualification,Yangon,Myanmar,False
 2024-06-06,North Korea,Syria,1,0,,FIFA World Cup qualification,Vientiane,Laos,True
-2024-06-06,China PR,Thailand,1,1,,FIFA World Cup qualification,Shenyang,China PR,False
+2024-06-06,China,Thailand,1,1,,FIFA World Cup qualification,Shenyang,China,False
 2024-06-06,Singapore,South Korea,0,7,,FIFA World Cup qualification,Kallang,Singapore,False
 2024-06-06,Taiwan,Oman,0,3,,FIFA World Cup qualification,Taipei,Taiwan,False
 2024-06-06,Kyrgyzstan,Malaysia,1,1,,FIFA World Cup qualification,Bishkek,Kyrgyzstan,False
@@ -6047,7 +6051,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-06-11,Japan,Syria,5,0,,FIFA World Cup qualification,Hiroshima,Japan,False
 2024-06-11,North Korea,Myanmar,4,1,,FIFA World Cup qualification,Vientiane,Laos,True
 2024-06-11,Thailand,Singapore,3,1,,FIFA World Cup qualification,Bangkok,Thailand,False
-2024-06-11,South Korea,China PR,1,0,,FIFA World Cup qualification,Seoul,South Korea,False
+2024-06-11,South Korea,China,1,0,,FIFA World Cup qualification,Seoul,South Korea,False
 2024-06-11,Oman,Kyrgyzstan,1,1,,FIFA World Cup qualification,Muscat,Oman,False
 2024-06-11,Malaysia,Taiwan,3,1,,FIFA World Cup qualification,Kuala Lumpur,Malaysia,False
 2024-06-11,Turkmenistan,Hong Kong,0,0,,FIFA World Cup qualification,Ashgabat,Turkmenistan,False
@@ -6220,7 +6224,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-09-05,Iraq,Oman,1,0,,FIFA World Cup qualification,Basra,Iraq,False
 2024-09-05,South Korea,Palestine,0,0,,FIFA World Cup qualification,Seoul,South Korea,False
 2024-09-05,Jordan,Kuwait,1,1,,FIFA World Cup qualification,Amman,Jordan,False
-2024-09-05,Japan,China PR,7,0,,FIFA World Cup qualification,Saitama,Japan,False
+2024-09-05,Japan,China,7,0,,FIFA World Cup qualification,Saitama,Japan,False
 2024-09-05,Australia,Bahrain,0,1,,FIFA World Cup qualification,Robina,Australia,False
 2024-09-05,Saudi Arabia,Indonesia,1,1,,FIFA World Cup qualification,Jeddah,Saudi Arabia,False
 2024-09-06,Syria,Mauritius,2,0,,Intercontinental Cup,Hyderabad,India,True
@@ -6365,7 +6369,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-09-10,Palestine,Jordan,1,3,,FIFA World Cup qualification,Kuala Lumpur,Malaysia,True
 2024-09-10,Bahrain,Japan,0,5,,FIFA World Cup qualification,Riffa,Bahrain,False
 2024-09-10,Indonesia,Australia,0,0,,FIFA World Cup qualification,Jakarta,Indonesia,False
-2024-09-10,China PR,Saudi Arabia,1,2,,FIFA World Cup qualification,Dalian,China PR,False
+2024-09-10,China,Saudi Arabia,1,2,,FIFA World Cup qualification,Dalian,China,False
 2024-09-10,Zimbabwe,Cameroon,0,0,,African Cup of Nations qualification,Kampala,Uganda,True
 2024-10-08,Brunei,Timor-Leste,0,1,,ASEAN Championship qualification,Bandar Seri Begawan,Brunei,False
 2024-10-09,Barbados,United States Virgin Islands,5,0,,CONCACAF Nations League,Bridgetown,Barbados,False
@@ -6407,7 +6411,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-10-10,Oman,Kuwait,4,0,,FIFA World Cup qualification,Muscat,Oman,False
 2024-10-10,Iraq,Palestine,1,0,,FIFA World Cup qualification,Basra,Iraq,False
 2024-10-10,Bahrain,Indonesia,2,2,,FIFA World Cup qualification,Riffa,Bahrain,False
-2024-10-10,Australia,China PR,3,1,,FIFA World Cup qualification,Adelaide,Australia,False
+2024-10-10,Australia,China,3,1,,FIFA World Cup qualification,Adelaide,Australia,False
 2024-10-10,Saudi Arabia,Japan,0,2,,FIFA World Cup qualification,Jeddah,Saudi Arabia,False
 2024-10-11,Cambodia,Taiwan,3,2,,Friendly,Phnom Penh,Cambodia,False
 2024-10-11,Madagascar,Gambia,1,1,,African Cup of Nations qualification,Casablanca,Morocco,True
@@ -6549,7 +6553,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-10-15,Palestine,Kuwait,2,2,,FIFA World Cup qualification,Al Rayyan,Qatar,True
 2024-10-15,South Korea,Iraq,3,2,,FIFA World Cup qualification,Yongin,South Korea,False
 2024-10-15,Japan,Australia,1,1,,FIFA World Cup qualification,Saitama,Japan,False
-2024-10-15,China PR,Indonesia,2,1,,FIFA World Cup qualification,Qingdao,China PR,False
+2024-10-15,China,Indonesia,2,1,,FIFA World Cup qualification,Qingdao,China,False
 2024-10-15,Saudi Arabia,Bahrain,0,0,,FIFA World Cup qualification,Jeddah,Saudi Arabia,False
 2024-10-15,Timor-Leste,Brunei,0,0,,ASEAN Championship qualification,Chonburi,Thailand,True
 2024-11-13,Bangladesh,Maldives,0,1,,Friendly,Dhaka,Bangladesh,False
@@ -6587,7 +6591,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-11-14,Kuwait,South Korea,1,3,,FIFA World Cup qualification,Kuwait City,Kuwait,False
 2024-11-14,Iraq,Jordan,0,0,,FIFA World Cup qualification,Basra,Iraq,False
 2024-11-14,Oman,Palestine,1,0,,FIFA World Cup qualification,Muscat,Oman,False
-2024-11-14,Bahrain,China PR,0,1,,FIFA World Cup qualification,Riffa,Bahrain,False
+2024-11-14,Bahrain,China,0,1,,FIFA World Cup qualification,Riffa,Bahrain,False
 2024-11-14,Australia,Saudi Arabia,0,0,,FIFA World Cup qualification,Melbourne,Australia,False
 2024-11-14,Madagascar,Tunisia,2,3,,African Cup of Nations qualification,Pretoria,South Africa,True
 2024-11-14,Lesotho,Central African Republic,1,0,,African Cup of Nations qualification,Bloemfontein,South Africa,True
@@ -6726,7 +6730,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2024-11-19,Kuwait,Jordan,1,1,,FIFA World Cup qualification,Kuwait City,Kuwait,False
 2024-11-19,Bahrain,Australia,2,2,,FIFA World Cup qualification,Riffa,Bahrain,False
 2024-11-19,Indonesia,Saudi Arabia,2,0,,FIFA World Cup qualification,Jakarta,Indonesia,False
-2024-11-19,China PR,Japan,1,3,,FIFA World Cup qualification,Xiamen,China PR,False
+2024-11-19,China,Japan,1,3,,FIFA World Cup qualification,Xiamen,China,False
 2024-11-19,Egypt,Botswana,1,1,,African Cup of Nations qualification,Cairo,Egypt,False
 2024-11-19,Mauritania,Cape Verde,1,0,,African Cup of Nations qualification,Nouakchott,Mauritania,False
 2024-11-19,Ivory Coast,Chad,4,0,,African Cup of Nations qualification,Abidjan,Ivory Coast,False
@@ -6845,7 +6849,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2025-03-20,Jordan,Palestine,3,1,,FIFA World Cup qualification,Amman,Jordan,False
 2025-03-20,Japan,Bahrain,2,0,,FIFA World Cup qualification,Saitama,Japan,False
 2025-03-20,Australia,Indonesia,5,1,,FIFA World Cup qualification,Sydney,Australia,False
-2025-03-20,Saudi Arabia,China PR,1,0,,FIFA World Cup qualification,Riyadh,Saudi Arabia,False
+2025-03-20,Saudi Arabia,China,1,0,,FIFA World Cup qualification,Riyadh,Saudi Arabia,False
 2025-03-20,Sierra Leone,Guinea-Bissau,3,1,,FIFA World Cup qualification,Monrovia,Liberia,True
 2025-03-20,Zimbabwe,Benin,2,2,,FIFA World Cup qualification,Durban,South Africa,True
 2025-03-20,Cape Verde,Mauritius,1,0,,FIFA World Cup qualification,Praia,Cape Verde,False
@@ -6966,7 +6970,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2025-03-25,South Korea,Jordan,1,1,,FIFA World Cup qualification,Suwon,South Korea,False
 2025-03-25,Kuwait,Oman,0,1,,FIFA World Cup qualification,Kuwait City,Kuwait,False
 2025-03-25,Palestine,Iraq,2,1,,FIFA World Cup qualification,Amman,Jordan,True
-2025-03-25,China PR,Australia,0,2,,FIFA World Cup qualification,Hangzhou,China PR,False
+2025-03-25,China,Australia,0,2,,FIFA World Cup qualification,Hangzhou,China,False
 2025-03-25,Japan,Saudi Arabia,0,0,,FIFA World Cup qualification,Saitama,Japan,False
 2025-03-25,Indonesia,Bahrain,1,0,,FIFA World Cup qualification,Jakarta,Indonesia,False
 2025-03-25,Egypt,Sierra Leone,1,0,,FIFA World Cup qualification,Cairo,Egypt,False
@@ -7036,7 +7040,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2025-06-05,Kuwait,Palestine,0,2,,FIFA World Cup qualification,Kuwait City,Kuwait,False
 2025-06-05,Bahrain,Saudi Arabia,0,2,,FIFA World Cup qualification,Riffa,Bahrain,False
 2025-06-05,Australia,Japan,1,0,,FIFA World Cup qualification,Perth,Australia,False
-2025-06-05,Indonesia,China PR,1,0,,FIFA World Cup qualification,Jakarta,Indonesia,False
+2025-06-05,Indonesia,China,1,0,,FIFA World Cup qualification,Jakarta,Indonesia,False
 2025-06-05,Sri Lanka,Brunei,1,0,,Friendly,Bangkok,Thailand,True
 2025-06-06,Bulgaria,Cyprus,2,2,,Friendly,Plovdiv,Bulgaria,False
 2025-06-06,Burundi,Guinea-Bissau,1,0,,Friendly,Berrechid,Egypt,True
@@ -7144,7 +7148,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2025-06-10,South Korea,Kuwait,4,0,,FIFA World Cup qualification,Seoul,South Korea,False
 2025-06-10,Jordan,Iraq,0,1,,FIFA World Cup qualification,Amman,Jordan,False
 2025-06-10,Palestine,Oman,1,1,,FIFA World Cup qualification,Amman,Jordan,True
-2025-06-10,China PR,Bahrain,1,0,,FIFA World Cup qualification,Chongqing,China PR,False
+2025-06-10,China,Bahrain,1,0,,FIFA World Cup qualification,Chongqing,China,False
 2025-06-10,Japan,Indonesia,6,0,,FIFA World Cup qualification,Suita,Japan,False
 2025-06-10,Saudi Arabia,Australia,1,2,,FIFA World Cup qualification,Jeddah,Saudi Arabia,False
 2025-06-10,Netherlands,Malta,8,0,,FIFA World Cup qualification,Groningen,Netherlands,False
@@ -7196,8 +7200,12 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2025-06-28,Mexico,Saudi Arabia,2,0,,Gold Cup,Glendale,United States,True
 2025-06-29,Canada,Guatemala,1,1,,Gold Cup,Minneapolis,United States,True
 2025-06-29,USA,Costa Rica,2,2,,Gold Cup,Minneapolis,United States,False
+2025-07-01,Tamil Eelam,Tibet,4,0,,CONIFA Asia Cup,London,England,True
 2025-07-02,USA,Guatemala,2,1,,Gold Cup,St. Louis,United States,False
 2025-07-02,Mexico,Honduras,1,0,,Gold Cup,Santa Clara,United States,True
+2025-07-02,Tamil Eelam,East Turkestan,2,1,,CONIFA Asia Cup,London,England,True
+2025-07-03,Tibet,East Turkestan,4,6,,CONIFA Asia Cup,London,England,True
+2025-07-04,Tamil Eelam,East Turkestan,5,0,,CONIFA Asia Cup,London,England,True
 2025-07-06,USA,Mexico,1,2,,Gold Cup,Houston,United States,False
 2025-07-13,Hitra,Isle of Man,2,7,,Island Games,Finstown,Scotland,True
 2025-07-13,Orkney,Frøya,3,0,,Island Games,Kirkwall,Scotland,False
@@ -7633,6 +7641,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2025-11-15,Guyana,Bonaire,2,1,,CONCACAF Series,North Sound,Antigua and Barbuda,True
 2025-11-15,Bahamas,British Virgin Islands,0,6,,CONCACAF Series,George Town,Cayman Islands,True
 2025-11-15,Cayman Islands,Anguilla,4,0,,CONCACAF Series,George Town,Cayman Islands,False
+2025-11-15,Basque Country,Palestine,3,0,,Friendly,Bilbao,Spain,False
 2025-11-16,Nigeria,DR Congo,1,1,,FIFA World Cup qualification,Rabat,Morocco,True
 2025-11-16,Ukraine,Iceland,2,0,,FIFA World Cup qualification,Warsaw,Poland,True
 2025-11-16,Azerbaijan,France,1,3,,FIFA World Cup qualification,Baku,Azerbaijan,False
@@ -7806,7 +7815,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2026-01-18,Grenada,Jamaica,0,1,,Friendly,St. George's,Grenada,False
 2026-01-22,Panama,Mexico,0,1,,Friendly,Panama City,Panama,False
 2026-01-25,Bolivia,Mexico,0,1,,Friendly,Santa Cruz,Bolivia,False
-2026-01-26,Uzbekistan,China PR,2,2,,Friendly,Dubai,United Arab Emirates,True
+2026-01-26,Uzbekistan,China,2,2,,Friendly,Dubai,United Arab Emirates,True
 2026-02-25,Mexico,Iceland,4,0,,Friendly,Querétaro,Mexico,False
 2026-03-15,Bolivia,Trinidad and Tobago,3,0,,Friendly,Santa Cruz,Bolivia,False
 2026-03-25,Bermuda,DR Congo,0,2,,Friendly,Zapopan,Mexico,True
@@ -7856,7 +7865,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2026-03-27,Switzerland,Germany,3,4,,Friendly,Basel,Switzerland,False
 2026-03-27,Costa Rica,Jordan,2,2,,Friendly,Antalya,Turkey,True
 2026-03-27,Iran,Nigeria,1,2,,Friendly,Antalya,Turkey,True
-2026-03-27,China PR,Curaçao,2,0,,FIFA Series,Sydney,Australia,True
+2026-03-27,China,Curaçao,2,0,,FIFA Series,Sydney,Australia,True
 2026-03-27,Australia,Cameroon,1,0,,FIFA Series,Sydney,Australia,False
 2026-03-27,Azerbaijan,Saint Lucia,6,1,,FIFA Series,Sumgait,Azerbaijan,False
 2026-03-27,Solomon Islands,Bulgaria,2,10,,FIFA Series,Jakarta,Indonesia,True
@@ -7948,6 +7957,125 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2026-03-31,Sweden,Poland,3,2,,FIFA World Cup qualification,Solna,Sweden,False
 2026-03-31,Kosovo,Turkey,0,1,,FIFA World Cup qualification,Pristina,Kosovo,False
 2026-03-31,Czech Republic,Denmark,2,2,,FIFA World Cup qualification,Prague,Czech Republic,False
-2026-03-31,Cameroon,China PR,2,0,,FIFA Series,Melbourne,Australia,True
+2026-03-31,Cameroon,China,2,0,,FIFA Series,Melbourne,Australia,True
 2026-03-31,Australia,Curaçao,5,1,,FIFA Series,Melbourne,Australia,False
 2026-03-31,Kazakhstan,Comoros,1,0,,FIFA Series,Astana,Kazakhstan,False
+2026-05-16,Ireland,Grenada,5,0,,Friendly,Murcia,Spain,True
+2026-05-22,Mexico,Ghana,2,0,,Friendly,Puebla,Mexico,False
+2026-05-26,Morocco,Burundi,5,0,,Friendly,Salé,Morocco,False
+2026-05-26,Nigeria,Zimbabwe,2,0,,Unity Cup,London,England,True
+2026-05-27,India,Jamaica,0,2,,Unity Cup,London,England,True
+2026-05-28,Ireland,Qatar,1,0,,Friendly,Dublin,Republic of Ireland,False
+2026-05-28,Egypt,Russia,1,0,,Friendly,Cairo,Egypt,False
+2026-05-29,Andorra,Iraq,0,1,,Friendly,Girona,Spain,True
+2026-05-29,Bosnia and Herzegovina,North Macedonia,0,0,,Friendly,Sarajevo,Bosnia and Herzegovina,False
+2026-05-29,Iran,Gambia,3,1,,Friendly,Aksu,Turkey,True
+2026-05-29,South Africa,Nicaragua,0,0,,Friendly,Johannesburg,South Africa,False
+2026-05-30,Ecuador,Saudi Arabia,2,1,,Friendly,Harrison,United States,True
+2026-05-30,South Korea,Trinidad and Tobago,5,0,,Friendly,Provo,United States,True
+2026-05-30,Mexico,Australia,1,0,,Friendly,Pasadena,United States,True
+2026-05-30,Scotland,Curaçao,4,1,,Friendly,Glasgow,Scotland,False
+2026-05-30,Zimbabwe,India,1,0,,Unity Cup,London,England,True
+2026-05-30,Nigeria,Jamaica,3,0,,Unity Cup,London,England,True
+2026-05-31,Brazil,Panama,6,2,,Friendly,Rio de Janeiro,Brazil,False
+2026-05-31,Cape Verde,Serbia,3,0,,Friendly,Lisbon,Portugal,True
+2026-05-31,Czech Republic,Kosovo,2,1,,Friendly,Prague,Czech Republic,False
+2026-05-31,Germany,Finland,4,0,,Friendly,Mainz,Germany,False
+2026-05-31,Poland,Ukraine,0,2,,Friendly,Wrocław,Poland,False
+2026-05-31,Singapore,Mongolia,4,0,,Friendly,Singapore,Singapore,False
+2026-05-31,Switzerland,Jordan,4,1,,Friendly,St. Gallen,Switzerland,False
+2026-05-31,USA,Senegal,3,2,,Friendly,Charlotte,United States,False
+2026-05-31,Japan,Iceland,1,0,,Friendly,Tokyo,Japan,False
+2026-06-01,Austria,Tunisia,1,0,,Friendly,Vienna,Austria,False
+2026-06-01,Bulgaria,Montenegro,0,1,,Friendly,Plovdiv,Bulgaria,False
+2026-06-01,Canada,Uzbekistan,2,0,,Friendly,Edmonton,Canada,False
+2026-06-01,Colombia,Costa Rica,3,1,,Friendly,Bogota,Colombia,False
+2026-06-01,Norway,Sweden,3,1,,Friendly,Oslo,Norway,False
+2026-06-01,Slovakia,Malta,2,1,,Friendly,Dunajská Streda,Slovakia,False
+2026-06-01,Turkey,North Macedonia,4,0,,Friendly,Istanbul,Turkey,False
+2026-06-01,Maldives,Afghanistan,0,1,,Diamond Jubilee International Football Tournament,Malé,Maldives,False
+2026-06-02,Croatia,Belgium,0,2,,Friendly,Rijeka,Croatia,False
+2026-06-02,Georgia,Romania,1,1,,Friendly,Tbilisi,Georgia,False
+2026-06-02,Haiti,New Zealand,4,0,,Friendly,Fort Lauderdale,United States,True
+2026-06-02,Morocco,Madagascar,4,0,,Friendly,Rabat,Morocco,False
+2026-06-02,Wales,Ghana,1,1,,Friendly,Cardiff,Wales,False
+2026-06-03,Albania,Israel,0,1,,Friendly,Tirana,Albania,False
+2026-06-03,DR Congo,Denmark,0,0,,Friendly,Liège,Belgium,True
+2026-06-03,Gibraltar,British Virgin Islands,4,0,,Friendly,Europa Point,Gibraltar,False
+2026-06-03,South Korea,El Salvador,1,0,,Friendly,Provo,United States,True
+2026-06-03,Luxembourg,Italy,0,1,,Friendly,Luxembourg,Luxembourg,False
+2026-06-03,Netherlands,Algeria,0,1,,Friendly,Rotterdam,Netherlands,False
+2026-06-03,Panama,Dominican Republic,4,2,,Friendly,Panama City,Panama,False
+2026-06-03,Poland,Nigeria,2,2,,Friendly,Warsaw,Poland,False
+2026-06-03,Philippines,Guam,5,1,,Friendly,Manila,Philippines,False
+2026-06-01,Maldives,Pakistan,0,3,,Diamond Jubilee International Football Tournament,Malé,Maldives,False
+2026-06-04,Andorra,Liechtenstein,2,0,,Friendly,Encamp,Andorra,False
+2026-06-04,Cambodia,Bhutan,4,0,,Friendly,Phnom Penh,Cambodia,False
+2026-06-04,France,Ivory Coast,1,2,,Friendly,Nantes,France,False
+2026-06-04,Guatemala,Czech Republic,1,5,,Friendly,Harrison,United States,True
+2026-06-04,Iran,Mali,2,0,,Friendly,Antalya,Turkey,True
+2026-06-04,Lesotho,Kenya,1,1,,Friendly,Pretoria,South Africa,True
+2026-06-04,Mexico,Serbia,5,1,,Friendly,Toluca,Mexico,False
+2026-06-04,Northern Ireland,Guinea,1,0,,Friendly,La Línea de la Concepción,Spain,True
+2026-06-04,Slovenia,Cyprus,1,1,,Friendly,Ljubljana,Slovenia,False
+2026-06-04,Spain,Iraq,1,1,,Friendly,La Coruna,Spain,False
+2026-06-04,Sweden,Greece,2,2,,Friendly,Solna,Sweden,False
+2026-06-05,Angola,Mauritania,1,1,,Friendly,Casablanca,Morocco,True
+2026-06-05,Azerbaijan,Malta,0,2,,Friendly,Szombathely,Hungary,True
+2026-06-05,Belarus,Syria,4,1,,Friendly,Minsk,Belarus,False
+2026-06-05,Canada,Ireland,1,1,,Friendly,Montreal,Canada,False
+2026-06-05,Georgia,Bahrain,2,0,,Friendly,Tbilisi,Georgia,False
+2026-06-05,Haiti,Peru,1,2,,Friendly,Miami,United States,True
+2026-06-05,Hong Kong,Mongolia,2,0,,Friendly,Hong Kong,Hong Kong,False
+2026-06-05,Hungary,Finland,2,1,,Friendly,Budapest,Hungary,False
+2026-06-05,Indonesia,Oman,3,0,,Friendly,Jakarta,Indonesia,False
+2026-06-05,Moldova,Bulgaria,2,2,,Friendly,Chișinău,Moldova,False
+2026-06-05,Paraguay,Nicaragua,4,0,,Friendly,Asunción,Paraguay,False
+2026-06-05,San Marino,Bangladesh,1,2,,Friendly,Serravalle,San Marino,False
+2026-06-05,Singapore,China,1,2,,Friendly,Singapore,Singapore,False
+2026-06-05,Slovakia,Montenegro,2,2,,Friendly,Košice,Slovakia,False
+2026-06-05,Tajikistan,India,3,1,,Friendly,Tursunzade,Tajikistan,False
+2026-06-05,Thailand,Kuwait,2,2,,Friendly,Pathum Thani,Thailand,False
+2026-06-05,Russia,Burkina Faso,3,0,,Friendly,Volgograd,Russia,False
+2026-06-05,Benin,Niger,1,1,,Friendly,Casablanca,Morocco,True
+2026-06-05,Central African Republic,Togo,1,1,,Friendly,Mohammedia,Morocco,True
+2026-06-05,Puerto Rico,Saudi Arabia,0,3,,Friendly,Austin,United States,True
+2026-06-06,Vanuatu,Fiji,2,1,,Friendly,Port Vila,Vanuatu,False
+2026-06-06,Albania,Luxembourg,0,1,,Friendly,Tirana,Albania,False
+2026-06-06,Argentina,Honduras,2,0,,Friendly,College Station,United States,True
+2026-06-06,Armenia,Kazakhstan,1,1,,Friendly,Yerevan,Armenia,False
+2026-06-06,Australia,Switzerland,1,1,,Friendly,San Diego,United States,True
+2026-06-06,Belgium,Tunisia,5,0,,Friendly,Brussels,Belgium,False
+2026-06-06,Bermuda,Cape Verde,3,0,,Friendly,East Hartford,United States,True
+2026-06-06,Bolivia,Scotland,0,4,,Friendly,Harrison,United States,True
+2026-06-06,Brazil,Egypt,2,1,,Friendly,Cleveland,United States,True
+2026-06-06,Curaçao,Aruba,4,0,,Friendly,Willemstad,Curaçao,False
+2026-06-06,England,New Zealand,1,0,,Friendly,Tampa,United States,True
+2026-06-06,Sierra Leone,Liberia,1,0,,Friendly,Bo,Sierra Leone,False
+2026-06-06,Ethiopia,Malawi,1,0,,Friendly,Dire Dawa,Ethiopia,False
+2026-06-06,Gibraltar,Cayman Islands,4,1,,Friendly,Gibraltar,Gibraltar,False
+2026-06-06,Jamaica,South Africa,0,1,,Friendly,Pachua,Mexico,True
+2026-06-06,Kyrgyzstan,Palestine,0,0,,Friendly,Bishkek,Kyrgyzstan,False
+2026-06-06,Panama,Bosnia and Herzegovina,1,1,,Friendly,St Louis,United States,True
+2026-06-06,Portugal,Chile,2,1,,Friendly,Oeiras,Portugal,False
+2026-06-06,Qatar,El Salvador,0,0,,Friendly,Los Angeles,United States,True
+2026-06-06,Romania,Wales,2,1,,Friendly,Bucharest,Romania,False
+2026-06-06,USA,Germany,1,2,,Friendly,Chicago,United States,False
+2026-06-06,British Virgin Islands,Bonaire,2,0,,Friendly,Malaga,Spain,True
+2026-06-06,Venezuela,Turkey,1,2,,Friendly,Fort Lauderdale,United States,True
+2026-06-06,Myanmar,Guam,6,1,,Tri-Nations Cup,Manila,Philippines,True
+2026-06-06,Lithuania,Latvia,1,1,,Baltic Cup,Kaunas,Lithuania,False
+2026-06-06,Estonia,Faroe Islands,1,0,,Baltic Cup,Pärnu,Estonia,False
+2026-06-07,Afghanistan,Pakistan,0,2,,Diamond Jubilee International Football Tournament,Malé,Maldives,False
+2026-06-07,Croatia,Slovenia,2,1,,Friendly,Varaždin,Croatia,False
+2026-06-07,Ecuador,Guatemala,3,0,,Friendly,Columbus,United States,True
+2026-06-07,Greece,Italy,0,1,,Friendly,Heraklion,Greece,False
+2026-06-07,Jordan,Colombia,0,2,,Friendly,San Diego,United States,True
+2026-06-07,Kosovo,Andorra,3,0,,Friendly,Pristina,Kosovo,False
+2026-06-07,Liechtenstein,Cyprus,0,2,,Friendly,Vaduz,Liechtenstein,False
+2026-06-07,Morocco,Norway,1,1,,Friendly,Harrison,United States,True
+2026-06-07,Denmark,Ukraine,2,1,,Friendly,Odense,Denmark,False
+2026-06-08,France,Northern Ireland,3,1,,Friendly,Lille,France,False
+2026-06-08,Netherlands,Uzbekistan,2,1,,Friendly,New York,United States,True
+2026-06-08,Peru,Spain,1,3,,Friendly,Puebla,Mexico,True
+2026-06-08,Mauritania,Niger,1,0,,Friendly,Casablanca,Morocco,True

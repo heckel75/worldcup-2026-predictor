@@ -5,10 +5,10 @@
   "date": "2026-06-24",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 17.1,
-  "input_hash": "c3dc568b70abfc556a7c577e54c86b946298fb70",
-  "generated_at": "2026-05-27T10:20:55+00:00",
+  "max_gap_pp": 15.1,
+  "input_hash": "a3c0222712473b1b6834944213abcb18b0a6d12a",
+  "generated_at": "2026-06-09T10:03:30+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns South Korea a 44% win probability versus the model's 62%, a 18-percentage-point gap favoring the underdog narrative in the sportsbook consensus. This hedging pattern—where the market flattens the favorite's odds relative to the model—typically reflects real-money flows responding to recent lineup changes, injury concerns, or form shifts that the model's last update may not capture. The model operates on static ratings and cannot see breaking news; the market prices dynamically. Both sources agree South Korea is favored, but the market's caution on that advantage warrants attention as a signal that something may have shifted since the model was trained. Neither reading should be treated as definitive; the gap itself is the story worth monitoring."
+  "commentary_text": "The model assigns South Korea a 62% win probability, but the sportsbook consensus drops this to 47%, a gap of 15 percentage points favoring the market's hedge toward South Africa and the draw. This widening of uncertainty from model to market typically reflects information the statistical forecast cannot capture—recent lineup changes, injury reports, or form shifts in the weeks before the match. The market's willingness to shorten South Korea's edge suggests real-money flows are pricing in possibilities outside the model's training data. The dashboard flags this as a notable signal: one source sees a clearer favorite, the other sees a more competitive match, but neither framing has been validated."
 }

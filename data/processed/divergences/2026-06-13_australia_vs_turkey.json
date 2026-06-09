@@ -4,11 +4,11 @@
   "away_team": "Turkey",
   "date": "2026-06-13",
   "kind": "commentary",
-  "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 19.2,
-  "input_hash": "7cd7f6a39d7d19c79a51c57f9717af49049af8dd",
-  "generated_at": "2026-05-27T10:20:39+00:00",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 19.5,
+  "input_hash": "46799def7ed8a9fa7221a24469fba80b5598e3e4",
+  "generated_at": "2026-06-09T10:02:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 35% while the market favors Turkey at 52%, a 19-percentage-point gap on the Turkey win. The draw sits between them: the model places it at 32% versus the market's 27%. The scale of disagreement on Turkey suggests the market is pricing in information the model cannot access—recent form swings, lineup changes, or injury developments among the squad since the model's last update. The dashboard flags this as a genuine signal of divergence rather than endorsement of either forecast."
+  "commentary_text": "The market assigns Turkey a 56% win probability versus the model's 36%, a 20 percentage-point gap favoring the underdog in the model. Both sources rank Turkey as favorite, but the market is substantially more confident. This divergence could reflect recent form, lineup availability, or injury status unknown to the model's Elo framework—information flowing into sportsbooks and traders in real time. The dashboard flags this as a signal worth monitoring: either the market has spotted something the model cannot see, or the model's structural estimate is holding against real-money pressure. Neither reading is certain from the numbers alone."
 }

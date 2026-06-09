@@ -5,10 +5,10 @@
   "date": "2026-06-13",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 22.3,
-  "input_hash": "24e77dea9e3b711b56eb3ddc9a659eb7fd1f92d4",
-  "generated_at": "2026-05-20T12:46:37+00:00",
+  "max_gap_pp": 19.1,
+  "input_hash": "2aba8ba4bedb98da88ed7173416e70617ed9668f",
+  "generated_at": "2026-06-09T10:02:43+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Brazil a 59% win probability versus the model's 37%, a 22-percentage-point gap favoring the home side. This confidence gap could reflect recent form, injury status, or lineup availability that the model has not yet incorporated. Morocco's win probability shows an even starker divergence—the market prices it at 17% while the model sees 32%, suggesting the market may have information about readiness or personnel that substantially weakens Morocco's prospects. The dashboard flags this as a signal: both sources agree Brazil is favored, but the sportsbooks are pricing a more decisive edge, warranting attention to lineup and form data released near kickoff."
+  "commentary_text": "The sportsbooks price Brazil to win at 58%, nearly 20 percentage points higher than the model's 38%. Both sources agree Brazil is favored, but the market has substantially sharpened that conviction while also compressing the draw probability down to 25% from the model's 32%. The gap on Morocco is similarly wide: the model sees a 30% win probability versus the market's 17%. Recent form, lineup changes, or injury status could all explain why real-money flows are backing Brazil more decisively than the statistical model suggests; the model has no access to such information. The divergence signals a meaningful disagreement worth tracking, though it reflects different information sets rather than offering a judgment on which view is correct."
 }

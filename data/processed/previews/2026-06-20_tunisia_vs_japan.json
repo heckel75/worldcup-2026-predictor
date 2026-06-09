@@ -3,9 +3,9 @@
   "home_team": "Tunisia",
   "away_team": "Japan",
   "date": "2026-06-20",
-  "input_hash": "7b6bdc97712daf8ba3940860663bab8460f01ddb",
-  "generated_at": "2026-05-19T13:45:29+00:00",
+  "input_hash": "0847d99de33cdae38f6baa8204b9f62f382479bf",
+  "generated_at": "2026-06-09T10:00:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Japan with a 69% win probability, substantially ahead of Tunisia's 9% chance. This gap reflects a decisive asymmetry in the forecast, though the 22% draw probability suggests the match carries meaningful uncertainty despite the clear favorite.\n\nThe outcome distribution shows Japan as the likely winner, but the draw sits at nearly one-quarter of all outcomes, indicating competitive conditions are plausible. Tunisia's path to victory is narrow in the model's view, yet the combined non-Japan probability (31%) is not negligible, meaning upsets or stalemates remain within the realm of statistical possibility.\n\nThe model and sportsbook consensus diverge materially across all three outcomes. The market assigns Tunisia 20.6% (12 percentage points higher than the model), draw 28.3% (6pp higher), and Japan 51.1% (18pp lower). The gap suggests the books view this as a more open contest. The dashboard does not claim to know which assessment is correct; this divergence warrants attention from users calibrating their own views."
+  "preview_text": "Japan enters as the model's clear favorite with a 71% win probability, while Tunisia's chances stand at 8%. The gap reflects a substantial disparity in the forecast; Japan is favored by a decisive margin.\n\nThe model's spread suggests a competitive but unbalanced match. A draw at 21% is far from negligible and ranks as the second-most likely outcome, indicating Tunisia can contain Japan for 90 minutes. However, Japan's win probability towers above both alternatives, pointing to a fixture where the favorite is expected to control proceedings and convert that dominance into three points.\n\nThe model and market diverge meaningfully here. The sportsbook consensus credits Tunisia with 19% win odds—more than double the model's 8%—and assigns Japan only 54%, a 17-percentage-point gap below the statistical forecast. Polymarket prices fall between the two, closer to the books. The dashboard makes no claim about which assessment is correct; the disagreement flags that Tunisia's true strength may exceed what the model's historical data suggests."
 }

@@ -5,10 +5,10 @@
   "date": "2026-06-14",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 15.5,
-  "input_hash": "2ae1a107fdfa234557c95fc0e3ade0d215332cea",
-  "generated_at": "2026-05-27T10:20:41+00:00",
+  "max_gap_pp": 15.7,
+  "input_hash": "f44c339e35ab71c48d7aead17e0aaf9edec659cd",
+  "generated_at": "2026-06-09T10:02:52+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Ecuador at 57% while the market holds them at 41%, a 16-percentage-point gap on the favorite outcome. This narrowing of confidence in Ecuador's advantage, paired with the market's tilt toward the draw (32% vs. 27%), suggests sportsbooks may be pricing in information absent from the model's last update—recent lineup changes, injury news, or unexpected shifts in form from either side. The model relies on Elo ratings and historical goal patterns; the market sees real-money flows reflecting current squad status. Both sources agree Ecuador are favored, but the dashboard flags this as a genuine divergence worth monitoring before kickoff."
+  "commentary_text": "The model rates Ecuador as a strong favorite at 55%, but the market compresses that to 40%, a 15 percentage-point gap on the Ecuador win. The model's higher confidence in an Ecuador victory could reflect differences in how recent form, injuries, or lineup changes factor into the two forecasts. The sportsbook consensus and Polymarket both lean Ecuador but substantially hedge toward the draw and Ivory Coast win, suggesting real-money flows may be pricing in near-term information the statistical model cannot access. The dashboard flags this as a signal worth monitoring rather than evidence that either source has mispriced the outcome."
 }

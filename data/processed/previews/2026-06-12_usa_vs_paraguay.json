@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Paraguay",
   "date": "2026-06-12",
-  "input_hash": "76e6b1fd2f2f3e424bfe99a7d65e9eff499d7a20",
-  "generated_at": "2026-05-31T11:57:53+00:00",
+  "input_hash": "8490ddc7a5220208a3f119728868fb0537727aee",
+  "generated_at": "2026-06-09T09:57:52+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates USA as the narrow favorite at 45% to win, with Paraguay at 24% and a draw standing at 31%. USA edges the underdog but holds no dominant edge in this neutral-venue fixture.\n\nThe predicted outcome distribution suggests competitive balance. The 21-point spread between USA's best chance and Paraguay's win probability leaves room for an upset, while the draw probability of 31% indicates the match could plausibly end level. A one-goal margin separates the modal outcomes rather than a commanding gap.\n\nModel and sportsbook are closely aligned across all three outcomes. The market assigns USA 48%, Paraguay 25%, and a draw 27%—gaps of 3 percentage points or less on each line. Both sources view this as genuinely competitive, with modest odds favoring the USA side. No strong disagreement exists between the forecast and consensus."
+  "preview_text": "The model favors the USA at 44%, with Paraguay trailing at 25%. The underdog's path to victory is narrow but not negligible, sitting roughly nine percentage points behind the favorite in the model's assessment.\n\nThe draw probability of 31% suggests a fairly competitive encounter. The gap between a USA win and a draw is modest, indicating the model sees this match as capable of producing either a home-side victory or a stalemate with meaningful likelihood. Paraguay's upside remains constrained but reflects a non-trivial chance of an upset or a low-scoring result.\n\nThe model and market are closely aligned across all three outcomes. The sportsbook consensus puts the USA slightly higher at 48% and Paraguay slightly lower at 24%, but these gaps of roughly four percentage points fall well within typical variance between independent forecasting approaches. Polymarket prices track similarly. No material disagreement exists between sources."
 }

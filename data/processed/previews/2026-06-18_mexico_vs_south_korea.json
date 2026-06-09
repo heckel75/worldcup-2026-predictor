@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "South Korea",
   "date": "2026-06-18",
-  "input_hash": "db878762677c80ee32288735e8fc77c9264af1bb",
-  "generated_at": "2026-05-31T11:57:57+00:00",
+  "input_hash": "5af31bdca8a36415c3c33b73689150a2480aaa3b",
+  "generated_at": "2026-06-09T09:59:25+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Mexico at 58%, a meaningful advantage over South Korea's 14% win probability. The gap reflects a substantial disparity in the forecast, with Mexico considered the clear favorite in this neutral-venue matchup.\n\nThe expected distribution suggests a competitive match with a plausible draw outcome at 28%. Mexico's win probability exceeds the combined underdog scenarios, but the draw sits at roughly one-quarter likelihood, indicating the fixture is not a runaway prediction. The margin between favorite and underdog is wide enough to establish direction, though the draw probability keeps the result genuinely open.\n\nThe model and sportsbook diverge meaningfully on South Korea's chances. The model assigns 14% to a South Korean win; the market consensus is 22%, a gap of 8 percentage points. Both sources agree Mexico enters as favorite and a draw is plausible, but the market rates South Korea's upset probability substantially higher than the model does. No Polymarket consensus is yet available."
+  "preview_text": "The model favors Mexico at 60%, compared to South Korea's 12% win probability. This marks a substantial gap, positioning Mexico as the clear favorite on the statistical forecast while assigning the underdog less than one-in-eight odds of victory.\n\nThe 27% draw probability suggests this match carries meaningful competitive uncertainty despite the win-probability gap. The spread between a Mexico win and a draw is modest—roughly 33 percentage points—indicating the model expects a fairly open contest that could settle either way. South Korea's 13% win chance, though low, is not negligible enough to render an upset implausible.\n\nThe model and market diverge notably on Mexico's chances. The sportsbook consensus sits at 52%, approximately 8 percentage points below the model's 60%. The market aligns closely on the draw at 27% and rates South Korea's prospects slightly higher at 21% compared to the model's 13%. These differences suggest the market is pricing more competitive odds than the statistical forecast, though both sources agree on Mexico's general favoritism. The dashboard does not claim certainty about which assessment is correct."
 }

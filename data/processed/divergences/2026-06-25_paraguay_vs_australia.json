@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 19.7,
-  "input_hash": "8e28629392b7f542759881ef34dc4a54c7aef3e4",
-  "generated_at": "2026-05-27T10:20:58+00:00",
+  "max_gap_pp": 17.8,
+  "input_hash": "234b943183ecb2a07e1d058e9c0e2f5266f73ba8",
+  "generated_at": "2026-06-09T10:03:35+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 46%, while the market favors Paraguay at 44%. The sharpest single gap lies on the Paraguay win: the market prices it 20 percentage points higher than the model. This divergence could reflect recent form, injuries, or lineup changes that have shifted since the model's last update, or it may signal that real-money flows are pricing in information the model cannot access. The dashboard surfaces both views without adjudicating which is more reliable."
+  "commentary_text": "The model favors Australia at 44%, while the sportsbook consensus favors Paraguay at 44%, creating a structural inversion of who is likeliest to win. The gap on the Paraguay win is 18 percentage points, with the market pricing it substantially higher than the model's estimate. This kind of divergence could reflect recent lineup changes, injury news, or form shifts that the model has not yet incorporated into its Elo-based ratings. The dashboard flags this as a notable signal—two well-resourced forecasting approaches naming different favorites—without adjudicating which captures the true probabilities."
 }

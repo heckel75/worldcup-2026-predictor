@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Curaçao",
   "date": "2026-06-20",
-  "input_hash": "4d27618087ea545255294d2a3e63b3c8f990cc0a",
-  "generated_at": "2026-05-27T10:18:29+00:00",
+  "input_hash": "bba28f596d846129cc95f25a26244eea43443fdf",
+  "generated_at": "2026-06-09T09:59:57+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Ecuador at 82%, assigning Curaçao only a 2% chance of victory. This reflects a stark asymmetry: Ecuador enters as a heavy favorite, while an upset ranks among the least likely outcomes in the forecast set.\n\nThe spread across outcomes—win, draw, loss—reveals a match tilted decisively toward one competitor. A draw sits at 17%, making it the only realistic alternative to an Ecuador win. Curaçao's path to points is narrow; the model estimates the contest will be competitive in structure but lopsided in likely outcome.\n\nThe sportsbook consensus diverges from the model on Curaçao's prospects. Books assign the underdog 8%, a gap of 6 percentage points above the model's 2%. Ecuador's win probability aligns more closely, with the market at 76% versus the model at 82%—a 6-point difference in the opposite direction. The dashboard does not adjudicate between these views; both reflect legitimate inference from incomplete information."
+  "preview_text": "The model favors Ecuador to win with a probability of 83%, leaving Curaçao with just a 1% chance of victory. This represents a heavily lopsided matchup in Ecuador's favor, though the sportsbook consensus assigns Curaçao a notably higher win probability of 7%.\n\nEcuador's dominance in the model's forecast is further underscored by the draw probability of 16%, indicating that while a stalemate is plausible, an upset is treated as nearly implausible. The spread between Ecuador and Curaçao win chances is extreme, suggesting the model expects Ecuador to control possession and scoring opportunity substantially.\n\nThe model and market diverge meaningfully on this match. Sportsbooks price Curaçao's win probability at 7%, compared to the model's 1%—a gap of 6 percentage points. Polymarket consensus lands between the two, at 7%. The dashboard does not claim to know whether sportsbooks are correctly hedging tail risk or overvaluing the underdog; the discrepancy warrants attention for traders."
 }

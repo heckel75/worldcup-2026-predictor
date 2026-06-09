@@ -3,9 +3,9 @@
   "home_team": "Czech Republic",
   "away_team": "South Africa",
   "date": "2026-06-18",
-  "input_hash": "c4f343728c354449bede1154a8f3f8ea478a4b9f",
-  "generated_at": "2026-05-27T10:17:58+00:00",
+  "input_hash": "c419bf45bb5412a0f0fe7decf84652fed1db35a6",
+  "generated_at": "2026-06-09T09:59:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Czech Republic at 51%, with South Africa given a 19% chance of victory. The 32-percentage-point gap reflects a clear home-field advantage in the model's assessment, though South Africa remains plausible as an underdog.\n\nThe 30% draw probability signals a moderately competitive match. Czech Republic is the statistical favorite, but the spread across outcomes—no single result dominating—suggests the contest carries genuine uncertainty. A stalemate ranks as the second-likeliest outcome, indicating the teams are not far apart in attacking or defensive capacity by the model's measure.\n\nThe model and sportsbook consensus diverge noticeably. Books assign Czech Republic 6 percentage points less winning probability than the model, while crediting South Africa 5.6 points more. The draw estimate is nearly identical across both sources. No Polymarket contract exists yet for this fixture."
+  "preview_text": "The model favors Czech Republic at 54% to win, with South Africa's chances at 17%. The underdog trails by a substantial margin in the statistical forecast, though not by enough to render the contest one-sided on a neutral pitch.\n\nThe draw probability of 29% sits near parity with either team's outright victory, suggesting competitive balance in the win-or-lose scenario. The spread across outcomes reflects a moderately decisive lean toward Czech Republic rather than a heavily skewed result, leaving plausible paths to all three outcomes.\n\nThe model and sportsbook consensus diverge noticeably on the favorites. The model assigns Czech Republic 54%, while the combined market view (sportsbooks and Polymarket) clusters around 48–49%. That 5–6 percentage point gap favors the model's confidence in Czech Republic. Both sources agree a draw near 28–29% is likely and South Africa's chances remain limited, though the market slightly elevates them to 22–23% versus the model's 17%."
 }

@@ -3,9 +3,9 @@
   "home_team": "Iran",
   "away_team": "New Zealand",
   "date": "2026-06-15",
-  "input_hash": "6670246e2afff5641937b6800e90c258ed0199dd",
-  "generated_at": "2026-05-27T10:17:29+00:00",
+  "input_hash": "3ff18cb47f0354d506a2f343e3c1ed54c7e59db5",
+  "generated_at": "2026-06-09T09:58:35+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Iran at 60%, compared to New Zealand's 12% win probability. This represents a substantial gap: Iran is rated as a heavy favorite, while the underdog's path to victory is narrow. The draw stands at 27% in the model's view, offering a significant alternative outcome.\n\nThe spread reflects a competitive but lopsided match in the model's assessment. A New Zealand win remains possible but unlikely; Iran's advantage is pronounced without being overwhelming. The 27% draw probability suggests the match could resolve to a stalemate at meaningful frequency, though Iran's outright victory is the single likeliest outcome.\n\nModel and market diverge notably on the tail outcomes. Both agree on the draw (27%), but the sportsbook consensus credits New Zealand with a 9 percentage point higher win probability (22% vs. 12%), while assigning Iran 9 points lower (51% vs. 60%). The dashboard does not adjudicate which assessment is more accurate. No Polymarket consensus is available yet."
+  "preview_text": "The model favors Iran at 65%, giving New Zealand only a 10% chance of victory. This represents a decisive lean toward the higher-seeded team, with the underdog facing a steep probability hill despite the neutral venue.\n\nThe expected match shape reflects moderate-to-strong separation between the sides. Iran's draw probability of 25% suggests competitive balance exists but that outright Iranian superiority is the modal outcome. New Zealand's 10% win probability indicates a scenario where the favorites falter significantly, not a genuinely even contest.\n\nModel and market diverge meaningfully here. The model backs Iran by 14 percentage points; sportsbooks and Polymarket cluster around 50% for Iran, closer to parity. The gap widens on New Zealand—the model gives 10%, while books and crypto markets align near 21%. This suggests the market prices substantially more uncertainty or New Zealand strength than the statistical model does. The dashboard does not adjudicate between these views."
 }

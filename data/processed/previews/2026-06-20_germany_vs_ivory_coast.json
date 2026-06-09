@@ -3,9 +3,9 @@
   "home_team": "Germany",
   "away_team": "Ivory Coast",
   "date": "2026-06-20",
-  "input_hash": "89353c644250c903f38f14a7966a88837cbd6ec7",
-  "generated_at": "2026-05-27T10:18:25+00:00",
+  "input_hash": "94f44fc1013f8aba72b555672fce9394018dd489",
+  "generated_at": "2026-06-09T09:59:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Germany enters as the model's clear favorite with a 61% win probability, while Ivory Coast holds a 12% chance of victory. The 49 percentage point gap reflects an asymmetric matchup, though the underdog retains a plausible path to points.\n\nThe draw carries meaningful weight at 27%, suggesting the match could settle at parity despite Germany's edge. The model's spread—dominated by a German win but with a substantial draw share—indicates a competitive contest where a stalemate is nearly as probable as an upset. Ivory Coast's 12% win rate reflects their underdog status without eliminating their chances entirely.\n\nThe model and sportsbooks show broad alignment. Germany's win probability differs by 3 percentage points; the draw by 3 points as well. The notable divergence lies with Ivory Coast, where books price them 6 percentage points higher than the model. The dashboard makes no claim about which assessment is more accurate; the gap warrants attention for those comparing forecasts to available odds. No Polymarket data is yet available for this fixture."
+  "preview_text": "The model rates Germany as the clear favorite at 60%, with Ivory Coast offered a modest 13% chance of victory. Germany's superiority in the statistical forecast is substantial; the gap to the underdog sits near 47 percentage points, reflecting a marked imbalance in the underlying strength estimates.\n\nThe draw emerges as the second-most likely outcome at 27%, which suggests the match carries genuine competitive tension despite the favorite's advantage. A one-goal margin either way sits well within the plausible range, and neither team's win probability is so elevated as to render the contest a formality from a probabilistic standpoint.\n\nThe model and sportsbook consensus are closely aligned across all three outcomes, with gaps under 2 percentage points on the favorite and draw. Polymarket prices drift slightly toward Germany and away from a draw relative to both, though the directional picture remains stable. No material disagreement emerges between forecasting sources."
 }

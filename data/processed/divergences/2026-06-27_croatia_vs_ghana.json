@@ -5,10 +5,10 @@
   "date": "2026-06-27",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 26.6,
-  "input_hash": "c7aa7361c66595e2255b97a701f4c1acd6b91044",
-  "generated_at": "2026-05-27T10:21:16+00:00",
+  "max_gap_pp": 21.9,
+  "input_hash": "c4240cff7dfd1db6acf355da69c600948ab148d6",
+  "generated_at": "2026-06-09T10:03:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model gives Croatia a 81% win probability while the market prices it at 54%, a 27-percentage-point gap favoring the model's confidence in a Croatian victory. The market's sharper hedge toward Ghana—19% versus the model's 2%—suggests sportsbooks may be pricing in recent lineup changes, injury concerns, or current form dynamics that the model's Elo foundation cannot capture. Both sources rank Croatia as favorite, but the market is substantially less certain, implying real-money flows reflect information beyond historical strength ratings. The dashboard flags this divergence as a signal worth monitoring rather than a judgment on which view will prove correct."
+  "commentary_text": "The model favors Croatia at 79% while the sportsbook consensus lowers that to 57%—a 22-percentage-point gap in the same direction. Conversely, the market assigns Ghana 17.7% compared to the model's 2.6%, a 15-point spread tilting toward Ghana. This divergence suggests the market is hedging Croatia's dominance, possibly reflecting information about recent form, injury status, or lineup availability that the model cannot access. The dashboard flags this as a material signal worth monitoring rather than a judgment on which forecast is more reliable."
 }

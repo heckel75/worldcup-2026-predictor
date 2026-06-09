@@ -43,6 +43,7 @@ DIVERGENCES_DIR = Path("data/processed/divergences")
 OUTPUT_DIR = Path("docs")
 MATCHES_OUT = OUTPUT_DIR / "matches"
 WC_PREDS_PATH = Path("data/processed/wc_predictions.csv")
+CUSTOM_DOMAIN = "worldcup.divergencelog.com"
 
 
 # ----------------------------------------------------------------------
@@ -545,6 +546,7 @@ def build_site() -> None:
 
     _copy_static()
     (OUTPUT_DIR / ".nojekyll").touch()
+    (OUTPUT_DIR / "CNAME").write_text(CUSTOM_DOMAIN + "\n")
 
     print(f"Built site -> {OUTPUT_DIR}/")
     print(f"   snapshot : {snapshot.name} ({len(teams)} teams)")

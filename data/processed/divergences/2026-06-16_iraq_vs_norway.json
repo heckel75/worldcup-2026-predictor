@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-16_iraq_vs_norway",
+  "home_team": "Iraq",
+  "away_team": "Norway",
+  "date": "2026-06-16",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 15.5,
+  "input_hash": "480bb96ec2d232049c6d9136df270bf6496c8199",
+  "generated_at": "2026-06-09T10:02:55+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The sportsbooks assign Norway a 79% win probability versus the model's 63%, a 16-percentage-point gap favoring the favorite. The market is also notably more skeptical of an Iraq victory, pricing it at 7% compared to the model's 12%. This divergence suggests the market may be responding to recent form, injury status, or lineup changes that have not yet entered the model's estimate; such information could genuinely sharpen conviction around Norway's advantage. However, the dashboard surfaces this gap as a signal of information asymmetry rather than proof that either source has correctly read the match."
+}

@@ -5,10 +5,10 @@
   "date": "2026-06-19",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 20.7,
-  "input_hash": "6caba036a885ad13713a27072688d7a189d2c7c9",
-  "generated_at": "2026-05-31T11:58:28+00:00",
+  "max_gap_pp": 20.2,
+  "input_hash": "c5e250706c9d4a61f16e6e69da2116fc859646c3",
+  "generated_at": "2026-06-09T10:03:07+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 36%, while the sportsbook consensus favors the USA at 53%—a 21-percentage-point gap on the home win. The market also assigns the draw just 26%, well below the model's 31%. These gaps could reflect recent lineup changes, form swings, or injury news that has moved real money since the model's last training cycle, though the model itself has no visibility into such developments. The dashboard flags this as a genuine disagreement between statistical expectation and live-market pricing, not a judgment on which source is correct."
+  "commentary_text": "The model favors Australia at 35% while the sportsbook consensus favors USA at 54%, a 20-percentage-point gap on the USA win outcome. This gap may reflect real-money flows reacting to recent form, lineup availability, or injury status since the model's last update. The draw probability also splits notably—the model at 32% versus the market at 25%—suggesting the market perceives a clearer outcome than the statistical baseline. The dashboard flags this divergence as a signal worth monitoring; it does not indicate which assessment is more accurate."
 }

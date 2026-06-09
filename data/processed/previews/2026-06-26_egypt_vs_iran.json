@@ -3,9 +3,9 @@
   "home_team": "Egypt",
   "away_team": "Iran",
   "date": "2026-06-26",
-  "input_hash": "ec244ccdd7c19accc56c3cfff173e04e426a74e7",
-  "generated_at": "2026-05-27T10:19:50+00:00",
+  "input_hash": "89f4030601449f7be9361909f2e6671755f773d4",
+  "generated_at": "2026-06-09T10:01:48+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Iran to win, assigning the team a 48% probability compared to Egypt's 23%. Iran emerges as a clear favourite in the statistical forecast, though Egypt retains a meaningful chance at victory and a draw ranks as the single most likely outcome.\n\nThe spread between Iran's win probability and Egypt's is substantial, suggesting a moderately uneven match in the model's view. A draw at 30% remains plausible, reflecting the inherent variability in single-match outcomes and the neutral venue. The model rates Iran as roughly twice as likely to win as Egypt, but does not treat the result as predetermined.\n\nModel and sportsbook consensus diverge notably here. The market elevates Egypt's win probability to 39%, a gap of 16 percentage points above the model, and compresses Iran's advantage to just 30%. Both sources agree a draw is likely around 30%, but they diverge sharply on the binary outcome. The dashboard does not claim to know which assessment is correct; the divergence is substantial enough to warrant close attention."
+  "preview_text": "The model favours Iran at 49%, while Egypt's win probability stands at 22%. This represents a substantial gap, with Iran heavily preferred in the statistical forecast. Iran's edge reflects their higher estimated strength relative to Egypt across the model's underlying parameters.\n\nThe draw carries notable weight at 30%, suggesting the match outcome remains genuinely competitive despite Iran's advantage. The win probabilities are spread across all three outcomes, but Iran's lead over Egypt is pronounced—nearly twice as large. A draw is plausible enough that neither team's outright win should be viewed as heavily likely in isolation.\n\nModel and market diverge markedly here. The sportsbook consensus credits Egypt with 41% win probability, roughly double the model's 22%, while backing Iran at only 28%—20 percentage points below the model. Polymarket prices align closely with the books. The dashboard does not adjudicate which assessment is correct; the large divergence warrants scrutiny of both sources."
 }

@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Haiti",
   "date": "2026-06-19",
-  "input_hash": "36d77a9e619e97ca0399d73313abe511b3ec390d",
-  "generated_at": "2026-05-27T10:18:13+00:00",
+  "input_hash": "6cf27f66529b7b9ae605b703e5593c41024ecbd8",
+  "generated_at": "2026-06-09T09:59:41+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model projects Brazil to win with a 76% probability, with Haiti's chances of an upset capped at 4%. This asymmetry reflects a substantial gap in the forecast, though not one so wide as to render the underdog entirely implausible from a statistical standpoint.\n\nThe draw carries meaningful weight in the model's view at 20%, suggesting the match has scope for a stalemate outcome. The win probabilities favour Brazil decisively, but the presence of a one-in-five draw probability indicates the model expects a competitive fixture rather than a rout. The gap between Brazil and Haiti remains substantial across all three outcomes.\n\nThe sportsbook consensus shifts materially toward Brazil, pricing a win at 89% while compressing the draw to 8% and Haiti's chances to 3%. The books are more confident in a Brazil victory by roughly 13 percentage points than the model. Both sources agree on the hierarchy; they diverge on how wide the margin should be. No Polymarket contract is currently available for comparison."
+  "preview_text": "Brazil enters as a strong favorite at 76% to win on the model's assessment, with Haiti given a 4% chance of an upset and a draw at 20%. The gap reflects a substantial but not overwhelming expectation of a Brazilian victory.\n\nThe win-draw-loss spread suggests a competitive frame in which a draw remains plausible, though Brazil's advantage is clear. Haiti's 4% win probability indicates the underdog is not given a realistic path to three points, yet the 20% draw likelihood signals that a single goal or a cautious approach could produce a stalemate.\n\nThe sportsbook consensus diverges meaningfully from the model. Books price Brazil at 89% — roughly 12 percentage points higher — and compress the draw to 8%, half the model's estimate. Polymarket prices align more closely with sportsbooks, favoring Brazil at 91%. The model is more bullish on a draw and less certain of a Brazilian win than either market source. The dashboard does not claim to know which assessment is correct."
 }

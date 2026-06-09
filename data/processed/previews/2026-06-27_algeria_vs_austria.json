@@ -3,9 +3,9 @@
   "home_team": "Algeria",
   "away_team": "Austria",
   "date": "2026-06-27",
-  "input_hash": "ef5f5cecb543ce15cc665be0acc1987dcefe6997",
-  "generated_at": "2026-05-27T10:20:14+00:00",
+  "input_hash": "41f49750de16c62c7fe81f63a7b56d159a8bf66d",
+  "generated_at": "2026-06-09T10:02:11+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Algeria at 35%, narrowly ahead of Austria's 33% win probability, while the draw sits at 32%. This suggests a tightly competitive match with no dominant favorite and meaningful chances for any outcome.\n\nThe win-draw-loss spread reflects genuine balance. Algeria and Austria are separated by only 2 percentage points, and a draw absorbs nearly a third of all scenarios. The model expects a competitive contest where either team could prevail, with stalemate a plausible result. Scorelines across multiple outcomes appear roughly equiprobable from this frame.\n\nThe market presents a notably different picture, assigning Austria a 44% win probability against Algeria's 27%—a gap of 17 percentage points that substantially favors the European side. The model and sportsbooks align on draw probability (32% versus 29%) but diverge materially on the binary outcome. The dashboard does not adjudicate which view is correct; the divergence is large enough to warrant attention from users."
+  "preview_text": "The model favors Algeria at 37%, a modest edge over Austria's 32%. The underdog enjoys roughly a one-in-three chance, suggesting a competitive match without a clear favorite.\n\nThe win-draw-loss spread reflects meaningful competitive balance. A draw at 32% sits between the two decisive outcomes, indicating the teams are close in expected strength. The 5-percentage-point gap between an Algeria win and an Austria win is small enough that the match leans toward genuine uncertainty rather than concentration around a single result.\n\nThe model and market diverge notably here. The sportsbook consensus backs Austria at 43%, some 11 percentage points above the model's estimate, while rating Algeria at 27%—roughly 10 points lower than the model assigns. Polymarket prices align closely with the sportsbook view. The dashboard does not adjudicate between these assessments; the gap warrants attention from users seeking to understand where statistical and market opinion separate."
 }

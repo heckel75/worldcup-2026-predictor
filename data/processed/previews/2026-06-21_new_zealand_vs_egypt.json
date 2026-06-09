@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Egypt",
   "date": "2026-06-21",
-  "input_hash": "f6dc144d43eb2f2b4ec8d0fca4c1a3edbc61700c",
-  "generated_at": "2026-05-27T10:18:46+00:00",
+  "input_hash": "251d7a79229a9dedf5e1ce0761aa8d3911902e16",
+  "generated_at": "2026-06-09T10:00:16+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Egypt, assigning the team a 43% chance of victory compared to New Zealand's 26%. The underdog carries meaningful upside but enters as a clear second choice under this framework.\n\nThe most striking feature of the forecast is the elevated draw probability at 31%, suggesting the teams are closer in competitive terms than the win odds alone imply. A stalemate is nearly as likely as an Egypt victory, which points to a tightly contested match where one-goal margins or goalless outcomes are plausible outcomes. The 17-point gap between Egypt's win rate and New Zealand's reflects a moderate rather than dominant edge.\n\nModel and sportsbook probabilities diverge across all three outcomes. The market rates Egypt's win probability roughly 11 percentage points higher than the model, while also compressing the draw down by 5 points and lowering New Zealand's chances by 6 points. This suggests the market is more confident in an Egyptian victory. The dashboard does not determine which assessment is more accurate; the divergence merits observation but no endorsement of either source."
+  "preview_text": "The model favors Egypt at 47%, with New Zealand's win probability at 23%. The underdog's path to victory is notably narrower, roughly half the favorite's estimated likelihood.\n\nThe 30% draw probability sits between the two win outcomes, suggesting a moderately competitive match where a stalemate is plausible but neither team is heavily favored to avoid a decisive result. The 24-percentage-point gap between Egypt and New Zealand reflects a clear hierarchy in the model's assessment, yet neither team is strongly dominant enough to make the outcome foreseeable.\n\nThe market consensus—sportsbooks, Polymarket, and the model—are broadly aligned. Market probabilities place Egypt at 55%, marginally higher than the model's 47%, and New Zealand at 19–20%, slightly lower than the model's 23%. These gaps fall within typical variance between forecast methods. The dashboard does not claim to identify which source is more accurate."
 }

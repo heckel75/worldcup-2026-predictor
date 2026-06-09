@@ -5,10 +5,10 @@
   "date": "2026-06-26",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 17.2,
-  "input_hash": "4977e464bdd1afd81855e7947f160567c59ae8f6",
-  "generated_at": "2026-05-27T10:21:05+00:00",
+  "max_gap_pp": 20.5,
+  "input_hash": "c752809be4f9a30da29f07bd3b6bca9bfe74ab35",
+  "generated_at": "2026-06-09T10:03:44+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Iran at 48%, while the market favors Egypt at 39%—a 17-percentage-point gap on the Egypt win probability. The draw sits nearly level across both sources at 30%. This divergence suggests the market is pricing in information the model cannot see: recent lineup changes, injury updates, or current form shifts that materially improve Egypt's prospects relative to the statistical baseline. The dashboard surfaces this conflict as a signal for further investigation rather than a judgment on which estimate is sounder."
+  "commentary_text": "The model favors Iran at 49%, while the sportsbook consensus favors Egypt at 41%—a 20-percentage-point gap on the Egypt win probability. The market also prices Iran's win probability substantially lower, at 28%. This divergence could reflect sportsbook awareness of recent lineup changes, injury updates, or current form that the model's last training window did not capture. Alternatively, the gap may signal genuine uncertainty about how these teams will perform in tournament conditions. The dashboard flags the disagreement; no source has a monopoly on accuracy."
 }

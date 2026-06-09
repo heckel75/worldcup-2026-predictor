@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "Croatia",
   "date": "2026-06-23",
-  "input_hash": "1fa080bc840e52458fbbb9ace03cdf28368f8f73",
-  "generated_at": "2026-05-27T10:19:09+00:00",
+  "input_hash": "0e99b2b1fcd52be15181dda188b1e8ec5c629f39",
+  "generated_at": "2026-06-09T10:00:57+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Croatia at 48%, with Panama assigned a 22% chance of victory. The underdog's path to three points is notably narrower than the favourite's, but not negligible in a single-match context.\n\nThe gap between Croatia's win probability and Panama's reflects meaningful asymmetry, yet the draw at 30% remains the second-most likely outcome. This suggests a competitive fixture where neither side dominates the underlying numbers decisively; a stalemate carries real plausibility alongside a Croatia victory.\n\nModel and market diverge on this match. The sportsbook consensus pushes Croatia higher at 61% and compresses Panama to 15%, a gap of roughly 7 percentage points in the favourite's favour. The market also narrows the draw to 24%. Both sources align that Croatia is favoured, but the market prices the underdog more pessimistically and leans toward a decisive result. The dashboard does not adjudicate between these signals."
+  "preview_text": "The model rates Croatia as the favorite with a 47% win probability, while Panama holds a 23% chance of victory. The gap reflects a meaningful but not overwhelming edge; the model sees material upside in the underdog.\n\nA draw at 30% sits near the midpoint of the outcome distribution, suggesting competitive balance despite Croatia's advantage. The spread across all three outcomes—neither heavily skewed toward a single result nor tightly bunched—indicates a match likely to remain contestable through regulation, with draws and upset wins both plausible contingencies rather than remote scenarios.\n\nThe sportsbook consensus diverges notably from the model. Books price Croatia 16 percentage points higher (63% vs. 47%) and Panama 10 points lower (14% vs. 23%), compressing the draw to 23%. Polymarket prices align closely with the books. The dashboard does not claim to know whether this divergence reflects superior market information, systematic model limitations, or differing risk-appetite assumptions. Backers of Panama value or draw backers may flag the gap as relevant to their decision-making."
 }

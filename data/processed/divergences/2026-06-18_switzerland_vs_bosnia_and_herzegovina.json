@@ -5,10 +5,10 @@
   "date": "2026-06-18",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 15.6,
-  "input_hash": "9d3a0527752d7cce2c0a77a19ac8c310831baa14",
-  "generated_at": "2026-05-27T10:20:46+00:00",
+  "max_gap_pp": 17.7,
+  "input_hash": "385e62a02af43e923d3c5f10041d9bf2bc34e3a2",
+  "generated_at": "2026-06-09T10:03:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Switzerland a 76% win probability; the market prices it at 60%, a gap of 16 percentage points favoring the model's confidence. Conversely, the market gives Bosnia and Herzegovina 16% to win versus the model's 4%, an 12-point spread in the opposite direction. Both sources rank Switzerland as favourite, but the market materially hedges that view. This gap could reflect recent lineup changes, injuries affecting either squad, or form shifts the model's training data has not fully captured. The dashboard surfaces this tension as a signal: sportsbooks are pricing in information that narrows Switzerland's edge relative to the statistical baseline."
+  "commentary_text": "The model favors Switzerland to win at 77%, while sportsbooks compress that to 59%—a 17 percentage-point gap. The market simultaneously raises Bosnia and Herzegovina from 4% to 17%, suggesting real-money flows are pricing in material uncertainty the model's Elo-based forecast does not capture. This hedging could reflect recent lineup changes, injury news, or form shifts unavailable to the model since its last update. The dashboard flags this divergence as a signal worth monitoring; it does not resolve whether the market's caution or the model's confidence is better calibrated."
 }

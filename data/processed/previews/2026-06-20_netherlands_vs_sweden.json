@@ -3,9 +3,9 @@
   "home_team": "Netherlands",
   "away_team": "Sweden",
   "date": "2026-06-20",
-  "input_hash": "5c355b5ea374d433208dcc54fc28fe3eab05c4c5",
-  "generated_at": "2026-05-27T10:18:37+00:00",
+  "input_hash": "a1d151d890ef3c0842f9c445bb93fe412cfc4fd9",
+  "generated_at": "2026-06-09T10:00:02+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Netherlands as a clear favorite with a 68% win probability, leaving Sweden with only an 8% chance of victory. The spread reflects a substantial gap in the statistical expectation, though the underdog retains non-trivial odds of an upset result.\n\nThe draw emerges as a secondary outcome in both model and market estimates, sitting at 24%. This suggests the match carries meaningful competitive structure—Netherlands starts favored but neither team is heavily favored to dominate play. The 24-point gap between the favorite and underdog indicates asymmetry, yet the presence of a sizeable draw probability prevents the matchup from collapsing into a one-sided proposition.\n\nModel and market diverge notably on the underdog. The sportsbooks assign Sweden 19% win probability versus the model's 8%, a gap of 11 percentage points. Sportsbooks also compress Netherlands' win rate to 56% from 68%. Both sources align tightly on the draw at roughly 24-25%. The dashboard does not adjudicate which source is more accurate; the divergence merits attention from those assessing betting value."
+  "preview_text": "The model favours Netherlands at 68%, with Sweden offered only an 8% chance of victory. The underdog's path is narrow, though not impossible; the model sees meaningful separation between the two sides on the supplied numbers.\n\nThe spread reflects moderate competitive distance. Netherlands' win probability exceeds the draw probability by 44 percentage points, suggesting the model expects the stronger team to prevail more often than not, but a draw at 24% remains genuinely plausible—neither outcome is remote.\n\nModel and sportsbooks diverge notably. The market consensus raises Sweden's win probability to 18%—a gap of nearly 10 percentage points—while lowering Netherlands to 58%. Both assign similar draw odds. The dashboard does not adjudicate which assessment is more accurate; the divergence may reflect either information the model lacks or market overweighting of Sweden's chances. Polymarket pricing sits between the two sources, closer to the books than to the model."
 }

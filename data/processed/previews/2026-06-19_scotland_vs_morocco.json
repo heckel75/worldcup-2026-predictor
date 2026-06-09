@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Morocco",
   "date": "2026-06-19",
-  "input_hash": "f7b9e84195bbea33d61e22cd697c48c56b91e5e1",
-  "generated_at": "2026-05-19T13:45:01+00:00",
+  "input_hash": "64d22fc8f9149b76f0a4975dfc7dd4ccd8b4b4eb",
+  "generated_at": "2026-06-09T09:59:37+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model backs Morocco as the clear favorite, assigning them a 63% win probability, while Scotland's chances sit at 12%. The gap reflects a substantial disparity in the model's view of the matchup.\n\nThe draw emerges as a plausible outcome at 25%, yet Morocco's advantage is pronounced. Scotland's path to victory is narrow; the model expects Morocco to control the game in a likely lopsided contest rather than a tightly contested affair.\n\nThe model and sportsbooks diverge meaningfully here. Books award Scotland nearly double the model's win probability and give the draw a higher chance, while trimming Morocco's win probability to 45%. This 18-percentage-point gap on Morocco's outcome is material. The dashboard does not adjudicate between these views, but the divergence flags a notable disagreement over Scotland's competitive standing in this fixture."
+  "preview_text": "The statistical model favors Morocco with a 61% win probability, placing Scotland at a substantial 13% chance of victory. Morocco is the clear favorite by this framework, though the underdog carries enough probability to remain competitive.\n\nA draw is the second-most-likely outcome at 26% according to the model, suggesting the match will be closely contested despite the gap between the teams' win chances. The distribution reflects a scenario tilted toward Morocco but not one-sided; Scotland's path to victory exists, and a stalemate sits between decisive outcomes.\n\nThe market diverges meaningfully from the model. Sportsbook consensus and Polymarket both assign Scotland roughly 10 percentage points higher win probability than the model (23–24% vs 13%), while pricing Morocco 13 percentage points lower (48–49% vs 61%). The model and market are more tightly aligned on draws (26–29%). The dashboard makes no claim to resolve which estimate is correct; the discrepancy merits attention as these two sources of probability diverge beyond minor variation."
 }

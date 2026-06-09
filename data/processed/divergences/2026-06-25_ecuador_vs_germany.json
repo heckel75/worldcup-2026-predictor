@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 21.4,
-  "input_hash": "ccf5f0b29555c2c6022fb6e79f2c2d3d511a4636",
-  "generated_at": "2026-05-27T10:21:00+00:00",
+  "max_gap_pp": 19.4,
+  "input_hash": "6e376fb53086f94a50b104544b3823a90c265263",
+  "generated_at": "2026-06-09T10:03:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market gives Germany a 21-percentage-point edge over the model on the win outcome, pricing them at 56% versus the model's 35%, while both sources treat Ecuador and the draw as roughly comparable long shots. This substantial sharpening of confidence in Germany may reflect recent form, lineup availability, or injury status that the model's last update did not capture. The market also compresses the draw probability notably lower than the model suggests. The dashboard presents this gap as a signal worth monitoring rather than a definitive verdict on which forecast better reflects the true match dynamics."
+  "commentary_text": "The most striking gap is on the Germany win: the model assigns 35%, while the sportsbook consensus stands at 55%, a 20-percentage-point spread favoring the market's conviction. The model sees this as nearly a three-way contest, but real-money flows are sharpening confidence in Germany. This divergence could reflect information the model cannot see—recent lineup changes, injury updates, or current form trends since the model's last training window—that shift the true strength differential between the sides. The dashboard surfaces this as a signal worth monitoring: either the market has caught something material about team condition or personnel, or the model's more cautious rating reflects structural uncertainty the market is pricing away."
 }

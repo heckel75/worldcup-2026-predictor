@@ -5,10 +5,10 @@
   "date": "2026-06-21",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 28.1,
-  "input_hash": "0e27d33e73c7d822a462d97526c9cb5ae6189848",
-  "generated_at": "2026-05-27T10:20:49+00:00",
+  "max_gap_pp": 29.3,
+  "input_hash": "9e1465a54536e623757046b004200eaf5c1e3bc5",
+  "generated_at": "2026-06-09T10:03:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market prices Belgium to win at 64% versus the model's 35%, a 28-percentage-point gap favoring the stronger team in the books' view. This confidence spread could reflect real-time intelligence on lineup availability, recent form, or injury status that the model cannot access; the model's more cautious stance suggests it sees Belgium and Iran as closer competitors than sportsbook consensus does. The market simultaneously compresses the draw and Iran upset probabilities, signaling either concrete information about team readiness or a broader conviction shift. The dashboard flags this gap as a signal for review rather than an endorsement of either forecast."
+  "commentary_text": "The sportsbook consensus assigns Belgium a 67% win probability versus the model's 38%—a 29-percentage-point gap heavily favoring the favorite. The market also compresses Iran's chances to 12% compared to the model's 30%, a 18-point gap in the opposite direction. This sharper confidence in Belgium could reflect recent lineup news, injury developments, or current form that the model has not yet absorbed. The dashboard flags this as a signal worth monitoring rather than evidence that either forecast is miscalibrated."
 }

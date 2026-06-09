@@ -5,10 +5,10 @@
   "date": "2026-06-23",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 15.9,
-  "input_hash": "e78e32686e9358eef20c2f8c39d9f7e5d93bafa8",
-  "generated_at": "2026-05-20T12:49:55+00:00",
+  "max_gap_pp": 16.6,
+  "input_hash": "233c6d7b849224607f1bb2312aa77cad16677447",
+  "generated_at": "2026-06-09T10:03:24+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Croatia a 64% win probability versus the model's 48%, a 16-percentage-point gap favoring the stronger team. The sportsbook also reduces Panama's chances to 13% from 22%, suggesting real-money flows are pricing in information the model cannot access—most likely recent form, lineup changes, or injury status for one or both sides. The model's broader distribution reflects only historical ratings; the market's tighter confidence around a Croatia victory may reflect current squad condition or momentum the statistical baseline has not yet absorbed. The dashboard flags this as a signal worth monitoring rather than a judgment on which estimate is sounder."
+  "commentary_text": "The market assigns Croatia a 63% win probability versus the model's 47%, a 16-point gap favoring the favorite. The model rates Panama's chances at 23% while the market sees only 14%, an 9-point difference in the opposite direction. This sharpening of confidence in Croatia could reflect recent lineup changes, injury news affecting either squad, or current form information unavailable to the model's last training cycle. The dashboard flags this divergence as a signal worth monitoring rather than a judgment on which forecast will prove more accurate."
 }

@@ -5,10 +5,10 @@
   "date": "2026-06-22",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 15.1,
-  "input_hash": "29d98b2061c99661b9c7c0d5ef69e8c1a8cc7aab",
-  "generated_at": "2026-05-27T10:20:52+00:00",
+  "max_gap_pp": 17.8,
+  "input_hash": "513bd8fe78b469ee27c3e2eba2745a53ace37a63",
+  "generated_at": "2026-06-09T10:03:18+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market prices Algeria to win at 53%, a 15-percentage-point edge over the model's 38%. Both sources favor Algeria, but the sportsbook consensus is substantially more bullish, while the model sees a tighter three-way outcome. The market's sharper conviction on an Algeria victory could reflect recent lineup news, injury updates, or current form data unavailable to the model's last training window. The model, built on Elo ratings and goal-scoring patterns, may not yet incorporate real-time roster or conditioning information that money flows have already priced in. This dashboard surfaces the gap as a signal worth monitoring rather than a judgment on which forecast will prove correct."
+  "commentary_text": "The market assigns Algeria a 61% win probability versus the model's 44%, a 17-percentage-point gap favoring the favorite. The model sees materially closer odds across all three outcomes, whereas sportsbooks and prediction markets have sharpened conviction around an Algeria victory. This divergence likely reflects information available to real-money markets but not the model's training data—recent form, injury status, or lineup changes could all shift expectations toward Algeria without altering the fundamental Elo balance. The dashboard flags this as a signal worth monitoring: either the market has detected concrete new information tightening the race, or both sources are simply calibrated differently on the same underlying matchup."
 }

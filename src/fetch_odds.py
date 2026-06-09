@@ -213,6 +213,16 @@ def main():
     RAW_DUMP_DIR.mkdir(parents=True, exist_ok=True)
     ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
+    # Load fixture list up-front: used for Fix 1 (orient) and Fix 2 (drop).
+    fixture_lookup: dict[frozenset, tuple[str, str]] = {}
+    qualified: set[str] = set()
+    if FIXTURES_PATH.exists():
+        fx_df = pd.read_csv(FIXTURES_PATH)
+        qualified = set(fx_df["home_team"]) | set(fx_df["away_team"])
+        for _, r in fx_df.iterrows():
+            pair: frozenset = frozenset((r["home_team"], r["away_team"]))
+            fixture_lookup[pair] = (r["home_team"], r["away_team"])
+
     print("Discovering WC-related soccer sport keys (free call)...")
     wc_sports = list_world_cup_sports(api_key)
     for s in wc_sports:
@@ -235,6 +245,27 @@ def main():
             row = parse_h2h_event(ev)
             if row:
                 all_match_rows.append(row)
+
+    # Fix 1 (orient) + Fix 2 (drop): match each row to fixtures_2026.csv on
+    # the unordered team pair, orient to the fixture's home/away convention,
+    # and drop any row whose pair doesn't appear in the fixtures at all.
+    # Sportsbook h2h is 2-way (no draw), so only p_home/p_away are swapped.
+    if fixture_lookup:
+        oriented: list[dict] = []
+        for row in all_match_rows:
+            pair = frozenset((row["home_team"], row["away_team"]))
+            fx_orientation = fixture_lookup.get(pair)
+            if fx_orientation is None:
+                print(f"  DROPPED: {row['home_team']} vs {row['away_team']} — not in fixtures")
+                continue
+            fx_home, fx_away = fx_orientation
+            if (row["home_team"], row["away_team"]) != (fx_home, fx_away):
+                print(f"  FLIPPED: {row['home_team']}/{row['away_team']} → {fx_home}/{fx_away}")
+                row = dict(row)
+                row["home_team"], row["away_team"] = fx_home, fx_away
+                row["p_home"], row["p_away"] = row["p_away"], row["p_home"]
+            oriented.append(row)
+        all_match_rows = oriented
 
     if all_match_rows:
         df_m = (pd.DataFrame(all_match_rows)
@@ -262,10 +293,8 @@ def main():
 
     # --- name diagnostic: compare API team names to our fixture list ---
     # Run BEFORE filtering so we still surface real name mismatches.
-    qualified: set[str] = set()
-    if FIXTURES_PATH.exists():
-        fx = pd.read_csv(FIXTURES_PATH)
-        qualified = set(fx["home_team"]) | set(fx["away_team"])
+    # (qualified already loaded at the top of main via fixture_lookup build)
+    if qualified:
         seen: set[str] = set()
         for r in all_match_rows:
             seen.update([r["home_team"], r["away_team"]])

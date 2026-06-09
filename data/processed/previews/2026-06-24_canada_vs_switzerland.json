@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "input_hash": "ce147ab44585db17351b6118fd7d82d0f5790a0c",
-  "generated_at": "2026-05-31T11:58:13+00:00",
+  "input_hash": "c62bb2b06727916a0037a00b52053ee8f6f1eab8",
+  "generated_at": "2026-06-09T10:01:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Canada enters as the model's favorite at 41%, holding a modest edge over Switzerland's 27% win probability. The 14-percentage-point gap reflects a slight but meaningful advantage in the statistical forecast. Switzerland's 27% chance nonetheless represents a credible path to victory in what the model assesses as a competitive fixture.\n\nThe draw carries material weight at 31%, suggesting neither side is strongly favored to settle the match decisively. The spread across win/draw/loss outcomes is relatively flat; Canada's lead in win probability is modest enough that a stalemate or a Swiss upset remain plausible outcomes. Competitive balance in this range typically signals a close contest that could unfold in multiple ways.\n\nNo sportsbook consensus is available yet. The model's probabilities will be updated as market odds emerge and the match approaches. The dashboard cannot assess divergence between statistical forecast and market pricing until bookmaker data becomes available."
+  "preview_text": "The model favors Canada at 41% to win, substantially ahead of Switzerland's 28% chance. This represents a 13-percentage-point gap in Canada's favor. Switzerland's underdog position reflects a lower modeled probability than either a Canadian victory or a draw outcome.\n\nThe expected distribution indicates a competitive match. The draw carries meaningful probability at 31%, suggesting the teams are closer in capability than the win percentages alone indicate. A one-goal margin either way remains highly plausible. The gap between Canada's and Switzerland's win probabilities narrows when a draw is factored in, implying the match could settle in multiple ways with material likelihood.\n\nThe model and sportsbook consensus diverge substantially. Books collectively price Switzerland's win probability 17 percentage points higher than the model does, while rating Canada's chances 14 points lower. Polymarket prices align closely with sportsbook consensus. The dashboard does not adjudicate which source is more accurate; this gap merits attention from users forming independent views."
 }

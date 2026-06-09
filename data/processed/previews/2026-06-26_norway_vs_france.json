@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "France",
   "date": "2026-06-26",
-  "input_hash": "5997d2e5f56671e07706606febc0cdfa029bff99",
-  "generated_at": "2026-05-27T10:20:07+00:00",
+  "input_hash": "9910ed5843b6ed8a1f165e75b6426eacbc09e2cd",
+  "generated_at": "2026-06-09T10:02:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates France as a strong favorite, assigning them a 59% win probability against a Norway side given an 15% chance to upset on a neutral ground. The remaining probability concentrates on a draw, which the model estimates at 27%.\n\nThe win-loss gap of roughly 44 percentage points reflects an asymmetric matchup where draws carry material weight. A draw remains plausible at better than one-in-four odds, suggesting the model sees meaningful defensive organization from Norway despite France's overall superiority. The spread indicates a competitive contest in execution rather than an open affair.\n\nThe model and sportsbook consensus align closely across all three outcomes. France's advantage narrows from 59% to 55% in the betting market, a 4-point shift, while Norway gains 4 points to 19%. The draw estimate is nearly identical. This convergence suggests broad agreement on the match's character. No Polymarket data is available at this stage."
+  "preview_text": "The model favors France at 55%, with Norway's win probability at 17%. France enters as the clear favorite, though the underdog retains a realistic path to victory. A draw carries nearly 28% probability, suggesting the match has genuine competitive balance despite the gap in outright win chances.\n\nThe spread across outcomes indicates a moderately decisive matchup. France's advantage is meaningful but not overwhelming; the combined 46% chance of a non-France result reflects material uncertainty. The draw sitting between the two win probabilities, rather than dwarfed by either, suggests the sides are close enough that level play into the closing stages remains plausible.\n\nModel and market are closely aligned. The model rates France 3 percentage points higher than sportsbook consensus, while estimating Norway's win probability roughly 4 percentage points lower. Both sources converge on a draw near 26%. These gaps fall within typical forecast variance; the dashboard does not claim superiority over market pricing on individual matches."
 }

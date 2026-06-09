@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Argentina",
   "date": "2026-06-27",
-  "input_hash": "e5d79c0102746e57d65408605b7d454993f59039",
-  "generated_at": "2026-05-27T10:20:18+00:00",
+  "input_hash": "900eb2f1c05b4f95b79ff5775f87824bf4891b57",
+  "generated_at": "2026-06-09T10:02:15+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Argentina are the model's clear favorite at 78 percent, while Jordan's win probability stands at just 5 percent. The underdog retains a modest but genuine chance of a draw at 18 percent, suggesting Argentina will not be overwhelmingly dominant despite their advantage in the forecast.\n\nThe gap between Argentina's win probability and Jordan's reflects a substantially uneven matchup. A draw remains plausible—nearly one in five outcomes—indicating that while Argentina are preferred, the match retains competitive texture rather than amounting to a coronation. The median outcome tilts sharply toward an Argentina victory, but Jordan's draw probability is meaningful enough to prevent the model from treating this as a rout.\n\nThe model and market are closely aligned across all three outcomes. The sportsbook consensus rates Argentina slightly higher at 80 percent versus the model's 78 percent, while the market is more skeptical of a draw at 13 percent compared to the model's 18 percent. These gaps are modest and fall within typical variance between sources. No Polymarket consensus has yet formed."
+  "preview_text": "The model favors Argentina at 79.5%, leaving Jordan with a 3.9% win probability. The underdog's low ceiling reflects a substantial gap in the forecast, though a draw at 16.5% offers a more plausible alternative outcome for the lower-ranked side.\n\nThe win-loss spread widens considerably in Argentina's direction, yet the draw probability—roughly one in six—indicates the match retains genuine competitive tension. Jordan's path to victory appears narrow, but the forecast structure suggests neither team is modeled as dominant enough to make the result a near-certainty.\n\nThe model and sportsbook consensus align closely. Argentina's win probability differs by just 1.2 percentage points, and the spread of outcomes across all three outcomes sits within tight ranges across both sources. Polymarket prices show slightly higher confidence in Argentina and lower odds for a draw, but the overall picture—a strong Argentine favorite with meaningful upset and draw risk—holds consistent across the three data streams."
 }

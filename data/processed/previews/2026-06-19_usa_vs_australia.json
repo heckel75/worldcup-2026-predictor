@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Australia",
   "date": "2026-06-19",
-  "input_hash": "6b52f6ca8bdab523beacfaaaff98a4eb0b03bcbf",
-  "generated_at": "2026-05-31T11:58:05+00:00",
+  "input_hash": "aba52455fe55e9573580c4af233e6cce1ceb9206",
+  "generated_at": "2026-06-09T09:59:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Australia as the slight favorite, assigning it a 36% win probability, while the USA's win chance stands at 32%. A draw is nearly as likely as an Australian victory, at 32%, suggesting this matchup leans competitive rather than decisive.\n\nThe three-outcome spread reflects genuine uncertainty. Australia's 4-percentage-point edge over the USA is modest; the draw probability sits within 1 point of the USA win line. The model anticipates a closely contested match where no single outcome dominates, with roughly one chance in three for each of the three results.\n\nA stark divergence appears between model and market. Sportsbooks favor the USA at 53%, a gap of 21 percentage points above the model's 32%. The market prices Australian chances at just 21%, or 15 points below the model. Draw odds align more closely, with books at 27% versus the model at 32%. The dashboard does not adjudicate these competing signals; bettors should weigh which source commands greater confidence given their priors on team strength and recent information."
+  "preview_text": "The model rates this fixture as nearly even, placing Australia as a slight favorite with a 35% win probability against USA's 34%. The statistical forecast offers little separation between the two sides, reflecting the inherent uncertainty in a competitive matchup on neutral ground.\n\nThe draw probability of 32% underscores how tightly matched the contest appears to the model. A one-goal margin separates the win probabilities, and the three-way spread suggests genuine competitive balance. The relatively high draw likelihood indicates that a stalemate finish remains a plausible outcome, with no team heavily favored to secure three points.\n\nThe market consensus diverges meaningfully from the model, with sportsbooks and Polymarket both assigning USA win odds around 54–55% compared to the model's 34%. That represents a roughly 20-percentage-point gap. Market prices also compress the draw probability to around 24–25% and reduce Australia's implied win chance to approximately 20%. The dashboard does not adjudicate between these conflicting signals; bettors should weigh both perspectives independently."
 }

@@ -3,9 +3,9 @@
   "home_team": "Iraq",
   "away_team": "Norway",
   "date": "2026-06-16",
-  "input_hash": "8a62cab2f9c2ff5d40ae5a918f74dfb5a669701d",
-  "generated_at": "2026-05-27T10:17:37+00:00",
+  "input_hash": "0d140d6efa386a0208b380a29230e772f8467a55",
+  "generated_at": "2026-06-09T09:58:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Norway at 64% to win, with Iraq positioned as a clear underdog at 12%. The gap reflects a substantial disparity in the forecast; Norway is heavily favoured to take the match, though not at prohibitive odds.\n\nThe draw carries material weight in the model's assessment at 25%, suggesting a reasonably competitive encounter rather than a runaway outcome. The spread across all three outcomes indicates meaningful uncertainty around Norway's margin of victory, even as their win probability remains dominant. A draw emerges as the likeliest alternative to a Norway success.\n\nThe market consensus diverges from the model on both tail outcomes. Sportsbooks price Norway's win probability 13 percentage points higher at 76%, while assigning the draw only 15% rather than 25%. This systematic shift compresses Iraq's chances further, to 8%. The dashboard does not adjudicate between these divergent views; both reflect coherent but distinct assessments of the match."
+  "preview_text": "The model favors Norway at 63%, with Iraq given an 12% chance of victory. The draw probability stands at 25%, suggesting a meaningful likelihood of a stalemate outcome. The gap between the top two scenarios reflects a pronounced but not overwhelming favorite.\n\nThe spread across win-draw-loss widens when comparing the favorites to the underdog, but the draw sits closer to Iraq's win probability than to a dominant Norway victory. This indicates a moderately competitive match rather than a heavily lopsided contest, though Norway enters as clear preference. The 25-point margin between Norway and Iraq win rates signals genuine uncertainty about the outcome beyond the favorite.\n\nMarket consensus tilts markedly toward Norway, placing the win probability at 79% compared to the model's 63%—a gap of 16 percentage points. Both sportsbooks and Polymarket are substantially tighter on Iraq and draw odds as well. The dashboard does not adjudicate between these sources; the divergence may reflect information or risk appetite unavailable to the model, or model and market may simply weight the same inputs differently."
 }
