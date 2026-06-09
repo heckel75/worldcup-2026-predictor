@@ -336,7 +336,7 @@ abbreviation — buggy), date from eventDate. polymarket_odds.csv now populates 
 triple_compare.py per-match join is live. Also linked all 72 fixtures from the index
 (browsable fixtures section) — closes the unreachable-pages gap. 
 
-**Session 35 — Last-minute polish + launch (← NEXT)**
+**Session 35 — Last-minute polish + launch ✅ DONE — launched June 9, two days pre-kickoff. Daily tournament updates now run as a checklist, not a session — see §11.**
 Do at launch-time (Tuesday's final Kaggle pull / June 11 morning), in one pass — all of it wants the freshest data. Run phase-by-phase with the planning chat; Phase 0 gates everything.
 
 **Open the launch chat with the planning chat FIRST** ("ready for Session 35", + one line that you've pulled / are pulling the final Kaggle file and today is launch). Phase 0 has live go/no-go judgment (data cutoff, host-row alignment, whether title odds moved) that needs reading the outputs together before committing — don't run it solo and commit on the one morning it can't be redone.
@@ -393,6 +393,9 @@ Do at launch-time (Tuesday's final Kaggle pull / June 11 morning), in one pass �
 - ✅ RESOLVED in Session 35a — **Polymarket fetcher returns empty across ALL market types (2026-06-05):** slug drift not an outage; new slugs + hybrid discovery; per-match markets now exist for all 72 group fixtures (series 11433); fetcher populates polymarket_odds.csv 72/72.
 - ✅ RESOLVED in Session 35a — **Per-match pages exist but are unreachable unless flagged (2026-06-05):** new browsable fixtures section on the index links all 72 match pages.
 - **Polymarket ordering and abbreviation are both unreliable (Session 35a):** abbreviation had Curaçao as `kor`; ordering disagrees with FIFA home/away on host matches. The fetcher matches on the unordered team-name pair and orients to the fixture's convention, swapping p_home↔p_away to follow the team (p_draw untouched). Any future code reading Polymarket per-match data must do the same — never trust their home/away slot.
+- ✅ RESOLVED in Session 35 (Phase 0) — **Sportsbook host-match orientation (fetch_odds.py):** parse_h2h_event wrote p_home/p_away straight from the API; 3 host group matches came back reversed vs fixture convention. Fixed with the same unordered-pair match + swap-to-follow-team approach validated for Polymarket in 35a (FLIPPED: Switzerland/Canada, Czech Republic/Mexico, Turkey/USA). Fix 2 (drop any h2h pair not in fixtures_2026.csv) added as a guard; 0 dropped. GENERAL RULE now holds for both per-match sources — never trust a source's home/away slot; match on the unordered pair and orient to the fixture.
+- ✅ RESOLVED in Session 35 (Phase 0) — **docs/CNAME survival:** generate_site.py now writes docs/CNAME (CUSTOM_DOMAIN = worldcup.divergencelog.com) on every build, like .nojekyll, so the custom domain can't silently unset on rebuild. Verified CNAME survives both update.py and generate_site.py.
+- **Launch baseline is now June, not provisional (Session 35):** fresh martj42 re-pull loaded results through 2026-06-08 (8,080 training matches, was 7,952); new 2026-06-09 baseline snapshot. Title top-6: Spain 28.2 / Argentina 19.7 / France 10.2 / England 5.6 / Portugal 4.5 / Brazil 4.0. Launch hook is Spain ~28% model vs ~15.5% market (~13pp), down from the old "30 vs 16." France flipped to model-under-market (book 14.5%) — secondary talking point, not the hook. "What changed today" diffs against this 2026-06-09 baseline.
 ---
 
 ## 7. Session log
@@ -436,6 +439,7 @@ Do at launch-time (Tuesday's final Kaggle pull / June 11 morning), in one pass �
 - **Session 33 (2026-05-31):** Final pre-tournament refresh + host advantage + NaN-bin guard. Kaggle data unchanged (still 7,952 training matches through Mar 31 — martj42 not refreshed upstream; real refresh deferred to early June). simulate.py/monte_carlo.py apply a 60-Elo home bump to the 9 host group-stage matches (neutral=False threaded through the fixture dict); triple_compare.py USE_FIXTURE_NEUTRAL=True, host-exclusion removed (flags 14→26). generate_site.py: match pages show host-aware venue label + caveat from the neutral column, and _cal_svg guards NaN bins. Title odds steady (Spain 29.5 / Argentina 19.8 / France 12.2); USA advance 79.3%. Baseline snapshot 2026-05-31 is provisional — see §6.
 - **Session 34 (2026-06-03):** Wrote launch copy (launch_copy.md) — Twitter thread, LinkedIn post, r/soccer + r/dataisbeautiful Reddit posts, private pitch-tester note. Lead hook across all channels is the divergence angle anchored on the model-vs-market title gap (Spain ~30% model vs ~16% market), chosen over title-odds and calibration framings as the most debate-generating/shareable. Channels: Twitter/LinkedIn/Reddit. Decision: write-now/post-later — all numbers left as {TOKENS} to fill from the early-June re-pull at launch (Session 35), since the May-31 baseline is still on March-31 data. Distribution plan emphasises a public return loop (model-vs-market scoreboard resolving after each match), one striking visual per platform, and riding the pre-kickoff / first-upset news cycle. Custom domain flagged as a Session 35+ shareability/credibility task, non-blocking. No code.
 - **Session 35a (2026-06-07):** Fixed the Polymarket fetcher (dead since the May restructure). Slug swap restored title (world-cup-winner, 48 teams, Spain/France 15.7% top) + groups; new per-match probe under series soccer-fifwc/11433 populates polymarket_odds.csv 72/72 — three binary child markets per event bucketed to W/D/L, teams from structured event["teams"] (name+ordering; abbreviation is buggy: Curaçao shows kor), date from eventDate, host-match orientation flipped to fixture convention on 3 matches (Canada/Mexico/USA, probs follow the team, p_draw untouched). triple_compare join live, no longer a no-op. Linked all 72 fixtures from the index. Two code commits + doc commit.
+- **Session 35 (2026-06-09):** Launch build + launched, two days pre-kickoff (WC starts June 11). Phase 0 (gating): fetch_odds.py host-orientation fix (FLIPPED Switzerland/Canada, Czech Republic/Mexico, Turkey/USA) + non-fixture h2h guard (0 dropped); generate_site.py CNAME-survival write; fresh Kaggle re-pull through 2026-06-08 (8,080 training matches) → new 2026-06-09 baseline. All 5 go/no-go checks passed; Polymarket per-match live 72/72 from the update.py run; all three title bars aligned on hosts. Phase 1: by-date schedule.html + Schedule nav; GoatCounter analytics in base.html (worldcup-divergencelog, all 76 pages); re-runnable src/make_launch_graphic.py → docs/launch.png. Custom domain worldcup.divergencelog.com live, HTTPS enforced. Launched evening of June 9 on the Spain ~28% model vs ~15.5% market (~13pp) hook. June 11 = first market refresh; tournament-mode daily updates begin once results post.
 ---
 
 ## 8. How to get back into a chat session
@@ -495,3 +499,31 @@ bridge; nothing syncs automatically.
   relitigate fetch staleness — paste, or rely on PROJECT.md.
 - §9 "one step per response" — in Claude Code, **plan mode is that review
   checkpoint**, so the same safety holds with less friction. 
+
+---
+
+## 11. Tournament-mode daily update (operational checklist, NOT a session)
+
+Once matches are being played, the daily refresh is operational, not a build. It does NOT use the plan→work-order→close loop. Run it yourself in Claude Code as the checklist below. Only open a planning chat for a real decision or a break — the two known upcoming decisions are the calibration-page raw→live-ledger switch (after a few match-days accumulate) and the survival-grid→drawn-bracket redraw (~June 27, when the group stage resolves R32 slots).
+
+### After each match day
+
+1. **Enter results in `data/raw/wc_results_manual.csv`.** Two silent-corruption traps (both from §6):
+   - **Internal team names, not display names.** Use the dataset conventions: `Turkey` (not Türkiye), `Czech Republic` (not Czechia), `Ivory Coast` (not Côte d'Ivoire), etc. A name that doesn't match an internal name will not pin the result — no error, it just won't take.
+   - **Match the file header exactly.** Open the file and copy its header row before the first entry. Group matches: scoreline, `advanced` column blank. Knockout matches: scoreline PLUS the advancing team in `advanced`. A missing/extra column is dropped silently by clean_data.
+
+2. **`python update.py`.** Does everything else: prepends the manual results, rebuilds ratings, runs the RESULT-AWARE sim (pins played matches by scoreline / KO winner, simulates only the remainder — Session 30), re-runs triple_compare, attaches results to frozen ledger forecasts + freezes the next day's, regenerates Claude previews/divergences, rebuilds the site (incl. CNAME).
+
+3. **Check `logs/update_*.log`.** SOFT stages (odds/Polymarket/previews/divergences) warn and keep stale artifacts on failure; FATAL stages (clean_data/ratings/MC/triple_compare/site) must pass. Confirm no FATAL abort.
+
+4. **Eyeball the site:** "What changed today" panel (now has real movers), calibration page, a played match's page (shows result vs forecast).
+
+5. **Commit + push.** `update.py` does no git by design.
+
+### Notes / gotchas
+
+- **Ledger logs corrected probs** (Session 29, §6-recommended) — calibration tracking is correct from day one; no decision needed there.
+- **Calibration page** still shows the backtest seed until you deliberately switch it to the live ledger. Don't switch on day 1 — wait for enough live predictions for the reliability diagram to mean something. Open a planning chat to make that switch.
+- **Survival grid → bracket** stays a survival grid until the group stage ends; redraw as a populated bracket ~June 27 (slots unknown until results exist). Planning-chat task.
+- **No Kaggle re-pull needed mid-tournament** — results come in through wc_results_manual.csv. Kaggle is only the historical training base.
+- **WC_SKIP_FETCH=1 python update.py** rebuilds from on-disk data without re-hitting markets — useful if the Odds API quota is tight (500/mo) or a market fetch is flaking and you just want to re-pin a result.
