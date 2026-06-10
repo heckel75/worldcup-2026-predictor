@@ -44,6 +44,7 @@ OUTPUT_DIR = Path("docs")
 MATCHES_OUT = OUTPUT_DIR / "matches"
 WC_PREDS_PATH = Path("data/processed/wc_predictions.csv")
 CUSTOM_DOMAIN = "worldcup.divergencelog.com"
+SITE_URL = f"https://{CUSTOM_DOMAIN}"
 
 
 # ----------------------------------------------------------------------
@@ -504,6 +505,7 @@ def build_site() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     generated_at = dt.datetime.now().strftime("%Y-%m-%d %H:%M")
+    og_image = f"{SITE_URL}/launch.png"
 
     # --- index (top-level: root="") ---
     _render_page(
@@ -515,6 +517,14 @@ def build_site() -> None:
         fresh_divergences=fresh_divs,
         fixture_groups=_group_fixtures(matches),
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
+        page_title="World Cup 2026 Forecast — model vs market predictions",
+        meta_description=(
+            "A World Cup 2026 forecast dashboard combining a statistical model, "
+            "sportsbook odds, and Polymarket prices. See where the three sources "
+            "agree — and where they diverge."
+        ),
+        canonical_url=f"{SITE_URL}/",
+        og_image=og_image,
     )
 
     # --- match pages (one folder deep: root="../") ---
@@ -523,6 +533,17 @@ def build_site() -> None:
             env, "match.html", MATCHES_OUT / f"{m['key']}.html",
             m=m,
             root="../", generated_at=generated_at, snapshot_date=snapshot_date,
+            page_title=(
+                f"{m['home_display']} vs {m['away_display']}"
+                f" — prediction, odds & probabilities | World Cup 2026"
+            ),
+            meta_description=(
+                f"{m['home_display']} vs {m['away_display']} on {m['date_human']}: "
+                f"statistical model, sportsbook and Polymarket win probabilities "
+                f"for the 2026 World Cup, updated after every match."
+            ),
+            canonical_url=f"{SITE_URL}/matches/{m['key']}.html",
+            og_image=og_image,
         )
 
     # --- calibration page (top-level: root="") ---
@@ -546,6 +567,13 @@ def build_site() -> None:
         svg=_cal_svg(primary_sum),
         use_wc=use_wc,
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
+        page_title="Calibration — how accurate is the World Cup 2026 model?",
+        meta_description=(
+            "Reliability diagram and Brier scores showing how well the "
+            "World Cup 2026 prediction model is calibrated against actual results."
+        ),
+        canonical_url=f"{SITE_URL}/calibration.html",
+        og_image=og_image,
     )
 
     # --- methodology page (top-level: root="") ---
@@ -553,6 +581,14 @@ def build_site() -> None:
         env, "methodology.html", OUTPUT_DIR / "methodology.html",
         stats=_methodology_stats(primary_sum, full_sum),
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
+        page_title="Methodology — how the World Cup 2026 Predictor works",
+        meta_description=(
+            "How we combine Elo ratings, Dixon-Coles goals model, Monte Carlo "
+            "simulation, sportsbook odds, and Polymarket to forecast every "
+            "2026 World Cup match."
+        ),
+        canonical_url=f"{SITE_URL}/methodology.html",
+        og_image=og_image,
     )
 
     # --- schedule page (top-level: root="") ---
@@ -560,11 +596,43 @@ def build_site() -> None:
         env, "schedule.html", OUTPUT_DIR / "schedule.html",
         schedule_days=_by_date(matches),
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
+        page_title="Schedule — World Cup 2026 match dates and predictions",
+        meta_description=(
+            "Full 2026 World Cup schedule grouped by match day, with links to "
+            "statistical predictions, sportsbook odds, and Polymarket prices "
+            "for every fixture."
+        ),
+        canonical_url=f"{SITE_URL}/schedule.html",
+        og_image=og_image,
     )
 
     _copy_static()
     (OUTPUT_DIR / ".nojekyll").touch()
     (OUTPUT_DIR / "CNAME").write_text(CUSTOM_DOMAIN + "\n")
+
+    # --- sitemap.xml and robots.txt ---
+    static_page_urls = [
+        f"{SITE_URL}/",
+        f"{SITE_URL}/schedule.html",
+        f"{SITE_URL}/calibration.html",
+        f"{SITE_URL}/methodology.html",
+    ] + [f"{SITE_URL}/matches/{m['key']}.html" for m in matches]
+    sitemap_entries = "".join(
+        f"  <url><loc>{url}</loc><lastmod>{snapshot_date}</lastmod></url>\n"
+        for url in static_page_urls
+    )
+    (OUTPUT_DIR / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + sitemap_entries
+        + "</urlset>\n",
+        encoding="utf-8",
+    )
+    (OUTPUT_DIR / "robots.txt").write_text(
+        "User-agent: *\nAllow: /\n"
+        f"Sitemap: {SITE_URL}/sitemap.xml\n",
+        encoding="utf-8",
+    )
 
     print(f"Built site -> {OUTPUT_DIR}/")
     print(f"   snapshot : {snapshot.name} ({len(teams)} teams)")

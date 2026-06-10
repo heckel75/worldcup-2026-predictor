@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Brazil",
   "date": "2026-06-24",
-  "input_hash": "613d0c8ef96845205c090479388f2e6ff76c722c",
-  "generated_at": "2026-06-10T06:35:17+00:00",
+  "input_hash": "cf2fe0ed7dd59b7f434b14c33106c2340d6bce01",
+  "generated_at": "2026-06-10T18:29:12+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Brazil at 64% to win, with Scotland assigned an 12% chance. Brazil's win probability sits well clear of the underdog's path to victory, establishing them as substantial favorites on the neutral ground.\n\nThe 25% draw probability suggests genuine competitive balance in the middle outcome. Scotland's path to three points remains narrow, but the quarter-chance of a stalemate indicates the match is not a foregone conclusion. Brazil's 64% win rate and Scotland's combined 36% (draw plus win) reflect a gap that leaves room for an upset or a stalemate rather than an overwhelming mismatch.\n\nModel and market are closely aligned. The sportsbook consensus sits 3 percentage points above the model on Brazil's win probability, with draw and Scotland win probabilities shifting marginally in opposite directions. Polymarket prices track similarly, differing by no more than 2 percentage points across outcomes. The broad agreement across sources suggests stable expectations for this fixture."
+  "preview_text": "The model favors Brazil with a 64% win probability, leaving Scotland at 12% and a draw at 25%. Brazil enters as the heavy favorite, though the model assigns Scotland a modest but non-negligible upset chance rather than treating the outcome as settled.\n\nThe 64–12 split indicates a pronounced gap in expected quality, yet the 25% draw probability suggests the match retains genuine competitive texture. A Scotland victory remains unlikely under the model, but a stalemate is plausible enough to prevent Brazil from overwhelming the odds—roughly one in four times this fixture runs, a draw materializes.\n\nThe model and sportsbooks align closely. The consensus across 32 books puts Brazil at 65%, nearly identical to the model's 64%, and Scotland at 15% versus the model's 12%—a gap of 3 percentage points. Polymarket prices diverge slightly further, crediting Scotland to 16% and Brazil to 66%, but all three sources agree on the fundamental shape: a Brazil favorite in a match where draws are neither rare nor improbable. The dashboard makes no claim about which forecast is most accurate."
 }

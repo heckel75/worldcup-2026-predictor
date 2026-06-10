@@ -3,9 +3,9 @@
   "home_team": "Iran",
   "away_team": "New Zealand",
   "date": "2026-06-15",
-  "input_hash": "7bb523b9f57021a6b3afcc1b654a4c7502b6117c",
-  "generated_at": "2026-06-10T06:33:54+00:00",
+  "input_hash": "52636e0a045973ac02bb40ea424021df7277ace3",
+  "generated_at": "2026-06-10T18:27:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Iran at 65%, nearly twice the probability it assigns to a New Zealand victory at 10%. The statistical forecast sees a substantial gap between the two sides, though the draw probability of 25% suggests the match retains meaningful uncertainty.\n\nThe win-loss spread indicates Iran is the clear favorite, but a quarter chance of a stalemate reflects competitive balance in the middle ground. A New Zealand upset remains possible at one in ten, while draws neither rare nor dominant in the model's view.\n\nThe model and market diverge notably here. The sportsbook consensus gives Iran only 51%, some 14 percentage points below the model estimate, while assigning New Zealand 22%—more than double the model's 10%. Polymarket aligns closely with sportsbooks. The dashboard does not adjudicate between these sources; the gap warrants attention from users assessing which framework better reflects underlying match dynamics."
+  "preview_text": "The model rates Iran as a clear favorite, assigning a 65% win probability compared to New Zealand's 10%. That 55-percentage-point gap reflects a substantial edge to the Iranian side across the forecast distribution.\n\nThe draw holds material weight at 25%, suggesting the match carries genuine competitive tension despite Iran's favoritism. The win probabilities spread unevenly—Iran's lead is steep, but New Zealand's single-digit chance leaves room for an upset, and the draw probability indicates neither a blowout nor a lopsided mismatch is the modal outcome.\n\nThe model and sportsbook consensus diverge notably. Books and crypto markets cluster around 51% for Iran and 20–21% for New Zealand, sitting roughly 14 percentage points below the model's Iran estimate and 10 points above its New Zealand floor. The draw forecasts align closely across all sources (25–28%). The dashboard makes no claim to resolve which assessment is more accurate; the divergence warrants attention from users making decisions based on these inputs."
 }

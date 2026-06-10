@@ -3,9 +3,9 @@
   "home_team": "DR Congo",
   "away_team": "Uzbekistan",
   "date": "2026-06-27",
-  "input_hash": "7be34192fa1de546ebc9737cf8d34c5851928e20",
-  "generated_at": "2026-06-10T06:36:01+00:00",
+  "input_hash": "7dd39fecae5563b6e474295cdcdc7ad16fc281be",
+  "generated_at": "2026-06-10T18:29:51+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Uzbekistan at 45%, with DR Congo trailing at 25%. The statistical forecast sees a nearly 20-percentage-point gap between the two teams, positioning Uzbekistan as the stronger proposition on its numbers alone.\n\nThe draw emerges as the modal outcome at 30%, only slightly ahead of an Uzbekistan win. This suggests the match is likely to remain competitive throughout, with a single-goal margin the most probable decisive result. The spread across all three outcomes—while led by Uzbekistan—retains meaningful probability mass in both a DR Congo upset and a stalemate, indicating uncertainty rather than a heavily tilted affair.\n\nThe sportsbook consensus diverges notably from the model. Books rate DR Congo at 41%, a 16-percentage-point premium over the model's assessment, and price Uzbekistan at just 30%, a 15-point discount. Polymarket crowd prices align much closer to the model on the Uzbekistan line. This split between traditional and prediction-market operators suggests genuine disagreement on relative team strength; the dashboard makes no claim as to which is correct."
+  "preview_text": "The model favors Uzbekistan at 47%, while DR Congo's win probability sits at 23%. The underdog case for DR Congo faces a meaningful deficit in the statistical forecast, though draws occur in nearly a third of modeled outcomes.\n\nThe expected result distribution suggests a competitive but unbalanced match. Uzbekistan holds a clear edge, but the 30% draw probability indicates the teams are close enough that a stalemate remains the second-most-likely outcome. DR Congo's path to victory is narrower than a draw, implying the model sees this as asymmetric competition rather than a mismatch.\n\nThe market and model diverge sharply on this fixture. Sportsbooks assign DR Congo a 41% win chance—nearly double the model's 23%—and price Uzbekistan at only 30%, some 17 percentage points below the statistical forecast. Polymarket consensus aligns closely with the books. The dashboard makes no claim to adjudicate between these sources; the gap reflects substantive disagreement on which team is more likely to prevail."
 }

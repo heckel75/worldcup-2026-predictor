@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "Senegal",
   "date": "2026-06-22",
-  "input_hash": "0bba4436fcc7f726839ec13262e180ff57a9c9cc",
-  "generated_at": "2026-06-10T06:34:46+00:00",
+  "input_hash": "25dd5819decc30ef3c51963c4a869ff5a738134b",
+  "generated_at": "2026-06-10T18:28:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Norway as the slight favorite, assigning a 43% win probability against Senegal's 26%. The gap is modest—roughly 16 percentage points—suggesting a competitive match rather than a clear hierarchy. Senegal's chances remain material despite trailing.\n\nThe expected outcome distribution is fairly balanced across the three results. A draw carries a substantial 31% probability under the model, making stalemate a plausible outcome. The spread between Norway's win probability and Senegal's (16pp) is narrower than the draw's share of probability mass, implying the match is likely to be contested and open rather than heavily tilted toward an early Norway dominance.\n\nThe model and sportsbook consensus are closely aligned. Both assign Norway roughly 43–45% and Senegal roughly 26–28%, with gaps under 2 percentage points on each outcome. Polymarket prices fall similarly tight. The three sources reflect substantial agreement on a competitive, moderately favoring Norway without suggesting a decisive edge."
+  "preview_text": "The model rates Norway as the narrow favourite with a 43% win probability, compared to Senegal's 26% chance of victory. The gap reflects a modest but meaningful edge; the teams are closer in expectation than a typical upset scenario, but Norway remains the more likely winner.\n\nThe draw carries substantial weight at 31%, suggesting the model expects a competitive match with genuine uncertainty. The three-outcome split—43%, 31%, 26%—is relatively flat across the win column, indicating this is not a heavily asymmetric contest. A draw remains plausible throughout, and Senegal's path to victory, though narrower than Norway's, is far from negligible.\n\nThe model and sportsbook consensus are tightly aligned. Norway's win probability differs by 1 percentage point; draws diverge by 4 points, with the market assigning slightly less probability to that outcome; Senegal's chances split by 3 points. These gaps are marginal and reflect minor variance rather than substantive disagreement between the statistical forecast and betting markets."
 }

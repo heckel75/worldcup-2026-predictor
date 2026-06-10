@@ -6,9 +6,9 @@
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
   "max_gap_pp": 27.0,
-  "input_hash": "0649a8751afffca4904152448018ebca5869ae06",
-  "generated_at": "2026-06-09T10:02:39+00:00",
+  "input_hash": "6a0fc61704356cb46a5f82ad46cff647bf297837",
+  "generated_at": "2026-06-10T18:29:55+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model projects Canada to win at 80%, while the sportsbook consensus stands at 53%—a 27-percentage-point gap favoring the model's confidence in a Canada victory. The market is also considerably less certain about a draw, pricing it at 26% versus the model's 18%, and assigns Bosnia and Herzegovina a 21% win probability where the model sees only 2%. This hedging pattern suggests the market may be pricing in recent form shifts, injury concerns, or lineup changes that the model's last update does not reflect. The dashboard flags this as a signal of divergence in confidence rather than a disagreement on the favorite, inviting closer inspection of what real-time information might justify the market's caution."
+  "commentary_text": "The model assigns Canada a 80% win probability while the sportsbook consensus stands at 53%, a 27-percentage-point gap favoring the model's confidence. The market also prices Bosnia and Herzegovina at 20%, compared to the model's 2%, suggesting real-money flows are hedging substantially against a dominant Canadian performance. This divergence may reflect recent lineup changes, injury developments, or current form dynamics that have emerged since the model's last update and are now visible to bettors. The dashboard surfaces this split as a signal: the model sees a heavily tilted matchup, while the market is pricing material uncertainty around the outcome."
 }

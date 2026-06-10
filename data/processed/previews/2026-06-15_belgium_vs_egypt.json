@@ -3,9 +3,9 @@
   "home_team": "Belgium",
   "away_team": "Egypt",
   "date": "2026-06-15",
-  "input_hash": "8335d7d2ae5bc6d50243cccadfb9b6f5a38bdac1",
-  "generated_at": "2026-06-09T09:58:31+00:00",
+  "input_hash": "f9a52dd8207583f1f8106ef38e778a022792eae1",
+  "generated_at": "2026-06-10T18:27:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Belgium as favorite with a 54% win probability, giving Egypt a 17% chance at victory on a neutral pitch. The gap between the two favored outcomes is substantial, positioning Belgium as the clearer pick but leaving meaningful space for an upset.\n\nThe 29% draw probability suggests this match has notable competitive balance despite the win-probability gap. A stalemate ranks as the second-likeliest outcome, indicating that while Belgium enters as preferred, the encounter is unlikely to be one-sided. The distribution reflects a matchup where Belgium holds an edge but Egypt retains genuine upset potential.\n\nThe sportsbook consensus and Polymarket prices both lean slightly higher on Belgium—around 57–58% win probability—compared to the model's 54%. The gaps are modest (3–4 percentage points), and both markets align in rating draws as plausible (around 24–25%) and Egypt's upset window as narrow but real. The sources are broadly aligned on the match's competitive character."
+  "preview_text": "The model favors Belgium at 54%, a modest advantage in a match where the underdog Egypt holds a genuine 17% path to victory. The draw emerges as a substantial outcome at 29%, suggesting the contest will be genuinely competitive rather than one-sided.\n\nThe win-draw-loss spread reflects a relatively tight tactical landscape. Belgium's edge is clear but not commanding; Egypt's 17% win probability is large enough to make them a credible threat. A draw sits between the two outright results and carries nearly the weight of an Egypt victory, indicating that play could plausibly remain level through regulation.\n\nThe model and sportsbook consensus align closely across all three outcomes. Belgium's win probability differs by 4 percentage points, the draw by 4 points, and the Egypt win by under 1 point. Polymarket pricing tracks similarly. This convergence suggests the market has reached a stable read on the matchup that the statistical forecast corroborates."
 }

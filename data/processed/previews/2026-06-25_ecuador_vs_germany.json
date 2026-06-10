@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Germany",
   "date": "2026-06-25",
-  "input_hash": "3bd4d20bdf2c6f1b391eb7025edefc7fe3318508",
-  "generated_at": "2026-06-10T06:35:33+00:00",
+  "input_hash": "f4f735f54c371fa5d8fd47ffd3e7e1b688ce6afc",
+  "generated_at": "2026-06-10T18:29:26+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Germany at 35%, though Ecuador sits close behind at 33%, making this a highly competitive fixture. Germany holds only a 2-percentage-point edge in the forecast, suggesting the teams are nearly matched in expected strength on a neutral ground.\n\nThe draw probability of 32% underscores how competitive the match is likely to be. The win probabilities are tightly bunched, with no outcome commanding clear separation. A stalemate is nearly as probable as either team taking three points, pointing to a closely contested game where the result remains genuinely uncertain.\n\nThe model and market diverge meaningfully here. Sportsbooks price Germany at 55%, a gap of roughly 20 percentage points above the model's 35% forecast. Ecuador's win probability shows a similar pattern: the model suggests 33% while books price it at 20%. The dashboard does not claim to know which assessment is more accurate. This divergence may reflect market views on squad strength, depth, or other factors not captured in the statistical inputs available to the model."
+  "preview_text": "The model identifies Germany as the slight favorite at 35%, though the margin over Ecuador's 33% is marginal. Ecuador's underdog probability remains substantial, reflecting competitive balance in this neutral-venue encounter. The model's rating suggests a closely matched pair rather than a clear hierarchy.\n\nThe win-loss spread is notably compressed. Draw probability sits at 32%, indicating a genuine three-way contest. No outcome commands dominant likelihood; all three results fall within a narrow band, consistent with a fixture where tactical execution and individual moments may prove decisive. The distribution points to a competitive match unlikely to be decided by overwhelming superiority.\n\nThe model and market diverge meaningfully. Sportsbooks assign Germany 55% and Ecuador 20%, a 20-point gap favoring the Germans that substantially exceeds the model's 2-point spread. Polymarket aligns closely with sportsbook consensus. The dashboard does not adjudicate between these sources; the divergence may reflect market information, sentiment, or analytical method unavailable to the model."
 }

@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Argentina",
   "date": "2026-06-27",
-  "input_hash": "900eb2f1c05b4f95b79ff5775f87824bf4891b57",
-  "generated_at": "2026-06-09T10:02:15+00:00",
+  "input_hash": "48b0d9a23c21b388d81a85a4562f3d971d557082",
+  "generated_at": "2026-06-10T18:29:47+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina at 79.5%, leaving Jordan with a 3.9% win probability. The underdog's low ceiling reflects a substantial gap in the forecast, though a draw at 16.5% offers a more plausible alternative outcome for the lower-ranked side.\n\nThe win-loss spread widens considerably in Argentina's direction, yet the draw probability—roughly one in six—indicates the match retains genuine competitive tension. Jordan's path to victory appears narrow, but the forecast structure suggests neither team is modeled as dominant enough to make the result a near-certainty.\n\nThe model and sportsbook consensus align closely. Argentina's win probability differs by just 1.2 percentage points, and the spread of outcomes across all three outcomes sits within tight ranges across both sources. Polymarket prices show slightly higher confidence in Argentina and lower odds for a draw, but the overall picture—a strong Argentine favorite with meaningful upset and draw risk—holds consistent across the three data streams."
+  "preview_text": "The model rates Argentina as heavy favorite, assigning them a 80% win probability. Jordan's chances stand at 4%, reflecting a substantial gap in predicted quality at this neutral venue. The underdog faces a steep task under the statistical baseline.\n\nThe win-draw-loss spread reflects Argentina's dominance: a draw is plausible at 16%, but the model expects a decisive outcome favoring the favorite more often than not. The 76-percentage-point gap between Argentina's win probability and Jordan's indicates an asymmetric matchup where the underdog's path to points relies heavily on avoiding defeat rather than securing victory.\n\nThe model and sportsbook consensus are broadly aligned. The book strip gives Argentina 78%, marginally below the model's 80%, while Jordan sits 3 points higher in the market at 7%. Polymarket crypto pricing leans slightly toward Argentina at 81%. These small divergences fall within typical noise ranges and suggest no major disagreement on the fundamental balance of the fixture."
 }

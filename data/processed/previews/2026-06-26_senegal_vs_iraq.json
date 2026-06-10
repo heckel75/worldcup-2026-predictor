@@ -3,9 +3,9 @@
   "home_team": "Senegal",
   "away_team": "Iraq",
   "date": "2026-06-26",
-  "input_hash": "207217c08555cb05f41ff91e6046fab7610916d5",
-  "generated_at": "2026-06-10T06:35:53+00:00",
+  "input_hash": "21ccc2264948ee20770c87e7899d6b945807ef21",
+  "generated_at": "2026-06-10T18:29:43+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Senegal with a 59% win probability, positioning them as clear favorites. Iraq's chances are assessed at 13%, leaving a substantial 46-percentage-point gap between the two outcomes.\n\nThe draw carries meaningful weight at 27%, suggesting the match is unlikely to be a rout. While Senegal's advantage is pronounced, the relatively high draw probability indicates this is a competitive encounter where a stalemate remains a plausible result rather than an unlikely outlier.\n\nThe market consensus—sportsbooks and Polymarket combined—diverges from the model by backing Senegal more heavily, at 66–68% win probability, while assigning the draw a lower floor of 20–22%. The model sees more value in a draw than the market does, a gap of roughly 5–7 percentage points. The dashboard makes no claim about which assessment is correct; the divergence may reflect market pricing, bet flow, or information not captured in the model's inputs."
+  "preview_text": "The model favors Senegal at 60%, with Iraq trailing at 13%. The sportsbook consensus pushes Senegal higher to 66%, reflecting a more pronounced lean toward the favorite, though Iraq's underdog probability remains modest and largely consistent across sources.\n\nThe spread across outcomes reveals a moderately competitive match. Senegal's advantage is clear but not overwhelming; the 27% draw probability from the model suggests the contest could settle level, and a 13% chance for Iraq to win outright indicates the underdog retains realistic upset potential. This is not a heavily one-sided affair.\n\nThe model and sportsbooks diverge on Senegal's win probability by roughly 6 percentage points, with the market more bullish on a Senegal victory. The draw assessments differ by about 5 points. These gaps are modest but consistent, suggesting different underlying assessments of match difficulty rather than fundamental disagreement on competitive balance. Polymarket prices align closer to the consensus view. The dashboard does not adjudicate between forecasts."
 }

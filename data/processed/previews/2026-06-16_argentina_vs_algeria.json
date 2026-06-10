@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Algeria",
   "date": "2026-06-16",
-  "input_hash": "6404d06afbc4165b0f3f8ca916382ac9b1eacbf5",
-  "generated_at": "2026-06-09T09:58:56+00:00",
+  "input_hash": "8b7660efc659921075ab3563ba361dfae6cb830a",
+  "generated_at": "2026-06-10T18:27:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Argentina as a strong favourite at 75% to win, with Algeria offered just a 4.5% chance of victory. The underdog's path to three points is narrow under the statistical framework, leaving the draw as the only realistic alternative outcome at just over 20%.\n\nThe win-loss spread indicates a competitive imbalance favouring Argentina, though the 20% draw probability suggests the match will not be entirely one-sided. Algeria has limited scope for upset in the model's view, but the presence of a meaningful draw probability indicates reasonable defensive stability is expected from both sides.\n\nThe model and sportsbook consensus diverge notably on Algeria's chances. The market consensus assigns the underdog 11%, roughly double the model's 4.5% estimate—a gap of nearly 7 percentage points. Both sources align closely on Argentina's win probability and draw likelihood. The dashboard makes no claim about which assessment proves correct; the discrepancy warrants attention from bettors evaluating value."
+  "preview_text": "The model favors Argentina at 75% to win, leaving Algeria with a 4% chance of victory. This represents a substantial gap between the two sides in the forecast, with Argentina clearly positioned as the dominant favorite in this neutral-venue matchup.\n\nThe win-draw-loss spread reveals a moderately wide margin. While Argentina's win probability is three times Algeria's, the draw carries meaningful probability at 21%, suggesting the match has room for a competitive result that avoids a decisive outcome. The distribution indicates Argentina enters as clear favorite without the match being a heavy foregone conclusion.\n\nThe model and sportsbook consensus diverge noticeably on Algeria's chances. The market gives Algeria 11%, roughly 7 percentage points higher than the model's 4%. Both sources agree closely on Argentina's win probability and the draw probability, but they split on how much upside to assign the underdog. The dashboard does not adjudicate which assessment is more accurate; the discrepancy may reflect different data, methods, or market sentiment on Algeria's actual competitive level."
 }

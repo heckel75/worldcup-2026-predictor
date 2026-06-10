@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://worldcup.divergencelog.com/sitemap.xml

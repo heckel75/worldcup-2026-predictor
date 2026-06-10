@@ -3,9 +3,9 @@
   "home_team": "South Africa",
   "away_team": "South Korea",
   "date": "2026-06-24",
-  "input_hash": "5179e366c3ceb055e4bc8207204ea4e4fd69adf9",
-  "generated_at": "2026-06-10T06:35:05+00:00",
+  "input_hash": "82b97933a45748b7f39b89b8dc5dcd35ace4badc",
+  "generated_at": "2026-06-10T18:29:00+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea at 62%, with South Africa holding only a 13% chance of victory. The underdog's path to three points is narrow under this framework, though the draw probability sits at a substantial 25%.\n\nThe 62–25–13 spread suggests South Korea enters as a clear favorite, yet the model assigns the draw a meaningful role. The gap between South Korea's win probability and a South African victory is roughly 50 percentage points, indicating asymmetry; however, the 25% draw rate signals the match retains competitive texture and is unlikely to be a runaway result.\n\nThe sportsbook consensus diverges notably from the model. Books assign South Korea 47% (14 percentage points lower than the model) and South Africa 25% (12 points higher). The draw sits near parity between sources at 28–25%. This represents a material gap: the market is materially more bullish on South Africa and skeptical of a South Korea win than the statistical forecast. The dashboard does not adjudicate which view is correct."
+  "preview_text": "The model favors South Korea at 62%, more than four times the probability assigned to a South Africa victory at 13%. The underdog's path to three points is narrow on the model's estimate, though a draw remains a meaningful outcome at 25%.\n\nThe model's spread reflects a moderately lopsided contest. South Korea's dominance in win probability outpaces the draw probability substantially, suggesting the model expects the favorite to control possession and chances. However, a quarter probability on the draw indicates the match is not a foregone conclusion—South Africa retains realistic chances to avoid defeat.\n\nThe market consensus diverges notably from the model. Sportsbooks price South Africa's win probability at 25%, a gap of 12 percentage points above the model, and set South Korea at 47%, roughly 15 points lower. Polymarket moves in the same direction, pricing South Korea at 49%. The dashboard does not adjudicate which source better reflects the true outcome distribution; the disparity may reflect information asymmetries or different methodologies in assessing the teams' relative strength."
 }

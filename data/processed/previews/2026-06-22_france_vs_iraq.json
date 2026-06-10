@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Iraq",
   "date": "2026-06-22",
-  "input_hash": "ab6ee2c3cc46804a296ae8a3553f0379a21ba121",
-  "generated_at": "2026-06-10T06:34:42+00:00",
+  "input_hash": "64c322e1bd76f8a496d61ae3ac2b8dc7d056587a",
+  "generated_at": "2026-06-10T18:28:28+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model judges France as a strong favorite, assigning an 82% probability of a win. Iraq is given only a 1% chance of victory, reflecting a large gap in the underlying strength estimates between the two sides.\n\nThe forecast shape indicates France is heavily favored but a draw remains a meaningful possibility at 16%. The margin between a France win and a draw is pronounced, suggesting the model expects France to control the match more often than produce a stalemate. An Iraq upset is treated as negligible in the model's framework.\n\nThe model and sportsbook consensus diverge noticeably on Iraq's win probability—the books strip to 4%, some 3 percentage points higher than the model. The books also assign less weight to draws (11% vs. the model's 16%), implying they expect either a decisive France victory or a small chance of an Iraq shock rather than a close contest. On France's win probability, the sources are closely aligned. The dashboard does not adjudicate which view of Iraq's tail risk is correct."
+  "preview_text": "The model favors France heavily at 83.5%, leaving Iraq with a minimal 0.8% win probability. The draw carries 15.7% in the forecast, reflecting the small window in which a result other than a French victory might occur.\n\nThe spread across win, draw, and loss outcomes is decidedly asymmetric. A French win dominates the probability landscape by a wide margin. The draw sits well above Iraq's win chance, indicating that stalemate is a plausible scenario—nearly 20 times more likely than an Iraqi upset—though still secondary to outright French victory.\n\nThe sportsbook consensus and Polymarket both assign higher probability to an Iraq win than the model does, creating meaningful divergences of 3–4 percentage points in that outcome. The model and market are closely aligned on France's win probability and moderately aligned on the draw. The dashboard does not adjudicate which source is more accurate; the discrepancy warrants note but does not resolve to a clear signal."
 }

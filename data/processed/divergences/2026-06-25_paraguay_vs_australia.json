@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 17.8,
-  "input_hash": "234b943183ecb2a07e1d058e9c0e2f5266f73ba8",
-  "generated_at": "2026-06-09T10:03:35+00:00",
+  "max_gap_pp": 17.7,
+  "input_hash": "60125f88c96096132c66c04cb9fc6474cbac9d58",
+  "generated_at": "2026-06-10T18:30:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 44%, while the sportsbook consensus favors Paraguay at 44%, creating a structural inversion of who is likeliest to win. The gap on the Paraguay win is 18 percentage points, with the market pricing it substantially higher than the model's estimate. This kind of divergence could reflect recent lineup changes, injury news, or form shifts that the model has not yet incorporated into its Elo-based ratings. The dashboard flags this as a notable signal—two well-resourced forecasting approaches naming different favorites—without adjudicating which captures the true probabilities."
+  "commentary_text": "The model favors Australia at 44%, while the sportsbook consensus and Polymarket both back Paraguay as the likeliest outcome at 44% and 44% respectively. The largest single gap appears on the Paraguay win: the model assigns it 26%, whereas the market consensus sits at 44%—an 18-percentage-point spread. Draw probabilities are tightly clustered across all three sources. The divergence suggests the market may be pricing in information about recent form or squad availability that the model's Elo foundation does not capture, or the model's goal-distribution assumptions may underweight Paraguay's chances in a neutral setting. The dashboard flags this as a genuine tension between statistical structure and real-money consensus, without adjudicating which reflects ground truth."
 }

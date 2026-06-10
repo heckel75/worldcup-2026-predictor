@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Paraguay",
   "date": "2026-06-12",
-  "input_hash": "8490ddc7a5220208a3f119728868fb0537727aee",
-  "generated_at": "2026-06-09T09:57:52+00:00",
+  "input_hash": "c3a61d49da84d5916773697c63a1b1cbd47c2920",
+  "generated_at": "2026-06-10T18:27:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors the USA at 44%, with Paraguay trailing at 25%. The underdog's path to victory is narrow but not negligible, sitting roughly nine percentage points behind the favorite in the model's assessment.\n\nThe draw probability of 31% suggests a fairly competitive encounter. The gap between a USA win and a draw is modest, indicating the model sees this match as capable of producing either a home-side victory or a stalemate with meaningful likelihood. Paraguay's upside remains constrained but reflects a non-trivial chance of an upset or a low-scoring result.\n\nThe model and market are closely aligned across all three outcomes. The sportsbook consensus puts the USA slightly higher at 48% and Paraguay slightly lower at 24%, but these gaps of roughly four percentage points fall well within typical variance between independent forecasting approaches. Polymarket prices track similarly. No material disagreement exists between sources."
+  "preview_text": "The model rates USA as favorite with a 44% win probability, placing Paraguay's chances at 25%. The gap reflects a modest advantage; Paraguay remains competitive at roughly one-in-four odds rather than a distant outsider.\n\nThe outcome distribution suggests a tightly contested match. The draw sits at 31%, only 6 percentage points below the favorite's win probability. This spread indicates the teams are close enough that a goalless result or shared outcome remains plausible, and no scenario dominates decisively.\n\nThe model and sportsbook consensus diverge meaningfully on the USA's win probability. Books and Polymarket both price the favorite around 49%, roughly 5 percentage points above the model's 44%. Both sources align closely on draw and Paraguay win probabilities. The dashboard does not claim certainty about which assessment is correct; the divergence may reflect public betting patterns, qualitative intelligence, or genuine model uncertainty."
 }

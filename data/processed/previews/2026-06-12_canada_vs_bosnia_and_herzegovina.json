@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Bosnia and Herzegovina",
   "date": "2026-06-12",
-  "input_hash": "ee37b3069098bd5ade530cecc6a0c0de218b4e24",
-  "generated_at": "2026-06-10T06:33:27+00:00",
+  "input_hash": "0b1b5f6f5a09670de9e87710bafc9fe526f51a6a",
+  "generated_at": "2026-06-10T18:27:00+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model forecasts a commanding advantage for Canada, assigning an 80% win probability against Bosnia and Herzegovina's 2%. The underdog's path to victory is narrow under the statistical framework, while Canada is favored decisively in this neutral-venue matchup.\n\nThe model's spread reflects minimal ambiguity: a Canadian win is the overwhelmingly likely outcome, with a draw rated as a secondary possibility at 18%. Bosnia and Herzegovina's 2% win probability indicates the model sees the matchup as highly uncompetitive by its estimates, leaving little room for an upset or a stalemate outcome.\n\nThe market consensus diverges sharply from the model. Sportsbooks and Polymarket participants assign Bosnia and Herzegovina a roughly 21% chance—nearly ten times higher than the model's 2% estimate—and shade the draw upward to 26–27%, while compressing Canada's win probability to around 52–53%. The gap between model and market is substantial and material; the dashboard does not claim knowledge of which assessment is more accurate, but bettors are pricing the match as considerably more competitive than the statistical framework suggests."
+  "preview_text": "The model projects Canada as a strong favorite with an 80% win probability, leaving Bosnia and Herzegovina just 2% odds of victory. This is a steep assessment that positions the match as heavily one-sided from a statistical standpoint.\n\nThe expected distribution reflects that imbalance. Canada's 80% win rate dominates the outcome space, while draws occur in the model's view roughly one time in six. Bosnia and Herzegovina's 2% win probability suggests the model sees little realistic path to three points, implying a heavily constrained match in terms of competitive plausibility.\n\nThe model and market diverge sharply here. Sportsbook consensus strips Canada's edge to 53%, assigns draws 27%, and gives Bosnia and Herzegovina 21%—a gap of 27 percentage points on the favorite's probability alone. Polymarket prices align tightly with the books. The dashboard does not arbitrate which assessment is correct; the difference reflects material disagreement on the teams' relative strength or match structure."
 }

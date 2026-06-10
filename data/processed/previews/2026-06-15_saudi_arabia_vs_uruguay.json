@@ -3,9 +3,9 @@
   "home_team": "Saudi Arabia",
   "away_team": "Uruguay",
   "date": "2026-06-15",
-  "input_hash": "8f09dc9c63a8a22b69b90fad64a03bb8de8c4c71",
-  "generated_at": "2026-06-09T09:58:44+00:00",
+  "input_hash": "be5a0811206cb5f98afa067d74af847d1add071f",
+  "generated_at": "2026-06-10T18:27:36+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Uruguay enters as the clear favorite with a 66% win probability according to the model, while Saudi Arabia's chance of victory stands at only 10%. The underdog faces a substantial disadvantage in a matchup where the model sees the outcome heavily tilted toward one side.\n\nThe draw probability of 24% indicates meaningful uncertainty in the match's decisive outcome. While Uruguay's path to victory dominates the distribution, the gap between a Uruguay win and a draw is not extreme, suggesting the match could remain competitive enough that a stalemate represents a material possibility rather than an outlier result. Saudi Arabia's low win probability reflects a wide disparity in expected performance.\n\nModel and market consensus are tightly aligned across all three outcomes. The win probability gap between them is under 2 percentage points; the draw probabilities differ by roughly 2 points. Polymarket pricing shows similarly close agreement. This convergence across independent sources indicates consistent assessment of the match balance rather than divergent views between statistical and betting-market forecasters."
+  "preview_text": "The model rates Uruguay as a strong favorite with a 65% chance of victory, while Saudi Arabia's win probability sits at 11%. The underdog faces a steep task but retains a meaningful draw probability of 24%, suggesting the match carries enough variance to avoid a foregone conclusion.\n\nThe win-draw-loss spread reflects Uruguay's clear edge without a dominant gap in either direction. A Saudi Arabia upset remains improbable; the 24% draw probability indicates competitive balance around the likely outcome rather than a rout scenario. Uruguay is expected to control play and limit the opponent's chances, but the neutral venue and match-day variance leave room for surprise.\n\nModel and market are closely aligned across all three outcomes. Sportsbook consensus places Uruguay at 66%, only 1 percentage point above the model, with the draw and Saudi Arabia win varying by 2 percentage points or less. Polymarket prices show similarly tight agreement, reinforcing a stable consensus on match structure."
 }

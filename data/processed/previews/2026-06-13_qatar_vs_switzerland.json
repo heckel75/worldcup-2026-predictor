@@ -3,9 +3,9 @@
   "home_team": "Qatar",
   "away_team": "Switzerland",
   "date": "2026-06-13",
-  "input_hash": "1ec8ee2408e75dbca8ee0588f267f1bd011de591",
-  "generated_at": "2026-06-10T06:33:31+00:00",
+  "input_hash": "33a6b50730d3247a2439ca4fc366affbd4a5db3f",
+  "generated_at": "2026-06-10T18:27:08+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Switzerland heavily, assigning them an 81% win probability against a Qatar side given only a 3% chance of victory. The gap reflects a substantial quality differential in the forecast.\n\nThe win–draw–loss spread underscores Switzerland's dominance. Draws are plausible at 16%, suggesting the match could remain competitive for stretches, but the model expects a decisive Swiss outcome more often than not. Qatar's low win probability indicates the model sees little path to a three-point result for the underdog.\n\nModel and market are closely aligned. The sportsbook consensus places Switzerland at 79% (versus the model's 81%) and Qatar at 7% (versus 3%), a divergence of a few percentage points on each side. Polymarket prices sit between the two, clustering near the model's estimate. All three sources agree substantially on the match direction, though they differ modestly on the underdog's floor probability."
+  "preview_text": "The model favors Switzerland heavily at 81%, leaving Qatar with only a 3% chance of victory. The underdog path is narrow; Switzerland enters as a strong favorite across all three outcomes.\n\nThe win-draw-loss spread shows Switzerland's dominance with an 81-point margin over Qatar's win probability, while the draw sits at a modest 16%. A Switzerland victory is the overwhelming base case, though a draw remains plausible enough to merit the mid-teens likelihood. Qatar would need an exceptional performance to find the net.\n\nModel and market are closely aligned. The model assigns Qatar a 3.4% win probability versus the sportsbook consensus of 6.8%, a modest divergence that reflects slightly different risk assessments at the underdog end. Switzerland and draw probabilities track within a few percentage points across both sources. The dashboard does not adjudicate which estimate is more accurate."
 }

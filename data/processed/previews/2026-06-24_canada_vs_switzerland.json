@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "input_hash": "a5d2fcc0e5b8dd5bc5380e8754292569bdaff882",
-  "generated_at": "2026-06-10T06:35:09+00:00",
+  "input_hash": "b6184f2fe0cc1b64ef06c0123d7fbcfa046942e5",
+  "generated_at": "2026-06-10T18:29:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Canada at 41% to win, with Switzerland trailing at 28%. The underdog's path is narrower but far from foreclosed. A draw ranks second in likelihood at 31%, suggesting this match carries genuine competitive tension.\n\nThe win–loss spread reflects a moderately open contest. Canada holds the statistical edge, yet the draw probability remains substantial—nearly matching Switzerland's outright win chance. This distribution indicates the teams are closer in the model's assessment than a simple head-to-head win probability might suggest, with multiple plausible outcomes.\n\nThe market and Polymarket consensus diverge notably from the model. Both sportsbooks and crypto traders assign Switzerland roughly 44% to win—a 16 percentage point gap above the model's 28%. Conversely, both sources credit Canada with only 27%, some 13 points below the model. Draw probabilities align closely across all three sources. The dashboard does not adjudicate which view is correct; the divergence warrants attention from users."
+  "preview_text": "The model favors Canada at 41% to win, compared to Switzerland's 28% win probability. This 13-percentage-point gap reflects a modest edge for Canada in the statistical forecast, though Switzerland retains a meaningful chance at victory on a neutral ground.\n\nThe draw sits at 31%, making three outcomes genuinely plausible rather than one dominant scenario. The spread across win probabilities is moderate—neither team is heavily favored to avoid the result entirely—suggesting a competitive match where neither side enters as a clear favorite in the traditional sense.\n\nThe market and model diverge significantly here. Sportsbooks and Polymarket both lean heavily toward Switzerland at 45% and 45% respectively, against Canada at 26–27%. This 14–18 percentage-point gap between model and market favorites is material. The dashboard does not adjudicate between these sources; the divergence flags genuine uncertainty about the underlying matchup strength."
 }

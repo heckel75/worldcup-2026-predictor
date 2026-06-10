@@ -3,9 +3,9 @@
   "home_team": "Austria",
   "away_team": "Jordan",
   "date": "2026-06-16",
-  "input_hash": "b8518402251f05d829b8cded6a0e92fcaf8fb1ed",
-  "generated_at": "2026-06-10T06:34:07+00:00",
+  "input_hash": "b09d34840c16744cdeef9822e84d06f46b3f3703",
+  "generated_at": "2026-06-10T18:27:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Austria as the favored outcome at 45%, with Jordan holding a 24% chance of victory. The remaining 31% probability settles on a draw, suggesting a notably competitive fixture rather than a heavily tilted contest.\n\nThe spread across outcomes reveals a relatively balanced match according to the model. Austria's five-point advantage over the draw probability, and the draw's seven-point edge over Jordan, point to a match where multiple results remain plausible. No single outcome dominates; the relatively even distribution across all three possibilities indicates genuine uncertainty about the final result.\n\nA substantial divergence exists between the model and sportsbook consensus. The market prices Austria at 72%, fully 27 percentage points above the model's 45%, while condensing Jordan's win probability to just 10%. The model and market agree that Austria enters as favorite, but they disagree markedly on the margin of that advantage. The dashboard does not adjudicate which view is more reliable."
+  "preview_text": "The model rates Austria as the favored outcome at 45%, but the gap to Jordan remains material rather than commanding. Jordan's win probability of 24% reflects genuine competitive viability, while the draw emerges as a plausible contingency at 31%.\n\nThe spread across the three outcomes is relatively balanced. Austria holds an advantage, yet the 21-percentage-point margin to Jordan and the substantial draw likelihood suggest the match could move in multiple directions. Neither team's path to victory appears heavily favored in isolation.\n\nThe sportsbook and Polymarket consensus strongly diverge from the model. Both betting markets assign Austria a 72–74% win probability and Jordan just 9–10%, a gap of roughly 27 percentage points versus the model's 21-point spread. The model sees the draw as twice as likely as the betting consensus does. The dashboard does not adjudicate which source is more accurate; the divergence merits attention from users evaluating the fixture."
 }

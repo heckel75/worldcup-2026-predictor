@@ -3,9 +3,9 @@
   "home_team": "Belgium",
   "away_team": "Iran",
   "date": "2026-06-21",
-  "input_hash": "dd403085aab003d6ef0347b16d977bf60aca7925",
-  "generated_at": "2026-06-10T06:34:34+00:00",
+  "input_hash": "eb499ccaba32d6bf7ac168a95be7d85921fbee35",
+  "generated_at": "2026-06-10T18:28:19+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Belgium at 38%, but the gap to Iran's 30% is modest. An Iran upset remains plausible under the statistical forecast, which assigns the underdog nearly one-in-three odds. This is a notably tight matchup in model space, with Belgium holding only a single-digit percentage-point edge.\n\nThe draw probability of 32% reflects competitive balance in the model's projection. The spread across outcomes—38%, 32%, 30%—suggests the match is unlikely to feel one-sided. All three results carry meaningful weight, and the relatively high draw chance indicates the teams are expected to converge on a competitive equilibrium.\n\nThe sportsbook and Polymarket consensus diverge sharply from the model. Both sources elevate Belgium to roughly 68–70% and compress Iran to 10–11%, a spread roughly 29 percentage points wider than the model estimate. The market assigns the draw 20% or less, versus the model's 31%. This represents a material gap; the dashboard does not adjudicate which assessment better reflects true match probability."
+  "preview_text": "The model rates Belgium as the marginal favorite with a 38% win probability, but Iran trails only narrowly at 30%, suggesting a competitive encounter rather than a heavily one-sided affair. Belgium's edge reflects some underlying quality differential, yet the gap between favorite and underdog remains modest by World Cup standards.\n\nThe distribution points to a tight match. The 31% draw probability indicates stalemate is a plausible outcome — neither team is forecast to dominate decisively. The spread between Belgium's 38% and Iran's 30% is narrow enough that the result remains substantially uncertain, with nearly one-third of scenarios ending level.\n\nThe model and sportsbook consensus diverge meaningfully. The market elevates Belgium to 68% and compresses Iran to 12%, a gap of roughly 30 percentage points in Belgium's favor versus the model's 8-point advantage. Polymarket prices align closely with the sportsbook view. The dashboard does not adjudicate which assessment is more accurate; bettors should weigh the sources independently."
 }

@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "Croatia",
   "date": "2026-06-23",
-  "input_hash": "b1463482fd24e0c1b01e64d7f7ce761acfef6200",
-  "generated_at": "2026-06-10T06:34:57+00:00",
+  "input_hash": "e7caa5e51eca2c6ebd28c62b8bec876b088e9f72",
+  "generated_at": "2026-06-10T18:28:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Croatia at 47%, with Panama assigned a 23% chance of victory. The underdog's probability is less than half the favorite's, indicating a clear hierarchy, though not an overwhelming gap.\n\nThe 31-percentage-point spread between Croatia's win probability and Panama's suggests a competitive match tilted toward the favorite. A draw at 30% remains plausible and represents the second-likeliest outcome, indicating the teams could be close enough in execution that a stalemate is nearly as likely as a Panama upset.\n\nThe market consensus—sportsbooks and Polymarket both—diverges notably from the model. Both sources price Croatia considerably higher (62% to 64% win probability) and Panama lower (14% to 13%), a gap of roughly 9 percentage points on the favorite side. The model estimates more upside for Panama and a higher draw likelihood. The dashboard does not adjudicate between these forecasts."
+  "preview_text": "The model favors Croatia at 47% to win, with Panama's chances at 23%. The underdog faces a 24-percentage-point deficit in outright victory probability, though a draw at 30% remains the single most likely outcome in the model's forecast.\n\nThe spread across win-draw-loss outcomes is moderate rather than extreme. A draw appears genuinely plausible, accounting for nearly a third of simulated matches. Croatia emerges as the clear favorite but not overwhelmingly so; Panama retains meaningful chances to either draw or win, suggesting a moderately competitive contest.\n\nThe market is considerably more bearish on Panama than the model, pricing a Panama win at 15% against the model's 23%—an 8-percentage-point gap. Conversely, the market leans into Croatia at 62%, some 15 points higher than the model. Both sportsbooks and Polymarket align closely with each other but diverge meaningfully from the model's central estimate. The dashboard does not adjudicate which is correct."
 }

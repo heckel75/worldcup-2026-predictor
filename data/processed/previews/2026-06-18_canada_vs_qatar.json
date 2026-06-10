@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Qatar",
   "date": "2026-06-18",
-  "input_hash": "65f883b3f02c37124598cdf474253e081f78cdc3",
-  "generated_at": "2026-06-09T09:59:33+00:00",
+  "input_hash": "ea57004e8340ee00c7d561f8257a511a3e5e9494",
+  "generated_at": "2026-06-10T18:28:07+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Canada strongly, assigning an 86% win probability and leaving just 14% for a draw. Qatar registers at 0% in the model's assessment, a reflection of the gap in the underlying Elo ratings. Canada enters as a clear favorite on this neutral ground.\n\nThe model's forecast permits only two outcomes: a Canadian victory or a stalemate. A draw at 14% suggests a plausible but minority scenario—one where Qatar absorbs pressure effectively or Canada fails to convert chances. The spread between the two probabilities indicates a match the model expects Canada to dominate, though not one devoid of competitive risk.\n\nModel and market diverge meaningfully here. The sportsbook consensus allocates 72% to Canada and 19% to a draw, while also crediting Qatar with 9% win probability—a substantial difference from the model's zero. The Polymarket assessment splits similarly to the books, closer to the middle ground. The dashboard does not adjudicate which source better captures the true win probabilities; the gap warrants attention from bettors weighting these forecasts."
+  "preview_text": "The model forecasts a heavily favoured Canada victory at 86%, leaving Qatar with minimal win probability and a 14% draw chance. The model's assessment is substantially more confident in a Canadian win than either the sportsbook consensus or the Polymarket aggregate, which assign Qatar meaningful tail risk.\n\nThe model's distribution reflects a match tilted sharply toward a single outcome. A draw remains plausible at 14%, but the concentration of probability on a Canadian win suggests the model anticipates a decisive result. Qatar's modelled win probability rounds to zero, implying the model sees little competitive equilibrium on a neutral pitch.\n\nThe sportsbook consensus and Polymarket prices are closely aligned with each other but diverge notably from the model. Both market sources assign Canada roughly 72–74% and Qatar roughly 8–9%, a gap of some 12 percentage points from the model's confidence in Canada. The model does not claim superior foresight; the dashboard presents both sources for comparison, and users may weight them according to their own framework."
 }
