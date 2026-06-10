@@ -3,9 +3,9 @@
   "home_team": "South Africa",
   "away_team": "South Korea",
   "date": "2026-06-24",
-  "input_hash": "82b97933a45748b7f39b89b8dc5dcd35ace4badc",
-  "generated_at": "2026-06-09T10:01:05+00:00",
+  "input_hash": "5179e366c3ceb055e4bc8207204ea4e4fd69adf9",
+  "generated_at": "2026-06-10T06:35:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea with a 62% win probability, roughly five times the model's 13% estimate for a South Africa victory. The draw lands at 25%, making it the second-most likely outcome in the model's assessment.\n\nThe spread between South Korea's win probability and South Africa's is substantial, but the presence of a meaningful draw probability at 25% suggests the match retains competitive uncertainty. South Korea emerges as clear favorite, yet the outcome remains far from predetermined; draws occur in roughly one in four instances at this frequency.\n\nThe sportsbook consensus and Polymarket prices diverge notably from the model. Both market sources assess South Africa's chances significantly higher—around 24% versus the model's 13%—and assign South Korea only 47–49% rather than 62%. The draw estimates align closely across all three sources near 27–28%. The dashboard does not adjudicate which view is more accurate; the gap reflects genuine disagreement about relative team strength at a neutral venue."
+  "preview_text": "The model favors South Korea at 62%, with South Africa holding only a 13% chance of victory. The underdog's path to three points is narrow under this framework, though the draw probability sits at a substantial 25%.\n\nThe 62–25–13 spread suggests South Korea enters as a clear favorite, yet the model assigns the draw a meaningful role. The gap between South Korea's win probability and a South African victory is roughly 50 percentage points, indicating asymmetry; however, the 25% draw rate signals the match retains competitive texture and is unlikely to be a runaway result.\n\nThe sportsbook consensus diverges notably from the model. Books assign South Korea 47% (14 percentage points lower than the model) and South Africa 25% (12 points higher). The draw sits near parity between sources at 28–25%. This represents a material gap: the market is materially more bullish on South Africa and skeptical of a South Korea win than the statistical forecast. The dashboard does not adjudicate which view is correct."
 }

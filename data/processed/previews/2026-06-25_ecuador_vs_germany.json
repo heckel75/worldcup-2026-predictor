@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Germany",
   "date": "2026-06-25",
-  "input_hash": "ef4e65c665d2bea3cf1348e47235e5e47330e46a",
-  "generated_at": "2026-06-09T10:01:37+00:00",
+  "input_hash": "3bd4d20bdf2c6f1b391eb7025edefc7fe3318508",
+  "generated_at": "2026-06-10T06:35:33+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assigns Germany a narrow favorite with a 35% win probability, while Ecuador's chance stands at 33%. This represents a closely matched contest in which neither team holds a commanding edge under the statistical forecast. Germany's modest advantage reflects only a 2 percentage point gap over the underdog.\n\nThe draw probability of 32% signals genuine competitive balance. A single goal or defensive discipline could easily shift the result either way. All three outcomes—Ecuador victory, stalemate, or German success—fall within a narrow band, suggesting the match carries material uncertainty and that a low-scoring or tightly contested affair is plausible.\n\nThe sportsbook consensus materially diverges from the model. The market favors Germany at 55%, some 20 percentage points higher than the model's 35%, and prices Ecuador at 21%, roughly 12 points lower. Polymarket pricing aligns closely with sportsbooks. The dashboard does not adjudicate which assessment is correct; the spread reflects genuine disagreement between statistical inference and betting-market conviction about this pairing."
+  "preview_text": "The model favors Germany at 35%, though Ecuador sits close behind at 33%, making this a highly competitive fixture. Germany holds only a 2-percentage-point edge in the forecast, suggesting the teams are nearly matched in expected strength on a neutral ground.\n\nThe draw probability of 32% underscores how competitive the match is likely to be. The win probabilities are tightly bunched, with no outcome commanding clear separation. A stalemate is nearly as probable as either team taking three points, pointing to a closely contested game where the result remains genuinely uncertain.\n\nThe model and market diverge meaningfully here. Sportsbooks price Germany at 55%, a gap of roughly 20 percentage points above the model's 35% forecast. Ecuador's win probability shows a similar pattern: the model suggests 33% while books price it at 20%. The dashboard does not claim to know which assessment is more accurate. This divergence may reflect market views on squad strength, depth, or other factors not captured in the statistical inputs available to the model."
 }

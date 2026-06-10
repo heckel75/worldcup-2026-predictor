@@ -5,10 +5,10 @@
   "date": "2026-06-13",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 17.7,
-  "input_hash": "7dd0f6c661d7e8c3118db05ecab219b48b16e1e6",
-  "generated_at": "2026-06-09T10:02:47+00:00",
+  "max_gap_pp": 16.4,
+  "input_hash": "7f94e0be5f9a0e7d7fda1f82ddb75b76bade1725",
+  "generated_at": "2026-06-10T06:36:16+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The starkest gap lies on the Scotland win: the market prices it at 63%, while the model shows 45%, a 18-percentage-point spread. Both sources agree Scotland is the favorite, but the sportsbooks and crypto markets are substantially more confident in that outcome. This widened conviction could reflect recent lineup changes, injury status among key players, or recent form trends that the model's Elo framework has not yet absorbed. The draw probability also sits notably lower in the market (22% versus 30%), suggesting bookmakers see a clearer result than the statistical baseline anticipates. The dashboard flags this as a signal worth monitoring: either the market has visibility on information unavailable to the model, or the model's rating differential is more predictive than real-money prices currently assume."
+  "commentary_text": "The market assigns Scotland a 61–62% win probability versus the model's 45%, a 16–17 percentage-point gap favoring the favorite. The model and sportsbooks agree Scotland is likeliest to win, but the market's confidence is substantially higher. This sharper conviction could reflect recent form, injury or lineup developments, or other team news unavailable to the model's last training update. The dashboard presents this widening confidence spread as a signal worth monitoring—it does not indicate which forecast is more reliable, only that real-money flows and the model's Elo-based estimate are pulling in opposite directions on Scotland's true chances."
 }

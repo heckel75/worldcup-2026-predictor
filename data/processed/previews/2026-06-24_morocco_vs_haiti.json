@@ -3,9 +3,9 @@
   "home_team": "Morocco",
   "away_team": "Haiti",
   "date": "2026-06-24",
-  "input_hash": "bbd7b997d23b1049f904df9d1ee7b0282db50c2b",
-  "generated_at": "2026-06-09T10:01:20+00:00",
+  "input_hash": "a805ef4df3f472c331a40f78dc7073a3f2aab5fd",
+  "generated_at": "2026-06-10T06:35:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Morocco at 74%, leaving Haiti with a 5% chance of victory. The gap reflects a substantial quality differential in the forecast. Morocco enters as a clear favorite, though not at the overwhelming odds sometimes seen in World Cup matches between vastly unequal sides.\n\nThe win-draw-loss spread suggests a moderately competitive match rather than a one-sided encounter. A draw carries a 21% probability, indicating genuine possibility of a stalemate. Morocco's advantage is real but not insurmountable; the outcome is not heavily concentrated in one scenario.\n\nThe model and sportsbook consensus align closely on Morocco's win probability, separated by roughly 3 percentage points. The more notable divergence appears in Haiti's chances: the market grants Haiti 10%, compared to the model's 5%—a meaningful gap suggesting bookmakers price the underdog more generously than the statistical forecast. Polymarket pricing sits between these two readings. The dashboard does not adjudicate which estimate is more accurate."
+  "preview_text": "The model favors Morocco at 74%, leaving Haiti with a 5% chance of victory. This is a heavily asymmetric matchup in terms of win probability, though the 21% draw likelihood prevents the favorite from being entirely dominant.\n\nThe spread across outcomes reflects a match expected to be competitive in structure if not in outright upset probability. Morocco's near-3-to-1 advantage in win probability sits alongside a meaningful draw contingency—one in five outcomes—suggesting that while Morocco enters as clear favorite, a stalemate remains plausible. Haiti's win probability, though low, is not negligible at 5%.\n\nThe model and sportsbook consensus align closely across all three outcomes, with gaps under 3 percentage points. Polymarket prices show slightly tighter odds on Morocco and lower odds on a draw, but the three sources move together within a narrow band. No material divergence suggests disagreement on the fundamental shape of this fixture."
 }

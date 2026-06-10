@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "Croatia",
   "date": "2026-06-23",
-  "input_hash": "0e99b2b1fcd52be15181dda188b1e8ec5c629f39",
-  "generated_at": "2026-06-09T10:00:57+00:00",
+  "input_hash": "b1463482fd24e0c1b01e64d7f7ce761acfef6200",
+  "generated_at": "2026-06-10T06:34:57+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Croatia as the favorite with a 47% win probability, while Panama holds a 23% chance of victory. The gap reflects a meaningful but not overwhelming edge; the model sees material upside in the underdog.\n\nA draw at 30% sits near the midpoint of the outcome distribution, suggesting competitive balance despite Croatia's advantage. The spread across all three outcomes—neither heavily skewed toward a single result nor tightly bunched—indicates a match likely to remain contestable through regulation, with draws and upset wins both plausible contingencies rather than remote scenarios.\n\nThe sportsbook consensus diverges notably from the model. Books price Croatia 16 percentage points higher (63% vs. 47%) and Panama 10 points lower (14% vs. 23%), compressing the draw to 23%. Polymarket prices align closely with the books. The dashboard does not claim to know whether this divergence reflects superior market information, systematic model limitations, or differing risk-appetite assumptions. Backers of Panama value or draw backers may flag the gap as relevant to their decision-making."
+  "preview_text": "The model favors Croatia at 47%, with Panama assigned a 23% chance of victory. The underdog's probability is less than half the favorite's, indicating a clear hierarchy, though not an overwhelming gap.\n\nThe 31-percentage-point spread between Croatia's win probability and Panama's suggests a competitive match tilted toward the favorite. A draw at 30% remains plausible and represents the second-likeliest outcome, indicating the teams could be close enough in execution that a stalemate is nearly as likely as a Panama upset.\n\nThe market consensus—sportsbooks and Polymarket both—diverges notably from the model. Both sources price Croatia considerably higher (62% to 64% win probability) and Panama lower (14% to 13%), a gap of roughly 9 percentage points on the favorite side. The model estimates more upside for Panama and a higher draw likelihood. The dashboard does not adjudicate between these forecasts."
 }

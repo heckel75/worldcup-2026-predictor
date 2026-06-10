@@ -3,9 +3,9 @@
   "home_team": "Iran",
   "away_team": "New Zealand",
   "date": "2026-06-15",
-  "input_hash": "3ff18cb47f0354d506a2f343e3c1ed54c7e59db5",
-  "generated_at": "2026-06-09T09:58:35+00:00",
+  "input_hash": "7bb523b9f57021a6b3afcc1b654a4c7502b6117c",
+  "generated_at": "2026-06-10T06:33:54+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Iran at 65%, giving New Zealand only a 10% chance of victory. This represents a decisive lean toward the higher-seeded team, with the underdog facing a steep probability hill despite the neutral venue.\n\nThe expected match shape reflects moderate-to-strong separation between the sides. Iran's draw probability of 25% suggests competitive balance exists but that outright Iranian superiority is the modal outcome. New Zealand's 10% win probability indicates a scenario where the favorites falter significantly, not a genuinely even contest.\n\nModel and market diverge meaningfully here. The model backs Iran by 14 percentage points; sportsbooks and Polymarket cluster around 50% for Iran, closer to parity. The gap widens on New Zealand—the model gives 10%, while books and crypto markets align near 21%. This suggests the market prices substantially more uncertainty or New Zealand strength than the statistical model does. The dashboard does not adjudicate between these views."
+  "preview_text": "The model favors Iran at 65%, nearly twice the probability it assigns to a New Zealand victory at 10%. The statistical forecast sees a substantial gap between the two sides, though the draw probability of 25% suggests the match retains meaningful uncertainty.\n\nThe win-loss spread indicates Iran is the clear favorite, but a quarter chance of a stalemate reflects competitive balance in the middle ground. A New Zealand upset remains possible at one in ten, while draws neither rare nor dominant in the model's view.\n\nThe model and market diverge notably here. The sportsbook consensus gives Iran only 51%, some 14 percentage points below the model estimate, while assigning New Zealand 22%—more than double the model's 10%. Polymarket aligns closely with sportsbooks. The dashboard does not adjudicate between these sources; the gap warrants attention from users assessing which framework better reflects underlying match dynamics."
 }

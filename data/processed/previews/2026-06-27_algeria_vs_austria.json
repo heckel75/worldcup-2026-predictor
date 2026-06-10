@@ -3,9 +3,9 @@
   "home_team": "Algeria",
   "away_team": "Austria",
   "date": "2026-06-27",
-  "input_hash": "41f49750de16c62c7fe81f63a7b56d159a8bf66d",
-  "generated_at": "2026-06-09T10:02:11+00:00",
+  "input_hash": "b4faa340db7353411a22bf53e0fc4f57549e883f",
+  "generated_at": "2026-06-10T06:35:56+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Algeria at 37%, a modest edge over Austria's 32%. The underdog enjoys roughly a one-in-three chance, suggesting a competitive match without a clear favorite.\n\nThe win-draw-loss spread reflects meaningful competitive balance. A draw at 32% sits between the two decisive outcomes, indicating the teams are close in expected strength. The 5-percentage-point gap between an Algeria win and an Austria win is small enough that the match leans toward genuine uncertainty rather than concentration around a single result.\n\nThe model and market diverge notably here. The sportsbook consensus backs Austria at 43%, some 11 percentage points above the model's estimate, while rating Algeria at 27%—roughly 10 points lower than the model assigns. Polymarket prices align closely with the sportsbook view. The dashboard does not adjudicate between these assessments; the gap warrants attention from users seeking to understand where statistical and market opinion separate."
+  "preview_text": "The model rates Algeria as the marginal favorite with a 37% win probability, compared to Austria's 32% chance. The gap is narrow enough that either side enters as a credible contender in this neutral-venue matchup.\n\nA draw carries 32% probability in the model's forecast, making it a plausible outcome. The three outcomes cluster within a 5-percentage-point band, indicating the model sees a competitive, closely matched encounter with no heavily dominant result.\n\nThe sportsbook consensus and Polymarket prices diverge notably from the model. Both market sources favor Austria at roughly 44%, while assigning Algeria only 27%—a gap of 10 percentage points versus the model's assessment. The draw sits slightly lower in the market at 29–30%. The dashboard presents both signals without claiming superiority for either; the divergence reflects genuine disagreement about relative strength."
 }

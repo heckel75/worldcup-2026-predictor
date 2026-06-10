@@ -3,9 +3,9 @@
   "home_team": "Germany",
   "away_team": "Curaçao",
   "date": "2026-06-14",
-  "input_hash": "70e71ee4c29e5d73bee64753d3b44ab1d9d36a00",
-  "generated_at": "2026-06-09T09:58:13+00:00",
+  "input_hash": "adea505469583ba84bf083fbbc8cbfeb12a931ee",
+  "generated_at": "2026-06-10T06:33:38+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Germany at 84% to win, leaving Curaçao just 1% combined probability of avoiding defeat. The implied outcome is heavily skewed toward a German victory, though the model does assign a non-trivial 15% chance to a draw.\n\nThe win-draw-loss spread reflects a lopsided matchup. Germany's 84% win probability dominates, but the 15% draw probability suggests the encounter may not be entirely one-sided in terms of competitive shape. A Curaçao victory remains extremely improbable under the model at 0.6%, implying the contest is unlikely to turn on a shock result.\n\nThe market consensus diverges meaningfully from the model. Sportsbooks assign Germany 90%, raising the win probability by 6 percentage points and compressing the draw to 7%. Polymarket prices push further toward German dominance at 93%, with draws falling to 4%. The model is more conservative on Germany's chances and more open to a stalemate, while both market sources treat a German win as substantially more likely. The dashboard does not adjudicate which view is correct."
+  "preview_text": "The model rates Germany as a strong favorite at 84%, leaving Curaçao with a 0.6% win probability. This represents a heavily asymmetric matchup in which the underdog faces an uphill task to avoid defeat.\n\nThe model's distribution shows Germany favored to win by a substantial margin, yet assigns a meaningful 15.4% probability to a draw. That draw likelihood suggests the match retains competitive texture—Curaçao is not modeled as helpless, and a stalemate remains plausible even if a home win is heavily weighted.\n\nThe sportsbook consensus and Polymarket prices both diverge notably from the model, assigning Germany 92.5% and 93.6% respectively while compressing the draw to 5.4% and 4.2%. This represents a gap of 8–10 percentage points favoring Germany more heavily than the statistical forecast. The dashboard makes no claim about which source is more accurate; the divergence reflects different methodologies and market dynamics at play."
 }

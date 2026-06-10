@@ -3,9 +3,9 @@
   "home_team": "Uzbekistan",
   "away_team": "Colombia",
   "date": "2026-06-17",
-  "input_hash": "0fcdb21727bb8548b038f33a406f7a3a258c2901",
-  "generated_at": "2026-06-09T09:59:09+00:00",
+  "input_hash": "c9d47421c28be1a44b6d3d2003ddcfd9ea125132",
+  "generated_at": "2026-06-10T06:34:14+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Colombia to win with a 62% probability, substantially ahead of Uzbekistan's 13% chance. This 49-percentage-point gap reflects a clear hierarchical split in the forecast, with Colombia positioned as the strong favorite on a neutral pitch.\n\nThe draw probability of 26% creates meaningful competitive space in the W/D/L distribution. While Colombia's win probability dominates, the relatively high draw chance suggests the match is not modeled as a runaway; Uzbekistan's non-trivial upset window and the plausible stalemate outcome indicate moderate tactical tightness is expected rather than one-sided control.\n\nThe sportsbook consensus and Polymarket prices both lean more heavily toward Colombia than the model does, with the consensus assigning Colombia 68% and Polymarket 69%, compared to the model's 61%. The gap between model and market on a Colombia win is roughly 6–7 percentage points. The model's draw estimate sits 4–6 points above both betting sources. These are modest divergences; the three sources align directionally and on Uzbekistan's underdog status, though the market shows notably higher confidence in a Colombia victory."
+  "preview_text": "Colombia enters as the model's clear favorite with a 62% win probability, while Uzbekistan holds a 13% chance to prevail. The underdog's path to victory is narrow but not implausible in a single-match format.\n\nThe forecast reflects a competitive but unbalanced matchup. A draw registers at 26%, making it the second-most-likely outcome and suggesting the teams are not poles apart in quality. Colombia's advantage is substantial without being overwhelming; Uzbekistan retains meaningful chances in a neutral setting over 90 minutes.\n\nThe sportsbook consensus diverges from the model, favoring Colombia more heavily at 68% versus the model's 62%—a gap of roughly 6 percentage points. The market prices a lower draw probability at 21% and assigns Uzbekistan just 11%. Polymarket pricing aligns more closely with the books than with the statistical model. The dashboard does not adjudicate between these sources; both reflect legitimate but distinct approaches to the match."
 }

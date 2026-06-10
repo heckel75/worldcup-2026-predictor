@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "France",
   "date": "2026-06-26",
-  "input_hash": "9910ed5843b6ed8a1f165e75b6426eacbc09e2cd",
-  "generated_at": "2026-06-09T10:02:04+00:00",
+  "input_hash": "442dd154b3b2b635c34ea2aa7e0a1519b807ccd5",
+  "generated_at": "2026-06-10T06:35:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors France at 55%, with Norway's win probability at 17%. France enters as the clear favorite, though the underdog retains a realistic path to victory. A draw carries nearly 28% probability, suggesting the match has genuine competitive balance despite the gap in outright win chances.\n\nThe spread across outcomes indicates a moderately decisive matchup. France's advantage is meaningful but not overwhelming; the combined 46% chance of a non-France result reflects material uncertainty. The draw sitting between the two win probabilities, rather than dwarfed by either, suggests the sides are close enough that level play into the closing stages remains plausible.\n\nModel and market are closely aligned. The model rates France 3 percentage points higher than sportsbook consensus, while estimating Norway's win probability roughly 4 percentage points lower. Both sources converge on a draw near 26%. These gaps fall within typical forecast variance; the dashboard does not claim superiority over market pricing on individual matches."
+  "preview_text": "The model rates France as the clear favorite with a 55% win probability, while Norway is given a 17% chance of victory. That gap of roughly 38 percentage points reflects a substantial disparity in the statistical forecast, leaving the underdog with a low but non-negligible path to three points.\n\nThe expected outcome distribution shows France favored but not overwhelmingly so in absolute terms. A draw sits at 28%, making it a genuine possibility—nearly as likely as a France win in isolation. The spread across all three outcomes (17–28–55) suggests a competitive match with a plausible stalemate, though France enters as the heavy lean.\n\nThe sportsbook consensus and Polymarket prices align closely with the model across all three outcomes, with gaps of 4 percentage points or smaller on each line. The market leans marginally toward Norway and slightly away from a draw compared to the model, but the differences are minor. Model and market are essentially aligned on France's advantage and the overall competitive shape of the fixture."
 }

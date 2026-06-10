@@ -5,10 +5,10 @@
   "date": "2026-06-16",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 27.5,
-  "input_hash": "1f1f5ceaa807d33444469f230093966d39b1c9e5",
-  "generated_at": "2026-06-09T10:02:58+00:00",
+  "max_gap_pp": 27.3,
+  "input_hash": "b9715edd2b5558cc0bce0186fdfbddb2657dbdd2",
+  "generated_at": "2026-06-10T06:36:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The sportsbook consensus assigns Austria a 72% win probability versus the model's 45%, a 27-percentage-point gap favoring the favorite. The market is also substantially more pessimistic on Jordan, pricing them at 10% versus the model's 24%. This widening of conviction in Austria's favor could reflect recent lineup news, injury updates, or current form affecting one or both teams that the model has not yet incorporated. The divergence flags a meaningful signal: the market is seeing something that sharpens confidence in an Austria victory, though the dashboard cannot confirm whether that edge reflects genuine predictive information or overweighting of readily available signals."
+  "commentary_text": "The sportsbook consensus assigns Austria a 72% win probability versus the model's 44%, a 28-percentage-point gap favoring the favorite. The market is also sharply less bullish on a draw, pricing it at 18% compared to the model's 31%. This divergence suggests the books may be incorporating information about recent form, lineup availability, or injury status that the model cannot access. Such news could genuinely shift the underlying match quality in Austria's favor, or the market could be overweighting recent patterns. The dashboard flags this gap as a signal worth monitoring rather than a judgment on either forecast's accuracy."
 }

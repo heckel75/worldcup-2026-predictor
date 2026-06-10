@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 19.4,
-  "input_hash": "6e376fb53086f94a50b104544b3823a90c265263",
-  "generated_at": "2026-06-09T10:03:39+00:00",
+  "max_gap_pp": 19.7,
+  "input_hash": "c61509cc89c9ba82ce1c05fca2c72ec024909c1b",
+  "generated_at": "2026-06-10T06:36:36+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The most striking gap is on the Germany win: the model assigns 35%, while the sportsbook consensus stands at 55%, a 20-percentage-point spread favoring the market's conviction. The model sees this as nearly a three-way contest, but real-money flows are sharpening confidence in Germany. This divergence could reflect information the model cannot see—recent lineup changes, injury updates, or current form trends since the model's last training window—that shift the true strength differential between the sides. The dashboard surfaces this as a signal worth monitoring: either the market has caught something material about team condition or personnel, or the model's more cautious rating reflects structural uncertainty the market is pricing away."
+  "commentary_text": "The largest gap appears on Germany wins, where the market prices 55% compared to the model's 35%, a 20-percentage-point divergence favoring Germany. The model sees the match as nearly even, but sportsbooks and traders are substantially more confident in a German victory. This confidence gap could reflect recent lineup news, current form, or injury status that sharpened conviction after the model's last update. The dashboard flags this divergence as a notable signal: one source may have access to fresher information, or the market may be overweighting certain factors the model does not yet incorporate. Neither interpretation is settled without additional context."
 }

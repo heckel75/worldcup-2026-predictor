@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Uzbekistan",
   "date": "2026-06-23",
-  "input_hash": "1061f4e45bbab05aa8bbf5ca284b1425021db04b",
-  "generated_at": "2026-06-09T10:00:45+00:00",
+  "input_hash": "9b914662fb7fdf82e8d8a86c801cbdde8da1e899",
+  "generated_at": "2026-06-10T06:34:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Portugal at 65%, with Uzbekistan offered a modest 10% chance of victory. The gap between the two sides is substantial, though not extreme—Portugal's advantage is clear but leaves meaningful probability mass on an upset or stalemate.\n\nA draw at 25% occupies a notable share of the probability space, suggesting competitive conditions are plausible despite the favorite's structural edge. The win probabilities reflect a pronounced asymmetry: Portugal is heavily favored, yet the match retains enough uncertainty that a single-goal result or goalless draw would align with the model's forecast distribution.\n\nThe market consensus—sportsbooks and Polymarket combined—shifts probability notably toward Portugal, assigning the team 75–78% win probability and compressing the draw to 14–16%. This represents a gap of roughly 10 percentage points in Portugal's favor relative to the model. The dashboard does not adjudicate between model and market, but the divergence is material enough to flag: sportsbooks and prediction markets are materially more confident in a Portugal victory than the statistical forecast."
+  "preview_text": "The model favors Portugal at 65% to win, a substantial but not overwhelming advantage. Uzbekistan's win probability sits at 10%, leaving meaningful room for an upset in a single-match scenario.\n\nThe 25% draw probability indicates a competitive fixture where stalemate remains plausible. The win spread between the sides is roughly 55 percentage points in Portugal's favor—a clear gap, but the presence of a quarter-chance draw suggests this is not a heavily one-sided matchup in expected outcome distribution. A close, low-scoring contest is within the model's central scenarios.\n\nThe market—both sportsbooks and Polymarket—registers Portugal notably higher, at 76–78% win probability, and compresses the draw to 14–15%. This represents a meaningful divergence of around 11 percentage points on the Portugal win line. The dashboard does not adjudicate which source better reflects true match probability; the gap reflects genuine disagreement between the statistical model and consensus pricing."
 }

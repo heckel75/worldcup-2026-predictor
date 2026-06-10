@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "ac812e3c5aa7b0125a595ff772e0deb1c973a500",
-  "generated_at": "2026-06-09T10:02:27+00:00",
+  "input_hash": "f7efb94ef9d8ab7e8c84065580eb49ed7816382f",
+  "generated_at": "2026-06-10T06:36:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model backs England at 63% to win, with Panama rated at 12% and a draw at 25%. England enters as clear favorite, though the model assigns Panama a non-negligible chance and sees the draw as a plausible outcome—roughly one match in four.\n\nThe spread between England's win probability and a Panama victory is substantial, yet the presence of a 25% draw probability indicates moderate competitive tension. The model does not project a dominant one-sided affair; rather, a match where England is favored to prevail but where neither team's performance outcome is certain.\n\nThe sportsbook consensus shifts the balance more sharply toward England, raising its win probability to 73% while compressing the draw to 17% and Panama to 11%. This represents a meaningful divergence: the market is about 10 percentage points more confident in an England victory and correspondingly skeptical of both a draw and a Panama upset. Polymarket prices align broadly with the sportsbook view. The dashboard offers no judgment on which assessment is more accurate."
+  "preview_text": "The model favours England to win at 63%, with Panama assigned a 12% chance and a draw at 25%. The underdog's path to victory remains narrow but not negligible in a single-match setting.\n\nThe win-draw-loss spread suggests a moderately competitive fixture rather than a heavily skewed one. England's advantage is clear, yet the 25% draw probability indicates meaningful uncertainty around the outcome. The gap between England's win chance and Panama's reflects a substantial quality differential, though draws in knockout or group-stage matches occur frequently enough that neither team should be dismissed before kickoff.\n\nThe model and market diverge noticeably. Sportsbooks price England's win at 73%, roughly 10 percentage points higher than the model, and compress the draw to 17%, 8 points lower. Polymarket prices lean even further toward England at 75%. The dashboard offers no view on which source is more accurate; the discrepancy may reflect market confidence in England's credentials, available squad intelligence beyond the model's inputs, or differing methodologies."
 }

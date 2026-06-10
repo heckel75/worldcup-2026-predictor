@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Haiti",
   "date": "2026-06-19",
-  "input_hash": "6cf27f66529b7b9ae605b703e5593c41024ecbd8",
-  "generated_at": "2026-06-09T09:59:41+00:00",
+  "input_hash": "92adbc75cbb9fa73567700a0358aaf8799d192d3",
+  "generated_at": "2026-06-10T06:34:18+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Brazil enters as a strong favorite at 76% to win on the model's assessment, with Haiti given a 4% chance of an upset and a draw at 20%. The gap reflects a substantial but not overwhelming expectation of a Brazilian victory.\n\nThe win-draw-loss spread suggests a competitive frame in which a draw remains plausible, though Brazil's advantage is clear. Haiti's 4% win probability indicates the underdog is not given a realistic path to three points, yet the 20% draw likelihood signals that a single goal or a cautious approach could produce a stalemate.\n\nThe sportsbook consensus diverges meaningfully from the model. Books price Brazil at 89% — roughly 12 percentage points higher — and compress the draw to 8%, half the model's estimate. Polymarket prices align more closely with sportsbooks, favoring Brazil at 91%. The model is more bullish on a draw and less certain of a Brazilian win than either market source. The dashboard does not claim to know which assessment is correct."
+  "preview_text": "Brazil enters as a decisive favorite with a 76% modeled win probability, leaving Haiti just 4% to pull off a major upset. The gap between the two teams is substantial by the model's lights, though not insurmountable in a single match.\n\nThe win-draw-loss spread suggests Brazil is the clear expected victor, but a draw remains plausible at one-in-five odds. Haiti's path to victory is narrow; the match is unlikely to be closely competitive throughout, though knockout football preserves an element of variance that single-match probabilities always contain.\n\nThe market and Polymarket both shift sharply toward Brazil, pricing a win at 88–90% and relegating Haiti to near-even odds with a draw. The model's 76% Brazil win sits roughly 12 percentage points below the sportsbook consensus and Polymarket, suggesting either the market discounts Haiti's upside more severely than the statistical model or the latter carries more residual uncertainty. The dashboard makes no claim to resolve that gap."
 }

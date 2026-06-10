@@ -3,9 +3,9 @@
   "home_team": "Belgium",
   "away_team": "Iran",
   "date": "2026-06-21",
-  "input_hash": "0ffb024b9b90355f91d1121cc5ffb838de958cb8",
-  "generated_at": "2026-06-09T10:00:12+00:00",
+  "input_hash": "dd403085aab003d6ef0347b16d977bf60aca7925",
+  "generated_at": "2026-06-10T06:34:34+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Belgium at 38%, but the match remains competitive. Iran's win probability stands at 30%, only 8 percentage points lower, while the draw lands at 32%—nearly as likely as either outcome alone. This narrow gap suggests uncertainty rather than a clear hierarchy.\n\nThe W/D/L spread reflects a tight contest. A draw emerges as a genuinely plausible result, occurring in roughly one match in three according to the model. Belgium holds a modest edge in win probability, but Iran's chances remain substantial. The match is unlikely to be one-sided; close scorelines and parity in expected performance characterize the forecast.\n\nThe sportsbook consensus and Polymarket prices diverge sharply from the model. Both commercial sources assign Belgium a roughly 68–70% win probability, roughly 30 percentage points above the model. They also compress Iran's chances to 10–12%, nearly three times lower than the model's 30%. This gap is meaningful and material. The dashboard makes no claim as to which source better predicts the outcome; users should note the disagreement and form their own view."
+  "preview_text": "The model favors Belgium at 38%, but the gap to Iran's 30% is modest. An Iran upset remains plausible under the statistical forecast, which assigns the underdog nearly one-in-three odds. This is a notably tight matchup in model space, with Belgium holding only a single-digit percentage-point edge.\n\nThe draw probability of 32% reflects competitive balance in the model's projection. The spread across outcomes—38%, 32%, 30%—suggests the match is unlikely to feel one-sided. All three results carry meaningful weight, and the relatively high draw chance indicates the teams are expected to converge on a competitive equilibrium.\n\nThe sportsbook and Polymarket consensus diverge sharply from the model. Both sources elevate Belgium to roughly 68–70% and compress Iran to 10–11%, a spread roughly 29 percentage points wider than the model estimate. The market assigns the draw 20% or less, versus the model's 31%. This represents a material gap; the dashboard does not adjudicate which assessment better reflects true match probability."
 }

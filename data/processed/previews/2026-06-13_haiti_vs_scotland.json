@@ -3,9 +3,9 @@
   "home_team": "Haiti",
   "away_team": "Scotland",
   "date": "2026-06-13",
-  "input_hash": "0de491424a10e64d8fc11620235b7b46c656d8e0",
-  "generated_at": "2026-06-09T09:58:04+00:00",
+  "input_hash": "7415048787f2e49a783d39952d1b5921aaa383c8",
+  "generated_at": "2026-06-10T06:33:35+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Scotland as the favored side at 45% to win, with Haiti holding a 24% win probability. That 21-percentage-point gap reflects Scotland's stronger underlying strength, though the forecast treats this as a competitive match rather than a mismatch.\n\nThe draw probability of 30% is the most likely single outcome, suggesting the teams are sufficiently close in quality that a stalemate carries real weight. Scotland's 45% win chance and Haiti's 24% are separated enough to define a clear direction, but neither side is forecast to overwhelm the other. The match is expected to be contested.\n\nThe sportsbook consensus diverges notably from the model. Books price Scotland at 63%, nearly 18 percentage points above the model's 45%, while Haiti drops to 15% and the draw to 22%. Polymarket pricing aligns closely with the books. The dashboard does not adjudicate between these estimates, but the gap is large enough to flag as material disagreement on Scotland's strength relative to Haiti."
+  "preview_text": "The model favors Scotland at 45%, with Haiti given a 24% chance to win and a draw at 30%. Scotland's advantage over Haiti spans 21 percentage points, indicating a clear statistical edge, though the Haitian underdog probability remains substantial rather than negligible.\n\nThe outcome distribution suggests a competitive match tilted toward a Scotland victory but without overwhelming dominance. A draw carries near-equal likelihood to a Haiti win, signaling that a stalemate remains plausible and that the match may not produce a decisive result. The 15-point gap between Scotland's win probability and a draw reflects meaningful separation but leaves room for either team to leave without a win.\n\nThe model and market diverge meaningfully on Scotland's chances: the model assigns 45% versus the consensus 62%, a gap of 17 percentage points. The sportsbook and Polymarket probabilities align closely with each other, both pricing Scotland substantially higher. The dashboard does not adjudicate which assessment is correct, only that the two approaches diverge on Scotland's favorite status."
 }

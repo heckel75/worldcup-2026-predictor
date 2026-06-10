@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Belgium",
   "date": "2026-06-26",
-  "input_hash": "44292160876e6cf19ce7562b8812fa51f692fb18",
-  "generated_at": "2026-06-09T10:01:52+00:00",
+  "input_hash": "e2ac5c6a4b90ec4968c2165eddb5d452551418e0",
+  "generated_at": "2026-06-10T06:35:41+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model backs Belgium as a clear favorite with a 65% win probability, while New Zealand is given an 11% chance of victory. The gap between the two reflects a substantial disparity in expected quality, though the underdog retains meaningful probability rather than facing near-elimination odds.\n\nThe draw emerges as the second-most-likely outcome at 24%, a notable cushion above New Zealand's win chance. This spread suggests Belgium should control play but not be so dominant that a stalemate becomes implausible. The match appears competitive enough to avoid a runaway result, yet tilted decisively in the favorite's direction.\n\nModel and sportsbook consensus show a meaningful divergence. The market rates Belgium's win probability 8 percentage points higher than the model, while compressing the draw to 16% -- roughly 8 points below the model's estimate. Polymarket prices align more closely with the sportsbook skew. The dashboard offers its own estimate but makes no claim about which source is correct."
+  "preview_text": "The model favors Belgium at 65%, while New Zealand's win probability stands at 11%. The underdog faces a steep task; Belgium's forecast is substantially higher, though the presence of a 24% draw probability indicates the match carries meaningful competitive uncertainty rather than a clear mismatch.\n\nThe W/D/L spread reflects a decisive lean toward Belgium without an overwhelming consensus around any single outcome. The draw at 24% is the second-most-likely scenario, suggesting that a single-goal contest or stalemate remains plausible. Belgium's 65% win rate sits well above the underdog's 11%, but the aggregate probability mass outside a Belgium win (36%) leaves room for alternative results in a group-stage context.\n\nThe model and market are broadly aligned on the fundamental structure. The sportsbook consensus places Belgium at 73%, roughly 8 percentage points higher than the model, while Polymarket runs even more bullish on the favorite at 76%. These gaps are consistent with typical market-model variation, but the dashboard does not adjudicate which source reflects match conditions more accurately."
 }

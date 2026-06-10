@@ -3,9 +3,9 @@
   "home_team": "South Korea",
   "away_team": "Czech Republic",
   "date": "2026-06-11",
-  "input_hash": "17f48166c4ae0f44ffbd7ccb9fa44665070a4952",
-  "generated_at": "2026-06-09T09:57:44+00:00",
+  "input_hash": "50c974e76064851fd50ad21f9bec0c993fc34f38",
+  "generated_at": "2026-06-10T06:33:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea at 47%, with Czech Republic trailing at 23%. The underdog's win probability sits 24 percentage points below the favorite, suggesting a meaningful gap in the model's assessment of the two sides.\n\nThe draw emerges as the likeliest single outcome besides a South Korea victory, at 31%. The spread between South Korea's win probability and the combined chances for a Czech Republic win or draw (53%) indicates a competitive match where regulation time could plausibly fail to settle a winner.\n\nThe model and market diverge notably on South Korea's chances. Sportsbooks and Polymarket both place South Korea at 36%, roughly 10 percentage points below the model's 47%. Both prefer Czech Republic relative to the model's forecast. The market also compresses the win probabilities toward parity more than the model does, though draws remain aligned across sources near 31%. The dashboard makes no claim about which assessment is correct."
+  "preview_text": "The model favors South Korea at 47%, with Czech Republic assigned a 23% chance of victory. That 24-percentage-point gap reflects a clear home-field or competitive edge in the forecast, though the underdog retains meaningful odds.\n\nThe draw sits at 31% in the model, suggesting a reasonably balanced contest. The win probabilities create a spread where South Korea is the clear lean but neither team's outright loss is heavily discounted. A stalemate emerges as a plausible outcome, indicating this is unlikely to be a runaway performance.\n\nA substantial divergence appears between the model and the sportsbooks. The books compress South Korea's win probability to 36%—roughly 11 percentage points lower than the model—while elevating Czech Republic to 33%. Polymarket prices align closely with the books on this gap. The model and market assign similar odds to the draw. No consensus exists yet on which assessment is more accurate; the dashboard presents both without claiming superiority for either."
 }

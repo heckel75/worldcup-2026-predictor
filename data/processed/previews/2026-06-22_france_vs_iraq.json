@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Iraq",
   "date": "2026-06-22",
-  "input_hash": "b1891f596b44aa4835b7dc8327037bd17305b62b",
-  "generated_at": "2026-06-09T10:00:28+00:00",
+  "input_hash": "ab6ee2c3cc46804a296ae8a3553f0379a21ba121",
+  "generated_at": "2026-06-10T06:34:42+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model projects France to win with 82% probability, leaving Iraq with a 1% chance of victory. That asymmetry reflects a substantial gap in the underlying estimates. Iraq's path to a positive result relies almost entirely on the draw, which the model assigns 16% likelihood.\n\nThe win-draw-loss spread indicates a heavily favored contest. France's 82% win probability dominates the forecast, but the 16% draw probability suggests the match could plausibly remain level through regulation. An Iraq upset is not forecasted as a realistic outcome under the model's estimates. Competitive tension exists mainly around whether France wins decisively or draws.\n\nThe model and sportsbook consensus diverge on the exact distribution. Books price France's win probability 2 percentage points higher than the model and assign Iraq nearly 4 times the model's win probability. Polymarket prices lean even further toward France and further suppress the draw. The dashboard makes no claim about which view is correct—it notes the gap and flags that market participants estimate Iraq's upset probability at a materially higher level than the statistical model does."
+  "preview_text": "The model judges France as a strong favorite, assigning an 82% probability of a win. Iraq is given only a 1% chance of victory, reflecting a large gap in the underlying strength estimates between the two sides.\n\nThe forecast shape indicates France is heavily favored but a draw remains a meaningful possibility at 16%. The margin between a France win and a draw is pronounced, suggesting the model expects France to control the match more often than produce a stalemate. An Iraq upset is treated as negligible in the model's framework.\n\nThe model and sportsbook consensus diverge noticeably on Iraq's win probability—the books strip to 4%, some 3 percentage points higher than the model. The books also assign less weight to draws (11% vs. the model's 16%), implying they expect either a decisive France victory or a small chance of an Iraq shock rather than a close contest. On France's win probability, the sources are closely aligned. The dashboard does not adjudicate which view of Iraq's tail risk is correct."
 }

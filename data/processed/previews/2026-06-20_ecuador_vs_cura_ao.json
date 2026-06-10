@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Curaçao",
   "date": "2026-06-20",
-  "input_hash": "bba28f596d846129cc95f25a26244eea43443fdf",
-  "generated_at": "2026-06-09T09:59:57+00:00",
+  "input_hash": "b9a990c5a98cef912bbcee96eff1f0a78392bddf",
+  "generated_at": "2026-06-10T06:34:26+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Ecuador to win with a probability of 83%, leaving Curaçao with just a 1% chance of victory. This represents a heavily lopsided matchup in Ecuador's favor, though the sportsbook consensus assigns Curaçao a notably higher win probability of 7%.\n\nEcuador's dominance in the model's forecast is further underscored by the draw probability of 16%, indicating that while a stalemate is plausible, an upset is treated as nearly implausible. The spread between Ecuador and Curaçao win chances is extreme, suggesting the model expects Ecuador to control possession and scoring opportunity substantially.\n\nThe model and market diverge meaningfully on this match. Sportsbooks price Curaçao's win probability at 7%, compared to the model's 1%—a gap of 6 percentage points. Polymarket consensus lands between the two, at 7%. The dashboard does not claim to know whether sportsbooks are correctly hedging tail risk or overvaluing the underdog; the discrepancy warrants attention for traders."
+  "preview_text": "The model rates Ecuador as a strong favorite at 83%, leaving Curaçao with only a 1% chance of victory. The underdog is positioned as unlikely to win outright, though not entirely without theoretical paths to an upset result.\n\nThe 16% draw probability suggests a moderately competitive match in which Ecuador's superiority is substantial but not overwhelming. A stalemate remains plausible, and Curaçao has room to limit damage and secure a point, though the model assigns only a small probability to that outcome relative to an Ecuador win.\n\nThe model and sportsbook consensus diverge meaningfully on Curaçao's win probability: the model puts it at 1%, while the market consensus sits at 7%. Both sources align closely on Ecuador's win probability (within 3 percentage points) and treat draws similarly. The dashboard does not attempt to resolve which assessment of Curaçao's upset chances is more accurate."
 }

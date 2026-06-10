@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "Czech Republic",
   "date": "2026-06-24",
-  "input_hash": "b28ad05464178eadfbc82d3aef8fff19717b6614",
-  "generated_at": "2026-06-09T10:01:01+00:00",
+  "input_hash": "ab93a370b2539d537dd271d1d80c5d9cf46d4c00",
+  "generated_at": "2026-06-10T06:35:01+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Mexico at 71%, with Czech Republic at only 7%. This represents a wide margin. The sportsbook consensus is far less confident in Mexico's chances, placing them at 51%, nearly half the model's assessment.\n\nThe model's spread suggests a fairly lopsided contest by probability, though the 23% draw chance keeps the outcome from being heavily skewed toward a single result. A Czech Republic upset remains plausible under the model's framework, but the base case is a Mexico advantage. The market view compresses these gaps significantly, implying a more competitive fixture where Czech Republic has a reasonable path to either a draw or victory.\n\nThe model and sportsbook consensus diverge sharply on Mexico's win probability—a gap of roughly 19 percentage points. Polymarket pricing aligns closely with sportsbook consensus on draw and Czech Republic chances but similarly underweights Mexico relative to the model. The dashboard does not adjudicate which assessment better reflects the true match dynamics; users should weigh both before forming a view."
+  "preview_text": "The model favors Mexico heavily, assigning a 71% win probability against a Czech Republic chance of 7%. The gap between the two reflects a substantial model confidence in the Mexican side, though the underdog retains a meaningful probability of an upset or stalemate.\n\nThe draw enters at 23%, suggesting the model anticipates a competitive but tilted contest. Mexico's advantage does not translate into a rout scenario; nearly a quarter of outcomes are expected to end level, and Czech Republic's combined chances (draw plus win) approach 30%, indicating the match retains genuine competitive uncertainty despite the favorite's edge.\n\nThe model and sportsbook consensus diverge markedly. The market places Mexico at 51% and Czech Republic at 22%, a gap of roughly 19 percentage points from the model's respective estimates. Polymarket prices align closely with the broader sportsbook view. This dashboard presents both forecasts; it does not adjudicate which better reflects the true match probability."
 }

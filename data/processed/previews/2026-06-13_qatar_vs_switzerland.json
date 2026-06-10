@@ -3,9 +3,9 @@
   "home_team": "Qatar",
   "away_team": "Switzerland",
   "date": "2026-06-13",
-  "input_hash": "0e0027ef3ca572fe37637f8eddefacc68bb96376",
-  "generated_at": "2026-06-09T09:57:56+00:00",
+  "input_hash": "1ec8ee2408e75dbca8ee0588f267f1bd011de591",
+  "generated_at": "2026-06-10T06:33:31+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model forecasts a heavily one-sided contest, with Switzerland favored at 81% to win. Qatar's probability of victory stands at just 3%, leaving the underdog little realistic pathway to three points on a neutral pitch.\n\nThe win-draw-loss distribution reflects a large competitive gap. While a draw registers as plausible at 16%, the model assigns Switzerland a decisive edge over both alternative outcomes combined. The match structure points toward Swiss dominance, though the draw probability suggests the result is not a foregone conclusion.\n\nThe model and sportsbook consensus are broadly aligned. Switzerland's win probability differs by just 3 percentage points (81% vs. 78%), and the draw estimate is nearly identical. Polymarket prices sit between the two, reinforcing convergence across all three sources on the underlying match likelihood. The dashboard presents their agreement without claiming superiority for any single forecast method."
+  "preview_text": "The model favors Switzerland heavily, assigning them an 81% win probability against a Qatar side given only a 3% chance of victory. The gap reflects a substantial quality differential in the forecast.\n\nThe win–draw–loss spread underscores Switzerland's dominance. Draws are plausible at 16%, suggesting the match could remain competitive for stretches, but the model expects a decisive Swiss outcome more often than not. Qatar's low win probability indicates the model sees little path to a three-point result for the underdog.\n\nModel and market are closely aligned. The sportsbook consensus places Switzerland at 79% (versus the model's 81%) and Qatar at 7% (versus 3%), a divergence of a few percentage points on each side. Polymarket prices sit between the two, clustering near the model's estimate. All three sources agree substantially on the match direction, though they differ modestly on the underdog's floor probability."
 }

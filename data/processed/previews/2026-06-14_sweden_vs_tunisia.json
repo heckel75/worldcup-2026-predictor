@@ -3,9 +3,9 @@
   "home_team": "Sweden",
   "away_team": "Tunisia",
   "date": "2026-06-14",
-  "input_hash": "a8abe844f76c1bdad03db1623cf3362af7e2a0bb",
-  "generated_at": "2026-06-09T09:58:27+00:00",
+  "input_hash": "4c9ecf8cf6548ba18cfc2408ecac4a9bdd1b8750",
+  "generated_at": "2026-06-10T06:33:51+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The statistical model favors Sweden at 41%, giving them a narrow edge over Tunisia's 27.7% win probability. Sweden enter as the slight favorite, but the gap is modest enough that an upset remains credible at better than one-in-four odds.\n\nThe 31.3% draw probability suggests a competitive, closely matched contest. The outcome distribution is fairly flat across all three results, indicating genuine uncertainty. Neither team is projected to dominate; a stalemate is nearly as likely as a Swedish victory, and Tunisia retain a plausible path to three points.\n\nThe market consensus diverges from the model, crediting Sweden with 49.4% and assigning Tunisia only 22.5%. Polymarket prices reinforce that tilt, reaching 50.2% for Sweden. The gap widens to roughly 8 percentage points on the favorite and 5 points on the underdog. The model sees a tighter contest; the market leans more decisively toward Sweden. The dashboard makes no claim about which view is correct."
+  "preview_text": "The model favors Sweden at 41%, a modest edge over Tunisia's 27.7% win probability. The gap reflects a slight lean toward the home-advantaged side, though the underdog retains meaningful chances in what the model reads as a competitive fixture rather than a heavily weighted encounter.\n\nThe 31.3% draw probability signals that neither side projects to dominate decisively. A single-goal margin appears as likely as a clear winner, and stalemate sits between the two outcomes in plausibility. The spread is relatively narrow across all three results, indicating a match where reversals or deadlock are realistic within the model's framing.\n\nThe market—sportsbook consensus at 49.6% Sweden, 22.3% Tunisia—diverges from the model by roughly 9 percentage points in Sweden's favor and 5 points against Tunisia. Polymarket aligns closely with the sportsbooks. The dashboard does not adjudicate which assessment is correct; the gap suggests market participants assign higher confidence to a Swedish outcome than the statistical model does."
 }

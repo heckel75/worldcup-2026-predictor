@@ -3,9 +3,9 @@
   "home_team": "Cape Verde",
   "away_team": "Saudi Arabia",
   "date": "2026-06-26",
-  "input_hash": "304f336cacf9e159a5c3f5d460c0090328892d2f",
-  "generated_at": "2026-06-09T10:01:56+00:00",
+  "input_hash": "71e20d6a8bf5190f670456c1b53f477e915e4cc0",
+  "generated_at": "2026-06-10T06:35:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Saudi Arabia at 40% to win, though the margin over Cape Verde is modest at roughly 11 percentage points. Cape Verde's win probability of 29% reflects a competitive underdog position rather than a team expected to be heavily outmatched.\n\nThe draw emerges as the modal outcome in the model's forecast at 31%, pointing toward a closely contested match. The spread across all three outcomes is relatively balanced, with no single result commanding a dominant share. This configuration suggests a competitive fixture where either team securing victory or the sides canceling each other out all carry material probability.\n\nA meaningful divergence appears between the model and the sportsbooks. The market prices Cape Verde notably higher at 36%, a gap of 7 percentage points, while assigning Saudi Arabia 35%—essentially a toss-up. The market also lowers draw probability to 28%. This dashboard makes no claim about which assessment is more accurate; the disagreement reflects genuine uncertainty about how these teams will perform on the day."
+  "preview_text": "The model favors Saudi Arabia at 40%, with Cape Verde positioned as the underdog at 29%. That 11-percentage-point gap reflects a moderate preference for Saudi Arabia, though the model assigns the outsider a genuine winning chance rather than treating the match as decisive.\n\nThe draw carries 31% probability in the model's forecast, making it nearly as likely as a Cape Verde victory. The win-loss spread across all three outcomes is relatively balanced; no single result dominates the distribution heavily. This suggests a competitive encounter where multiple plausible scenarios exist, rather than one side's superiority being overwhelming.\n\nThe market consensus diverges notably from the model. Sportsbooks rate Cape Verde significantly higher at 37%, a gap of 7 percentage points above the model's estimate, while pricing Saudi Arabia 5 points lower. Polymarket prices align more closely with the sportsbook view. The dashboard does not adjudicate between these sources; the divergence warrants noting as a material point of disagreement on which side holds true edge."
 }
