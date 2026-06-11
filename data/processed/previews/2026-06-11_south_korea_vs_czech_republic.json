@@ -3,9 +3,9 @@
   "home_team": "South Korea",
   "away_team": "Czech Republic",
   "date": "2026-06-11",
-  "input_hash": "680d33e19b1eb5ec95024ce885eb6c9e6c981f48",
-  "generated_at": "2026-06-10T18:26:57+00:00",
+  "input_hash": "4d3aa6293e1e121a2807a81d1171adb4090b749f",
+  "generated_at": "2026-06-11T06:47:55+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea at 47% to win, while Czech Republic sits at 23%. The underdog's chance reflects a meaningful gap, though not a dismissal; both teams' non-loss probabilities remain substantial given the 31% draw likelihood.\n\nThe spread across outcomes suggests a moderately competitive match. South Korea's win probability leads by roughly a quarter relative to Czech Republic's, but the draw sits close to one-third of all outcomes. The distribution indicates neither a heavily tilted affair nor a coin flip—competitive equilibrium exists, but with a lean toward the favorite.\n\nThe model and market diverge notably here. The model assigns South Korea 11 percentage points more win probability than sportsbooks and Polymarket do, while those consensus sources rate Czech Republic roughly 10 points higher. All three sources converge on draw probability near 31%. The dashboard does not adjudicate which assessment of the favorite is correct, only that substantive disagreement exists between the statistical model and real-money pricing."
+  "preview_text": "The model favors South Korea at 47% to win, a meaningful edge over Czech Republic's 22% win probability. The statistical forecast is anchored by South Korea's higher estimated strength; the underdog has less than a quarter chance of victory.\n\nThe draw sits at 31%, indicating a moderately competitive match. South Korea's advantage is notable but not dominant—the gap between a Korea win and a Czech Republic win is significant, yet the sizable draw probability suggests this is not a heavily skewed encounter. The spread reflects a match where the favorite has clear superiority without overwhelming the opponent.\n\nThe model and market diverge substantially. Sportsbooks and prediction markets compress South Korea's win probability to 35%, a gap of roughly 12 percentage points below the model's estimate. The books and Polymarket are closely aligned with each other on all three outcomes, but both assign Czech Republic nearly double the win chance the model does. The dashboard does not adjudicate between these sources; the discrepancy warrants attention for users comparing models to market consensus."
 }

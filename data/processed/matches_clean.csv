@@ -3827,6 +3827,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2022-03-30,Panama,Canada,1,0,,FIFA World Cup qualification,Panama City,Panama,False
 2022-03-30,Jamaica,Honduras,2,1,,FIFA World Cup qualification,Kingston,Jamaica,False
 2022-03-30,Solomon Islands,New Zealand,0,5,,FIFA World Cup qualification,Doha,Qatar,True
+2022-04-22,Elba Island,Vatican City,4,2,,Friendly,Capoliveri,Italy,False
 2022-04-23,Alderney,Guernsey,0,2,,Muratti Vase,Alderney,Alderney,False
 2022-04-24,El Salvador,Guatemala,0,4,,Friendly,San Jose,United States,True
 2022-04-27,Mexico,Guatemala,0,0,,Friendly,Orlando,United States,True
@@ -6859,7 +6860,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2025-03-20,Mozambique,Uganda,3,1,,FIFA World Cup qualification,Cairo,Egypt,True
 2025-03-20,Malawi,Namibia,0,1,,FIFA World Cup qualification,Lilongwe,Malawi,False
 2025-03-20,Comoros,Mali,0,3,,FIFA World Cup qualification,Berkane,Morocco,True
-2025-03-20,Lebanon,Timor-Leste,4,0,,Friendly,Al Khor,Qatar,False
+2025-03-20,Lebanon,Timor-Leste,4,0,,Friendly,Al Khor,Qatar,True
 2025-03-21,Belize,Costa Rica,0,7,,Gold Cup qualification,Belmopan,Belize,False
 2025-03-21,Guyana,Guatemala,3,2,,Gold Cup qualification,Wildey,Barbados,True
 2025-03-21,Bermuda,Honduras,3,5,,Gold Cup qualification,Hamilton,Bermuda,False
@@ -8066,7 +8067,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2026-06-06,Myanmar,Guam,6,1,,Tri-Nations Cup,Manila,Philippines,True
 2026-06-06,Lithuania,Latvia,1,1,,Baltic Cup,Kaunas,Lithuania,False
 2026-06-06,Estonia,Faroe Islands,1,0,,Baltic Cup,Pärnu,Estonia,False
-2026-06-07,Afghanistan,Pakistan,0,2,,Diamond Jubilee International Football Tournament,Malé,Maldives,False
+2026-06-07,Afghanistan,Pakistan,0,2,,Diamond Jubilee International Football Tournament,Malé,Maldives,True
 2026-06-07,Croatia,Slovenia,2,1,,Friendly,Varaždin,Croatia,False
 2026-06-07,Ecuador,Guatemala,3,0,,Friendly,Columbus,United States,True
 2026-06-07,Greece,Italy,0,1,,Friendly,Heraklion,Greece,False
@@ -8101,3 +8102,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2026-06-09,Togo,Benin,5,1,,Friendly,Lomé,Togo,False
 2026-06-09,Liberia,Sierra Leone,3,1,,Friendly,Monrovia,Liberia,False
 2026-06-09,Iraq,Venezuela,0,2,,Friendly,Bridgeview,United States,True
+2026-06-10,Bolivia,Algeria,0,4,,Friendly,Kansas City,United States,True
+2026-06-10,England,Costa Rica,3,0,,Friendly,Orlando,United States,True
+2026-06-10,Portugal,Nigeria,2,1,,Friendly,Leiria,Portugal,False
+2026-06-10,Afghanistan,Pakistan,0,2,,Diamond Jubilee International Football Tournament,Malé,Maldives,True

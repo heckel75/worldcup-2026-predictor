@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Curaçao",
   "date": "2026-06-20",
-  "input_hash": "0a99eea7942b7bfea2abcdae39bc65efc974ba52",
-  "generated_at": "2026-06-10T18:28:10+00:00",
+  "input_hash": "a84c164548a2373066b482df61efa7acbde836ee",
+  "generated_at": "2026-06-11T06:51:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Ecuador as a heavy favorite, assigning them an 83% win probability compared to Curaçao's 1%. The underdog faces a steep climb in this matchup on a neutral surface.\n\nThe win-loss gap is substantial enough that a Curaçao upset registers as a remote outcome in the model's forecast. A draw is plausible at 16%, making the match competitive enough to avoid being a formality, though Ecuador's dominance in the projected distribution is clear.\n\nThe model and sportsbook consensus diverge meaningfully on the Curaçao upset case: the model assigns 1% win probability while the market averages roughly 7%. On an Ecuador win, the sources align closely (82.6% model, 78.9% sportsbook). The dashboard does not adjudicate which view of Curaçao's tail risk is more accurate."
+  "preview_text": "The model favors Ecuador heavily, assigning them an 83% win probability. Curaçao enters as a substantial underdog at just 1%, with a 16% draw chance offering the only meaningful alternative to an Ecuador victory.\n\nThe spread reflects a lopsided matchup. Ecuador's dominance in the model leaves little room for competitive uncertainty; a draw remains plausible but unlikely, and a Curaçao upset falls outside the model's central scenario. The expected scoreline will almost certainly favor Ecuador.\n\nThe model and sportsbook consensus diverge noticeably on the underdog. Books and Polymarket both assign Curaçao roughly 6–7% win probability, substantially higher than the model's 1%. The model and market align closely on Ecuador (79–83%) and moderately on draws (13–16%). This gap suggests either the model is more confident in Ecuador's superiority or the market prices in tail-risk scenarios the statistical approach discounts. The dashboard does not adjudicate between them."
 }

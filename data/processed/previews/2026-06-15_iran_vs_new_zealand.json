@@ -3,9 +3,9 @@
   "home_team": "Iran",
   "away_team": "New Zealand",
   "date": "2026-06-15",
-  "input_hash": "52636e0a045973ac02bb40ea424021df7277ace3",
-  "generated_at": "2026-06-10T18:27:27+00:00",
+  "input_hash": "f863bed5f0fc916ce67ea52c371efaca9595bad1",
+  "generated_at": "2026-06-11T06:49:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Iran as a clear favorite, assigning a 65% win probability compared to New Zealand's 10%. That 55-percentage-point gap reflects a substantial edge to the Iranian side across the forecast distribution.\n\nThe draw holds material weight at 25%, suggesting the match carries genuine competitive tension despite Iran's favoritism. The win probabilities spread unevenly—Iran's lead is steep, but New Zealand's single-digit chance leaves room for an upset, and the draw probability indicates neither a blowout nor a lopsided mismatch is the modal outcome.\n\nThe model and sportsbook consensus diverge notably. Books and crypto markets cluster around 51% for Iran and 20–21% for New Zealand, sitting roughly 14 percentage points below the model's Iran estimate and 10 points above its New Zealand floor. The draw forecasts align closely across all sources (25–28%). The dashboard makes no claim to resolve which assessment is more accurate; the divergence warrants attention from users making decisions based on these inputs."
+  "preview_text": "The model favors Iran at 65%, with New Zealand given only a 10% chance of victory. That represents a substantial gap: the model rates Iran as roughly six times more likely to win than their opponent.\n\nThe draw carries a 25% probability in the model's distribution, making it a meaningful outcome in a match where Iran's advantage is clear but not overwhelming. The win-probability gap suggests Iran are firm favorites, yet the draw probability indicates the contest is unlikely to be a blowout. New Zealand's path to victory is narrow but not implausible given the neutral venue.\n\nThe model and market diverge meaningfully on Iran's win probability—the model stands at 65% versus the sportsbook consensus of 52%, a gap of 13 percentage points. Both sources align closely on draw likelihood (25–27%) and rate New Zealand's chances similarly (10% model, 21% sportsbook). The dashboard does not claim to know which assessment is correct; the divergence may reflect different underlying assumptions about team strength or match conditions."
 }

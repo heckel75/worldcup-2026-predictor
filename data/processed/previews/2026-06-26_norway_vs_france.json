@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "France",
   "date": "2026-06-26",
-  "input_hash": "442dd154b3b2b635c34ea2aa7e0a1519b807ccd5",
-  "generated_at": "2026-06-10T06:35:49+00:00",
+  "input_hash": "6c30eed5835e51f2c18901475c7df6b63dcc9c08",
+  "generated_at": "2026-06-11T06:55:40+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates France as the clear favorite with a 55% win probability, while Norway is given a 17% chance of victory. That gap of roughly 38 percentage points reflects a substantial disparity in the statistical forecast, leaving the underdog with a low but non-negligible path to three points.\n\nThe expected outcome distribution shows France favored but not overwhelmingly so in absolute terms. A draw sits at 28%, making it a genuine possibility—nearly as likely as a France win in isolation. The spread across all three outcomes (17–28–55) suggests a competitive match with a plausible stalemate, though France enters as the heavy lean.\n\nThe sportsbook consensus and Polymarket prices align closely with the model across all three outcomes, with gaps of 4 percentage points or smaller on each line. The market leans marginally toward Norway and slightly away from a draw compared to the model, but the differences are minor. Model and market are essentially aligned on France's advantage and the overall competitive shape of the fixture."
+  "preview_text": "The model favors France at 55%, with Norway given a 17% chance of victory. That gap reflects a substantial asymmetry: France enters as the clear favorite, while Norway faces long odds to win on a neutral ground.\n\nThe draw probability of 28% sits comfortably between the win chances, suggesting the match could plausibly end level. The 37-percentage-point spread between France's win probability and Norway's indicates a competitive imbalance rather than a heavily one-sided affair—draws remain a realistic outcome, and Norway retains a meaningful path to points despite the odds.\n\nModel and market are closely aligned across all three outcomes. The sportsbook consensus places France at 52% (3 points below the model), Norway at 22% (5 points above), and draws at 26% (2 points below). Polymarket prices track similarly. These small gaps suggest broad agreement on the expected shape of the match, though slight daylight remains on France's win probability."
 }

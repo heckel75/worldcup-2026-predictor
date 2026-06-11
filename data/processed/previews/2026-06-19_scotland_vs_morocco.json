@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Morocco",
   "date": "2026-06-19",
-  "input_hash": "64d22fc8f9149b76f0a4975dfc7dd4ccd8b4b4eb",
-  "generated_at": "2026-06-09T09:59:37+00:00",
+  "input_hash": "9452148782b48c6575fa435ee67016b41ec79d19",
+  "generated_at": "2026-06-11T06:51:14+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The statistical model favors Morocco with a 61% win probability, placing Scotland at a substantial 13% chance of victory. Morocco is the clear favorite by this framework, though the underdog carries enough probability to remain competitive.\n\nA draw is the second-most-likely outcome at 26% according to the model, suggesting the match will be closely contested despite the gap between the teams' win chances. The distribution reflects a scenario tilted toward Morocco but not one-sided; Scotland's path to victory exists, and a stalemate sits between decisive outcomes.\n\nThe market diverges meaningfully from the model. Sportsbook consensus and Polymarket both assign Scotland roughly 10 percentage points higher win probability than the model (23–24% vs 13%), while pricing Morocco 13 percentage points lower (48–49% vs 61%). The model and market are more tightly aligned on draws (26–29%). The dashboard makes no claim to resolve which estimate is correct; the discrepancy merits attention as these two sources of probability diverge beyond minor variation."
+  "preview_text": "The model favors Morocco at 61%, with Scotland's win probability at just 13%. The underdog's chance reflects a substantial gap in the forecast, though Morocco's advantage is not overwhelming given the 26% draw probability baked into the model's base case.\n\nThe expected spread shows Morocco as clear favorite but with a meaningful draw rate that narrows the effective two-way gap. Scotland's 13% win chance sits well below its 26% draw chance, suggesting the model sees the teams as mismatched in quality yet susceptible to a stalemate outcome. A competitive second half is plausible even if the baseline tilts decisively toward a Moroccan result.\n\nThe model and market diverge meaningfully. Sportsbooks assign Scotland 23%, a 10-percentage-point lift above the model's 13%, and price Morocco at 48%, roughly 13 points lower. Polymarket data show uniform 33% pricing across all three outcomes, suggesting minimal consensus on either side at that venue. The dashboard does not adjudicate between these sources; the gaps warrant attention from bettors seeking value."
 }

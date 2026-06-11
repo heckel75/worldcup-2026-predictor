@@ -5,10 +5,10 @@
   "date": "2026-06-13",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 16.4,
-  "input_hash": "7f94e0be5f9a0e7d7fda1f82ddb75b76bade1725",
-  "generated_at": "2026-06-10T06:36:16+00:00",
+  "max_gap_pp": 16.7,
+  "input_hash": "c800785101348028e837b91be7fc649eba9cf0d2",
+  "generated_at": "2026-06-11T06:56:55+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Scotland a 61–62% win probability versus the model's 45%, a 16–17 percentage-point gap favoring the favorite. The model and sportsbooks agree Scotland is likeliest to win, but the market's confidence is substantially higher. This sharper conviction could reflect recent form, injury or lineup developments, or other team news unavailable to the model's last training update. The dashboard presents this widening confidence spread as a signal worth monitoring—it does not indicate which forecast is more reliable, only that real-money flows and the model's Elo-based estimate are pulling in opposite directions on Scotland's true chances."
+  "commentary_text": "The sportsbook consensus sharply narrows Scotland's win probability to 62% compared to the model's 45%, a 17-percentage-point gap favoring the favorite. This tightening could reflect recent lineup news, injury updates, or current form that the model has not yet incorporated; conversely, the model's wider distribution may capture residual uncertainty that real-money markets have resolved through information available only since the model's last update. The dashboard flags this as a signal worth monitoring rather than a definitive statement about which assessment is more accurate."
 }

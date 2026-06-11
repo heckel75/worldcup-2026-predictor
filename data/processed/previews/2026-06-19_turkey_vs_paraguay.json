@@ -3,9 +3,9 @@
   "home_team": "Turkey",
   "away_team": "Paraguay",
   "date": "2026-06-19",
-  "input_hash": "11e87aac1c6c90823a830c02863f771cb27c47b9",
-  "generated_at": "2026-06-09T09:59:50+00:00",
+  "input_hash": "f62d6867f65029e061c09654620f845d31bf0a6d",
+  "generated_at": "2026-06-11T06:51:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Turkey at 50% to win, with Paraguay offered just a 21% chance of victory. The draw carries a 30% probability, positioning this as a competitive match with meaningful uncertainty around the favorite.\n\nThe win-loss gap reflects a moderately strong edge for Turkey rather than dominance. A draw remains plausible at roughly three-in-ten odds, suggesting the teams are closer in capability than a simple two-way split would imply. Paraguay's 21% win probability is not negligible, indicating the underdog retains a realistic path to three points despite the model's lean toward Turkey.\n\nThe sportsbook consensus diverges from the model in Turkey's favor. Books price Turkey at 43%, roughly 7 percentage points lower than the model, while assigning Paraguay nearly 28%—a 7-point premium over the model's assessment. The draw sits nearly identical across both sources. This disagreement on tail probabilities suggests the market views the match as more evenly balanced than the statistical forecast. The dashboard does not adjudicate which interpretation is correct."
+  "preview_text": "The model favors Turkey at 50% to win, with Paraguay at 20%. The margin reflects a meaningful but not dominant edge; the underdog retains a genuine prospect of an upset.\n\nThe 30% draw probability sits between the win chances, suggesting a competitive contest where a stalemate is plausible. The spread across outcomes—roughly 20 points from favorite to underdog—indicates neither team is heavily favored to lose, but neither is certain to advance. The match profile leans toward a genuine contest rather than a one-sided affair.\n\nThe model and sportsbook consensus align closely on the draw (30% vs 30%). Both sources rate Turkey as favorite, though the model assigns it 7 percentage points more win probability than the consensus (50% vs 43%). The model is correspondingly more confident in Paraguay's elimination. Polymarket prices show a stark divergence, treating all three outcomes as nearly symmetric—a view neither the model nor bookmakers share. The dashboard makes no claim about which assessment is correct."
 }

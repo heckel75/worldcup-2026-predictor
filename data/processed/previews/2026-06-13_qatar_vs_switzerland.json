@@ -3,9 +3,9 @@
   "home_team": "Qatar",
   "away_team": "Switzerland",
   "date": "2026-06-13",
-  "input_hash": "33a6b50730d3247a2439ca4fc366affbd4a5db3f",
-  "generated_at": "2026-06-10T18:27:08+00:00",
+  "input_hash": "743b2cfdb9e929fb8219eb01efb13713b0506ed1",
+  "generated_at": "2026-06-11T06:48:15+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Switzerland heavily at 81%, leaving Qatar with only a 3% chance of victory. The underdog path is narrow; Switzerland enters as a strong favorite across all three outcomes.\n\nThe win-draw-loss spread shows Switzerland's dominance with an 81-point margin over Qatar's win probability, while the draw sits at a modest 16%. A Switzerland victory is the overwhelming base case, though a draw remains plausible enough to merit the mid-teens likelihood. Qatar would need an exceptional performance to find the net.\n\nModel and market are closely aligned. The model assigns Qatar a 3.4% win probability versus the sportsbook consensus of 6.8%, a modest divergence that reflects slightly different risk assessments at the underdog end. Switzerland and draw probabilities track within a few percentage points across both sources. The dashboard does not adjudicate which estimate is more accurate."
+  "preview_text": "The model rates Switzerland as a clear favourite at 81% win probability, with Qatar's chances standing at just 3%. This gap reflects a substantial disparity in the underlying forecast. Switzerland's dominance in the projection leaves limited room for an upset.\n\nThe draw probability of 16% is the second-most-likely outcome, suggesting the match carries meaningful competitive uncertainty despite Switzerland's advantage. A stalemate remains plausible, but the model's win distribution is heavily skewed toward a Swiss victory. Qatar's path to points is narrow under this forecast.\n\nThe model and sportsbook consensus are closely aligned. The market places Switzerland at 79%, only 2 percentage points lower than the model, and assigns the draw nearly identical odds at 14%. The sportsbook does rate Qatar's chances slightly higher at 7% versus the model's 3%, a modest divergence. Polymarket prices show substantially higher valuations for Qatar and the draw, reflecting different risk assumptions or information; the dashboard makes no claim about which source better reflects true probabilities."
 }

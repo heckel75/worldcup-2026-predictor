@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Brazil",
   "date": "2026-06-24",
-  "input_hash": "cf2fe0ed7dd59b7f434b14c33106c2340d6bce01",
-  "generated_at": "2026-06-10T18:29:12+00:00",
+  "input_hash": "0f8c5f21d2e07dee92c68370eb52cbe2a083ff3d",
+  "generated_at": "2026-06-11T06:54:08+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Brazil with a 64% win probability, leaving Scotland at 12% and a draw at 25%. Brazil enters as the heavy favorite, though the model assigns Scotland a modest but non-negligible upset chance rather than treating the outcome as settled.\n\nThe 64–12 split indicates a pronounced gap in expected quality, yet the 25% draw probability suggests the match retains genuine competitive texture. A Scotland victory remains unlikely under the model, but a stalemate is plausible enough to prevent Brazil from overwhelming the odds—roughly one in four times this fixture runs, a draw materializes.\n\nThe model and sportsbooks align closely. The consensus across 32 books puts Brazil at 65%, nearly identical to the model's 64%, and Scotland at 15% versus the model's 12%—a gap of 3 percentage points. Polymarket prices diverge slightly further, crediting Scotland to 16% and Brazil to 66%, but all three sources agree on the fundamental shape: a Brazil favorite in a match where draws are neither rare nor improbable. The dashboard makes no claim about which forecast is most accurate."
+  "preview_text": "The model favors Brazil at 64% to advance, while Scotland hold an 12% path to victory. The remaining probability splits toward a draw at 25%, suggesting a competitive fixture despite the heavy lean toward the favorite.\n\nThe win-draw-loss spread reflects a match where Brazil enters as clear favorites, but draws occur frequently enough in tournament football that a single-elimination outcome remains uncertain. Scotland's underdog status is pronounced, yet the 25% draw probability indicates the model sees realistic scenarios where neither side breaks through in regulation.\n\nThe sportsbook consensus aligns closely with the model, with Brazil at 65% and Scotland at 14%—gaps under two percentage points. However, Polymarket prices all three outcomes equally at 33%, a stark divergence suggesting either illiquidity, speculative positioning, or different assumptions about tournament structure. The dashboard makes no claim about which source proves more accurate."
 }

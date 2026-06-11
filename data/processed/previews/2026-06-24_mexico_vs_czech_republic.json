@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "Czech Republic",
   "date": "2026-06-24",
-  "input_hash": "7940ac5692582ea4b935ab66466dc005c9b8c77b",
-  "generated_at": "2026-06-10T18:28:55+00:00",
+  "input_hash": "e15de7a3b775fbe93f334c574184b563ff11e989",
+  "generated_at": "2026-06-11T06:53:36+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Mexico as a heavy favorite with a 71% win probability, leaving Czech Republic just a 7% chance of victory. This asymmetry reflects a substantial gap between the two sides in the model's assessment, positioning Mexico as the clear expected winner on a neutral ground.\n\nThe model's spread suggests a competitive encounter remains plausible but unlikely. Draw probability sits at 23%, indicating that while a stalemate is not remote, Mexico enters as the strongest outcome. The concentration of probability toward a Mexican win means the match carries low parity; Czech Republic would need a significant upset to claim three points.\n\nA marked divergence separates the model from sportsbook consensus. Books assign Mexico only 51%, roughly 20 percentage points below the model's 71%, and grant Czech Republic 22% compared to the model's 7%. Polymarket pricing aligns closely with the sportsbook consensus. The dashboard offers no judgment on which source is more reliable; the gap is substantial enough to warrant attention from those building positions."
+  "preview_text": "The model favors Mexico decisively, assigning a 71% win probability against a Czech Republic chance of just 7%. This represents a substantial gap in the forecast, with Mexico clearly positioned as the stronger team in the model's estimation.\n\nThe 23% draw probability suggests meaningful competitive balance in the underlying match dynamics, despite Mexico's clear edge. The win spread—a 64 percentage-point gap between the favorite and underdog—indicates low likelihood of a Czech Republic victory, though not an elimination of the possibility. The match shape leans toward a Mexico win or stalemate rather than an upset.\n\nModel and sportsbook readings diverge sharply here. The books trim Mexico's win probability to 52%, a 18 percentage-point gap from the model, and assign Czech Republic 21% compared to the model's 7%. The books see a substantially more competitive contest than the statistical forecast does. Polymarket prices reflect near-complete indifference across all three outcomes. The dashboard does not adjudicate which source is correct."
 }

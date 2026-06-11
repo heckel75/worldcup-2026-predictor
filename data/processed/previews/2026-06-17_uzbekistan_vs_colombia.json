@@ -3,9 +3,9 @@
   "home_team": "Uzbekistan",
   "away_team": "Colombia",
   "date": "2026-06-17",
-  "input_hash": "c9d47421c28be1a44b6d3d2003ddcfd9ea125132",
-  "generated_at": "2026-06-10T06:34:14+00:00",
+  "input_hash": "b54a6a025e2b48a0b3577b380a61133158667ce5",
+  "generated_at": "2026-06-11T06:50:20+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Colombia enters as the model's clear favorite with a 62% win probability, while Uzbekistan holds a 13% chance to prevail. The underdog's path to victory is narrow but not implausible in a single-match format.\n\nThe forecast reflects a competitive but unbalanced matchup. A draw registers at 26%, making it the second-most-likely outcome and suggesting the teams are not poles apart in quality. Colombia's advantage is substantial without being overwhelming; Uzbekistan retains meaningful chances in a neutral setting over 90 minutes.\n\nThe sportsbook consensus diverges from the model, favoring Colombia more heavily at 68% versus the model's 62%—a gap of roughly 6 percentage points. The market prices a lower draw probability at 21% and assigns Uzbekistan just 11%. Polymarket pricing aligns more closely with the books than with the statistical model. The dashboard does not adjudicate between these sources; both reflect legitimate but distinct approaches to the match."
+  "preview_text": "The model favors Colombia with a 61.4% win probability, while Uzbekistan is given a 13.0% chance of victory. The underdog faces a substantial gap: Colombia's forecast is more than four times higher than Uzbekistan's, reflecting a clear asymmetry in expected quality.\n\nThe draw emerges as the second-most-likely outcome at 25.6%, suggesting the match carries meaningful competitive tension despite Colombia's advantage. The win probabilities are separated by roughly 48 percentage points, indicating a one-sided fixture, yet the elevated draw probability moderates the sense of inevitability. A tightly contested result remains plausible, even if Colombia enters as the heavy favorite.\n\nThe sportsbook consensus tilts further toward Colombia, pricing the win at 68.6% against the model's 61.4%—a 7-percentage-point divergence. The books compress the draw to 20.5%, while Uzbekistan's chance narrows to 10.9%. Polymarket prices align more closely with the sportsbooks than with the model. These gaps suggest the market is more confident in Colombian dominance than the statistical forecast; the dashboard does not adjudicate which view is justified."
 }

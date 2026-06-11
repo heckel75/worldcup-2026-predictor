@@ -3,9 +3,9 @@
   "home_team": "Egypt",
   "away_team": "Iran",
   "date": "2026-06-26",
-  "input_hash": "4baf48f02f1961760934919d9b3b58d13caf0871",
-  "generated_at": "2026-06-10T18:29:34+00:00",
+  "input_hash": "0c335589a7b03c08457bc434db2b36708db78242",
+  "generated_at": "2026-06-11T06:55:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Iran, assigning a 49% win probability against Egypt's 22%, with a draw accounting for the remaining 30%. This represents a substantial gap, positioning Iran as clear favorite on the statistical forecast.\n\nThe 27-point spread between Iran and Egypt win probabilities suggests the model expects a competitive but directional match. A draw sits at nearly a third of outcomes, implying both teams retain realistic paths to avoid defeat even if one is more likely to prevail. The narrow margin between win and draw odds indicates moderate volatility in possible results.\n\nModel and market diverge meaningfully here. The sportsbook consensus flips the head-to-head assessment, favoring Egypt at 42% versus Iran at 27%—a 21-point reversal relative to the model's ranking. Polymarket prices align closely with the books on Egypt and Iran but track the model's draw probability. The dashboard does not adjudicate which assessment is correct; the discrepancy likely reflects different information sources or weighting methods underlying each forecast."
+  "preview_text": "The model favors Iran at 49%, while Egypt's win probability stands at 22%. Iran enters as clear statistical favorite on the neutral ground, leaving Egypt with a modest chance of victory and substantial ground to make up.\n\nThe draw emerges as a realistic outcome at 30% under the model, sitting between the two outright win probabilities. This three-way split suggests a competitive match without an overwhelming dominance scenario; the gap between Iran's lead and Egypt's floor is meaningful but not decisive, and neither side faces prohibitive odds.\n\nThe model and sportsbook consensus diverge sharply. Books price Egypt's win at 42%, a 20-point gap above the model, while pricing Iran's win at 27%—a 21-point gap below. The model sees this as Iran-leaning; the market treats it as nearly a toss-up. Draw probabilities align closely at 30–31%. Polymarket shows equal thirds across all outcomes. The dashboard makes no claim about which reading is correct, only that material disagreement exists."
 }

@@ -3,9 +3,9 @@
   "home_team": "Algeria",
   "away_team": "Austria",
   "date": "2026-06-27",
-  "input_hash": "b4faa340db7353411a22bf53e0fc4f57549e883f",
-  "generated_at": "2026-06-10T06:35:56+00:00",
+  "input_hash": "3283e7ba97b553fa969ac4989ec62b483e28bb71",
+  "generated_at": "2026-06-11T06:55:56+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Algeria as the marginal favorite with a 37% win probability, compared to Austria's 32% chance. The gap is narrow enough that either side enters as a credible contender in this neutral-venue matchup.\n\nA draw carries 32% probability in the model's forecast, making it a plausible outcome. The three outcomes cluster within a 5-percentage-point band, indicating the model sees a competitive, closely matched encounter with no heavily dominant result.\n\nThe sportsbook consensus and Polymarket prices diverge notably from the model. Both market sources favor Austria at roughly 44%, while assigning Algeria only 27%—a gap of 10 percentage points versus the model's assessment. The draw sits slightly lower in the market at 29–30%. The dashboard presents both signals without claiming superiority for either; the divergence reflects genuine disagreement about relative strength."
+  "preview_text": "The model favors Algeria at 38%, with Austria as a narrow underdog at 30%. The gap reflects a modest edge for the African side, though the 8-percentage-point difference leaves Austria entirely in contention.\n\nThe 31.5% draw probability indicates a competitive match with genuine likelihood of stalemate. The win probabilities are tightly clustered—no team commands a dominant expectation—suggesting a tactical, close contest where the result could plausibly fall any of three ways.\n\nThe model and sportsbook consensus diverge meaningfully. Books and Polymarket both favor Austria at 44%, running 14 percentage points ahead of the model's projection. The model tilts toward Algeria and assigns a higher draw probability. The dashboard does not adjudicate between these sources; the divergence warrants attention from users weighing competing forecasts."
 }

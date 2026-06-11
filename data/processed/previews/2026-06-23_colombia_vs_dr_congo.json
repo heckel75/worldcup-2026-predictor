@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "DR Congo",
   "date": "2026-06-23",
-  "input_hash": "b2d86d716a1ad44a30ebb78b0e5b2a9f757c4323",
-  "generated_at": "2026-06-10T18:28:46+00:00",
+  "input_hash": "8591cd677f80577e3e4fb91145e595612fbd062f",
+  "generated_at": "2026-06-11T06:53:16+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Colombia to win with a 76% probability, leaving DR Congo with just a 4% chance of victory. This represents a substantial gap in the underlying assessment, though the model does assign a meaningful probability to a draw outcome at 20%.\n\nThe distribution reflects a heavily asymmetric match. Colombia's advantage is pronounced enough that a win is the dominant outcome in the model's view, yet the 20-point gap between a Colombia victory and a draw suggests the fixture retains competitive uncertainty. A stalemate or upset remain genuine possibilities within the forecast range, rather than negligible scenarios.\n\nThe model and sportsbooks diverge materially on the upper tail. The model assigns Colombia a 12 percentage points higher win probability than the market consensus, while crediting DR Congo with only a third of the book probability of pulling off a victory. The dashboard does not adjudicate between these views; the divergence warrants noting for those seeking multiple analytical angles."
+  "preview_text": "The model rates Colombia as a strong favorite at 76% to win, leaving DR Congo just 4% win probability and a 20% draw chance. This represents a substantial gap between the two sides in the model's assessment.\n\nThe outcome distribution reflects a match tilted decisively toward Colombia, yet not a foregone conclusion. A draw carries meaningful probability—one in five—suggesting competitive balance in the middle scenarios. DR Congo's low win probability indicates the model sees limited realistic paths to an upset, though the 20-point gap between a Colombian victory and a draw means the match remains open to non-decisive results.\n\nThe model and sportsbook consensus diverge notably. Books assign Colombia 64%, some 12 percentage points lower than the model, and give DR Congo nearly 13% win probability versus the model's 4%. The gap is substantial enough to flag a genuine difference in assessment. Polymarket prices show an entirely flat 33% three-way split, reflecting retail betting sentiment that differs markedly from both the model and the sportsbooks. The dashboard makes no claim about which source is correct."
 }

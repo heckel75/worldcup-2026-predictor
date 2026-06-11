@@ -3,9 +3,9 @@
   "home_team": "Iraq",
   "away_team": "Norway",
   "date": "2026-06-16",
-  "input_hash": "65a430a8cefe2f6fbbb1ae6cde021304a6f05bdb",
-  "generated_at": "2026-06-10T18:27:45+00:00",
+  "input_hash": "c91e156609bf6a8574d00156298c05dfe2b4c249",
+  "generated_at": "2026-06-11T06:49:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Norway as a clear favorite with a 65% win probability, while Iraq has an 11% chance of victory. Norway's advantage over the underdog spans more than half a century of forecast probability, reflecting a substantial expected gap in match outcome.\n\nThe draw probability of 24% indicates a moderately competitive fixture despite the favorite's dominance. That draw likelihood suggests the margin between the teams is not so wide as to make a single-goal result implausible, though Norway is expected to control the contest more often than not. A stalemate remains the second-most-probable outcome in the model's distribution.\n\nThe market consensus diverges meaningfully from the model. Sportsbooks push Norway's win probability to 79%, a gap of roughly 14 percentage points above the model's estimate, while depressing both the draw (14%) and Iraq's chances (7%) below model levels. Polymarket prices align even more sharply in Norway's favor at 81%. The dashboard does not adjudicate between these sources; the gap suggests market and model weight the teams' relative strength differently."
+  "preview_text": "The model favors Norway at 65%, marking a commanding edge over Iraq's 11% win probability. Norway enters as a clear favorite in this neutral-venue fixture, though the model assigns the underdog a non-trivial chance at either an upset or stalemate.\n\nThe win-draw-loss spread reflects a moderately competitive encounter. A draw at 24% is the second-most likely outcome, suggesting the model sees a plausible path to a level result. However, the gap between Norway's 65% and Iraq's 11% is substantial; the fixture leans decidedly toward a Norway victory rather than a genuinely close contest.\n\nModel and market diverge materially here. The sportsbooks push Norway's win probability to 79%—roughly 14 percentage points higher than the model—while compressing both the draw to 14% and Iraq's chances to 7%. The dashboard does not adjudicate between these sources. Polymarket shows equal three-way odds, a stark departure from both the model and consensus that likely reflects the limited liquidity and retail composition of that venue."
 }

@@ -3,9 +3,9 @@
   "home_team": "Australia",
   "away_team": "Turkey",
   "date": "2026-06-13",
-  "input_hash": "a2f3c5780046b6540bc8e199707696e1219e5bbf",
-  "generated_at": "2026-06-10T18:27:14+00:00",
+  "input_hash": "223bc0f04dd2a54cfa42928f7b81814518fae853",
+  "generated_at": "2026-06-11T06:48:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model's forecast supports Turkey as the favorite with a 36% win probability, but the margin is narrow; Australia's 32% chance positions this as a close encounter rather than a clear mismatch. The draw sits at 32%, making it statistically nearly as likely as either team winning outright. The tightness of these three probabilities suggests genuine competitive balance at the baseline prediction level.\n\nThe expected goal distribution reflects a low-scoring, evenly contested match. The 4-point spread between Turkey's modeled edge and Australia's chance indicates neither side possesses the kind of dominating advantage that typically produces lopsided results. A draw outcome carrying near-parity with each team's win probability suggests the model anticipates a cagey, closely fought ninety minutes where either outcome is defensible.\n\nThe sportsbook consensus and Polymarket prices diverge sharply from the model. Both market sources accord Turkey a 55–57% win probability, while the model estimates 36%. The gap—roughly 19–21 percentage points—represents a substantial lift in Turkey's favor away from the model's view. The model does not claim to know which assessment is correct; the dashboard presents both signals for reference and leaves their reconciliation to users."
+  "preview_text": "The model favors Turkey at 36%, though the margin over Australia is narrow. Australia registers 32% to win, leaving meaningful probability mass in both outcomes despite Turkey holding the statistical edge by less than 4 percentage points.\n\nThe draw lands at 32%, making this a tightly bunched three-way race. No outcome commands decisive separation; a draw remains as plausible as either team's outright victory. The match is forecast as competitive and open, with limited daylight between the top two scenarios.\n\nThe sportsbook consensus and Polymarket pricing diverge markedly from the model. Books see Turkey at 56% and Australia at 18%—a swing of roughly 20 percentage points in Turkey's favor compared to the model's lean. The dashboard does not adjudicate which assessment is correct, but the gap signals material disagreement about the strength of each team's chances."
 }

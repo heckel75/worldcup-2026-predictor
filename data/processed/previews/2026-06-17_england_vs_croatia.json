@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "Croatia",
   "date": "2026-06-17",
-  "input_hash": "9634aec6fd4eaca7a5ef8e0183e01532d3200ff5",
-  "generated_at": "2026-06-10T18:28:03+00:00",
+  "input_hash": "358feb559fbd403feb64521901183a23a8edd31a",
+  "generated_at": "2026-06-11T06:50:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The statistical model favours England at 52%, with Croatia as the underdog at 19%. The gap between the two is meaningful but not insurmountable; England enters as clear preference, yet the probability assigned to the visitors reflects genuine competitive potential rather than dismissal.\n\nThe draw probability of 30% suggests a moderately contested fixture. The spread across all three outcomes is neither heavily skewed nor tightly bunched, indicating a match where a single goal or defensive lapse could swing the result across multiple scenarios. An England win remains most likely, but draws and Croatia upsets together account for half the probability mass.\n\nThe model and sportsbooks show modest alignment on England's chances—the market consensus at 55% sits roughly 3 percentage points above the model's 52%. Both sources agree on a draw probability in the 25–30% range and value Croatia's upset chance in the high teens. The forecasts are close enough to suggest broad agreement on the underlying competitive balance, though the market leans slightly more bullish on England."
+  "preview_text": "The model favors England at 53% to win, with Croatia trailing at 18%. That 35-percentage-point gap reflects a substantial edge for the favorite, though the underdog retains a genuine chance at an upset.\n\nThe draw probability of 29% sits squarely between the two outcomes, suggesting this match is expected to be competitive and genuinely uncertain. The win probabilities are separated but not dramatically so; England's lead is real yet narrow enough that the result remains far from a foregone conclusion. A stalemate emerges as a plausible outcome given the spacing across the three scenarios.\n\nThe model and market are broadly aligned. The sportsbook consensus places England at 55% and the draw at 25%, within a few percentage points of the model's readings. Polymarket prices deviate markedly—all three outcomes priced at an even 33% each—suggesting either fundamentally different information or less refined forecasting from those traders. The dashboard does not adjudicate between these sources."
 }

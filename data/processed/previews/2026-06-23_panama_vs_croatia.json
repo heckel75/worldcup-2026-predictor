@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "Croatia",
   "date": "2026-06-23",
-  "input_hash": "e7caa5e51eca2c6ebd28c62b8bec876b088e9f72",
-  "generated_at": "2026-06-10T18:28:50+00:00",
+  "input_hash": "e8312a1fdac4fcec3336c110bd66008e583d00c0",
+  "generated_at": "2026-06-11T06:53:28+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Croatia at 47% to win, with Panama's chances at 23%. The underdog faces a 24-percentage-point deficit in outright victory probability, though a draw at 30% remains the single most likely outcome in the model's forecast.\n\nThe spread across win-draw-loss outcomes is moderate rather than extreme. A draw appears genuinely plausible, accounting for nearly a third of simulated matches. Croatia emerges as the clear favorite but not overwhelmingly so; Panama retains meaningful chances to either draw or win, suggesting a moderately competitive contest.\n\nThe market is considerably more bearish on Panama than the model, pricing a Panama win at 15% against the model's 23%—an 8-percentage-point gap. Conversely, the market leans into Croatia at 62%, some 15 points higher than the model. Both sportsbooks and Polymarket align closely with each other but diverge meaningfully from the model's central estimate. The dashboard does not adjudicate which is correct."
+  "preview_text": "The model favors Croatia at 47%, while Panama's win probability stands at 23%. The underdog's chances are meaningful but well below the favorite, reflecting a substantial quality gap in the forecasting framework.\n\nThe 30% draw probability indicates a competitive match with genuine uncertainty around the outcome. The spread between Croatia's 47% and Panama's 23% suggests the model expects the favorite to control possession and chances, yet the draw sitting at three-in-ten reflects the possibility of a tight contest that neither side decisively wins.\n\nModel and market diverge notably. The sportsbook consensus rates Croatia 15 percentage points higher (62%) than the model (47%), while assigning Panama roughly 9 points lower (15% versus 23%). Polymarket prices align closely with the sportsbook view. The dashboard presents both; it does not claim knowledge of which assessment is correct, only that material disagreement exists between the statistical forecast and consensus betting."
 }

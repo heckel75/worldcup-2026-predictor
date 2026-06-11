@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Algeria",
   "date": "2026-06-22",
-  "input_hash": "e2c3557adab9c719a9860d332ee3b60be34f1df7",
-  "generated_at": "2026-06-10T18:28:41+00:00",
+  "input_hash": "6349d44279d00530e7afeb743578dff02870fd11",
+  "generated_at": "2026-06-11T06:52:59+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Algeria enters as the statistical favorite with a 44% win probability according to the model, while Jordan sits at 26%, giving the underdog a meaningful but far from negligible chance of an upset.\n\nThe draw carries 31% probability in the model forecast, suggesting a competitive fixture where regulation stalemate ranks among the plausible outcomes. The spread between the top two outcomes is moderate—Algeria's advantage over a draw is roughly 13 percentage points—indicating this match could develop in multiple directions rather than following a heavily prescribed script.\n\nThe market consensus diverges notably from the model. Sportsbook and Polymarket assessments both assign Algeria a substantially higher win probability, around 62–66%, while compressing both Jordan and draw probabilities to the mid-teens and low-20s respectively. The model's draw at 31% sits 10 percentage points above the market's 21–22%, and the model tilts more favorably toward Jordan (26% vs. 14–13%). The dashboard reports both frameworks without claiming superiority for either."
+  "preview_text": "The model favors Algeria at 45%, with Jordan at 25% and a draw at 30%. Algeria enters as the clear statistical favorite, but the model assigns Jordan roughly a quarter chance to upset, suggesting a competitive match rather than a foregone conclusion.\n\nThe 30% draw probability signals meaningful uncertainty about who will prevail inside ninety minutes. The win probabilities span 20 percentage points, indicating Algeria is favored but not overwhelmingly so. A draw outcome ranks second-most likely, reflecting the competitive gap between the two teams.\n\nThe model and market diverge notably. The sportsbook consensus places Algeria at 62%, roughly 17 percentage points higher than the model's 45%, and prices Jordan at only 15%—half the model's 25%. Polymarket prices align closely with sportsbook consensus on the same spread. The dashboard does not adjudicate which assessment is correct; the gap reflects material disagreement between statistical and market methodologies."
 }

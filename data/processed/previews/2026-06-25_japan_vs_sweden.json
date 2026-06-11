@@ -3,9 +3,9 @@
   "home_team": "Japan",
   "away_team": "Sweden",
   "date": "2026-06-25",
-  "input_hash": "246faadaadd72d1a4ee67841355e7b5ffa800ddf",
-  "generated_at": "2026-06-10T18:29:30+00:00",
+  "input_hash": "35470f48fb27fed45731987c3d1b2d75d3d63544",
+  "generated_at": "2026-06-11T06:54:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Japan with a 69% win probability, a substantial edge over Sweden's 8% chance. This asymmetry reflects a decisive forecast in Japan's favor, though the underdog retains a non-trivial path to victory.\n\nThe draw carries 24% probability in the model forecast, suggesting the match carries real competitive tension despite the win-probability gap. The spread across all three outcomes—Japan's 61 percentage-point advantage over Sweden—indicates the model expects Japan to control play, but a draw remains plausible enough that this is not a heavily one-sided encounter in expected tactical shape.\n\nThe model and market diverge meaningfully. Sportsbooks strip to a Japan win at 46%, roughly 23 percentage points lower than the model, while assigning Sweden 27%—more than three times the model's estimate. Polymarket prices align closely with sportsbook consensus. The dashboard makes no claim about which forecast is correct; users should treat this divergence as material uncertainty worthy of scrutiny."
+  "preview_text": "The model favors Japan to win at 69%, giving Sweden only a 8% chance of victory. This represents a substantial gap between the two sides in the forecast, with Japan cast as the clear favorite on the model's assessment.\n\nThe win-draw-loss spread shows Japan's edge is large but not overwhelming: a draw sits at 24%, making it plausible but less likely than either team winning outright. The model suggests a competitive but one-sided match tilted toward Japan, rather than a blowout or an even contest.\n\nModel and market diverge markedly here. The sportsbook consensus places Japan at 46%—23 percentage points lower than the model—and assigns Sweden 27%, triple the model's estimate. Polymarket prices show even starker disagreement, treating all three outcomes as near-equal at roughly one-third each. The dashboard presents the model's output without claiming superiority over these alternative sources; the substantial variance across them reflects genuine uncertainty about this fixture."
 }

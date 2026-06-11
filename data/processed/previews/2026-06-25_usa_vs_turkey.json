@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Turkey",
   "date": "2026-06-25",
-  "input_hash": "b16925c827c37847328cca1b7771eb19f923d8d4",
-  "generated_at": "2026-06-10T18:29:17+00:00",
+  "input_hash": "eafe1e3e58444d185ba16bb528ca9cc93c1f9e86",
+  "generated_at": "2026-06-11T06:54:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model identifies Turkey as a slight favourite, assigning them a 38% win probability compared to USA's 31%. This represents a modest gap; both teams occupy credible positions in the forecast, with neither dominant.\n\nThe draw probability of 31% ranks nearly equal to both outright outcomes, suggesting a competitive match where all three results remain plausible. The spread across W/D/L is relatively flat, indicating uncertainty. A stalemate remains as probable as either team securing three points, which points to a closely contested fixture.\n\nThe market consensus diverges noticeably from the model. Sportsbooks lean toward USA at 37%, a 6-percentage-point premium over the model's forecast, while pricing Turkey at 35%—roughly 3 points below the model. Polymarket prices track closer to the model on Turkey but also favor USA. The dashboard makes no claim about which estimate is correct; these gaps warrant attention from those building their own views."
+  "preview_text": "The model favors Turkey at 38%, with the USA at 31% and a draw at 31%. Turkey's edge is modest—just seven percentage points over the underdog USA, reflecting a competitive match where either team's victory remains plausible.\n\nThe win-draw-loss spread reveals a closely contested contest. The draw sits at nearly a third of outcomes, indicating that a stalemate is a credible result. No single outcome dominates; the three possibilities cluster within a narrow band, suggesting tactical balance and low goal-scoring separation on the day.\n\nThe sportsbook consensus and Polymarket prices both diverge from the model, favoring the USA more heavily at around 37% compared to the model's 30%. Both market sources also downgrade the draw probability to 26–27%, well below the model's 31%. The discrepancy spans roughly 6–7 percentage points on the USA, marking a meaningful split between the statistical forecast and betting consensus. The dashboard does not adjudicate which reading is correct."
 }

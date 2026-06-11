@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "DR Congo",
   "date": "2026-06-17",
-  "input_hash": "a3b747932554d4ab983e6b8027f2b45307d49e65",
-  "generated_at": "2026-06-10T18:27:58+00:00",
+  "input_hash": "eaac415f25c285da48c9a73bd4b4cc2cddd7accf",
+  "generated_at": "2026-06-11T06:50:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model projects Portugal as a strong favorite at 77%, with DR Congo holding only a 4% chance of victory. The underdog faces a steep hill; Portugal's win probability outruns DR Congo's by roughly 73 percentage points.\n\nThe forecast spread widens considerably in Portugal's favor. A draw registers at 20%, making it plausible but secondary. The match shape suggests Portugal enters as clear favorites, yet the 20% draw probability indicates the outcome carries enough variance that a stalemate remains a meaningful possibility rather than an unlikely event.\n\nThe model and sportsbook consensus align closely on Portugal's win probability—separated by fewer than 2 percentage points. The key divergence is in how each source values the underdog: the model assigns DR Congo 4% compared to the market's 9%, a gap of roughly 5 percentage points. The market implies slightly greater upside for an upset than the statistical model does. Polymarket pricing sits near the model's central estimate across all three outcomes."
+  "preview_text": "The model rates Portugal as a strong favorite, projecting a 77% win probability against DR Congo. The underdog's chances stand at just 3.5%, leaving a decisive gap in the head-to-head comparison.\n\nThe spread across outcomes reflects a match tilted heavily toward Portugal, though not to the point of dismissing competition entirely. Draws carry a meaningful 19.5% probability, suggesting the match retains structural uncertainty despite the clear favorite. The three-way split indicates a likely Portugal victory, but one where a stalemate or upset remains statistically plausible rather than negligible.\n\nThe model and sportsbooks are closely aligned. The market estimates Portugal's win probability at 74.3%—a 3-percentage-point gap—and places the draw at 16.9%, slightly below the model's 19.5%. The largest divergence appears in DR Congo's win odds, where the market prices them at 8.8% compared to the model's 3.5%. This dashboard does not adjudicate which assessment of the underdog's true chances is correct, only that they materially differ."
 }

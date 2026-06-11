@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "South Africa",
   "date": "2026-06-11",
-  "input_hash": "6a9a9993945e3c746bd8fcd70f246ac75db8ebe1",
-  "generated_at": "2026-06-09T09:57:39+00:00",
+  "input_hash": "ff2af3eb8d331f27350098839fe95b4613772973",
+  "generated_at": "2026-06-11T06:47:47+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Mexico as a strong favorite, assigning an 83% win probability. South Africa's chances stand at less than 1%, leaving a wide gulf between the two sides in the statistical forecast.\n\nThe win-draw-loss spread reflects a heavily asymmetric contest. Mexico's dominant probability leaves little room for South Africa, though a draw at 16% is plausible as a secondary outcome. The match is modeled as decidedly uncompetitive in expectation, with the favorite's baseline advantage substantial.\n\nThe model and market diverge meaningfully here. The sportsbook consensus sits 15 percentage points lower on Mexico (68%) and substantially higher on a South Africa upset (11% versus under 1% from the model). Polymarket prices align closely with the books. The dashboard does not adjudicate between these sources; the gap suggests either the model overestimates Mexico's edge or the market prices in tail risk the Dixon-Coles framework does not capture."
+  "preview_text": "The model rates Mexico as a heavy favourite at 83%, leaving South Africa just 1% to win. The sportsbook consensus is considerably more cautious, placing Mexico at 67%—a gap of 16 percentage points. The Polymarket contract shows no conviction, pricing all three outcomes equally at 33% each, likely reflecting thin liquidity or hedging rather than genuine uncertainty.\n\nThe model's distribution reflects a match expected to be largely one-directional. Draws are possible at 16%, but the overwhelming bulk of probability accrues to a Mexico victory. The sportsbook agrees on the likely winner but redistributes significantly toward both draw and South Africa upset scenarios, suggesting it sees plausible paths to either outcome that the model dismisses.\n\nThe divergence between model and market is substantial and material. The model's 83% Mexico win probability stands 16 points above the sportsbook median, while the sportsbook allows South Africa 11% rather than 1%. This dashboard does not adjudicate which estimate is more reliable. The Polymarket prices appear uninformative and are noted for completeness only."
 }

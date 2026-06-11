@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Morocco",
   "date": "2026-06-13",
-  "input_hash": "b393b3623badd72540c5e7c3c0c69a1a9628087a",
-  "generated_at": "2026-06-09T09:58:00+00:00",
+  "input_hash": "f0a5d23cb92dc672641cc5b05d81a24400c9dab9",
+  "generated_at": "2026-06-11T06:48:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Brazil as favorite at 38%, with Morocco and a draw occupying nearly equal ground at 30% and 32% respectively. The sportsbook consensus is substantially more bullish on Brazil, assigning the favourite a 58% win probability and reducing Morocco's chances to 18%.\n\nThe model's forecast suggests a genuinely competitive encounter. The 8-percentage-point margin between Brazil and draw probability indicates neither a comfortable win nor a stalemate is heavily favoured. Morocco's 30% win chance reflects a plausible path to victory. This distribution implies an open match where all three outcomes remain live possibilities throughout.\n\nA notable divergence emerges between the model and the market. The sportsbooks and Polymarket both price Brazil roughly 20 percentage points higher than the model does, while compressing Morocco's odds to about half the model's assessment. The dashboard offers no resolution as to which source better reflects the true likelihood; users should weigh the model's statistical foundation against market sentiment independently."
+  "preview_text": "The model favors Brazil at 38%, but the margin over Morocco is modest—a 8-percentage-point gap that reflects competitive odds rather than a dominant prediction. Morocco's 30% win probability sits close enough to suggest a genuinely contested match by the model's reckoning.\n\nThe 31.5% draw probability indicates the model sees a plausible path to parity. Brazil's win likelihood falls only 7 points above a stalemate, and Morocco trails by just 1.4 points. This clustering of outcomes suggests the match is expected to be closely fought, with no single result commanding clear separation.\n\nThe market consensus, represented identically across sportsbooks and Polymarket, diverges meaningfully from the model. Books assign Brazil 58% and Morocco 17%—a gap of roughly 20 percentage points wider than the model's spread. The market also prices draws lower at 25%. The dashboard does not adjudicate between model and sportsbook; the discrepancy reflects different methodologies and information sets at work."
 }

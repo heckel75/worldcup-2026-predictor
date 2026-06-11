@@ -5,10 +5,10 @@
   "date": "2026-06-17",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 39.5,
-  "input_hash": "153e8fe6f5dec76944c638d2ac8dddeb9bc793e5",
-  "generated_at": "2026-06-09T10:03:00+00:00",
+  "max_gap_pp": 39.2,
+  "input_hash": "f71aa660bfe95c15a24d150852d4c01e24d3e85f",
+  "generated_at": "2026-06-11T06:57:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Panama at 66%, while the market favors Ghana at 46%. The largest single gap appears on the Ghana win probability, where the market is 36 percentage points higher than the model. This divergence could reflect information about recent form, injuries, or lineup changes unavailable to the model at its last update, or it may indicate the market is pricing Ghana substantially differently based on factors the statistical framework does not capture. The dashboard presents this as a signal of genuine disagreement rather than a verdict on which assessment is more reliable."
+  "commentary_text": "The model favors Panama at 66%, while the sportsbook consensus favors Ghana at 46%—a 35-percentage-point gap on the Ghana win probability in opposite directions. This wide disagreement could reflect market access to recent lineup changes, injury news, or recent form data unavailable to the model's last update. The model's much heavier lean toward Panama suggests its Elo-based foundation may be anchored to older strength assessments. The dashboard surfaces this as a genuine signal of divergence rather than a judgment on which framework is more reliable."
 }

@@ -3,9 +3,9 @@
   "home_team": "Uruguay",
   "away_team": "Cape Verde",
   "date": "2026-06-21",
-  "input_hash": "da03a53a62cb200fd8b7ee7b38a6c851538bb635",
-  "generated_at": "2026-06-10T18:28:24+00:00",
+  "input_hash": "66304fd5502855f00f8ed92d3b503c0ec4f34b5e",
+  "generated_at": "2026-06-11T06:52:30+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Uruguay to win at 74%, roughly 69 percentage points clear of Cape Verde's 5% chance. This substantial gap reflects an asymmetric matchup in which the underdog's path to victory remains narrow but non-negligible.\n\nThe W/D/L distribution shows Uruguay as clear favorite but with a meaningful draw probability at 21%. The outcome space is not heavily concentrated in a single result; roughly one in five instances involves a stalemate, and Cape Verde's small but real 5% win chance indicates genuine uncertainty at the tail rather than a foregone conclusion.\n\nThe model and market diverge notably on the upper and lower bounds. The model assigns Uruguay 74%, while sportsbooks cluster around 66% and Polymarket sits at 68%—gaps of 6 to 8 percentage points favoring the favorite in the model's view. Conversely, the model rates Cape Verde at 5%, whereas the market consensus ranges from 11% to 13%—a spread suggesting market participants price in more upside for the underdog. Draw probabilities align closely across all sources near 21%. The dashboard makes no claim about which assessment is more accurate."
+  "preview_text": "The model favors Uruguay at 74%, leaving Cape Verde with just a 5% chance of victory. This represents a substantial gap between the two sides in the model's assessment.\n\nThe 21% draw probability suggests a meaningful outcome distribution spread. While Uruguay holds the clear edge, the outcome is not heavily concentrated in a single result — draws appear plausible enough to feature in realistic match scenarios, indicating the sides are not projected to be entirely mismatched in competitive terms.\n\nThe model and sportsbook consensus diverge notably. Books price Uruguay's win at 66%, roughly 8 percentage points below the model, while assigning Cape Verde nearly three times the model's win probability at 13%. Polymarket odds show a radically flatter distribution, pricing all three outcomes near-equally around 33% each. The dashboard makes no claim about which source is correct; the gap reflects genuine disagreement in the market about the relative strength balance."
 }

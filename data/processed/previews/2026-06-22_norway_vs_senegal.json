@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "Senegal",
   "date": "2026-06-22",
-  "input_hash": "25dd5819decc30ef3c51963c4a869ff5a738134b",
-  "generated_at": "2026-06-10T18:28:32+00:00",
+  "input_hash": "d6dbe57bd70c12f87e1d8611339be7d30c4dc899",
+  "generated_at": "2026-06-11T06:52:43+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Norway as the narrow favourite with a 43% win probability, compared to Senegal's 26% chance of victory. The gap reflects a modest but meaningful edge; the teams are closer in expectation than a typical upset scenario, but Norway remains the more likely winner.\n\nThe draw carries substantial weight at 31%, suggesting the model expects a competitive match with genuine uncertainty. The three-outcome split—43%, 31%, 26%—is relatively flat across the win column, indicating this is not a heavily asymmetric contest. A draw remains plausible throughout, and Senegal's path to victory, though narrower than Norway's, is far from negligible.\n\nThe model and sportsbook consensus are tightly aligned. Norway's win probability differs by 1 percentage point; draws diverge by 4 points, with the market assigning slightly less probability to that outcome; Senegal's chances split by 3 points. These gaps are marginal and reflect minor variance rather than substantive disagreement between the statistical forecast and betting markets."
+  "preview_text": "The model favours Norway at 43%, with Senegal the underdog at 26%. A draw sits between them at 31%, making this a relatively open contest rather than a lopsided matchup. Norway hold a meaningful but not dominant edge in the forecast.\n\nThe spread across outcomes reveals a competitive fixture. Norway's advantage is real but modest—no single result commands majority probability. A draw is plausible and sits closer to the favourites' probability than would be the case in a one-sided match, suggesting the teams are reasonably well-matched on the model's view.\n\nThe sportsbook consensus aligns closely with the model. Norway win stands at 44% in the market versus 43% in the model, and the draw probabilities differ by under 4 percentage points. Senegal's chances diverge slightly more, with the market at 28% against the model's 26%, but the gap remains narrow. Polymarket shows notably different pricing—a three-way near-parity at roughly 33% each—suggesting crypto traders assign less confidence to Norway's edge. The dashboard does not adjudicate between these sources."
 }

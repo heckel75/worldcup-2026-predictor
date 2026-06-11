@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "South Korea",
   "date": "2026-06-18",
-  "input_hash": "5af31bdca8a36415c3c33b73689150a2480aaa3b",
-  "generated_at": "2026-06-09T09:59:25+00:00",
+  "input_hash": "5c0f813453d664ffe12dd9a54ef24c9500004653",
+  "generated_at": "2026-06-11T06:50:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Mexico at 60%, compared to South Korea's 12% win probability. This marks a substantial gap, positioning Mexico as the clear favorite on the statistical forecast while assigning the underdog less than one-in-eight odds of victory.\n\nThe 27% draw probability suggests this match carries meaningful competitive uncertainty despite the win-probability gap. The spread between a Mexico win and a draw is modest—roughly 33 percentage points—indicating the model expects a fairly open contest that could settle either way. South Korea's 13% win chance, though low, is not negligible enough to render an upset implausible.\n\nThe model and market diverge notably on Mexico's chances. The sportsbook consensus sits at 52%, approximately 8 percentage points below the model's 60%. The market aligns closely on the draw at 27% and rates South Korea's prospects slightly higher at 21% compared to the model's 13%. These differences suggest the market is pricing more competitive odds than the statistical forecast, though both sources agree on Mexico's general favoritism. The dashboard does not claim certainty about which assessment is correct."
+  "preview_text": "The model favors Mexico at 60% to win, a 47-percentage-point edge over South Korea's 13% chance. This asymmetry suggests a clear favorite, though the underdog retains meaningful probability of an upset.\n\nThe draw probability of 27% sits midway between the win chances, indicating competitive depth rather than a lopsided matchup. The 34-point spread between Mexico's win and South Korea's win probabilities reflects meaningful separation; a one-goal or two-goal Mexico victory would align with the model's distribution.\n\nThe sportsbook consensus aligns closely with the model on draw likelihood (both 27%) but shifts 8 percentage points from Mexico to South Korea compared to the model. Polymarket prices fall between the two sources, nearly matching the sportsbook line. The dashboard does not adjudicate which reading is more accurate; the divergence may reflect different risk assessments or edge opportunities worth monitoring."
 }

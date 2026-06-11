@@ -3,9 +3,9 @@
   "home_team": "Belgium",
   "away_team": "Egypt",
   "date": "2026-06-15",
-  "input_hash": "f9a52dd8207583f1f8106ef38e778a022792eae1",
-  "generated_at": "2026-06-10T18:27:23+00:00",
+  "input_hash": "1236472907dfa901ab19292e3e8705797c853a45",
+  "generated_at": "2026-06-11T06:49:14+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Belgium at 54%, a modest advantage in a match where the underdog Egypt holds a genuine 17% path to victory. The draw emerges as a substantial outcome at 29%, suggesting the contest will be genuinely competitive rather than one-sided.\n\nThe win-draw-loss spread reflects a relatively tight tactical landscape. Belgium's edge is clear but not commanding; Egypt's 17% win probability is large enough to make them a credible threat. A draw sits between the two outright results and carries nearly the weight of an Egypt victory, indicating that play could plausibly remain level through regulation.\n\nThe model and sportsbook consensus align closely across all three outcomes. Belgium's win probability differs by 4 percentage points, the draw by 4 points, and the Egypt win by under 1 point. Polymarket pricing tracks similarly. This convergence suggests the market has reached a stable read on the matchup that the statistical forecast corroborates."
+  "preview_text": "The statistical model favors Belgium with a 54% win probability, substantially above Egypt's 17% chance. The gap reflects a considerable quality differential in the forecast, though the underdog retains a non-trivial path to victory.\n\nThe draw emerges as the second-likeliest outcome at 29%, suggesting the match will be competitive rather than one-sided. Belgium's advantage is real but not overwhelming; nearly three in ten neutral-venue contests between these sides would end level according to the model. The spread across outcomes indicates a match with genuine uncertainty beneath the surface favourite.\n\nThe sportsbook consensus aligns closely with the model, pricing Belgium at 58% and drawing the same 24% draw probability. Both sources largely agree on Egypt's 17-18% floor. Polymarket prices show material divergence, assigning equal odds to all three outcomes; this reflects either different underlying assessments or lower liquidity in that market. The dashboard makes no claim about which source is most reliable."
 }

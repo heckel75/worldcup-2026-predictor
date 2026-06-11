@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "input_hash": "b6184f2fe0cc1b64ef06c0123d7fbcfa046942e5",
-  "generated_at": "2026-06-10T18:29:04+00:00",
+  "input_hash": "d4702bdd53cc4491e06c53e5d6e68172a91d36ca",
+  "generated_at": "2026-06-11T06:53:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Canada at 41% to win, compared to Switzerland's 28% win probability. This 13-percentage-point gap reflects a modest edge for Canada in the statistical forecast, though Switzerland retains a meaningful chance at victory on a neutral ground.\n\nThe draw sits at 31%, making three outcomes genuinely plausible rather than one dominant scenario. The spread across win probabilities is moderate—neither team is heavily favored to avoid the result entirely—suggesting a competitive match where neither side enters as a clear favorite in the traditional sense.\n\nThe market and model diverge significantly here. Sportsbooks and Polymarket both lean heavily toward Switzerland at 45% and 45% respectively, against Canada at 26–27%. This 14–18 percentage-point gap between model and market favorites is material. The dashboard does not adjudicate between these sources; the divergence flags genuine uncertainty about the underlying matchup strength."
+  "preview_text": "The model favours Canada to win at 41%, substantially ahead of Switzerland's 28% win probability. That gap reflects a clear analytical edge to Canada in this neutral-venue matchup, though the underdog retains meaningful chances of victory.\n\nThe draw sits at 31%, making it the second-most-likely outcome. The relatively even split across all three results—no single probability dominates beyond 44%—indicates a competitive contest. The model suggests Canada should control play, but Switzerland's win probability is high enough that a draw remains plausible and a Swiss upset far from implausible.\n\nThe model and market diverge sharply here. Sportsbooks and Polymarket both assign Canada just 27%, a 13-percentage-point gap below the model's 41%, while both sources rate Switzerland at 44%—16 points higher than the model. The dashboard does not adjudicate between them, but the gap is substantial enough to merit note for any forecast user."
 }
