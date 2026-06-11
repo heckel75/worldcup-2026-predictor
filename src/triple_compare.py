@@ -155,10 +155,32 @@ def main() -> None:
     fixtures = pd.read_csv(FIXTURES_PATH, parse_dates=["date"])
     print(f"  fixtures:    {len(fixtures)} WC matches")
 
+    def _dedupe_market_rows(df: pd.DataFrame, source_name: str) -> pd.DataFrame:
+        if df.empty:
+            return df
+        pair_key = df.apply(
+            lambda r: tuple(sorted((r["home_team"], r["away_team"]))),
+            axis=1,
+        )
+        df = df.assign(_pair=pair_key)
+        duped = df[df["_pair"].duplicated(keep=False)]
+        if len(duped):
+            print(f"\nWARNING: dropped {len(duped)//2} duplicate {source_name} rows on unordered team pair:")
+            for _, r in duped.iterrows():
+                print(f"  {source_name}: {r['home_team']} vs {r['away_team']} -> "
+                      f"p_home={r.get('p_home')} p_draw={r.get('p_draw')} p_away={r.get('p_away')}")
+            df = df.drop_duplicates(subset=["_pair"], keep="first")
+            df = df.drop(columns=["_pair"]).reset_index(drop=True)
+        else:
+            df = df.drop(columns=["_pair"])
+        return df
+
     book = pd.read_csv(BOOK_PATH)
+    book = _dedupe_market_rows(book, "sportsbook")
     print(f"  sportsbook:  {len(book)} match rows")
 
     poly = pd.read_csv(POLY_PATH)
+    poly = _dedupe_market_rows(poly, "Polymarket")
     poly_state = "populated" if len(poly) else "header-only, will auto-populate"
     print(f"  polymarket:  {len(poly)} match rows ({poly_state})")
 
@@ -293,6 +315,11 @@ def main() -> None:
 
     # 7. Save ---------------------------------------------------------------
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    if len(df) != len(fixtures):
+        sys.exit(
+            f"FATAL: expected {len(fixtures)} rows in triple_compare, got {len(df)}. "
+            "Aborting to prevent duplicate fixture publishing."
+        )
     df.to_csv(OUT_PATH, index=False)
     print(f"\nSaved {len(df)} rows -> {OUT_PATH}")
 

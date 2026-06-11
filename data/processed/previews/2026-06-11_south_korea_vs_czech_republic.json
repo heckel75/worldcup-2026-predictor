@@ -3,9 +3,9 @@
   "home_team": "South Korea",
   "away_team": "Czech Republic",
   "date": "2026-06-11",
-  "input_hash": "4d3aa6293e1e121a2807a81d1171adb4090b749f",
-  "generated_at": "2026-06-11T06:47:55+00:00",
+  "input_hash": "3ae8cffa54c3c5aad154ec5d866e693bb54496f4",
+  "generated_at": "2026-06-11T19:02:07+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea at 47% to win, a meaningful edge over Czech Republic's 22% win probability. The statistical forecast is anchored by South Korea's higher estimated strength; the underdog has less than a quarter chance of victory.\n\nThe draw sits at 31%, indicating a moderately competitive match. South Korea's advantage is notable but not dominant—the gap between a Korea win and a Czech Republic win is significant, yet the sizable draw probability suggests this is not a heavily skewed encounter. The spread reflects a match where the favorite has clear superiority without overwhelming the opponent.\n\nThe model and market diverge substantially. Sportsbooks and prediction markets compress South Korea's win probability to 35%, a gap of roughly 12 percentage points below the model's estimate. The books and Polymarket are closely aligned with each other on all three outcomes, but both assign Czech Republic nearly double the win chance the model does. The dashboard does not adjudicate between these sources; the discrepancy warrants attention for users comparing models to market consensus."
+  "preview_text": "The model favors South Korea at 47%, with Czech Republic at 23%—a gap of 24 percentage points. This reflects an asymmetric contest in the model's reading, though the underdog retains a meaningful path to victory or stalemate.\n\nThe 31% draw probability suggests the match carries genuine competitive balance despite the win-probability spread. The model's distribution implies South Korea is more likely to win than not, but a draw or Czech Republic victory combined accounts for 53% of outcomes. The match is competitive in structure rather than heavily tilted.\n\nModel and market diverge notably. The sportsbooks strip out to 36% for South Korea—11 percentage points lower than the model—while pricing Czech Republic at 32%, a 9-point premium over the model estimate. The market treats this as substantially closer than the statistical forecast suggests. Polymarket prices align with sportsbook consensus. The dashboard does not claim to know which reading is correct; this gap warrants attention in decision-making."
 }

@@ -6,9 +6,9 @@
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
   "max_gap_pp": 16.9,
-  "input_hash": "add461dbcaee7f29867044d1d5b51d1cc5dd7eed",
-  "generated_at": "2026-06-11T06:57:09+00:00",
+  "input_hash": "014d8a4be69def8e5b49db61e299fdcc8a7fefbb",
+  "generated_at": "2026-06-11T18:52:37+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Switzerland a 77% win probability while the sportsbook consensus stands at 60%—a 16-percentage-point gap favoring the model's confidence in a Swiss victory. The market's more cautious stance, reflected in a higher draw probability (24% vs. 20%) and substantially elevated Bosnia and Herzegovina win odds (17% vs. 4%), may reflect uncertainty about recent form, injuries, or lineup changes that the model cannot see. Both sources agree Switzerland is the clear favorite, but the market is pricing in considerably more volatility than the statistical baseline suggests, signaling either hidden squad concerns or genuine doubt about the strength of the model's underlying ratings."
+  "commentary_text": "The model assigns Switzerland a 77% win probability, while sportsbooks consensus lands at 60%—a 16-point gap favoring the model's confidence in a Swiss victory. This gap could reflect recent lineup changes, injury concerns affecting either team, or current form that the model's last update may not fully capture. The market's broader hedging toward Bosnia and Herzegovina (17% vs. 4% in the model) suggests real-money flows are pricing in scenarios the statistical baseline does not see. The divergence surfaces a genuine tension worth monitoring: the dashboard flags it as a signal, not as evidence that either source has mispriced the match."
 }

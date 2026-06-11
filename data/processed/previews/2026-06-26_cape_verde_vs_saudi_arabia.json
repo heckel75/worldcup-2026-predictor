@@ -3,9 +3,9 @@
   "home_team": "Cape Verde",
   "away_team": "Saudi Arabia",
   "date": "2026-06-26",
-  "input_hash": "ed39c024ad5665ef2d75b33049d1356b9fcffd91",
-  "generated_at": "2026-06-11T06:55:23+00:00",
+  "input_hash": "566e42bb9aaa2efd604d996d34321b3cbae4cf2c",
+  "generated_at": "2026-06-11T18:51:43+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Saudi Arabia with a 40.5% win probability, making them narrow favorites on a neutral ground. Cape Verde's estimated winning chance stands at 28%, leaving a gap of roughly 12 percentage points between the two sides in the model's assessment.\n\nThe model assigns a substantial 31% probability to a draw, suggesting the match is unlikely to be cleanly decided. The spread across outcomes—with the favorite's win probability in the 40s rather than the 50s—points to a competitive fixture where a stalemate or upset remains plausible rather than remote.\n\nThe sportsbook consensus diverges notably from the model. Books price Saudi Arabia's win probability at 35%, a gap of roughly 5 percentage points lower than the model, while assessing Cape Verde's chances at 37%, about 8 points higher. The consensus also estimates the draw at 29%, marginally lower than the model. Polymarket prices show all three outcomes at exactly 33% each, reflecting maximal uncertainty among those traders. The dashboard does not claim to know which source is correct."
+  "preview_text": "The model favors Saudi Arabia at 41%, though the margin over Cape Verde is modest—a 12-percentage-point gap. Cape Verde's win probability sits at 28%, leaving a fairly competitive contest rather than a clear hierarchy.\n\nThe draw carries notable plausibility at 31%, suggesting the three outcomes remain reasonably balanced. No single result dominates the forecast; a Saudi Arabia victory is most likely, but draws and Cape Verde wins together account for nearly 60% of the model's distribution. The match is expected to be closely fought.\n\nModel and market diverge meaningfully. The sportsbooks lean harder toward Cape Verde (37% versus the model's 28%, an 8-point gap) and soften Saudi Arabia (35% versus 41%, a 6-point gap). Polymarket prices align closely with the books. The dashboard does not adjudicate between these sources—both represent legitimate forecasting approaches with different data and methodologies—but the spread warrants note for decision-making."
 }

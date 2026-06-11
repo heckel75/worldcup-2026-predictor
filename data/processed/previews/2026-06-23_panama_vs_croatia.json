@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "Croatia",
   "date": "2026-06-23",
-  "input_hash": "e8312a1fdac4fcec3336c110bd66008e583d00c0",
-  "generated_at": "2026-06-11T06:53:28+00:00",
+  "input_hash": "45128055ffdd96cc54535567c8ffda864e73e11d",
+  "generated_at": "2026-06-11T19:16:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Croatia at 47%, while Panama's win probability stands at 23%. The underdog's chances are meaningful but well below the favorite, reflecting a substantial quality gap in the forecasting framework.\n\nThe 30% draw probability indicates a competitive match with genuine uncertainty around the outcome. The spread between Croatia's 47% and Panama's 23% suggests the model expects the favorite to control possession and chances, yet the draw sitting at three-in-ten reflects the possibility of a tight contest that neither side decisively wins.\n\nModel and market diverge notably. The sportsbook consensus rates Croatia 15 percentage points higher (62%) than the model (47%), while assigning Panama roughly 9 points lower (15% versus 23%). Polymarket prices align closely with the sportsbook view. The dashboard presents both; it does not claim knowledge of which assessment is correct, only that material disagreement exists between the statistical forecast and consensus betting."
+  "preview_text": "The model favors Croatia at 47%, with Panama offered a 23% path to victory. The draw lands at 30%, making it the second-most likely outcome. Croatia enters as clear favorite, though Panama's win probability sits roughly one-quarter of its opponent's.\n\nThe spread between the favorites and underdog is moderate rather than extreme. A Croatian victory remains most probable, but the 30% draw likelihood indicates the match carries competitive texture — neither team is modeled as heavily dominant, and a stalemate ranks above Panama's outright win chance.\n\nThe model and market diverge meaningfully on underdog upside. Sportsbooks assign Panama only 15%, some 8 percentage points below the model's 23%. Both sources converge on Croatia's superiority and draw likelihood within narrow bands. The dashboard makes no claim about which assessment is more accurate; the gap likely reflects different methodologies and risk appetite across the betting ecosystem."
 }

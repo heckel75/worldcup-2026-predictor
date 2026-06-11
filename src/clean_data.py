@@ -69,6 +69,47 @@ def main():
     df["home_team"] = df["home_team"].replace(TEAM_NAME_MAP)
     df["away_team"] = df["away_team"].replace(TEAM_NAME_MAP)
 
+    # 4a. Merge manual rows with raw results row values when manual fields are blank.
+    # This preserves manual scores/advanced values while filling missing metadata.
+    if MANUAL_PATH.exists() and len(manual_df) > 0:
+        raw_rows = df.iloc[len(manual_df):].copy()
+        raw_lookup = {}
+        for _, row in raw_rows.iterrows():
+            if pd.isna(row["date"]) or pd.isna(row["home_team"]) or pd.isna(row["away_team"]):
+                continue
+            key = (row["date"], frozenset({row["home_team"], row["away_team"]}))
+            raw_lookup.setdefault(key, []).append(row)
+
+        for idx in range(len(manual_df)):
+            manual_row = df.loc[idx]
+            if pd.isna(manual_row["date"]) or pd.isna(manual_row["home_team"]) or pd.isna(manual_row["away_team"]):
+                continue
+            key = (manual_row["date"], frozenset({manual_row["home_team"], manual_row["away_team"]}))
+            if key not in raw_lookup:
+                continue
+
+            candidates = raw_lookup[key]
+            raw_row = next(
+                (r for r in candidates if r["home_team"] == manual_row["home_team"] and r["away_team"] == manual_row["away_team"]),
+                candidates[0],
+            )
+
+            filled_cols = []
+            for col in df.columns:
+                if col in ["date", "home_team", "away_team"]:
+                    continue
+                manual_val = manual_row.get(col)
+                raw_val = raw_row.get(col)
+                if (manual_val in [None, ""] or pd.isna(manual_val)) and pd.notna(raw_val) and raw_val != "":
+                    df.at[idx, col] = raw_val
+                    filled_cols.append(col)
+
+            if filled_cols:
+                print(
+                    f"Merged manual row {manual_row['date'].date()} {manual_row['home_team']} vs {manual_row['away_team']}: "
+                    f"filled {', '.join(filled_cols)} from raw results"
+                )
+
     # 4b. Dedup: keep the first occurrence (manual row) when both sources have the match
     before = len(df)
     df = df.drop_duplicates(subset=["date", "home_team", "away_team"], keep="first")

@@ -5,10 +5,10 @@
   "date": "2026-06-11",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 15.9,
-  "input_hash": "7c59edb3e5d8f67966fca58ee96a6a6e8d70071b",
-  "generated_at": "2026-06-11T06:56:48+00:00",
+  "max_gap_pp": 17.3,
+  "input_hash": "de06b96f02a6fa79cb268b1fe56a8556eb37d541",
+  "generated_at": "2026-06-11T19:16:19+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Mexico an 83% win probability while the sportsbook consensus stands at 67%—a 16-percentage-point gap favoring the model's confidence in a Mexico victory. The market also prices South Africa's chances at 11%, roughly 10 times higher than the model's 1%, suggesting bookmakers see meaningful upset potential that the statistical forecast does not capture. This divergence could reflect recent lineup changes, injury updates, or shifts in form that have reached betting markets but lie outside the model's last training window. The dashboard surfaces this disagreement as a signal: both sources agree Mexico is favored, but they disagree sharply on how much uncertainty surrounds that outcome."
+  "commentary_text": "The model rates a Mexico win at 83% while the sportsbook consensus stands at 66%, a 17-percentage-point gap favoring the model's confidence. This divergence suggests the market may be weighing information the statistical model cannot access—most plausibly recent form, injury news, or lineup changes that have emerged since the model's last update. The consensus also assigns South Africa a 11% win probability versus the model's 1%, indicating the market sees material risk in an upset scenario. Both sources agree Mexico is the clear favorite, but the market's hedging toward a closer contest signals possible caution about Mexico's current readiness or South Africa's recent performance. The dashboard surfaces this gap as a signal of where real-money traders and recent news may diverge from pure rating-based forecasts."
 }

@@ -3,9 +3,9 @@
   "home_team": "Haiti",
   "away_team": "Scotland",
   "date": "2026-06-13",
-  "input_hash": "1978db4f20daacbf13164b30fa3f549803835777",
-  "generated_at": "2026-06-11T06:48:31+00:00",
+  "input_hash": "59bdb63534269f0fd3fe48477bf5db37ddf93214",
+  "generated_at": "2026-06-11T18:48:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Scotland with a 45% win probability, but assigns Haiti a non-trivial 24% chance. The gap widens when framed as Haiti's tournament odds versus Scotland's: Scotland leads by roughly 21 percentage points in outright victory likelihood, placing Haiti as a clear underdog rather than a prohibitive one.\n\nThe draw emerges as the modal outcome at 30%, reflecting competitive balance across the three outcomes. No single result dominates; Scotland's win probability, while highest, remains below 50%, suggesting meaningful uncertainty. The spread indicates a moderately competitive match in which either team could credibly advance or settle the tie.\n\nThe market tilts more decisively toward Scotland, pricing a 62% win versus the model's 45%, a gap of roughly 17 percentage points. Conversely, the market discounts Haiti to 16% compared to the model's 24%. Both sources agree on draw probability near 22–23%. The dashboard presents both estimates; it does not adjudicate which better reflects true underlying risk."
+  "preview_text": "The model rates Scotland as favorite with a 45% win probability, compared to Haiti's 24% chance. The gap of roughly 21 percentage points reflects a meaningful but not overwhelming advantage for Scotland in the model's assessment.\n\nThe match shows material probability across all three outcomes. A draw at 30% is the second-most-likely result according to the model, suggesting competitive equilibrium is plausible. The spread between Scotland's win probability and a stalemate is modest, indicating the model expects a fairly tight contest despite favoring the Scottish side.\n\nThe sportsbook consensus diverges notably from the model. Books assign Scotland 61% to Scotland's 45%—a 16-point gap—while compressing Haiti to 16% and the draw to 23%. Polymarket prices align closely with the sportsbook view. The dashboard makes no claim about which forecast is more accurate; the divergence suggests material disagreement on how decisive Scotland's advantage truly is."
 }

@@ -3,9 +3,9 @@
   "home_team": "Switzerland",
   "away_team": "Bosnia and Herzegovina",
   "date": "2026-06-18",
-  "input_hash": "e044c6ca03975c8c35143e17f9eb9a001584fe7f",
-  "generated_at": "2026-06-11T06:51:00+00:00",
+  "input_hash": "c75a7a90a002b87c5f2aa435d68b0aae7adca180",
+  "generated_at": "2026-06-11T18:49:38+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model backs Switzerland heavily, assigning a 77% win probability against Bosnia and Herzegovina's 4%. This represents a wide gulf in expected performance, with the model viewing the match as distinctly one-sided. Bosnia and Herzegovina enters with minimal chances according to the statistical forecast.\n\nThe draw carries meaningful weight in the model's view at 20%, suggesting that while Switzerland is heavily favored, a stalemate remains plausible. The 77%-4% split on decisive outcomes reflects a substantial gap, yet the relatively high draw probability tempters the sense of a blowout and indicates the model sees competitive scope for a defensive, cautious encounter.\n\nThe market diverges materially from the model. Sportsbooks strip to 60% for Switzerland, 24% for a draw, and 16% for Bosnia and Herzegovina—roughly 17 percentage points lower for the favorite than the model. Polymarket prices align closely with the consensus. The dashboard makes no claim about which source better forecasts the outcome; the gap likely reflects different assumptions about squad quality or match dynamics not captured in the model's numerical inputs."
+  "preview_text": "The model rates Switzerland a heavy favorite with a 76% win probability, leaving Bosnia and Herzegovina just 4% to claim victory. The statistical forecast reflects a substantial gap in expected strength between the two teams.\n\nThe model's spread indicates a largely one-sided match in structure: Switzerland is expected to win outright in roughly three-quarters of simulations, while a draw accounts for one-fifth. Bosnia and Herzegovina's 4% win chance suggests the upset scenario is statistical noise rather than a plausible outcome under the model's assumptions.\n\nThe model and market diverge significantly here. Sportsbooks assign Switzerland 60%, roughly 16 percentage points lower than the model, and price Bosnia and Herzegovina at 17% — more than four times the model's estimate. Polymarket pricing aligns closely with the sportsbook consensus. The dashboard does not adjudicate which view is correct; the discrepancy suggests material disagreement about team strength or match conditions."
 }

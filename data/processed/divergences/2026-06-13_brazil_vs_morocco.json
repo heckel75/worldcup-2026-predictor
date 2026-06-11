@@ -5,10 +5,10 @@
   "date": "2026-06-13",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 19.1,
-  "input_hash": "2aba8ba4bedb98da88ed7173416e70617ed9668f",
-  "generated_at": "2026-06-09T10:02:43+00:00",
+  "max_gap_pp": 18.9,
+  "input_hash": "b362012fd3952e5ee2bb66cf75bb8d1fc1c7566c",
+  "generated_at": "2026-06-11T18:52:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The sportsbooks price Brazil to win at 58%, nearly 20 percentage points higher than the model's 38%. Both sources agree Brazil is favored, but the market has substantially sharpened that conviction while also compressing the draw probability down to 25% from the model's 32%. The gap on Morocco is similarly wide: the model sees a 30% win probability versus the market's 17%. Recent form, lineup changes, or injury status could all explain why real-money flows are backing Brazil more decisively than the statistical model suggests; the model has no access to such information. The divergence signals a meaningful disagreement worth tracking, though it reflects different information sets rather than offering a judgment on which view is correct."
+  "commentary_text": "The sportsbooks price Brazil's win probability at 57%, while the model sees it at 38%—a 19-percentage-point gap favoring the market's confidence in a Brazil victory. The market also compresses the upset scenario: Morocco's win drops from the model's 30% to 17% in consensus pricing. This sharpening could reflect recent lineup news, injury updates, or current form information that has reached the betting market but postdates the model's last training cycle. The dashboard flags this as a notable signal: two independent real-money sources (sportsbooks and Polymarket) align tightly with each other and diverge from the statistical baseline, suggesting information asymmetry rather than noise."
 }

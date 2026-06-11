@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "9ebc38ef9ba4be1191d0c1a8cdd59a8936f50680",
-  "generated_at": "2026-06-11T06:56:32+00:00",
+  "input_hash": "ec941109052261dd20c481c6e2346e0c1e916fa2",
+  "generated_at": "2026-06-11T18:52:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors England at 63%, with Panama given an 12% chance to win. The underdog's path to victory remains narrow, though the draw at 25% suggests the match carries meaningful competitive uncertainty beyond a simple two-outcome frame.\n\nThe spread across outcomes reflects a moderately lopsided contest. England's win probability exceeds the combined chances for Panama and draws by a clear margin, yet a quarter of simulations end level. Panama's win probability and draw probability are separated by 13 percentage points, indicating the model sees a stalemate as more likely than an upset but not overwhelmingly so.\n\nThe model and market diverge notably on England's win probability—the sportsbook consensus places it at 74%, roughly 10 percentage points higher than the model's 63%. The market is also more bullish on Panama (10% vs. 12%) and markedly less confident in draws (17% vs. 25%). These gaps suggest the market prices England as a stronger favorite. Polymarket prices show near-equal thirds across all outcomes, reflecting minimal liquidity or consensus on that venue and differing sharply from both the model and traditional sportsbooks."
+  "preview_text": "The model favours England at 63%, with Panama assigned an 12% chance of victory. The underdog's win probability sits well below the favourite's baseline, suggesting a substantial gap in expected quality.\n\nThe 25% draw probability indicates a plausible stalemate outcome, though England's win chance materially exceeds both alternative results. The W/D/L spread spans a wide range, with no two outcomes clustered tightly together. The match is weighted toward an England victory but retains meaningful uncertainty around the mode.\n\nThe market consensus skews notably more confident in England, pricing the favourite at 74% compared to the model's 63%—roughly 10 percentage points higher. Polymarket prices align closely with sportsbook consensus. The dashboard does not adjudicate between these sources; the divergence merits noting but reflects genuine uncertainty about the true probabilities."
 }

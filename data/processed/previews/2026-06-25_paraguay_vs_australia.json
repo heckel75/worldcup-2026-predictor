@@ -3,9 +3,9 @@
   "home_team": "Paraguay",
   "away_team": "Australia",
   "date": "2026-06-25",
-  "input_hash": "d63d5241c125b9563e72caca792f06e94481a764",
-  "generated_at": "2026-06-11T06:54:29+00:00",
+  "input_hash": "d6501bb010712451a966fa7976259b80fe898046",
+  "generated_at": "2026-06-11T18:51:22+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Australia to win at 44%, with Paraguay's chances rated at 26%. That leaves a meaningful gap: the underdog carries less than three-in-five the probability of the favourite in the model's view.\n\nThe spread across outcomes reveals a competitive but asymmetric match. The draw sits near one-in-three, suggesting regulation time stalemate is plausible. However, the model sees Australia as notably more likely to prevail than Paraguay, indicating the favourite is positioned to edge a closely-fought contest rather than dominate it.\n\nModel and sportsbook show substantial divergence. The market backs Paraguay at 44%—nearly double the model's 26%—while rating Australia at 27%, less than two-thirds of the model's 43%. The disagreement spans roughly 17 percentage points on each side. Polymarket prices treat all three outcomes as equally probable, offering no signal. The dashboard does not adjudicate between these conflicting views; the gap warrants close attention to new information before match day."
+  "preview_text": "The model favors Australia at 44% to win, with Paraguay offered a 26% chance and a draw at 31%. This represents a competitive fixture where the underdog holds meaningful probability of victory rather than facing a steep climb.\n\nThe 31% draw probability suggests an evenly matched contest where stalemate ranks as a plausible outcome. The win probabilities show Australia with a narrow edge—roughly 18 percentage points clear of Paraguay—indicating the match is likely to be closely fought rather than one-sided. All three outcomes carry non-trivial weight in the model's distribution.\n\nThe model and sportsbooks diverge substantially. Books and Polymarket both favor Paraguay at roughly 44%, placing it as the consensus pick. The model's 26% Paraguay probability sits 18 percentage points below those prices, a gap that signals meaningful disagreement about relative strength. The model ranks Australia higher; market consensus ranks Paraguay higher. The dashboard offers no view on which assessment is correct."
 }

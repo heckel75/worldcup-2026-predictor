@@ -3,9 +3,9 @@
   "home_team": "Netherlands",
   "away_team": "Japan",
   "date": "2026-06-14",
-  "input_hash": "d651db3dce84272f88098a73d123fa27cffb683b",
-  "generated_at": "2026-06-11T06:49:03+00:00",
+  "input_hash": "5092510aaa531bce97e3b6723749f9ed0f4bd8c5",
+  "generated_at": "2026-06-11T18:48:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assigns nearly identical winning chances to both sides, with the Netherlands at 34.1% and Japan at 34.4%, making this a competitive pairing at a neutral venue. The underdog designation is negligible; both teams sit within a fraction of a percentage point in the model's assessment.\n\nThe draw emerges as a meaningful outcome in the model's forecast, weighted at 31.6% — close enough to either team's win probability that a stalemate ranks as a plausible result. This distribution suggests a tightly matched contest with no clear favorite, and considerable uncertainty across all three outcomes.\n\nThe market consensus diverges noticeably from the model. Sportsbooks and Polymarket both favor the Netherlands more decisively, crediting them with roughly 47% win probability against Japan's 26%. That represents a gap of approximately 12 percentage points in the Netherlands' favor compared to the model's assessment. The market also assigns the draw lower weight — around 27% — than the model does. The dashboard does not claim to know which source better reflects the true match dynamics."
+  "preview_text": "The model sees this as an almost even three-way contest, with Japan at a slight statistical edge of 34.4% to win, marginally ahead of the Netherlands at 34.1%. The draw probability stands at 31.6%, making the match highly competitive rather than one-sided.\n\nThe narrow spread across outcomes reflects a closely matched pairing. No result dominates the forecast; a Netherlands victory, a Japanese triumph, or a stalemate all register within a few percentage points of one another. This suggests the match is likely to be competitive and outcome-uncertain.\n\nThe market consensus—sportsbooks and Polymarket combined—substantially favors the Netherlands at roughly 47%, with Japan's win probability compressed to around 25%. This represents a meaningful divergence from the model's assessment, a gap of approximately 13 percentage points in Netherlands' favor and a similar margin for Japan in the opposite direction. The dashboard does not adjudicate which source is more accurate; the discrepancy is noted for context."
 }

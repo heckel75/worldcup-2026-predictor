@@ -3,9 +3,9 @@
   "home_team": "Belgium",
   "away_team": "Egypt",
   "date": "2026-06-15",
-  "input_hash": "1236472907dfa901ab19292e3e8705797c853a45",
-  "generated_at": "2026-06-11T06:49:14+00:00",
+  "input_hash": "a1dde9bb5bee736fd49da17b483b0fece90c008e",
+  "generated_at": "2026-06-11T18:48:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The statistical model favors Belgium with a 54% win probability, substantially above Egypt's 17% chance. The gap reflects a considerable quality differential in the forecast, though the underdog retains a non-trivial path to victory.\n\nThe draw emerges as the second-likeliest outcome at 29%, suggesting the match will be competitive rather than one-sided. Belgium's advantage is real but not overwhelming; nearly three in ten neutral-venue contests between these sides would end level according to the model. The spread across outcomes indicates a match with genuine uncertainty beneath the surface favourite.\n\nThe sportsbook consensus aligns closely with the model, pricing Belgium at 58% and drawing the same 24% draw probability. Both sources largely agree on Egypt's 17-18% floor. Polymarket prices show material divergence, assigning equal odds to all three outcomes; this reflects either different underlying assessments or lower liquidity in that market. The dashboard makes no claim about which source is most reliable."
+  "preview_text": "The model rates Belgium as a clear but not dominant favorite, assigning them a 54% win probability against Egypt's 17%. The gap reflects a meaningful disparity in expected strength, though not an overwhelming one—Egypt enters with genuine chances to surprise or force a draw.\n\nThe forecast reveals a fairly competitive match. Belgium's win probability exceeds the combined chances for Egypt to avoid defeat by a modest margin. A draw at 29% represents a substantial outcome, suggesting the teams are likely to stay close through regulation. The outcome distribution indicates tension rather than lopsided dominance.\n\nModel and market are closely aligned. The sportsbook consensus places Belgium at 58%, about 4 percentage points above the model's 54%, while assigning Egypt nearly identical odds at 17% across both sources. Polymarket pricing sits slightly higher on Belgium at 59%. These gaps fall within routine variance and suggest broad agreement that Belgium are favored but not heavily so."
 }

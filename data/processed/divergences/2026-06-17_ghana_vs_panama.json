@@ -5,10 +5,10 @@
   "date": "2026-06-17",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 39.2,
-  "input_hash": "f71aa660bfe95c15a24d150852d4c01e24d3e85f",
-  "generated_at": "2026-06-11T06:57:06+00:00",
+  "max_gap_pp": 38.5,
+  "input_hash": "afc2aa60dd6aaecba3e00d398785ab099e45b3bc",
+  "generated_at": "2026-06-11T18:52:33+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Panama at 66%, while the sportsbook consensus favors Ghana at 46%—a 35-percentage-point gap on the Ghana win probability in opposite directions. This wide disagreement could reflect market access to recent lineup changes, injury news, or recent form data unavailable to the model's last update. The model's much heavier lean toward Panama suggests its Elo-based foundation may be anchored to older strength assessments. The dashboard surfaces this as a genuine signal of divergence rather than a judgment on which framework is more reliable."
+  "commentary_text": "The model favors Panama at 66%, while the sportsbook consensus and Polymarket both favor Ghana at 45%. On the Ghana win specifically, the market is 34 percentage points higher than the model. This divergence could reflect recent lineup changes, injury updates, or current form that the model's last update did not capture, particularly regarding either team's recent results or squad availability. The dashboard flags this as a signal worth monitoring rather than a judgment on which forecast is more accurate."
 }

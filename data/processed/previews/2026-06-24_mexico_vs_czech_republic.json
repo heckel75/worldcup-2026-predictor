@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "Czech Republic",
   "date": "2026-06-24",
-  "input_hash": "e15de7a3b775fbe93f334c574184b563ff11e989",
-  "generated_at": "2026-06-11T06:53:36+00:00",
+  "input_hash": "80806b5b39860eabd47b155586838c95b120f5a1",
+  "generated_at": "2026-06-11T18:50:55+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Mexico decisively, assigning a 71% win probability against a Czech Republic chance of just 7%. This represents a substantial gap in the forecast, with Mexico clearly positioned as the stronger team in the model's estimation.\n\nThe 23% draw probability suggests meaningful competitive balance in the underlying match dynamics, despite Mexico's clear edge. The win spread—a 64 percentage-point gap between the favorite and underdog—indicates low likelihood of a Czech Republic victory, though not an elimination of the possibility. The match shape leans toward a Mexico win or stalemate rather than an upset.\n\nModel and sportsbook readings diverge sharply here. The books trim Mexico's win probability to 52%, a 18 percentage-point gap from the model, and assign Czech Republic 21% compared to the model's 7%. The books see a substantially more competitive contest than the statistical forecast does. Polymarket prices reflect near-complete indifference across all three outcomes. The dashboard does not adjudicate which source is correct."
+  "preview_text": "The model favors Mexico to win at 70.5%, well ahead of Czech Republic's 6.7% chance. The gap reflects a substantial asymmetry in the forecast. The underdog is assigned a low probability of victory, leaving draws and Mexico success as the dominant outcomes.\n\nThe win-draw-loss spread shows a decisive lean toward a Mexico result. Draws carry a modest 22.8% likelihood, indicating the model sees this as fairly lopsided rather than tightly competitive. A Czech Republic upset remains in the tail of the distribution. The match is not expected to be closely matched.\n\nA material divergence separates the model and sportsbook consensus. The model assigns Mexico 18 percentage points higher win probability than the market, while bookmakers give Czech Republic 14 points more chance than the statistical forecast. Polymarket pricing aligns closely with the sportsbook consensus. The dashboard does not claim which assessment is correct; the gap suggests meaningful disagreement between the two sources."
 }

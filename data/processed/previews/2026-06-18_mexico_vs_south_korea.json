@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "South Korea",
   "date": "2026-06-18",
-  "input_hash": "5c0f813453d664ffe12dd9a54ef24c9500004653",
-  "generated_at": "2026-06-11T06:50:50+00:00",
+  "input_hash": "84710eecf3ef47dc1a7ac908739b13625937ab9f",
+  "generated_at": "2026-06-11T19:15:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Mexico at 60% to win, a 47-percentage-point edge over South Korea's 13% chance. This asymmetry suggests a clear favorite, though the underdog retains meaningful probability of an upset.\n\nThe draw probability of 27% sits midway between the win chances, indicating competitive depth rather than a lopsided matchup. The 34-point spread between Mexico's win and South Korea's win probabilities reflects meaningful separation; a one-goal or two-goal Mexico victory would align with the model's distribution.\n\nThe sportsbook consensus aligns closely with the model on draw likelihood (both 27%) but shifts 8 percentage points from Mexico to South Korea compared to the model. Polymarket prices fall between the two sources, nearly matching the sportsbook line. The dashboard does not adjudicate which reading is more accurate; the divergence may reflect different risk assessments or edge opportunities worth monitoring."
+  "preview_text": "The model favors Mexico at 60%, leaving South Korea with a 13% chance of victory. This represents a meaningful gap: the model backs Mexico considerably more than either the sportsbook consensus or Polymarket, which both grade Mexico closer to 54%.\n\nThe draw sits near 27% across all sources, suggesting the match carries genuine competitive balance despite Mexico's edge. The model's win probabilities diverge more sharply, with South Korea assigned a narrower path to victory than the books estimate. A Mexico victory remains the modal outcome under all forecasts, but the underdog's chances are neither negligible nor remote.\n\nModel and market show a 7-percentage-point gap on Mexico's win probability, with the model more confident and the books more cautious. Polymarket and sportsbook consensus track closely. The dashboard does not determine which view is more accurate; the divergence suggests meaningful uncertainty about the underlying match quality despite directional agreement that Mexico enters favored."
 }

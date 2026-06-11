@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "Ghana",
   "date": "2026-06-23",
-  "input_hash": "f62c407342289b11dd8552d966633f2647cfb9d1",
-  "generated_at": "2026-06-11T06:53:20+00:00",
+  "input_hash": "d8573b31e5e5e16caa652063b5d72cac653ec909",
+  "generated_at": "2026-06-11T18:50:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours England strongly, assigning an 87% win probability against a 0% chance for Ghana. The underdog's only viable path is a draw, which the model rates at 13%, implying the model sees this as a heavily tilted contest in England's favour.\n\nThe win-draw-loss spread reflects a pronounced asymmetry. England's overwhelming modelled edge leaves little room for competitive balance; Ghana's near-zero win probability suggests the model expects few realistic routes to three points. A draw remains the sole realistic upset scenario, though even that sits well below even odds. This is a match the model frames as distinctly one-sided.\n\nThe market consensus diverges sharply from the model. Sportsbooks assign Ghana a 10% win probability—substantially higher than the model's 0%—and shade England down to 72%, a gap of 15 percentage points. Polymarket prices show extreme uncertainty, splitting all outcomes evenly at 33% each. The dashboard makes no claim about which view is correct; the divergence is material and suggests meaningful disagreement about Ghana's true winning chances on a neutral pitch."
+  "preview_text": "The model forecasts England as a strong favourite at 87%, leaving Ghana with a nominal 0% win probability and a 13% draw chance. This represents a decisive gap, though the underdog retains some theoretical path through a draw result.\n\nThe spread across outcomes reveals a match the model expects to lean heavily toward an England victory, with the draw as the only realistic alternative to that outcome. The win probabilities are far apart, suggesting limited competitive balance in the model's view. A draw remains plausible enough to mention, but a Ghana win registers as effectively impossible under these parameters.\n\nThe market consensus diverges notably from the model. Sportsbooks assign Ghana a 10% win probability and elevate the draw to 18%, while reducing England to 72%—a gap of roughly 15 percentage points on the favourite. Polymarket pricing sits between the two, closer to the books than the model. The dashboard does not adjudicate which assessment is more reliable; the discrepancy warrants attention from users building their own forecasts."
 }

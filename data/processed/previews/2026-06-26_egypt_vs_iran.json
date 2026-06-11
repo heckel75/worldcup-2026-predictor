@@ -3,9 +3,9 @@
   "home_team": "Egypt",
   "away_team": "Iran",
   "date": "2026-06-26",
-  "input_hash": "0c335589a7b03c08457bc434db2b36708db78242",
-  "generated_at": "2026-06-11T06:55:06+00:00",
+  "input_hash": "f885cdde6301095b3f4722a01e1235f66f4c5867",
+  "generated_at": "2026-06-11T18:51:34+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Iran at 49%, while Egypt's win probability stands at 22%. Iran enters as clear statistical favorite on the neutral ground, leaving Egypt with a modest chance of victory and substantial ground to make up.\n\nThe draw emerges as a realistic outcome at 30% under the model, sitting between the two outright win probabilities. This three-way split suggests a competitive match without an overwhelming dominance scenario; the gap between Iran's lead and Egypt's floor is meaningful but not decisive, and neither side faces prohibitive odds.\n\nThe model and sportsbook consensus diverge sharply. Books price Egypt's win at 42%, a 20-point gap above the model, while pricing Iran's win at 27%—a 21-point gap below. The model sees this as Iran-leaning; the market treats it as nearly a toss-up. Draw probabilities align closely at 30–31%. Polymarket shows equal thirds across all outcomes. The dashboard makes no claim about which reading is correct, only that material disagreement exists."
+  "preview_text": "The model favors Iran at 49%, while Egypt has a 22% chance of victory. This 27-percentage-point gap reflects Iran as the heavy favorite in the model's assessment. Egypt's underdog position carries meaningful but minority odds.\n\nThe draw emerges as the second-most-likely outcome at 30%, suggesting the match could be closely contested despite Iran's modeled edge. The win probabilities are spread across all three outcomes rather than concentrated, indicating competitive balance in terms of possible match shape, even if one team is favored on average.\n\nModel and market diverge substantially. Sportsbooks and Polymarket both assign Iran only 27%, roughly 22 percentage points below the model. Conversely, they rate Egypt at 42%, almost double the model's 22%. Both consensus sources agree closely with each other and converge on a draw near 31%. The dashboard does not adjudicate between these competing views, but the divergence is large enough to warrant attention from those comparing forecasts."
 }

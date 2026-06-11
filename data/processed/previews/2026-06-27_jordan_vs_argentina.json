@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Argentina",
   "date": "2026-06-27",
-  "input_hash": "48b0d9a23c21b388d81a85a4562f3d971d557082",
-  "generated_at": "2026-06-11T06:56:05+00:00",
+  "input_hash": "1b6a7f5ebb425e27485d34efec38ec9b8a514075",
+  "generated_at": "2026-06-11T19:02:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina at 80%, with Jordan holding just a 4% chance of victory. The underdog's path to a win is narrow, though a draw offers Jordan a more plausible route to points—at 16% likelihood, it represents their most probable outcome in this fixture.\n\nThe spread reflects a heavily skewed match. Argentina's dominance in the win probability leaves limited room for competitive surprise; the 63-percentage-point gap between Argentina and Jordan suggests a match where the favorite is expected to control play and create more clear-cut chances. A draw remains mathematically meaningful but would represent an upset relative to the baseline forecast.\n\nThe model and sportsbook consensus are closely aligned. Both rate Argentina's win probability in the 78–80% range, and both place the draw near 14–16%. The 3-percentage-point variance on Argentina's win line falls within typical market noise. Polymarket pricing shows slightly higher confidence in an Argentina victory and a marginally lower draw probability, but all three sources move together on the fundamental outlook: a heavily favored Argentina in a one-sided affair."
+  "preview_text": "The model favours Argentina at 80%, with Jordan assigned a 4% win probability. The draw carries 16% likelihood, positioning it as a meaningful secondary outcome relative to a Jordan upset.\n\nThe spread reflects a heavily lopsided matchup. Argentina's win probability dominates by 76 percentage points over Jordan's chance, yet the draw's material probability—nearly one in six—suggests the match carries competitive structure rather than forming a foregone conclusion. A low-scoring stalemate or defensive performance from the underdog could materialise within the model's distribution.\n\nModel and sportsbook are closely aligned across all three outcomes. The consensus places Argentina at 79%, only 1 percentage point below the model, while Jordan sits 3 points higher at 7% and the draw 2 points lower at 14%. These gaps fall within typical variance across book samples and reflect broad agreement on Argentina as the heavy favourite."
 }

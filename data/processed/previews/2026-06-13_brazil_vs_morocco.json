@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Morocco",
   "date": "2026-06-13",
-  "input_hash": "f0a5d23cb92dc672641cc5b05d81a24400c9dab9",
-  "generated_at": "2026-06-11T06:48:23+00:00",
+  "input_hash": "8dd5e04eae7e4b616885cde0d106e0e8ed6d1790",
+  "generated_at": "2026-06-11T18:48:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Brazil at 38%, but the margin over Morocco is modest—a 8-percentage-point gap that reflects competitive odds rather than a dominant prediction. Morocco's 30% win probability sits close enough to suggest a genuinely contested match by the model's reckoning.\n\nThe 31.5% draw probability indicates the model sees a plausible path to parity. Brazil's win likelihood falls only 7 points above a stalemate, and Morocco trails by just 1.4 points. This clustering of outcomes suggests the match is expected to be closely fought, with no single result commanding clear separation.\n\nThe market consensus, represented identically across sportsbooks and Polymarket, diverges meaningfully from the model. Books assign Brazil 58% and Morocco 17%—a gap of roughly 20 percentage points wider than the model's spread. The market also prices draws lower at 25%. The dashboard does not adjudicate between model and sportsbook; the discrepancy reflects different methodologies and information sets at work."
+  "preview_text": "The model identifies Brazil as favorite with a 38% win probability, but the margin over Morocco is modest; Morocco's 30% chance places this as a genuinely competitive fixture rather than a heavily tilted encounter. The sportsbook consensus and Polymarket prices converge decisively on Brazil, both assigning the side 57% to win.\n\nThe model's forecast distributes probability heavily toward draws—31.5%—suggesting a relatively balanced midfield battle with genuine scope for a stalemate. Brazil's win probability sits only 8 percentage points above Morocco's, indicating the teams are closely matched in expected quality across this simulation. A draw ranks as the second-most likely single outcome under the model.\n\nThe model and market diverge meaningfully. The model rates Brazil's win probability at 38%, while sportsbooks and Polymarket both price it near 57%—a gap of roughly 19 percentage points. Conversely, the model assigns Morocco nearly double the win odds that markets imply. The dashboard presents both estimates; it does not adjudicate which better reflects true match likelihood."
 }

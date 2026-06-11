@@ -3,9 +3,9 @@
   "home_team": "Qatar",
   "away_team": "Switzerland",
   "date": "2026-06-13",
-  "input_hash": "743b2cfdb9e929fb8219eb01efb13713b0506ed1",
-  "generated_at": "2026-06-11T06:48:15+00:00",
+  "input_hash": "dae30da0fa1f2664f0aa8092ca1720cc58cad26b",
+  "generated_at": "2026-06-11T18:48:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Switzerland as a clear favourite at 81% win probability, with Qatar's chances standing at just 3%. This gap reflects a substantial disparity in the underlying forecast. Switzerland's dominance in the projection leaves limited room for an upset.\n\nThe draw probability of 16% is the second-most-likely outcome, suggesting the match carries meaningful competitive uncertainty despite Switzerland's advantage. A stalemate remains plausible, but the model's win distribution is heavily skewed toward a Swiss victory. Qatar's path to points is narrow under this forecast.\n\nThe model and sportsbook consensus are closely aligned. The market places Switzerland at 79%, only 2 percentage points lower than the model, and assigns the draw nearly identical odds at 14%. The sportsbook does rate Qatar's chances slightly higher at 7% versus the model's 3%, a modest divergence. Polymarket prices show substantially higher valuations for Qatar and the draw, reflecting different risk assumptions or information; the dashboard makes no claim about which source better reflects true probabilities."
+  "preview_text": "The model favors Switzerland heavily, assigning an 81% win probability against a Qatar side credited with only a 3% chance of victory. The gap reflects a decisive expected quality advantage, leaving the underdog minimal paths to success.\n\nThe win-draw-loss spread widens decisively toward the favorite. Switzerland's 81% win probability substantially outpaces the 16% draw chance, indicating the model expects a competitive match structure but one tilted sharply toward a Swiss victory. A Qatar win remains a low-probability tail outcome in the model's view.\n\nThe model and sportsbooks align closely on the headline: Switzerland's win probability sits 2 percentage points higher in the model than across the 48-book consensus. Both sources treat a draw as unlikely relative to a Swiss win, though bookmakers rate the draw slightly lower. Polymarket prices track the sportsbook consensus tightly. The minor divergences suggest broad agreement on the match's likely shape."
 }

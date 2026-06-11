@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "Croatia",
   "date": "2026-06-17",
-  "input_hash": "358feb559fbd403feb64521901183a23a8edd31a",
-  "generated_at": "2026-06-11T06:50:27+00:00",
+  "input_hash": "b939f175a0fca44bf55c6488bce33373234ead8d",
+  "generated_at": "2026-06-11T18:49:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors England at 53% to win, with Croatia trailing at 18%. That 35-percentage-point gap reflects a substantial edge for the favorite, though the underdog retains a genuine chance at an upset.\n\nThe draw probability of 29% sits squarely between the two outcomes, suggesting this match is expected to be competitive and genuinely uncertain. The win probabilities are separated but not dramatically so; England's lead is real yet narrow enough that the result remains far from a foregone conclusion. A stalemate emerges as a plausible outcome given the spacing across the three scenarios.\n\nThe model and market are broadly aligned. The sportsbook consensus places England at 55% and the draw at 25%, within a few percentage points of the model's readings. Polymarket prices deviate markedly—all three outcomes priced at an even 33% each—suggesting either fundamentally different information or less refined forecasting from those traders. The dashboard does not adjudicate between these sources."
+  "preview_text": "The model favors England at 53% to win, with Croatia the underdog at 18%. England's advantage is meaningful but not commanding: the model assigns roughly a one-in-two chance the hosts emerge victorious, leaving room for a competitive encounter.\n\nThe draw carries notable weight at 29%, suggesting a relatively narrow spread across outcomes. The 34-percentage-point gap between England's win probability and Croatia's reflects asymmetry, yet draws remain plausible enough that neither side entering the match as heavy favorites would be misaligned with the forecast. This points to a moderately competitive affair rather than a heavily lopsided contest.\n\nThe sportsbook consensus sits slightly above the model on England, pricing a 55% win probability against the model's 53%—a 2-percentage-point gap within typical variance. Both sources agree draws are less likely than the model initially implies (25% vs. 29%), and both align closely on Croatia at around 19%. The sources are broadly in accord, with no material divergence warranting flag."
 }

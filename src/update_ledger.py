@@ -97,6 +97,7 @@ def freeze_new_forecasts(
         key = make_match_key(date_iso, row["home_team"], row["away_team"])
         if key in existing_keys:
             continue
+        existing_keys.add(key)
         new_rows.append({
             "match_key":   key,
             "date":        date_iso,
@@ -110,10 +111,22 @@ def freeze_new_forecasts(
         })
 
     if not new_rows:
+        # Ensure any legacy duplicates are collapsed even if no new rows were added.
+        if not ledger_df.empty:
+            deduped = ledger_df.drop_duplicates(subset=["match_key"], keep="first")
+            if len(deduped) != len(ledger_df):
+                print(f"  WARNING: collapsed {len(ledger_df) - len(deduped)} duplicate ledger rows")
+            return deduped.reset_index(drop=True)
         return ledger_df
 
     new_df = pd.DataFrame(new_rows, columns=LEDGER_SCHEMA)
-    return pd.concat([ledger_df, new_df], ignore_index=True)
+    ledger_df = pd.concat([ledger_df, new_df], ignore_index=True)
+    if not ledger_df.empty:
+        deduped = ledger_df.drop_duplicates(subset=["match_key"], keep="first")
+        if len(deduped) != len(ledger_df):
+            print(f"  WARNING: collapsed {len(ledger_df) - len(deduped)} duplicate ledger rows")
+        ledger_df = deduped.reset_index(drop=True)
+    return ledger_df
 
 
 def attach_results(

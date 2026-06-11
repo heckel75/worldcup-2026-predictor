@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Turkey",
   "date": "2026-06-25",
-  "input_hash": "eafe1e3e58444d185ba16bb528ca9cc93c1f9e86",
-  "generated_at": "2026-06-11T06:54:21+00:00",
+  "input_hash": "70dc875c89f0881936805ba8a8ee15fbbae1ebcf",
+  "generated_at": "2026-06-11T19:16:15+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Turkey at 38%, with the USA at 31% and a draw at 31%. Turkey's edge is modest—just seven percentage points over the underdog USA, reflecting a competitive match where either team's victory remains plausible.\n\nThe win-draw-loss spread reveals a closely contested contest. The draw sits at nearly a third of outcomes, indicating that a stalemate is a credible result. No single outcome dominates; the three possibilities cluster within a narrow band, suggesting tactical balance and low goal-scoring separation on the day.\n\nThe sportsbook consensus and Polymarket prices both diverge from the model, favoring the USA more heavily at around 37% compared to the model's 30%. Both market sources also downgrade the draw probability to 26–27%, well below the model's 31%. The discrepancy spans roughly 6–7 percentage points on the USA, marking a meaningful split between the statistical forecast and betting consensus. The dashboard does not adjudicate which reading is correct."
+  "preview_text": "The model favors Turkey at 38%, with the USA at 31% and a draw at 31%. The underdog role falls to the United States, who trail the favorite by roughly 7 percentage points in win probability, though the gap is modest enough that all three outcomes remain genuinely competitive.\n\nThe spread across outcomes reveals a tight match. The model assigns nearly equal weight to a USA victory and a draw—both in the 31% range—while Turkey's slight edge reflects a marginal structural advantage. No outcome commands majority expectation, indicating the fixture is expected to be closely contested with genuine uncertainty about the result.\n\nThe sportsbook consensus diverges from the model in meaningful ways. Books price the USA 6 percentage points higher (37% vs. 31%) and assign draws 4 points lower (27% vs. 31%). The market treats this as slightly less even, favoring the underdog more strongly than the model does while reducing draw likelihood. Polymarket prices align more closely with sportsbooks than with the model on all three outcomes. The dashboard does not claim to know which source's assessment will prove more accurate."
 }

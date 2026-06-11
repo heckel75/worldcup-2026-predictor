@@ -66,7 +66,15 @@ MATCH_SERIES_SLUG = "soccer-fifwc"
 MATCH_SLUG_PREFIX = "fifwc-"
 # Each fixture also spawns sibling derivative-market events; keep only the
 # base h2h event (home win / draw / away win).
-MATCH_SLUG_EXCLUDE_SUFFIXES = ("-halftime-result", "-exact-score", "-more-markets")
+MATCH_SLUG_EXCLUDE_SUFFIXES = (
+    "-halftime-result",
+    "-first-half-result",
+    "-second-half-result",
+    "-first-to-score",
+    "-exact-score",
+    "-more-markets",
+)
+MATCH_SLUG_BASE_PARTS = 6
 
 # Below this combined (home+draw+away) USD volume, flag a match as thin.
 # The tournament opener (Mexico vs South Africa) totalled ~$396k combined;
@@ -324,6 +332,7 @@ def parse_match_event(event: dict) -> dict | None:
         return None
 
     return {
+        "slug": event.get("slug"),
         "commence_time": event.get("eventDate"),
         "home_team": normalise_team(home_name),
         "away_team": normalise_team(away_name),
@@ -332,6 +341,45 @@ def parse_match_event(event: dict) -> dict | None:
         "p_away": round(sides["away"][0] / total, 4),
         "volume": round(sum(v for _, v in sides.values())),
     }
+
+
+def _match_pair_key(row: dict) -> tuple[str, str]:
+    return tuple(sorted((row["home_team"], row["away_team"])))
+
+
+def _match_row_priority(row: dict) -> tuple[tuple[str, str], int, int, str]:
+    slug = row.get("slug") or ""
+    is_base = len(slug.split("-")) == MATCH_SLUG_BASE_PARTS
+    pair = _match_pair_key(row)
+    return (pair, -(row.get("volume") or 0), 0 if is_base else 1, slug)
+
+
+def _dedupe_match_rows(rows: list[dict]) -> list[dict]:
+    seen: set[tuple[str, str]] = set()
+    keep: list[dict] = []
+    dropped: list[dict] = []
+    for row in sorted(rows, key=_match_row_priority):
+        pair = _match_pair_key(row)
+        if pair in seen:
+            dropped.append(row)
+            continue
+        seen.add(pair)
+        keep.append(row)
+
+    for row in dropped:
+        print("  DROPPED duplicate Polymarket per-match row:"
+              f" {row['home_team']} vs {row['away_team']}"
+              f" slug={row.get('slug')!r} volume={row.get('volume')}"
+              f" p_home={row.get('p_home')} p_draw={row.get('p_draw')}"
+              f" p_away={row.get('p_away')}")
+
+    for row in keep:
+        if (row.get("volume") or 0) == 0:
+            print("  LOW-LIQUIDITY WARNING: selected 0-volume Polymarket row for"
+                  f" {row['home_team']} vs {row['away_team']}"
+                  f" slug={row.get('slug')!r} p_home={row.get('p_home')}"
+                  f" p_draw={row.get('p_draw')} p_away={row.get('p_away')}")
+    return keep
 
 
 def fetch_match_events() -> list[dict]:
@@ -367,7 +415,7 @@ def fetch_match_events() -> list[dict]:
         slug = ev.get("slug") or ""
         if not slug.startswith(MATCH_SLUG_PREFIX):
             continue
-        if any(slug.endswith(suf) for suf in MATCH_SLUG_EXCLUDE_SUFFIXES):
+        if len(slug.split("-")) != MATCH_SLUG_BASE_PARTS:
             continue
         if len(ev.get("markets") or []) != 3:
             continue
@@ -521,7 +569,10 @@ def main() -> None:
                 oriented.append(flipped_row)
                 flipped.append((row["home_team"], row["away_team"], fx_home, fx_away))
 
+        oriented = _dedupe_match_rows(oriented)
         df_matches = pd.DataFrame(oriented)
+        if "slug" in df_matches.columns:
+            df_matches = df_matches.drop(columns=["slug"])
         n_matched = len(df_matches) - len(unmatched)
         print(f"  {n_matched}/{len(df_matches)} events matched a fixture in fixtures_2026.csv")
         if flipped:

@@ -5,10 +5,10 @@
   "date": "2026-06-13",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 16.7,
-  "input_hash": "c800785101348028e837b91be7fc649eba9cf0d2",
-  "generated_at": "2026-06-11T06:56:55+00:00",
+  "max_gap_pp": 15.8,
+  "input_hash": "73ae9d3e589398caae6e751b6b1dcb6cbd434f97",
+  "generated_at": "2026-06-11T18:52:30+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The sportsbook consensus sharply narrows Scotland's win probability to 62% compared to the model's 45%, a 17-percentage-point gap favoring the favorite. This tightening could reflect recent lineup news, injury updates, or current form that the model has not yet incorporated; conversely, the model's wider distribution may capture residual uncertainty that real-money markets have resolved through information available only since the model's last update. The dashboard flags this as a signal worth monitoring rather than a definitive statement about which assessment is more accurate."
+  "commentary_text": "The sharpest divergence lies on Scotland's win probability: the model assigns 45%, while the sportsbook consensus reaches 61%, a 16-percentage-point gap favoring Scotland at the books. The model is correspondingly less confident on both Haiti's chances (24% versus 16%) and the draw (30% versus 23%). Since both sources rank Scotland as favorite, the market appears to have information tightening Scotland's edge—plausibly recent form, injury status, or lineup changes unavailable to the model's last training snapshot. The divergence is a signal worth monitoring: it shows material disagreement on the margin of Scotland's superiority, not on which team the data prefers."
 }

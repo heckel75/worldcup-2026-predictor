@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "DR Congo",
   "date": "2026-06-17",
-  "input_hash": "eaac415f25c285da48c9a73bd4b4cc2cddd7accf",
-  "generated_at": "2026-06-11T06:50:10+00:00",
+  "input_hash": "c9409f6f77e036519cb0d3a18595102839e10745",
+  "generated_at": "2026-06-11T18:49:18+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Portugal as a strong favorite, projecting a 77% win probability against DR Congo. The underdog's chances stand at just 3.5%, leaving a decisive gap in the head-to-head comparison.\n\nThe spread across outcomes reflects a match tilted heavily toward Portugal, though not to the point of dismissing competition entirely. Draws carry a meaningful 19.5% probability, suggesting the match retains structural uncertainty despite the clear favorite. The three-way split indicates a likely Portugal victory, but one where a stalemate or upset remains statistically plausible rather than negligible.\n\nThe model and sportsbooks are closely aligned. The market estimates Portugal's win probability at 74.3%—a 3-percentage-point gap—and places the draw at 16.9%, slightly below the model's 19.5%. The largest divergence appears in DR Congo's win odds, where the market prices them at 8.8% compared to the model's 3.5%. This dashboard does not adjudicate which assessment of the underdog's true chances is correct, only that they materially differ."
+  "preview_text": "The model favors Portugal at 77%, with DR Congo positioned as a substantial underdog at 3.5%. The gap between favorite and second-place outcome is substantial, reflecting a clear expected hierarchy in this fixture.\n\nThe win–draw–loss spread reveals a dominant-favorite scenario. Portugal's win probability exceeds the combined likelihood of a draw and DR Congo victory by a wide margin. A draw remains plausible at roughly one in five matches, but the modal outcome is a Portugal victory by a meaningful margin. Competitiveness on paper appears limited by these figures.\n\nThe model and sportsbook consensus align closely across all three outcomes, with differences under 5 percentage points. Polymarket prices similarly cluster within that band. The slight variance—sportsbooks assign DR Congo marginally higher odds than the model—does not signal material divergence in assessment. No systematic disagreement between sources is evident."
 }

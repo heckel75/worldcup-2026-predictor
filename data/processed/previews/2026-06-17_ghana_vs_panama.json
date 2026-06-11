@@ -3,9 +3,9 @@
   "home_team": "Ghana",
   "away_team": "Panama",
   "date": "2026-06-17",
-  "input_hash": "84774e0657847e1359ba7a8ab07d5adef80693c6",
-  "generated_at": "2026-06-11T06:50:35+00:00",
+  "input_hash": "61f3df886e90afcd4e0229f4529496bb75381a06",
+  "generated_at": "2026-06-11T18:49:30+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Panama to win at 66%, while Ghana's chances sit at 11%. This represents a substantial gap: Panama is the clear statistical favorite, though Ghana retains a meaningful, if modest, path to victory.\n\nThe draw emerges as the second-most-likely outcome in the model at 24%, suggesting the match will not necessarily be decided by a wide margin. The 55-percentage-point spread between Panama's win probability and Ghana's reflects a competitive imbalance, but the presence of a near-quarter-chance at a draw indicates the teams may compete closely in regulation time.\n\nThe market consensus diverges sharply from the model. Sportsbooks price Ghana's win probability at 46%—35 percentage points higher than the model—and Panama at only 27%, a 39-point gap in the opposite direction. This represents a fundamental disagreement about relative strength. Polymarket pricing shows a uniform split across all three outcomes, reflecting maximum uncertainty. The dashboard does not adjudicate between these sources; the large discrepancy warrants close attention to how consensus evolves."
+  "preview_text": "The model favors Panama to win at 66%, while Ghana's chances stand at 11%. This represents a substantial gap: Panama is projected as a clear favorite, though the underdog is not assigned negligible probability.\n\nThe draw carries meaningful weight at 24%, suggesting this match has potential to remain competitive through regular time. The model's spread indicates Panama enters as the likely victor, but the combination of draw and Ghana win probability—totaling 34%—reflects meaningful uncertainty around a decisive outcome.\n\nThe model and market diverge sharply here. Sportsbooks and Polymarket both assign Ghana roughly 45% to win, roughly 4× the model's estimate, and give Panama only 27%, less than half the model's assessment. The dashboard presents both views without claiming superiority for either; users should weigh the divergence carefully when forming their own expectations."
 }
