@@ -6,8 +6,12 @@ published probabilities for each WC match, plus the actual result once played.
 
 Schema (matches calibration.py's CANON, which selects by column name):
     match_key, date, home_team, away_team,
-    p_home, p_draw, p_away,
-    forecast_ts, outcome          # outcome in {H, D, A} or "" when unplayed
+    p_home, p_draw, p_away,                      # frozen corrected model probs
+    p_home_book, p_draw_book, p_away_book,       # frozen sportsbook (NaN if unposted)
+    p_home_poly, p_draw_poly, p_away_poly,       # frozen Polymarket (NaN if unposted)
+    poly_volume, neutral_used,
+    forecast_ts, outcome,         # outcome in {H, D, A} or "" when unplayed
+    actual_home_score, actual_away_score         # filled by attach_results
 
 Public API:
     freeze_new_forecasts(ledger_df, upcoming_fixtures_df, triple_df, today,
@@ -27,8 +31,30 @@ import pandas as pd
 LEDGER_SCHEMA = [
     "match_key", "date", "home_team", "away_team",
     "p_home", "p_draw", "p_away",
+    "p_home_book", "p_draw_book", "p_away_book",
+    "p_home_poly", "p_draw_poly", "p_away_poly",
+    "poly_volume", "neutral_used",
     "forecast_ts", "outcome",
+    "actual_home_score", "actual_away_score",
 ]
+
+# Frozen-at-freeze-time market columns, as named in triple_compare.csv (same
+# names in the ledger). Missing market data freezes as NaN.
+MARKET_COLS = [
+    "p_home_book", "p_draw_book", "p_away_book",
+    "p_home_poly", "p_draw_poly", "p_away_poly",
+    "poly_volume", "neutral_used",
+]
+
+
+def _ensure_schema(df: pd.DataFrame) -> pd.DataFrame:
+    """Header-extend an old-schema ledger: add any missing columns as NaN,
+    in LEDGER_SCHEMA order. Existing values are never touched."""
+    df = df.copy()
+    for col in LEDGER_SCHEMA:
+        if col not in df.columns:
+            df[col] = pd.NA
+    return df[LEDGER_SCHEMA + [c for c in df.columns if c not in LEDGER_SCHEMA]]
 
 
 # ---------------------------------------------------------------------------
@@ -59,10 +85,15 @@ def freeze_new_forecasts(
     lookahead_days] and whose match_key is not already in the ledger.
 
     Probabilities come from triple_df's bias-corrected model columns
-    (p_home_model_corr, p_draw_model_corr, p_away_model_corr).
+    (p_home_model_corr, p_draw_model_corr, p_away_model_corr), plus the
+    market columns (book/Polymarket probs, volume, neutral flag) frozen
+    from the same triple_compare row. Absent market data freezes as NaN.
 
-    Never modifies existing rows.
+    Never modifies existing rows — a fixture already frozen keeps its row
+    untouched, including the market columns.
     """
+    ledger_df = _ensure_schema(ledger_df)
+
     # Existing keys — guard against empty or missing column
     if "match_key" in ledger_df.columns and len(ledger_df):
         existing_keys: set[str] = set(ledger_df["match_key"].dropna())
@@ -83,12 +114,16 @@ def freeze_new_forecasts(
     if window.empty:
         return ledger_df
 
-    # Join corrected probs from triple_df on (home_team, away_team)
-    triple = triple_df[
-        ["home_team", "away_team",
-         "p_home_model_corr", "p_draw_model_corr", "p_away_model_corr"]
-    ].copy()
+    # Join corrected probs + market columns from triple_df on (home_team, away_team)
+    triple_cols = [
+        "home_team", "away_team",
+        "p_home_model_corr", "p_draw_model_corr", "p_away_model_corr",
+    ] + [c for c in MARKET_COLS if c in triple_df.columns]
+    triple = triple_df[triple_cols].copy()
     merged = window.merge(triple, on=["home_team", "away_team"], how="left")
+
+    def _freeze_p(val):
+        return round(float(val), 4) if pd.notna(val) else pd.NA
 
     now_ts = dt.datetime.now().isoformat(timespec="seconds")
     new_rows = []
@@ -98,7 +133,7 @@ def freeze_new_forecasts(
         if key in existing_keys:
             continue
         existing_keys.add(key)
-        new_rows.append({
+        rec = {
             "match_key":   key,
             "date":        date_iso,
             "home_team":   row["home_team"],
@@ -108,7 +143,16 @@ def freeze_new_forecasts(
             "p_away":      round(float(row["p_away_model_corr"]), 4),
             "forecast_ts": now_ts,
             "outcome":     "",
-        })
+            "actual_home_score": pd.NA,
+            "actual_away_score": pd.NA,
+        }
+        for col in MARKET_COLS:
+            val = row.get(col)
+            if col.startswith("p_"):
+                rec[col] = _freeze_p(val)
+            else:
+                rec[col] = val if pd.notna(val) else pd.NA
+        new_rows.append(rec)
 
     if not new_rows:
         # Ensure any legacy duplicates are collapsed even if no new rows were added.
@@ -135,13 +179,17 @@ def attach_results(
 ) -> pd.DataFrame:
     """
     For each unscored ledger row (outcome == ""), check whether the match now
-    appears in played_df. If yes, set outcome to "H", "D", or "A".
+    appears in played_df. If yes, set outcome to "H", "D", or "A". Also fills
+    actual_home_score / actual_away_score for any matched row whose score
+    cells are still NaN (idempotent — populated scores are never overwritten;
+    self-heals rows scored before the score columns existed).
 
-    Never changes p_home / p_draw / p_away / forecast_ts.
+    Never changes p_home / p_draw / p_away / frozen market columns / forecast_ts.
     A match that was played but never frozen is not back-filled.
     """
     if ledger_df.empty:
         return ledger_df
+    ledger_df = _ensure_schema(ledger_df)
 
     # Build a lookup: match_key -> outcome string from played results
     played = played_df.copy()
@@ -162,6 +210,10 @@ def attach_results(
     )
     played["_outcome"] = played.apply(_outcome, axis=1)
     result_map: dict[str, str] = dict(zip(played["_key"], played["_outcome"]))
+    score_map: dict[str, tuple[int, int]] = {
+        k: (int(h), int(a))
+        for k, h, a in zip(played["_key"], played["home_score"], played["away_score"])
+    }
 
     ledger = ledger_df.copy()
     unscored_mask = ledger["outcome"].isna() | (ledger["outcome"] == "")
@@ -169,6 +221,15 @@ def attach_results(
         key = ledger.at[idx, "match_key"]
         if key in result_map:
             ledger.at[idx, "outcome"] = result_map[key]
+
+    # Fill actual scores wherever they're still missing (never overwrite).
+    scoreless_mask = ledger["actual_home_score"].isna()
+    for idx in ledger[scoreless_mask].index:
+        key = ledger.at[idx, "match_key"]
+        if key in score_map:
+            hg, ag = score_map[key]
+            ledger.at[idx, "actual_home_score"] = hg
+            ledger.at[idx, "actual_away_score"] = ag
 
     return ledger
 
@@ -194,13 +255,22 @@ if __name__ == "__main__":
         "neutral":   [True, True, True],
     })
 
-    # Synthetic triple_df with corrected probs
+    # Synthetic triple_df with corrected probs + market columns.
+    # Match B has no sportsbook market (NaN must freeze as NaN).
     triple_df = pd.DataFrame({
         "home_team":           [t[0] for t in _teams],
         "away_team":           [t[1] for t in _teams],
         "p_home_model_corr":   [0.50, 0.30, 0.45],
         "p_draw_model_corr":   [0.25, 0.35, 0.28],
         "p_away_model_corr":   [0.25, 0.35, 0.27],
+        "p_home_book":         [0.48, float("nan"), 0.44],
+        "p_draw_book":         [0.27, float("nan"), 0.29],
+        "p_away_book":         [0.25, float("nan"), 0.27],
+        "p_home_poly":         [0.47, 0.32, 0.43],
+        "p_draw_poly":         [0.28, 0.33, 0.30],
+        "p_away_poly":         [0.25, 0.35, 0.27],
+        "poly_volume":         [100000, 5000, 20000],
+        "neutral_used":        [True, False, True],
     })
 
     # Empty ledger with correct schema
@@ -220,6 +290,17 @@ if __name__ == "__main__":
     assert key_c not in keys_frozen, "Match C (today+2) should NOT be frozen"
     assert (ledger["outcome"] == "").all(), "All outcomes should be empty after freeze"
 
+    # --- Test 1b: market columns frozen alongside model probs ---
+    row_a = ledger.loc[ledger["match_key"] == key_a].iloc[0]
+    assert float(row_a["p_home_book"]) == 0.48, "Book prob should freeze for match A"
+    assert float(row_a["p_home_poly"]) == 0.47, "Poly prob should freeze for match A"
+    assert float(row_a["poly_volume"]) == 100000, "poly_volume should freeze"
+    assert bool(row_a["neutral_used"]) is True, "neutral_used should freeze"
+    row_b = ledger.loc[ledger["match_key"] == key_b].iloc[0]
+    assert pd.isna(row_b["p_home_book"]), "Absent book market must freeze as NaN"
+    assert float(row_b["p_home_poly"]) == 0.32, "Poly prob should freeze for match B"
+    assert pd.isna(row_a["actual_home_score"]), "Scores empty after freeze"
+
     # --- Test 2: re-running freeze is a no-op ---
     ledger2 = freeze_new_forecasts(
         ledger, fixtures_df, triple_df, TODAY, lookahead_days=1
@@ -236,13 +317,34 @@ if __name__ == "__main__":
         "away_score": [1],
         "tournament": ["FIFA World Cup"],
     })
+    book_before = float(ledger.loc[ledger["match_key"] == key_a, "p_home_book"].iloc[0])
     ledger3 = attach_results(ledger, played_df)
     outcome_a = ledger3.loc[ledger3["match_key"] == key_a, "outcome"].iloc[0]
     assert outcome_a == "H", f"Alpha 2–1 Beta should be 'H', got '{outcome_a}'"
     p_home_after = float(ledger3.loc[ledger3["match_key"] == key_a, "p_home"].iloc[0])
     assert p_home_before == p_home_after, "p_home must not change after attach_results"
+    book_after = float(ledger3.loc[ledger3["match_key"] == key_a, "p_home_book"].iloc[0])
+    assert book_before == book_after, "frozen book prob must not change after attach_results"
     outcome_b = ledger3.loc[ledger3["match_key"] == key_b, "outcome"].iloc[0]
     assert outcome_b == "", "Match B not yet played — outcome should remain empty"
+
+    # --- Test 3b: actual scores attached; populated scores never overwritten ---
+    row_a3 = ledger3.loc[ledger3["match_key"] == key_a].iloc[0]
+    assert int(row_a3["actual_home_score"]) == 2 and int(row_a3["actual_away_score"]) == 1, \
+        "attach_results should fill actual scores"
+    rescored = played_df.copy()
+    rescored["home_score"] = [5]   # bogus re-report must not overwrite
+    ledger3b = attach_results(ledger3, rescored)
+    assert int(ledger3b.loc[ledger3b["match_key"] == key_a, "actual_home_score"].iloc[0]) == 2, \
+        "Populated actual scores must never be overwritten"
+
+    # --- Test 3c: old-schema ledger self-heals (scored row, no score columns) ---
+    legacy = ledger3[["match_key", "date", "home_team", "away_team",
+                      "p_home", "p_draw", "p_away", "forecast_ts", "outcome"]].copy()
+    healed = attach_results(legacy, played_df)
+    assert int(healed.loc[healed["match_key"] == key_a, "actual_home_score"].iloc[0]) == 2, \
+        "Old-schema scored row should get actual scores filled"
+    assert "p_home_book" in healed.columns, "_ensure_schema should header-extend old ledgers"
 
     # --- Test 4: played-but-never-frozen match has no ledger row ---
     never_frozen_played = pd.DataFrame({
