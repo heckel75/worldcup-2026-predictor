@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "France",
   "date": "2026-06-26",
-  "input_hash": "adf2470c78b795dba6bf00ff301dd8eefe0a40e4",
-  "generated_at": "2026-06-11T18:51:46+00:00",
+  "input_hash": "9910ed5843b6ed8a1f165e75b6426eacbc09e2cd",
+  "generated_at": "2026-06-12T06:31:18+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours France at 55%, with Norway given a 17% chance of victory. The draw carries meaningful probability at 28%, making this a three-way contest rather than a binary outcome.\n\nThe gap between France's win probability and Norway's is substantial—roughly 37 percentage points. However, the model assigns the draw a probability comparable to Norway's win chance, suggesting the match could be competitive within ninety minutes even if France enters as clear favourites. A draw remains a plausible result.\n\nModel and sportsbook consensus align closely across all three outcomes, with differences of 2–4 percentage points. Polymarket pricing shows similar alignment. The dashboard does not adjudicate between these sources, but their convergence indicates broad agreement on the fundamental match dynamics."
+  "preview_text": "The model favors France at 55%, leaving Norway with a 17% chance of victory. The underdog's path to a win is narrow but not negligible; France enters as a clear favorite, yet the model assigns meaningful probability to a Norwegian upset.\n\nThe 28% draw probability suggests a competitive match with realistic scope for a stalemate. France's near-55% win rate does not imply a rout; the spread between favorite and draw is modest, indicating the outcome remains genuinely uncertain and all three results are plausible within normal match variance.\n\nThe model and market are closely aligned. France's win probability differs by only 3 percentage points, while Norway and draw probabilities diverge by less than 5 percentage points across all three sources. The consensus across books and prediction markets reinforces the model's assessment that France is favored but the match remains competitive."
 }

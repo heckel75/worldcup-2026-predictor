@@ -3,9 +3,9 @@
   "home_team": "Sweden",
   "away_team": "Tunisia",
   "date": "2026-06-14",
-  "input_hash": "4c9ecf8cf6548ba18cfc2408ecac4a9bdd1b8750",
-  "generated_at": "2026-06-11T06:49:11+00:00",
+  "input_hash": "000674efe4a325b2b09533fb5ee1615f13fd4ba3",
+  "generated_at": "2026-06-12T06:29:22+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Sweden as a modest favorite with a 41% win probability, while Tunisia's chances stand at 28%. The gap reflects Sweden's structural edge in this matchup, though the underdog retains meaningful knockout potential given the neutral ground and group-stage setting.\n\nThe draw emerges as the most plausible single outcome at 31%, suggesting both teams carry enough defensive solidity to resist a decisive result. The three-way spread is relatively even, with no outcome commanding a dominant share of probability. Sweden's 13-point advantage over Tunisia is narrow enough that the match is likely to remain competitive throughout.\n\nThe sportsbook consensus and Polymarket prices both rank Sweden substantially higher—at roughly 50% compared to the model's 41%—a gap of approximately 9 percentage points. The market also downgrades Tunisia to around 22%, while crediting the draw with minimal extra value. The dashboard does not adjudicate between these divergent readings; the market may reflect information unavailable to the model, or the model's assessment may prove more calibrated in hindsight."
+  "preview_text": "The model favors Sweden at 41%, but judges the match substantially more competitive than the sportsbooks do. Tunisia's chances register at 28% under the model versus 22% in the market consensus, a meaningful gap that reflects divergent assessments of the underdog's threat.\n\nThe model's probability distribution leans toward a decisive result—Sweden winning outright remains most likely—yet assigns a substantial 31% to a draw, suggesting genuine uncertainty about whether either team will break through. The gap between the favorite and underdog is modest enough that a Tunisia upset or stalemate both remain plausible outcomes.\n\nThe model and market show clear daylight on Sweden's win probability, with sportsbooks 9 percentage points more confident in a Swedish victory. The model's higher assessment of Tunisia reflects a more cautious reading of Sweden's advantage. Both sources agree a draw is realistic, though they diverge on the likelihood of a decisive outcome favoring the stronger side."
 }

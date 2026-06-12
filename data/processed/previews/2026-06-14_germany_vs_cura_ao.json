@@ -3,9 +3,9 @@
   "home_team": "Germany",
   "away_team": "Curaçao",
   "date": "2026-06-14",
-  "input_hash": "859a90add2b9629a28502a25d0acf3e838cce82d",
-  "generated_at": "2026-06-11T18:48:41+00:00",
+  "input_hash": "f9a1c53f64a4197e91aa091994fa8cf4e9852f4b",
+  "generated_at": "2026-06-12T06:29:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model forecasts Germany to win with 84% probability, leaving Curaçao with a 0.6% chance of victory. This reflects a substantial gap in the win columns: the favorite is heavily favored, though not to the degree that sportsbooks and prediction markets suggest.\n\nThe model's distribution shows a meaningful draw probability of 15%, implying a match that carries real competitive uncertainty around the result. While Germany's win probability dominates, the 15-percentage-point draw likelihood indicates the match is not viewed as a one-sided rout in terms of plausible outcomes. The underdog win probability remains minimal, consistent with the scale of the gap.\n\nSportsbooks and Polymarket both assign Germany notably higher win chances—92% and 93% respectively—while compressing the draw odds to 5–4%. The model and market diverge by roughly 8 percentage points on Germany's win line, with the market more bullish on the favorite and substantially less confident in a draw. The dashboard does not adjudicate which assessment is more accurate; the gap reflects genuine disagreement on match competitiveness."
+  "preview_text": "The model backs Germany as a strong favourite with an 84% win probability, leaving Curaçao with a 0.6% chance of victory. The implied quality gap is substantial, though not insurmountable within the bounds of tournament football.\n\nA draw carries 15% implied probability in the model's forecast, suggesting meaningful defensive solidity or competitive friction despite the favourite's advantage. Germany's win-or-draw combined likelihood stands at 99%, indicating the match structure leans heavily toward a German result, yet the 15-point buffer for a stalemate keeps the outcome from feeling predetermined.\n\nThe sportsbook consensus diverges noticeably from the model. Books price Germany at 92%, draw at 5.5%, and Curaçao at 2.4%—a spread that narrows the draw window by nearly 10 percentage points and widens Curaçao's underdog case slightly. Polymarket prices align more closely with the sportsbooks than with the model. The dashboard does not arbitrate between these sources; meaningful discrepancies in draw probability merit scrutiny ahead of kickoff."
 }

@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "input_hash": "d4702bdd53cc4491e06c53e5d6e68172a91d36ca",
-  "generated_at": "2026-06-11T06:53:53+00:00",
+  "input_hash": "d01b6e53650924972be1f176d8a63461deb73b71",
+  "generated_at": "2026-06-12T06:30:40+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Canada to win at 41%, substantially ahead of Switzerland's 28% win probability. That gap reflects a clear analytical edge to Canada in this neutral-venue matchup, though the underdog retains meaningful chances of victory.\n\nThe draw sits at 31%, making it the second-most-likely outcome. The relatively even split across all three results—no single probability dominates beyond 44%—indicates a competitive contest. The model suggests Canada should control play, but Switzerland's win probability is high enough that a draw remains plausible and a Swiss upset far from implausible.\n\nThe model and market diverge sharply here. Sportsbooks and Polymarket both assign Canada just 27%, a 13-percentage-point gap below the model's 41%, while both sources rate Switzerland at 44%—16 points higher than the model. The dashboard does not adjudicate between them, but the gap is substantial enough to merit note for any forecast user."
+  "preview_text": "The model favours Canada at 41% to win, with Switzerland given a 28% chance. This represents a narrow favourite-to-underdog split rather than a dominant projection. The draw carries 31% implied probability, placing it as a plausible outcome in a closely matched contest.\n\nThe spread across outcomes reveals a competitive fixture. Canada's edge is modest—roughly 13 percentage points over Switzerland—and the draw sits close enough to each team's win probability that the match could resolve in any direction without surprising the model's baseline expectations. No outcome appears heavily favoured, consistent with a competitive group-stage encounter.\n\nThe model and market diverge meaningfully. The sportsbook consensus rates Switzerland 16 percentage points higher than the model does, while reducing Canada's win probability by 13 points and compressing the draw to 29%. Polymarket aligns closely with sportsbooks. The dashboard does not claim to know which assessment is more accurate; the discrepancy likely reflects differing assumptions about underlying team strength or external information unavailable to the model inputs."
 }

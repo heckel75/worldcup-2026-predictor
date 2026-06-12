@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Senegal",
   "date": "2026-06-16",
-  "input_hash": "41c24d93bbf3a1953d6b5c9332eb167e7378882b",
-  "generated_at": "2026-06-11T06:49:42+00:00",
+  "input_hash": "9a95566dfec68e52daba882f11fda83c6e68bed8",
+  "generated_at": "2026-06-12T06:29:34+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates France as the clear favorite with a 65% win probability, while Senegal's chance of victory stands at 10%. France holds a decisive edge in the forecast, though Senegal is not assigned a negligible probability in a neutral venue.\n\nThe draw carries notable weight at 25%, reflecting the gap between France's superiority and a complete mismatch. The win probabilities span 55 percentage points, suggesting France enters as a substantial but not overwhelming favorite. A draw remains a plausible outcome, and the distribution indicates a competitive match rather than a heavily one-sided contest.\n\nThe model and sportsbook consensus are closely aligned. Both place France at 65%, with minimal daylight between them. The main divergence appears in Senegal's chances: the model assigns 10% while the market consensus sits at 13%, a gap of roughly 3 percentage points. Polymarket prices align closely with the model. The dashboard does not adjudicate between these marginal differences."
+  "preview_text": "The model rates France as a substantial favorite at 65%, leaving Senegal with a 10% chance of victory. The gap between the two is wide, signaling a clear hierarchical expectation in this fixture on a neutral ground.\n\nThe 25% draw probability suggests meaningful competitive balance despite France's edge. That outcome sits meaningfully above a coin flip, indicating the match could plausibly settle level. The win-loss split reveals France favored decisively, yet Senegal retains enough probability mass to represent a genuine underdog threat rather than a ceremonial opponent.\n\nModel and sportsbooks show tight alignment. France win sits at 65% across both; the draw diverges by roughly 3 percentage points, with the model slightly more bullish on a stalemate. Senegal's win probability splits the difference, the model at 10% and the books at 13%. These gaps fall within normal variance and suggest consensus on the match structure."
 }

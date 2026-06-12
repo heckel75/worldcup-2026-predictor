@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Germany",
   "date": "2026-06-25",
-  "input_hash": "f4f735f54c371fa5d8fd47ffd3e7e1b688ce6afc",
-  "generated_at": "2026-06-11T18:51:26+00:00",
+  "input_hash": "b7e08a9645213ba3c9ca32fde1872cb419a1da10",
+  "generated_at": "2026-06-12T06:30:59+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates this fixture as highly competitive, giving Germany a marginal 35% edge while crediting Ecuador with a 33% chance of victory. The two sides sit within 2 percentage points on the win line, suggesting near parity in underlying strength according to the statistical forecast.\n\nThe draw probability of 32% reinforces the closeness of the matchup. With win probabilities bunched in the low-to-mid 30s and a substantial draw likelihood, the model envisions a match unlikely to be decided by large margins. Neither team emerges as a heavy favorite; the outcome distribution is spread relatively evenly across all three results.\n\nThe sportsbook consensus and Polymarket prices diverge markedly from the model. Both commercial sources rate Germany at 55% and Ecuador at roughly 20%, a 15-percentage-point gap favoring the Germans compared to the model's 2-point margin. The market also compresses draw odds to 25%. This substantial divergence suggests the market incorporates information the model does not access or weights uncertainty differently. The dashboard does not adjudicate which view is correct."
+  "preview_text": "The model rates Germany as a slight favorite at 35%, with Ecuador at 33% and a draw at 32%. The gap is narrow: Germany holds only a 2-percentage-point edge, suggesting the teams are closely matched by the statistical forecast and that Ecuador has a credible path to victory or a stalemate.\n\nThe W/D/L spread reflects competitive balance. No outcome commands majority probability, and all three results fall within a compressed range of 31–35 percentage points. A draw emerges as plausible at nearly one-third, consistent with evenly-contested play. The model sees this as a genuinely open match.\n\nThe market—both sportsbooks and Polymarket—diverges meaningfully from the model. Bookmakers and prediction markets both assign Germany 55% and Ecuador roughly 19%, giving the favorite a 20-point advantage. This represents a substantial gap between the model's near-parity reading and the market's stronger conviction in Germany. The dashboard does not adjudicate which assessment is correct."
 }

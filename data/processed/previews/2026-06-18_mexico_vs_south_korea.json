@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "South Korea",
   "date": "2026-06-18",
-  "input_hash": "84710eecf3ef47dc1a7ac908739b13625937ab9f",
-  "generated_at": "2026-06-11T19:15:46+00:00",
+  "input_hash": "cc7235b61e266d6aedb719c38f780d689d46fb84",
+  "generated_at": "2026-06-12T06:29:52+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Mexico at 60%, leaving South Korea with a 13% chance of victory. This represents a meaningful gap: the model backs Mexico considerably more than either the sportsbook consensus or Polymarket, which both grade Mexico closer to 54%.\n\nThe draw sits near 27% across all sources, suggesting the match carries genuine competitive balance despite Mexico's edge. The model's win probabilities diverge more sharply, with South Korea assigned a narrower path to victory than the books estimate. A Mexico victory remains the modal outcome under all forecasts, but the underdog's chances are neither negligible nor remote.\n\nModel and market show a 7-percentage-point gap on Mexico's win probability, with the model more confident and the books more cautious. Polymarket and sportsbook consensus track closely. The dashboard does not determine which view is more accurate; the divergence suggests meaningful uncertainty about the underlying match quality despite directional agreement that Mexico enters favored."
+  "preview_text": "The model rates Mexico as a clear favourite with a 60% win probability, substantially higher than South Korea's 13% chance. This gap reflects an asymmetry in the underlying Elo-based estimate, positioning Mexico as the more likely victor on a neutral ground.\n\nThe draw carries meaningful probability at 27%, suggesting the match has genuine scope for a stalemate outcome. The model's spread—a 33-percentage-point gap between Mexico's win and South Korea's win likelihood—indicates a competitive fixture where the underdog remains present rather than a mismatch, though Mexico remains the stronger prospect.\n\nThe model and sportsbook consensus diverge meaningfully. The market assigns Mexico only 48% win probability, roughly 12 percentage points below the model's 60%, while backing South Korea materially higher at 24% versus the model's 13%. Draw probabilities align closely. The dashboard does not determine which assessment is correct; this gap warrants review of available squad and contextual information external to these inputs."
 }

@@ -3,9 +3,9 @@
   "home_team": "Egypt",
   "away_team": "Iran",
   "date": "2026-06-26",
-  "input_hash": "f885cdde6301095b3f4722a01e1235f66f4c5867",
-  "generated_at": "2026-06-11T18:51:34+00:00",
+  "input_hash": "716bae8e3417ede79414e01f980772730be5381f",
+  "generated_at": "2026-06-12T06:31:07+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Iran at 49%, while Egypt has a 22% chance of victory. This 27-percentage-point gap reflects Iran as the heavy favorite in the model's assessment. Egypt's underdog position carries meaningful but minority odds.\n\nThe draw emerges as the second-most-likely outcome at 30%, suggesting the match could be closely contested despite Iran's modeled edge. The win probabilities are spread across all three outcomes rather than concentrated, indicating competitive balance in terms of possible match shape, even if one team is favored on average.\n\nModel and market diverge substantially. Sportsbooks and Polymarket both assign Iran only 27%, roughly 22 percentage points below the model. Conversely, they rate Egypt at 42%, almost double the model's 22%. Both consensus sources agree closely with each other and converge on a draw near 31%. The dashboard does not adjudicate between these competing views, but the divergence is large enough to warrant attention from those comparing forecasts."
+  "preview_text": "The model favors Iran at 49%, with Egypt's win probability at 22%. The underdog assignment reflects a material gap: Iran's chance exceeds Egypt's by roughly 27 percentage points. A draw is the second-most likely outcome in the model's distribution at 30%.\n\nThe 49–22 split suggests Iran is expected to control the match's character, but the 30% draw probability indicates the result remains genuinely competitive. A one-goal margin appears more likely than a decisive outcome; neither side is forecast to dominate decisively on a neutral ground.\n\nThe model and market diverge sharply. Sportsbooks and Polymarket both price Egypt's win near 42%, roughly 20 points higher than the model, while rating Iran at 27–28%, roughly 21 points lower. The draw estimates align closely across all three sources. This dashboard does not determine which assessment is correct; the divergence merits scrutiny of both the statistical model's inputs and the market's information set."
 }

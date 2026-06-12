@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 23.6,
-  "input_hash": "0ba87307d04415c118172191069b55424e6669c0",
-  "generated_at": "2026-06-11T18:52:40+00:00",
+  "max_gap_pp": 23.7,
+  "input_hash": "3aa4e82f30f8b874f2dbbc339234e62e45c48185",
+  "generated_at": "2026-06-12T06:31:54+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Japan a 69% win probability while the sportsbook consensus puts it at 45%—a 24-percentage-point gap favoring the model's confidence in a Japan victory. The market's markedly lower conviction on Japan, coupled with its substantially higher assessment of Sweden's chances (27% vs. 8%), suggests real-money flows are pricing in information the model cannot access: possible lineup changes, recent form shifts, or injury concerns that have emerged since the model's last update. Both sources agree Japan are favored, but the gap reflects a genuine disagreement about the magnitude of that edge. The dashboard flags this divergence as a signal worth monitoring rather than a declaration of which forecast is more reliable."
+  "commentary_text": "The model favors Japan to win at 69%, while the sportsbook consensus places that probability at just 45%—a 24-percentage-point gap that represents the starkest divergence. The model is substantially more confident in a Japan victory, whereas the market distributes far more probability to both a draw (28% vs 24%) and a Sweden win (27% vs 8%). This hedging pattern suggests the market may be pricing in information the model cannot access: recent form swings, injury concerns affecting key players, or lineup changes that have shifted competitive balance since the model's last update. The dashboard identifies this as a material gap between statistical expectation and real-money pricing; neither reading should be treated as dispositive on its own."
 }

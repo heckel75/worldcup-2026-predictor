@@ -5,10 +5,10 @@
   "date": "2026-06-14",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 15.8,
-  "input_hash": "f44c339e35ab71c48d7aead17e0aaf9edec659cd",
-  "generated_at": "2026-06-11T19:16:22+00:00",
+  "max_gap_pp": 15.9,
+  "input_hash": "f69bc1c63e0bc5709bc19e5a1a14860d0f9f311d",
+  "generated_at": "2026-06-12T06:31:42+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model rates Ecuador as a heavy favorite at 55%, while the sportsbook consensus pulls back to 40%—a 15-percentage-point gap on the Ecuador win. The market also shortens the Ivory Coast win from 17% to 27%, suggesting bookmakers see meaningful uncertainty that the Elo-based model does not capture. Recent form, injury news, or lineup changes affecting either squad could explain why real-money pricing hedges more cautiously than the statistical baseline. The dashboard flags this spread as a signal for further investigation rather than a judgment on which assessment proves more accurate."
+  "commentary_text": "The model gives Ecuador a 55% win probability, while the sportsbook consensus stands at 40%—a 15 percentage-point gap favoring the model's confidence in an Ecuador victory. The market also assigns higher odds to an Ivory Coast win (27% vs. 17%) and a draw (34% vs. 28%), suggesting it is hedging across all three outcomes rather than following the model's stronger lean toward Ecuador. This pattern of market caution could reflect recent lineup changes, injury concerns, or form shifts affecting either team that the model's Elo ratings have not yet fully incorporated. The dashboard flags this as a meaningful divergence in conviction rather than disagreement on direction—both sources expect Ecuador to prevail, but the market is pricing substantially more uncertainty around that outcome."
 }

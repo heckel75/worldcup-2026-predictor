@@ -3,9 +3,9 @@
   "home_team": "DR Congo",
   "away_team": "Uzbekistan",
   "date": "2026-06-27",
-  "input_hash": "ad4a11bf68f9d5b57ba8e595cb68201e028f8f78",
-  "generated_at": "2026-06-11T18:52:06+00:00",
+  "input_hash": "8eb359c7807983c59b522925c5cc0a9d7b72d077",
+  "generated_at": "2026-06-12T06:31:25+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Uzbekistan at 47%, while DR Congo's win probability stands at 23%. The underdog faces a sizeable gap of roughly 24 percentage points, positioning Uzbekistan as the clear statistical favorite on the neutral ground.\n\nThe draw emerges as the second-most likely outcome at 30%, only 17 points behind Uzbekistan's win probability. This relatively compact spread between draw and Uzbekistan victory suggests a competitive match where DR Congo cannot be ruled out entirely, though the model leans firmly toward either a Uzbekistan win or a stalemate over an upset.\n\nA substantial divergence exists between the model and the sportsbook consensus. The market assigns DR Congo a 41% win probability—17 percentage points higher than the model—while pricing Uzbekistan's chances at 30%, some 17 points lower. Polymarket similarly favors DR Congo more than the model does, though the gap is slightly narrower there. The dashboard makes no claim about which assessment is correct; the disagreement flags a meaningful uncertainty worth monitoring."
+  "preview_text": "The model favors Uzbekistan at 47%, compared to a 23% chance for DR Congo. This represents a substantial gap, with the model assigning the underdog less than half the favorite's winning probability.\n\nThe draw carries real weight at 30%, making this a relatively balanced three-way contest despite Uzbekistan's edge. The 24-percentage-point spread between favorite and underdog suggests moderate competitiveness rather than a heavily lopsided affair; a stalemate ranks as a plausible outcome alongside either team's victory.\n\nThe model and sportsbook consensus diverge meaningfully. Books and Polymarket both lean toward DR Congo at around 40%, roughly 17 percentage points higher than the model's 23%. Conversely, the market prices Uzbekistan 16–17 points lower than the model does. Both betting sources align closely with each other but diverge substantially from the statistical forecast. The dashboard does not adjudicate between them; users should weigh the model's methodology against market intelligence independently."
 }

@@ -3,9 +3,9 @@
   "home_team": "Japan",
   "away_team": "Sweden",
   "date": "2026-06-25",
-  "input_hash": "6b1f547d6d62d4a07b906970930782248dad704c",
-  "generated_at": "2026-06-11T18:51:30+00:00",
+  "input_hash": "a410c391ba2a3a9d6ed3e1bf74f883657c36d3d7",
+  "generated_at": "2026-06-12T06:31:03+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Japan as a clear favorite with a 69% win probability, compared to Sweden's 8% chance. This represents a substantial gap, suggesting the model sees Japan as significantly stronger on the available data.\n\nThe model's spread points to a moderately competitive match tilted decisively toward Japan. A draw is plausible at 24%, but the model implies Japan should prevail in roughly seven of every ten instances. Sweden's low win probability reflects an underdog position, though not an elimination-level disparity.\n\nThe model and market diverge meaningfully here. Sportsbooks and Polymarket both assess the match as much tighter, crediting Japan with only 45% and Sweden with 27%—a reversal of the model's conviction. The gap between the model's Japan estimate and the market's is roughly 24 percentage points. The dashboard does not adjudicate which assessment is correct; the divergence warrants attention from users assessing the match."
+  "preview_text": "The model favours Japan with a 69% win probability, a commanding edge over Sweden's 7.5% chance. The statistical forecast sees this as a heavily asymmetric contest, with Japan as a clear favourite on a neutral ground.\n\nThe win-draw-loss spread reveals a pronounced gap between the top two outcomes. Japan's probability is nearly three times Sweden's, while a draw sits between them at 24%. This distribution suggests the model expects Japan to control most likely scenarios, though a stalemate remains a material possibility at nearly one in four matches.\n\nModel and market diverge sharply here. The sportsbook consensus—derived from 33 books with vigorish stripped—assigns Japan only 45%, roughly 24 percentage points below the model, while raising Sweden to 27%. Polymarket prices align closely with the book consensus. The dashboard does not adjudicate which source is more accurate; the gap likely reflects different methodologies or information sets rather than error in either direction."
 }

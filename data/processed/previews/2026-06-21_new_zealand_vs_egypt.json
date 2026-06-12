@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Egypt",
   "date": "2026-06-21",
-  "input_hash": "99bd4d4f4459a35325ae7eba7c519d05995d93c7",
-  "generated_at": "2026-06-11T18:50:10+00:00",
+  "input_hash": "ff28be2fa7fc21f146af5db636326b3d59a0eabd",
+  "generated_at": "2026-06-12T06:30:07+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Egypt, assigning them a 47% win probability against New Zealand's 23%. That 24-percentage-point gap reflects a substantial advantage to the higher-rated side, though the model does not rule out an upset in nearly a quarter of matches.\n\nThe draw emerges as the second-most likely outcome at 30%, suggesting the teams are close enough in strength that a stalemate remains plausible. The spread across all three outcomes is moderate—no outcome commands overwhelming confidence, and the underdog retains meaningful chances. This indicates a competitive encounter rather than a heavily one-sided affair.\n\nThe market consensus (sportsbooks and Polymarket combined) aligns closely with the model, with Egypt's win probability ranging from 54–55% across venues. All three outcome probabilities track within 3–5 percentage points of the model's estimates. The consensus slightly favors Egypt compared to the model's assessment and slightly disfavors draws, but the two sources paint broadly the same picture of a match leaning toward the favorite without dominance."
+  "preview_text": "The model rates Egypt as the favorite with a 47% win probability, while New Zealand holds a 23% chance of victory. The 24-point gap between them reflects a clear but not overwhelming edge for Egypt. New Zealand enters as a substantial underdog yet retains plausible paths to three points.\n\nThe draw emerges as the single most likely outcome at 30%, suggesting the match will be competitive enough to produce a stalemate. The spread across all three outcomes is relatively balanced—no result falls below 23%—indicating genuine uncertainty. A one-goal margin in either direction appears the modal expectation given the draw's prominence.\n\nThe sportsbook consensus diverges modestly from the model. Books price Egypt's win 7 points higher (54.5% vs 47%), while compressing the draw to 26% and New Zealand to 20%. Polymarket sentiment aligns more closely with the sportsbook view on Egypt and draws, suggesting the market sees a tighter, more decisive contest than the model's forecast. The dashboard does not adjudicate between these framings."
 }

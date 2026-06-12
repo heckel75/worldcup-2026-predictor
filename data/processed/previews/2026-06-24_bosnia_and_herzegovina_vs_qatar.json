@@ -3,9 +3,9 @@
   "home_team": "Bosnia and Herzegovina",
   "away_team": "Qatar",
   "date": "2026-06-24",
-  "input_hash": "fd5150fbebc6f05136dd6efb8cf28e0a54eb0bec",
-  "generated_at": "2026-06-11T18:51:04+00:00",
+  "input_hash": "5b75b8d78a594835b1ae54402558b9e0952a0578",
+  "generated_at": "2026-06-12T06:30:44+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Bosnia and Herzegovina at 47% to win, but the match remains competitive. Qatar's 23% win probability reflects genuine threat, while the 31% draw probability suggests the sides are closer in expectation than a straightforward two-way split would imply.\n\nThe outcome distribution points to a tight contest. Bosnia and Herzegovina are modest favourites, but the 31% draw likelihood means a stalemate is nearly as probable as a Bosnia win. Qatar's baseline chance sits well below its opponents', yet the spread across all three outcomes is broad enough that no single result dominates the forecast. The match carries genuine uncertainty.\n\nA marked gap separates the model and market consensus. Sportsbooks price Bosnia and Herzegovina at 59%, some 12 percentage points higher than the model's 47%, and price Qatar substantially lower at 16% versus the model's 23%. The draw sits slightly lower in the market at 25%. Polymarket prices align closely with sportsbook consensus. The dashboard does not adjudicate between these divergent readings."
+  "preview_text": "The model favors Bosnia and Herzegovina with a 47% win probability, but the gap over Qatar is modest—only 24 percentage points separate the two. The underdog Qatar registers a 23% chance, suggesting this is far from a foregone conclusion on the statistical forecast.\n\nThe draw sits at 31% in the model, the most plausible single outcome alongside a Bosnia win. The relatively compressed outcome probabilities indicate a competitive match; no result is heavily favored, and the margin between favorite and underdog leaves room for either side to prevail given normal variance in open play.\n\nThe market consensus—both sportsbooks and Polymarket—diverges notably from the model. Market sources place Bosnia and Herzegovina at 58%, a 12 percentage point lift, while pushing Qatar down to 17%. Both retail and crowd-sourced pricing align closely with each other but notably tighten the Bosnia edge and compress draw probability to 25–26%. The dashboard does not claim to know which assessment is correct; the divergence flags a material disagreement about relative team strength."
 }

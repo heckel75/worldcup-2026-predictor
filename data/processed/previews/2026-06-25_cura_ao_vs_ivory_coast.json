@@ -3,9 +3,9 @@
   "home_team": "Curaçao",
   "away_team": "Ivory Coast",
   "date": "2026-06-25",
-  "input_hash": "c9fdba85296682b86d177bf9b93da389f84beb1b",
-  "generated_at": "2026-06-11T06:54:38+00:00",
+  "input_hash": "334c939c53a388d55a2c768e609266d882effc98",
+  "generated_at": "2026-06-12T06:30:55+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Ivory Coast to win at 63%, with Curaçao's victory probability set at 12%. That represents a substantial gap; the model rates the underdog's chances at roughly one-fifth the favorite's odds.\n\nThe 24.8% draw probability signals moderate competitive balance in the model's view. Ivory Coast remains heavily favored, but a stalemate is more likely than a Curaçao win, suggesting the match could be contested without being a rout. The win probabilities diverge noticeably — a 51-point spread between the favorite and underdog — yet the inclusion of a meaningful draw chance reflects some uncertainty about outcome.\n\nThe sportsbook consensus deviates meaningfully from the model. Books price Ivory Coast at 77%, roughly 14 percentage points higher than the model, while the draw falls to 16% and Curaçao drops to 7%. Polymarket prices align closely with the books. The gap suggests the market views this as less competitive than the statistical forecast indicates. The dashboard does not adjudicate between these sources."
+  "preview_text": "The model favors Ivory Coast at 63%, with Curaçao given a 12% chance to win. The underdog holds meaningful probability mass relative to that baseline, though the asymmetry is pronounced.\n\nThe 24.8% draw probability suggests a moderately competitive fixture rather than a heavily skewed contest. Ivory Coast's advantage is substantial but not overwhelming; roughly one quarter of the modeled outcomes end level, and nearly one in eight see Curaçao prevail. The distribution implies a competitive match with a clear favorite rather than a mismatch.\n\nThe market consensus—sportsbooks and Polymarket combined—shifts the needle noticeably toward Ivory Coast, pricing them around 77% to 78% win probability and compressing the draw to 14% to 15%. The model is roughly 4–5 percentage points more generous to both Curaçao and the draw. The divergence is modest but consistent across all betting venues. This dashboard does not adjudicate which view is correct."
 }

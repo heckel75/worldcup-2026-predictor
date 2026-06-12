@@ -1,5 +1,9 @@
 match_key,date,home_team,away_team,p_home,p_draw,p_away,forecast_ts,outcome
-2026-06-11_mexico_vs_south_africa,2026-06-11,Mexico,South Africa,0.8316,0.1592,0.0092,2026-06-10T08:33:15,
-2026-06-11_south_korea_vs_czech_republic,2026-06-11,South Korea,Czech Republic,0.467,0.3057,0.2273,2026-06-10T08:33:15,
+2026-06-11_mexico_vs_south_africa,2026-06-11,Mexico,South Africa,0.8316,0.1592,0.0092,2026-06-10T08:33:15,H
+2026-06-11_south_korea_vs_czech_republic,2026-06-11,South Korea,Czech Republic,0.467,0.3057,0.2273,2026-06-10T08:33:15,H
 2026-06-12_canada_vs_bosnia_and_herzegovina,2026-06-12,Canada,Bosnia and Herzegovina,0.7995,0.1784,0.0221,2026-06-11T08:47:35,
 2026-06-12_usa_vs_paraguay,2026-06-12,USA,Paraguay,0.4441,0.3093,0.2465,2026-06-11T08:47:35,
+2026-06-13_qatar_vs_switzerland,2026-06-13,Qatar,Switzerland,0.0341,0.157,0.809,2026-06-12T08:28:42,
+2026-06-13_brazil_vs_morocco,2026-06-13,Brazil,Morocco,0.3847,0.3151,0.3001,2026-06-12T08:28:42,
+2026-06-13_haiti_vs_scotland,2026-06-13,Haiti,Scotland,0.2448,0.3037,0.4515,2026-06-12T08:28:42,
+2026-06-13_australia_vs_turkey,2026-06-13,Australia,Turkey,0.3241,0.315,0.3609,2026-06-12T08:28:42,

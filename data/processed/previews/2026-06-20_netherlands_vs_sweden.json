@@ -3,9 +3,9 @@
   "home_team": "Netherlands",
   "away_team": "Sweden",
   "date": "2026-06-20",
-  "input_hash": "6bcd2dba2ef078627f4facb983f0e747faa736d6",
-  "generated_at": "2026-06-11T18:50:03+00:00",
+  "input_hash": "a1d151d890ef3c0842f9c445bb93fe412cfc4fd9",
+  "generated_at": "2026-06-12T06:30:03+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Netherlands decisively, assigning them a 68% win probability against Sweden's 8%. The gap reflects a substantial edge to the Dutch side, with the underdog facing a steep climb to claim three points.\n\nThe win-draw-loss distribution shows moderate separation between the favorite and second-most-likely outcome. A draw sits at 24%, suggesting the match carries genuine competitive uncertainty despite Netherlands' clear advantage. Sweden's 8% win probability indicates the model views a Swedish victory as unlikely but not negligible; the match is not expected to be a rout, but a comfortable Dutch progression appears the central scenario.\n\nThe model and market diverge meaningfully on both tails. The model assigns Netherlands 10 percentage points higher than sportsbook consensus, while crediting Sweden 10 points lower. Both Polymarket and the 42-book consensus cluster closely on the draw near 23–24%. The dashboard makes no claim about which source better reflects true match probability; the divergence suggests genuine disagreement on Netherlands' win probability specifically."
+  "preview_text": "The model rates Netherlands as a clear favorite with a 68% win probability, compared to Sweden's 8% chance. The gap reflects a substantial asymmetry in the forecast, though Sweden's 8% tail still allows for a plausible upset outcome.\n\nThe spread across match outcomes shows Netherlands favored to win outright, but the 24% draw probability suggests the contest carries material competitive balance. A one-goal margin or stalemate represents a plausible central scenario; the model does not project a rout.\n\nThe model and sportsbook consensus diverge meaningfully on Sweden's prospects. The model assigns Sweden 8%, while the market consensus across 43 books stands at 18%—a gap of 10 percentage points. Polymarket pricing aligns more closely with the sportsbook consensus at 17%. The dashboard does not adjudicate which source better reflects underlying match dynamics."
 }

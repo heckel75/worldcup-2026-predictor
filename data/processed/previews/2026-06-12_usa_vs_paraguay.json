@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Paraguay",
   "date": "2026-06-12",
-  "input_hash": "971c104dff0a8d4cd5d884a5a2282ff6db12a7c5",
-  "generated_at": "2026-06-11T19:15:29+00:00",
+  "input_hash": "87e324e38f866de471d8ae4dbeec10b578327219",
+  "generated_at": "2026-06-12T06:28:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates the USA as favorite with a 44% win probability, while Paraguay's chances stand at 25%. The gap reflects a moderate edge for the USA, though the underdog retains a realistic path to victory on a neutral ground.\n\nThe draw emerges as a plausible outcome at 31%, narrowing the margin between a USA win and a full contest. The spread across all three outcomes suggests a competitive fixture rather than a heavily tilted one; no single result dominates decisively.\n\nThe market consensus—both sportsbooks and Polymarket—tilts toward the USA more sharply, pricing a win near 49% compared to the model's 44%. The gap of roughly 5 percentage points appears modest but consistent across venues. Market and model align closely on draw likelihood and Paraguay's chances. The dashboard makes no claim as to which assessment proves more accurate."
+  "preview_text": "The model rates USA as the marginal favorite with a 44% win probability, while Paraguay holds a 25% chance of victory. The 19-percentage-point gap reflects USA's slight edge, but the outcome remains genuinely competitive rather than one-sided.\n\nThe draw emerges as the likeliest single outcome at 31%, suggesting the match could easily settle level. The three-way spread—with no outcome commanding overwhelming probability—indicates a closely contested fixture where either team can plausibly prevail or stalemate. Paraguay's quarter-chance at outright victory underscores the competitive nature of the pairing on a neutral surface.\n\nThe model and sportsbook consensus track closely across all three outcomes, with gaps of 2 percentage points or less. Polymarket prices align similarly. The broad agreement across sources suggests stable and efficient market pricing for this fixture, with no meaningful divergence to flag."
 }

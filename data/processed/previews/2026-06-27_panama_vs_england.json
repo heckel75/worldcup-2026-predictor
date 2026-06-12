@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "ec941109052261dd20c481c6e2346e0c1e916fa2",
-  "generated_at": "2026-06-11T18:52:09+00:00",
+  "input_hash": "1b0fde4568adb55f639bc42d04fdbeb2970c8298",
+  "generated_at": "2026-06-12T06:31:29+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours England at 63%, with Panama assigned an 12% chance of victory. The underdog's win probability sits well below the favourite's baseline, suggesting a substantial gap in expected quality.\n\nThe 25% draw probability indicates a plausible stalemate outcome, though England's win chance materially exceeds both alternative results. The W/D/L spread spans a wide range, with no two outcomes clustered tightly together. The match is weighted toward an England victory but retains meaningful uncertainty around the mode.\n\nThe market consensus skews notably more confident in England, pricing the favourite at 74% compared to the model's 63%—roughly 10 percentage points higher. Polymarket prices align closely with sportsbook consensus. The dashboard does not adjudicate between these sources; the divergence merits noting but reflects genuine uncertainty about the true probabilities."
+  "preview_text": "The model favors England at 63%, with Panama holding an 12% chance of victory. The underdog's path to three points is materially constrained, though not negligible in a single-match setting.\n\nThe 24.8% draw probability suggests the match carries meaningful competitive balance in its middle outcome. England's win probability exceeds the draw chance by roughly 38 percentage points, indicating the model expects England as the clearer favorite but does not rule out stalemate as a plausible result. The 11–12% range for a Panama upset reflects genuine uncertainty inherent in knockout football.\n\nThe sportsbook consensus diverges from the model, assigning England 73.6% and Panama 9.9%—a gap of roughly 10 percentage points favoring the favorite and compressing the draw to 16.5%. Polymarket prices align more closely with sportsbooks than with the model. The dashboard does not adjudicate which source better reflects true match probability; the divergence warrants noting for users comparing forecasts."
 }

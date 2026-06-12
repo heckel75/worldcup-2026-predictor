@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Austria",
   "date": "2026-06-22",
-  "input_hash": "1509f4b127f3edbcabeee679ec8ff962878d983c",
-  "generated_at": "2026-06-11T18:50:29+00:00",
+  "input_hash": "99d841703f4e6dea9819ede142f5359b6d35dcc0",
+  "generated_at": "2026-06-12T06:30:20+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Argentina as a clear favorite at 76%, leaving Austria just 4% to claim victory. The underdog's path is narrow, though the draw at 20% offers a secondary outcome where Austria avoids defeat.\n\nThe win-loss split reflects substantial daylight between the teams in the model's assessment. Austria's 4% win probability sits far below both draw and loss scenarios, suggesting the model sees this as unlikely to be competitive at the decisive end. A draw remains plausible at one-in-five odds, but Argentina's dominance in the forecast is pronounced.\n\nModel and market diverge meaningfully here. The market consensus assigns Argentina only 58–60%, roughly 16–18 percentage points lower than the model, while pricing Austria's chances at 17–18% — more than four times the model estimate. Polymarket and sportsbooks align closely with each other. The dashboard does not adjudicate which assessment is correct; the gap warrants attention from users comparing computational and market views."
+  "preview_text": "The model favors Argentina at 76%, a commanding edge over Austria's 4% win probability. This 72-percentage-point gap reflects a heavily lopsided forecast. Austria carries minimal theoretical chance of victory according to the statistical approach.\n\nThe model's spread reveals a steep asymmetry: Argentina's three-quarter probability contrasts sharply with Austria's near-zero winning chance, while the draw sits at 20%. This configuration suggests Argentina enters as strong favorite, though the 20% draw likelihood indicates the match retains meaningful uncertainty rather than appearing a fait accompli.\n\nThe model and sportsbooks diverge substantially. Books strip to 58% Argentina, 25% draw, 18% Austria—more than 18 percentage points lower for Argentina than the model. Polymarket prices align closer to the books. The dashboard presents the model's probabilistic view without asserting which source better predicts the outcome; bettors and analysts should weigh the divergence themselves."
 }

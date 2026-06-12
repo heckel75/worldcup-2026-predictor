@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Bosnia and Herzegovina",
   "date": "2026-06-12",
-  "input_hash": "ed331791f8bc560608dcf95b09d23190cc26390f",
-  "generated_at": "2026-06-11T18:48:15+00:00",
+  "input_hash": "598c0c309692b61cf8307e292d57314ffd9ff8f0",
+  "generated_at": "2026-06-12T06:28:47+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model forecasts a dominant Canada victory, assigning the side an 80% win probability. Bosnia and Herzegovina enters as a heavy underdog at 2.2%, leaving a substantial gap between the two readings.\n\nThe model's win-draw-loss spread reflects an asymmetric contest. A Canada win is the clear base case, but a draw emerges as a secondary outcome at nearly 18%, suggesting the model anticipates competitive play in stretches. Bosnia and Herzegovina's 2% win chance implies the model views an upset as highly improbable within this framework.\n\nModel and market diverge markedly here. The sportsbook consensus places Canada at 52%, roughly 28 percentage points below the model estimate, and assigns Bosnia and Herzegovina 21% compared to the model's 2%. The Polymarket prices align closely with sportsbooks. The dashboard does not adjudicate between these readings; the gap is substantial enough to flag material disagreement on the relative strength of the two sides."
+  "preview_text": "The model rates Canada as a strong favourite at 80%, leaving Bosnia and Herzegovina just 2% to win. The underdog's path to victory is narrow by the statistical forecast, which implies a substantial quality gap between the sides on a neutral ground.\n\nThe model's spread suggests a lopsided contest. Canada's 80% win probability versus Bosnia and Herzegovina's 2% creates a 78-percentage-point separation; a draw at 18% remains plausible but less likely than a Canadian victory. The forecast does not anticipate a competitive match by conventional measures.\n\nThe market and prediction markets (sportsbook consensus and Polymarket) diverge markedly from the model. Both assign Canada only 52%, roughly 28 points lower than the model's estimate, and give Bosnia and Herzegovina 20–21% — a tenfold higher chance than the statistical forecast. This is a substantial gap. The dashboard presents both readings without claiming which will prove accurate; bettors should note the sharp disagreement before committing capital."
 }

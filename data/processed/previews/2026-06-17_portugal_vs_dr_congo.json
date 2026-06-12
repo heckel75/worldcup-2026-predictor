@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "DR Congo",
   "date": "2026-06-17",
-  "input_hash": "c9409f6f77e036519cb0d3a18595102839e10745",
-  "generated_at": "2026-06-11T18:49:18+00:00",
+  "input_hash": "7c6fd55c06ee3f25e52ea1c4fa66863c1c5a6052",
+  "generated_at": "2026-06-12T06:29:41+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Portugal at 77%, with DR Congo positioned as a substantial underdog at 3.5%. The gap between favorite and second-place outcome is substantial, reflecting a clear expected hierarchy in this fixture.\n\nThe win–draw–loss spread reveals a dominant-favorite scenario. Portugal's win probability exceeds the combined likelihood of a draw and DR Congo victory by a wide margin. A draw remains plausible at roughly one in five matches, but the modal outcome is a Portugal victory by a meaningful margin. Competitiveness on paper appears limited by these figures.\n\nThe model and sportsbook consensus align closely across all three outcomes, with differences under 5 percentage points. Polymarket prices similarly cluster within that band. The slight variance—sportsbooks assign DR Congo marginally higher odds than the model—does not signal material divergence in assessment. No systematic disagreement between sources is evident."
+  "preview_text": "The model favors Portugal at 77%, leaving DR Congo with a 3.5% win probability. This wide gap reflects a strong asymmetry in the matchup, with the underdog facing steep odds to claim three points on a neutral ground.\n\nThe W/D/L spread shows Portugal as a clear favorite, yet the draw carries meaningful weight at roughly one-fifth of all outcomes. A DR Congo victory remains plausible within the model's framework but would rank among lower-probability paths. The match appears tilted decisively toward a Portugal result, though not to the point of dismissing competitive play entirely.\n\nThe model and sportsbook consensus align closely on the Portugal win probability, differing by less than 3 percentage points. The main divergence emerges in the underdog's tail: sportsbooks assign DR Congo 8.7%, notably higher than the model's 3.5%. Polymarket sits between the two, at 7.5%. The dashboard makes no claim about which calibration is correct; the discrepancy may reflect market-specific risk preferences or information not captured in the model."
 }

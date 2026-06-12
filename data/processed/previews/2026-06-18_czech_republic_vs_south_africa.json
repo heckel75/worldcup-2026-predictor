@@ -3,9 +3,9 @@
   "home_team": "Czech Republic",
   "away_team": "South Africa",
   "date": "2026-06-18",
-  "input_hash": "c419bf45bb5412a0f0fe7decf84652fed1db35a6",
-  "generated_at": "2026-06-11T06:50:43+00:00",
+  "input_hash": "184ba7758d2a0e9d2efcd487ae902cc5af190cb3",
+  "generated_at": "2026-06-12T06:29:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Czech Republic at 54% to win, while South Africa's probability stands at 17%. The underdog faces a substantial gap, though the inclusion of the draw—at 29%—softens the binary contest and suggests the match retains competitive uncertainty.\n\nThe win-draw-loss distribution indicates a moderately open fixture. Czech Republic's advantage is clear but not overwhelming; the draw probability near 29% reflects a plausible outcome in which neither side dominates. The 37-percentage-point spread between the favourite and underdog points to a tilted but not one-sided encounter.\n\nThe model and sportsbook consensus diverge noticeably. The model rates Czech Republic 5–6 percentage points higher than either the bookmaker consensus or Polymarket, while assessing South Africa's chances 5–6 points lower than both. The dashboard does not adjudicate which source is more accurate; the variance may reflect differing methodologies or information sets."
+  "preview_text": "The model favours Czech Republic at 54%, with South Africa offered a 17% chance of victory. The draw sits at 29%, reflecting meaningful uncertainty in a fixture the model rates as competitive but tilted toward the favourite.\n\nThe spread between the top two outcomes spans roughly 25 percentage points, indicating a clear favourite but one without commanding control of the match. A draw remains plausible at nearly three-in-ten, suggesting the teams are close enough in underlying strength that a stalemate carries real probability. The match is unlikely to be a rout; South Africa's 17% win chance implies it enters as a credible underdog rather than an afterthought.\n\nThe sportsbook consensus and Polymarket both lean slightly more bullish on Czech Republic than the model—by 3–4 percentage points—while compressing the draw marginally. These gaps fall within typical variance across betting sources and remain small enough to indicate broad alignment. No meaningful divergence between model and market warrant flagging here."
 }

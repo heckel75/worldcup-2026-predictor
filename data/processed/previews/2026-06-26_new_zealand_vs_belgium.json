@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Belgium",
   "date": "2026-06-26",
-  "input_hash": "c15266a5dc03fed7454589be36c4e88f4b71ac9f",
-  "generated_at": "2026-06-11T18:51:39+00:00",
+  "input_hash": "56a843feba8ebad2caad5bd3a5fed302b66afa2f",
+  "generated_at": "2026-06-12T06:31:11+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Belgium with a 65% win probability, leaving New Zealand at 11% and a draw at 24%. Belgium enters as a clear favorite, though the model assigns the underdog roughly one chance in nine to secure victory.\n\nThe 54-percentage-point gap between Belgium's win probability and New Zealand's reflects a heavily asymmetric matchup. A draw at 24% sits as a meaningful outcome—more likely than either team winning outright except Belgium—suggesting the model sees competitive balance in the early-game window, even if Belgium's quality tilts the path to victory strongly in their favor.\n\nThe sportsbook consensus and Polymarket both assign Belgium a higher win probability than the model, at 73% and 76% respectively, while compressing the draw odds to 17% and 16%. The divergence widens at the margins: books price New Zealand tighter at 10% (down from 11%) and are notably less confident in a stalemate. No consensus has emerged strongly between model and market on which reading is correct."
+  "preview_text": "The model favors Belgium at 65%, with New Zealand given an 11% chance of victory. The underdog's modest win probability reflects a substantial gap in the forecast, though a quarter of outcomes are estimated as draws, which narrows the effective two-way contest somewhat.\n\nThe win-draw-loss spread shows Belgium as clear favorite, but the 24% draw probability indicates the match is not expected to be a rout. New Zealand's 11% win chance suggests competitive resistance is plausible; outcomes cluster around a Belgium victory or stalemate rather than a wide variance in feasible results.\n\nThe model and sportsbook consensus are materially aligned on Belgium's strength, though the market prices Belgium slightly higher at 73% versus the model's 65%—a gap of roughly 8 percentage points. Both sources agree on New Zealand as underdog and on draw plausibility. Polymarket traders are slightly more bullish on Belgium still. No meaningful divergence suggests systematic disagreement about the match's character."
 }

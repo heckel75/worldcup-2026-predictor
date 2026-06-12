@@ -3,9 +3,9 @@
   "home_team": "Qatar",
   "away_team": "Switzerland",
   "date": "2026-06-13",
-  "input_hash": "dae30da0fa1f2664f0aa8092ca1720cc58cad26b",
-  "generated_at": "2026-06-11T18:48:23+00:00",
+  "input_hash": "26ab00c4a47e7137cb6dd1c36aa68d19964176ac",
+  "generated_at": "2026-06-12T06:28:58+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Switzerland heavily, assigning an 81% win probability against a Qatar side credited with only a 3% chance of victory. The gap reflects a decisive expected quality advantage, leaving the underdog minimal paths to success.\n\nThe win-draw-loss spread widens decisively toward the favorite. Switzerland's 81% win probability substantially outpaces the 16% draw chance, indicating the model expects a competitive match structure but one tilted sharply toward a Swiss victory. A Qatar win remains a low-probability tail outcome in the model's view.\n\nThe model and sportsbooks align closely on the headline: Switzerland's win probability sits 2 percentage points higher in the model than across the 48-book consensus. Both sources treat a draw as unlikely relative to a Swiss win, though bookmakers rate the draw slightly lower. Polymarket prices track the sportsbook consensus tightly. The minor divergences suggest broad agreement on the match's likely shape."
+  "preview_text": "The model favors Switzerland with an 81% win probability, leaving Qatar just 3% to claim victory. That gap reflects a substantial asymmetry in expected quality. Qatar's draw chance stands at 16%, slightly above its win probability—a plausible outcome but not the likeliest scenario.\n\nThe spread across outcomes shows Switzerland as clear favorite but not dominant in the extreme. A draw occurs in roughly one of every six simulations, suggesting the match carries genuine competitive possibility rather than being a formality. Qatar's path to victory remains narrow, though not impossible at a neutral venue.\n\nThe model and sportsbooks are closely aligned. Switzerland's win probability differs by less than 3 percentage points between the two sources, and draws sit within 1 point. Polymarket prices track similarly, offering no material divergence. The consensus view across all three sources treats this as a decisive Swiss advantage with modest draw risk."
 }

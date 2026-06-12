@@ -3,9 +3,9 @@
   "home_team": "Turkey",
   "away_team": "Paraguay",
   "date": "2026-06-19",
-  "input_hash": "11e87aac1c6c90823a830c02863f771cb27c47b9",
-  "generated_at": "2026-06-11T19:15:56+00:00",
+  "input_hash": "1561737c322f879933fd15352fdff50f6ca14800",
+  "generated_at": "2026-06-12T06:29:56+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Turkey at 50%, a narrow margin over Paraguay's 20% win probability. The gap reflects a modest edge in expected strength, with the underdog offering roughly one-quarter of the favorite's winning chance.\n\nThe draw emerges as a plausible outcome at 30%, narrowing the spread between full-time results. Turkey-Paraguay is forecast as a competitive match where a single goal or stalemate remain realistic scenarios alongside a Turkey victory. The distribution suggests meaningful uncertainty rather than a dominant performance.\n\nModel and sportsbook estimates diverge on the tails. The model assigns Turkey 7 percentage points more win probability than the market consensus, while the market prices Paraguay 7 points higher. The draw sits nearly aligned across sources. The dashboard offers no view on which framing is correct; this divergence flags a genuine interpretive disagreement about the match likelihood."
+  "preview_text": "The model favors Turkey at 50% to win, while Paraguay's underdog probability stands at 21%. The gap reflects a meaningful but not decisive edge to Turkey in a neutral-venue encounter.\n\nThe draw carries substantial weight at 30%, suggesting the match is unlikely to turn decisively one way. Turkey's win probability exceeds its draw chance by roughly 20 percentage points, but the combination of draw and Paraguay victory approaches parity with the Turkey win outcome. The expected result leans toward a competitive fixture with multiple plausible paths.\n\nThe model and sportsbook consensus diverge on Turkey's chances, with the model assigning 7 percentage points more probability to a Turkish win than the market median. Conversely, books favor Paraguay at 28% versus the model's 21%, a gap of 7 points in the opposite direction. The draw probability across sources clusters tightly near 30%. The dashboard does not determine which estimate is more reliable."
 }

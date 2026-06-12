@@ -3,9 +3,9 @@
   "home_team": "Ghana",
   "away_team": "Panama",
   "date": "2026-06-17",
-  "input_hash": "61f3df886e90afcd4e0229f4529496bb75381a06",
-  "generated_at": "2026-06-11T18:49:30+00:00",
+  "input_hash": "cacb65b50e05181c9c54ec17dace6adb03798ff6",
+  "generated_at": "2026-06-12T06:29:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Panama to win at 66%, while Ghana's chances stand at 11%. This represents a substantial gap: Panama is projected as a clear favorite, though the underdog is not assigned negligible probability.\n\nThe draw carries meaningful weight at 24%, suggesting this match has potential to remain competitive through regular time. The model's spread indicates Panama enters as the likely victor, but the combination of draw and Ghana win probability—totaling 34%—reflects meaningful uncertainty around a decisive outcome.\n\nThe model and market diverge sharply here. Sportsbooks and Polymarket both assign Ghana roughly 45% to win, roughly 4× the model's estimate, and give Panama only 27%, less than half the model's assessment. The dashboard presents both views without claiming superiority for either; users should weigh the divergence carefully when forming their own expectations."
+  "preview_text": "The model favors Panama to win at 66%, compared to Ghana's 11% chance. This represents a substantial gap between the two sides in the statistical forecast. Ghana enters as a clear underdog in the model's view.\n\nThe win-draw-loss spread shows Panama as a heavy favorite, but the draw probability of 24% suggests the match retains meaningful competitive uncertainty. The model does not rate this as a runaway encounter; roughly one in four outcomes could see the teams level after regulation time.\n\nThe model and market diverge sharply here. Sportsbooks and prediction markets both assign Ghana near 45% to win and Panama roughly 27%, inverting the model's assessment almost entirely. The dashboard does not adjudicate between these conflicting signals. Traders are pricing Ghana substantially higher than the statistical model does, while viewing Panama's chances as lower than the bias-corrected probabilities suggest."
 }

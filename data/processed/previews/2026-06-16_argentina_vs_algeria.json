@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Algeria",
   "date": "2026-06-16",
-  "input_hash": "0f534cccfbe87ec5f4a269a9fa190de72ced1ac1",
-  "generated_at": "2026-06-11T18:49:09+00:00",
+  "input_hash": "712b0edc00322915b2f26c0e1bfae092f90a85a2",
+  "generated_at": "2026-06-12T06:29:38+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina at 74%, with Algeria holding just a 5% chance of victory. The underdog's win probability reflects a substantial gap in the forecast, though the 21% draw probability indicates the match carries meaningful uncertainty around the outcome.\n\nThe 74–21–5 split suggests Argentina enters as clear favorites but faces a genuinely competitive contest. A draw ranks as the second-most-likely result, implying the sides are separated enough to create a likely Argentine advantage yet close enough that stalemate remains plausible. The model does not project a runaway outcome.\n\nThe model and market diverge meaningfully on Algeria's upside. The model assigns the underdog 5% win probability, while sportsbooks and Polymarket both cluster around 10–11%. This 5–6 percentage-point gap represents the most significant divergence in the forecast. The dashboard does not adjudicate which assessment is more accurate."
+  "preview_text": "The model favors Argentina at 74%, with Algeria given only a 5% chance of victory. The underdog faces a steep climb, though the model does assign a substantial 21% probability to a draw, suggesting the match retains competitive uncertainty despite the gap in win likelihood.\n\nThe spread indicates Argentina enters as clear favorite, but the 21-point margin between win and loss probabilities is not overwhelming. A draw remains plausible and represents the second-most-likely outcome. The match is unlikely to be one-sided in execution, even if the model leans decisively toward an Argentina result.\n\nThe model and sportsbooks diverge on Algeria's prospects. Books and Polymarket both peg Algeria at roughly 11%, about 6 percentage points higher than the model's 5%. The model and market align closely on Argentina (within 6pp) and the draw (within 1pp). The dashboard makes no claim about which assessment is more accurate; the divergence may reflect different methodologies or market-specific factors not captured in the statistical forecast."
 }
