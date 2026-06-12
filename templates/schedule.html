@@ -4,22 +4,65 @@
 <h1>Group stage schedule</h1>
 <p class="lede">
   All 72 group-stage fixtures by date. Click any match for the
-  three-way forecast (model, sportsbook, Polymarket).
+  three-way forecast (model, sportsbook, Polymarket) — played matches
+  show the result against the frozen pre-match forecast.
 </p>
 
-<div class="fixtures-groups">
-  {% for day in schedule_days %}
-  <div class="fixtures-group">
-    <p class="fixtures-group-title">{{ day.date_human }}</p>
-    <ul class="fixtures-list">
-      {% for f in day.fixtures %}
-      <li class="fixtures-item">
-        <span class="fixtures-date">Gr.&nbsp;{{ f.group }}</span>
-        <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} vs {{ f.away_display }}</a>
-      </li>
-      {% endfor %}
-    </ul>
+{% if today_fixtures %}
+<section class="schedule-section">
+  <h2 class="section-label" id="today">Today — {{ today_human }}</h2>
+  <div class="fixtures-groups">
+    <div class="fixtures-group">
+      <ul class="fixtures-list">
+        {% for f in today_fixtures %}
+        <li class="fixtures-item">
+          <span class="fixtures-date">Gr.&nbsp;{{ f.group }}</span>
+          <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} vs {{ f.away_display }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
-  {% endfor %}
-</div>
+</section>
+{% endif %}
+
+<section class="schedule-section">
+  <h2 class="section-label">Upcoming</h2>
+  <div class="fixtures-groups">
+    {% for day in upcoming_days %}
+    <div class="fixtures-group">
+      <p class="fixtures-group-title">{{ day.date_human }}</p>
+      <ul class="fixtures-list">
+        {% for f in day.fixtures %}
+        <li class="fixtures-item">
+          <span class="fixtures-date">Gr.&nbsp;{{ f.group }}</span>
+          <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} vs {{ f.away_display }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% if results_days %}
+<section class="schedule-section">
+  <h2 class="section-label">Results</h2>
+  <div class="fixtures-groups">
+    {% for day in results_days %}
+    <div class="fixtures-group">
+      <p class="fixtures-group-title">{{ day.date_human }}</p>
+      <ul class="fixtures-list">
+        {% for f in day.fixtures %}
+        <li class="fixtures-item">
+          <span class="fixtures-date">Gr.&nbsp;{{ f.group }}</span>
+          <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} {{ f.score or "vs" }} {{ f.away_display }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 {% endblock %}

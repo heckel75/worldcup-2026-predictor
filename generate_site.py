@@ -28,6 +28,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 import calibration
+import clock
 import whats_changed
 
 import pandas as pd
@@ -307,6 +308,8 @@ def _build_match(row) -> dict:
 
     return {
         "key":          key,
+        "played":       False,
+        "score":        None,
         "home_display": home_d,
         "away_display": away_d,
         "group":        TEAM_GROUP.get(home, "?"),
@@ -316,6 +319,116 @@ def _build_match(row) -> dict:
         "sources":      sources,
         "divergence":   _load_divergence(key, row, home_d, away_d),
         "preview_paras": _load_preview(key),
+    }
+
+
+# ----------------------------------------------------------------------
+# Played matches (Session 36) — rendered from the frozen ledger, never
+# from triple_compare.csv (played fixtures drop out of the live pipeline)
+# ----------------------------------------------------------------------
+
+_OUTCOME_SLOT = {"H": "home", "D": "draw", "A": "away"}
+
+
+def _verdict(rec: dict) -> dict | None:
+    """Which source's frozen pre-match prob was closest to what happened.
+
+    Highest frozen probability on the actual outcome wins; top two within
+    2pp is a wash. Only sources with frozen probs participate — and with
+    fewer than two participants there is no contest, so no verdict."""
+    slot = _OUTCOME_SLOT[rec["outcome"]]
+    entries = []
+    for name, col in (("model", f"p_{slot}"),
+                      ("books", f"p_{slot}_book"),
+                      ("Polymarket", f"p_{slot}_poly")):
+        v = rec.get(col)
+        if pd.notna(v):
+            entries.append((name, float(v)))
+    if len(entries) < 2:
+        return None
+
+    ranked = sorted(entries, key=lambda e: e[1], reverse=True)
+    wash = (ranked[0][1] - ranked[1][1]) <= 0.02
+    winner = "wash" if wash else ranked[0][0]
+
+    parts = [f"{'Model gave this result' if name == 'model' else name} {_pct0(p)}"
+             for name, p in entries]
+    tail = "too close to call, a wash" if wash else f"{ranked[0][0]} closest"
+    return {"winner": winner, "text": f"{', '.join(parts)} — {tail}."}
+
+
+def _build_played_match(rec: dict) -> dict:
+    """Turn one scored ledger row into a render-ready match context. The
+    probability bars are the FROZEN pre-match forecast; the preview and
+    divergence caches persist on disk keyed by match_key."""
+    home, away = rec["home_team"], rec["away_team"]
+    home_d, away_d = disp(home), disp(away)
+    key = rec["match_key"]
+
+    # neutral_used arrives as bool, "True"/"False" string, or NaN (legacy)
+    neutral_used = str(rec.get("neutral_used")).lower() != "false"
+    venue_label = "neutral venue" if neutral_used else f"home venue — {home_d}"
+
+    hg, ag = rec.get("actual_home_score"), rec.get("actual_away_score")
+    score = f"{int(hg)}–{int(ag)}" if pd.notna(hg) and pd.notna(ag) else None
+
+    sources = [_source("Model", rec["p_home"], rec["p_draw"], rec["p_away"],
+                       home_d, away_d, sub="bias-corrected")]
+    if pd.notna(rec.get("p_home_book")):
+        sources.append(_source("Sportsbook",
+                               rec["p_home_book"], rec["p_draw_book"],
+                               rec["p_away_book"], home_d, away_d,
+                               sub="vig stripped"))
+    else:
+        sources.append(_absent("Sportsbook", "No consensus market was posted pre-match."))
+    if pd.notna(rec.get("p_home_poly")):
+        sources.append(_source("Polymarket",
+                               rec["p_home_poly"], rec["p_draw_poly"],
+                               rec["p_away_poly"], home_d, away_d))
+    else:
+        sources.append(_absent("Polymarket", "No per-match market was posted pre-match."))
+
+    # _load_divergence/_headline_gap expect triple_compare column names; the
+    # frozen ledger values are exactly the corrected-model + book probs.
+    aliased = {
+        "p_home_model_corr": rec["p_home"],
+        "p_draw_model_corr": rec["p_draw"],
+        "p_away_model_corr": rec["p_away"],
+        "p_home_book": rec.get("p_home_book"),
+        "p_draw_book": rec.get("p_draw_book"),
+        "p_away_book": rec.get("p_away_book"),
+    }
+
+    return {
+        "key":          key,
+        "played":       True,
+        "score":        score,
+        "verdict":      _verdict(rec),
+        "home_display": home_d,
+        "away_display": away_d,
+        "group":        TEAM_GROUP.get(home, "?"),
+        "date_iso":     rec["date"],
+        "date_human":   _date_human(rec["date"]),
+        "venue_label":  venue_label,
+        "sources":      sources,
+        "divergence":   _load_divergence(key, aliased, home_d, away_d),
+        "preview_paras": _load_preview(key),
+    }
+
+
+def _load_played() -> dict[str, dict]:
+    """Scored ledger rows keyed by match_key. A fixture is played iff its
+    ledger row has a result attached — never inferred from dates or from
+    triple_compare (which drops played fixtures)."""
+    if not WC_PREDS_PATH.exists():
+        return {}
+    ledger = pd.read_csv(WC_PREDS_PATH)
+    if "outcome" not in ledger.columns:
+        return {}
+    return {
+        rec["match_key"]: rec
+        for rec in ledger.to_dict("records")
+        if rec.get("outcome") in _OUTCOME_SLOT
     }
 
 
@@ -345,13 +458,24 @@ def _by_date(matches: list[dict]) -> list[dict]:
 
 
 def _load_matches() -> list[dict]:
-    """All fixtures from triple_compare.csv, in fixture (date) order."""
+    """All 72 fixtures: unplayed from triple_compare.csv (live forecast),
+    played from the frozen ledger (clean_data moves scored fixtures out of
+    the live pipeline, so triple_compare no longer carries them). If a key
+    somehow appears in both, the played/ledger version wins."""
     if not TRIPLE_PATH.exists():
         raise FileNotFoundError(
             f"{TRIPLE_PATH} not found. Run `python src/triple_compare.py` first."
         )
+    played = _load_played()
     df = pd.read_csv(TRIPLE_PATH)
-    return [_build_match(row) for _, row in df.iterrows()]
+    matches = [
+        _build_match(row)
+        for _, row in df.iterrows()
+        if match_key(row["date"], row["home_team"], row["away_team"]) not in played
+    ]
+    matches += [_build_played_match(rec) for rec in played.values()]
+    matches.sort(key=lambda m: (m["date_iso"], m["key"]))
+    return matches
 
 
 # ----------------------------------------------------------------------
@@ -501,6 +625,22 @@ def build_site() -> None:
         d["div_type_label"] = DIV_LABELS.get(d["divergence_type"], d["divergence_type"])
         d["magnitude_fmt"] = f"{round(d['magnitude'] * 100)}pp"
 
+    # --- played-match scoreboard + schedule buckets (Session 36) ----------
+    played_matches = [m for m in matches if m["played"]]
+    unplayed_matches = [m for m in matches if not m["played"]]
+
+    verdict_counts = {"model": 0, "books": 0, "Polymarket": 0, "wash": 0}
+    for m in played_matches:
+        if m["verdict"]:
+            verdict_counts[m["verdict"]["winner"]] += 1
+    n_verdicts = sum(verdict_counts.values())
+    scoreboard = {"n": n_verdicts, **verdict_counts} if n_verdicts else None
+
+    today_iso = clock.today().isoformat()
+    today_fixtures = [m for m in unplayed_matches if m["date_iso"] <= today_iso]
+    upcoming_days = _by_date([m for m in unplayed_matches if m["date_iso"] > today_iso])
+    results_days = _by_date(played_matches)
+
     env = _build_env()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -515,6 +655,7 @@ def build_site() -> None:
         title_movers=title_movers,
         advance_movers=advance_movers,
         fresh_divergences=fresh_divs,
+        scoreboard=scoreboard,
         fixture_groups=_group_fixtures(matches),
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
         page_title="World Cup 2026 Forecast — model vs market predictions",
@@ -594,7 +735,10 @@ def build_site() -> None:
     # --- schedule page (top-level: root="") ---
     _render_page(
         env, "schedule.html", OUTPUT_DIR / "schedule.html",
-        schedule_days=_by_date(matches),
+        today_fixtures=today_fixtures,
+        today_human=_date_human(today_iso),
+        upcoming_days=upcoming_days,
+        results_days=results_days,
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
         page_title="Schedule — World Cup 2026 match dates and predictions",
         meta_description=(

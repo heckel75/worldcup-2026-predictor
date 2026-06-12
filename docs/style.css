@@ -683,3 +683,34 @@ h1 {
 .method-limits li { margin-bottom: 1rem; max-width: 70ch; }
 .method-sources li { margin-bottom: 0.6rem; max-width: 70ch; }
 .method-sources a { color: var(--accent); }
+/* --- played matches (Session 36) -------------------------------------- *
+ * Result pages render the FROZEN pre-match forecast from the ledger plus *
+ * the final score, a per-match verdict line, and an index scoreboard.    */
+
+.match-title .mt-score {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
+}
+
+.verdict {
+  margin: 1.1rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.scoreboard-line {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem;
+}
+
+.scoreboard-note {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.schedule-section { margin-top: 2rem; }

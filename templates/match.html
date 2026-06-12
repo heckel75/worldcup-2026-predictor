@@ -4,17 +4,17 @@
 <p class="crumb"><a href="{{ root }}index.html">← Tournament forecast</a></p>
 
 <header class="match-head">
-  <p class="match-meta">Group {{ m.group }} · {{ m.date_human }} · {{ m.venue_label }}</p>
+  <p class="match-meta">Group {{ m.group }} · {{ m.date_human }} · {{ m.venue_label }}{% if m.played %} · Full time{% endif %}</p>
   <h1 class="match-title">
     <span class="mt-home">{{ m.home_display }}</span>
-    <span class="mt-v">v</span>
+    {% if m.played and m.score %}<span class="mt-score">{{ m.score }}</span>{% else %}<span class="mt-v">v</span>{% endif %}
     <span class="mt-away">{{ m.away_display }}</span>
   </h1>
 </header>
 
 <section class="compare">
   <div class="compare-head">
-    <h2 class="section-label">Three views of the match</h2>
+    <h2 class="section-label">{% if m.played %}Pre-match forecast — frozen before kickoff{% else %}Three views of the match{% endif %}</h2>
     <ul class="legend">
       <li><span class="sw sw-home"></span>{{ m.home_display }}</li>
       <li><span class="sw sw-draw"></span>Draw</li>
@@ -40,11 +40,14 @@
     {% endif %}
   </div>
   {% endfor %}
+  {%- if m.played and m.verdict %}
+  <p class="verdict">{{ m.verdict.text }}</p>
+  {%- endif %}
 </section>
 
 {% if m.divergence %}
 <aside class="divergence divergence--{{ m.divergence.tone }}">
-  <p class="divergence-tag">{{ m.divergence.label }}</p>
+  <p class="divergence-tag">{{ m.divergence.label }}{% if m.played %} · written pre-match{% endif %}</p>
   {% if m.divergence.headline %}
   <p class="divergence-headline">{{ m.divergence.headline }}</p>
   {% endif %}
@@ -53,12 +56,12 @@
 {% endif %}
 
 <section class="preview">
-  <h2 class="section-label">Preview</h2>
+  <h2 class="section-label">{% if m.played %}Pre-match preview{% else %}Preview{% endif %}</h2>
   {% for para in m.preview_paras %}
   <p>{{ para }}</p>
   {% endfor %}
   <p class="preview-credit">
-    Written by Claude from the figures above — it has no squad, injury, or form
+    Written by Claude {% if m.played %}before the match {% endif %}from the figures above — it has no squad, injury, or form
     data. See the <a href="{{ root }}about.html">methodology</a>.
   </p>
 </section>

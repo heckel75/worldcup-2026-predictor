@@ -66,6 +66,22 @@
   {% endif %}
 </section>
 
+{# ---- Who's been closer (Session 36) ------------------------------- #}
+{% if scoreboard %}
+<section class="changes scoreboard">
+  <p class="section-label">Who's been closer</p>
+  <p class="scoreboard-line">
+    After {{ scoreboard.n }} match{{ "es" if scoreboard.n != 1 else "" }}:
+    model {{ scoreboard.model }} · books {{ scoreboard.books }} ·
+    Polymarket {{ scoreboard.Polymarket }} · wash {{ scoreboard.wash }}
+  </p>
+  <p class="scoreboard-note">
+    Per match, the source whose frozen pre-match probability on the actual
+    result was highest. See each played match's page for the verdict.
+  </p>
+</section>
+{% endif %}
+
 {# ---- Survival grid ------------------------------------------------ #}
 <div class="tree-wrap">
   <table class="tree">
@@ -108,7 +124,7 @@
         {% for f in g.fixtures %}
         <li class="fixtures-item">
           <span class="fixtures-date">{{ f.date_human }}</span>
-          <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} vs {{ f.away_display }}</a>
+          <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} {{ f.score if f.played and f.score else "vs" }} {{ f.away_display }}</a>
         </li>
         {% endfor %}
       </ul>
