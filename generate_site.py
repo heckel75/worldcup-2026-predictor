@@ -44,6 +44,9 @@ DIVERGENCES_DIR = Path("data/processed/divergences")
 OUTPUT_DIR = Path("docs")
 MATCHES_OUT = OUTPUT_DIR / "matches"
 WC_PREDS_PATH = Path("data/processed/wc_predictions.csv")
+# Scored ledger rows needed before the calibration page switches from the
+# backtest seed to live WC data — below this a reliability diagram is noise.
+MIN_LIVE_N = 24
 CUSTOM_DOMAIN = "worldcup.divergencelog.com"
 SITE_URL = f"https://{CUSTOM_DOMAIN}"
 
@@ -689,7 +692,8 @@ def build_site() -> None:
 
     # --- calibration page (top-level: root="") ---
     wc_df = calibration.load_wc_predictions(str(WC_PREDS_PATH))
-    if wc_df is not None:
+    live_n = len(wc_df) if wc_df is not None else 0
+    if live_n >= MIN_LIVE_N:
         primary_sum = calibration.summarize(wc_df, "Live WC predictions")
         use_wc = True
     else:
@@ -707,6 +711,8 @@ def build_site() -> None:
         full=_fmt_cal(full_sum),
         svg=_cal_svg(primary_sum),
         use_wc=use_wc,
+        live_n=live_n,
+        min_live_n=MIN_LIVE_N,
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
         page_title="Calibration — how accurate is the World Cup 2026 model?",
         meta_description=(

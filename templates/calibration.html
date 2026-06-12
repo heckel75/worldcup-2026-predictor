@@ -106,9 +106,9 @@
      fill in as results come in.</p>
   {% else %}
   <p>These figures come from a backtest on Euro 2024 and Copa América 2024 —
-     matches the model never saw during training. The tournament has not yet begun,
-     so there are no live WC results to track. This page will switch to live WC data
-     once the tournament starts and results are recorded.</p>
+     matches the model never saw during training. This page switches to live
+     World Cup data once enough results have accumulated for the reliability
+     diagram to be meaningful ({{ live_n }} of {{ min_live_n }} so far).</p>
   {% endif %}
   <p>Known limitations: on Euro-like fields with clustered Elo ratings (the closest
      analog to World Cup group play) the model hits roughly 49% match accuracy and
