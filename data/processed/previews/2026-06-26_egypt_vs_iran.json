@@ -3,9 +3,9 @@
   "home_team": "Egypt",
   "away_team": "Iran",
   "date": "2026-06-26",
-  "input_hash": "716bae8e3417ede79414e01f980772730be5381f",
-  "generated_at": "2026-06-12T06:31:07+00:00",
+  "input_hash": "4baf48f02f1961760934919d9b3b58d13caf0871",
+  "generated_at": "2026-06-13T08:18:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Iran at 49%, with Egypt's win probability at 22%. The underdog assignment reflects a material gap: Iran's chance exceeds Egypt's by roughly 27 percentage points. A draw is the second-most likely outcome in the model's distribution at 30%.\n\nThe 49–22 split suggests Iran is expected to control the match's character, but the 30% draw probability indicates the result remains genuinely competitive. A one-goal margin appears more likely than a decisive outcome; neither side is forecast to dominate decisively on a neutral ground.\n\nThe model and market diverge sharply. Sportsbooks and Polymarket both price Egypt's win near 42%, roughly 20 points higher than the model, while rating Iran at 27–28%, roughly 21 points lower. The draw estimates align closely across all three sources. This dashboard does not determine which assessment is correct; the divergence merits scrutiny of both the statistical model's inputs and the market's information set."
+  "preview_text": "The model favours Iran at 49%, with Egypt positioned as the underdog at 22%. This represents a substantial gap: Iran's assessed winning chance is more than twice Egypt's, reflecting a meaningful quality differential in the statistical forecast.\n\nThe win-draw-loss spread suggests a competitive but asymmetric match. A draw sits at 30% and remains plausible, but Iran's advantage is clear enough that draws are not the likeliest outcome. The 27 percentage-point gap between Iran's win probability and Egypt's underscores that the model expects Iran to control most scenarios, though Egypt retains genuine chances to upset.\n\nModel and market diverge markedly on this fixture. The market consensus prices Egypt's chances at 42% and Iran's at 27%—a near-reversal of the model's view. Polymarket prices align closely with sportsbooks. The dashboard makes no claim about which source better captures the true probabilities; the divergence is substantial enough to flag for users monitoring this match."
 }

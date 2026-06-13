@@ -3,9 +3,9 @@
   "home_team": "Croatia",
   "away_team": "Ghana",
   "date": "2026-06-27",
-  "input_hash": "e95a3aab5b592f947385f89df0cc72480c09a5fa",
-  "generated_at": "2026-06-12T06:31:33+00:00",
+  "input_hash": "c64bf6a7be95d32c6bd527c5d060aa899c5690c3",
+  "generated_at": "2026-06-13T08:19:16+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assesses Croatia as a heavy favorite with a 79% win probability, compared to Ghana's modest 3% chance. This 76 percentage point gap reflects a sharp imbalance in the forecast. The underdog's path to victory is narrow under the statistical model's estimates.\n\nThe outcome distribution reveals a contest tilted decisively toward one side. A Croatian victory is the dominant scenario by a wide margin. A draw registers as plausible at 18%, offering Ghana a secondary route to avoid defeat, though the probability of a Ghana win remains marginal. The match is not expected to be closely competitive on the model's view.\n\nThe model and market diverge materially here. Sportsbooks assign Croatia 57.5% and Ghana 17.3%, placing the underdog odds more than 14 percentage points higher than the model estimates and draw probability 7 points lower. Polymarket prices fall between these two, closer to the sportsbook consensus. The dashboard does not adjudicate which source better captures the true likelihood, only that a meaningful gap exists."
+  "preview_text": "The model favors Croatia heavily, assigning them a 79% win probability against Ghana's 3%. This represents a decisive tilting of the odds in Croatia's direction, leaving the underdog with minimal rated chance of victory.\n\nThe model's spread suggests a match likely to be decided in regular time, with draw probability at 18%. The gap between the favorite and underdog is substantial rather than competitive, indicating the model sees a clear hierarchy between the teams on the available statistical inputs.\n\nThe model and sportsbook consensus diverge meaningfully on Ghana's chances. Books average Ghana at 17%, some 14 percentage points above the model's 3% assessment. Both sources agree Croatia is favored, but the market prices Ghana's upset probability far higher and compresses Croatia's win odds to 57%. Polymarket pricing aligns more closely with the sportsbook consensus than with the model. The dashboard does not adjudicate which estimate of Ghana's true win probability is correct."
 }

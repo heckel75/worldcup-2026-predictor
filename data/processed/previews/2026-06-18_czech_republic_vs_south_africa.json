@@ -3,9 +3,9 @@
   "home_team": "Czech Republic",
   "away_team": "South Africa",
   "date": "2026-06-18",
-  "input_hash": "184ba7758d2a0e9d2efcd487ae902cc5af190cb3",
-  "generated_at": "2026-06-12T06:29:49+00:00",
+  "input_hash": "bf03cf84e6ef8ce1c96468295d30b8e1dc743e38",
+  "generated_at": "2026-06-13T08:17:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Czech Republic at 54%, with South Africa offered a 17% chance of victory. The draw sits at 29%, reflecting meaningful uncertainty in a fixture the model rates as competitive but tilted toward the favourite.\n\nThe spread between the top two outcomes spans roughly 25 percentage points, indicating a clear favourite but one without commanding control of the match. A draw remains plausible at nearly three-in-ten, suggesting the teams are close enough in underlying strength that a stalemate carries real probability. The match is unlikely to be a rout; South Africa's 17% win chance implies it enters as a credible underdog rather than an afterthought.\n\nThe sportsbook consensus and Polymarket both lean slightly more bullish on Czech Republic than the model—by 3–4 percentage points—while compressing the draw marginally. These gaps fall within typical variance across betting sources and remain small enough to indicate broad alignment. No meaningful divergence between model and market warrant flagging here."
+  "preview_text": "The model favours Czech Republic to win at 54%, with South Africa's win probability standing at 17%. The Czech side holds a decisive edge in the forecast, though the underdog retains meaningful chances.\n\nThe draw probability of 29% suggests a competitive match where a stalemate result is plausible. The gap between Czech Republic and South Africa win chances is substantial, yet the relatively high draw share indicates neither team is expected to dominate decisively. A 1–0 or 2–1 result in either direction fits the distribution.\n\nModel and sportsbook consensus are tightly aligned. The model's Czech Republic win probability is 1 percentage point below the market consensus of 54%, while the model assigns draws 4 percentage points higher than the stripped sportsbook odds of 25%. Polymarket prices sit between these two estimates. The sources converge on Czech Republic as the clear favourite, with no material divergence requiring explanation."
 }

@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Senegal",
   "date": "2026-06-16",
-  "input_hash": "9a95566dfec68e52daba882f11fda83c6e68bed8",
-  "generated_at": "2026-06-12T06:29:34+00:00",
+  "input_hash": "41c24d93bbf3a1953d6b5c9332eb167e7378882b",
+  "generated_at": "2026-06-13T08:16:47+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates France as a substantial favorite at 65%, leaving Senegal with a 10% chance of victory. The gap between the two is wide, signaling a clear hierarchical expectation in this fixture on a neutral ground.\n\nThe 25% draw probability suggests meaningful competitive balance despite France's edge. That outcome sits meaningfully above a coin flip, indicating the match could plausibly settle level. The win-loss split reveals France favored decisively, yet Senegal retains enough probability mass to represent a genuine underdog threat rather than a ceremonial opponent.\n\nModel and sportsbooks show tight alignment. France win sits at 65% across both; the draw diverges by roughly 3 percentage points, with the model slightly more bullish on a stalemate. Senegal's win probability splits the difference, the model at 10% and the books at 13%. These gaps fall within normal variance and suggest consensus on the match structure."
+  "preview_text": "The model favors France at 65%, with Senegal positioned as a substantial underdog at roughly 10%. The gap of 55 percentage points reflects a clear hierarchy in the forecast, though Senegal carries a non-negligible chance of an upset.\n\nThe 25% draw probability suggests the match is not expected to be a blowout. France's two-to-one edge in win probability over a draw indicates competitive play where a single-goal margin or a stalemate both remain plausible outcomes. The narrow gap between France's win and draw chances indicates this is a moderately open contest rather than a heavily lopsided affair.\n\nThe model and sportsbook consensus are tightly aligned across all three outcomes, with differences of 1 percentage point or less on France and the draw. Polymarket prices show similarly tight clustering. This near-unanimous agreement across statistical and market sources suggests high confidence in the fundamental shape of the match, though the dashboard makes no claim about which source's absolute probability levels are correct."
 }

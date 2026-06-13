@@ -3,9 +3,9 @@
   "home_team": "Senegal",
   "away_team": "Iraq",
   "date": "2026-06-26",
-  "input_hash": "5fe258c100ec03a830cc2ce342a195a18ea8eea5",
-  "generated_at": "2026-06-11T18:51:50+00:00",
+  "input_hash": "c37b16744b19fab98b0aa390f3bf5c716b4ed28e",
+  "generated_at": "2026-06-13T08:19:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Senegal as favorite with a 60% win probability, giving Iraq just over one chance in eight to prevail. The gap between the two outcomes is substantial enough to establish a clear hierarchy, though not so wide as to render the underdog's path implausible.\n\nThe draw emerges as a meaningful outcome at 27%, nearly matching Iraq's win probability. This suggests the match will likely be competitive rather than one-sided, with a realistic scenario in which neither side breaks through. The spread across outcomes—60–27–13—indicates genuine uncertainty in the middle ground but confidence in Senegal's edge.\n\nThe market consensus shifts the favorite higher, to 66%, while compressing the draw to 21%. That represents a gap of roughly 5–6 percentage points on Senegal's win line, with the market more bullish on a decisive result overall. Polymarket prices push further toward the favorite at 69%. The dashboard does not adjudicate between these sources; users can note the divergence and weigh the model's caution against the market's firmer conviction."
+  "preview_text": "The model favors Senegal at 60%, with Iraq given a 13% chance of victory. The gap reflects a substantial difference in estimated strength, though the underdog retains meaningful probability of a result.\n\nThe draw carries 27% probability in the model's forecast, the largest single outcome in the trio. This suggests the match could prove competitive enough to deadlock, rather than a one-sided affair. The win probabilities are separated by roughly 48 percentage points, indicating clear stratification without an overwhelmingly dominant favorite.\n\nThe sportsbook consensus sits notably higher on Senegal, at 67%, a gap of 6 percentage points above the model. Polymarket prices align more closely with books, placing Senegal at 69%. Both market sources compress the draw probability to around 21%, well below the model's 27%. The divergence suggests books assign less probability to a stalemate outcome. The dashboard makes no claim about which estimate is correct; both remain plausible given forecast uncertainty."
 }

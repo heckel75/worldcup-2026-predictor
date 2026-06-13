@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Austria",
   "date": "2026-06-22",
-  "input_hash": "99d841703f4e6dea9819ede142f5359b6d35dcc0",
-  "generated_at": "2026-06-12T06:30:20+00:00",
+  "input_hash": "8b1dac96a03cd7f4f09d53da7c655b4fff4b447c",
+  "generated_at": "2026-06-13T08:17:55+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina at 76%, a commanding edge over Austria's 4% win probability. This 72-percentage-point gap reflects a heavily lopsided forecast. Austria carries minimal theoretical chance of victory according to the statistical approach.\n\nThe model's spread reveals a steep asymmetry: Argentina's three-quarter probability contrasts sharply with Austria's near-zero winning chance, while the draw sits at 20%. This configuration suggests Argentina enters as strong favorite, though the 20% draw likelihood indicates the match retains meaningful uncertainty rather than appearing a fait accompli.\n\nThe model and sportsbooks diverge substantially. Books strip to 58% Argentina, 25% draw, 18% Austria—more than 18 percentage points lower for Argentina than the model. Polymarket prices align closer to the books. The dashboard presents the model's probabilistic view without asserting which source better predicts the outcome; bettors and analysts should weigh the divergence themselves."
+  "preview_text": "The model favors Argentina heavily, assigning a 76% win probability against Austria's 4%. This gap reflects a substantial imbalance in the forecast, positioning Argentina as a clear favorite in the matchup on neutral ground.\n\nThe model's spread shows Argentina's advantage is considerable, yet a draw is far from implausible at 20%. The projection suggests a match likely to be decided, but not one where Austria lacks any realistic path to avoid defeat. Austria's 4% win chance represents a slim but non-zero scenario within the model's framework.\n\nThe model and sportsbook consensus diverge meaningfully. Books strip to 58% for Argentina and 17% for Austria, a gap of roughly 18 percentage points on the underdog relative to the model. Polymarket prices fall between these views, at 61% and 16%. The dashboard does not adjudicate which source better reflects true match probability, only that material disagreement exists across the three pricing mechanisms."
 }

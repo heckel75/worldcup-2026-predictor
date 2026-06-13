@@ -3,9 +3,9 @@
   "home_team": "Tunisia",
   "away_team": "Japan",
   "date": "2026-06-20",
-  "input_hash": "4a6c4eac1c9ffb59697ddb414dd773e41944f759",
-  "generated_at": "2026-06-11T06:52:03+00:00",
+  "input_hash": "6dc5b7817e17af7963a2290d6b6cd5c2d80f8e9d",
+  "generated_at": "2026-06-13T08:17:35+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Japan to win at 71%, with Tunisia assigned only an 8% chance of victory. Japan enters as a clear favorite, though the market assigns the underdog nearly twice that probability.\n\nThe model sees this as a competitive but asymmetric contest. A draw at 21% is the second-most likely outcome, suggesting reasonable defensive structure from Tunisia despite the overall gap in win probability. The 63-percentage-point spread between Japan's win chance and Tunisia's reflects a substantial but not overwhelming model edge.\n\nThe model and sportsbooks diverge notably here. The market consensus—drawn from 43 books—assigns Tunisia 18%, nearly 10 points above the model's 8%, and reduces Japan's win probability to 55%, a gap of 16 points. Polymarket prices align more closely with the model on draw likelihood (26%) but also lean toward Tunisia relative to the model's assessment. The dashboard does not adjudicate between these sources; the gap reflects genuine disagreement on the likely outcome."
+  "preview_text": "The model backs Japan as a clear favorite with a 71% win probability, while Tunisia's chances are assessed at 8%. This reflects a substantial gap between the two sides in the statistical forecast.\n\nThe draw carries meaningful probability at 21%, suggesting that while Japan enters as the likely winner, the match is not expected to be entirely one-sided. The model's spread—with Japan's win probability more than nine times Tunisia's—indicates a competitive imbalance rather than a mismatch, leaving room for Tunisia to frustrate or surprise on the day.\n\nThe market diverges notably from the model. Sportsbooks place Japan at 56%, some 15 percentage points lower than the model, and credit Tunisia with 18%—more than double the statistical forecast. Polymarket prices align more closely with the model on Japan (58%) but similarly elevate Tunisia to 16%. The dashboard does not determine which assessment is correct; the gap merits attention from those formulating their own views."
 }

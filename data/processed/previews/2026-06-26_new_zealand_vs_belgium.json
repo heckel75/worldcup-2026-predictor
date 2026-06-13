@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Belgium",
   "date": "2026-06-26",
-  "input_hash": "56a843feba8ebad2caad5bd3a5fed302b66afa2f",
-  "generated_at": "2026-06-12T06:31:11+00:00",
+  "input_hash": "e2ac5c6a4b90ec4968c2165eddb5d452551418e0",
+  "generated_at": "2026-06-13T08:18:54+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Belgium at 65%, with New Zealand given an 11% chance of victory. The underdog's modest win probability reflects a substantial gap in the forecast, though a quarter of outcomes are estimated as draws, which narrows the effective two-way contest somewhat.\n\nThe win-draw-loss spread shows Belgium as clear favorite, but the 24% draw probability indicates the match is not expected to be a rout. New Zealand's 11% win chance suggests competitive resistance is plausible; outcomes cluster around a Belgium victory or stalemate rather than a wide variance in feasible results.\n\nThe model and sportsbook consensus are materially aligned on Belgium's strength, though the market prices Belgium slightly higher at 73% versus the model's 65%—a gap of roughly 8 percentage points. Both sources agree on New Zealand as underdog and on draw plausibility. Polymarket traders are slightly more bullish on Belgium still. No meaningful divergence suggests systematic disagreement about the match's character."
+  "preview_text": "The model rates Belgium as the heavy favorite, with a 65% win probability against a 11% chance for New Zealand. The underdog's path to victory remains narrow but not negligible; draws occur in roughly one match in four under this forecast.\n\nThe 24% draw probability indicates a moderately competitive match where Belgium's superiority does not overwhelm the possibility of a stalemate. The win gap of 54 percentage points reflects clear separation between the sides, yet neither team is modeled as certain to prevail by a decisive margin. A low-scoring or tightly contested finish sits within the forecast range.\n\nThe sportsbook consensus and Polymarket prices both lean more heavily toward Belgium than the model does, assigning the favorite 73% and 76% respectively. The market discounts both New Zealand's and draw outcomes relative to the model by roughly 2–3 percentage points each. The divergence is moderate and does not signal fundamental disagreement on direction, though the market shows greater conviction in Belgium's advantage."
 }

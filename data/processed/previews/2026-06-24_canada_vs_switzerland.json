@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "input_hash": "d01b6e53650924972be1f176d8a63461deb73b71",
-  "generated_at": "2026-06-12T06:30:40+00:00",
+  "input_hash": "5c0f90bdd139083d2240674d097524a46b7ac8e4",
+  "generated_at": "2026-06-13T08:18:16+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Canada at 41% to win, with Switzerland given a 28% chance. This represents a narrow favourite-to-underdog split rather than a dominant projection. The draw carries 31% implied probability, placing it as a plausible outcome in a closely matched contest.\n\nThe spread across outcomes reveals a competitive fixture. Canada's edge is modest—roughly 13 percentage points over Switzerland—and the draw sits close enough to each team's win probability that the match could resolve in any direction without surprising the model's baseline expectations. No outcome appears heavily favoured, consistent with a competitive group-stage encounter.\n\nThe model and market diverge meaningfully. The sportsbook consensus rates Switzerland 16 percentage points higher than the model does, while reducing Canada's win probability by 13 points and compressing the draw to 29%. Polymarket aligns closely with sportsbooks. The dashboard does not claim to know which assessment is more accurate; the discrepancy likely reflects differing assumptions about underlying team strength or external information unavailable to the model inputs."
+  "preview_text": "The model favors Canada with a 41% win probability, against Switzerland's 28%. The statistical forecast ranks Canada as the clearer favorite, though the underdog retains a meaningful chance to prevail at neutral venue conditions.\n\nThe 31% draw probability signals a competitive match. The gap between Canada's modeled win rate and Switzerland's is substantial—roughly 13 percentage points—but the elevated draw odds suggest the teams are not drastically apart in strength. A one-goal outcome leans toward the model's assessment, though a stalemate remains plausible.\n\nModel and sportsbook consensus diverge sharply. The market backs Switzerland to win at 45%, a gap of 17 percentage points above the model's 28% estimate. Polymarket prices align closely with the book consensus, placing Switzerland slightly higher still. The dashboard does not adjudicate between these sources; the divergence reflects genuine disagreement on relative team strength."
 }

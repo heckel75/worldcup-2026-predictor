@@ -3,9 +3,9 @@
   "home_team": "South Africa",
   "away_team": "South Korea",
   "date": "2026-06-24",
-  "input_hash": "277ffea9bfec245ac69a5fa11103d64d373c6164",
-  "generated_at": "2026-06-12T06:30:36+00:00",
+  "input_hash": "caa983e26c104d69fce4a73e3de8fce9c25441d7",
+  "generated_at": "2026-06-13T08:18:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea with a 62% win probability, leaving South Africa with a 13% chance. The underdog carries meaningful but limited upside in this matchup at a neutral venue.\n\nA draw is forecast at 25%, suggesting the match will be genuinely competitive despite the gap between the favorites' likelihoods. The 50-percentage-point margin between South Korea's win probability and South Africa's win probability indicates South Korea enters as a clear favorite, yet the elevated draw probability signals that a single goal either way could determine the outcome. The spread reflects a moderately imbalanced contest rather than a dominant performance from one side.\n\nThe model and sportsbook consensus are tightly aligned. South Korea's edge sits within 4 percentage points across the three sources, while draws and South Africa's chances cluster in narrow bands. This convergence suggests broad agreement on match structure. The dashboard does not adjudicate between model and market estimates—both suggest a likely Korean advantage with a meaningful draw risk."
+  "preview_text": "The model favors South Korea at 62%, with South Africa a clear underdog at 13%. The gap of roughly 49 percentage points reflects a substantial difference in forecast strength between the two sides.\n\nThe draw probability of 25% indicates a meaningful likelihood of stalemate. The win-loss spread is wide enough that South Korea enters as a strong favorite, though the model does not rule out an upset; South Africa's path to victory remains open at better than 1-in-8 odds, while draws account for one quarter of possible outcomes. The match is expected to lean decisively toward one outcome rather than remain closely competitive.\n\nThe model and sportsbook consensus are broadly aligned across all three outcomes. South Korea's win probability differs by 3 percentage points, the draw by 1 point, and South Africa's by 4 points—all within typical variance between forecasting methods. Polymarket pricing sits slightly closer to the model on South Korea (62% vs 62%) while offering marginally lower draw odds. No material divergence suggests conflicting views of the match's fundamentals."
 }

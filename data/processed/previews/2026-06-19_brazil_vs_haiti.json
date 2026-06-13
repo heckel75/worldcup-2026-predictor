@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Haiti",
   "date": "2026-06-19",
-  "input_hash": "1db4d1224366a55c069c2a520b75c783dc195c62",
-  "generated_at": "2026-06-11T18:49:46+00:00",
+  "input_hash": "6cf27f66529b7b9ae605b703e5593c41024ecbd8",
+  "generated_at": "2026-06-13T08:17:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The statistical model favors Brazil at 76%, leaving Haiti with a 4% chance of victory. The gap reflects a considerable disparity in the model's assessment, though it does not eliminate the possibility of an upset or stalemate.\n\nThe spread suggests Brazil are the clear favorites, yet the 20% draw probability indicates meaningful competitive space. A draw remains plausible enough that the match is not a foregone conclusion; Brazil's near three-in-four win rate reflects dominance rather than certainty.\n\nThe market consensus diverges noticeably from the model. Sportsbooks place Brazil at 89%, about 12 percentage points higher than the model, while marking draws at just 8%—less than half the model's assessment. Polymarket prices align more closely with the books than with the model. The dashboard does not adjudicate which estimate is more accurate; the gap warrants awareness that these sources weight match dynamics differently."
+  "preview_text": "The model favors Brazil at 76%, with Haiti offered only a 4% chance of victory. The gap between the two sides is substantial, reflecting a clear hierarchical difference in expected performance. Haiti's win probability represents a minor tail outcome in this matchup.\n\nThe 20% draw probability signals a plausible alternative outcome—Brazil is favored but not overwhelmingly so in any single scenario. The win-draw-loss spread shows moderate separation rather than a blowout forecast, suggesting competitive play is possible even if Brazil is the probable winner.\n\nThe market consensus deviates meaningfully from the model. Sportsbooks assign Brazil 89% and Haiti 3%, an 13 percentage point gap above the model's 76%. Polymarket pricing is even more extreme, pushing Brazil to 91%. The dashboard does not claim to know which source is correct; the divergence likely reflects different underlying assumptions about team strength or match conditions that the numerical inputs alone do not reveal."
 }

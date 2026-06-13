@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Morocco",
   "date": "2026-06-13",
-  "input_hash": "f560ab913166f1c0f1b47a01acfaf94f5244f193",
-  "generated_at": "2026-06-12T06:29:02+00:00",
+  "input_hash": "5501fb723694c0c048bb11d166788d450c7ae571",
+  "generated_at": "2026-06-13T08:16:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Brazil at 38.5% win probability, but the advantage is modest. Morocco's chance stands at 30%, leaving both teams well within competitive range and suggesting no clear favourite on the statistical evidence alone.\n\nThe spread across outcomes reveals a tightly bunched match. The draw sits at 31.5%, nearly as high as Brazil's win probability, indicating the model expects a competitive encounter where a stalemate remains highly plausible. The three outcomes are relatively evenly distributed, pointing to genuine tactical and result uncertainty.\n\nThe market presents a starkly different picture. Sportsbooks price Brazil at 58.2% and Morocco at just 16.9%—a gap of roughly 20 percentage points wider than the model's assessment. Polymarket betting reflects similar conviction behind Brazil. The dashboard does not claim to know which assessment is correct; the divergence is substantial enough to flag a meaningful disagreement between the statistical model and betting consensus."
+  "preview_text": "The model rates Brazil as favorite with a 38% win probability, but the margin over Morocco is modest—only 8 percentage points separate the two teams. Morocco's 30% chance reflects a competitive underdog position rather than a long shot. The gap between the favored and second-placed outcome is narrower than many tournament matchups.\n\nThe draw emerges as the second-most-likely single outcome at 32%, suggesting the fixture may be closely contested and potentially tactical. The spread across win/draw/loss is relatively flat: no outcome commands a dominant share. This pattern indicates a match unlikely to be decided by large margins, with genuine uncertainty about the final result.\n\nThe market consensus diverges meaningfully from the model. Sportsbooks and Polymarket both assign Brazil roughly 57% win probability—nearly 19 percentage points higher than the model's 38%. Correspondingly, both sources price Morocco around 17–18%, roughly half the model's 30%. The draw sits slightly lower in market pricing at 25–26% versus the model's 32%. The dashboard does not adjudicate which assessment is more accurate."
 }

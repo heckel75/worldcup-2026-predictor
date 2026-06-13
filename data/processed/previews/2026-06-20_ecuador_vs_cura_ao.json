@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Curaçao",
   "date": "2026-06-20",
-  "input_hash": "0a99eea7942b7bfea2abcdae39bc65efc974ba52",
-  "generated_at": "2026-06-11T18:49:59+00:00",
+  "input_hash": "b9a990c5a98cef912bbcee96eff1f0a78392bddf",
+  "generated_at": "2026-06-13T08:17:31+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Ecuador with an 82.6% win probability, leaving Curaçao a slim 1.1% chance of victory. This represents a decisive gap between the two sides in the statistical forecast.\n\nThe spread reflects a match heavily tilted toward an Ecuador victory, though the 16.3% draw probability suggests some realistic path to a stalemate. The model assigns minimal likelihood to a Curaçao win, indicating the match is expected to be competitive only in whether Ecuador controls the result or allows a draw; an upset appears highly improbable under this view.\n\nThe model and sportsbook consensus diverge modestly on the outcome probabilities. Sportsbooks grant Ecuador 79.0% and Curaçao 7.0%, meaning they are notably more bullish on an underdog result than the model's 1.1% figure. Polymarket prices align more closely with the model on Ecuador (79.9%) but also lean toward a higher Curaçao probability (6.7%) than the statistical forecast. These differences suggest market participants assign more tail risk to an upset than the model does."
+  "preview_text": "The model favours Ecuador to win at 82.5%, with Curaçao facing only a 1.2% chance of victory. Ecuador enters as a strong favourite, though the market and Polymarket consensus place the probability slightly lower at 79–81%, suggesting marginally more uncertainty than the statistical model assigns.\n\nA draw appears moderately plausible at 16.3% according to the model, making this a relatively competitive contest despite the wide gap in win probabilities. The narrow margin between Ecuador and a draw outcome indicates the match could produce a result in either direction for the favourite, rather than a runaway outcome. Curaçao's path to three points is remote by all estimates.\n\nThe model and sportsbook consensus show broad alignment across the two main outcomes, separated by roughly 3 percentage points on the Ecuador win line. Polymarket prices align closely with the book consensus, particularly on the underdog and draw. The slight divergence—with the model more confident in Ecuador—falls within typical variance between statistical and market assessments and does not signal a strong disconnect."
 }

@@ -3,9 +3,9 @@
   "home_team": "Qatar",
   "away_team": "Switzerland",
   "date": "2026-06-13",
-  "input_hash": "26ab00c4a47e7137cb6dd1c36aa68d19964176ac",
-  "generated_at": "2026-06-12T06:28:58+00:00",
+  "input_hash": "afd6ad6998b8105e2ce9c276bcc566c285a384b8",
+  "generated_at": "2026-06-13T08:16:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Switzerland with an 81% win probability, leaving Qatar just 3% to claim victory. That gap reflects a substantial asymmetry in expected quality. Qatar's draw chance stands at 16%, slightly above its win probability—a plausible outcome but not the likeliest scenario.\n\nThe spread across outcomes shows Switzerland as clear favorite but not dominant in the extreme. A draw occurs in roughly one of every six simulations, suggesting the match carries genuine competitive possibility rather than being a formality. Qatar's path to victory remains narrow, though not impossible at a neutral venue.\n\nThe model and sportsbooks are closely aligned. Switzerland's win probability differs by less than 3 percentage points between the two sources, and draws sit within 1 point. Polymarket prices track similarly, offering no material divergence. The consensus view across all three sources treats this as a decisive Swiss advantage with modest draw risk."
+  "preview_text": "The model backs Switzerland at 81%, a commanding margin over Qatar's 3% win probability. The gap reflects a substantial asymmetry in expected quality. Qatar's path to victory remains a low-probability outcome under the statistical framework.\n\nThe draw sits at 16%, making it a meaningful secondary outcome—roughly one in six matches. This suggests Switzerland is favored decisively but not overwhelmingly; Qatar is unlikely to win outright yet could frustrate its opponent. The win-loss spread widens as the dominant feature, though the draw probability indicates the match retains some competitive texture rather than appearing a forgone conclusion.\n\nThe model and sportsbooks are closely aligned. The market prices Switzerland slightly lower (79%) than the model (81%), a difference of 2 percentage points. Qatar's probability is modestly higher in the sportsbook consensus (7% vs 3%), and the draw is marginally lower (14% vs 16%). These gaps fall within typical variation; no material divergence emerges between the two sources."
 }

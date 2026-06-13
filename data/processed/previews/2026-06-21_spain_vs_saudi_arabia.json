@@ -3,9 +3,9 @@
   "home_team": "Spain",
   "away_team": "Saudi Arabia",
   "date": "2026-06-21",
-  "input_hash": "ca6375f6d8261acdfa7b94b2f4e91e4c41357074",
-  "generated_at": "2026-06-12T06:30:12+00:00",
+  "input_hash": "7dc2491b779d7e30f993ca1c8cc711d5de1e6cbf",
+  "generated_at": "2026-06-13T08:17:47+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Spain at 90% to win, with Saudi Arabia assigned essentially zero probability of victory. The underdog's realistic path is a draw at 10%, making this a heavily one-sided matchup in the statistical forecast.\n\nThe win-draw-loss spread reflects low competitive balance. A Spain victory is dominant; the draw lane remains open but narrow. Saudi Arabia has no meaningful winning scenario in the model's view, suggesting the match is expected to turn on Spain's execution rather than genuine two-way contest dynamics.\n\nThe model and market are closely aligned. Spain's win probability differs by under 4 percentage points between the two sources, and both assign draws in the 8–10% range. The sportsbook consensus assigns Saudi Arabia 4% win probability versus the model's near-zero, a gap that accounts for most of the divergence. The dashboard makes no claim about which view is correct; both reflect the expectation of Spanish dominance on neutral ground."
+  "preview_text": "The model forecasts Spain as a strong favourite with an 89.6% win probability, leaving Saudi Arabia with minimal chance of victory. The draw carries a modest 10.4% probability, establishing this as a heavily one-sided matchup in Spain's favour.\n\nThe win–draw–loss spread reflects a decisive outcome scenario. Spain's win probability towers over the draw, which itself comfortably exceeds the underdog's chances. A Saudi Arabia victory registers at effectively zero in the model's assessment, indicating the match is expected to be competitive only in the sense that a draw remains plausible; a Saudi Arabia win is not modelled as a realistic outcome.\n\nThe model and sportsbook consensus are closely aligned. Spain's win probability differs by 3.5 percentage points between the two sources, while draw probabilities sit within 0.6 points. The meaningful divergence lies in Saudi Arabia's win probability: the market assigns 4.1%, whereas the model rounds to 0.0%. This reflects a difference in how tail-risk scenarios are weighted. The dashboard does not claim to know which assessment is correct."
 }

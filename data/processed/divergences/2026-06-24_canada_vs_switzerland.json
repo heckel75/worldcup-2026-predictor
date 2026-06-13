@@ -5,10 +5,10 @@
   "date": "2026-06-24",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 16.2,
-  "input_hash": "f87a8fe680d517ec771d001ab17248f52ff63a97",
-  "generated_at": "2026-06-12T06:31:51+00:00",
+  "max_gap_pp": 16.6,
+  "input_hash": "464de18aa066d711692148b562f7f94e93a4163e",
+  "generated_at": "2026-06-13T08:19:42+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Canada at 41%, while the market favors Switzerland at 44%. The largest single gap appears on the Canada win outcome, where the model assigns 13 percentage points more probability than the sportsbooks. This divergence could reflect recent form disparities, lineup changes, or injury news that the model has not incorporated since its last update, whereas real-money markets may have priced in such developments. The dashboard surfaces this conflict as a signal worthy of scrutiny, not as evidence that either source has misread the match."
+  "commentary_text": "The model favors Canada at 41%, while the market favors Switzerland at 45%, a 17-percentage-point gap on the Switzerland win outcome. This reversal of favorites could reflect market information about recent form, injuries, or lineup changes unavailable to the model at its last update. Polymarket pricing aligns closely with sportsbook consensus, suggesting the market view is cohesive across venues. The dashboard surfaces this divergence as a signal for monitoring; neither source has privileged access to ground truth."
 }

@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Brazil",
   "date": "2026-06-24",
-  "input_hash": "79af9a893b669fc11b6402c728dad0e36c7cb2ed",
-  "generated_at": "2026-06-12T06:30:48+00:00",
+  "input_hash": "e739fd9f58840e605fdf923e1f31698bd5c0033d",
+  "generated_at": "2026-06-13T08:18:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Brazil at 64% to win, with Scotland assigned an 12% chance of victory. The draw outcome carries nearly a quarter probability, suggesting Scotland has modest hope of earning a result rather than outright upset.\n\nThe win-loss spread is wide. Brazil's 52-point edge over Scotland in win probability reflects a significant quality gap in the model's assessment. However, the substantial draw probability—higher than Scotland's win chance—indicates the match carries genuine competitive structure. A stalemate remains plausible, tempering any sense of inevitable Brazilian dominance.\n\nThe model and market are closely aligned. The sportsbook consensus places Brazil at 65%, just 1.6 percentage points above the model, while the draw sits 4 points lower in market pricing. Polymarket prices align similarly with the model. These minor divergences fall within typical consensus variance and suggest broad agreement on match structure."
+  "preview_text": "The model favors Brazil at 64% to win, with Scotland's win probability at 12%. That 52-percentage-point gap reflects a substantial asymmetry in the forecast, though the underdog remains viable over 90 minutes.\n\nThe W/D/L spread reveals a moderately competitive match. A draw sits at 25%, making it the second-most likely outcome and suggesting Scotland can frustrate Brazil for periods. The combined probability of a Scotland win or draw reaches 37%, indicating the match carries more competitive texture than the headline win probability alone might imply.\n\nModel and sportsbook consensus are closely aligned across all three outcomes, with gaps under 3 percentage points. Polymarket prices similarly cluster near the model's estimates. This convergence suggests broad agreement on the fundamental probabilities among statistical and betting approaches."
 }

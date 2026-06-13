@@ -3,9 +3,9 @@
   "home_team": "Iran",
   "away_team": "New Zealand",
   "date": "2026-06-15",
-  "input_hash": "bea67130304d64565ceefc999282463334a069ea",
-  "generated_at": "2026-06-11T18:48:55+00:00",
+  "input_hash": "4fb627e63743cb0ce3e5c91cf144790b23a8f44c",
+  "generated_at": "2026-06-13T08:16:35+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Iran as a clear favorite at 65%, substantially ahead of New Zealand's 10% win probability. This 55-percentage-point gap reflects a meaningful asymmetry in the forecast, with Iran favored to control the match outcome.\n\nThe draw probability of 25% indicates moderate competitive balance in a narrower sense—the markets judge a stalemate as plausible, yet Iran's win chance towers over both alternatives. The W/D/L spread is wide rather than clustered, suggesting the model expects Iran to emerge as the likely victor but acknowledges real uncertainty around whether that happens via regulation.\n\nThe model and sportsbook consensus diverge noticeably. The market compresses Iran's win probability to 52%, a gap of 13 percentage points, and substantially raises New Zealand to 21%—more than double the model's 10%. Polymarket prices align closely with sportsbook odds. The dashboard does not arbitrate between these readings; the divergence suggests bettors view the match as more competitive than the statistical model."
+  "preview_text": "The model rates Iran as a clear favorite with a 65% win probability, compared to New Zealand's 10% chance. This 55-percentage-point gap reflects a substantial disparity in the forecast. Iran enters as the heavy pick, though a New Zealand upset remains within the tails of the distribution.\n\nThe expected scoreline spread reveals a competitive match despite the favorite's edge. Draw probability sits at 25%, suggesting regular-time parity is a meaningful outcome. The 40-point gap between Iran's win chance and New Zealand's indicates Iran is favored but not overwhelming; the match shape leans toward decisive outcomes but with a sizable contingent of level results plausible.\n\nThe model and market diverge notably here. Sportsbooks assign Iran 52% and New Zealand 20%, compressing the model's 55-point favorite margin to roughly 32 points. The model sees Iran as significantly stronger; the market treats the tie tighter. Polymarket prices align closely with sportsbook consensus. The dashboard does not adjudicate which source better captures the true competitive balance."
 }

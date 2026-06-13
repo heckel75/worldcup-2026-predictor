@@ -3,9 +3,9 @@
   "home_team": "Paraguay",
   "away_team": "Australia",
   "date": "2026-06-25",
-  "input_hash": "d6501bb010712451a966fa7976259b80fe898046",
-  "generated_at": "2026-06-11T18:51:22+00:00",
+  "input_hash": "927f7920d40d35a94230098a4c6c742eaed4a9ba",
+  "generated_at": "2026-06-13T08:18:34+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Australia at 44% to win, with Paraguay offered a 26% chance and a draw at 31%. This represents a competitive fixture where the underdog holds meaningful probability of victory rather than facing a steep climb.\n\nThe 31% draw probability suggests an evenly matched contest where stalemate ranks as a plausible outcome. The win probabilities show Australia with a narrow edge—roughly 18 percentage points clear of Paraguay—indicating the match is likely to be closely fought rather than one-sided. All three outcomes carry non-trivial weight in the model's distribution.\n\nThe model and sportsbooks diverge substantially. Books and Polymarket both favor Paraguay at roughly 44%, placing it as the consensus pick. The model's 26% Paraguay probability sits 18 percentage points below those prices, a gap that signals meaningful disagreement about relative strength. The model ranks Australia higher; market consensus ranks Paraguay higher. The dashboard offers no view on which assessment is correct."
+  "preview_text": "The model favors Australia at 44%, with Paraguay positioned as the underdog at 26%. The remaining probability mass—31%—lands on a draw, suggesting meaningful uncertainty about the outcome.\n\nThe win-loss gap of 18 percentage points indicates Australia enters as a clear statistical favorite, yet the draw probability of nearly one-third underscores that this is a competitive fixture rather than a blowout scenario. The spread reflects a match where all three outcomes carry real plausibility, though Australia's edge is substantial.\n\nA striking divergence separates the model and market. The sportsbook consensus backs Paraguay at 44%—nearly 18 percentage points higher than the model—while pricing Australia at 27%, nearly 17 points lower. Polymarket aligns closely with the sportsbooks. The dashboard does not adjudicate between these sources; the gap is large enough to warrant attention from bettors seeking to understand which framework is more reliable for this pairing."
 }

@@ -3,9 +3,9 @@
   "home_team": "Belgium",
   "away_team": "Iran",
   "date": "2026-06-21",
-  "input_hash": "782343e816ba3066aed0b6f700f74e2b2645aca2",
-  "generated_at": "2026-06-11T19:16:00+00:00",
+  "input_hash": "b3bdf9713c4329433ab1d599f379fee1322b2165",
+  "generated_at": "2026-06-13T08:17:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Belgium at 38%, but the margin over Iran is narrow. Iran registers 30% to win, with a draw at 32%—a near three-way spread that suggests competitive balance. The market consensus strongly backs Belgium instead, pricing a win at 68%, nearly 30 percentage points higher than the model's estimate.\n\nThe expected shape reflects genuine uncertainty. A draw sits at roughly one in three outcomes under the model, indicating the teams are closely matched in underlying strength. Belgium's win probability exceeds 50% only when draws are excluded; this match is not forecast as a comfortable fixture for either side.\n\nThe model and market diverge sharply. Belgium's win probability differs by approximately 30 percentage points, with the market substantially more confident in the favorites. Iran's chance contracts from 30% under the model to 12% on the consensus. Polymarket prices align tightly with sportsbook consensus. The dashboard does not adjudicate which assessment is correct; the gap warrants attention to the inputs underlying each source."
+  "preview_text": "The model identifies Belgium as a modest favorite with a 38% win probability, but the margin over Iran is narrow—only 8 percentage points separate them. Iran's 30% chance reflects a competitive proposition rather than an outsider role.\n\nThe draw at 32% sits substantially above either team's individual win odds, suggesting the model expects a tightly contested match where a stalemate is nearly as likely as a Belgium victory. The three-way spread is relatively flat, indicating genuine uncertainty across all outcomes.\n\nThe model and market diverge sharply. Sportsbooks assign Belgium 68% and Iran just 12%, a gap of 56 percentage points in Belgium's favor compared to the model's 8-point spread. Polymarket aligns closely with sportsbook consensus. The dashboard makes no claim about which assessment is correct; the disagreement reflects fundamentally different readings of the matchup's competitive balance."
 }

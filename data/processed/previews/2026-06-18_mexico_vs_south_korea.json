@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "South Korea",
   "date": "2026-06-18",
-  "input_hash": "cc7235b61e266d6aedb719c38f780d689d46fb84",
-  "generated_at": "2026-06-12T06:29:52+00:00",
+  "input_hash": "67f48003ecda73c4e53f550011dc19570be34724",
+  "generated_at": "2026-06-13T08:17:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Mexico as a clear favourite with a 60% win probability, substantially higher than South Korea's 13% chance. This gap reflects an asymmetry in the underlying Elo-based estimate, positioning Mexico as the more likely victor on a neutral ground.\n\nThe draw carries meaningful probability at 27%, suggesting the match has genuine scope for a stalemate outcome. The model's spread—a 33-percentage-point gap between Mexico's win and South Korea's win likelihood—indicates a competitive fixture where the underdog remains present rather than a mismatch, though Mexico remains the stronger prospect.\n\nThe model and sportsbook consensus diverge meaningfully. The market assigns Mexico only 48% win probability, roughly 12 percentage points below the model's 60%, while backing South Korea materially higher at 24% versus the model's 13%. Draw probabilities align closely. The dashboard does not determine which assessment is correct; this gap warrants review of available squad and contextual information external to these inputs."
+  "preview_text": "The model rates Mexico as a clear favorite with a 60% win probability, compared to South Korea's 12% chance. That 47-percentage-point gap reflects a substantial gap in forecast expectation, positioning Mexico as the stronger side in this matchup on a neutral ground.\n\nThe model's spread suggests a moderately competitive fixture. Mexico's draw probability at 27% indicates the outcome remains uncertain enough that a stalemate is a realistic possibility, yet the favorites' win odds dominate. South Korea enters as a decided underdog but with a non-negligible path to victory, meaning the match is unlikely to be entirely one-sided in scope.\n\nThe model and market diverge meaningfully on Mexico's prospects. Sportsbooks and prediction markets cluster around 48% for a Mexico win—roughly 12 percentage points lower than the model's 60%. Both sources agree a draw near 28% is plausible and that South Korea faces long odds, though markets assign the underdog roughly double the model's probability. The dashboard does not adjudicate which forecast better reflects underlying match conditions."
 }

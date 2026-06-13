@@ -3,9 +3,9 @@
   "home_team": "Ghana",
   "away_team": "Panama",
   "date": "2026-06-17",
-  "input_hash": "cacb65b50e05181c9c54ec17dace6adb03798ff6",
-  "generated_at": "2026-06-12T06:29:45+00:00",
+  "input_hash": "faf8a8cef08ff67d443f61d91d37f3eac9f209d5",
+  "generated_at": "2026-06-13T08:17:02+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Panama to win at 66%, compared to Ghana's 11% chance. This represents a substantial gap between the two sides in the statistical forecast. Ghana enters as a clear underdog in the model's view.\n\nThe win-draw-loss spread shows Panama as a heavy favorite, but the draw probability of 24% suggests the match retains meaningful competitive uncertainty. The model does not rate this as a runaway encounter; roughly one in four outcomes could see the teams level after regulation time.\n\nThe model and market diverge sharply here. Sportsbooks and prediction markets both assign Ghana near 45% to win and Panama roughly 27%, inverting the model's assessment almost entirely. The dashboard does not adjudicate between these conflicting signals. Traders are pricing Ghana substantially higher than the statistical model does, while viewing Panama's chances as lower than the bias-corrected probabilities suggest."
+  "preview_text": "The model favors Panama at 66%, a substantial advantage over Ghana's 11% win probability. The statistical forecast sees Panama as a clear favorite on a neutral pitch, while Ghana faces a steep climb to victory despite the even playing field.\n\nThe draw emerges as the second-likeliest outcome at 24%, suggesting meaningful competitive balance in the likely scoreline distribution. However, Panama's win probability substantially exceeds Ghana's, indicating the model expects the match to tilt decisively in one direction rather than remain closely contested throughout.\n\nThe model and market diverge sharply. Sportsbooks and prediction markets both price Ghana at 44%, roughly four times higher than the model's 11%, and price Panama at 28%, less than half the model's 66%. No consensus exists between the statistical approach and the consensus odds. The dashboard makes no claim about which source better reflects match reality."
 }

@@ -5,10 +5,10 @@
   "date": "2026-06-13",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 19.7,
-  "input_hash": "2aba8ba4bedb98da88ed7173416e70617ed9668f",
-  "generated_at": "2026-06-12T06:31:37+00:00",
+  "max_gap_pp": 18.1,
+  "input_hash": "817017e39a2957fdfdade57d80b0f06f530f67b9",
+  "generated_at": "2026-06-13T08:19:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Brazil a 58% win probability versus the model's 39%, a 19-percentage-point gap favoring the favorite. The model sees Morocco and the draw as near-equal threats, while the market dramatically discounts Morocco to 17%. This sharpening of conviction around a Brazil victory could reflect recent form, injury status, or lineup changes unavailable to the model at its last update—factors that real-money markets absorb continuously. The dashboard surfaces this as a signal of information asymmetry, not a judgment on which assessment is more reliable."
+  "commentary_text": "The market assigns Brazil a 56% win probability versus the model's 38%, a 18-percentage-point gap favoring the favorite. Sportsbook consensus and Polymarket prices align closely, suggesting real-money flows are concentrated on Brazil's side. The model sees Morocco as a plausible 30% winner; the market cuts that to 18%. This confidence gap could reflect recent form, roster changes, or injury status that the model has not yet incorporated. The dashboard flags this as a signal worth monitoring—sharper conviction on Brazil's chances may rest on information the statistical baseline does not capture."
 }

@@ -5,10 +5,10 @@
   "date": "2026-06-16",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 27.6,
-  "input_hash": "1f1f5ceaa807d33444469f230093966d39b1c9e5",
-  "generated_at": "2026-06-11T06:57:03+00:00",
+  "max_gap_pp": 27.3,
+  "input_hash": "b9715edd2b5558cc0bce0186fdfbddb2657dbdd2",
+  "generated_at": "2026-06-13T08:19:29+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The sportsbooks assign Austria a 73% win probability versus the model's 45%, a 28-percentage-point gap favoring the favorite. This widening of conviction could reflect recent form, lineup changes, or injury news that have shifted since the model's last update—information the model cannot access. Conversely, the model's more cautious view may simply reflect structural uncertainty appropriate to two teams with different historical performance profiles. The dashboard flags this as a signal worth monitoring rather than a definitive statement about which assessment is sounder."
+  "commentary_text": "The sportsbooks assign Austria a 72% win probability versus the model's 45%, a 27-percentage-point gap favoring the favorite. This sharper market confidence could reflect recent form swings, lineup changes, or injury updates to key players that the model's last training cycle did not capture. The market also prices Jordan's chances at half the model's estimate, suggesting asymmetric information about one or both squads' current readiness. Both sources rank Austria as clear favorite, but the dashboard surfaces the conviction gap as a signal: real-money flows may be pricing in fresher data than the statistical baseline holds."
 }

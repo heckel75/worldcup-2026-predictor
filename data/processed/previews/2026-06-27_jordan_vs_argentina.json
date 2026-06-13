@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Argentina",
   "date": "2026-06-27",
-  "input_hash": "1b6a7f5ebb425e27485d34efec38ec9b8a514075",
-  "generated_at": "2026-06-11T19:02:32+00:00",
+  "input_hash": "a71e2a8e081d1d4672a8b7068e1bab49b98ee590",
+  "generated_at": "2026-06-13T08:19:08+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Argentina at 80%, with Jordan assigned a 4% win probability. The draw carries 16% likelihood, positioning it as a meaningful secondary outcome relative to a Jordan upset.\n\nThe spread reflects a heavily lopsided matchup. Argentina's win probability dominates by 76 percentage points over Jordan's chance, yet the draw's material probability—nearly one in six—suggests the match carries competitive structure rather than forming a foregone conclusion. A low-scoring stalemate or defensive performance from the underdog could materialise within the model's distribution.\n\nModel and sportsbook are closely aligned across all three outcomes. The consensus places Argentina at 79%, only 1 percentage point below the model, while Jordan sits 3 points higher at 7% and the draw 2 points lower at 14%. These gaps fall within typical variance across book samples and reflect broad agreement on Argentina as the heavy favourite."
+  "preview_text": "The model forecasts Argentina as a heavy favorite at 80%, leaving Jordan with a 4% chance of victory. The underdog's path to an upset is narrow, though not nonexistent within the uncertainty bounds of match simulation.\n\nThe win-draw-loss spread reflects a lopsided matchup. Argentina's dominance in the forecast means a Jordan win would rank as a considerable upset; a draw at 17% is the most plausible non-Argentina outcome, suggesting the match carries some competitive elasticity but tilts sharply in one direction.\n\nModel and sportsbook consensus align closely on the Argentina win probability (80% vs 79%), diverging only marginally on the draw (17% vs 14%). The market leans slightly toward a decisive result, while the model assigns modestly higher draw probability. Both sources position this as a strongly favored Argentina performance. Polymarket prices show a 2-3 percentage-point tilt toward Argentina compared to the stripped book consensus, within typical variance across venues."
 }

@@ -5,10 +5,10 @@
   "date": "2026-06-20",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 16.0,
-  "input_hash": "df1f6b0ab13b5d3814054c7ed2c50c109688ac75",
-  "generated_at": "2026-06-10T06:36:25+00:00",
+  "max_gap_pp": 15.2,
+  "input_hash": "b472945daa6504c0ad616ddd6c682225ca9edb85",
+  "generated_at": "2026-06-13T08:19:38+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model projects Japan to win at 71%, while the sportsbook consensus stands at 55%—a 16-percentage-point gap favoring the model's confidence in a Japan victory. This substantial divergence suggests the market may be incorporating information the model cannot access, such as recent lineup changes, injury concerns, or recent form developments that could narrow Japan's advantage. Conversely, the model's Elo-based assessment may not fully reflect such real-time shifts. Both sources agree Japan is favored, but the market's more cautious positioning signals meaningful uncertainty about the margin of that advantage rather than a fundamental disagreement on the likely winner."
+  "commentary_text": "The largest gap appears on the Japan win probability, where the model assigns 71% while sportsbooks price 56%—a 15-percentage-point gap favoring the model's confidence in Japan. The market's more cautious stance on the favorite could reflect uncertainty about recent lineup changes, injuries, or current form that the model's Elo-based framework does not capture. Conversely, the market elevates Tunisia's win probability to 18% versus the model's 8%, suggesting real-money traders may be pricing in information unavailable to the statistical system. The dashboard surfaces this as a signal worth monitoring rather than a judgment on which source better reflects the true match dynamics."
 }
