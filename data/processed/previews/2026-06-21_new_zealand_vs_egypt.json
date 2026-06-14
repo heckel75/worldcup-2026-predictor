@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Egypt",
   "date": "2026-06-21",
-  "input_hash": "0a4d80d9378ffb9acdd91b2bb9eac7597f5f349c",
-  "generated_at": "2026-06-13T08:17:42+00:00",
+  "input_hash": "ff96f332c98a15b2346d85553de227bdac387d59",
+  "generated_at": "2026-06-14T08:50:16+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Egypt to win, assigning them a 47% chance of victory. New Zealand has a 23% probability of securing three points, a gap of 24 percentage points that reflects material separation in the forecast.\n\nThe expected scoreline distribution shows a meaningful spread. A draw at 30% represents a plausible outcome, sitting well above the lower tail of either team's win probability. The win probabilities alone suggest a competitive fixture, but the draw probability indicates neither favourite nor underdog dominates decisively; Egypt enters with advantage, yet the match carries genuine uncertainty.\n\nThe model and sportsbook consensus align closely in direction and magnitude. The market prices Egypt slightly higher (54.5% vs. 47%) and correspondingly lowers New Zealand (19.7% vs. 23%) by similar margins. These gaps—roughly 5 percentage points in each direction—sit at the threshold of material divergence. Polymarket prices track the sportsbook consensus tightly, suggesting unified market conviction around an Egypt lean."
+  "preview_text": "The model rates Egypt as the clear favorite, assigning a 47% win probability against New Zealand's 23%. The 24-percentage-point gap reflects a substantial asymmetry in expected strength, with the draw at 30% representing a meaningful path for either side to leave with a point.\n\nThe win-draw-loss spread suggests a competitive match with real uncertainty in the tail outcomes. A draw is nearly as likely as an Egypt victory, indicating that Egypt's advantage, while material, is not decisive. New Zealand's 23% win chance reflects genuine capacity to take the match, though the underdog role is clear.\n\nThe model and sportsbook consensus align closely. The market edges Egypt slightly higher—54.5% versus the model's 47%—while rating New Zealand marginally lower at 19.7%. These gaps are within 5 percentage points across all three outcomes. Polymarket prices track the sportsbook view tightly, suggesting broad agreement on match contours rather than meaningful divergence between statistical and betting-market assessments."
 }

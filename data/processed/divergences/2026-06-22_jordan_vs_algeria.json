@@ -5,10 +5,10 @@
   "date": "2026-06-22",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 17.4,
-  "input_hash": "95eef14c2c5f1d9f69a43be6b3d553c2a23c0314",
-  "generated_at": "2026-06-11T06:57:12+00:00",
+  "max_gap_pp": 17.9,
+  "input_hash": "d22c7b7a892ae9a3efa2f0a804007751e9e6e29d",
+  "generated_at": "2026-06-14T08:52:11+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The sportsbooks assign Algeria a 62% win probability versus the model's 45%, a 17-percentage-point gap favoring the market's conviction in an Algeria victory. This sharpening could reflect recent form, lineup changes, or injury status that the model cannot access; sportsbooks incorporate real-time information flows that statistical models trained on historical Elo data do not capture. Polymarket sentiment sits between the two sources, offering less extreme confidence in any outcome. The dashboard flags this as a signal worth monitoring—the market's heightened Algeria conviction may rest on current information, but the gap itself remains unresolved without direct access to team news."
+  "commentary_text": "The largest gap appears on the Algeria win, where the sportsbook consensus stands at 63% versus the model's 45%, a 18-percentage-point spread favoring the market's confidence in an Algerian victory. This sharpening of conviction could reflect recent lineup changes, injury updates, or current form—information the model cannot access since its last update. The market also materially downgrades Jordan's chances to 15% from the model's 25%, consistent with a tightening around Algeria across both outcomes. Neither source is necessarily right; the dashboard flags this as a meaningful signal that real-money flows are pricing in details beyond the Elo baseline."
 }

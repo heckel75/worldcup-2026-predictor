@@ -3,9 +3,9 @@
   "home_team": "Tunisia",
   "away_team": "Japan",
   "date": "2026-06-20",
-  "input_hash": "6dc5b7817e17af7963a2290d6b6cd5c2d80f8e9d",
-  "generated_at": "2026-06-13T08:17:35+00:00",
+  "input_hash": "1af4d8136d87d4da4290ded4a7a56df999ec4fb6",
+  "generated_at": "2026-06-14T08:50:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model backs Japan as a clear favorite with a 71% win probability, while Tunisia's chances are assessed at 8%. This reflects a substantial gap between the two sides in the statistical forecast.\n\nThe draw carries meaningful probability at 21%, suggesting that while Japan enters as the likely winner, the match is not expected to be entirely one-sided. The model's spread—with Japan's win probability more than nine times Tunisia's—indicates a competitive imbalance rather than a mismatch, leaving room for Tunisia to frustrate or surprise on the day.\n\nThe market diverges notably from the model. Sportsbooks place Japan at 56%, some 15 percentage points lower than the model, and credit Tunisia with 18%—more than double the statistical forecast. Polymarket prices align more closely with the model on Japan (58%) but similarly elevate Tunisia to 16%. The dashboard does not determine which assessment is correct; the gap merits attention from those formulating their own views."
+  "preview_text": "The model favors Japan to win at 71%, leaving Tunisia with a 8% chance of victory. Japan's dominance in the forecast reflects a substantial probability gap, though the underdog retains meaningful upside in a single-match context.\n\nThe win-draw-loss spread reveals a competitive dynamic weighted heavily toward Japan. A draw carries 21% probability from the model, suggesting the match carries real uncertainty within a Japan-favoring framework. Tunisia's path to victory remains narrow, but the draw outcome points to a contest unlikely to be entirely one-sided in execution.\n\nThe market consensus diverges notably from the model. Sportsbooks assign Japan only 56% win probability—15 percentage points lower than the model—while raising Tunisia's chances to 18% and keeping the draw near 26%. Polymarket prices align more closely with the books than the model. The dashboard does not adjudicate which forecast is more accurate; the gap merits consideration by users evaluating their own views."
 }

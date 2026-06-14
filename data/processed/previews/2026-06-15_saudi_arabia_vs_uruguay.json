@@ -3,9 +3,9 @@
   "home_team": "Saudi Arabia",
   "away_team": "Uruguay",
   "date": "2026-06-15",
-  "input_hash": "bb44ffa5da9f0b9593df69eb8f189b0dc2404c97",
-  "generated_at": "2026-06-13T08:16:43+00:00",
+  "input_hash": "76c72451cf4aeeaa0503b2b3c0e16ae06b1f9101",
+  "generated_at": "2026-06-14T08:49:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Uruguay at 65%, with Saudi Arabia assigned a 11% chance of victory. The draw sits at 24%, making this a heavily asymmetric contest in which the underdog faces a steep climb to get a result.\n\nThe win-loss gap is substantial, but the 24% draw probability prevents this from being a one-sided forecast. Uruguay is clear favourite but not overwhelming; a significant slice of expected outcomes involve a stalemate rather than decisive victory. The match leans competitive enough to avoid a heavily lopsided scoreline prediction, though Uruguay enters with a decisive edge in the model's assessment.\n\nModel and market are tightly aligned across all three outcomes. Sportsbook consensus places Uruguay at 67% (1.3 points higher than the model), Saudi Arabia at 12% (1.2 points higher), and draws at 21% (2.9 points lower). Polymarket prices track similarly. These gaps are negligible, indicating broad agreement on the probable shape of the match."
+  "preview_text": "The model favors Uruguay heavily, assigning them a 65% win probability against Saudi Arabia's 11%. The gap reflects a substantial quality differential, leaving Saudi Arabia a clear underdog with limited margin for error.\n\nThe draw sits at 24%, making it the second-most-likely outcome. This relatively high draw probability suggests the match will not be entirely one-sided; Saudi Arabia retains enough structural possibility of a result to prevent the favorite from appearing overwhelming. The W/D/L spread is moderately wide rather than compressed, indicating Uruguay should be expected to control much of play but without near-certainty of victory.\n\nModel and market forecasts are closely aligned. The sportsbook consensus places Uruguay at 67% and Saudi Arabia at 12%, margins of 1–2 percentage points from the model across all outcomes. Polymarket pricing shows near-identical agreement. This convergence suggests broad consensus on the likely shape of the match."
 }

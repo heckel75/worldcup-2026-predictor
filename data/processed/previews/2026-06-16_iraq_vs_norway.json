@@ -3,9 +3,9 @@
   "home_team": "Iraq",
   "away_team": "Norway",
   "date": "2026-06-16",
-  "input_hash": "0d85f178c1b766bfbce9389efe13b3a477c05026",
-  "generated_at": "2026-06-13T08:16:50+00:00",
+  "input_hash": "4ee3d6e740895dc13c18e4fa444b57fbf8a0af67",
+  "generated_at": "2026-06-14T08:49:17+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Norway at 65%, with Iraq given a 11% chance of victory. The draw carries 24% probability, reflecting moderate uncertainty around the outcome despite Norway's clear advantage.\n\nThe spread between the favourite and underdog is substantial, though the draw probability suggests the match will not be a foregone conclusion. A competitive opening period remains plausible; Iraq's 11% win chance indicates the model does not treat them as ceremonial. Norway's 65% reflects genuine favouritism rather than overwhelming dominance.\n\nThe market is materially more confident in Norway than the model, pricing them at 80% and reducing both Iraq's win probability to 7% and the draw to 14%. Both sportsbooks and Polymarket align closely with each other, but diverge from the model by roughly 15 percentage points on the Norway line. The dashboard makes no claim about which assessment is correct."
+  "preview_text": "The model favors Norway at 65% to win, with Iraq given a 11% chance and a draw rated at 24%. Norway enters as a clear favorite, though the model assigns Iraq nearly one win in nine attempts and rates the draw as the second-most-likely single outcome.\n\nThe win-draw-loss spread reflects a moderately competitive match. Norway's 65% win probability indicates a strong but not dominant favorite, and the 24% draw probability suggests the teams are close enough that a stalemate remains plausible. Iraq's 11% win chance sits well below but is not negligible; the match is tilted but not a formality.\n\nModel and market diverge noticeably. The sportsbook consensus pushes Norway to 80%, a 15-percentage-point edge over the model, while compressing Iraq to 7% and the draw to 14%. Polymarket prices align closely with sportsbooks. The dashboard does not resolve which estimate better reflects true odds, only that a material gap exists."
 }

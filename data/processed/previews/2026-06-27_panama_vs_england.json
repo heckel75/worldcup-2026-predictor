@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "6e31b9ac8a7ae617bc2b1b776ee97e577ecab26d",
-  "generated_at": "2026-06-13T08:19:12+00:00",
+  "input_hash": "c2ce6170f340c8ac80338927c97d6933446a80c9",
+  "generated_at": "2026-06-14T08:51:54+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors England at 63%, with Panama's win probability standing at 12%. The underdog holds a modest but non-negligible chance of a positive result, while the draw carries material weight at nearly a quarter of outcomes.\n\nThe spread suggests England enters as clear favorite but without overwhelming dominance. A draw remains plausible at 25%, indicating competitive balance is realistic. Panama's 12% win rate and the moderate gap between the top two outcomes imply this is a matchup where England should control play but cannot be assumed to convert that advantage into three points.\n\nThe sportsbook consensus shifts probability toward England, raising its win chance to 74% while compressing both the draw to 16% and Panama's chances to 10%. This represents a meaningful divergence: the market is roughly 11 percentage points more bullish on England than the model, and notably skeptical of a draw outcome. The dashboard does not adjudicate between these sources."
+  "preview_text": "The model favors England at 63%, with Panama's win probability at 12%. The underdog's chance remains well below one-in-ten, establishing a clear hierarchical gap between the two sides in the forecast.\n\nThe 24.8% draw probability suggests moderate competitive balance despite England's advantage. A draw is neither rare nor dominant in this matchup, indicating England faces real resistance rather than a routine victory. The full spread—England 63%, Draw 25%, Panama 12%—implies a match where the favorite is favored but not overwhelmingly so, and a stalemate ranks as a plausible outcome.\n\nThe sportsbook consensus and Polymarket prices both lean notably toward England compared to the model. The market places England at 73–76%, roughly 10 percentage points higher than the model's 63%, while compressing the draw to 15–17% and Panama's win to 10% or lower. These are meaningful divergences, particularly in the England win probability. The dashboard makes no claim about which source is more accurate; users should weigh both signals when forming their own view."
 }

@@ -3,9 +3,9 @@
   "home_team": "Sweden",
   "away_team": "Tunisia",
   "date": "2026-06-14",
-  "input_hash": "000674efe4a325b2b09533fb5ee1615f13fd4ba3",
-  "generated_at": "2026-06-12T06:29:22+00:00",
+  "input_hash": "39f310b6ca2943d980cc4348f6689c8649c2d4c1",
+  "generated_at": "2026-06-14T08:49:03+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Sweden at 41%, but judges the match substantially more competitive than the sportsbooks do. Tunisia's chances register at 28% under the model versus 22% in the market consensus, a meaningful gap that reflects divergent assessments of the underdog's threat.\n\nThe model's probability distribution leans toward a decisive result—Sweden winning outright remains most likely—yet assigns a substantial 31% to a draw, suggesting genuine uncertainty about whether either team will break through. The gap between the favorite and underdog is modest enough that a Tunisia upset or stalemate both remain plausible outcomes.\n\nThe model and market show clear daylight on Sweden's win probability, with sportsbooks 9 percentage points more confident in a Swedish victory. The model's higher assessment of Tunisia reflects a more cautious reading of Sweden's advantage. Both sources agree a draw is realistic, though they diverge on the likelihood of a decisive outcome favoring the stronger side."
+  "preview_text": "The model favors Sweden with a 41% win probability, reflecting a narrow margin over Tunisia's 28% chance. The gap between favorite and underdog is modest, leaving meaningful room for an upset or a stalemate outcome.\n\nA draw at 31% represents the second-likeliest result in the model's forecast. The three-way spread—with Sweden ahead but neither team commanding—suggests a competitive encounter where the eventual outcome remains substantially uncertain through regular time.\n\nThe sportsbook consensus diverges notably from the model. Books price Sweden's win probability at 49%, nearly 8 percentage points higher than the model estimate, while assessing Tunisia's chances at 23%, roughly 5 points lower. Polymarket prices track even higher for Sweden. The dashboard does not adjudicate between these views; the discrepancy may reflect market factors, information, or calibration differences that warrant monitoring."
 }

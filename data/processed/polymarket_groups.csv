@@ -1,49 +1,49 @@
 group,team,p_winner,volume
-A,Mexico,0.6244,365588
-A,South Korea,0.3347,138026
-A,Czech Republic,0.0325,74609
-A,South Africa,0.0085,343847
-B,Switzerland,0.5915,251986
-B,Canada,0.2634,85407
-B,Bosnia and Herzegovina,0.1243,128283
-B,Qatar,0.0209,83209
-C,Brazil,0.7139,159716
-C,Morocco,0.2047,154892
-C,Scotland,0.0714,226382
-C,Haiti,0.01,63692
-D,USA,0.6083,221479
-D,Turkey,0.3314,249939
-D,Australia,0.045,70643
-D,Paraguay,0.0153,154606
-E,Germany,0.667,171229
-E,Ecuador,0.2026,56717
-E,Ivory Coast,0.128,49016
-E,Curaçao,0.0025,47754
-F,Netherlands,0.5334,128896
-F,Japan,0.2792,158541
-F,Sweden,0.1446,63708
-F,Tunisia,0.0429,59231
-G,Belgium,0.695,107645
-G,Egypt,0.165,38453
-G,Iran,0.1105,99991
-G,New Zealand,0.0295,37247
-H,Spain,0.7822,65845
-H,Uruguay,0.1931,31000
-H,Saudi Arabia,0.0134,128800
-H,Cape Verde,0.0114,87958
-I,France,0.6406,196102
-I,Norway,0.2396,65945
-I,Senegal,0.1125,92884
-I,Iraq,0.0073,101896
-J,Argentina,0.7079,183537
-J,Austria,0.1931,53639
-J,Algeria,0.0837,61489
-J,Jordan,0.0153,30179
-K,Portugal,0.6244,178055
-K,Colombia,0.3196,52651
-K,DR Congo,0.0324,40587
-K,Uzbekistan,0.0236,29904
-L,England,0.6915,63171
-L,Croatia,0.2305,33838
-L,Ghana,0.05,28373
-L,Panama,0.028,34888
+A,Mexico,0.6253,390085
+A,South Korea,0.3352,150513
+A,Czech Republic,0.0335,76481
+A,South Africa,0.006,349658
+B,Switzerland,0.4615,339546
+B,Canada,0.3623,105074
+B,Bosnia and Herzegovina,0.1538,146654
+B,Qatar,0.0223,114206
+C,Brazil,0.595,203202
+C,Morocco,0.295,203245
+C,Scotland,0.1025,258517
+C,Haiti,0.0075,81673
+D,USA,0.7192,255111
+D,Australia,0.1835,82621
+D,Turkey,0.0843,299547
+D,Paraguay,0.0129,183419
+E,Germany,0.6548,190183
+E,Ecuador,0.2216,72171
+E,Ivory Coast,0.1196,54882
+E,Curaçao,0.0039,54444
+F,Netherlands,0.5289,131319
+F,Japan,0.2818,163383
+F,Sweden,0.1483,65063
+F,Tunisia,0.041,60792
+G,Belgium,0.6953,115118
+G,Egypt,0.1651,39199
+G,Iran,0.1101,101514
+G,New Zealand,0.0295,39009
+H,Spain,0.7806,68542
+H,Uruguay,0.1915,31912
+H,Saudi Arabia,0.0172,129937
+H,Cape Verde,0.0108,89334
+I,France,0.6469,208403
+I,Norway,0.242,67340
+I,Senegal,0.1037,94094
+I,Iraq,0.0074,102406
+J,Argentina,0.7132,190959
+J,Austria,0.1918,56762
+J,Algeria,0.0831,66441
+J,Jordan,0.0118,32680
+K,Portugal,0.6156,199095
+K,Colombia,0.3253,54545
+K,DR Congo,0.0345,41136
+K,Uzbekistan,0.0245,30519
+L,England,0.7118,76240
+L,Croatia,0.2224,43728
+L,Ghana,0.0425,35550
+L,Panama,0.0232,42161

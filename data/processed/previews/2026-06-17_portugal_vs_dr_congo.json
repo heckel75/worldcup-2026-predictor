@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "DR Congo",
   "date": "2026-06-17",
-  "input_hash": "7c6fd55c06ee3f25e52ea1c4fa66863c1c5a6052",
-  "generated_at": "2026-06-12T06:29:41+00:00",
+  "input_hash": "1fcff072a99ad7f4793f7e8969ceb634e0691895",
+  "generated_at": "2026-06-14T08:49:25+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Portugal at 77%, leaving DR Congo with a 3.5% win probability. This wide gap reflects a strong asymmetry in the matchup, with the underdog facing steep odds to claim three points on a neutral ground.\n\nThe W/D/L spread shows Portugal as a clear favorite, yet the draw carries meaningful weight at roughly one-fifth of all outcomes. A DR Congo victory remains plausible within the model's framework but would rank among lower-probability paths. The match appears tilted decisively toward a Portugal result, though not to the point of dismissing competitive play entirely.\n\nThe model and sportsbook consensus align closely on the Portugal win probability, differing by less than 3 percentage points. The main divergence emerges in the underdog's tail: sportsbooks assign DR Congo 8.7%, notably higher than the model's 3.5%. Polymarket sits between the two, at 7.5%. The dashboard makes no claim about which calibration is correct; the discrepancy may reflect market-specific risk preferences or information not captured in the model."
+  "preview_text": "The model favors Portugal at 77%, with DR Congo assigned a 4% chance of victory. The draw carries a near-one-in-five probability at 20%, positioning this as a heavily one-sided contest in probability terms but not entirely without competitive scope.\n\nThe outcome distribution reflects a strong Portugal edge across all three paths. The gap between a Portugal win and a draw is substantial—roughly 57 percentage points—while a DR Congo upset remains a tail-risk outcome. The modal result is a Portuguese victory, though the draw's meaningful share suggests the match is unlikely to be a complete mismatch.\n\nThe model and sportsbook consensus are closely aligned. Portugal's win probability differs by 3 percentage points, while the draw spreads are within 2 points. The market assigns DR Congo marginally higher upside at 9% versus the model's 4%, a gap that signals slightly more uncertainty about the underdog's floor than the statistical forecast reflects. Polymarket crypto prices track near the model, with Portugal at 76%."
 }

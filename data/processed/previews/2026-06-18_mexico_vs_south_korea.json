@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "South Korea",
   "date": "2026-06-18",
-  "input_hash": "67f48003ecda73c4e53f550011dc19570be34724",
-  "generated_at": "2026-06-13T08:17:09+00:00",
+  "input_hash": "bfa99e1999a286cb65fcd1d92d74f256b85728bd",
+  "generated_at": "2026-06-14T08:49:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Mexico as a clear favorite with a 60% win probability, compared to South Korea's 12% chance. That 47-percentage-point gap reflects a substantial gap in forecast expectation, positioning Mexico as the stronger side in this matchup on a neutral ground.\n\nThe model's spread suggests a moderately competitive fixture. Mexico's draw probability at 27% indicates the outcome remains uncertain enough that a stalemate is a realistic possibility, yet the favorites' win odds dominate. South Korea enters as a decided underdog but with a non-negligible path to victory, meaning the match is unlikely to be entirely one-sided in scope.\n\nThe model and market diverge meaningfully on Mexico's prospects. Sportsbooks and prediction markets cluster around 48% for a Mexico win—roughly 12 percentage points lower than the model's 60%. Both sources agree a draw near 28% is plausible and that South Korea faces long odds, though markets assign the underdog roughly double the model's probability. The dashboard does not adjudicate which forecast better reflects underlying match conditions."
+  "preview_text": "The model favors Mexico at 60%, with South Korea offered a 13% chance of victory. That gap of 47 percentage points positions the model's assessment as a clear lean toward the favorite, though not an overwhelming one given the draw's plausibility.\n\nThe expected outcome distribution shows Mexico as the likely winner, but the 27% draw probability indicates meaningful competitive balance. A one-goal margin or stalemate are both realistic scenarios; the match is not modeled as a rout. South Korea's baseline win probability, while modest, reflects genuine uncertainty in a neutral-venue encounter.\n\nThe model and market show material divergence. Sportsbooks collectively imply a 48% Mexico win chance—12 percentage points lower than the model—and assign South Korea 23%, nearly double the model's 13%. The market prices a tighter contest overall. The dashboard does not adjudicate between these views; the gap warrants attention for anyone building match exposures."
 }

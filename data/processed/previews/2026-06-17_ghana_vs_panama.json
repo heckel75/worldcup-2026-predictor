@@ -3,9 +3,9 @@
   "home_team": "Ghana",
   "away_team": "Panama",
   "date": "2026-06-17",
-  "input_hash": "faf8a8cef08ff67d443f61d91d37f3eac9f209d5",
-  "generated_at": "2026-06-13T08:17:02+00:00",
+  "input_hash": "d18677a8a007c267e90a9af819074bb6dbbd9070",
+  "generated_at": "2026-06-14T08:49:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Panama at 66%, a substantial advantage over Ghana's 11% win probability. The statistical forecast sees Panama as a clear favorite on a neutral pitch, while Ghana faces a steep climb to victory despite the even playing field.\n\nThe draw emerges as the second-likeliest outcome at 24%, suggesting meaningful competitive balance in the likely scoreline distribution. However, Panama's win probability substantially exceeds Ghana's, indicating the model expects the match to tilt decisively in one direction rather than remain closely contested throughout.\n\nThe model and market diverge sharply. Sportsbooks and prediction markets both price Ghana at 44%, roughly four times higher than the model's 11%, and price Panama at 28%, less than half the model's 66%. No consensus exists between the statistical approach and the consensus odds. The dashboard makes no claim about which source better reflects match reality."
+  "preview_text": "The model favors Panama with a 66% win probability, giving Ghana just 11% to claim victory. This represents a substantial gap in expected likelihood, with the underdog Ghana facing a steep task according to the statistical forecast.\n\nThe spread across outcomes shows Panama as clear favorite, yet the draw carries meaningful weight at 24%, suggesting the match may prove competitive enough for a stalemate. The 55-percentage-point gap between Panama's win probability and Ghana's reflects the model's assessment of a lopsided matchup, though the draw option indicates the contest is not treated as a foregone conclusion.\n\nThe model and market are sharply misaligned. Sportsbooks rate Ghana at 44%, nearly four times higher than the model's 11%, and assign Panama only 27%, less than half the model's 66%. Polymarket prices align closely with sportsbook consensus. The dashboard does not adjudicate between these estimates; the divergence is substantial enough that bettors should note the competing views before committing capital."
 }

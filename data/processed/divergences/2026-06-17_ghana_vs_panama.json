@@ -5,10 +5,10 @@
   "date": "2026-06-17",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 38.2,
-  "input_hash": "78bc1c36b7de09b3e3b916e9239612a0ad03c2f6",
-  "generated_at": "2026-06-13T08:19:31+00:00",
+  "max_gap_pp": 38.4,
+  "input_hash": "8fcbd6ee8a3f8f7d5888f51397742b4c93a369c9",
+  "generated_at": "2026-06-14T08:52:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Panama at 66%, while sportsbooks and Polymarket both favor Ghana at 44%. The largest single gap appears on the Panama win probability, where the model exceeds the market by 38 percentage points. The draw sees modest agreement near 28%, while Ghana's win probability diverges sharply. Market pricing might reflect recent lineup changes, injury updates, or current form information unavailable to the model's last training update, or conversely, the market may be overweighting Ghana's chances relative to underlying strength. This dashboard surfaces the divergence as a signal for further investigation rather than a verdict on which forecast deserves credence."
+  "commentary_text": "The model favors Panama at 66%, while the market favors Ghana at 44%; the gap on the Ghana win is 34 percentage points. This inversion suggests the market may be pricing in information unavailable to a statistical model built on historical Elo ratings—possibly recent lineup changes, injury news, or current form that shifts Ghana's prospects upward. The model's heavy Panama lean could equally reflect outdated relative strength if Ghana has materially improved or Panama weakened since the model's last training. The dashboard flags this as a significant structural divergence worth monitoring as fresh team information emerges."
 }

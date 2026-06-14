@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Belgium",
   "date": "2026-06-26",
-  "input_hash": "e2ac5c6a4b90ec4968c2165eddb5d452551418e0",
-  "generated_at": "2026-06-13T08:18:54+00:00",
+  "input_hash": "44292160876e6cf19ce7562b8812fa51f692fb18",
+  "generated_at": "2026-06-14T08:51:31+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Belgium as the heavy favorite, with a 65% win probability against a 11% chance for New Zealand. The underdog's path to victory remains narrow but not negligible; draws occur in roughly one match in four under this forecast.\n\nThe 24% draw probability indicates a moderately competitive match where Belgium's superiority does not overwhelm the possibility of a stalemate. The win gap of 54 percentage points reflects clear separation between the sides, yet neither team is modeled as certain to prevail by a decisive margin. A low-scoring or tightly contested finish sits within the forecast range.\n\nThe sportsbook consensus and Polymarket prices both lean more heavily toward Belgium than the model does, assigning the favorite 73% and 76% respectively. The market discounts both New Zealand's and draw outcomes relative to the model by roughly 2–3 percentage points each. The divergence is moderate and does not signal fundamental disagreement on direction, though the market shows greater conviction in Belgium's advantage."
+  "preview_text": "The model rates Belgium as the clear favorite with a 65% win probability, while New Zealand enters with an 11% chance of victory. The underdog thus faces a substantial deficit in the forecast, though not an insurmountable one at the group stage.\n\nThe 24% draw probability is the second-most likely outcome, suggesting a competitive match where neither side overwhelms the other. Belgium's advantage manifests as a roughly 41-percentage-point gap between its win and New Zealand's win odds—wide enough to reflect a meaningful quality gap, yet the combined 35% non-Belgium outcome probability indicates the match carries genuine uncertainty and is not a formality.\n\nThe model and sportsbook consensus diverge meaningfully. The market prices Belgium's win at 73%, nearly 9 percentage points higher than the model's 65%, while assigning New Zealand only 10% and a draw just 17%. Polymarket prices align closely with the sportsbook direction. The dashboard does not adjudicate between these sources; users should note the gap in confidence around Belgium's likelihood of victory."
 }

@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Algeria",
   "date": "2026-06-22",
-  "input_hash": "27c75210af27836d3ffec7ba4945944c61b4494e",
-  "generated_at": "2026-06-11T18:50:33+00:00",
+  "input_hash": "a1ad429296d9b4349a459a5f20f5f64017d9ac4b",
+  "generated_at": "2026-06-14T08:50:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Algeria with a 45% win probability, but the match remains competitive. Jordan holds a 25% chance of victory, meaningfully above the sportsbook consensus of 15%, suggesting the model rates the underdog's prospects considerably higher than the market does.\n\nThe draw is a material outcome at 30%, indicating the teams are expected to be reasonably evenly matched in open play. The three-way spread—with Algeria ahead but neither team dominant—points to a match where contingency and execution matter alongside underlying strength. A Jordan upset or stalemate both carry meaningful probability mass.\n\nModel and market diverge notably on Jordan's chances, a gap of roughly 10 percentage points. The sportsbook and Polymarket are closely aligned with each other, both pricing Algeria near 62–65%. The dashboard makes no claim about which assessment is correct; the difference likely reflects either model and market weighting available information differently or market inefficiency. The gap warrants attention from those backing either side."
+  "preview_text": "The model rates Algeria as the favored side with a 45% win probability, while Jordan carries a 25% chance of victory. The remaining probability concentrates in draw outcomes, suggesting a competitive match where either team can win but neither dominates the pre-match picture decisively.\n\nThe W/D/L split reveals a relatively balanced distribution. Draws account for 30% of the model's forecast, indicating genuine uncertainty about a decisive result. While Algeria holds a clear but not overwhelming edge over Jordan's win chances, the gap between them is modest enough that an upset or stalemate remains well within the realm of plausible outcomes.\n\nThe sportsbook consensus diverges meaningfully from the model across all three outcomes. The market assigns Algeria a 63% win probability—roughly 18 percentage points higher than the model—while trimming both Jordan's win rate and draw likelihood. Polymarket prices align closely with the sportsbook view. The dashboard does not adjudicate which assessment is more accurate; the divergence is noted for reference."
 }

@@ -3,9 +3,9 @@
   "home_team": "Morocco",
   "away_team": "Haiti",
   "date": "2026-06-24",
-  "input_hash": "ab509f05df46e0022d3a1c3126999ad0202d82ff",
-  "generated_at": "2026-06-13T08:18:26+00:00",
+  "input_hash": "008cf69dfd29a30d6b64348212e4b662b9a1c09a",
+  "generated_at": "2026-06-14T08:51:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Morocco at 74% to win, with Haiti given a 5% chance of an upset victory. Morocco enters as the clear favorite, though Haiti's underdog odds leave room for a result outside the consensus expectation.\n\nThe spread across outcomes reflects a moderately competitive match rather than a heavily tilted one. A draw at 21% probability suggests both sides have realistic paths to avoid defeat, though Morocco's win probability dominates the distribution. The 69-percentage-point gap between the favorite and underdog indicates structural imbalance, yet the draw probability is substantive enough to prevent the match from appearing entirely one-sided.\n\nThe model and sportsbook consensus align closely on Morocco's win probability, separated by roughly 3 percentage points. Both sources converge near 71–74%. However, they diverge on Haiti's chances: the model assigns 5%, while the combined sportsbook and Polymarket data cluster near 10%. The dashboard does not adjudicate which view of Haiti's upset probability is correct, only that market and model split meaningfully on that tail outcome."
+  "preview_text": "The model favors Morocco at 74% to secure victory, leaving Haiti with a 5% chance of an upset win. The 69-percentage-point gap reflects a substantial disparity in forecast strength between the two sides on a neutral ground.\n\nThe draw emerges as a plausible outcome at 21%, suggesting Morocco faces real resistance to converting dominance into three points. The win-probability spread indicates a competitive match tilted decisively toward the favorite rather than a foregone conclusion, with meaningful uncertainty in the final result.\n\nThe model and sportsbook consensus align closely on a Morocco victory, differing by just 2 percentage points. Both place the draw in the 18–21% range. The main divergence is Haiti's chances: the model assigns 5%, while the market consensus reaches 10%. This 5-percentage-point gap suggests the market prices higher tail-risk for a Haiti upset than the statistical model does. The dashboard does not adjudicate between these views."
 }

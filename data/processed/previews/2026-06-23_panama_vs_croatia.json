@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "Croatia",
   "date": "2026-06-23",
-  "input_hash": "2c8c6c3cd49991e9e54156aa1b2d9408767c3de1",
-  "generated_at": "2026-06-12T06:30:29+00:00",
+  "input_hash": "7ded82439ce222754cd0db5c2cd2f0638dc36d3c",
+  "generated_at": "2026-06-14T08:50:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Croatia at 47%, with Panama trailing at 23%. That 24-percentage-point gap reflects a substantial disparity in win probability, though Panama's odds remain meaningful rather than negligible.\n\nThe draw emerges as the most likely single outcome at 30%, narrowly ahead of a Croatia victory. This distribution suggests a competitive match where stalemate is plausible and Panama retains genuine chances despite being the statistical underdog. The spread across all three outcomes is moderately wide, indicating meaningful uncertainty beyond a simple binary contest.\n\nThe market consensus (sportsbooks and Polymarket combined) shifts substantially toward Croatia, pricing a win at 61–63% while compressing Panama to 14–13% and the draw to 23–24%. The model rates Panama's win probability 9–10 percentage points higher than market consensus does. The dashboard does not adjudicate which view is correct; the divergence may reflect different information or different risk appetites in pricing."
+  "preview_text": "The model rates Croatia as the likely winner at 47%, though the margin over Panama is moderate rather than decisive. Panama's win probability stands at 23%, leaving a gap of roughly 23 percentage points in Croatia's favor. The underdog enters with a genuine path to victory, not merely a technical possibility.\n\nThe 30% draw probability is the second-most likely outcome in the model's forecast, suggesting this match has competitive texture. The spread across outcomes—no single scenario commanding more than half the probability mass—indicates a relatively open contest. A draw is plausible enough to shape team approach; neither side faces overwhelming pressure toward a decisive result.\n\nModel and market diverge meaningfully on the favorite. The market consensus, drawn from 44 sportsbooks and corroborated by Polymarket, places Croatia at 61%, roughly 14 percentage points higher than the model's 47%. The gap widens in Croatia's favor across all three outcomes. The dashboard does not adjudicate which source better captures match reality; the divergence flags a material disagreement worth noting."
 }

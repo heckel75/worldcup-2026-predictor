@@ -3,9 +3,9 @@
   "home_team": "Czech Republic",
   "away_team": "South Africa",
   "date": "2026-06-18",
-  "input_hash": "bf03cf84e6ef8ce1c96468295d30b8e1dc743e38",
-  "generated_at": "2026-06-13T08:17:05+00:00",
+  "input_hash": "2430008bb5c7d5414c4544749fbb97acfe05a2c7",
+  "generated_at": "2026-06-14T08:49:35+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Czech Republic to win at 54%, with South Africa's win probability standing at 17%. The Czech side holds a decisive edge in the forecast, though the underdog retains meaningful chances.\n\nThe draw probability of 29% suggests a competitive match where a stalemate result is plausible. The gap between Czech Republic and South Africa win chances is substantial, yet the relatively high draw share indicates neither team is expected to dominate decisively. A 1–0 or 2–1 result in either direction fits the distribution.\n\nModel and sportsbook consensus are tightly aligned. The model's Czech Republic win probability is 1 percentage point below the market consensus of 54%, while the model assigns draws 4 percentage points higher than the stripped sportsbook odds of 25%. Polymarket prices sit between these two estimates. The sources converge on Czech Republic as the clear favourite, with no material divergence requiring explanation."
+  "preview_text": "The model favors Czech Republic at 54% to win, with South Africa offered a 17% chance of victory. This represents a clear but not dominant preference for the European side.\n\nThe draw carries a substantial 29% probability in the model's forecast, suggesting the match is unlikely to be one-sided. The gap between Czech Republic's win probability and a draw outcome is narrow enough that the fixture appears competitive, with multiple plausible outcomes clustering in the 17–29 percentage-point range.\n\nModel and sportsbook consensus align closely across all three outcomes, with gaps of 1 percentage point or less on Czech Republic and larger draws. Polymarket pricing shows similarly tight clustering. The broad agreement across sources indicates stable market and model assessment of this matchup."
 }

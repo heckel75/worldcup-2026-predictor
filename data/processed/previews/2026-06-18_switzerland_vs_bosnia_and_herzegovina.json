@@ -3,9 +3,9 @@
   "home_team": "Switzerland",
   "away_team": "Bosnia and Herzegovina",
   "date": "2026-06-18",
-  "input_hash": "e207815620b6c8706303e5b3e8781b78dd657ca1",
-  "generated_at": "2026-06-13T08:17:13+00:00",
+  "input_hash": "7acbc26942c58e6f74ce8740924a417907a83ee4",
+  "generated_at": "2026-06-14T08:49:42+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Switzerland at 77%, leaving Bosnia and Herzegovina at 4% to win outright. That 73-percentage-point gap reflects a heavily asymmetric matchup in the model's view, with the underdog assigned minimal win probability.\n\nThe W/D/L spread widens the picture somewhat. A draw sits at 20% in the model, making it the second-most-likely outcome but still well below a Switzerland victory. The distribution tilts sharply toward the favorite, suggesting low competitive balance; Bosnia and Herzegovina's chances cluster almost entirely in the draw column rather than in outright victory scenarios.\n\nModel and market diverge notably here. The sportsbook consensus prices a Switzerland win at 60%—a 16-percentage-point gap below the model—and assigns Bosnia and Herzegovina 16% rather than 4%. Polymarket consensus aligns closely with the books. The dashboard makes no claim about which assessment is correct; the disagreement may reflect different assumptions about squad strength or match conditions not quantified in the model inputs."
+  "preview_text": "The model favors Switzerland with a 77% win probability, leaving Bosnia and Herzegovina at just 4%. This represents a heavily skewed matchup in the model's assessment, with the underdog facing a steep task on a neutral ground.\n\nThe draw carries 20% probability according to the model, suggesting a scenario where neither side breaks through is plausible but secondary to a Swiss victory. The win-loss spread widens substantially beyond the draw band, indicating the model sees this as a competitive affair tilted decisively toward one side rather than a close contest.\n\nThe sportsbook consensus and Polymarket prices align closely with each other but diverge meaningfully from the model. Books assign Bosnia and Herzegovina 16% win probability—more than four times the model's estimate—while trimming Switzerland's chances to 61%. The draw sits near 24% across both market sources. The model takes a considerably more confident view of Swiss superiority than either sportsbook or prediction market consensus."
 }

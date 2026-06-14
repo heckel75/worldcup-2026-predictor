@@ -5,10 +5,10 @@
   "date": "2026-06-16",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 15.5,
-  "input_hash": "480bb96ec2d232049c6d9136df270bf6496c8199",
-  "generated_at": "2026-06-09T10:02:55+00:00",
+  "max_gap_pp": 15.1,
+  "input_hash": "ffb0dcabe7ffae37ee3b89aa9702780a07b8bced",
+  "generated_at": "2026-06-14T08:52:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The sportsbooks assign Norway a 79% win probability versus the model's 63%, a 16-percentage-point gap favoring the favorite. The market is also notably more skeptical of an Iraq victory, pricing it at 7% compared to the model's 12%. This divergence suggests the market may be responding to recent form, injury status, or lineup changes that have not yet entered the model's estimate; such information could genuinely sharpen conviction around Norway's advantage. However, the dashboard surfaces this gap as a signal of information asymmetry rather than proof that either source has correctly read the match."
+  "commentary_text": "The most striking gap is on the Norway win: the model assigns 65%, while sportsbooks price 80%, a 15-percentage-point gap favoring the market's higher confidence. The market's sharper conviction on a Norway victory could reflect recent form, injury status, or lineup changes that the model's last update did not capture. Polymarket prices align closely with sportsbook consensus, reinforcing the direction of the divergence. Both sources rank Norway as heavy favorite, but the sportsbooks are substantially more certain—a signal worth monitoring as match day approaches to determine whether fresh information has genuinely shifted the matchup's contours."
 }

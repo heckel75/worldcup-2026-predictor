@@ -3,9 +3,9 @@
   "home_team": "Paraguay",
   "away_team": "Australia",
   "date": "2026-06-25",
-  "input_hash": "927f7920d40d35a94230098a4c6c742eaed4a9ba",
-  "generated_at": "2026-06-13T08:18:34+00:00",
+  "input_hash": "5e4c64e180ce4386824d40d070be7ce3ccf93aac",
+  "generated_at": "2026-06-14T08:51:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Australia at 44%, with Paraguay positioned as the underdog at 26%. The remaining probability mass—31%—lands on a draw, suggesting meaningful uncertainty about the outcome.\n\nThe win-loss gap of 18 percentage points indicates Australia enters as a clear statistical favorite, yet the draw probability of nearly one-third underscores that this is a competitive fixture rather than a blowout scenario. The spread reflects a match where all three outcomes carry real plausibility, though Australia's edge is substantial.\n\nA striking divergence separates the model and market. The sportsbook consensus backs Paraguay at 44%—nearly 18 percentage points higher than the model—while pricing Australia at 27%, nearly 17 points lower. Polymarket aligns closely with the sportsbooks. The dashboard does not adjudicate between these sources; the gap is large enough to warrant attention from bettors seeking to understand which framework is more reliable for this pairing."
+  "preview_text": "The model favors Australia at 44%, while Paraguay's win probability stands at 25%. The underdog's chances sit nearly 19 percentage points below the favorite, suggesting a meaningful gap in expected performance on a neutral pitch.\n\nThe draw at 31% represents the second-most likely outcome, indicating competitive balance despite Australia's edge. The win probabilities span a moderate range—neither team is heavily favored to dominate, and the distribution implies a close contest where Paraguay retains genuine chances, though Australia enters as clearer favorites.\n\nThe model and market diverge substantially. The sportsbook consensus and Polymarket prices align closely with each other, both placing Paraguay around 43% and Australia around 27%—nearly inverting the model's assessment. This 16–17 percentage point gap on each team's win probability is material and suggests the two sources disagree on which side holds the advantage. The dashboard does not adjudicate between them."
 }

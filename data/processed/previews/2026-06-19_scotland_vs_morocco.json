@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Morocco",
   "date": "2026-06-19",
-  "input_hash": "64d22fc8f9149b76f0a4975dfc7dd4ccd8b4b4eb",
-  "generated_at": "2026-06-11T18:49:43+00:00",
+  "input_hash": "79823faf539c0a7ec83ad32247a7d5f1d647290d",
+  "generated_at": "2026-06-14T08:49:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Morocco at 61%, with Scotland's win probability at 13%. The underdog faces a substantial gap: the model rates Morocco as a clear favorite, though not overwhelmingly dominant in a three-way outcome.\n\nThe draw carries meaningful weight at 26%, suggesting a competitive fixture where a stalemate sits between the two outright outcomes. Morocco's edge is real but leaves room for upset—Scotland's 13% win chance reflects the long-odds scenario rather than improbability. The three-outcome spread reflects moderate separation, not a rout.\n\nThe model and market diverge materially. Sportsbooks and Polymarket both price Morocco 10–12 percentage points lower than the model (48–49% vs 61%), while crediting Scotland 9–10 points higher (23–22% vs 13%). The consensus draws sit nearly level across sources. The dashboard does not adjudicate between these views; the gap warrants attention to why the model and betting markets weight these outcomes differently."
+  "preview_text": "The model favors Morocco at 61% to win, with Scotland assigned only a 13% chance of victory. The underdog gap is substantial: Morocco is heavily preferred despite the neutral venue erasing any home-field advantage for either side.\n\nThe draw probability of 26% suggests a genuinely competitive match across the full range of outcomes, though Morocco's win chance dominates the other two scenarios. The spread between Morocco's 61% and Scotland's 13% indicates a clear hierarchical expectation rather than a tightly matched contest. A draw remains plausible but represents the secondary outcome.\n\nThe model and market show meaningful divergence. The sportsbook consensus places Morocco at 54%, roughly 7 percentage points lower than the model's 61%, while backing Scotland's win probability at 20% versus the model's 13%. Polymarket odds sit between the two, with Morocco at 56%. The dashboard does not adjudicate which source better reflects the true probabilities."
 }

@@ -3,9 +3,9 @@
   "home_team": "Turkey",
   "away_team": "Paraguay",
   "date": "2026-06-19",
-  "input_hash": "243d97d254b76b2958c88f985cd9c8a35337671e",
-  "generated_at": "2026-06-13T08:17:27+00:00",
+  "input_hash": "f5fdacb37704dcafec7e92e4e74621da91019376",
+  "generated_at": "2026-06-14T08:50:03+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Turkey as a slight favorite with a 50% win probability, compared to Paraguay's 20% chance. The gap between the two sides is meaningful but not decisive; Turkey holds an edge in the statistical forecast, yet the outcome remains genuinely uncertain.\n\nA draw at 30% reflects a competitive match. The three-way spread suggests Turkey is favored but not heavily so; Paraguay has a realistic path to a result, and neither team is modeled as likely to dominate. The distribution indicates a closely contested contest where all three outcomes carry non-trivial probability.\n\nThe model and sportsbook consensus are closely aligned across all three outcomes. Turkey's win probability diverges by 3 percentage points, the draw by less than 1 percentage point, and Paraguay's by 4 percentage points. Polymarket prices fall within the same narrow range. This convergence across sources indicates broad agreement on the competitive balance."
+  "preview_text": "The statistical model favors Turkey at 50% to win, with Paraguay the underdog at 20%. The gap reflects a meaningful but not commanding advantage for Turkey; the underdog retains realistic winning chances on a neutral ground.\n\nThe draw emerges as a substantial outcome at 30%, indicating competitive balance. Turkey's lead over Paraguay is modest enough that the match is unlikely to be one-sided; a stalemate or Paraguay upset remain plausible within the forecast range. The distribution suggests an evenly contested fixture rather than a mismatch.\n\nModel and market are closely aligned. The sportsbook consensus sits 3 percentage points above the model for Turkey (47% vs 50%) and 4 points above for Paraguay (25% vs 20%), with the draw nearly identical. Polymarket prices fall between the two, differing by 2–3 points across all outcomes. These margins reflect normal variance; the three sources converge on Turkey as slight favorite in a competitive match."
 }

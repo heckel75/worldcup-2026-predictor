@@ -3,9 +3,9 @@
   "home_team": "Germany",
   "away_team": "Curaçao",
   "date": "2026-06-14",
-  "input_hash": "f9a1c53f64a4197e91aa091994fa8cf4e9852f4b",
-  "generated_at": "2026-06-12T06:29:10+00:00",
+  "input_hash": "2d84938f296a2a1a70a8c427649a4daf831cac11",
+  "generated_at": "2026-06-14T08:48:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model backs Germany as a strong favourite with an 84% win probability, leaving Curaçao with a 0.6% chance of victory. The implied quality gap is substantial, though not insurmountable within the bounds of tournament football.\n\nA draw carries 15% implied probability in the model's forecast, suggesting meaningful defensive solidity or competitive friction despite the favourite's advantage. Germany's win-or-draw combined likelihood stands at 99%, indicating the match structure leans heavily toward a German result, yet the 15-point buffer for a stalemate keeps the outcome from feeling predetermined.\n\nThe sportsbook consensus diverges noticeably from the model. Books price Germany at 92%, draw at 5.5%, and Curaçao at 2.4%—a spread that narrows the draw window by nearly 10 percentage points and widens Curaçao's underdog case slightly. Polymarket prices align more closely with the sportsbooks than with the model. The dashboard does not arbitrate between these sources; meaningful discrepancies in draw probability merit scrutiny ahead of kickoff."
+  "preview_text": "The model favors Germany at 84%, with Curaçao's win probability below 1%. The underdog has no realistic path to victory in the statistical forecast, though the model assigns Curaçao a non-zero chance reflective of match uncertainty inherent in any fixture.\n\nThe 15% draw probability suggests the model sees a plausible route to a stalemate, though a German win remains the clear modal outcome. The win gap of roughly 83 percentage points indicates a heavily asymmetric contest; Curaçao's chances concentrate almost entirely on avoiding defeat rather than winning outright.\n\nThe sportsbook consensus diverges meaningfully from the model, rating Germany at 91% and collapsing the draw to 6%. The market is substantially more confident in a German victory and far less confident in a draw—a gap of 9 percentage points on the win side and 9 points on the draw. Polymarket prices align more closely with the sportsbook view. The dashboard does not adjudicate between these assessments."
 }

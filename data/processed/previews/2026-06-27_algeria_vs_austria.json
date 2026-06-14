@@ -3,9 +3,9 @@
   "home_team": "Algeria",
   "away_team": "Austria",
   "date": "2026-06-27",
-  "input_hash": "9b901b4df737e7640f1c3b65463018429d05a300",
-  "generated_at": "2026-06-11T18:51:54+00:00",
+  "input_hash": "3283e7ba97b553fa969ac4989ec62b483e28bb71",
+  "generated_at": "2026-06-14T08:51:42+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Algeria at 38%, giving them a narrow edge over Austria's 30% win probability. The underdog rating reflects genuine uncertainty; Austria enters with substantially lower chances but remains competitive on a neutral ground.\n\nThe draw probability of 32% sits between the outcomes, suggesting the match could plausibly be decided by a single goal or settle level. The gap between Algeria's modelled win chance and Austria's is only 8 percentage points, indicating a relatively tight contest rather than a decisive mismatch. A 1-1 or scoreless stalemate carries meaningful likelihood.\n\nThe model and sportsbook consensus diverge notably here. Books price Austria's win chance at 44%, some 14 percentage points above the model's 30% estimate, while simultaneously marking Algeria down to 27% from the model's 38%. The dashboard makes no claim about which assessment is more accurate; this represents a material disagreement between statistical forecast and market pricing that users should weigh independently."
+  "preview_text": "The model favours Algeria at 38%, with Austria trailing at 30% and a draw at 32%. This represents a relatively competitive three-way contest, though the model assigns the African side a meaningful edge over both alternatives.\n\nThe spread across outcomes reflects genuine uncertainty. No single result dominates; Algeria's 8-point advantage over Austria is modest enough that the underdog remains a live contender. A draw sits squarely between the two win probabilities, suggesting a match unlikely to be decided by dominant play. The evenness of the distribution points to a closely matched fixture.\n\nA notable divergence emerges between the model and the sportsbook consensus. The market backs Austria substantially more, placing it at 44%—a 14-point gap from the model's 38% for Algeria. Polymarket prices align closely with the sportsbook view. The dashboard offers both estimates without adjudicating which interpretation of the matchup is more accurate."
 }

@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Haiti",
   "date": "2026-06-19",
-  "input_hash": "6cf27f66529b7b9ae605b703e5593c41024ecbd8",
-  "generated_at": "2026-06-13T08:17:21+00:00",
+  "input_hash": "1708694283f48f3253fc3dd0de6af4241a34892c",
+  "generated_at": "2026-06-14T08:49:54+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Brazil at 76%, with Haiti offered only a 4% chance of victory. The gap between the two sides is substantial, reflecting a clear hierarchical difference in expected performance. Haiti's win probability represents a minor tail outcome in this matchup.\n\nThe 20% draw probability signals a plausible alternative outcome—Brazil is favored but not overwhelmingly so in any single scenario. The win-draw-loss spread shows moderate separation rather than a blowout forecast, suggesting competitive play is possible even if Brazil is the probable winner.\n\nThe market consensus deviates meaningfully from the model. Sportsbooks assign Brazil 89% and Haiti 3%, an 13 percentage point gap above the model's 76%. Polymarket pricing is even more extreme, pushing Brazil to 91%. The dashboard does not claim to know which source is correct; the divergence likely reflects different underlying assumptions about team strength or match conditions that the numerical inputs alone do not reveal."
+  "preview_text": "The model rates Brazil as a heavy favourite with a 76% win probability, leaving Haiti with just 4% odds of victory. The gap reflects a substantial quality differential between the two sides in statistical terms, though Haiti's underdog probability remains non-negligible.\n\nThe draw carries 20% probability in the model, suggesting the match is unlikely to be decided by a large margin. While Brazil's win is more than three times as likely as any Haiti outcome, the draw probability indicates competitive resistance is possible. The modal outcome strongly favours Brazil, but the W/D/L spread implies a contest with material uncertainty in the final result.\n\nThe sportsbooks and Polymarket both shift favourably toward Brazil relative to the model, placing win odds at 86% and 89% respectively. Both markets also substantially compress the draw—down to 9% and 7%—while treating Haiti's win probability as roughly equivalent to the model's 4%. The model's 20% draw probability stands notably apart from market consensus around 8–9%, indicating the model sees draw risk as meaningfully higher than bookmakers and crypto traders do."
 }

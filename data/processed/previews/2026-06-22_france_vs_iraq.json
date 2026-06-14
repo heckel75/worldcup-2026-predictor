@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Iraq",
   "date": "2026-06-22",
-  "input_hash": "f5fb0df66c4885b57ef391832cbb72e495f02d91",
-  "generated_at": "2026-06-13T08:17:51+00:00",
+  "input_hash": "701c4c019ed8e7185be89fe4df4f414cc7aef444",
+  "generated_at": "2026-06-14T08:50:20+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors France at 83%, with Iraq given only 1% to win outright. The underdog faces a steep task on a neutral ground, though the model's confidence is somewhat less pronounced than the sportsbook consensus.\n\nThe 16% draw probability suggests the match is not expected to be entirely one-sided in execution, despite the large gap in win chances. Iraq's 1% victory probability implies the model sees the contest as highly asymmetric in quality, yet allows for the possibility of a low-scoring stalemate or an upset result. France's dominant favorite status points to a likely decisive outcome.\n\nThe model and sportsbook consensus are broadly aligned on France's win probability, separated by roughly 2 percentage points. Both sources assign considerably higher draw odds than Polymarket does. The sportsbook accords Iraq nearly 4% to win—substantially higher than the model's 1%—suggesting bookmakers view the underdog as holding marginally more plausible paths to points. The dashboard does not adjudicate between these views."
+  "preview_text": "The model forecasts France to win with 83% probability, leaving Iraq with less than 1% chance of victory. France enters as a decisive favorite, though the 15.8% draw probability suggests the match carries meaningful variance around that baseline outcome.\n\nThe spread across win-draw-loss reflects a heavily asymmetric contest. A French victory is the dominant scenario by a wide margin. The 15.8% draw likelihood indicates the model assigns meaningful weight to a stalemate, but an Iraq upset registers as near-negligible under the statistical framework.\n\nThe model and sportsbook consensus align on the fundamentals: France is heavily favored. The market's 85.4% win probability sits 2 percentage points above the model. More notably, the market offers Iraq 4.0% compared to the model's 0.9%—a divergence suggesting bookmakers assign substantially more probability to an upset. The Polymarket price of 87.8% for France sits furthest from the model, with draw odds compressed to 8.5%. No single source is definitively correct; the range reflects genuine uncertainty in tail outcomes."
 }

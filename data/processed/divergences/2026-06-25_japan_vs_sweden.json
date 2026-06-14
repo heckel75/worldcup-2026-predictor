@@ -6,9 +6,9 @@
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
   "max_gap_pp": 23.7,
-  "input_hash": "3aa4e82f30f8b874f2dbbc339234e62e45c48185",
-  "generated_at": "2026-06-12T06:31:54+00:00",
+  "input_hash": "a63ea4607cd9e2d30a3ece8541a336bb99c63f7b",
+  "generated_at": "2026-06-14T08:52:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Japan to win at 69%, while the sportsbook consensus places that probability at just 45%—a 24-percentage-point gap that represents the starkest divergence. The model is substantially more confident in a Japan victory, whereas the market distributes far more probability to both a draw (28% vs 24%) and a Sweden win (27% vs 8%). This hedging pattern suggests the market may be pricing in information the model cannot access: recent form swings, injury concerns affecting key players, or lineup changes that have shifted competitive balance since the model's last update. The dashboard identifies this as a material gap between statistical expectation and real-money pricing; neither reading should be treated as dispositive on its own."
+  "commentary_text": "The model assigns Japan a 69% win probability, but the sportsbook consensus and Polymarket both cluster near 45%, a 24-percentage-point gap favoring the model's confidence in a Japan victory. This hedging by the market could reflect information unavailable to the model—recent lineup changes, injury news, or shifts in form since the model's last update—that have eroded Japan's expected edge. Conversely, the model's Elo-based framework may be overweighting historical strength. Both sources agree Japan is favored, but the magnitude of disagreement is substantial enough to flag as a divergence worth monitoring as match details emerge."
 }

@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "input_hash": "5c0f90bdd139083d2240674d097524a46b7ac8e4",
-  "generated_at": "2026-06-13T08:18:16+00:00",
+  "input_hash": "36e6035c5bc76cc3a7b2f13f15e38afa25a67b51",
+  "generated_at": "2026-06-14T08:50:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Canada with a 41% win probability, against Switzerland's 28%. The statistical forecast ranks Canada as the clearer favorite, though the underdog retains a meaningful chance to prevail at neutral venue conditions.\n\nThe 31% draw probability signals a competitive match. The gap between Canada's modeled win rate and Switzerland's is substantial—roughly 13 percentage points—but the elevated draw odds suggest the teams are not drastically apart in strength. A one-goal outcome leans toward the model's assessment, though a stalemate remains plausible.\n\nModel and sportsbook consensus diverge sharply. The market backs Switzerland to win at 45%, a gap of 17 percentage points above the model's 28% estimate. Polymarket prices align closely with the book consensus, placing Switzerland slightly higher still. The dashboard does not adjudicate between these sources; the divergence reflects genuine disagreement on relative team strength."
+  "preview_text": "The model favours Canada at 41%, with Switzerland's win probability at 28%. That 13-percentage-point gap reflects a narrow but meaningful model edge for the favourite, while the underdog retains a reasonable chance to prevail outright.\n\nThe draw carries 31% probability in the model forecast, making it the second-likeliest outcome. The spread across the three results is relatively compressed: no single outcome dominates decisively, and the match is expected to be competitive rather than one-sided. A draw would not be a surprise given the underlying uncertainty.\n\nThe market consensus across 39 sportsbooks diverges substantially from the model. Books price Switzerland's win at 45%, compared to the model's 28%—a 17-percentage-point gap. Canada's win probability sits at 27% in the market versus 41% in the model, a 14-point difference in the opposite direction. Draw odds align closely at 28–31%. The dashboard does not adjudicate between these sources; the disagreement reflects genuine difference in their assessment of the matchup."
 }

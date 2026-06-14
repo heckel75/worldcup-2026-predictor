@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "Croatia",
   "date": "2026-06-17",
-  "input_hash": "b939f175a0fca44bf55c6488bce33373234ead8d",
-  "generated_at": "2026-06-11T18:49:27+00:00",
+  "input_hash": "81068f18b27d3d55f036b439535f1e7ed869d4ce",
+  "generated_at": "2026-06-14T08:49:29+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors England at 53% to win, with Croatia the underdog at 18%. England's advantage is meaningful but not commanding: the model assigns roughly a one-in-two chance the hosts emerge victorious, leaving room for a competitive encounter.\n\nThe draw carries notable weight at 29%, suggesting a relatively narrow spread across outcomes. The 34-percentage-point gap between England's win probability and Croatia's reflects asymmetry, yet draws remain plausible enough that neither side entering the match as heavy favorites would be misaligned with the forecast. This points to a moderately competitive affair rather than a heavily lopsided contest.\n\nThe sportsbook consensus sits slightly above the model on England, pricing a 55% win probability against the model's 53%—a 2-percentage-point gap within typical variance. Both sources agree draws are less likely than the model initially implies (25% vs. 29%), and both align closely on Croatia at around 19%. The sources are broadly in accord, with no material divergence warranting flag."
+  "preview_text": "The model favors England at 53% win probability, with Croatia trailing at 18%. The underdog's chances are materially compressed, reflecting a clear asymmetry in the fixture despite the neutral venue.\n\nA draw emerges as the second-most-likely outcome at 29%, suggesting the match has genuine competitive tension rather than England running away early. The 35-percentage-point gap between an England win and a Croatia win indicates meaningful separation in central tendency, yet the draw probability is substantial enough to indicate this is not a one-sided affair. Competitive equilibrium is low; the model sees England as the clear favorite but does not price a blowout.\n\nThe sportsbook consensus runs 3 percentage points higher on England (56% vs 53%) and correspondingly lower on the draw (25% vs 29%). Polymarket prices align closely with books on the England win and draw. The gap between model and market is modest across all outcomes—well within typical forecast variance—suggesting broad agreement that England enters as favorite without exceptional divergence on match structure."
 }
