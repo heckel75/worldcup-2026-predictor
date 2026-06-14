@@ -403,6 +403,12 @@ def _build_match(row) -> dict:
     neutral_used = bool(row.get("neutral_used", True))
     venue_label = "neutral venue" if neutral_used else f"home venue — {home_d}"
 
+    # Model favourite + divergence flag, for the index "today / next up" block.
+    _probs = (row["p_home_model_corr"], row["p_draw_model_corr"], row["p_away_model_corr"])
+    _fav = ("home", "draw", "away")[max(range(3), key=lambda i: _probs[i])]
+    model_fav = home_d if _fav == "home" else away_d if _fav == "away" else "Draw"
+    flag_divergent = bool(row["flag_divergent"]) if pd.notna(row.get("flag_divergent")) else False
+
     sources = [_source("Model",
                        row["p_home_model_corr"], row["p_draw_model_corr"],
                        row["p_away_model_corr"], home_d, away_d,
@@ -436,6 +442,8 @@ def _build_match(row) -> dict:
         "sources":      sources,
         "divergence":   _load_divergence(key, row, home_d, away_d),
         "scoreline":    _build_scoreline(row, home_d, away_d),
+        "model_fav":    model_fav,
+        "flag_divergent": flag_divergent,
         "preview_paras": _load_preview(key),
     }
 
@@ -549,20 +557,6 @@ def _load_played() -> dict[str, dict]:
         for rec in ledger.to_dict("records")
         if rec.get("outcome") in _OUTCOME_SLOT
     }
-
-
-def _group_fixtures(matches: list[dict]) -> list[dict]:
-    """Bucket match contexts by group letter (A-L), each date-sorted —
-    a browsable index so every fixture is reachable, not just movers and
-    divergent matches (the per-match pages have existed since Session 25
-    but most had no inbound link)."""
-    by_group: dict[str, list[dict]] = {}
-    for m in matches:
-        by_group.setdefault(m["group"], []).append(m)
-    return [
-        {"letter": letter, "fixtures": sorted(by_group[letter], key=lambda m: m["date_iso"])}
-        for letter in sorted(by_group)
-    ]
 
 
 def _by_date(matches: list[dict]) -> list[dict]:
@@ -778,6 +772,42 @@ def build_site() -> None:
     upcoming_days = _by_date([m for m in unplayed_matches if m["date_iso"] > today_iso])
     results_days = _by_date(played_matches)
 
+    # --- index "results + today" block (Session 37) ----------------------
+    # Results half: the most recent match day that actually has results — the
+    # latest played date in the ledger, NOT literally yesterday (rest days
+    # exist, e.g. the group->R32 gap). Played data comes from the ledger only
+    # (§6); played_matches is already ledger-sourced.
+    if played_matches:
+        latest_result_date = max(m["date_iso"] for m in played_matches)
+        results_block = {
+            "date_human": _date_human(latest_result_date),
+            "fixtures": sorted(
+                (m for m in played_matches if m["date_iso"] == latest_result_date),
+                key=lambda m: m["key"]),
+        }
+    else:
+        results_block = None
+
+    # Today half: today's still-unplayed fixtures; if nothing is on today,
+    # fall back to the next scheduled match day. All via clock.today().
+    on_today = sorted((m for m in unplayed_matches if m["date_iso"] == today_iso),
+                      key=lambda m: m["key"])
+    if on_today:
+        today_block = {"is_today": True, "date_human": _date_human(today_iso),
+                       "fixtures": on_today}
+    else:
+        future_dates = [m["date_iso"] for m in unplayed_matches if m["date_iso"] > today_iso]
+        if future_dates:
+            next_date = min(future_dates)
+            today_block = {
+                "is_today": False, "date_human": _date_human(next_date),
+                "fixtures": sorted(
+                    (m for m in unplayed_matches if m["date_iso"] == next_date),
+                    key=lambda m: m["key"]),
+            }
+        else:
+            today_block = None
+
     env = _build_env()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -794,7 +824,8 @@ def build_site() -> None:
         fresh_divergences=fresh_divs,
         top_divergences=top_divergences,
         scoreboard=scoreboard,
-        fixture_groups=_group_fixtures(matches),
+        results_block=results_block,
+        today_block=today_block,
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
         page_title="World Cup 2026 Forecast — model vs market predictions",
         meta_description=(

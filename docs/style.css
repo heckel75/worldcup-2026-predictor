@@ -542,6 +542,74 @@ h1 {
 .top-divs .fresh-div-list { margin-top: 0.2rem; }
 .td-fav { color: var(--muted); font-size: 0.82rem; font-style: italic; }
 
+/* --- results + today block (Session 37) ----------------------------- *
+ * Two columns: most-recent results (with the who-was-closer verdict) and  *
+ * today's / next match day's fixtures. The page's lead during the run.    */
+.today-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+@media (max-width: 640px) {
+  .today-results { grid-template-columns: 1fr; gap: 1.25rem; }
+}
+.tr-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+.tr-empty {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+.tr-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.tr-item {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  font-size: 0.9rem;
+}
+.tr-item a { color: var(--accent); font-weight: 500; text-decoration: none; }
+.tr-item a:hover { text-decoration: underline; }
+.tr-score {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text);
+  padding: 0 0.15rem;
+}
+.tr-verdict, .tr-fav, .tr-flag { font-size: 0.78rem; }
+.tr-verdict { color: var(--muted); }
+.tr-fav { color: var(--muted); font-style: italic; }
+.tr-flag {
+  color: var(--accent-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.68rem;
+}
+
+/* survival grid section heading (Session 37 reorder) */
+.survival { margin-top: 0.5rem; }
+.survival-sub {
+  font-size: 0.85rem;
+  color: var(--muted);
+  max-width: 70ch;
+  margin: 0.3rem 0 1rem;
+}
+
 /* --- browsable fixtures index (Session 35a) -------------------------- *
  * Below the survival grid: every group-stage fixture, grouped by letter *
  * and date-sorted, so pages that aren't movers/divergent are reachable. */
