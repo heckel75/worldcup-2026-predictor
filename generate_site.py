@@ -744,6 +744,24 @@ def build_site() -> None:
         d["div_type_label"] = DIV_LABELS.get(d["divergence_type"], d["divergence_type"])
         d["magnitude_fmt"] = f"{round(d['magnitude'] * 100)}pp"
 
+    # --- current top divergences panel (Session 37) ----------------------
+    top_divergences = (
+        whats_changed.compute_top_divergences(curr_div_df)
+        if curr_div_df is not None else []
+    )
+    for d in top_divergences:
+        d["home_display"] = disp(d["home_team"])
+        d["away_display"] = disp(d["away_team"])
+        d["match_url"] = (
+            f"matches/{match_key(d['date'], d['home_team'], d['away_team'])}.html"
+        )
+        d["div_type_label"] = DIV_LABELS.get(d["divergence_type"], d["divergence_type"])
+        d["magnitude_fmt"] = f"{round(d['magnitude'] * 100)}pp"
+        fav = d["fav_outcome"]
+        d["favorite"] = ("Draw" if fav == "draw"
+                         else d["home_display"] if fav == "home"
+                         else d["away_display"])
+
     # --- played-match scoreboard + schedule buckets (Session 36) ----------
     played_matches = [m for m in matches if m["played"]]
     unplayed_matches = [m for m in matches if not m["played"]]
@@ -774,6 +792,7 @@ def build_site() -> None:
         title_movers=title_movers,
         advance_movers=advance_movers,
         fresh_divergences=fresh_divs,
+        top_divergences=top_divergences,
         scoreboard=scoreboard,
         fixture_groups=_group_fixtures(matches),
         root="", generated_at=generated_at, snapshot_date=snapshot_date,

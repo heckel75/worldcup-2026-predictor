@@ -12,6 +12,7 @@ _two_newest(dir_path) -> (prev | None, curr | None)
 compute_title_movers(prev_df, curr_df, top_n=5) -> list[dict]
 compute_advance_movers(prev_df, curr_df, top_n=5) -> list[dict]
 compute_fresh_divergences(prev_div_df, curr_div_df, top_n=3) -> list[dict]
+compute_top_divergences(curr_div_df, top_n=5) -> list[dict]
 
 Run from project root to execute self-tests:
     python src/whats_changed.py
@@ -151,6 +152,49 @@ def compute_fresh_divergences(
     ]
 
 
+def compute_top_divergences(
+    curr_div_df: Optional[pd.DataFrame],
+    top_n: int = 5,
+) -> list[dict]:
+    """Top-N currently-flagged divergences among the remaining fixtures,
+    ranked by div_model_book_max descending.
+
+    Unlike compute_fresh_divergences (newly-flagged vs yesterday), this is the
+    steady, always-populated signal: every flagged fixture is a candidate, not
+    just the new ones. Reuses flag_divergent — the established detector that
+    already offsets the ~4pp draw/away bias (§6) — rather than a fresh
+    magnitude cutoff, so the panel surfaces exactly the gaps the detector
+    already trusts, just sorted. Each row also carries the model's favoured
+    outcome ("home"/"draw"/"away") for the generator to resolve to a name.
+
+    Returns [] when the frame is None/empty, lacks the flag column, or nothing
+    is flagged (late tournament: header-only triple_compare once the group
+    stage's flagged fixtures have all been played)."""
+    if curr_div_df is None or curr_div_df.empty:
+        return []
+    if "flag_divergent" not in curr_div_df.columns:
+        return []
+    flagged = curr_div_df[curr_div_df["flag_divergent"] == True].copy()
+    if flagged.empty:
+        return []
+    flagged = flagged.sort_values(_COL_MAG, ascending=False)
+    out = []
+    for _, row in flagged.head(top_n).iterrows():
+        probs = (row["p_home_model_corr"],
+                 row["p_draw_model_corr"],
+                 row["p_away_model_corr"])
+        fav = ("home", "draw", "away")[max(range(3), key=lambda i: probs[i])]
+        out.append({
+            "home_team":       row["home_team"],
+            "away_team":       row["away_team"],
+            "date":            str(row["date"]),
+            "divergence_type": row["divergence_type"],
+            "magnitude":       float(row[_COL_MAG]),
+            "fav_outcome":     fav,
+        })
+    return out
+
+
 # ---------------------------------------------------------------------------
 # Self-tests
 # ---------------------------------------------------------------------------
@@ -269,5 +313,46 @@ if __name__ == "__main__":
     unflagged["flag_divergent"] = False
     assert compute_fresh_divergences(prev_div_empty, unflagged) == [], \
         "no flagged matches should return []"
+
+    # --- compute_top_divergences -------------------------------------------
+    top_div = pd.DataFrame({
+        "home_team":         ["Spain", "France", "Brazil", "England"],
+        "away_team":         ["Morocco", "Belgium", "Argentina", "Croatia"],
+        "date":              ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14"],
+        "divergence_type":   ["model_over_concentrated", "disagree_on_favorite",
+                              "model_under_concentrated", "model_over_concentrated"],
+        "p_home_model_corr": [0.70, 0.30, 0.45, 0.55],
+        "p_draw_model_corr": [0.20, 0.30, 0.25, 0.25],
+        "p_away_model_corr": [0.10, 0.40, 0.30, 0.20],
+        _COL_MAG:            [0.22, 0.19, 0.25, 0.16],
+        "flag_divergent":    [True, True, True, False],
+    })
+
+    # None / empty frame → []
+    assert compute_top_divergences(None) == [], "None → []"
+    assert compute_top_divergences(pd.DataFrame()) == [], "empty df → []"
+
+    # sorted by magnitude desc; unflagged England (highest-strength row dropped)
+    td = compute_top_divergences(top_div, top_n=5)
+    assert len(td) == 3, f"expected 3 flagged, got {len(td)}"
+    assert [d["home_team"] for d in td] == ["Brazil", "Spain", "France"], \
+        f"wrong sort order: {[d['home_team'] for d in td]}"
+    assert td[0]["magnitude"] == 0.25, "top magnitude should be Brazil's 0.25"
+
+    # model favourite outcome resolved correctly
+    assert td[1]["fav_outcome"] == "home", "Spain 0.70 home → fav home"
+    assert td[2]["fav_outcome"] == "away", "France 0.40 away → fav away"
+
+    # N-capping
+    assert len(compute_top_divergences(top_div, top_n=2)) == 2, "top_n should cap"
+
+    # nothing flagged → []
+    none_flagged = top_div.copy()
+    none_flagged["flag_divergent"] = False
+    assert compute_top_divergences(none_flagged) == [], "no flagged → []"
+
+    # missing flag column → [] (header-only / malformed frame)
+    assert compute_top_divergences(top_div.drop(columns=["flag_divergent"])) == [], \
+        "missing flag_divergent column should return []"
 
     print("All self-tests passed.")

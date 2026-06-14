@@ -82,6 +82,23 @@
 </section>
 {% endif %}
 
+{# ---- Current top divergences (Session 37) ------------------------ #}
+{% if top_divergences %}
+<section class="changes top-divs">
+  <p class="section-label">Biggest model–market gaps right now</p>
+  <ul class="fresh-div-list">
+    {% for d in top_divergences %}
+    <li class="fresh-div-item">
+      <a href="{{ root }}{{ d.match_url }}">{{ d.home_display }} vs {{ d.away_display }}</a>
+      <span class="fresh-div-gap">{{ d.magnitude_fmt }} gap</span>
+      <span class="fresh-div-type">{{ d.div_type_label }}</span>
+      <span class="td-fav">model favours {{ d.favorite }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {# ---- Survival grid ------------------------------------------------ #}
 <div class="tree-wrap">
   <table class="tree">

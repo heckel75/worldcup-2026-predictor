@@ -538,6 +538,10 @@ h1 {
 .fresh-div-gap  { font-family: var(--font-mono); font-size: 0.82rem; }
 .fresh-div-type { color: var(--muted); font-size: 0.82rem; }
 
+/* current top-divergences panel (Session 37) reuses .fresh-div-* rows */
+.top-divs .fresh-div-list { margin-top: 0.2rem; }
+.td-fav { color: var(--muted); font-size: 0.82rem; font-style: italic; }
+
 /* --- browsable fixtures index (Session 35a) -------------------------- *
  * Below the survival grid: every group-stage fixture, grouped by letter *
  * and date-sorted, so pages that aren't movers/divergent are reachable. */
