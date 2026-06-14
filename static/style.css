@@ -235,6 +235,36 @@ h1 {
 }
 .site-footer a { color: var(--accent); }
 
+/* --- share strip (footer utility links) -------------------------- */
+.share-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.share-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.share-link {
+  display: inline-block;
+  padding: 0.18rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted) !important;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.share-link:hover {
+  color: var(--accent) !important;
+  border-color: var(--accent);
+}
+
 /* --- per-match page (Session 25) --------------------------------- *
  * Three stacked probability bars (model / sportsbook / Polymarket),  *
  * one outcome trio per bar so the segment boundaries line up across  *
