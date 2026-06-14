@@ -45,6 +45,53 @@
   {%- endif %}
 </section>
 
+{% if m.scoreline %}
+<section class="scoreline">
+  <h2 class="section-label">Most likely scorelines</h2>
+  <p class="scoreline-xg">
+    Model expected goals:
+    <strong>{{ m.home_display }} {{ m.scoreline.lam_h }}</strong> −
+    <strong>{{ m.away_display }} {{ m.scoreline.lam_a }}</strong>
+    <span class="scoreline-xg-diff">({{ m.scoreline.diff_text }})</span>
+  </p>
+  <ul class="scoreline-top">
+    {% for t in m.scoreline.top3 %}
+    <li><span class="st-score">{{ t.score }}</span><span class="st-pct">{{ t.pct }}</span></li>
+    {% endfor %}
+  </ul>
+  <figure class="scoreline-heat">
+    {% set g = m.scoreline.svg %}
+    <svg viewBox="0 0 {{ g.w }} {{ g.h }}" width="{{ g.w }}" height="{{ g.h }}"
+         role="img" aria-label="{{ g.aria }}">
+      {% for c in g.cells %}
+      <rect x="{{ c.x }}" y="{{ c.y }}" width="{{ c.w }}" height="{{ c.w }}"
+            fill="#1f7a4d" fill-opacity="{{ c.opacity }}"
+            stroke="{% if c.diag %}#c98a12{% else %}#e4e0d6{% endif %}"
+            stroke-width="{% if c.diag %}1.6{% else %}0.75{% endif %}">
+        <title>{{ c.label }}</title>
+      </rect>
+      {% if c.pct %}<text x="{{ c.tx }}" y="{{ c.ty }}" text-anchor="middle"
+            class="sc-cell-pct" fill="{{ c.txtcolor }}">{{ c.pct }}</text>{% endif %}
+      {% endfor %}
+      {% for t in g.xticks %}
+      <text x="{{ t.x }}" y="{{ t.y }}" text-anchor="middle" class="sc-tick">{{ t.t }}</text>
+      {% endfor %}
+      {% for t in g.yticks %}
+      <text x="{{ t.x }}" y="{{ t.y }}" text-anchor="end" class="sc-tick">{{ t.t }}</text>
+      {% endfor %}
+      <text x="{{ g.x_axis_x }}" y="{{ g.x_axis_y }}" text-anchor="middle"
+            class="sc-axis">{{ g.x_axis_label }}</text>
+      <text x="{{ g.y_axis_x }}" y="{{ g.y_axis_y }}" text-anchor="middle"
+            class="sc-axis" transform="{{ g.y_axis_rot }}">{{ g.y_axis_label }}</text>
+    </svg>
+    <figcaption>Home goals down the rows, away goals across the columns; the
+      gold diagonal is draws. “5+” folds in all higher scores.</figcaption>
+  </figure>
+  <p class="scoreline-caveat">Scoreline probabilities come from the uncorrected
+    model — their implied result split won't exactly match the corrected bars above.</p>
+</section>
+{% endif %}
+
 {% if m.divergence %}
 <aside class="divergence divergence--{{ m.divergence.tone }}">
   <p class="divergence-tag">{{ m.divergence.label }}{% if m.played %} · written pre-match{% endif %}</p>

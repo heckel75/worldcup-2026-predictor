@@ -91,7 +91,11 @@
   correction derived from the backtest. The <a href="{{ root }}calibration.html">calibration
   page</a> shows the <em>raw model</em> reliability; the match pages show <em>corrected</em>
   probabilities. The correction is precisely what closes the draw under-prediction visible
-  on the reliability diagram.</li>
+  on the reliability diagram. The same raw-vs-corrected distinction applies to the scoreline
+  heatmap and top-three most-likely scores on each match page: those come straight from the
+  uncorrected Dixon-Coles grid, so the win/draw/loss split they imply won't exactly match the
+  corrected bars directly above them (the heatmap also folds all 6+ outcomes into its "5+"
+  edge purely for display — the underlying grid and top-three use the full distribution).</li>
 
   <li><strong>Residual confederation-pool drift.</strong>
   Elo ratings update only when teams from different confederations play each other. Teams

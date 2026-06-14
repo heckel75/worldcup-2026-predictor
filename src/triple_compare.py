@@ -26,6 +26,7 @@ Run from project root:
 from __future__ import annotations
 
 import datetime as dt
+import json
 import sys
 from pathlib import Path
 
@@ -93,6 +94,43 @@ def bias_correct(
         # Defensive; shouldn't happen with sane probs and ~few-pp offsets.
         return p_home, p_draw, p_away
     return a / s, b / s, c / s
+
+
+# --- scoreline grid persistence (exact-score view) --------------------------
+
+def fold_grid_6x6(grid: np.ndarray) -> list[list[float]]:
+    """
+    Fold the 11x11 [home][away] Dixon-Coles scoreline grid down to 6x6,
+    where index 5 means "5+". All 6+ mass is collected into the row/col 5
+    edge so the folded grid still sums to ~1.
+
+    Returns a nested list of Python floats (numpy float64 is not
+    JSON-serializable and must not reach json.dumps).
+    """
+    # Base already holds exactly-5 goals; fold only the strict 6+ tail so
+    # row/col 5 become "5+" without double-counting the index-5 cells.
+    g6 = grid[:6, :6].copy()
+    g6[5, :] += grid[6:, :6].sum(axis=0)   # home 6+ tail into row 5
+    g6[:, 5] += grid[:6, 6:].sum(axis=1)   # away 6+ tail into col 5
+    g6[5, 5] += grid[6:, 6:].sum()         # 6+/6+ corner, added once
+    assert abs(g6.sum() - 1.0) < 1e-9, f"folded grid sums to {g6.sum()}"
+    return [[float(g6[i, j]) for j in range(6)] for i in range(6)]
+
+
+def top_scorelines(grid: np.ndarray, n: int = 3) -> list[dict]:
+    """
+    Top-n most-likely scorelines from the FULL pre-fold grid (so the mode
+    reflects true scorelines like 2-1, not a tail-inflated "5+" edge cell).
+
+    Returns a list of {"score": "H-A", "prob": float} with Python floats.
+    """
+    flat = grid.ravel()
+    idx = np.argsort(flat)[::-1][:n]
+    out = []
+    for k in idx:
+        i, j = np.unravel_index(int(k), grid.shape)
+        out.append({"score": f"{int(i)}-{int(j)}", "prob": float(grid[i, j])})
+    return out
 
 
 # --- divergence classification ----------------------------------------------
@@ -199,6 +237,7 @@ def main() -> None:
             "date", "home_team", "away_team", "neutral_used",
             "p_home_model", "p_draw_model", "p_away_model",
             "p_home_model_corr", "p_draw_model_corr", "p_away_model_corr",
+            "lambda_home", "lambda_away", "scoreline_grid", "top_scorelines",
             "p_home_book", "p_draw_book", "p_away_book", "n_books",
             "p_home_poly", "p_draw_poly", "p_away_poly", "poly_volume",
             "div_model_book_home", "div_model_book_draw", "div_model_book_away",
@@ -227,6 +266,7 @@ def main() -> None:
         pred = predict_match(fx.home_team, fx.away_team, ratings, neutral=neutral)
         p_h, p_d, p_a = pred["p_home_win"], pred["p_draw"], pred["p_away_win"]
         ph_c, pd_c, pa_c = bias_correct(p_h, p_d, p_a, bias)
+        grid = pred["scoreline_grid"]  # 11x11, [home][away], post-tau, sums to 1
         rows.append({
             "date":              fx.date,
             "home_team":         fx.home_team,
@@ -238,6 +278,11 @@ def main() -> None:
             "p_home_model_corr": round(ph_c, 4),
             "p_draw_model_corr": round(pd_c, 4),
             "p_away_model_corr": round(pa_c, 4),
+            # Exact-score view: raw model, no bias correction.
+            "lambda_home":       round(float(pred["lambda_home"]), 4),
+            "lambda_away":       round(float(pred["lambda_away"]), 4),
+            "scoreline_grid":    json.dumps(fold_grid_6x6(grid)),
+            "top_scorelines":    json.dumps(top_scorelines(grid)),
         })
     df = pd.DataFrame(rows)
 

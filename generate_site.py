@@ -280,6 +280,120 @@ def _load_preview(key: str) -> list[str]:
     return [p.strip() for p in rec.get("preview_text", "").split("\n\n") if p.strip()]
 
 
+# ----------------------------------------------------------------------
+# Exact-score view (scoreline grid + top-3 + expected goals)
+# Pure consumer: reads persisted columns only — no model import, no Poisson.
+# The matrix is [home][away] end-to-end (axis 0 = home goals = vertical).
+# Never transpose; fix orientation in the axis mapping, not the stored data.
+# ----------------------------------------------------------------------
+
+_SC_CELL  = 34       # px per heatmap cell
+_SC_N     = 6        # 6x6 grid, index 5 == "5+"
+_SC_PAD_L = 52       # room for y-axis title + tick labels
+_SC_PAD_T = 24
+_SC_PAD_R = 14
+_SC_PAD_B = 42       # room for x-axis ticks + title
+_SC_TICKS = ["0", "1", "2", "3", "4", "5+"]
+
+
+def _scoreline_svg(grid: list[list[float]], home_d: str, away_d: str) -> dict:
+    """Pre-compute SVG geometry for the 6x6 scoreline heatmap.
+
+    grid is [home][away]: row i = home goals (vertical), col j = away goals
+    (horizontal). Cell shading scales with probability; the i==j diagonal is
+    flagged so the template can mark the draw line.
+    """
+    plot = _SC_N * _SC_CELL
+    flat = [float(p) for rowp in grid for p in rowp]
+    max_p = max(flat) or 1.0
+
+    cells = []
+    for i in range(_SC_N):           # home goals -> vertical (axis 0)
+        for j in range(_SC_N):       # away goals -> horizontal (axis 1)
+            p = float(grid[i][j])
+            rel = p / max_p
+            x = _SC_PAD_L + j * _SC_CELL
+            y = _SC_PAD_T + i * _SC_CELL
+            cells.append({
+                "x": x, "y": y, "w": _SC_CELL,
+                "tx": x + _SC_CELL / 2, "ty": y + _SC_CELL / 2 + 4,
+                "opacity": round(rel, 3),
+                "diag": i == j,
+                "pct": f"{round(p * 100)}" if p >= 0.03 else "",
+                "txtcolor": "#ffffff" if rel >= 0.5 else "#1b1a17",
+                "label": (f"{home_d} {_SC_TICKS[i]} – {away_d} {_SC_TICKS[j]}: "
+                          f"{round(p * 100)}%"),
+            })
+
+    xticks = [{"x": _SC_PAD_L + j * _SC_CELL + _SC_CELL / 2,
+               "y": _SC_PAD_T + plot + 15, "t": _SC_TICKS[j]}
+              for j in range(_SC_N)]
+    yticks = [{"x": _SC_PAD_L - 9,
+               "y": _SC_PAD_T + i * _SC_CELL + _SC_CELL / 2 + 4, "t": _SC_TICKS[i]}
+              for i in range(_SC_N)]
+
+    cy = _SC_PAD_T + plot / 2
+    return {
+        "w": _SC_PAD_L + plot + _SC_PAD_R,
+        "h": _SC_PAD_T + plot + _SC_PAD_B,
+        "plot": plot,
+        "pad_l": _SC_PAD_L, "pad_t": _SC_PAD_T,
+        "cells": cells, "xticks": xticks, "yticks": yticks,
+        "x_axis_label": f"{away_d} goals →",
+        "x_axis_x": _SC_PAD_L + plot / 2,
+        "x_axis_y": _SC_PAD_T + plot + 36,
+        "y_axis_label": f"{home_d} goals ↓",
+        "y_axis_x": 14, "y_axis_y": cy, "y_axis_rot": f"rotate(-90 14 {cy})",
+        "aria": (f"Scoreline probability heatmap: {home_d} goals (rows) "
+                 f"versus {away_d} goals (columns)."),
+    }
+
+
+def _build_scoreline(src, home_d: str, away_d: str) -> dict | None:
+    """Render-ready exact-score block from the persisted columns, or None.
+
+    `src` is a triple_compare row (upcoming) or a frozen ledger rec (played);
+    both expose lambda_home / lambda_away / scoreline_grid / top_scorelines.
+    Any absent/empty value (the 16 pre-existing scoreline-less ledger rows, or
+    a future NaN) skips the whole block — a page has the full block or none.
+    """
+    grid_raw = src.get("scoreline_grid")
+    top_raw = src.get("top_scorelines")
+    # Valid persisted values are always JSON strings; NaN is a float -> skip.
+    if not isinstance(grid_raw, str) or not grid_raw.strip():
+        return None
+    if not isinstance(top_raw, str) or not top_raw.strip():
+        return None
+    lam_h, lam_a = src.get("lambda_home"), src.get("lambda_away")
+    if lam_h is None or lam_a is None or pd.isna(lam_h) or pd.isna(lam_a):
+        return None
+    try:
+        grid = json.loads(grid_raw)
+        tops = json.loads(top_raw)
+    except (json.JSONDecodeError, TypeError):
+        return None
+
+    lam_h, lam_a = float(lam_h), float(lam_a)
+    diff = lam_h - lam_a
+    if abs(diff) < 0.005:
+        diff_text = "dead level"
+    else:
+        side = home_d if diff > 0 else away_d
+        diff_text = f"{side} +{abs(diff):.2f}"
+
+    top3 = [{"score": str(t["score"]).replace("-", "–"),
+             "pct": _fmt(float(t["prob"]))}
+            for t in tops]
+
+    return {
+        "lam_h": f"{lam_h:.2f}",
+        "lam_a": f"{lam_a:.2f}",
+        "diff_text": diff_text,
+        "top3": top3,
+        "svg": _scoreline_svg(grid, home_d, away_d),
+    }
+
+
 def _build_match(row) -> dict:
     """Turn one triple_compare row into a render-ready match context."""
     home, away = row["home_team"], row["away_team"]
@@ -321,6 +435,7 @@ def _build_match(row) -> dict:
         "venue_label":  venue_label,
         "sources":      sources,
         "divergence":   _load_divergence(key, row, home_d, away_d),
+        "scoreline":    _build_scoreline(row, home_d, away_d),
         "preview_paras": _load_preview(key),
     }
 
@@ -415,6 +530,7 @@ def _build_played_match(rec: dict) -> dict:
         "venue_label":  venue_label,
         "sources":      sources,
         "divergence":   _load_divergence(key, aliased, home_d, away_d),
+        "scoreline":    _build_scoreline(rec, home_d, away_d),
         "preview_paras": _load_preview(key),
     }
 

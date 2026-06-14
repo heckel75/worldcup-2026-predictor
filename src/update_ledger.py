@@ -24,6 +24,7 @@ self-tests can control the date window without patching.
 from __future__ import annotations
 
 import datetime as dt
+import json
 import re
 
 import pandas as pd
@@ -34,6 +35,7 @@ LEDGER_SCHEMA = [
     "p_home_book", "p_draw_book", "p_away_book",
     "p_home_poly", "p_draw_poly", "p_away_poly",
     "poly_volume", "neutral_used",
+    "lambda_home", "lambda_away", "scoreline_grid", "top_scorelines",
     "forecast_ts", "outcome",
     "actual_home_score", "actual_away_score",
 ]
@@ -44,6 +46,16 @@ MARKET_COLS = [
     "p_home_book", "p_draw_book", "p_away_book",
     "p_home_poly", "p_draw_poly", "p_away_poly",
     "poly_volume", "neutral_used",
+]
+
+# Frozen-at-freeze-time exact-score columns (Session: exact-score view), as
+# named in triple_compare.csv. lambda_* freeze as rounded floats; scoreline_grid
+# and top_scorelines are opaque JSON strings frozen verbatim (no re-parse /
+# re-serialize, which would reorder keys or re-cast and break the round-trip).
+# The 8 pre-existing scoreline-less ledger rows stay empty by design — their
+# source grids are gone and a recompute would use post-match ratings.
+SCORELINE_COLS = [
+    "lambda_home", "lambda_away", "scoreline_grid", "top_scorelines",
 ]
 
 
@@ -118,7 +130,7 @@ def freeze_new_forecasts(
     triple_cols = [
         "home_team", "away_team",
         "p_home_model_corr", "p_draw_model_corr", "p_away_model_corr",
-    ] + [c for c in MARKET_COLS if c in triple_df.columns]
+    ] + [c for c in MARKET_COLS + SCORELINE_COLS if c in triple_df.columns]
     triple = triple_df[triple_cols].copy()
     merged = window.merge(triple, on=["home_team", "away_team"], how="left")
 
@@ -152,6 +164,14 @@ def freeze_new_forecasts(
                 rec[col] = _freeze_p(val)
             else:
                 rec[col] = val if pd.notna(val) else pd.NA
+        # Exact-score columns: lambdas as rounded floats; the two JSON strings
+        # frozen verbatim (opaque — never re-parsed/re-serialized here).
+        for col in SCORELINE_COLS:
+            val = row.get(col)
+            if col.startswith("lambda_"):
+                rec[col] = _freeze_p(val)
+            else:
+                rec[col] = val if (val is not None and pd.notna(val)) else pd.NA
         new_rows.append(rec)
 
     if not new_rows:
@@ -271,6 +291,15 @@ if __name__ == "__main__":
         "p_away_poly":         [0.25, 0.35, 0.27],
         "poly_volume":         [100000, 5000, 20000],
         "neutral_used":        [True, False, True],
+        "lambda_home":         [1.80, 1.20, 1.55],
+        "lambda_away":         [1.10, 1.20, 1.05],
+        # Opaque JSON strings, exactly as triple_compare emits them.
+        "scoreline_grid":      [json.dumps([[0.1, 0.05], [0.05, 0.02]]),
+                                json.dumps([[0.08, 0.06], [0.06, 0.03]]),
+                                json.dumps([[0.09, 0.05], [0.05, 0.02]])],
+        "top_scorelines":      [json.dumps([{"score": "1-0", "prob": 0.12}]),
+                                json.dumps([{"score": "1-1", "prob": 0.11}]),
+                                json.dumps([{"score": "2-1", "prob": 0.10}])],
     })
 
     # Empty ledger with correct schema
@@ -300,6 +329,14 @@ if __name__ == "__main__":
     assert pd.isna(row_b["p_home_book"]), "Absent book market must freeze as NaN"
     assert float(row_b["p_home_poly"]) == 0.32, "Poly prob should freeze for match B"
     assert pd.isna(row_a["actual_home_score"]), "Scores empty after freeze"
+
+    # --- Test 1c: exact-score columns freeze; JSON strings round-trip verbatim ---
+    assert float(row_a["lambda_home"]) == 1.80, "lambda_home should freeze"
+    assert float(row_a["lambda_away"]) == 1.10, "lambda_away should freeze"
+    assert json.loads(row_a["scoreline_grid"]) == [[0.1, 0.05], [0.05, 0.02]], \
+        "scoreline_grid must round-trip through json.loads identically"
+    assert json.loads(row_a["top_scorelines"]) == [{"score": "1-0", "prob": 0.12}], \
+        "top_scorelines must round-trip through json.loads identically"
 
     # --- Test 2: re-running freeze is a no-op ---
     ledger2 = freeze_new_forecasts(
