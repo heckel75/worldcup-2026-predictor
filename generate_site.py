@@ -773,40 +773,48 @@ def build_site() -> None:
     results_days = _by_date(played_matches)
 
     # --- index "results + today" block (Session 37) ----------------------
-    # Results half: the most recent match day that actually has results — the
-    # latest played date in the ledger, NOT literally yesterday (rest days
-    # exist, e.g. the group->R32 gap). Played data comes from the ledger only
-    # (§6); played_matches is already ledger-sourced.
-    if played_matches:
-        latest_result_date = max(m["date_iso"] for m in played_matches)
+    # Anchored to the ledger PLAY-FRONTIER, not wall-clock: the once-daily
+    # morning run can sit on either side of midnight without mis-bucketing.
+    #
+    #   frontier      = earliest date_iso that still has an unplayed fixture
+    #                   (= the current/next slate). This one rule also yields
+    #                   the rest-day "next up {date}" case for free — when no
+    #                   match is on today, the earliest unplayed date is the
+    #                   next slate; no clock.today() fallback branch needed.
+    #   today block   = that whole frontier slate (the MID-SLATE rule: a match
+    #                   already scored on the frontier date stays here and
+    #                   shows its score inline, rather than jumping to results).
+    #   results block = the last fully-completed slate STRICTLY BEFORE the
+    #                   frontier (every date < frontier is fully played).
+    #
+    # Played data is ledger-sourced (§6); played/unplayed come off match["played"],
+    # which is set only by a ledger row with a result attached. clock.today() is
+    # used ONLY for the cosmetic "Today" vs "next up {date}" label — never for
+    # which matches land in which half.
+    unplayed_dates = [m["date_iso"] for m in unplayed_matches]
+    frontier = min(unplayed_dates) if unplayed_dates else None
+
+    if frontier is not None:
+        today_block = {
+            "is_today": frontier == today_iso,   # label only; bucketing is frontier-based
+            "date_human": _date_human(frontier),
+            "fixtures": sorted((m for m in matches if m["date_iso"] == frontier),
+                               key=lambda m: m["key"]),
+        }
+    else:
+        today_block = None  # tournament complete — nothing unplayed left
+
+    done_dates = [m["date_iso"] for m in played_matches
+                  if frontier is None or m["date_iso"] < frontier]
+    if done_dates:
+        results_date = max(done_dates)
         results_block = {
-            "date_human": _date_human(latest_result_date),
-            "fixtures": sorted(
-                (m for m in played_matches if m["date_iso"] == latest_result_date),
-                key=lambda m: m["key"]),
+            "date_human": _date_human(results_date),
+            "fixtures": sorted((m for m in played_matches if m["date_iso"] == results_date),
+                               key=lambda m: m["key"]),
         }
     else:
         results_block = None
-
-    # Today half: today's still-unplayed fixtures; if nothing is on today,
-    # fall back to the next scheduled match day. All via clock.today().
-    on_today = sorted((m for m in unplayed_matches if m["date_iso"] == today_iso),
-                      key=lambda m: m["key"])
-    if on_today:
-        today_block = {"is_today": True, "date_human": _date_human(today_iso),
-                       "fixtures": on_today}
-    else:
-        future_dates = [m["date_iso"] for m in unplayed_matches if m["date_iso"] > today_iso]
-        if future_dates:
-            next_date = min(future_dates)
-            today_block = {
-                "is_today": False, "date_human": _date_human(next_date),
-                "fixtures": sorted(
-                    (m for m in unplayed_matches if m["date_iso"] == next_date),
-                    key=lambda m: m["key"]),
-            }
-        else:
-            today_block = None
 
     env = _build_env()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

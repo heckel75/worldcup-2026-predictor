@@ -37,9 +37,14 @@
       <ul class="tr-list">
         {% for m in today_block.fixtures %}
         <li class="tr-item">
+          {% if m.played and m.score %}
+          <a href="{{ root }}matches/{{ m.key }}.html">{{ m.home_display }} <span class="tr-score">{{ m.score }}</span> {{ m.away_display }}</a>
+          {% if m.verdict %}<span class="tr-verdict tr-verdict--{{ m.verdict.winner }}">{% if m.verdict.winner == "wash" %}too close to call{% else %}{{ m.verdict.winner }} closest{% endif %}</span>{% endif %}
+          {% else %}
           <a href="{{ root }}matches/{{ m.key }}.html">{{ m.home_display }} vs {{ m.away_display }}</a>
           <span class="tr-fav">model favours {{ m.model_fav }}</span>
           {% if m.flag_divergent %}<span class="tr-flag">divergence</span>{% endif %}
+          {% endif %}
         </li>
         {% endfor %}
       </ul>
