@@ -36,10 +36,6 @@
   </header>
 
   <main class="site-main">
-    {% block content %}{% endblock %}
-  </main>
-
-  <footer class="site-footer">
     <div class="share-strip">
       <span class="share-label">Share</span>
       <a class="share-link" target="_blank" rel="noopener"
@@ -49,6 +45,10 @@
       <a class="share-link" target="_blank" rel="noopener"
          href="https://www.facebook.com/sharer/sharer.php?u={{ canonical_url|urlencode }}">Facebook</a>
     </div>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
     <p>
       Forecast generated {{ generated_at }}{% if snapshot_date %} · snapshot {{ snapshot_date }}{% endif %}.
     </p>
