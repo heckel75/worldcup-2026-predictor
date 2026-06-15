@@ -18,7 +18,7 @@
       {% for m in results_block.fixtures %}
       <li class="tr-item">
         <a href="{{ root }}matches/{{ m.key }}.html">{{ m.home_display }} <span class="tr-score">{{ m.score }}</span> {{ m.away_display }}</a>
-        {% if m.verdict %}<span class="tr-verdict tr-verdict--{{ m.verdict.winner }}">{% if m.verdict.winner == "wash" %}too close to call{% else %}{{ m.verdict.winner }} closest{% endif %}</span>{% endif %}
+        {% if m.verdict %}<span class="tr-verdict tr-verdict--{{ m.verdict.winner }}">{% if m.verdict.winner == "wash" %}sources agreed{% elif m.verdict.winner == "all_missed" %}all missed{% else %}{{ m.verdict.winner }} closest{% endif %}</span>{% endif %}
       </li>
       {% endfor %}
     </ul>
@@ -39,7 +39,7 @@
         <li class="tr-item">
           {% if m.played and m.score %}
           <a href="{{ root }}matches/{{ m.key }}.html">{{ m.home_display }} <span class="tr-score">{{ m.score }}</span> {{ m.away_display }}</a>
-          {% if m.verdict %}<span class="tr-verdict tr-verdict--{{ m.verdict.winner }}">{% if m.verdict.winner == "wash" %}too close to call{% else %}{{ m.verdict.winner }} closest{% endif %}</span>{% endif %}
+          {% if m.verdict %}<span class="tr-verdict tr-verdict--{{ m.verdict.winner }}">{% if m.verdict.winner == "wash" %}sources agreed{% elif m.verdict.winner == "all_missed" %}all missed{% else %}{{ m.verdict.winner }} closest{% endif %}</span>{% endif %}
           {% else %}
           <a href="{{ root }}matches/{{ m.key }}.html">{{ m.home_display }} vs {{ m.away_display }}</a>
           <span class="tr-fav">model favours {{ m.model_fav }}</span>
@@ -61,11 +61,14 @@
   <p class="scoreboard-line">
     After {{ scoreboard.n }} match{{ "es" if scoreboard.n != 1 else "" }}:
     model {{ scoreboard.model }} · books {{ scoreboard.books }} ·
-    Polymarket {{ scoreboard.Polymarket }} · wash {{ scoreboard.wash }}
+    Polymarket {{ scoreboard.Polymarket }} · sources agreed {{ scoreboard.wash }} ·
+    all missed {{ scoreboard.all_missed }}
   </p>
   <p class="scoreboard-note">
     Per match, the source whose frozen pre-match probability on the actual
-    result was highest. See each played match's page for the verdict.
+    result was highest. "Sources agreed" when the top two were within 2pp;
+    "all missed" when every source's favourite lost. See each played match's
+    page for the verdict.
   </p>
 </section>
 {% endif %}

@@ -457,30 +457,47 @@ _OUTCOME_SLOT = {"H": "home", "D": "draw", "A": "away"}
 
 
 def _verdict(rec: dict) -> dict | None:
-    """Which source's frozen pre-match prob was closest to what happened.
+    """Which source's frozen pre-match forecast was closest to what happened.
 
-    Highest frozen probability on the actual outcome wins; top two within
-    2pp is a wash. Only sources with frozen probs participate — and with
-    fewer than two participants there is no contest, so no verdict."""
+    Three ordered branches (a source "participates" if it has frozen probs):
+      1. Fewer than two participating sources -> no contest, None.
+      2. No participating source's OWN argmax over (home, draw, away) matched
+         the realized outcome -> "all_missed" (everyone forecast the wrong
+         result; a blowout that everyone called and an upset nobody saw both
+         used to mislabel as "too close to call").
+      3. Otherwise rank participants by frozen prob on the actual outcome:
+         top two within 2pp -> "wash" (sources agreed); else the top source
+         is closest.
+
+    Only a real source winner ("model"/"books"/"Polymarket") credits the index
+    scoreboard; "wash" and "all_missed" credit nobody."""
     slot = _OUTCOME_SLOT[rec["outcome"]]
+    slots = ("home", "draw", "away")
+    # (name, prob_on_outcome, predicted_outcome_correctly)
     entries = []
-    for name, col in (("model", f"p_{slot}"),
-                      ("books", f"p_{slot}_book"),
-                      ("Polymarket", f"p_{slot}_poly")):
-        v = rec.get(col)
-        if pd.notna(v):
-            entries.append((name, float(v)))
+    for name, tmpl in (("model", "p_{}"),
+                       ("books", "p_{}_book"),
+                       ("Polymarket", "p_{}_poly")):
+        vals = {s: rec.get(tmpl.format(s)) for s in slots}
+        if any(pd.isna(v) for v in vals.values()):
+            continue  # a source freezes all three probs or none
+        probs = {s: float(v) for s, v in vals.items()}
+        argmax = max(slots, key=lambda s: probs[s])
+        entries.append((name, probs[slot], argmax == slot))
     if len(entries) < 2:
         return None
 
-    ranked = sorted(entries, key=lambda e: e[1], reverse=True)
-    wash = (ranked[0][1] - ranked[1][1]) <= 0.02
-    winner = "wash" if wash else ranked[0][0]
-
     parts = [f"{'Model gave this result' if name == 'model' else name} {_pct0(p)}"
-             for name, p in entries]
-    tail = "too close to call, a wash" if wash else f"{ranked[0][0]} closest"
-    return {"winner": winner, "text": f"{', '.join(parts)} — {tail}."}
+             for name, p, _ in entries]
+    body = ", ".join(parts)
+
+    if not any(correct for _, _, correct in entries):
+        return {"winner": "all_missed", "text": f"{body} — all sources missed."}
+
+    ranked = sorted(entries, key=lambda e: e[1], reverse=True)
+    if (ranked[0][1] - ranked[1][1]) <= 0.02:
+        return {"winner": "wash", "text": f"{body} — sources agreed."}
+    return {"winner": ranked[0][0], "text": f"{body} — {ranked[0][0]} closest."}
 
 
 def _build_played_match(rec: dict) -> dict:
@@ -760,7 +777,11 @@ def build_site() -> None:
     played_matches = [m for m in matches if m["played"]]
     unplayed_matches = [m for m in matches if not m["played"]]
 
-    verdict_counts = {"model": 0, "books": 0, "Polymarket": 0, "wash": 0}
+    # "wash" and "all_missed" are no-credit buckets — only a real source winner
+    # advances the per-source tally (the += below is keyed by winner, so both
+    # must exist as keys or an upset/blowout would KeyError).
+    verdict_counts = {"model": 0, "books": 0, "Polymarket": 0,
+                      "wash": 0, "all_missed": 0}
     for m in played_matches:
         if m["verdict"]:
             verdict_counts[m["verdict"]["winner"]] += 1
@@ -963,5 +984,48 @@ def build_site() -> None:
     print(f"   pages    : index.html + schedule.html + calibration.html + methodology.html + {len(matches)} match pages")
 
 
+# ----------------------------------------------------------------------
+# Self-test (run: python generate_site.py --test) — keeps the default
+# invocation a pure build. _verdict() is the one piece of non-trivial logic
+# in this consumer worth pinning.
+# ----------------------------------------------------------------------
+
+def _test_verdict() -> None:
+    nan = float("nan")
+
+    # 1. All sources favoured a team that didn't win -> all_missed.
+    r = {"outcome": "H",
+         "p_home": 0.20, "p_draw": 0.30, "p_away": 0.50,
+         "p_home_book": 0.25, "p_draw_book": 0.30, "p_away_book": 0.45,
+         "p_home_poly": 0.25, "p_draw_poly": 0.30, "p_away_poly": 0.45}
+    assert _verdict(r)["winner"] == "all_missed", _verdict(r)
+
+    # 2. All three correctly favoured home; top two within 2pp -> wash.
+    r = {"outcome": "H",
+         "p_home": 0.92, "p_draw": 0.05, "p_away": 0.03,
+         "p_home_book": 0.92, "p_draw_book": 0.05, "p_away_book": 0.03,
+         "p_home_poly": 0.93, "p_draw_poly": 0.04, "p_away_poly": 0.03}
+    assert _verdict(r)["winner"] == "wash", _verdict(r)
+
+    # 3. Model highest-correct by >2pp, its own argmax is home -> model.
+    r = {"outcome": "H",
+         "p_home": 0.55, "p_draw": 0.25, "p_away": 0.20,
+         "p_home_book": 0.40, "p_draw_book": 0.35, "p_away_book": 0.25,
+         "p_home_poly": 0.41, "p_draw_poly": 0.34, "p_away_poly": 0.25}
+    assert _verdict(r)["winner"] == "model", _verdict(r)
+
+    # 4. Fewer than two participating sources -> no contest.
+    r = {"outcome": "H",
+         "p_home": 0.50, "p_draw": 0.30, "p_away": 0.20,
+         "p_home_book": nan, "p_draw_book": nan, "p_away_book": nan,
+         "p_home_poly": nan, "p_draw_poly": nan, "p_away_poly": nan}
+    assert _verdict(r) is None, _verdict(r)
+
+    print("generate_site.py _verdict self-tests passed")
+
+
 if __name__ == "__main__":
-    build_site()
+    if "--test" in sys.argv:
+        _test_verdict()
+    else:
+        build_site()
