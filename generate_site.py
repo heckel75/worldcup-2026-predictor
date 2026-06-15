@@ -180,10 +180,28 @@ def _load_teams(snapshot: Path) -> list[dict]:
     class). The template just iterates — no formatting or bucketing in Jinja.
     """
     df = pd.read_csv(snapshot)
-    df = df.sort_values("p_champion", ascending=False, kind="mergesort")
+
+    # Round-depth sort cascade: teams tied on the *printed* title odds (1 dp,
+    # matching _fmt) break by how deep they're projected to go — P(final),
+    # then SF, QF, R16, advance — all on raw floats. Final tiebreak is the
+    # display name (ascending) so the all-zero-tail is deterministic. The
+    # champion key is rounded first so the visible top of the table, where
+    # title odds differ, is unchanged; only near-ties fall through the cascade.
+    def _sort_key(rec: dict) -> tuple:
+        return (
+            -round(rec["p_champion"] * 100, 1),  # printed precision (1 dp %)
+            -rec["p_final"],
+            -rec["p_sf"],
+            -rec["p_qf"],
+            -rec["p_r16"],
+            -rec["p_advance"],
+            disp(rec["team"]),                   # ascending alphabetical
+        )
+
+    records = sorted(df.to_dict("records"), key=_sort_key)
 
     teams: list[dict] = []
-    for rec in df.to_dict("records"):
+    for rec in records:
         name = rec["team"]
         survival = [
             {"text": _fmt(rec[col]), "tier": f"t-surv-{_tier(rec[col], _SURV_CUTS)}"}
