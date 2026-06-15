@@ -8,4 +8,5 @@ data/raw/polymarket/
 data/raw/odds_api/
 !data/raw/wc_results_manual.csv
 logs/
+data/processed/og_cache/
 probe_polymarket.py

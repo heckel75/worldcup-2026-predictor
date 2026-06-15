@@ -29,6 +29,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 import calibration
 import clock
+import make_og_cards
 import whats_changed
 
 import pandas as pd
@@ -43,6 +44,7 @@ PREVIEWS_DIR = Path("data/processed/previews")
 DIVERGENCES_DIR = Path("data/processed/divergences")
 OUTPUT_DIR = Path("docs")
 MATCHES_OUT = OUTPUT_DIR / "matches"
+OG_OUT = OUTPUT_DIR / "og"          # per-match Open Graph cards (Session OG)
 WC_PREDS_PATH = Path("data/processed/wc_predictions.csv")
 # Scored ledger rows needed before the calibration page switches from the
 # backtest seed to live WC data — below this a reliability diagram is noise.
@@ -867,7 +869,12 @@ def build_site() -> None:
     )
 
     # --- match pages (one folder deep: root="../") ---
+    # Per-match OG card (Session OG): point og:image at the match's own card
+    # when it renders, else fall back to launch.png. SOFT — render_og_card
+    # never raises, so a card failure can't abort this FATAL build stage.
     for m in matches:
+        card_ok = make_og_cards.render_og_card(m, OG_OUT / f"{m['key']}.png")
+        m_og_image = f"{SITE_URL}/og/{m['key']}.png" if card_ok else og_image
         _render_page(
             env, "match.html", MATCHES_OUT / f"{m['key']}.html",
             m=m,
@@ -882,7 +889,7 @@ def build_site() -> None:
                 f"for the 2026 World Cup, updated after every match."
             ),
             canonical_url=f"{SITE_URL}/matches/{m['key']}.html",
-            og_image=og_image,
+            og_image=m_og_image,
         )
 
     # --- calibration page (top-level: root="") ---
