@@ -3,9 +3,9 @@
   "home_team": "Cape Verde",
   "away_team": "Saudi Arabia",
   "date": "2026-06-26",
-  "input_hash": "b3b86176ac4db593cd8fb76baebb5998174ea110",
-  "generated_at": "2026-06-14T08:51:35+00:00",
+  "input_hash": "485e723b0e2b72fac7e02ac21db0e624377d4fa4",
+  "generated_at": "2026-06-15T18:03:17+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Saudi Arabia as the narrow favourite, assigning them a 41% win probability against Cape Verde's 28%. The gap between the two sides is modest, suggesting a competitive fixture rather than a clear hierarchy. A draw carries meaningful weight at 31%, indicating the model expects tight, contested play.\n\nThe W/D/L spread reveals a relatively flat distribution across all three outcomes. Saudi Arabia holds only a 13 percentage-point edge over Cape Verde, and the draw probability nearly equals the underdog's win chance. This points to a match where any result falls within a plausible range—low-scoring outcomes and close finishes are as much a feature of the model's forecast as clear Saudi Arabia dominance.\n\nThe market consensus diverges notably from the model. Sportsbooks collectively price Cape Verde's win at 38%, some 10 percentage points higher than the model's 28%, and simultaneously price Saudi Arabia lower at 35% versus the model's 41%. Polymarket reflects similar directional skew toward Cape Verde. The dashboard does not adjudicate between these sources; the gap warrants awareness that one estimate may be capturing information the other misses."
+  "preview_text": "The model favors Saudi Arabia to win at 40%, with Cape Verde at 28% and a draw at 31%. The underdog enjoys meaningful but not overwhelming chances, trailing by roughly 12 percentage points in the outright market.\n\nThe draw is the model's second-most likely outcome, indicating competitive balance. The win probabilities spread across all three outcomes without extreme concentration, suggesting neither team is heavily favored to control the match decisively. A draw remains a plausible result in a moderately even contest.\n\nThe market consensus diverges from the model. Sportsbooks assign Cape Verde a notably higher win probability of 38%, a gap of roughly 10 percentage points. The books also rate the draw lower at 27% and compress Saudi Arabia's advantage to 35%. Polymarket pricing falls between the two sources. The dashboard does not adjudicate which estimate is more accurate; the divergence reflects genuine disagreement on match likelihood."
 }

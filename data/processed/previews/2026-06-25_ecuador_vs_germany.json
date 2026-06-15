@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Germany",
   "date": "2026-06-25",
-  "input_hash": "576bbd70c7c1fcc01251f24d4ce21e3cb3d82b10",
-  "generated_at": "2026-06-15T08:01:38+00:00",
+  "input_hash": "42defd4b7f47fa66150a611fa3acf65a47a009d7",
+  "generated_at": "2026-06-15T18:03:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates this match as nearly even, with Germany favored slightly at 36% to Ecuador's 33%. The gap between the two sides amounts to just 3 percentage points in win probability, suggesting a highly competitive contest where either team has a credible path to victory.\n\nThe draw emerges as a plausible outcome at 32%, nearly as likely as an Ecuador win. The W/D/L distribution is relatively balanced across all three results, indicating genuine uncertainty about the match outcome. No single scenario dominates the forecast, pointing toward a tightly contested encounter where the margin of victory—or stalemate—remains genuinely open.\n\nThe market and Polymarket prices diverge meaningfully from the model. Sportsbooks assign Germany a 55% win probability, some 19 percentage points higher than the model's 36%, while assigning Ecuador only 20%—13 points below the model. The draw contracts to 25% in market pricing. This gap suggests the market views Germany as a stronger favorite than the statistical model does. The dashboard makes no claim about which assessment is correct; the discrepancy is material and warrants awareness."
+  "preview_text": "The model favors Germany at 35%, though the margin over Ecuador is narrow. Ecuador's win probability stands at 33%, making this match substantially more competitive than the sportsbooks assess. The underdog enjoys meaningful model support relative to market pricing.\n\nThe draw emerges as a plausible outcome at 32%, clustering the three results within a tight band. No single outcome commands overwhelming likelihood. The spread between Germany's best case and Ecuador's reflects a closely matched contest rather than a heavily tilted fixture.\n\nModel and market diverge meaningfully here. The sportsbooks price Germany's win at 55%, a gap of roughly 19 percentage points above the model's estimate, while Ecuador sits 13 points lower in consensus view. Polymarket pricing aligns closely with the books. The dashboard does not adjudicate which assessment is correct, but the divergence is large enough to warrant attention from those monitoring both sources."
 }

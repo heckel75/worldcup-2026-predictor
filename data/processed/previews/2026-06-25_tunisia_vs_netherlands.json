@@ -3,9 +3,9 @@
   "home_team": "Tunisia",
   "away_team": "Netherlands",
   "date": "2026-06-25",
-  "input_hash": "af945b5342d4e621d11d0d01ad3b03da7200e76f",
-  "generated_at": "2026-06-15T08:01:46+00:00",
+  "input_hash": "b2a87ff7ab59b9c415336e1ab1830994301046c4",
+  "generated_at": "2026-06-15T18:03:14+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Netherlands at 70%, with Tunisia assigned a 9% chance of victory. The underdog's modest win probability reflects a substantial gap in the forecast, though the draw possibility at 22% creates some competitive texture.\n\nThe win-draw-loss spread shows Netherlands as clear favorite, but the 22% draw probability suggests the match carries real tightness in parts. Tunisia's 9% win chance leaves little margin for upset; a draw outcome remains plausible enough that the fixture is unlikely to be entirely one-sided in execution, even if the modal result heavily favors the favorite.\n\nModel and market consensus are closely aligned across all three outcomes, with gaps under 3 percentage points. Polymarket prices sit slightly higher on a Netherlands victory and lower on draws, but the divergence is minor. The three sources converge on a Netherlands-favored but contested match."
+  "preview_text": "The model favors Netherlands at 70%, with Tunisia allotted an 8.5% chance of victory. The underdog's win probability sits more than 60 percentage points below the favorite, indicating a substantial gap in expected strength between the two sides.\n\nThe 22% draw probability suggests the match carries meaningful competitive texture beyond a binary outcome. Netherlands' margin over Tunisia is wide enough that a draw remains far more plausible than a Tunisian win, yet the three-way spread indicates the match is not forecasted as a rout. The model anticipates a contest where Netherlands enters as clear favorite but where a stalemate represents a genuine alternative to a home win.\n\nThe model and sportsbook consensus align closely across all three outcomes. The Netherlands win probability differs by fewer than 1 percentage point, Tunisia's by 3 percentage points, and the draw by 3 percentage points. Polymarket prices show slightly wider variation, particularly a 6-point gap in draw probability, but the three sources move together on the overall shape: a strong Netherlands advantage with non-trivial draw risk."
 }

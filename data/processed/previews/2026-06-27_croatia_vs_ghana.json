@@ -3,9 +3,9 @@
   "home_team": "Croatia",
   "away_team": "Ghana",
   "date": "2026-06-27",
-  "input_hash": "b51b1d0f8510b1a930085334963c853c49e280b2",
-  "generated_at": "2026-06-15T08:02:21+00:00",
+  "input_hash": "9b71878b533046cff022311fb513e320f878d6cd",
+  "generated_at": "2026-06-15T18:03:25+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Croatia as a heavy favorite with a 79% win probability, leaving Ghana just 3% to emerge victorious. This is a lopsided matchup in statistical terms, with the gap between the two outcomes substantial.\n\nThe 79–3 split reflects a match expected to be one-sided rather than competitive. A draw at 19% sits between the poles but is notably less likely than a Croatia victory. The distribution suggests Ghana faces a steep climb and that a decisive result favoring Croatia is the modal outcome.\n\nThe sportsbook consensus and Polymarket differ markedly from the model, both assigning Ghana roughly 17% to win compared to the model's 3% — a gap of 14 percentage points. Both betting sources also credit draws more heavily (around 25% versus 19%). The model sees Croatia as more dominant than the market does; the dashboard does not adjudicate which source is correct."
+  "preview_text": "The model favors Croatia at 79% to win, a substantial edge over Ghana's 3% win probability. The forecast reflects a heavily asymmetric matchup, with the underdog facing minimal chances of outright victory on a neutral pitch.\n\nThe win-draw-loss distribution widens the gap further. Croatia's draw probability sits at 19%, meaning the model envisions roughly four outcomes in five going to a decisive result. Ghana's path to any positive result—whether a draw or victory—totals only 21%, suggesting the match is expected to lean decisively toward one team's control rather than remain competitive throughout.\n\nModel and sportsbook readings diverge markedly. The market consensus prices Croatia at 58%, roughly 21 percentage points lower than the model's 79%. Conversely, the market assigns Ghana 17%, a sixfold increase over the model's 2.7%. Draw probabilities also widen by nearly 7 points. This gap suggests fundamentally different underlying assessments of the teams' relative strength. The dashboard presents both forecasts without adjudicating between them."
 }
