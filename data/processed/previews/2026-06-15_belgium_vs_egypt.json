@@ -3,9 +3,9 @@
   "home_team": "Belgium",
   "away_team": "Egypt",
   "date": "2026-06-15",
-  "input_hash": "e79a92aee77e6b4bbf0b493aac5fb724d2ae2b11",
-  "generated_at": "2026-06-13T08:16:31+00:00",
+  "input_hash": "562c3762b9d6c934dcd6466f6644f26a42eaef14",
+  "generated_at": "2026-06-15T07:59:47+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Belgium at 54%, with Egypt's win probability at 17%. The underdog faces a roughly three-to-one gap in outright victory odds, positioning Belgium as a clear but not dominant favourite on a neutral ground.\n\nThe draw carries material probability at 29% under the model, suggesting a competitive match where neither side is expected to control proceedings decisively. The 27-percentage-point margin between Belgian win and Egyptian win reflects asymmetry in the matchup, yet the combined non-Belgium outcomes (46%) indicate this is not a heavily tilted contest. A stalemate remains a plausible outcome.\n\nThe sportsbook consensus shifts Belgium up to 59%, a gap of roughly 5 percentage points above the model. Polymarket prices align closely with the books. The model and market agree on Egypt's chances (17% vs 17%) and draw probability (29% vs 24%). The divergence centres on Belgium's win probability, with the market materially more confident in a Belgian victory. The dashboard offers both estimates without adjudicating between them."
+  "preview_text": "The model favors Belgium at 54% to win, with Egypt positioned as a clear underdog at 17%. Belgium's advantage is solid but not dominant; the model gives the Egyptians meaningful odds of pulling an upset.\n\nA draw at 29% emerges as the second-most-likely outcome in the model's forecast, suggesting the teams are competitive enough that a stalemate is plausible. The 20-percentage-point gap between a Belgium win and an Egypt win indicates asymmetry, yet the relatively high draw probability signals this is not a heavily lopsided contest.\n\nThe sportsbook consensus shifts toward Belgium, pricing a win at 60%—roughly 6 percentage points higher than the model. The books also compress the draw to 24%, tightening the expected outcome distribution. Polymarket prices align closely with the sportsbooks, leaning further toward Belgium at 61%. The dashboard does not adjudicate between the model and market views; the gap reflects genuine disagreement about Belgium's true advantage."
 }

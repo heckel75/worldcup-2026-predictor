@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-25_cura_ao_vs_ivory_coast",
+  "home_team": "Curaçao",
+  "away_team": "Ivory Coast",
+  "date": "2026-06-25",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 17.5,
+  "input_hash": "e159af8f3076b54e8e5f05964d44a9d6e484fc9f",
+  "generated_at": "2026-06-15T08:02:42+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market assigns Ivory Coast a 81% win probability versus the model's 64%, a 17-percentage-point gap favoring the favorite. Both sources rank Ivory Coast as the clear choice, but sportsbooks and traders are significantly more confident in that outcome. This heightened conviction could reflect recent lineup adjustments, injury news, or current form not yet reflected in the model's Elo-based ratings. The model's wider distribution across outcomes—particularly its 12-point lead for Curaçao over the market's 6%—suggests room for either late intelligence to sharpen the favorite further or for the market to be overweighting available information. The dashboard flags this asymmetry as worth monitoring rather than endorsing either estimate."
+}

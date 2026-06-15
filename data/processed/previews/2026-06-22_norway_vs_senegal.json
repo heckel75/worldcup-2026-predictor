@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "Senegal",
   "date": "2026-06-22",
-  "input_hash": "2f6e70e6010207b8db880f1dd77bd771bdd06564",
-  "generated_at": "2026-06-14T08:50:24+00:00",
+  "input_hash": "25dd5819decc30ef3c51963c4a869ff5a738134b",
+  "generated_at": "2026-06-15T08:00:59+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Norway with a 43% win probability, reflecting a narrow edge over Senegal's 26% chance. The gap between favorite and underdog is modest—less than 18 percentage points—suggesting a genuinely competitive match rather than a heavily tilted affair.\n\nThe draw emerges as a substantial outcome in the model's forecast at 31%, nearly as likely as a Norway victory. This elevated draw probability indicates the teams are closely matched in underlying strength, with a relatively even distribution of outcomes. A decisive result is plausible, but a stalemate remains a meaningful possibility given the competitive balance.\n\nThe model and sportsbook consensus are tightly aligned. Norway's win probability differs by just 1 percentage point, draws by 4 points, and Senegal's chance by 2 points across the three sources. This alignment suggests stable agreement on the match's structure and likely outcome distribution. Polymarket pricing confirms the same basic consensus, indicating no material divergence between statistical estimates and market interpretation."
+  "preview_text": "The model favors Norway with a 43% win probability, placing them as the statistical favorite. Senegal's chance of victory stands at 26%, leaving the underdog roughly 17 percentage points behind in win probability.\n\nThe draw carries material probability at 31%, suggesting a competitive encounter where a stalemate represents a genuine outcome. The spread between Norway's win likelihood and a Senegal victory is meaningful but not overwhelming; the match does not appear heavily skewed toward either side taking three points.\n\nModel and market are closely aligned across all three outcomes. The sportsbook consensus sits within 1–2 percentage points of the model's estimates, as does Polymarket pricing. This convergence suggests broad agreement on the relative strengths and uncertainty in the fixture."
 }

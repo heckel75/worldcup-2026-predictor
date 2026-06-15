@@ -3,9 +3,9 @@
   "home_team": "Czech Republic",
   "away_team": "South Africa",
   "date": "2026-06-18",
-  "input_hash": "2430008bb5c7d5414c4544749fbb97acfe05a2c7",
-  "generated_at": "2026-06-14T08:49:35+00:00",
+  "input_hash": "564e67ad4607077fc0d7ef7d0c1b19c080419d84",
+  "generated_at": "2026-06-15T08:00:19+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Czech Republic at 54% to win, with South Africa offered a 17% chance of victory. This represents a clear but not dominant preference for the European side.\n\nThe draw carries a substantial 29% probability in the model's forecast, suggesting the match is unlikely to be one-sided. The gap between Czech Republic's win probability and a draw outcome is narrow enough that the fixture appears competitive, with multiple plausible outcomes clustering in the 17–29 percentage-point range.\n\nModel and sportsbook consensus align closely across all three outcomes, with gaps of 1 percentage point or less on Czech Republic and larger draws. Polymarket pricing shows similarly tight clustering. The broad agreement across sources indicates stable market and model assessment of this matchup."
+  "preview_text": "The model favours Czech Republic at 54% to win, with South Africa the underdog at 18%. The gap of roughly 35 percentage points reflects a meaningful disparity in the forecast, though the visiting side retains a non-trivial path to victory.\n\nThe draw emerges as the second-likeliest outcome at 29%, suggesting the match may prove tightly contested despite the favourite's edge. The spread between a Czech Republic win and a draw is narrow enough that a stalemate represents a genuine possibility rather than a surprise outcome. South Africa's 18% win probability indicates a competitive underdog scenario rather than an overwhelming mismatch.\n\nThe model and sportsbook consensus are closely aligned across all three outcomes, with gaps under 2 percentage points in each case. Polymarket prices mirror the sportsbook consensus almost exactly, signalling broad agreement on the underlying match dynamics across forecast and betting sources. The dashboard observes this coherence without claiming superiority for either viewpoint."
 }

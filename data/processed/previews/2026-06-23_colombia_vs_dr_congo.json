@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "DR Congo",
   "date": "2026-06-23",
-  "input_hash": "210a65c6fae16e824d1e48f62d0ffc6a82881475",
-  "generated_at": "2026-06-14T08:50:39+00:00",
+  "input_hash": "82e9b93e2c2799d8d8853de2c4533cfe1681e274",
+  "generated_at": "2026-06-15T08:01:07+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Colombia heavily, assigning them a 76% win probability. DR Congo faces a steep task, rated at just 4% by the statistical forecast, while a draw stands at 20%.\n\nThe spread reflects a lopsided matchup in the model's view. Colombia's three-to-one advantage over a draw outcome suggests the forecast expects decisive play, though the 20% draw probability leaves room for a competitive, low-scoring contest. DR Congo's 4% win chance indicates the model sees them as unlikely to prevail under neutral conditions.\n\nModel and market diverge noticeably. The sportsbook consensus lowers Colombia to 65% and raises DR Congo to 13%—a gap of roughly 11 percentage points in the underdog's favor. Polymarket prices align more closely with books than the model. The dashboard makes no claim about which estimate is more accurate; the difference may reflect information not captured in the statistical framework."
+  "preview_text": "The model favors Colombia to win at 75%, a substantial margin over DR Congo's 4% chance. The underdog is given a low probability of victory under the statistical forecast, reflecting a large gap in the head-to-head outcome distribution.\n\nThe 20% draw probability suggests the match has some competitive structure despite the model's strong lean toward a Colombia result. A draw is plausible but less likely than a clear winner; the W/D/L spread is moderately wide rather than tightly bunched, indicating the model expects Colombia to control the fixture without necessarily predicting a runaway scoreline.\n\nThe model and market diverge notably on DR Congo's win probability. The sportsbook consensus sits at 12.6%, and Polymarket at 12.3%—roughly three times higher than the model's 4.3% estimate. Both sources align closely on Colombia and the draw. The gap suggests either the market prices in scenarios the model discounts or applies different weighting to tail outcomes. The dashboard does not claim to know which assessment is correct."
 }

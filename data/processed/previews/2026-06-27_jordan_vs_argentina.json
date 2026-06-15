@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Argentina",
   "date": "2026-06-27",
-  "input_hash": "6e481690c34a539a8ebcf450bf48dde0b1ec72b5",
-  "generated_at": "2026-06-14T08:51:46+00:00",
+  "input_hash": "58e6c9212c52dc697c1873a87f4b20d004c70686",
+  "generated_at": "2026-06-15T08:02:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Argentina at 79.5%, with Jordan assigned a 3.9% chance of victory. The underdog's path to three points is narrow but not impossible; Argentina's win probability substantially exceeds the visitor's upside.\n\nThe draw sits at 16.5% in the model's forecast, making it the second-most-likely outcome by some margin. This suggests a moderately competitive match rather than a heavily one-sided affair. The gap between Argentina's win and draw probabilities indicates the favourite is expected to control play, yet neither side is forecast to generate overwhelmingly dominant conditions.\n\nModel and sportsbook consensus are tightly aligned across all three outcomes. The model puts Argentina's win probability 0.3 percentage points above the market's 79.2%, while Jordan's win sits 3.0 pp lower in the model than in the consensus. These gaps are within normal variance. Polymarket prices show slightly tighter odds on a draw (11.4%) but similar favourite backing (81.8%), suggesting broad agreement on the likely direction across sources."
+  "preview_text": "The model favors Argentina decisively, assigning them a 79% chance of victory. Jordan faces a steep task, given a 4% win probability; the underdog's most plausible path to a result comes via a draw, estimated at 17%.\n\nThe spread reflects a wide competitive gap. Argentina's win probability towers over Jordan's, and even a stalemate is roughly four times as likely as a Jordan victory. The match is unlikely to be tightly contested; one team is expected to dominate possession and create substantially more clear chances.\n\nThe model and sportsbook consensus are tightly aligned across all three outcomes, each within 2 percentage points. Polymarket prices Argentina slightly higher (82% versus 79%) and compress the draw to 12%, suggesting some divergence in retail sentiment, but the core expectation—Argentina as heavy favorite—remains consistent across sources."
 }

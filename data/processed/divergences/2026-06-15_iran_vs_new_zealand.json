@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-15_iran_vs_new_zealand",
+  "home_team": "Iran",
+  "away_team": "New Zealand",
+  "date": "2026-06-15",
+  "kind": "commentary",
+  "divergence_type": "model_over_concentrated",
+  "max_gap_pp": 15.1,
+  "input_hash": "29baec0e3931c10a37e0f13969e12365ad9f3fdf",
+  "generated_at": "2026-06-15T08:02:26+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model assigns Iran a 65% win probability while the sportsbook consensus settles at 50%, a 15-percentage-point gap favoring the model's confidence in an Iran victory. This divergence suggests the market may be pricing in information the model cannot access—recent lineup changes, injury updates, or current form shifts that have emerged since the model's last training cycle. Conversely, the model's Elo-based foundation could be overweighting historical strength if Iran's recent performance has deteriorated. The dashboard surfaces this gap as a signal worth monitoring; neither the statistical forecast nor the market consensus is a verdict on the actual outcome."
+}

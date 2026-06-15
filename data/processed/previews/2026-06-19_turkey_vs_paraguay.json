@@ -3,9 +3,9 @@
   "home_team": "Turkey",
   "away_team": "Paraguay",
   "date": "2026-06-19",
-  "input_hash": "f5fdacb37704dcafec7e92e4e74621da91019376",
-  "generated_at": "2026-06-14T08:50:03+00:00",
+  "input_hash": "88c9816a210e971f15bfff8bc7d549cae3eda376",
+  "generated_at": "2026-06-15T08:00:34+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The statistical model favors Turkey at 50% to win, with Paraguay the underdog at 20%. The gap reflects a meaningful but not commanding advantage for Turkey; the underdog retains realistic winning chances on a neutral ground.\n\nThe draw emerges as a substantial outcome at 30%, indicating competitive balance. Turkey's lead over Paraguay is modest enough that the match is unlikely to be one-sided; a stalemate or Paraguay upset remain plausible within the forecast range. The distribution suggests an evenly contested fixture rather than a mismatch.\n\nModel and market are closely aligned. The sportsbook consensus sits 3 percentage points above the model for Turkey (47% vs 50%) and 4 points above for Paraguay (25% vs 20%), with the draw nearly identical. Polymarket prices fall between the two, differing by 2–3 points across all outcomes. These margins reflect normal variance; the three sources converge on Turkey as slight favorite in a competitive match."
+  "preview_text": "The model rates Turkey as favorite with a 50% win probability, while Paraguay is given a 20% chance to prevail. The gap reflects a meaningful but not decisive edge; Turkey enters as slight preference rather than strong favorite.\n\nThe 30% draw probability signals a competitive match where stalemate ranks as a plausible outcome. The spread across all three results—roughly 50-30-20—suggests an encounter unlikely to be one-sided, with genuine uncertainty around the finish line.\n\nModel and market are closely aligned. The sportsbook consensus places Turkey at 47%, a 3-percentage-point gap within normal variance. Both sources converge on draw likelihood near 28–29% and Paraguay around 24–25%. Polymarket prices track the consensus closely. All three estimates agree the match leans toward Turkey without strong conviction."
 }

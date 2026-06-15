@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "France",
   "date": "2026-06-26",
-  "input_hash": "723e2e8cf9ebc215cb4ecb1611d946f2d33f77ae",
-  "generated_at": "2026-06-13T08:19:01+00:00",
+  "input_hash": "442dd154b3b2b635c34ea2aa7e0a1519b807ccd5",
+  "generated_at": "2026-06-15T08:01:57+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors France at 55% to advance, while Norway carries a 17% chance of victory. The underdog faces a steep margin, reflected in odds that make the contest heavily weighted toward the favorite despite the neutral venue.\n\nThe draw carries 28% probability in the model forecast, suggesting a competitive match where a stalemate ranks as the second-most-likely outcome. Norway's win probability and the draw likelihood are not far apart, indicating that parity in open play is plausible even if France enters as a clear favorite. The W/D/L spread widens gradually rather than skewing dramatically, consistent with a match where the stronger team dominates expected xG and possession but remains vulnerable to upset or a leveling result.\n\nModel and market align closely across all three outcomes. The model's France win sits 3 percentage points higher than sportsbook consensus, while Norway's win probability differs by about 5 points across sources. Polymarket crypto prices fall between the model and traditional books, with no systematic divergence large enough to signal material disagreement on the overall competitive structure."
+  "preview_text": "The model favors France at 55%, with Norway's win probability at 17%. This represents a substantial gap; France enters as the clear favorite on the neutral ground, though the underdog retains a meaningful chance to pull an upset.\n\nThe 28% draw probability sits between the two decisive outcomes, suggesting the match carries competitive texture. France's 37-point lead over Norway in win probability indicates the model expects France to control play, yet the draw sitting ahead of a Norway victory signals neither team is heavily skewed toward blowout outcomes. A close, tightly contested match remains the second-most-likely scenario.\n\nThe model and sportsbook consensus are closely aligned across all three outcomes. The market places France slightly lower at 52% (a 3-point gap), Norway marginally higher at 22%, and the draw 1 point lower. Polymarket pricing sits between the two. These small divergences suggest broad agreement on the match structure, with no sharp disagreement worth flagging."
 }

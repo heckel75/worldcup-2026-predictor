@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Turkey",
   "date": "2026-06-25",
-  "input_hash": "9afd711e4c6ffc5b7b4f8c3467024d267040754a",
-  "generated_at": "2026-06-14T08:51:10+00:00",
+  "input_hash": "e5d334fb3a88ca7a2bd934ca0c350461704c98ae",
+  "generated_at": "2026-06-15T08:01:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Turkey with a 38% win probability, leaving the USA at 31% and a draw at 31%. This is a competitive fixture in which no outcome holds a commanding edge; the three-percentage-point gap between favourite and underdog reflects relatively balanced underlying strength.\n\nThe draw emerges as a genuine possibility at near one-in-three odds, suggesting the match is likely to be tightly contested. The spread across all three outcomes is narrow, indicating a fixture where either side has plausible paths to victory and a stalemate is far from unlikely. Scorelines that favour neither team are as probable as a USA win.\n\nThe model and sportsbook consensus diverge notably. The market prices a USA win at 38%, some 7 percentage points higher than the model, and correspondingly underweights both Turkey (down 3pp) and the draw (down 5pp). Polymarket prices align more closely with the sportsbooks than with the model on this matchup. The dashboard does not adjudicate between these sources; the divergence suggests material disagreement about the balance of play."
+  "preview_text": "The model favors Turkey at 38%, while the USA is projected to win 31% of the time. Turkey holds a narrow edge over the favored outcome classification, though the separation from the American win probability is modest rather than decisive.\n\nThe draw emerges as the modal outcome in the model at 31%, suggesting this match is unlikely to be cleanly decided. The three-way split—no outcome commanding more than 38%—indicates genuine competitive balance. Turkey's slight favorite status and the elevated draw probability point toward a closely contested, potentially open game where all three results carry meaningful likelihood.\n\nThe model and sportsbook consensus diverge meaningfully on USA prospects. Bookmakers assign the USA 39% to win, some 8 percentage points above the model's 31%. The market also compresses the draw to 27%, 4 points lower than the model. Turkey sits near consensus at 34% in the books versus 38% in the model. The dashboard does not adjudicate between these assessments; the discrepancy warrants attention as both sources process the same matchup differently."
 }

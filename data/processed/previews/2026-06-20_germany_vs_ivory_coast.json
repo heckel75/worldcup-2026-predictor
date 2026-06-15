@@ -3,9 +3,9 @@
   "home_team": "Germany",
   "away_team": "Ivory Coast",
   "date": "2026-06-20",
-  "input_hash": "1a02edfd8b9ae5d3366049e3ae382d967b44b56a",
-  "generated_at": "2026-06-12T06:30:00+00:00",
+  "input_hash": "39d29edb20cb6a7e719aa9d980ddb62a5a0128b3",
+  "generated_at": "2026-06-15T08:00:38+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Germany at 60%, with Ivory Coast positioned as a substantial underdog at 13%. Germany's baseline win probability reflects a meaningful advantage in the forecast, though the margin leaves room for an upset.\n\nThe 27% draw probability suggests the match has a competitive character. The spread across outcomes—60% favorite, 27% stalemate, 13% underdog—indicates a moderately decisive forecast rather than a tightly bunched outcome. Draws remain plausible but less likely than a German victory.\n\nThe model and sportsbook consensus are closely aligned. Both place Germany near 61%, and both assess Ivory Coast in the low-to-mid teens. The model estimates draw probability about 5 percentage points higher than the books. Polymarket prices sit between the two, with a slightly elevated Ivory Coast win probability. These small gaps suggest broad agreement on the fundamental match dynamics."
+  "preview_text": "The model favors Germany at 60% to win, with Ivory Coast's upset probability at 13%. The sportsbook consensus aligns closely, placing Germany at 62%, only 2 percentage points higher. Both readings treat Ivory Coast as a clear underdog but not without realistic chances.\n\nThe draw carries meaningful weight in the model's forecast at 27%, suggesting a competitive fixture where a stalemate remains plausible. The sportsbook consensus values draws lower at 22%, a gap of 5 percentage points that reflects some divergence in how the two sources weight a goalless or tied outcome. Germany's win probability and Ivory Coast's upset chance are broadly comparable across sources, indicating consensus that Germany enters as the solid favorite.\n\nMarket pricing from Polymarket leans slightly higher on a German win at 63%, closer to the sportsbook midpoint than the model's central estimate. The model and sportsbooks remain substantially aligned on the match's competitive profile, though the model assigns marginally more probability to a draw. Both sources frame this as a match with a clear hierarchy but genuine risk of disruption."
 }

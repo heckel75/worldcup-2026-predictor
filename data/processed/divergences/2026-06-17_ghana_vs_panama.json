@@ -5,10 +5,10 @@
   "date": "2026-06-17",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 38.4,
-  "input_hash": "8fcbd6ee8a3f8f7d5888f51397742b4c93a369c9",
-  "generated_at": "2026-06-14T08:52:06+00:00",
+  "max_gap_pp": 38.0,
+  "input_hash": "1dbdd24257c4fb61a34a897a129181c8ffcf99c0",
+  "generated_at": "2026-06-15T08:02:31+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Panama at 66%, while the market favors Ghana at 44%; the gap on the Ghana win is 34 percentage points. This inversion suggests the market may be pricing in information unavailable to a statistical model built on historical Elo ratings—possibly recent lineup changes, injury news, or current form that shifts Ghana's prospects upward. The model's heavy Panama lean could equally reflect outdated relative strength if Ghana has materially improved or Panama weakened since the model's last training. The dashboard flags this as a significant structural divergence worth monitoring as fresh team information emerges."
+  "commentary_text": "The model favors Panama at 66%, while the market favors Ghana at 44%—a 34-percentage-point gap on the Ghana win outcome. This represents a fundamental disagreement about which team is the stronger side. The market's significantly higher confidence in Ghana could reflect recent lineup changes, injury updates, or current form information unavailable to the model's last training cycle. Conversely, the model's heavier weighting toward Panama may simply reflect historical rating strength that pre-dates any recent shifts. The dashboard surfaces this stark divergence as a signal for scrutiny; neither source has proven authority over the other without access to real-time team news."
 }

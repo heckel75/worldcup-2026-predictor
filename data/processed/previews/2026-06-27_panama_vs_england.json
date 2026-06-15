@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "c2ce6170f340c8ac80338927c97d6933446a80c9",
-  "generated_at": "2026-06-14T08:51:54+00:00",
+  "input_hash": "10481a8f804a269fcc7d430c13ef3bc8c46aeaa7",
+  "generated_at": "2026-06-15T08:02:17+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors England at 63%, with Panama's win probability at 12%. The underdog's chance remains well below one-in-ten, establishing a clear hierarchical gap between the two sides in the forecast.\n\nThe 24.8% draw probability suggests moderate competitive balance despite England's advantage. A draw is neither rare nor dominant in this matchup, indicating England faces real resistance rather than a routine victory. The full spread—England 63%, Draw 25%, Panama 12%—implies a match where the favorite is favored but not overwhelmingly so, and a stalemate ranks as a plausible outcome.\n\nThe sportsbook consensus and Polymarket prices both lean notably toward England compared to the model. The market places England at 73–76%, roughly 10 percentage points higher than the model's 63%, while compressing the draw to 15–17% and Panama's win to 10% or lower. These are meaningful divergences, particularly in the England win probability. The dashboard makes no claim about which source is more accurate; users should weigh both signals when forming their own view."
+  "preview_text": "The model favors England at 63%, with Panama assigned an 12% chance of victory. The underdog's path to three points is narrow but not negligible given the neutral venue and group-stage context, where individual matches carry weight.\n\nThe 25% draw probability signals a moderately competitive encounter. England's advantage is substantial but not overwhelming; a stalemate ranks as the second-likeliest outcome, reflecting meaningful uncertainty around match flow and execution. Panama enters as clear outsider, yet the distribution suggests this is not a heavily one-sided fixture in probabilistic terms.\n\nThe market diverges from the model in material fashion. Sportsbooks and Polymarket both assign England a win probability around 74–76%, roughly 11 percentage points higher than the model's 63%. Both sources converge tightly on Panama (9.6–9.9%) and draw rates near 15–16%, substantially below the model's 25%. The dashboard does not resolve which assessment better reflects true match likelihood; the gap warrants attention from users comparing forecasting approaches."
 }

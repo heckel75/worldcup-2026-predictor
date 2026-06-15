@@ -3,9 +3,9 @@
   "home_team": "Austria",
   "away_team": "Jordan",
   "date": "2026-06-16",
-  "input_hash": "ddfd559b63a86b9a1fcb1dad7042e21234e13cf3",
-  "generated_at": "2026-06-13T08:16:59+00:00",
+  "input_hash": "d20e4633736b6227aa783f43b78f803131a27705",
+  "generated_at": "2026-06-15T08:00:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Austria as a moderate favorite, assigning a 45% win probability, while Jordan has a 24% chance of victory. The gap between the two is material but not decisive; Austria does not emerge as a heavy favorite in the model's assessment.\n\nThe forecast suggests a relatively competitive match. The draw probability sits at 31%, indicating that a stalemate remains a plausible outcome—nearly as likely as an Austria win in the model's view. The win probabilities are spread across all three results without extreme concentration, pointing to genuine uncertainty rather than a heavily lopsided contest.\n\nThe sportsbook consensus and Polymarket both diverge substantially from the model, both favoring Austria at 72%. The books assign only a 10% chance to Jordan, compared to the model's 24%, a gap of 14 percentage points. The model and market are not aligned here; the dashboard makes no claim about which assessment is more accurate, only that they differ meaningfully on this fixture."
+  "preview_text": "The model rates Austria as a modest favorite at 45%, while Jordan holds a 25% chance of victory. This represents a competitive matchup rather than a heavily tilted contest. Austria's probability advantage is meaningful but not decisive, reflecting a gap of roughly 20 percentage points between the two sides in the model's assessment.\n\nThe win-draw-loss spread suggests a fairly balanced affair in structural terms. A draw carries a 31% probability from the model, making it the second-likeliest outcome and indicating the teams are close enough that a stalemate is genuinely plausible. The three-way split -- no outcome above 45% -- points to genuine uncertainty about the result's direction.\n\nThe sportsbook consensus and Polymarket both diverge notably from the model, assigning Austria roughly 72% and Jordan roughly 10%. This represents a gap of approximately 27 percentage points in Austria's favor compared to the model's assessment. The market sees a more pronounced home advantage or skill gap than the statistical forecast captures. The dashboard does not adjudicate between these sources; the discrepancy may reflect information unavailable to the model."
 }

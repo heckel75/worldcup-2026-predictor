@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Morocco",
   "date": "2026-06-19",
-  "input_hash": "79823faf539c0a7ec83ad32247a7d5f1d647290d",
-  "generated_at": "2026-06-14T08:49:50+00:00",
+  "input_hash": "7fd2331e7f03afd64725619679fbc3276902cb8b",
+  "generated_at": "2026-06-15T08:00:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Morocco at 61% to win, with Scotland assigned only a 13% chance of victory. The underdog gap is substantial: Morocco is heavily preferred despite the neutral venue erasing any home-field advantage for either side.\n\nThe draw probability of 26% suggests a genuinely competitive match across the full range of outcomes, though Morocco's win chance dominates the other two scenarios. The spread between Morocco's 61% and Scotland's 13% indicates a clear hierarchical expectation rather than a tightly matched contest. A draw remains plausible but represents the secondary outcome.\n\nThe model and market show meaningful divergence. The sportsbook consensus places Morocco at 54%, roughly 7 percentage points lower than the model's 61%, while backing Scotland's win probability at 20% versus the model's 13%. Polymarket odds sit between the two, with Morocco at 56%. The dashboard does not adjudicate which source better reflects the true probabilities."
+  "preview_text": "The model favors Morocco at 61%, with Scotland's win probability at 13%. Morocco enters as clear favorite, though Scotland's chances remain non-negligible rather than nominal.\n\nThe spread across outcomes shows Morocco ahead but not overwhelmingly so. A draw sits at 26%, suggesting a competitive fixture where a stalemate is a plausible result. The gap between Morocco's win probability and the draw is meaningful, indicating the model leans toward a decisive outcome favoring the favorite without ruling out either team's capacity to affect the game.\n\nThe model and sportsbook consensus are closely aligned. Morocco's win probability differs by roughly 7 percentage points, while draw and Scotland win probabilities track within 1–2 points of each other. Polymarket prices similarly cluster near the consensus range. The minor spread across sources suggests modest disagreement on Morocco's edge rather than fundamental divergence in how these teams are assessed."
 }

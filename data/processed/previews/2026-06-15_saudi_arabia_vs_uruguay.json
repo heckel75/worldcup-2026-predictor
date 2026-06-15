@@ -3,9 +3,9 @@
   "home_team": "Saudi Arabia",
   "away_team": "Uruguay",
   "date": "2026-06-15",
-  "input_hash": "76c72451cf4aeeaa0503b2b3c0e16ae06b1f9101",
-  "generated_at": "2026-06-14T08:49:13+00:00",
+  "input_hash": "493051b964a7c551107b0a7ed763e0d9e7d6248c",
+  "generated_at": "2026-06-15T08:00:00+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Uruguay heavily, assigning them a 65% win probability against Saudi Arabia's 11%. The gap reflects a substantial quality differential, leaving Saudi Arabia a clear underdog with limited margin for error.\n\nThe draw sits at 24%, making it the second-most-likely outcome. This relatively high draw probability suggests the match will not be entirely one-sided; Saudi Arabia retains enough structural possibility of a result to prevent the favorite from appearing overwhelming. The W/D/L spread is moderately wide rather than compressed, indicating Uruguay should be expected to control much of play but without near-certainty of victory.\n\nModel and market forecasts are closely aligned. The sportsbook consensus places Uruguay at 67% and Saudi Arabia at 12%, margins of 1–2 percentage points from the model across all outcomes. Polymarket pricing shows near-identical agreement. This convergence suggests broad consensus on the likely shape of the match."
+  "preview_text": "The model favors Uruguay with a 65% win probability, while Saudi Arabia is given a 10.9% chance to prevail. The gap of roughly 54 percentage points reflects a heavily skewed matchup in which the underdog would require a significant upset to claim three points.\n\nThe draw emerges as the second-most-likely outcome at 24.1%, suggesting that even though Uruguay enters as a clear favorite, the match carries meaningful variance. The win-probability spread indicates competitive imbalance rather than a blowout certainty; a stalemate remains plausible, and Saudi Arabia's chances, though modest, are not negligible.\n\nThe sportsbook consensus and Polymarket prices track the model closely. Uruguay's win probability stands at 65.6% and 66.2% respectively, while draw estimates settle around 22%, creating alignment within 2 percentage points across all three sources. This convergence suggests little disagreement on the fundamental match structure."
 }

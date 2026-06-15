@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "DR Congo",
   "date": "2026-06-17",
-  "input_hash": "1fcff072a99ad7f4793f7e8969ceb634e0691895",
-  "generated_at": "2026-06-14T08:49:25+00:00",
+  "input_hash": "bb9226d4528a7a0be76def267a4ff8103c5e1db8",
+  "generated_at": "2026-06-15T08:00:08+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Portugal at 77%, with DR Congo assigned a 4% chance of victory. The draw carries a near-one-in-five probability at 20%, positioning this as a heavily one-sided contest in probability terms but not entirely without competitive scope.\n\nThe outcome distribution reflects a strong Portugal edge across all three paths. The gap between a Portugal win and a draw is substantial—roughly 57 percentage points—while a DR Congo upset remains a tail-risk outcome. The modal result is a Portuguese victory, though the draw's meaningful share suggests the match is unlikely to be a complete mismatch.\n\nThe model and sportsbook consensus are closely aligned. Portugal's win probability differs by 3 percentage points, while the draw spreads are within 2 points. The market assigns DR Congo marginally higher upside at 9% versus the model's 4%, a gap that signals slightly more uncertainty about the underdog's floor than the statistical forecast reflects. Polymarket crypto prices track near the model, with Portugal at 76%."
+  "preview_text": "The model favors Portugal at 77%, with DR Congo offered a 4% chance of victory. The draw sits at 20%, reflecting meaningful uncertainty despite the clear favorite. Portugal's advantage is substantial but not overwhelming on a neutral ground.\n\nThe outcome distribution shows a decisive lean toward a Portugal win, yet the 20% draw probability signals the match is not a foregone conclusion. A DR Congo upset remains improbable; the match is most likely to settle either in Portugal's favor or as a stalemate rather than a surprise reversal.\n\nThe model and sportsbook consensus align closely across all three outcomes, with gaps under 3 percentage points. Polymarket prices track similarly. This convergence suggests broad agreement on the match structure, though the model rates DR Congo's upset chance slightly lower than the books do—a 4-point gap worth noting but not a material divergence."
 }

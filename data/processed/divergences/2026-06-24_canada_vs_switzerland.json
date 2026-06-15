@@ -6,9 +6,9 @@
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
   "max_gap_pp": 16.5,
-  "input_hash": "8ee28b2012a01cbb1c361d7305ed10b3839411e1",
-  "generated_at": "2026-06-14T08:52:14+00:00",
+  "input_hash": "464de18aa066d711692148b562f7f94e93a4163e",
+  "generated_at": "2026-06-15T08:02:38+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Canada at 41% while the market favors Switzerland at 45%, a 17-percentage-point gap on the Switzerland win outcome. This inversion could reflect real-time information unavailable to the model's last update—recent form shifts, injury developments, or lineup changes in either squad. The draw sits near parity between sources, suggesting disagreement centers on which side is more likely to secure three points rather than on the match's overall competitiveness. The dashboard flags this as a material signal of where credible forecasting systems diverge; determining which carries stronger evidence requires information beyond these probabilities alone."
+  "commentary_text": "The model favors Canada at 41%, while the market favors Switzerland at 45%. The largest single divergence appears on the Canada win probability, where the model is 14 percentage points higher than the sportsbook consensus. This gap could reflect recent lineup changes, injuries, or form shifts that the model has not yet incorporated, or conversely, information priced into market odds that the statistical baseline cannot access. The dashboard flags this as a meaningful signal worthy of scrutiny, though neither source should be presumed authoritative without additional context."
 }

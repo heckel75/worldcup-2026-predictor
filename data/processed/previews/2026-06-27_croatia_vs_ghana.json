@@ -3,9 +3,9 @@
   "home_team": "Croatia",
   "away_team": "Ghana",
   "date": "2026-06-27",
-  "input_hash": "48ca70cf6738ff30cfcd85f6cec24c1436c8c705",
-  "generated_at": "2026-06-14T08:51:57+00:00",
+  "input_hash": "b51b1d0f8510b1a930085334963c853c49e280b2",
+  "generated_at": "2026-06-15T08:02:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Croatia at 79%, treating them as heavy favorites. Ghana's win probability stands at 3%, leaving a 19-point gap to the underdog.\n\nThe model's spread suggests a match tilted decisively toward a Croatia victory, though it assigns a meaningful 18% chance to a draw. A Ghana win remains a low-probability outcome in this forecast. The gap between the favorite and underdog implies Croatia enters as a clear but not overwhelming choice on the basis of the numbers alone.\n\nThe model and market diverge substantially. Sportsbooks assign Croatia 58% to win—21 percentage points lower than the model—and rate Ghana's win probability at 17%, some 14 points higher than the model projects. Polymarket prices align closely with the sportsbook consensus. The dashboard does not adjudicate which reading is correct; the gap reflects material disagreement about the relative strength of the two teams."
+  "preview_text": "The model rates Croatia as a heavy favorite with a 79% win probability, leaving Ghana just 3% to emerge victorious. This is a lopsided matchup in statistical terms, with the gap between the two outcomes substantial.\n\nThe 79–3 split reflects a match expected to be one-sided rather than competitive. A draw at 19% sits between the poles but is notably less likely than a Croatia victory. The distribution suggests Ghana faces a steep climb and that a decisive result favoring Croatia is the modal outcome.\n\nThe sportsbook consensus and Polymarket differ markedly from the model, both assigning Ghana roughly 17% to win compared to the model's 3% — a gap of 14 percentage points. Both betting sources also credit draws more heavily (around 25% versus 19%). The model sees Croatia as more dominant than the market does; the dashboard does not adjudicate which source is correct."
 }

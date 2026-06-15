@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Haiti",
   "date": "2026-06-19",
-  "input_hash": "1708694283f48f3253fc3dd0de6af4241a34892c",
-  "generated_at": "2026-06-14T08:49:54+00:00",
+  "input_hash": "663a8cc922e13154406b009e1ecd3771a0eb6d23",
+  "generated_at": "2026-06-15T08:00:30+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Brazil as a heavy favourite with a 76% win probability, leaving Haiti with just 4% odds of victory. The gap reflects a substantial quality differential between the two sides in statistical terms, though Haiti's underdog probability remains non-negligible.\n\nThe draw carries 20% probability in the model, suggesting the match is unlikely to be decided by a large margin. While Brazil's win is more than three times as likely as any Haiti outcome, the draw probability indicates competitive resistance is possible. The modal outcome strongly favours Brazil, but the W/D/L spread implies a contest with material uncertainty in the final result.\n\nThe sportsbooks and Polymarket both shift favourably toward Brazil relative to the model, placing win odds at 86% and 89% respectively. Both markets also substantially compress the draw—down to 9% and 7%—while treating Haiti's win probability as roughly equivalent to the model's 4%. The model's 20% draw probability stands notably apart from market consensus around 8–9%, indicating the model sees draw risk as meaningfully higher than bookmakers and crypto traders do."
+  "preview_text": "The model favors Brazil at 76%, leaving Haiti with only a 4% chance of victory. This reflects a significant asymmetry in the matchup. Brazil's baseline strength substantially outweighs Haiti's probability of an upset win.\n\nThe draw probability of 20% indicates meaningful competitive space in the match outcome distribution. While Brazil enters as heavy favorite, the model assigns a one-in-five chance that the sides finish level. This suggests the match is unlikely to be a runaway but rather competitive enough that a stalemate carries plausible weight alongside a Brazil victory.\n\nThe sportsbook consensus diverges notably from the model. Books price Brazil 10 percentage points higher at 86%, and compress the draw to 9%—roughly half the model's estimate. Polymarket odds align closely with the books on Brazil (88%) and draw (8%). The dashboard does not adjudicate which assessment is correct; the gap reflects genuine disagreement about the likelihood of a stalemate versus a decisive outcome."
 }

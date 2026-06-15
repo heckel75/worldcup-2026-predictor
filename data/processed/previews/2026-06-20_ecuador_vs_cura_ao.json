@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Curaçao",
   "date": "2026-06-20",
-  "input_hash": "4755ecaa856b26047df194e8ceed2d6f567258fb",
-  "generated_at": "2026-06-14T08:50:07+00:00",
+  "input_hash": "b33f2563a681d7e5626bc381514da6fe32ebbc16",
+  "generated_at": "2026-06-15T08:00:44+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Ecuador heavily, assigning an 82.5% win probability compared to Curaçao's 1.2% chance. This asymmetry reflects a substantial quality gap between the two sides. Ecuador's win probability towers above the draw outcome, which registers 16.3%.\n\nThe spread shows Ecuador as a clear favorite in a lopsided matchup. A Curaçao upset remains statistically possible but highly unlikely under the model's estimate. The draw carries meaningful probability, suggesting that while Ecuador should dominate possession and chances, a stalemate is not remote. Curaçao's minimal win chances indicate the model sees little path to a positive result on the day.\n\nThe sportsbook consensus diverges meaningfully from the model on Curaçao's upside. Books assign 6.7% to an upset win—more than five times the model's 1.2%—while trimming Ecuador's favorite odds to 79.3%. Polymarket pricing falls between the two sources but leans closer to the model on Ecuador and the draw. The dashboard does not adjudicate which assessment better reflects true match probability."
+  "preview_text": "The model forecasts Ecuador as a heavy favorite with an 82% win probability, leaving Curaçao with just 1% odds of victory. This represents an asymmetric matchup where the underdog faces a steep climb regardless of formation or preparation.\n\nThe win-draw-loss spread reflects decisiveness rather than competitive balance. Ecuador's substantial lead in win probability means the model envisions a match tilted toward a conclusive result, though the 16% draw probability indicates that a stalemate remains a realistic outcome. A Curaçao win sits at the tail of the distribution, suggesting near-zero expectation of an upset.\n\nThe model and sportsbook consensus diverge noticeably on the draw outcome. The market assigns 10%, while the model's bias-corrected forecast sits at 16%—a meaningful gap suggesting the market prices draws as less likely in this pairing. Both sources align on Ecuador's dominance but differ on the split between draws and home-team wins. The dashboard makes no claim as to which assessment of draw likelihood is correct."
 }

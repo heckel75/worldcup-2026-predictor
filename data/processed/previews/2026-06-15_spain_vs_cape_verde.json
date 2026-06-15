@@ -3,9 +3,9 @@
   "home_team": "Spain",
   "away_team": "Cape Verde",
   "date": "2026-06-15",
-  "input_hash": "44a2d7d44d569fa4d040ec5e19492c63b2f97447",
-  "generated_at": "2026-06-14T08:49:10+00:00",
+  "input_hash": "3f41084e9ac80ca9335ccd2e4676b9d73ebfecb3",
+  "generated_at": "2026-06-15T07:59:56+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Spain at 91%, leaving Cape Verde with a negligible 0.0% win probability. The underdog's only realistic path involves a draw, which the model prices at 9%. Spain enters as a heavy favorite in this neutral-venue fixture.\n\nThe spread reflects a highly asymmetric contest. Spain's dominance in the win column leaves little room for competitive narrative; a draw remains the sole plausible alternative outcome. The match is unlikely to be close in expectation, though the 9% draw probability suggests occasional scenarios where neither side breaks through.\n\nThe model and market align closely on the Spain win likelihood—the model at 91%, the sportsbook consensus at 88%, a gap of 3 percentage points. The market assigns Cape Verde a 4% win chance, whereas the model rounds to zero. Both sources agree a draw is unlikely but possible. The discrepancy in Cape Verde's tail probability reflects minor disagreement on the distribution of upsets, not a material divergence in the headline forecast."
+  "preview_text": "The model favors Spain at 91%, with Cape Verde's win probability effectively zero. This reflects a heavily lopsided matchup in which the underdog has minimal realistic chance of victory, though an 9% draw probability leaves some room for a stalemate result.\n\nThe win–loss spread is stark: Spain's dominance translates to a match expected to be one-sided rather than competitive. A draw remains the only plausible non-Spain outcome under the model, accounting for roughly one in eleven scenarios. Cape Verde's path to three points sits outside the model's meaningful probability range.\n\nThe model and sportsbook consensus are closely aligned on a Spain victory, differing by just 2 percentage points. The market assigns Cape Verde a 3.2% win probability—above the model's floor—and a slightly lower draw rate. Polymarket pricing sits nearly identical to the model itself on the favorite, though it edges down the draw to 6.4%. All three sources converge on Spain as a heavy favorite; divergences among them are marginal."
 }

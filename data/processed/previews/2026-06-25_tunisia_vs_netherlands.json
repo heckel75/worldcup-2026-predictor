@@ -3,9 +3,9 @@
   "home_team": "Tunisia",
   "away_team": "Netherlands",
   "date": "2026-06-25",
-  "input_hash": "df463375b2d89cd1031e3ce002069ca542ed1036",
-  "generated_at": "2026-06-13T08:18:46+00:00",
+  "input_hash": "af945b5342d4e621d11d0d01ad3b03da7200e76f",
+  "generated_at": "2026-06-15T08:01:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors the Netherlands at 70% to win, with Tunisia assigned an 8% chance of victory. The underdog's upside is modest but not negligible; a draw is forecast at 22%, suggesting a competitive underlying match structure despite the clear favorite status.\n\nThe win-draw-loss spread reveals a contest tilted decisively toward the Netherlands, yet not a heavily lopsided affair. The draw probability near one-fifth implies meaningful competitive balance in stretches, even as Netherlands dominates the outright win column. The 61-point gap between the favorite's win odds and the underdog's reflects genuine asymmetry in expected quality or control.\n\nThe model and sportsbook consensus are closely aligned. Both place Netherlands between 63% and 70%, Tunisia between 8% and 15%, and the draw near 22%. Polymarket consensus tracks similarly. The model's Tunisia win estimate sits at the low end of the range—roughly 6 percentage points below the median book—a minor divergence that falls within typical forecasting noise."
+  "preview_text": "The model favors Netherlands at 70%, with Tunisia assigned a 9% chance of victory. The underdog's modest win probability reflects a substantial gap in the forecast, though the draw possibility at 22% creates some competitive texture.\n\nThe win-draw-loss spread shows Netherlands as clear favorite, but the 22% draw probability suggests the match carries real tightness in parts. Tunisia's 9% win chance leaves little margin for upset; a draw outcome remains plausible enough that the fixture is unlikely to be entirely one-sided in execution, even if the modal result heavily favors the favorite.\n\nModel and market consensus are closely aligned across all three outcomes, with gaps under 3 percentage points. Polymarket prices sit slightly higher on a Netherlands victory and lower on draws, but the divergence is minor. The three sources converge on a Netherlands-favored but contested match."
 }

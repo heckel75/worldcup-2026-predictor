@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "input_hash": "36e6035c5bc76cc3a7b2f13f15e38afa25a67b51",
-  "generated_at": "2026-06-14T08:50:53+00:00",
+  "input_hash": "1bec0bafd87bb1b4ebfc6e7b66b86dea5140b2c0",
+  "generated_at": "2026-06-15T08:01:19+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Canada at 41%, with Switzerland's win probability at 28%. That 13-percentage-point gap reflects a narrow but meaningful model edge for the favourite, while the underdog retains a reasonable chance to prevail outright.\n\nThe draw carries 31% probability in the model forecast, making it the second-likeliest outcome. The spread across the three results is relatively compressed: no single outcome dominates decisively, and the match is expected to be competitive rather than one-sided. A draw would not be a surprise given the underlying uncertainty.\n\nThe market consensus across 39 sportsbooks diverges substantially from the model. Books price Switzerland's win at 45%, compared to the model's 28%—a 17-percentage-point gap. Canada's win probability sits at 27% in the market versus 41% in the model, a 14-point difference in the opposite direction. Draw odds align closely at 28–31%. The dashboard does not adjudicate between these sources; the disagreement reflects genuine difference in their assessment of the matchup."
+  "preview_text": "The model favours Canada to win with a probability of 41%, against Switzerland's 28% chance. This represents a meaningful gap, placing Canada as the clear favourite in the matchup, though the model assigns substantial probability to both other outcomes.\n\nThe expected distribution reflects a competitive contest. Canada's 41% win probability and Switzerland's 28% are separated by 13 percentage points, but the 31% draw probability indicates the sides are sufficiently close in strength that a stalemate remains a plausible result. The match is unlikely to be lopsided; all three outcomes carry credible likelihood.\n\nThe model and market diverge significantly on this fixture. Sportsbooks and Polymarket both price Switzerland's win probability around 44%, roughly 16 percentage points higher than the model's assessment. Conversely, both assign Canada only 27%, some 14 points below the model's estimate. Draw probabilities align closely across sources near 28%. The dashboard does not claim knowledge of which estimate is correct; the gap warrants attention from users evaluating the forecast."
 }
