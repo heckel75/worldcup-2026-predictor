@@ -482,6 +482,8 @@ Still in force from the old §9: one logical step per response; over-include rat
 
 Close-out edits to PROJECT.md are made by Claude Code in-place, not hand-pasted by the user — the planning chat supplies the exact wording, Claude Code applies it, the user reviews the diff before pushing.
 
+When a close-out fact depends on what landed on disk (swap vs no-op, which branch, commit hashes), Claude Code writes that part of the §7 line — the planning chat doesn't infer repo state it can't see.
+
 ## 10. Working model: Claude Code in VS Code + planning chat (from Session 26)
 
 Two separate Claude surfaces with NO live link between them. The user is the
