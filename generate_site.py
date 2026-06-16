@@ -634,10 +634,16 @@ def _load_matches() -> list[dict]:
 
 def _build_env() -> Environment:
     """Jinja2 environment rooted at templates/, with HTML autoescaping on."""
-    return Environment(
+    env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
         autoescape=select_autoescape(["html"]),
     )
+    # Daily-update cadence stamp, exposed to every template. Routed through
+    # clock.today() so it respects WC_ASOF_DATE during dry runs / as-of tests.
+    # No %-d / %-m — those break on Windows (Session 25 bug).
+    _d = clock.today()
+    env.globals["build_date"] = f"{_d.day} {_d.strftime('%B %Y')}"
+    return env
 
 
 def _render_page(env: Environment, template_name: str, out_path: Path, **context) -> None:
