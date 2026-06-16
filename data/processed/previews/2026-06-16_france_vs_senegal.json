@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Senegal",
   "date": "2026-06-16",
-  "input_hash": "41c24d93bbf3a1953d6b5c9332eb167e7378882b",
-  "generated_at": "2026-06-13T08:16:47+00:00",
+  "input_hash": "57d47d771664f45526c1d9f8ac5855885c37f632",
+  "generated_at": "2026-06-16T07:47:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors France at 65%, with Senegal positioned as a substantial underdog at roughly 10%. The gap of 55 percentage points reflects a clear hierarchy in the forecast, though Senegal carries a non-negligible chance of an upset.\n\nThe 25% draw probability suggests the match is not expected to be a blowout. France's two-to-one edge in win probability over a draw indicates competitive play where a single-goal margin or a stalemate both remain plausible outcomes. The narrow gap between France's win and draw chances indicates this is a moderately open contest rather than a heavily lopsided affair.\n\nThe model and sportsbook consensus are tightly aligned across all three outcomes, with differences of 1 percentage point or less on France and the draw. Polymarket prices show similarly tight clustering. This near-unanimous agreement across statistical and market sources suggests high confidence in the fundamental shape of the match, though the dashboard makes no claim about which source's absolute probability levels are correct."
+  "preview_text": "The model favors France at 65%, with Senegal assigned a 10% chance of victory. This represents a substantial gap in win probability, though not an elimination-round disparity. Senegal's underdog status reflects a meaningful but surmountable deficit in the forecast.\n\nThe W/D/L spread shows France as the clear lean, yet the draw sits at 25%—a material outcome that signals competitive balance in underlying match dynamics. A one-goal margin or a deadlock through 90 minutes carries real probability mass, indicating this is not a heavily lopsided contest despite France's favorites' label.\n\nModel and market are closely aligned across all three outcomes, differing by 4 percentage points or fewer on each line. The sportsbook consensus sits marginally lower on France (64%) and higher on Senegal (14%) relative to the model, but these gaps fall within typical variance. Polymarket is similarly tight with the statistical forecast. No meaningful divergence exists between sources."
 }

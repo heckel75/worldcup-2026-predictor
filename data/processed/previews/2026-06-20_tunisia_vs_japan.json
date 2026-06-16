@@ -3,9 +3,9 @@
   "home_team": "Tunisia",
   "away_team": "Japan",
   "date": "2026-06-20",
-  "input_hash": "10679f8d30969d3570aca4e9832e102f03c1297c",
-  "generated_at": "2026-06-15T08:00:52+00:00",
+  "input_hash": "fe0a0911016afe7edf7e56630f3cb69df54d360a",
+  "generated_at": "2026-06-16T07:48:37+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Japan decisively, assigning them a 71% win probability against Tunisia's 8%. Japan's substantial advantage reflects the inputs available to the statistical forecast, which projects a clear margin between the two sides on a neutral ground.\n\nThe draw emerges as the second-likeliest outcome at 21%, suggesting the match has potential for competitive balance despite Japan's favored status. Tunisia's win probability remains modest, but the presence of a 21-point gap between Japan and draw indicates the forecast sees meaningful uncertainty rather than a foregone conclusion. The spread points to a match where Japan enters as clear favorites but where results outside a home win remain plausible.\n\nThe model and market diverge noticeably on the underdog. Sportsbooks place Tunisia's chances 6 percentage points higher than the model does, while Japan's win probability is 9 points lower in the market consensus. Draw and Polymarket prices align closely with the bookmaker view. The dashboard does not adjudicate which assessment is more accurate; the gap warrants attention from users interpreting these forecasts."
+  "preview_text": "Japan enters as a heavy favourite with a 71% model win probability, leaving Tunisia with only an 8% chance of victory. The gap between the two is substantial, reflecting a clear hierarchy in the forecast.\n\nThe draw probability of 21% suggests the match is unlikely to remain competitive throughout. Japan's advantage widens across the outcome distribution: while a stalemate is plausible as a secondary outcome, Tunisia's path to points is narrow. The match shape points toward either a Japan win or, secondarily, a draw—a narrow window for the underdog.\n\nThe model and market show meaningful disagreement on Tunisia's chances. Sportsbooks price Tunisia at 14%, roughly 6 percentage points above the model's 8%, while also crediting Japan with a smaller edge at 63% versus the model's 71%. Polymarket sits between the two, closer to the books. The dashboard does not adjudicate which assessment is correct, only that a real gap exists."
 }

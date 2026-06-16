@@ -5,10 +5,10 @@
   "date": "2026-06-19",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 26.2,
-  "input_hash": "17aaa173216691145ca8f7be7197389b5735e0a8",
-  "generated_at": "2026-06-13T08:19:35+00:00",
+  "max_gap_pp": 25.6,
+  "input_hash": "fbbd5d0d43f939febb8dc59d56d67b0cff4996e1",
+  "generated_at": "2026-06-16T07:50:40+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 35% while the sportsbook consensus heavily favors USA at 60%, a 27-percentage-point gap on the home win. The market also compresses the draw to 23%, well below the model's 32%. This divergence likely reflects information the model cannot access—recent form, injuries, or lineup changes for either side could shift underlying strength estimates substantially in one direction. The dashboard flags this as a signal worth monitoring rather than evidence that either source has misread the match."
+  "commentary_text": "The model favors Australia at 35% while the sportsbook consensus favors USA at 59%, a 26-percentage-point gap on the USA win probability. The market's elevated confidence in USA could reflect recent lineup news, injury updates, or current form that the model's Elo foundation does not capture; conversely, the model may be detecting underlying competitive balance that real-money flows have underweighted. The dashboard surfaces this substantial disagreement as a signal for monitoring, without adjudicating which assessment is more accurate."
 }

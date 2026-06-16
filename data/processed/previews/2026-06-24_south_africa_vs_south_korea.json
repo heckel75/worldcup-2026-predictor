@@ -3,9 +3,9 @@
   "home_team": "South Africa",
   "away_team": "South Korea",
   "date": "2026-06-24",
-  "input_hash": "77b3133d380b3fa8ac8bfa2f54765ee1e43c0fc1",
-  "generated_at": "2026-06-15T08:01:15+00:00",
+  "input_hash": "c2faf15a645381cbf07d58710c1fd91d6ddce366",
+  "generated_at": "2026-06-16T07:49:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "South Korea enters as the model favorite with a 62% win probability, leaving South Africa at 13% and a draw at 25%. The gap between the two sides reflects a meaningful disparity in the model's assessment, though South Africa is not without a path to victory.\n\nThe draw probability of 25% suggests this match carries competitive uncertainty despite the favorite's advantage. South Korea's win probability exceeds 60%, but the substantial draw chance indicates the model does not view the outcome as heavily skewed toward regulation time resolution. South Africa's 13% win probability reflects underdog status without suggesting futility.\n\nThe model and sportsbook consensus are broadly aligned. South Korea sits within 3 percentage points across all three outcomes, and Polymarket prices track similarly. The model leans marginally lower on South Africa (13% versus 17% in the book consensus) and marginally higher on South Korea (62% versus 59%), but these gaps are well within normal variance. No material disagreement exists between sources on the likely structure of this fixture."
+  "preview_text": "The model favors South Korea at 62%, leaving South Africa with only a 13% chance of victory. The draw carries a modest 25% probability, suggesting competitive but not evenly matched play.\n\nThe win-loss spread shows South Korea as a clear but not overwhelming favorite. A draw remains plausible at roughly one-in-four, indicating the match could unfold with either side capable of forcing a stalemate, though a South Korea victory is the most probable single outcome. South Africa's path to three points is narrow but not negligible.\n\nThe model and market are closely aligned. Sportsbooks assign South Korea a 60% win probability against the model's 62%, a gap of 2 percentage points. Polymarket pricing shows similar consensus, with spreads under 3 percentage points across all three outcomes. No meaningful divergence exists between the statistical forecast and market pricing on this fixture."
 }

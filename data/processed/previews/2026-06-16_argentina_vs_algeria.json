@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Algeria",
   "date": "2026-06-16",
-  "input_hash": "bfd817c238fa42785c12b14e87ccd25a1f0d5c6d",
-  "generated_at": "2026-06-14T08:49:21+00:00",
+  "input_hash": "85362462e4f6b62ef6e53e8ff762de1e3f2768da",
+  "generated_at": "2026-06-16T07:47:36+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model forecasts Argentina as a heavy favourite, assigning a 74% win probability against Algeria's 5%. This represents a decisive edge, though not an overwhelming one in probability terms. Algeria enters as a clear underdog with limited paths to victory in the model's assessment.\n\nThe draw carries meaningful weight at 21%, suggesting the match has structural room for a stalemate outcome. The 53-percentage-point gap between Argentina's win and Algeria's win probabilities reflects the model's conviction in the favourite, but the draw's presence and Algeria's non-negligible tail indicate the contest is not treated as a formality—competitive play remains well within the forecast.\n\nThe model and sportsbook consensus diverge on Algeria's chances. Bookmakers assign the underdog 11%, roughly double the model's 5%, while slightly reducing Argentina's win probability to 69%. Polymarket sits between these estimates. The dashboard does not adjudicate which assessment of Algeria's true win probability is correct; the divergence merits attention for those evaluating value."
+  "preview_text": "The model favors Argentina at 74%, giving the team a commanding edge in a matchup played on neutral ground. Algeria's modeled win probability stands at just 5%, roughly one-seventh of Argentina's chances.\n\nThe W/D/L spread reveals a heavily skewed contest. Argentina's three-to-one advantage over a draw outcome suggests the model sees a competitive gap but does not rule out a stalemate; draws are plausible in roughly one in five scenarios. Algeria's low win probability indicates the model expects asymmetric pressure, though the team retains a non-negligible tail of outcomes.\n\nThe model and sportsbooks diverge notably on Algeria's chances. The market consensus puts the underdog at 11–12%, roughly double the model's 5% assessment. Both sources agree closely on Argentina's win probability (74% model, 67% books) and draw likelihood (21%). The dashboard does not adjudicate which source better captures Algeria's true strength; the discrepancy may reflect market overweighting of uncertainty or the model's confidence in the gap."
 }

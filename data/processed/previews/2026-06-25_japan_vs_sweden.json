@@ -3,9 +3,9 @@
   "home_team": "Japan",
   "away_team": "Sweden",
   "date": "2026-06-25",
-  "input_hash": "3b2750e8333c512d7cc95d9201b19ceecd7792a0",
-  "generated_at": "2026-06-15T08:01:42+00:00",
+  "input_hash": "f39ea3ac684b7d1dbfbe804cdbbd2ee4a4d73579",
+  "generated_at": "2026-06-16T07:49:36+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Japan at 69%, a commanding margin over Sweden's 7.5% win probability. This 61-percentage-point gap reflects a strong asymmetry in the forecast. Sweden is given a modest but real chance, whereas Japan emerges as a heavy favorite in the model's assessment.\n\nThe win-draw-loss spread shows Japan heavily preferred, yet draws are plausible at 23.5%. The model projects this as a relatively one-sided affair in probability space, with Sweden facing a steep climb to victory. A Swedish win remains in the low-single-digit range, indicating the model expects the match to turn on Japan's advantage rather than on genuine competitive balance.\n\nThe model and market diverge substantially. The model's 69% for Japan sits 24 percentage points above the sportsbook consensus of 45%, while Sweden's 7.5% sits 19 percentage points below the market's 27%. Polymarket prices align closely with sportsbook consensus. The dashboard does not adjudicate which source is more accurate; this discrepancy warrants review of the underlying forecast assumptions."
+  "preview_text": "The model favours Japan to win with a 69% probability, substantially ahead of Sweden's 8% chance. The model sees this as a heavily one-sided contest, with Japan the clear favourite on the neutral ground.\n\nThe win-draw-loss spread reflects that asymmetry. A Japan victory dominates the model's forecast, but a draw at 24% remains a meaningful outcome—more likely than a Swedish win. The match is not expected to be especially competitive; the model assigns Japan a commanding edge in the underlying match quality.\n\nThe model and market diverge sharply here. Sportsbooks and Polymarket both price Japan at roughly 45%, placing Sweden's chances at 27%—nearly triple the model's estimate. The gap of about 24 percentage points on the Japan win line is substantial. The dashboard does not adjudicate between these sources; bettors and forecast users should note the significant disagreement and form their own view on which is more reliable."
 }

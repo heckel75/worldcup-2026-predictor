@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Brazil",
   "date": "2026-06-24",
-  "input_hash": "db80c3811c77bd776e4fde22cc9e76f745c8eedf",
-  "generated_at": "2026-06-14T08:51:02+00:00",
+  "input_hash": "33d89871b596054cd53f742c4d2715cf49e111f8",
+  "generated_at": "2026-06-16T07:49:12+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Brazil as the clear favorite, assigning them a 63% chance of victory against a Scotland side given only 12% to win. Scotland enters as a substantial underdog despite the neutral venue, with Brazil holding an approximate 50-percentage-point edge in win probability.\n\nThe draw emerges as a meaningful outcome at 25%, suggesting the match carries real competitive uncertainty beyond a binary Brazil win. The 12-point gap between Scotland and draw probability indicates Scotland's path to victory is narrower than a stalemate scenario, yet the overall spread—with Brazil's win probability in the low 60s—points toward a contest that is far from predetermined.\n\nThe market consensus slightly favors Brazil relative to the model, offering them 66% compared to the model's 63%. The sportsbook widens the gap to Scotland (14% vs 11.8%) and narrows the draw (20% vs 25%), a divergence of roughly 5 percentage points on the draw outcome. Polymarket prices trend even further toward Brazil. These differences are modest but worth noting; the dashboard presents the model's view without claiming superiority over consensus pricing."
+  "preview_text": "The model favors Brazil at 63%, leaving Scotland with a modest 12% chance of victory. The underdog's path is narrow but not impossible; the gap between the two sides is substantial but does not eliminate Scotland's mathematical claim on an upset.\n\nThe draw probability of 25% suggests a genuinely competitive match with real plausibility for a stalemate result. Brazil's win probability exceeds Scotland's by roughly 51 percentage points, indicating a clear hierarchy in expected performance. The spread across all three outcomes remains fairly distributed, however — no single result dominates to the degree that would signal overwhelming dominance.\n\nModel and market show broad alignment. The sportsbook consensus places Brazil at 66%, only 3 percentage points higher than the model; Scotland's gap is similar (14% to 12%). Polymarket prices drift slightly further toward Brazil but stay within a narrow band. The three sources agree substantially on the fundamental shape of the match."
 }

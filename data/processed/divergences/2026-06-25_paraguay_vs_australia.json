@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 18.5,
-  "input_hash": "6d1e35f7d24d8ff8a4819f55ab47eb0b5eac39a1",
-  "generated_at": "2026-06-14T08:52:19+00:00",
+  "max_gap_pp": 18.4,
+  "input_hash": "9490f12a762a84e6797ab5397bcb60a9aedc0e4a",
+  "generated_at": "2026-06-16T07:50:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 44%, while the sportsbook consensus favors Paraguay at 44%. On the draw, the two sources align closely at 30–31%. The largest single gap appears on the Paraguay win probability, where books price it 19 percentage points higher than the model. This divergence could reflect recent lineup news, injury developments, or form shifts that the model has not incorporated since its last update. The dashboard flags this as a notable signal of disagreement rather than evidence that either source has superior information."
+  "commentary_text": "The model favors Australia at 44%, while the sportsbook consensus backs Paraguay at 44% — a reversal of which team is favored. The model's 18-point edge on an Australia win contrasts with the market's 18-point edge on a Paraguay win. This gap could reflect recent form, injuries, or lineup changes that have shifted since the model's last update, or it may signal that real-money flows are pricing information the statistical forecast cannot yet access. The dashboard surfaces both views without endorsing either."
 }

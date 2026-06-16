@@ -3,9 +3,9 @@
   "home_team": "Paraguay",
   "away_team": "Australia",
   "date": "2026-06-25",
-  "input_hash": "7368ca62c1ffeabc0fc77fe808b134190f402300",
-  "generated_at": "2026-06-15T08:01:30+00:00",
+  "input_hash": "ab27a7cd3c4bd59848819b6c4fa010447e828bbe",
+  "generated_at": "2026-06-16T07:49:24+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Australia to win at 44%, while Paraguay's chances stand at 25%. This represents a substantial gap, positioning Australia as the clear favourite on the statistical forecast, though the underdog retains a realistic path to victory.\n\nThe draw emerges as the second-most likely outcome at 31%, only 14 percentage points behind Australia's win probability. This relatively compressed spread between the favourite and the draw suggests a competitive match where the result remains genuinely uncertain through the final whistle. A Paraguay victory is possible but less favoured than either an Australian win or a stalemate.\n\nThe model and market show a pronounced divergence. Sportsbook consensus rates Paraguay at 44% and Australia at 27%—nearly reversing the model's ranking. Polymarket prices align closely with the books, reinforcing this gap. The dashboard makes no claim about which assessment is correct; the discrepancy is material enough to warrant attention from those reviewing both sources."
+  "preview_text": "The model favours Australia at 44%, with Paraguay at 25% and a draw at 31%. This makes Australia a clear favourite, though the underdog carries a meaningful one-in-four chance of victory.\n\nThe expected distribution suggests a competitive match leaning toward a decisive result. Australia's advantage is substantial but not overwhelming; the 44% win probability leaves room for either a Paraguay upset or a stalemate. A draw at roughly 31% remains plausible, indicating neither side is expected to dominate convincingly.\n\nThe model and sportsbook consensus diverge significantly. Books and Polymarket both assign Paraguay 43–44% and Australia only 28%, a spread of roughly 16 percentage points in Paraguay's favour compared to the model. The model sees Australia as substantially stronger; the market treats the sides as nearly even. The dashboard makes no claim about which assessment is correct."
 }

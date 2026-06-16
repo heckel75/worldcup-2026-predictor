@@ -3,9 +3,9 @@
   "home_team": "Germany",
   "away_team": "Ivory Coast",
   "date": "2026-06-20",
-  "input_hash": "39d29edb20cb6a7e719aa9d980ddb62a5a0128b3",
-  "generated_at": "2026-06-15T08:00:38+00:00",
+  "input_hash": "89b17f0c0e46273b7bfd5921a9b1722f73ab2d90",
+  "generated_at": "2026-06-16T07:48:26+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Germany at 60% to win, with Ivory Coast's upset probability at 13%. The sportsbook consensus aligns closely, placing Germany at 62%, only 2 percentage points higher. Both readings treat Ivory Coast as a clear underdog but not without realistic chances.\n\nThe draw carries meaningful weight in the model's forecast at 27%, suggesting a competitive fixture where a stalemate remains plausible. The sportsbook consensus values draws lower at 22%, a gap of 5 percentage points that reflects some divergence in how the two sources weight a goalless or tied outcome. Germany's win probability and Ivory Coast's upset chance are broadly comparable across sources, indicating consensus that Germany enters as the solid favorite.\n\nMarket pricing from Polymarket leans slightly higher on a German win at 63%, closer to the sportsbook midpoint than the model's central estimate. The model and sportsbooks remain substantially aligned on the match's competitive profile, though the model assigns marginally more probability to a draw. Both sources frame this as a match with a clear hierarchy but genuine risk of disruption."
+  "preview_text": "The model favors Germany at 60% to win, with Ivory Coast positioned as clear underdogs at 13%. The gap reflects a substantial difference in projected strength between the two sides on a neutral ground.\n\nThe draw probability of 27% suggests this match carries real competitive uncertainty despite Germany's edge. A one-goal outcome or stalemate is nearly as plausible as an Ivory Coast victory outright, indicating the fixture is unlikely to be a one-sided affair. Germany's advantage is meaningful but not commanding.\n\nThe model and sportsbook consensus align closely across all three outcomes, with gaps of 2 percentage points or less. Polymarket prices lie slightly higher on a Germany win but remain well within the consensus band. The three sources agree this is a moderately favored result for Germany rather than a heavily skewed matchup."
 }

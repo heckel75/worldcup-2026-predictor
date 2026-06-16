@@ -5,10 +5,10 @@
   "date": "2026-06-16",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 26.9,
-  "input_hash": "884a6ae17dac610a4c2bc90471305bb86f9b0ccc",
-  "generated_at": "2026-06-15T18:03:31+00:00",
+  "max_gap_pp": 25.5,
+  "input_hash": "ceaba1b69e23afa84abfcff1548b4e1ad9918fef",
+  "generated_at": "2026-06-16T07:50:35+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Austria a 71% win probability versus the model's 45%, a 27-percentage-point gap favoring the bookmakers' conviction in an Austrian victory. This disparity suggests the market may be pricing in information beyond recent Elo ratings—potentially lineup changes, injury updates, or form trajectories that have shifted since the model's last update. Both sources agree Austria is the favorite, but the sportsbooks show substantially higher confidence in a decisive outcome; the draw falls from the model's 31% to 18% in the books. The dashboard surfaces this as a signal worth monitoring: if recent developments have genuinely strengthened Austria's position, the market's tighter distribution reflects that; if the model's broader uncertainty is justified, today's odds may overcorrect."
+  "commentary_text": "The sportsbook consensus assigns Austria a 70% win probability versus the model's 44%, a 26-percentage-point gap favoring the stronger conviction in an Austria victory. The market also narrows the draw to 19% and Jordan's chances to 11%, while the model sees those outcomes as more plausible. This sharpening of confidence in Austria could reflect recent lineup news, injury updates, or current form that the model, built on older Elo data, does not yet incorporate. Conversely, the model's more balanced assessment may simply reflect structural uncertainty that the real-money market has resolved through information flow. The dashboard surfaces this gap as a signal of divergent confidence, not an adjudication of accuracy."
 }

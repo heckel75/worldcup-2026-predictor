@@ -3,9 +3,9 @@
   "home_team": "Netherlands",
   "away_team": "Sweden",
   "date": "2026-06-20",
-  "input_hash": "efce0d1ddee634f5dc702646e8ac89df15ee0eb4",
-  "generated_at": "2026-06-15T08:00:48+00:00",
+  "input_hash": "74c9721815864ffe20ed6637bccf7d94215f1a8b",
+  "generated_at": "2026-06-16T07:48:34+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Netherlands at 68% to win, with Sweden given only 8% to claim victory. The underdog's chances are marginal in the statistical forecast, which sees the match as substantially weighted toward the Dutch.\n\nThe W/D/L spread reflects a moderately competitive encounter. Draw probability sits at 24%, indicating a plausible stalemate outcome. However, the gap between Netherlands and Sweden—nearly 60 percentage points—suggests the model expects the Dutch to dominate territory and finishing, leaving a narrow window for an upset.\n\nThe model and market diverge meaningfully on Sweden's prospects. Sportsbooks price the Swedes at 19%, roughly double the model's 8% assessment. Polymarket aligns closely with the books. The model sees a clearer Netherlands advantage; the market prices more uncertainty around the underdog's ceiling. The dashboard offers both views without claiming superior knowledge of which will prove correct."
+  "preview_text": "The model rates Netherlands as clear favorite with a 68% win probability, leaving Sweden only an 8% chance of victory. This 59-percentage-point gap reflects a substantial disparity in the forecast. Sweden's underdog status is pronounced under the statistical framework.\n\nThe draw emerges as a meaningful outcome in both projections, hovering near 24%. The W/D/L spread shows Netherlands favored but not overwhelmingly so once draws are acknowledged; competitive matches at this level produce draws roughly one-quarter of the time. The model sees a moderate gap between the two sides rather than a mismatch.\n\nModel and market diverge noticeably on Sweden's prospects. The model assigns Sweden 8% win probability; sportsbooks and Polymarket both cluster around 19%, roughly 11 percentage points higher. Both markets agree on Netherlands at 56–57%, well below the model's 68%. The dashboard does not adjudicate which reading is more accurate—the disagreement suggests material uncertainty about Sweden's true strength relative to the statistical estimate."
 }

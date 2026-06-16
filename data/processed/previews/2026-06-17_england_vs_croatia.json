@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "Croatia",
   "date": "2026-06-17",
-  "input_hash": "5e4dceb6195e2f0f38046fddc072d74527b2b557",
-  "generated_at": "2026-06-15T08:00:11+00:00",
+  "input_hash": "81068f18b27d3d55f036b439535f1e7ed869d4ce",
+  "generated_at": "2026-06-16T07:47:47+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates England as the favorite with a 53% win probability, while Croatia's chances stand at 18%. The gap reflects a meaningful but not dominant advantage for England; Croatia enters with a plausible path to victory rather than token odds.\n\nThe draw emerges as a substantial outcome at 29%, suggesting this fixture is unlikely to be settled decisively. The three-way spread indicates competitive balance in a neutral venue—England's lead over the underdog is genuine but the outcome distribution remains relatively dispersed, leaving room for a stalemate or upset.\n\nThe model and market show close alignment. The sportsbook consensus puts England at 56%, a modest 3 percentage points above the model; the draw sits 4 points lower in the market. Polymarket prices track the model more tightly on the England win. These gaps fall within typical variance and suggest reasonable agreement on match shape, though the market edges slightly toward an England win and away from a draw."
+  "preview_text": "The model favours England at 53%, with Croatia positioned as underdog at 18%. The gap between the two teams is substantial, reflecting a moderate favourite-versus-challenger dynamic rather than a close contest.\n\nThe W/D/L spread suggests England's advantage is real but not overwhelming. A draw is plausible at 29% of outcomes, narrowing the gap between England victory and a stalemate. The match carries competitive texture: Croatia holds enough probability mass to trouble the favourite, yet England enters with a clear edge in the forecast distribution.\n\nThe model and market are closely aligned across all three outcomes. Sportsbooks price England slightly higher at 56% versus the model's 53%, a difference of roughly 3 percentage points, while both sources converge on draw probability near 26–29%. Polymarket prices track similarly to the consensus. These minor variations fall within typical market noise and suggest broad agreement on the match structure."
 }

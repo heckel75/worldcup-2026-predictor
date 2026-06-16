@@ -3,9 +3,9 @@
   "home_team": "Iraq",
   "away_team": "Norway",
   "date": "2026-06-16",
-  "input_hash": "4ee3d6e740895dc13c18e4fa444b57fbf8a0af67",
-  "generated_at": "2026-06-14T08:49:17+00:00",
+  "input_hash": "b8cc3af35c440b2320ddb4296b8b457501101b0e",
+  "generated_at": "2026-06-16T07:47:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Norway at 65% to win, with Iraq given a 11% chance and a draw rated at 24%. Norway enters as a clear favorite, though the model assigns Iraq nearly one win in nine attempts and rates the draw as the second-most-likely single outcome.\n\nThe win-draw-loss spread reflects a moderately competitive match. Norway's 65% win probability indicates a strong but not dominant favorite, and the 24% draw probability suggests the teams are close enough that a stalemate remains plausible. Iraq's 11% win chance sits well below but is not negligible; the match is tilted but not a formality.\n\nModel and market diverge noticeably. The sportsbook consensus pushes Norway to 80%, a 15-percentage-point edge over the model, while compressing Iraq to 7% and the draw to 14%. Polymarket prices align closely with sportsbooks. The dashboard does not resolve which estimate better reflects true odds, only that a material gap exists."
+  "preview_text": "The model favors Norway at 65%, with Iraq's win probability standing at 11%. The underdog faces a steep climb, though a draw outcome at 24% implies the match retains competitive structure beyond a simple two-way contest.\n\nThe spread across outcomes reflects moderate separation rather than a blowout expectation. Norway holds a commanding edge, yet the draw carries material weight—nearly a quarter of the probability mass. This suggests a match where Iraq can contest without being eliminated from contention early, even if Norway enters as heavy favorite.\n\nThe sportsbook consensus diverges notably from the model. Books price Norway at 79%, a 14-percentage-point gap above the model's 65%. Sportsbooks also trim both Iraq and draw probabilities below the model's estimates. Polymarket prices align closely with the book consensus, suggesting institutional conviction that Norway's advantage exceeds the statistical forecast. The dashboard makes no claim as to which source better reflects true match probability."
 }

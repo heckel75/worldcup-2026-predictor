@@ -3,9 +3,9 @@
   "home_team": "Czech Republic",
   "away_team": "South Africa",
   "date": "2026-06-18",
-  "input_hash": "8072e698790680b7abb6d3cd23890a29d14ea26e",
-  "generated_at": "2026-06-15T18:02:58+00:00",
+  "input_hash": "16af928ca88482407fcb06f0104e2ff6b35346ff",
+  "generated_at": "2026-06-16T07:47:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Czech Republic at 53%, with South Africa trailing at 18%. The Czech Republic's win probability sits near the midpoint between a clear favorite and a competitive match, leaving meaningful room for an upset or stalemate.\n\nThe draw carries 29% probability, the largest single outcome after a Czech Republic win. This suggests the match has structural balance—neither team is heavily favored to dominate, and a 1–1 result or scoreless tie ranks as a plausible outcome. The 35-percentage-point gap between first and third reflects mild hierarchy rather than a mismatch.\n\nThe model and sportsbooks are tightly aligned. Czech Republic win probabilities cluster at 53–54%, and both draw estimates sit around 25–29%. The market consensus and polymarket prices show agreement within 1–2 percentage points across all three outcomes, indicating no material disagreement on the match's competitive balance."
+  "preview_text": "The model favors Czech Republic at 53%, with South Africa facing a steeper path at 18%. The gap of roughly 35 percentage points reflects a clear hierarchical assessment, though the underdog retains a meaningful chance in a knockout context or as part of a longer tournament.\n\nThe draw emerges as the second-likeliest outcome at 29%, suggesting the match could remain competitive through regular time. The distribution points toward a moderately open contest rather than a heavily one-sided affair: Czech Republic's majority sits well short of the 60%+ threshold associated with dominant favorites, leaving room for South Africa to influence play and potentially force a decision by other means.\n\nModel and market align closely. Sportsbook consensus places Czech Republic at 54% (within 1 percentage point), draw at 26% (a 3-point difference), and South Africa at 20% (also 2 points off). Polymarket pricing tracks the books almost exactly. These tight margins indicate confidence across sources in the underlying match structure."
 }

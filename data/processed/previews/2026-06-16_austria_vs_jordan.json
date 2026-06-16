@@ -3,9 +3,9 @@
   "home_team": "Austria",
   "away_team": "Jordan",
   "date": "2026-06-16",
-  "input_hash": "4dd52c55c3a0ab3543a0a4af5bda91ad5ea0cefe",
-  "generated_at": "2026-06-15T18:02:55+00:00",
+  "input_hash": "2cbcc48428c0a720a6c1cb3c157c8806a82661a4",
+  "generated_at": "2026-06-16T07:47:40+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Austria at 44.5%, a modest edge over Jordan's 24.5% win probability. A draw is the second-most likely outcome at 30.9%, placing this match in a relatively competitive frame rather than a one-sided affair. Austria's advantage narrows when the full distribution is considered.\n\nThe spread across outcomes reflects genuine uncertainty. Austria's win probability exceeds Jordan's by 20 percentage points, but the draw probability is substantial—nearly one-third of all scenarios. This suggests the match is unlikely to be decided by a comfortable margin; competitive, low-scoring play is plausible under the model's base case.\n\nThe model and sportsbook consensus diverge sharply. Books and Polymarket both price Austria's win probability near 71–73%, roughly 27 percentage points higher than the model's 44.5%. The model also assigns nearly double the draw probability (30.9% versus 17–18% in the market). This gap signals meaningful disagreement about the likely outcome; the dashboard does not adjudicate which view is correct, only that they differ substantially."
+  "preview_text": "The model favors Austria to win at 44.5%, giving Jordan a 24.6% chance of victory. This is a competitive match in the model's view, with neither side dominant. Austria enters as the statistical favorite, but the gap to the underdog is modest rather than commanding.\n\nThe draw emerges as a plausible outcome at 30.9%, the second-most likely result. The spread across the three outcomes is relatively even—no single scenario overwhelms the others. This suggests a closely matched encounter where the outcome remains genuinely uncertain through regular time.\n\nThe market is notably more bullish on Austria, pricing a win at 70%, roughly 25 percentage points above the model. Polymarket contracts align closely with sportsbook consensus. The divergence is substantial: the market compresses Jordan's chances to 10–11% while raising the draw to the 17–18% range. The dashboard does not adjudicate which assessment is more accurate, only that both sources regard Austria as favored but via materially different degree of conviction."
 }

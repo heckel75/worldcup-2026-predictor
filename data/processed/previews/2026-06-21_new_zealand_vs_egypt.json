@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Egypt",
   "date": "2026-06-21",
-  "input_hash": "ff96f332c98a15b2346d85553de227bdac387d59",
-  "generated_at": "2026-06-14T08:50:16+00:00",
+  "input_hash": "2571fc136b9e1812e02d3b0e2622a2e5f4c3d600",
+  "generated_at": "2026-06-16T07:48:41+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Egypt as the clear favorite, assigning a 47% win probability against New Zealand's 23%. The 24-percentage-point gap reflects a substantial asymmetry in expected strength, with the draw at 30% representing a meaningful path for either side to leave with a point.\n\nThe win-draw-loss spread suggests a competitive match with real uncertainty in the tail outcomes. A draw is nearly as likely as an Egypt victory, indicating that Egypt's advantage, while material, is not decisive. New Zealand's 23% win chance reflects genuine capacity to take the match, though the underdog role is clear.\n\nThe model and sportsbook consensus align closely. The market edges Egypt slightly higher—54.5% versus the model's 47%—while rating New Zealand marginally lower at 19.7%. These gaps are within 5 percentage points across all three outcomes. Polymarket prices track the sportsbook view tightly, suggesting broad agreement on match contours rather than meaningful divergence between statistical and betting-market assessments."
+  "preview_text": "The model favors Egypt to win at 47%, with New Zealand positioned as the underdog at 23%. The gap between them spans 24 percentage points, suggesting Egypt enters as the clearer favorite, though New Zealand retains meaningful chances in the match.\n\nThe 30% draw probability indicates the contest is expected to be moderately competitive rather than heavily weighted toward either side securing victory. The spread across outcomes—no single result exceeding 47%—reflects genuine uncertainty in the outcome, with all three possibilities materially likely rather than one dominating.\n\nModel and market diverge meaningfully. The sportsbook consensus and Polymarket prices both shift probability toward Egypt (58–60% win chance) and away from New Zealand (17–17%), creating gaps of roughly 10 percentage points favoring the Egyptian win case. The model assigns higher odds to a New Zealand victory and a draw. The dashboard does not determine which assessment is correct; the divergence suggests bettors and the statistical model weigh the underlying uncertainty differently."
 }

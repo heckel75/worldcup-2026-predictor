@@ -3,9 +3,9 @@
   "home_team": "Uruguay",
   "away_team": "Cape Verde",
   "date": "2026-06-21",
-  "input_hash": "d7a4c94564458c5f740ee73109457e34ad1fdcff",
-  "generated_at": "2026-06-11T18:50:20+00:00",
+  "input_hash": "6028ce011be867432bd79b348d2d0aef0b4ba687",
+  "generated_at": "2026-06-16T07:48:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Uruguay with a 74% win probability, placing Cape Verde's upset chance at just 5%. This gap reflects a heavy statistical lean toward the favorite, though the underdog retains some realistic path to a result.\n\nThe draw sits at 21%, suggesting the match is unlikely to follow a dominant script. Uruguay's advantage is substantial but not overwhelming; a one-goal margin or competitive scoreline remains plausible. The spread between Uruguay's win and Cape Verde's win is wide, but the 21% draw probability indicates this is not a heavily one-sided matchup by the model's estimation.\n\nThe model and market diverge meaningfully on Cape Verde's chances. The model prices the upset at 5%, while sportsbooks and Polymarket both cluster near 12%, a gap of roughly 7–8 percentage points. Both sources align closely on Uruguay's baseline win likelihood and the draw rate. The dashboard does not adjudicate which assessment of underdog risk is correct."
+  "preview_text": "The model makes Uruguay a strong favorite at 74%, leaving Cape Verde with only a 5% win probability. That gap reflects a substantial difference in projected strength between the two sides, though the underdog's path to victory, while narrow, remains nonzero.\n\nThe expected distribution reveals a moderately competitive match. Uruguay's win probability of 74% is counterbalanced by a combined 26% chance of either a draw or Cape Verde upset. The 21% draw probability indicates that a stalemate is plausible enough to merit consideration, preventing the match from collapsing into a near-certainty for the favorite.\n\nThe model and sportsbooks diverge meaningfully here. The market consensus strips Uruguay's win probability to 64%—roughly 10 percentage points lower than the model—while lifting Cape Verde's upset chance to 13%. Polymarket prices align closer to the model on the draw but also favor Cape Verde more heavily than the statistical forecast does. The dashboard does not adjudicate which assessment is correct; the discrepancy likely reflects differing underlying assumptions about team quality or match conditions."
 }

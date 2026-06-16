@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 17.5,
-  "input_hash": "e159af8f3076b54e8e5f05964d44a9d6e484fc9f",
-  "generated_at": "2026-06-15T08:02:42+00:00",
+  "max_gap_pp": 19.7,
+  "input_hash": "cbc1b02146a71052e86b630618807b9c3e65e777",
+  "generated_at": "2026-06-16T07:50:48+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Ivory Coast a 81% win probability versus the model's 64%, a 17-percentage-point gap favoring the favorite. Both sources rank Ivory Coast as the clear choice, but sportsbooks and traders are significantly more confident in that outcome. This heightened conviction could reflect recent lineup adjustments, injury news, or current form not yet reflected in the model's Elo-based ratings. The model's wider distribution across outcomes—particularly its 12-point lead for Curaçao over the market's 6%—suggests room for either late intelligence to sharpen the favorite further or for the market to be overweighting available information. The dashboard flags this asymmetry as worth monitoring rather than endorsing either estimate."
+  "commentary_text": "The market is substantially more confident in an Ivory Coast win, pricing it at 83% versus the model's 64%—a 19-point gap—while also compressing the Curaçao win probability to 5% from 12%. Both sources rank Ivory Coast as heavy favorite, but sportsbooks and Polymarket are pricing a more lopsided matchup. This tightening could reflect recent form, injury status, or lineup changes that have become public since the model's last update; the model operates on structural ratings alone and cannot see breaking news on squad availability or recent results. The dashboard flags this as a meaningful signal worth monitoring, though it remains uncertain whether the market's sharper conviction reflects genuine new information or simply tighter price discovery."
 }
