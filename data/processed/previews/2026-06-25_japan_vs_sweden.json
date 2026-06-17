@@ -3,9 +3,9 @@
   "home_team": "Japan",
   "away_team": "Sweden",
   "date": "2026-06-25",
-  "input_hash": "f39ea3ac684b7d1dbfbe804cdbbd2ee4a4d73579",
-  "generated_at": "2026-06-16T07:49:36+00:00",
+  "input_hash": "f6c778aa8ca00bde8db7090318e1a19a61945898",
+  "generated_at": "2026-06-17T06:35:14+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Japan to win with a 69% probability, substantially ahead of Sweden's 8% chance. The model sees this as a heavily one-sided contest, with Japan the clear favourite on the neutral ground.\n\nThe win-draw-loss spread reflects that asymmetry. A Japan victory dominates the model's forecast, but a draw at 24% remains a meaningful outcome—more likely than a Swedish win. The match is not expected to be especially competitive; the model assigns Japan a commanding edge in the underlying match quality.\n\nThe model and market diverge sharply here. Sportsbooks and Polymarket both price Japan at roughly 45%, placing Sweden's chances at 27%—nearly triple the model's estimate. The gap of about 24 percentage points on the Japan win line is substantial. The dashboard does not adjudicate between these sources; bettors and forecast users should note the significant disagreement and form their own view on which is more reliable."
+  "preview_text": "The model makes Japan a substantial favorite at 69%, while Sweden's win probability sits at just 8%. This represents a decisive skew toward the favorite, with Japan's chances more than nine times those of Sweden in a binary outcome frame.\n\nThe draw probability of 24% suggests meaningful competitive tension despite Japan's edge. The model's distribution indicates Japan is likely to control the match and create more scoring opportunities, but Sweden retains sufficient defensive capability that neither team winning outright is the likeliest single outcome. A one-goal margin either way appears plausible within the model's forecast envelope.\n\nThe model and sportsbook consensus diverge sharply. Books price Japan at 45%, roughly 24 percentage points below the model's 69%. Conversely, books assign Sweden 27%, nearly 20 points higher than the model. Polymarket pricing aligns closely with sportsbook consensus. This substantial gap suggests material disagreement about Japan's true strength or Sweden's capacity relative to the statistical forecast. The dashboard does not adjudicate between these sources; users should weigh model methodology and market information according to their confidence in each."
 }

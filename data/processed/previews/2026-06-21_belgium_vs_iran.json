@@ -3,9 +3,9 @@
   "home_team": "Belgium",
   "away_team": "Iran",
   "date": "2026-06-21",
-  "input_hash": "20bd899d8db929758d3fb726dfebee6f4fd16915",
-  "generated_at": "2026-06-15T18:03:02+00:00",
+  "input_hash": "bfcb0351d74a54abbed92f27e760329c79cae03f",
+  "generated_at": "2026-06-17T06:34:08+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Belgium as a modest favorite at 38% win probability, but the gap to Iran stands at only 7 percentage points. The sportsbooks, by contrast, see Belgium as a strong favorite at 68%, reflecting a far wider margin of confidence in the European side's chances.\n\nThe model's spread suggests a competitive, closely matched encounter. A draw at 32% is nearly as likely as a Belgium victory, and Iran's 31% win probability indicates the match could plausibly go either direction. The three outcomes remain relatively balanced, pointing to genuine uncertainty in the underlying quality gap between the teams.\n\nModel and market diverge substantially here. The model places Belgium's win probability 30 percentage points below the sportsbook consensus, while sportsbooks elevate Iran's chances to just 12% compared to the model's 31%. Polymarket prices align closely with the stripped sportsbook view. The dashboard does not adjudicate which assessment is correct; the discrepancy is large enough to merit attention from users monitoring the fixture."
+  "preview_text": "The model rates Belgium as a slight favorite at 38%, with Iran's win probability nearly as high at 30%. The two sides sit close together in the model's assessment, leaving substantial room for either outcome or a draw at 32%.\n\nThe narrow spread across all three results suggests a competitive, uncertain match. Belgium's modest edge does not reflect dominance; rather, the probabilities indicate genuine parity. A draw remains plausible at nearly one-third, and Iran's 30% chance underscores the model's view that this is far from a one-sided affair.\n\nThe market consensus diverges substantially from the model. Sportsbook odds favor Belgium at 67%, roughly 29 percentage points higher than the model's 38%, and price Iran at just 12%—a gap of 18 points. Polymarket pricing aligns closely with the sportsbooks. The dashboard does not adjudicate between these sources; the sizeable discrepancy warrants scrutiny of both methodologies."
 }

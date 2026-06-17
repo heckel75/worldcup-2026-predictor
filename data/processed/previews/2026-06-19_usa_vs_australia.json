@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Australia",
   "date": "2026-06-19",
-  "input_hash": "b6dc98b492d3e708f0a14ed9335f9eb02a60cbd6",
-  "generated_at": "2026-06-16T07:48:19+00:00",
+  "input_hash": "24714d911a062b846c2e8edc688a84af106836b3",
+  "generated_at": "2026-06-17T06:33:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assesses this fixture as closely balanced, giving Australia a slight edge at 35% to win, with the USA at 34%. The underdog designation is marginal; both teams occupy nearly identical winning chances, suggesting a genuinely competitive encounter.\n\nThe draw probability of 32% is the modal outcome in the model's forecast, implying a match likely to be tightly contested with genuine possibility of a stalemate. The spread across all three outcomes is narrow and relatively even, indicating neither team commands a clear advantage. A one-goal margin either way fits the statistical profile.\n\nThe market consensus diverges sharply from the model. Sportsbooks and Polymarket both price the USA substantially higher—around 60%—while compressing Australia to 18%. The gap between model and market on the USA win is roughly 25 percentage points, a material disagreement. The dashboard does not adjudicate between these sources; readers should weigh whether the market's USA confidence reflects genuine information beyond the model's inputs or represents systematic bias."
+  "preview_text": "The model assesses this match as nearly even, giving Australia a marginal edge at 35% to the USA's 34%, with a draw at 32%. The statistical forecast sees competitive balance across all three outcomes, suggesting neither side enters as a clear favorite.\n\nThe spread reflects genuine uncertainty. The 1-point gap between the two win probabilities indicates the teams are closely matched in underlying strength by the model's estimate. A draw emerges as a plausible result at nearly one-third probability, pointing to a competitive contest where neither team is heavily favored to force a decisive outcome.\n\nThe market consensus diverges substantially from the model, backing the USA to 59% while compressing both the draw and Australia's win probability to 22% and 18% respectively. The model and sportsbooks are roughly 25 percentage points apart on the USA's win chance. The dashboard does not adjudicate which assessment is correct; the gap reflects a genuine disagreement between the statistical forecast and market pricing."
 }

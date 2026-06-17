@@ -3,9 +3,9 @@
   "home_team": "Morocco",
   "away_team": "Haiti",
   "date": "2026-06-24",
-  "input_hash": "37057ecce51aac78e283c2dfe9a486f7cc4cf559",
-  "generated_at": "2026-06-16T07:49:16+00:00",
+  "input_hash": "7cffd48aab183e3cd5b2697332b5eff431d02f54",
+  "generated_at": "2026-06-17T06:34:54+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Morocco at 74%, leaving Haiti with a modest 5% chance of victory. The underdog's low win probability reflects a substantial gap in the forecast, though Morocco's dominance is not overwhelming—a quarter of possible outcomes lie outside a Moroccan win.\n\nThe draw carries genuine probability at 21%, suggesting the match could be tactically cautious or closely contested through regulation. Morocco enters as clear favorite, but the 21-point gap between their win and Haiti's win probability indicates a match structure where a stalemate remains plausible and represents the likeliest alternative to a Moroccan three points.\n\nModel and market align closely across all three outcomes. The sportsbook consensus places Morocco at 73%, just 1 percentage point below the model, with the draw at 17%—a 4-point gap. Polymarket prices sit between the two, showing minor variation. No material divergence exists among the three sources on the match's fundamental competitive shape."
+  "preview_text": "The model favors Morocco at 74%, with Haiti assigned only a 5% chance of victory. This reflects a substantial gap in the win probabilities, positioning Morocco as a clear favorite on a neutral ground.\n\nThe draw accounts for 21% of the model's distribution, suggesting competitive balance in execution is plausible even if Morocco enters as the likely winner. The win-loss gap of 69 percentage points indicates the match is expected to lean decisively toward one outcome, though the inclusion of a meaningful draw probability signals this is not a foregone conclusion in structure.\n\nThe model and sportsbook consensus are tightly aligned. Morocco's win probability differs by less than 1 percentage point between them. The main divergence lies in the draw: the model assigns it 21%, while the books average 17%, a 4-point gap. Polymarket prices sit between these two, with Haiti's win probability notably higher across all three sources than the model's 5% estimate."
 }

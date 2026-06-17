@@ -3,9 +3,9 @@
   "home_team": "Ecuador",
   "away_team": "Curaçao",
   "date": "2026-06-20",
-  "input_hash": "6cc384fc9381c0e29fd4da40ee1a0b0d18e616ea",
-  "generated_at": "2026-06-16T07:48:30+00:00",
+  "input_hash": "2684babe25afc69922913077be424ac77ee68f0a",
+  "generated_at": "2026-06-17T06:33:56+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Ecuador at 82%, with Curaçao's upset chances estimated at just 1%. The gap reflects a strong expected advantage for Ecuador, though the draw carries meaningful probability at 16%, suggesting this is not a one-sided affair by statistical measure.\n\nThe spread reveals a moderately competitive match in expectation. Ecuador's win probability exceeds the draw likelihood by roughly 66 percentage points, indicating the model leans toward a decisive result. However, the 16% draw probability means a stalemate carries real weight—neither outcome would be surprising in isolation.\n\nThe market is notably more confident in an Ecuador victory, pricing it 5 percentage points higher than the model at 87%, while also compressing the draw to 9% and raising Curaçao's chances to 4%. This suggests sportsbooks assess Ecuador's dominance more sharply than the statistical forecast. The dashboard does not adjudicate which view is correct; the divergence merits attention for those comparing model and market estimates."
+  "preview_text": "The model rates Ecuador as a heavy favourite, assigning them an 82% win probability. Curaçao's chances are minimal at just 1%, with a draw accounting for 16% of likely outcomes. This represents a decisive gap favouring the South American side, though the model retains meaningful probability mass on a stalemate.\n\nThe win–loss spread reflects considerable competitive separation. Ecuador's 82-point advantage over Curaçao's 1% is stark; a draw at 16% is the only plausible non-Ecuador outcome in the model's view. The match is unlikely to be close in expectation, though draws carry enough baseline probability that a 1–1 result would not shock. Ecuador are heavily positioned to control proceedings.\n\nThe sportsbook consensus and Polymarket prices both favour Ecuador more strongly than the model does, assigning them 87–88% win probability. They also attach less weight to draws (8–9%) and give Curaçao a higher floor at 4%. The gaps are 5 percentage points or less across outcomes, suggesting broad alignment in direction, though the books and crowd are modestly more confident in an Ecuador victory than the model."
 }

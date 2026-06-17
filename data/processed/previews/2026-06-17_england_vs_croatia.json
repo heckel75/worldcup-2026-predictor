@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "Croatia",
   "date": "2026-06-17",
-  "input_hash": "81068f18b27d3d55f036b439535f1e7ed869d4ce",
-  "generated_at": "2026-06-16T07:47:47+00:00",
+  "input_hash": "dfd13a221db608e208eee0071b73311e8ec1f5d1",
+  "generated_at": "2026-06-17T06:33:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours England at 53%, with Croatia positioned as underdog at 18%. The gap between the two teams is substantial, reflecting a moderate favourite-versus-challenger dynamic rather than a close contest.\n\nThe W/D/L spread suggests England's advantage is real but not overwhelming. A draw is plausible at 29% of outcomes, narrowing the gap between England victory and a stalemate. The match carries competitive texture: Croatia holds enough probability mass to trouble the favourite, yet England enters with a clear edge in the forecast distribution.\n\nThe model and market are closely aligned across all three outcomes. Sportsbooks price England slightly higher at 56% versus the model's 53%, a difference of roughly 3 percentage points, while both sources converge on draw probability near 26–29%. Polymarket prices track similarly to the consensus. These minor variations fall within typical market noise and suggest broad agreement on the match structure."
+  "preview_text": "The model favors England with a win probability of 53%, compared to Croatia's 18% chance. The gap reflects a meaningful but not decisive advantage; Croatia enters as a genuine underdog rather than a nominal contestant.\n\nThe draw carries a 29% probability in the model's output, suggesting a moderately competitive match where a stalemate remains plausible. The win probabilities are separated by roughly 35 percentage points, indicating England is the clearer favorite, yet the draw's substantial share implies the teams may be closer in execution than the headline win gap alone suggests.\n\nThe sportsbook consensus sits slightly higher on England at 55%, a gap of about 2 percentage points above the model. The draw narrows to 26% in market pricing. Polymarket reflects similar leanings. All three sources align within a narrow band, indicating broad agreement that England holds a modest edge while both Croatia's upset potential and a stalemate outcome warrant non-trivial odds."
 }

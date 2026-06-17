@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "Portugal",
   "date": "2026-06-27",
-  "input_hash": "bd863011fe3d6af55a9336dcd7eed9165c0d1635",
-  "generated_at": "2026-06-16T07:50:20+00:00",
+  "input_hash": "af5db2989342889874cec997475d2c9b9689cfdb",
+  "generated_at": "2026-06-17T06:35:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates this fixture as nearly even, with Portugal favored marginally at 35% to win, compared to Colombia's 34% chance. The gap between the two is negligible—just 1 percentage point—suggesting a competitive, tightly balanced contest where either side carries credible knockout prospects.\n\nThe draw probability of 32% underscores how open the match appears. The W/D/L distribution is relatively flat, with no outcome commanding overwhelming likelihood. A draw would be neither surprising nor particularly unlikely, and the modest win margins for either team imply the fixture should be closely contested throughout.\n\nThe market consensus diverges noticeably from the model. Sportsbooks collectively assign Portugal 45% to win, a 10-percentage-point premium over the model's 35%, while compressing both a Colombia win and a draw lower. Polymarket prices align with the betting consensus. The dashboard does not arbitrate which forecast better captures the true probability; the discrepancy may reflect market information unavailable to the model, or model-market disagreement on underlying strength."
+  "preview_text": "The model favors Portugal marginally, assigning a 35% win probability against Colombia's 33%. The gap between the two is narrow—less than 2 percentage points—suggesting the teams are nearly evenly matched in the statistical forecast.\n\nThe distribution across outcomes indicates a competitive match. With draw probability at 32%, a stalemate is plausible and only modestly less likely than either team's outright victory. The win probabilities are closely bunched, meaning the model sees little daylight between the three outcomes; no scenario dominates decisively.\n\nThe market consensus diverges from the model. Sportsbooks assign Portugal a 45% win probability—roughly 10 percentage points higher than the model's estimate—while compressing Colombia to 27% and draws to 29%. Polymarket prices move even further in Portugal's direction, pushing the win probability to 47%. The dashboard does not adjudicate which source better reflects the true match outcome; the divergence is meaningful and worth noting."
 }

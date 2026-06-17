@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "DR Congo",
   "date": "2026-06-23",
-  "input_hash": "aeefa989feb0131b94ae64f847949a59544daf7e",
-  "generated_at": "2026-06-16T07:49:05+00:00",
+  "input_hash": "7f5cfc25a04c964c8e6866ce1846cfee05f2f369",
+  "generated_at": "2026-06-17T06:34:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Colombia as a clear favorite with a 75% win probability, giving DR Congo only a 4% chance of victory. The gap between the two sides' win chances is substantial under the model's assessment, positioning this as a heavily asymmetric contest.\n\nThe outcome distribution reflects that imbalance. Colombia's advantage is large enough that a draw, while plausible at 20%, remains a secondary scenario. DR Congo's narrow win probability suggests the model expects the match to be largely one-directional in likelihood, though the 20% draw chance indicates enough uncertainty to keep a single-goal margin realistic.\n\nThe model and market diverge notably on DR Congo's chances. The model assigns 4% win probability versus sportsbook consensus of 13%, a gap of roughly 9 percentage points. Both sources align closely on Colombia's baseline dominance and draw likelihood (within 2–3pp). The dashboard does not arbitrate between these sources; the discrepancy may reflect different data inputs, market inefficiency, or model calibration differences that merit monitoring as match day approaches."
+  "preview_text": "The model rates Colombia as a strong favorite with a 75% win probability, leaving DR Congo with only a 4% chance of victory. The 71-percentage-point gap reflects a substantial projected disparity in match quality on a neutral ground.\n\nThe outcome distribution suggests Colombia enters as clear favorites, but the 20% draw probability indicates the match carries genuine uncertainty. A stalemate remains a plausible result, and while a DR Congo upset ranks as unlikely under the model's assessment, the non-trivial draw chance prevents the fixture from appearing one-sided in practical terms.\n\nThe model and sportsbook consensus diverge meaningfully. Bookmakers assign Colombia 64.6% and DR Congo 12.9%—roughly 11 and 8 percentage points higher than the model's respective figures—while draw odds align closely across sources. Polymarket prices track the consensus. The dashboard does not claim superiority over market pricing; the gap warrants monitoring to identify which framework better calibrates the true competitive balance."
 }

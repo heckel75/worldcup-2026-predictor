@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "Senegal",
   "date": "2026-06-22",
-  "input_hash": "25dd5819decc30ef3c51963c4a869ff5a738134b",
-  "generated_at": "2026-06-15T08:00:59+00:00",
+  "input_hash": "c8bf8418148bfb8aad939ac5372c7a9bef69a752",
+  "generated_at": "2026-06-17T06:34:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Norway with a 43% win probability, placing them as the statistical favorite. Senegal's chance of victory stands at 26%, leaving the underdog roughly 17 percentage points behind in win probability.\n\nThe draw carries material probability at 31%, suggesting a competitive encounter where a stalemate represents a genuine outcome. The spread between Norway's win likelihood and a Senegal victory is meaningful but not overwhelming; the match does not appear heavily skewed toward either side taking three points.\n\nModel and market are closely aligned across all three outcomes. The sportsbook consensus sits within 1–2 percentage points of the model's estimates, as does Polymarket pricing. This convergence suggests broad agreement on the relative strengths and uncertainty in the fixture."
+  "preview_text": "The model favors Norway with a 44% win probability against Senegal's 25%, a gap of roughly 18 percentage points. This positions Norway as the clear favorite in this neutral-venue fixture, though the underdog retains material chances.\n\nThe model's spread reflects a moderately competitive match. The draw sits at 31%, suggesting the outcome is far from predetermined: roughly one in three instances could see a level result. Norway's win probability substantially exceeds Senegal's, but the combined 56% chance of either a draw or a Senegal victory indicates the match remains genuinely contested.\n\nThe model and sportsbook consensus diverge in their assessment of Senegal's chances. The market prices Senegal 6–7 percentage points higher than the model, while implying a slightly lower Norway win probability and a narrower draw range. Polymarket prices align more closely with the model on Senegal and draw likelihood. This divergence is meaningful and suggests uncertainty about Senegal's chances; the dashboard does not adjudicate between statistical forecasting and market judgment."
 }

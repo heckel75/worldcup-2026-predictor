@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "DR Congo",
   "date": "2026-06-17",
-  "input_hash": "bb9226d4528a7a0be76def267a4ff8103c5e1db8",
-  "generated_at": "2026-06-15T08:00:08+00:00",
+  "input_hash": "ae04ccd6b442e89dcdd4600bee5dac26d157f5ca",
+  "generated_at": "2026-06-17T06:33:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Portugal at 77%, with DR Congo offered a 4% chance of victory. The draw sits at 20%, reflecting meaningful uncertainty despite the clear favorite. Portugal's advantage is substantial but not overwhelming on a neutral ground.\n\nThe outcome distribution shows a decisive lean toward a Portugal win, yet the 20% draw probability signals the match is not a foregone conclusion. A DR Congo upset remains improbable; the match is most likely to settle either in Portugal's favor or as a stalemate rather than a surprise reversal.\n\nThe model and sportsbook consensus align closely across all three outcomes, with gaps under 3 percentage points. Polymarket prices track similarly. This convergence suggests broad agreement on the match structure, though the model rates DR Congo's upset chance slightly lower than the books do—a 4-point gap worth noting but not a material divergence."
+  "preview_text": "The model favors Portugal at 77%, leaving DR Congo with a 4% chance of victory. This represents a decisive gap, positioning Portugal as a clear favorite while the underdog retains only remote odds of an upset.\n\nThe outcome distribution reflects a heavily skewed match. Portugal's win probability dominates the space; the draw sits at 20%, indicating that a stalemate is plausible but secondary. DR Congo's 4% win chance means the model anticipates an asymmetric contest unlikely to produce a competitive scoreline.\n\nThe model and sportsbook consensus are broadly aligned. Portugal's win probability differs by 3 percentage points between the two sources, and the draw sits within 2pp. The sportsbook assigns DR Congo 9% versus the model's 4%—a notable divergence that suggests the market prices slightly higher upset potential. The dashboard does not adjudicate between these views; both reflect genuine uncertainty at the tails."
 }

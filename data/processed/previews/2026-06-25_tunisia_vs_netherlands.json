@@ -3,9 +3,9 @@
   "home_team": "Tunisia",
   "away_team": "Netherlands",
   "date": "2026-06-25",
-  "input_hash": "d07011d57ec30f2a8885df70bed3901c2bd02c05",
-  "generated_at": "2026-06-16T07:49:40+00:00",
+  "input_hash": "527cdc1fcca455f4b44755a693e7ea62fc66276e",
+  "generated_at": "2026-06-17T06:35:18+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors the Netherlands at 69%, assigning Tunisia only an 8.5% chance of victory. The underdog's path to a win is narrow but not foreclosed; a draw is more than twice as likely as a Tunisian upset.\n\nThe win-draw-loss spread reflects a considerable gap between the teams. The Netherlands' dominance in the model output leaves little room for a competitive encounter, though the 22% draw probability indicates meaningful uncertainty about the match outcome rather than a rout. The gap between a Dutch win and a Tunisian one spans roughly 61 percentage points, suggesting asymmetric contest dynamics.\n\nModel and sportsbook consensus are closely aligned. The market assigns the Netherlands 71% and Tunisia 11%, a gap of only 1–2 percentage points from the model in each outcome. Polymarket prices drift slightly higher on a Netherlands win at 73% and lower on the draw at 16%, but all three sources cluster within a tight band, indicating broad agreement on the relative probabilities."
+  "preview_text": "The model favors the Netherlands at 70%, with Tunisia given an 8.5% chance of victory and a draw probability of 22%. The Netherlands enters as a clear favorite, but the underdog retains modest two-digit upset potential rather than negligible odds.\n\nThe win-draw-loss spread reflects a moderately competitive match, not a mismatch. The 48-percentage-point gap between Netherlands and Tunisia win probabilities indicates structural superiority for the favorite, yet the 22% draw probability suggests the teams are close enough on the day that a stalemate remains a plausible outcome. A tight scoreline with Netherlands edging through is the modal expectation.\n\nThe model and sportsbook consensus are closely aligned. The Netherlands win probability differs by roughly 2 percentage points, while draw assessments diverge slightly more at 4 points. Polymarket pricing tracks similarly to the book consensus. The sources agree that the Netherlands are favorites by a substantial but not overwhelming margin, indicating confidence in that direction without sharp disagreement on the magnitude of Netherlands dominance."
 }

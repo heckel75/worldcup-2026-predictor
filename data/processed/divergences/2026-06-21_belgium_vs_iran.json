@@ -5,10 +5,10 @@
   "date": "2026-06-21",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 30.1,
-  "input_hash": "ff6d6ceee0141aff7cb3a52bb0ea7fe395035e7b",
-  "generated_at": "2026-06-15T18:03:33+00:00",
+  "max_gap_pp": 28.8,
+  "input_hash": "6d220562ab427a94ef62854f6652926bae9f7f09",
+  "generated_at": "2026-06-17T06:36:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The sportsbooks assign Belgium a 68% win probability versus the model's 38%, a 30-percentage-point gap favoring the favorite. This stark divergence suggests the market has access to information sharpening its conviction—recent form, lineup changes, or injury news could all push confidence in Belgium higher than the Elo-based forecast captures. The model sees Iran as a genuine contender at 31%, while the market prices them at just 12%, reflecting a similar confidence gap on the underdog side. The dashboard surfaces this disagreement as a signal for review rather than a judgment on which source has read the situation correctly."
+  "commentary_text": "The largest gap lies on Belgium's win probability, where the sportsbook consensus stands 29 percentage points higher than the model at 67% versus 38%. The model and market agree Belgium is favored, but the market has compressed both underdog probabilities sharply—particularly Iran's win odds, which sit 18 points below the model's estimate. This divergence suggests the market may be pricing in information unavailable to the model's last update, such as recent team form, lineup changes, or injury status affecting either side's squad depth or key positions. The dashboard surfaces this sharp tightening as a notable signal: either the model is underweighting Belgium's underlying strength, or the market has incorporated concrete news that substantially shifts the matchup's balance."
 }

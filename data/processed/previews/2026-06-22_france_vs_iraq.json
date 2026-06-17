@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Iraq",
   "date": "2026-06-22",
-  "input_hash": "0e61ee85e9d247f867bf9e05dfe56a9dc9ddacae",
-  "generated_at": "2026-06-16T07:48:49+00:00",
+  "input_hash": "91a5925cae15a81cafb920d1f7d93ca09ab9416b",
+  "generated_at": "2026-06-17T06:34:19+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors France at 83% to win, with Iraq's chances at less than 1%. This represents a heavily asymmetric matchup on the forecast dashboard, though not entirely a formality -- Iraq retains a small but real probability of avoiding defeat.\n\nThe win-draw-loss spread reflects France's substantial dominance. A draw sits at 16%, making it the only plausible alternative outcome to a French victory. Iraq's modeling assigns a negligible chance of taking all three points, and the gap between the top two outcomes is wide. The match is unlikely to be close in expectation, though the 16% draw probability suggests the contest carries more competitive possibility than the win percentages alone might imply.\n\nThe market consensus diverges meaningfully from the model on Iraq's chances. Sportsbooks collectively assign Iraq 4% versus the model's 1%, a gap of 3 percentage points; Polymarket prices Iraq slightly lower at 3%. Both sources agree France is heavily favored and draws are relatively unlikely. The dashboard does not adjudicate between these readings of Iraq's floor."
+  "preview_text": "The model favors France with an 83.5% win probability, assigning Iraq only a 0.8% chance of victory. That gap reflects a substantial disparity in the forecast: France is rated as heavy favorite while Iraq faces odds that offer minimal margin for an upset.\n\nThe win-draw-loss spread shows France as dominant but not invincible. The draw is plausible at 16.7%, suggesting the match retains competitive texture and Iraq is not being ruled out entirely in the model's view. A France victory remains the clear baseline, but the residual draw probability indicates some live resistance is expected.\n\nThe sportsbook consensus and Polymarket align closely with each other but diverge meaningfully from the model on Iraq's chances. The market prices Iraq's win probability between 3.2% and 3.6%, roughly four to five times higher than the model's 0.8%. The market also assigns the draw notably lower weight (around 9%). The dashboard makes no claim about which assessment is correct; this divergence merits scrutiny before betting."
 }

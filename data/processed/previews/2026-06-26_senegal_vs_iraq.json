@@ -3,9 +3,9 @@
   "home_team": "Senegal",
   "away_team": "Iraq",
   "date": "2026-06-26",
-  "input_hash": "730b3482e5c49fb327b57359d24fd59fdd62a417",
-  "generated_at": "2026-06-16T07:50:03+00:00",
+  "input_hash": "d12709b765f5665bc2618f5a1fbb1998687c8dfa",
+  "generated_at": "2026-06-17T06:35:41+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Senegal with a 60% win probability, giving the team a commanding edge over Iraq's 13% chance. The 47-percentage-point gap reflects a substantial disparity in the forecast, though the model assigns non-trivial probability to an upset.\n\nThe spread suggests a moderately competitive match despite Senegal's advantage. A draw carries meaningful probability at 27%, indicating the model sees realistic paths to a stalemate. Iraq's baseline win chance, while slim, is not negligible; the match is unlikely to be one-sided in execution, even if the underlying quality gap is wide.\n\nThe sportsbook consensus and Polymarket prices both shift weight toward Senegal compared to the model—by roughly 7 percentage points on the win outcome. All three sources agree on Iraq's floor near 12%, but the market is more confident in a Senegal victory and less confident in a draw. The divergence is modest but consistent; the dashboard makes no claim as to which assessment is more accurate."
+  "preview_text": "The model favors Senegal at 61%, with Iraq given a 13% chance to pull off an upset. The market consensus—both sportsbook and Polymarket—is notably more confident in a Senegal victory, rating it near 71%, leaving Iraq with roughly 10%.\n\nThe model's spread suggests a moderately competitive match. Senegal's advantage is clear but not dominant; a draw at 27% is plausible and materially more likely than an Iraq win. The market tightens the outcome considerably, compressing the draw probability to around 19% and offering less upside to the underdog, implying higher confidence that Senegal will force a decisive result.\n\nThe two sources diverge meaningfully on Senegal's win probability, with the market roughly 10 percentage points higher than the model. That gap widens the daylight between a draw and an Iraq victory in the market's framing. The dashboard does not adjudicate which assessment is more accurate; the discrepancy may reflect different treatment of available information or underlying match dynamics not captured in the model inputs."
 }

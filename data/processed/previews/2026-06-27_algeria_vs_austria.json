@@ -3,9 +3,9 @@
   "home_team": "Algeria",
   "away_team": "Austria",
   "date": "2026-06-27",
-  "input_hash": "d8ad1aa9c0803866e07ec2d712e913d839b1df7f",
-  "generated_at": "2026-06-16T07:50:07+00:00",
+  "input_hash": "c012d5fdcf78fdf383282d5ff55191e6759c8ce5",
+  "generated_at": "2026-06-17T06:35:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Algeria at 38 or 39 percent, assigning them the narrowest margin over Austria's 30 percent. The underdog Austria enters with odds close to one in three, making this a relatively competitive fixture in the model's view rather than a heavily one-sided affair.\n\nThe draw emerges as a plausible outcome at nearly 32 percent, suggesting the model sees a genuine three-way contest. The 8 or 9 percentage point gap between Algeria's win probability and Austria's is modest; the match is expected to be closely matched, with no heavy favourite dominating the prediction space.\n\nA meaningful divergence appears between model and market. Sportsbooks and Polymarket both assign Austria a 44 percent win probability, roughly 14 percentage points higher than the model's estimate. Conversely, the model rates Algeria's chances at 38 percent compared to the market's 26 or 27 percent. All three sources agree the draw sits around 30 percent. The dashboard does not adjudicate between these competing forecasts; the gap is large enough to warrant attention from bettors."
+  "preview_text": "The model favours Algeria at 38%, giving the side a modest edge over Austria's 30% win probability. The gap between favorite and underdog is narrow enough that the match carries genuine competitive uncertainty, with Austria holding a realistic path to victory.\n\nThe draw emerges as a plausible outcome at 32%, sitting between the two outright results and suggesting the teams are closely matched. No outcome commands overwhelming likelihood; the spread across W/D/L is relatively even, pointing toward a competitive encounter where result outcomes remain genuinely open.\n\nThe model and sportsbook consensus diverge meaningfully. Books rate Austria's win probability at 39%—nine percentage points above the model—while trimming Algeria's edge to 31%, a seven-point gap below the model. Polymarket prices align closely with the books on Austria and the draw, lending weight to that market view. The dashboard does not adjudicate which assessment is correct; both reflect legitimate analytical positions on a tightly balanced fixture."
 }

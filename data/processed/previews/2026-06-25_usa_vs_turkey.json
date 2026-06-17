@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Turkey",
   "date": "2026-06-25",
-  "input_hash": "87f87c3e554a4674504e9c4ee3a739ea5ebdbdec",
-  "generated_at": "2026-06-16T07:49:20+00:00",
+  "input_hash": "6ffed266c0e41d3014ae8cd2b6deceb51474bf10",
+  "generated_at": "2026-06-17T06:34:58+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Turkey at 38%, with the USA trailing at 31% to win. A draw registers at 31%, making this a genuinely competitive three-way contest rather than a decisive matchup. Turkey holds a modest 7-percentage-point edge over the USA in outright victory probability.\n\nThe forecast suggests a tight encounter across all outcomes. Neither team commands a strong favorite's probability, and the draw likelihood sits within 5 points of either team's win chance. This spread indicates a match where all three results remain plausible, with no outcome substantially more probable than the others.\n\nThe model and sportsbook consensus diverge notably. The market backs the USA more heavily at 39% versus the model's 31%—an 8-percentage-point gap favoring the USA. Conversely, the market assesses Turkey at 34% compared to the model's 38%. Both sources agree the draw is less likely than either team winning outright, but the market skews toward the USA while the model tilts toward Turkey. The dashboard does not adjudicate which assessment better reflects true match conditions."
+  "preview_text": "The model favors Turkey at 38%, with the USA at 31% and a draw at 31%. Turkey holds a modest edge, but the tight clustering of probabilities indicates a competitive encounter where no outcome dominates.\n\nThe spread across the three outcomes is narrow, suggesting the match carries genuine uncertainty. A draw rates as plausible at nearly one-third, and the gap between a Turkey win and a USA win spans only 7 percentage points. The model expects close, competitive football with multiple realistic paths to the final whistle.\n\nThe market and model diverge noticeably on the USA and draw. Sportsbooks assign the USA 40%, roughly 9 percentage points higher than the model, while shortening the draw to 26%—a 5-point discount. Polymarket prices align more closely with the sportsbook view on the USA but remain even more pessimistic about a draw. The dashboard does not adjudicate between these sources; the gap warrants awareness that fundamentally different assessments of match structure underlie them."
 }

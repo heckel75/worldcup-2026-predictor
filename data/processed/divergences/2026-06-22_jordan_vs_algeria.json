@@ -5,10 +5,10 @@
   "date": "2026-06-22",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 18.4,
-  "input_hash": "fa892d82bda1ecb1959c84abdda5b8d8d11aedd7",
-  "generated_at": "2026-06-15T08:02:36+00:00",
+  "max_gap_pp": 16.2,
+  "input_hash": "29ddca75dd88c1d4927d8280ebc91a1fc8efc9a3",
+  "generated_at": "2026-06-17T06:36:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Algeria a 63% win probability versus the model's 45%, a 18-percentage-point gap favoring the favorite. Both sources rank Algeria first, but sportsbooks and traders are substantially more confident in an Algeria victory than the statistical baseline suggests. This sharpening of conviction could reflect recent lineup news, current form, or injury status that the model has not yet incorporated into its Elo ratings. The dashboard flags this gap as a signal worth monitoring: it may indicate genuine new information flowing into real-money prices, or it may reflect transient market sentiment. Neither interpretation is guaranteed."
+  "commentary_text": "The market assigns Algeria a 61% win probability versus the model's 45%, a 16-percentage-point gap favoring the stronger outcome. Both sources rank Algeria as favorite, but sportsbooks and prediction markets are substantially more confident in that outcome. This divergence could reflect recent form, lineup changes, or injury news that has sharpened conviction around Algeria's prospects since the model's last update. The dashboard flags this as a signal worth monitoring: the consensus tilt toward Algeria is sharp and consistent across both betting and prediction markets, though the model remains notably less certain about the margin of Algeria's advantage."
 }

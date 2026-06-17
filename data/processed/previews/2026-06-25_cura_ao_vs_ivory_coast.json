@@ -3,9 +3,9 @@
   "home_team": "Curaçao",
   "away_team": "Ivory Coast",
   "date": "2026-06-25",
-  "input_hash": "647b131769cc96a22f9f8eaa553d4378c1cdb32b",
-  "generated_at": "2026-06-16T07:49:28+00:00",
+  "input_hash": "2f6af878de94e16263aed89549ba1d0b610d4e16",
+  "generated_at": "2026-06-17T06:35:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Ivory Coast at 64%, a substantial advantage over Curaçao's 12%. The underdog faces a steep climb, with the model assigning a roughly one-in-nine chance of victory on a neutral surface.\n\nThe forecast leans decisively toward an Ivory Coast win, but the 25% draw probability indicates meaningful competitive balance in the middle outcome. The gap between favorite and underdog is wide enough to make Curaçao a genuine longshot, yet the draw sits between the two outright outcomes, suggesting the match could remain contested into the final stages rather than becoming a runaway affair.\n\nThe sportsbook consensus and Polymarket prices both shift the forecast in Ivory Coast's direction, tilting the favorite to 83% while compressing Curaçao to around 5%. The divergence is material—roughly 19 percentage points on the Ivory Coast line—with bookmakers and traders viewing the underdog as substantially weaker than the model does. The model does not adjudicate between these sources; the dashboard presents both for context."
+  "preview_text": "The model favors Ivory Coast at 64%, with Curaçao offered just 12% to win outright. That 52-percentage-point gap reflects a substantial gap in the model's assessment of the teams' relative strength on a neutral ground.\n\nThe draw carries meaningful probability at 25%, suggesting the model sees a path to a stalemate. The win spread—Ivory Coast to 64%, Curaçao to 12%—indicates the match is expected to be competitive enough that a single goal could decide it, even if one side enters as heavy favorite. A draw remains plausible enough to shape tactical thinking.\n\nThe sportsbook consensus diverges notably from the model. Books price Ivory Coast at 83%, nearly 20 percentage points higher than the model, while pricing Curaçao at 5% and the draw at 12%. Polymarket mirrors that tilt. The dashboard does not adjudicate which view is more accurate; the divergence suggests meaningful disagreement between the statistical forecast and market pricing on the margin between favorite and upset scenarios."
 }

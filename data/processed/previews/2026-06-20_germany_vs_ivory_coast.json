@@ -3,9 +3,9 @@
   "home_team": "Germany",
   "away_team": "Ivory Coast",
   "date": "2026-06-20",
-  "input_hash": "89b17f0c0e46273b7bfd5921a9b1722f73ab2d90",
-  "generated_at": "2026-06-16T07:48:26+00:00",
+  "input_hash": "0363829c1a1b134e10f6979c541506328fb982f0",
+  "generated_at": "2026-06-17T06:33:52+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Germany at 60% to win, with Ivory Coast positioned as clear underdogs at 13%. The gap reflects a substantial difference in projected strength between the two sides on a neutral ground.\n\nThe draw probability of 27% suggests this match carries real competitive uncertainty despite Germany's edge. A one-goal outcome or stalemate is nearly as plausible as an Ivory Coast victory outright, indicating the fixture is unlikely to be a one-sided affair. Germany's advantage is meaningful but not commanding.\n\nThe model and sportsbook consensus align closely across all three outcomes, with gaps of 2 percentage points or less. Polymarket prices lie slightly higher on a Germany win but remain well within the consensus band. The three sources agree this is a moderately favored result for Germany rather than a heavily skewed matchup."
+  "preview_text": "The model favors Germany at 60% to win, leaving Ivory Coast with a 13% chance of victory. The gap of roughly 47 percentage points reflects a substantial edge for the favorite, though the model does not treat the match as a foregone conclusion.\n\nThe draw probability of 27% sits between the two outright outcomes, indicating meaningful competitive balance beneath the headline favorite. Germany is more likely to win than not, yet nearly three in ten matches of this profile end level. Ivory Coast's path to victory is narrow but not negligible, and a stalemate remains a plausible result.\n\nThe model and sportsbook consensus align closely on Germany's win probability, separated by less than 2 percentage points. The bookmakers assign slightly higher odds to an Ivory Coast victory and lower odds to a draw, a modest divergence that does not signal fundamental disagreement on match shape. Polymarket pricing tracks the consensus broadly, with similar lean toward Germany and marginally lower draw probability."
 }

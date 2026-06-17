@@ -3,9 +3,9 @@
   "home_team": "Uzbekistan",
   "away_team": "Colombia",
   "date": "2026-06-17",
-  "input_hash": "8cc5c88d9683abd64118a15012f02de6498de8c9",
-  "generated_at": "2026-06-16T07:47:43+00:00",
+  "input_hash": "08695c6e777d4f4317c438c250ab13ea906f417c",
+  "generated_at": "2026-06-17T06:33:17+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Colombia to win at 61%, with Uzbekistan offered a 13% chance of victory. The underdog's probability sits well below the favorite, indicating a pronounced gap in expected quality.\n\nThe draw carries a plausible 26% likelihood under the model, making it the second-most probable outcome. This suggests the match has room for competitive balance despite Colombia's clear advantage; a stalemate remains a meaningful possibility rather than a long shot.\n\nThe market consensus leans more heavily toward Colombia, pricing a 69% win probability against the model's 61%—a gap of roughly 8 percentage points. Sportsbooks and Polymarket both shift probability away from both Uzbekistan and draws toward the favorite. The sources are directionally aligned on outcome ranking, but the market has tightened confidence in Colombia's prospects relative to the statistical forecast."
+  "preview_text": "Colombia enters as the clear favorite, with the model projecting a 61% win probability compared to Uzbekistan's 13%. The 48-percentage-point gap reflects a substantial disparity in expected performance on a neutral surface. Uzbekistan's path to victory remains plausible but unlikely under the model's assessment.\n\nThe draw emerges as a meaningful outcome at 26%, suggesting the match carries more competitive texture than a one-sided scoreline might imply. The win probabilities are spaced such that Colombia is favored decisively, yet the relatively high draw probability indicates neither team is projected as dominant enough to render stalemate improbable. The underdog retains a non-trivial baseline chance.\n\nThe sportsbook consensus diverges from the model in Colombia's favor. Books price Colombia at 70%, nearly 9 percentage points above the model's 61%. Uzbekistan and draw probabilities compress correspondingly in the market. Polymarket prices align closely with sportsbook consensus. The dashboard does not adjudicate between these sources; the gap warrants noting as a substantive disagreement on Colombia's true win probability."
 }
