@@ -40,6 +40,9 @@ STATIC_DIR = Path("static")
 SNAPSHOTS_DIR = Path("data/processed/snapshots")
 DIVERGENCE_SNAPS_DIR = Path("data/processed/divergence_snapshots")
 TRIPLE_PATH = Path("data/processed/triple_compare.csv")
+SB_OUTRIGHTS_PATH = Path("data/processed/sportsbook_outrights.csv")
+PM_OUTRIGHTS_PATH = Path("data/processed/polymarket_outrights.csv")
+TITLE_ODDS_TOP_N = 16
 PREVIEWS_DIR = Path("data/processed/previews")
 DIVERGENCES_DIR = Path("data/processed/divergences")
 OUTPUT_DIR = Path("docs")
@@ -218,6 +221,81 @@ def _load_teams(snapshot: Path) -> list[dict]:
             },
         })
     return teams
+
+
+# ----------------------------------------------------------------------
+# Title-odds page (Session TITLE-ODDS) — standalone three-source view of
+# every contender's championship probability: model vs sportsbook vs
+# Polymarket. Pure consumer: reads the newest MC snapshot (p_champion) and
+# the two outright-winner CSVs (p_winner). All three already use internal
+# team names, so the join is on the raw name; DISPLAY_NAMES is applied only
+# at render. No model import.
+# ----------------------------------------------------------------------
+
+def _load_outright(path: Path) -> "pd.Series | None":
+    """team -> p_winner Series from an outright CSV, or None if absent.
+    Mirrors the Session 25 absent-market handling: a missing file just
+    means every source value renders as an em-dash, never a crash."""
+    if not path.exists():
+        return None
+    df = pd.read_csv(path)
+    if "team" not in df.columns or "p_winner" not in df.columns:
+        return None
+    return df.set_index("team")["p_winner"]
+
+
+def _odds_cell(p, max_p: float) -> dict:
+    """One source's title prob -> {text, width%}. Bars share a single scale
+    (the largest value across all three sources) so the model's structural
+    top-heaviness reads honestly: market bars really are shorter because the
+    markets assign the favourites less. Absent value -> em-dash, zero width."""
+    if p is None or pd.isna(p):
+        return {"text": "—", "w": 0.0, "absent": True}
+    return {"text": _fmt(float(p)),
+            "w": round(float(p) / max_p * 100, 1) if max_p else 0.0,
+            "absent": False}
+
+
+def _gap_fmt(model_p: float, book_p) -> str:
+    """Signed model − sportsbook gap in pp (the launch-hook column). '—' when
+    no sportsbook price exists for the team."""
+    if book_p is None or pd.isna(book_p):
+        return "—"
+    pp = (float(model_p) - float(book_p)) * 100
+    return f"+{pp:.1f}pp" if pp >= 0 else f"{pp:.1f}pp"
+
+
+def _load_title_odds(snapshot: Path) -> list[dict]:
+    """Top-N contenders by model p_champion, each with the three source
+    probabilities (model / sportsbook / Polymarket) and a model−book gap."""
+    model = pd.read_csv(snapshot)[["team", "p_champion"]]
+    sb = _load_outright(SB_OUTRIGHTS_PATH)
+    pm = _load_outright(PM_OUTRIGHTS_PATH)
+
+    top = model.sort_values("p_champion", ascending=False).head(TITLE_ODDS_TOP_N)
+
+    # Shared bar scale: the largest plotted value across all three sources.
+    vals = list(top["p_champion"])
+    for rec in top.to_dict("records"):
+        for series in (sb, pm):
+            if series is not None and rec["team"] in series.index:
+                vals.append(float(series[rec["team"]]))
+    max_p = max(vals) if vals else 1.0
+
+    rows = []
+    for rec in top.to_dict("records"):
+        team = rec["team"]
+        m = float(rec["p_champion"])
+        sb_p = float(sb[team]) if sb is not None and team in sb.index else None
+        pm_p = float(pm[team]) if pm is not None and team in pm.index else None
+        rows.append({
+            "team":  disp(team),
+            "model": _odds_cell(m, max_p),
+            "book":  _odds_cell(sb_p, max_p),
+            "poly":  _odds_cell(pm_p, max_p),
+            "gap":   _gap_fmt(m, sb_p),
+        })
+    return rows
 
 
 # ----------------------------------------------------------------------
@@ -749,6 +827,7 @@ def build_site() -> None:
     snapshot = _latest_snapshot()
     snapshot_date = snapshot.stem  # filename is the date
     teams = _load_teams(snapshot)
+    title_odds = _load_title_odds(snapshot)
     matches = _load_matches()
 
     # --- what-changed diff data ------------------------------------------
@@ -964,6 +1043,21 @@ def build_site() -> None:
         og_image=og_image,
     )
 
+    # --- title-odds page (top-level: root="") ---
+    _render_page(
+        env, "title-odds.html", OUTPUT_DIR / "title-odds.html",
+        title_odds=title_odds,
+        root="", generated_at=generated_at, snapshot_date=snapshot_date,
+        page_title="Title odds — World Cup 2026 winner, model vs market",
+        meta_description=(
+            "Who will win the 2026 World Cup? Championship probability for every "
+            "contender from a statistical model, sportsbook odds, and Polymarket "
+            "prices, side by side."
+        ),
+        canonical_url=f"{SITE_URL}/title-odds.html",
+        og_image=og_image,
+    )
+
     # --- schedule page (top-level: root="") ---
     _render_page(
         env, "schedule.html", OUTPUT_DIR / "schedule.html",
@@ -989,6 +1083,7 @@ def build_site() -> None:
     # --- sitemap.xml and robots.txt ---
     static_page_urls = [
         f"{SITE_URL}/",
+        f"{SITE_URL}/title-odds.html",
         f"{SITE_URL}/schedule.html",
         f"{SITE_URL}/calibration.html",
         f"{SITE_URL}/methodology.html",
@@ -1012,7 +1107,7 @@ def build_site() -> None:
 
     print(f"Built site -> {OUTPUT_DIR}/")
     print(f"   snapshot : {snapshot.name} ({len(teams)} teams)")
-    print(f"   pages    : index.html + schedule.html + calibration.html + methodology.html + {len(matches)} match pages")
+    print(f"   pages    : index.html + title-odds.html + schedule.html + calibration.html + methodology.html + {len(matches)} match pages")
 
 
 # ----------------------------------------------------------------------

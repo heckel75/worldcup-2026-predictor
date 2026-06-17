@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Title odds — who wins the World Cup?</h1>
+<p class="lede">
+  Each contender's chance of lifting the trophy, from three sources side by
+  side: the statistical model, sportsbook outright odds (vig stripped), and
+  Polymarket prices. Ranked by the model. Bars share one scale, so shorter
+  bars mean a lower title probability.
+</p>
+
+<aside class="disclosure">
+  <p class="disclosure-tag">Read this first</p>
+  <p>
+    The model is structurally <strong>more top-heavy than the markets</strong> —
+    its two favourites hold roughly 50% of the title probability between them
+    versus about 34% across the markets. A large model-over-market gap at the
+    top is <em>expected behaviour</em> of a pure Elo + Dixon-Coles model with no
+    injury, form, or squad data, not a sign the model knows something the market
+    doesn't. Treat the figures near the top as directional, not precise. See the
+    <a href="{{ root }}methodology.html">methodology</a> for why.
+  </p>
+</aside>
+
+<div class="tree-wrap">
+  <table class="title-odds">
+    <thead>
+      <tr>
+        <th class="col-rank">#</th>
+        <th class="col-team">Team</th>
+        <th class="col-src">Model</th>
+        <th class="col-src">Sportsbook</th>
+        <th class="col-src">Polymarket</th>
+        <th class="col-gap">Model − book</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for t in title_odds %}
+      <tr>
+        <td class="col-rank">{{ loop.index }}</td>
+        <td class="col-team"><span class="team-name">{{ t.team }}</span></td>
+        {% for c in [t.model, t.book, t.poly] %}
+        <td class="col-src">
+          <div class="to-cell{% if c.absent %} to-cell--absent{% endif %}">
+            <span class="to-bar{% if loop.index == 1 %} to-bar--model{% endif %}"
+                  style="width: {{ c.w }}%"></span>
+            <span class="to-val">{{ c.text }}</span>
+          </div>
+        </td>
+        {% endfor %}
+        <td class="col-gap">{{ t.gap }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<p class="method-context">
+  Model probabilities come from 10,000 Monte Carlo tournament simulations.
+  Sportsbook figures are the vig-stripped consensus outright market; Polymarket
+  figures are live prediction-market prices. "Model − book" is the model's
+  championship probability minus the sportsbook's, in percentage points. Top
+  {{ title_odds|length }} contenders shown.
+</p>
+{% endblock %}

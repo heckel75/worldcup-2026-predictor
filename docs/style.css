@@ -893,3 +893,102 @@ h1 {
 }
 
 .schedule-section { margin-top: 2rem; }
+
+/* --- title-odds page (Session TITLE-ODDS) --------------------------- *
+ * Ranked three-source view of championship probability. Reuses the      *
+ * survival-grid table shell (.tree-wrap) and mono figures; each source   *
+ * cell carries a thin bar scaled to a shared max so the model's          *
+ * top-heaviness reads at a glance. Self-contained, safe to append.       */
+
+.disclosure {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: var(--radius);
+  background: #fdf6e3;
+  padding: 1rem 1.3rem;
+  margin: 0 0 1.75rem;
+  max-width: 70ch;
+}
+.disclosure p { margin: 0; }
+.disclosure-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-gold);
+  margin: 0 0 0.4rem !important;
+}
+.disclosure a { color: var(--accent); }
+
+.title-odds {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.title-odds thead th {
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  text-align: left;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1.5px solid var(--border);
+  white-space: nowrap;
+}
+.title-odds th.col-rank,
+.title-odds td.col-rank {
+  width: 2.2rem;
+  text-align: right;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.title-odds th.col-gap,
+.title-odds td.col-gap {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+.title-odds td {
+  padding: 0.5rem 0.9rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+.title-odds tbody tr:last-child td { border-bottom: none; }
+.title-odds tbody tr:hover td { background: #fbfaf4; }
+.title-odds td.col-team { white-space: nowrap; }
+.title-odds .team-name { font-weight: 600; }
+
+/* one source cell: a thin proportional bar behind a mono figure */
+.col-src { min-width: 7.5rem; }
+.to-cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 1.7rem;
+  border-radius: 5px;
+  background: var(--bg);
+  overflow: hidden;
+}
+.to-bar {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  background: var(--t-surv-3);
+}
+.to-bar--model { background: var(--t-champ-3); }
+.to-val {
+  position: relative;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0 0.5rem;
+}
+.to-cell--absent { background: transparent; }
+.to-cell--absent .to-val { color: var(--muted); }
