@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Australia",
   "date": "2026-06-19",
-  "input_hash": "24714d911a062b846c2e8edc688a84af106836b3",
-  "generated_at": "2026-06-17T06:33:45+00:00",
+  "input_hash": "f3ac80a35cef0b0cde2ddb1ab7f650b5e037aecf",
+  "generated_at": "2026-06-18T05:29:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assesses this match as nearly even, giving Australia a marginal edge at 35% to the USA's 34%, with a draw at 32%. The statistical forecast sees competitive balance across all three outcomes, suggesting neither side enters as a clear favorite.\n\nThe spread reflects genuine uncertainty. The 1-point gap between the two win probabilities indicates the teams are closely matched in underlying strength by the model's estimate. A draw emerges as a plausible result at nearly one-third probability, pointing to a competitive contest where neither team is heavily favored to force a decisive outcome.\n\nThe market consensus diverges substantially from the model, backing the USA to 59% while compressing both the draw and Australia's win probability to 22% and 18% respectively. The model and sportsbooks are roughly 25 percentage points apart on the USA's win chance. The dashboard does not adjudicate which assessment is correct; the gap reflects a genuine disagreement between the statistical forecast and market pricing."
+  "preview_text": "The statistical model favors Australia marginally, assigning a 35% win probability against the USA's 34%, a near-even split. Polymarket traders align much more closely with the USA, pricing American victory at 61% and Australia at just 18%, a gap of 43 percentage points separating the model's view from the betting market's.\n\nThe model's forecast reflects a tightly competitive encounter. Draw probability sits at 32%, suggesting genuine uncertainty about a decisive outcome. The three outcomes cluster within a narrow range, indicating the teams are similarly matched in the model's assessment and any result falls comfortably within the realm of plausibility.\n\nA substantial divergence separates the model and market consensus. Sportsbook aggregate (stripped of vigorish) and Polymarket both lean heavily toward USA victory—59–61% versus the model's 34%—while both price Australia's win chances at roughly half what the model estimates. The dashboard makes no claim to resolve which assessment is more sound; the gap reflects meaningful disagreement about relative strength."
 }

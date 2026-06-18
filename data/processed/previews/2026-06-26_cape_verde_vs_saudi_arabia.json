@@ -3,9 +3,9 @@
   "home_team": "Cape Verde",
   "away_team": "Saudi Arabia",
   "date": "2026-06-26",
-  "input_hash": "6b48be6af74eaa3dfedc5e941a59614926fd2466",
-  "generated_at": "2026-06-17T06:35:29+00:00",
+  "input_hash": "ef22f796514fb9f9b6586baad13074a46bf33ec6",
+  "generated_at": "2026-06-18T05:30:48+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Saudi Arabia as the slight favorite with a 40% win probability, while Cape Verde sits at 28%, giving the underdog a meaningful deficit in direct matchup odds. The gap reflects a modest edge rather than overwhelming dominance; both teams enter with realistic paths to victory.\n\nThe 31% draw probability from the model suggests this match has genuine potential to end level. The three outcomes cluster within a 12-point band around the Saudi Arabia win, indicating a reasonably competitive fixture without a heavily skewed outcome distribution. A stalemate remains plausible enough to merit consideration in both teams' scenarios.\n\nThe model and sportsbook consensus diverge noticeably on draw likelihood. The market strips that to 26%, roughly 5 percentage points below the model estimate, while ranking Saudi Arabia and Cape Verde nearly identically at 39% and 34% respectively. Polymarket pricing aligns closely with the model on the Saudi Arabia win (40%) but also shows lower draw odds (26%). The dashboard offers no view on which assessment of draw probability is more accurate."
+  "preview_text": "The model rates Saudi Arabia as the slight favorite with a 40% win probability, while Cape Verde's chances stand at 29%. That margin reflects a competitive fixture in which the underdog remains a genuine contender rather than a long shot.\n\nThe draw emerges as the modal outcome in the model forecast at 31%, suggesting a relatively balanced contest. The three outcomes span only 12 percentage points, indicating neither team holds decisive edge. A draw would not surprise; neither would a narrow win for Saudi Arabia or an upset Cape Verde victory.\n\nThe model and sportsbooks diverge modestly on draw likelihood. The model assigns it 31%, while consensus across 37 books places it at 26%—a gap of roughly 5 percentage points. Polymarket aligns closely with the books on the Saudi Arabia win (40.5% vs 40.3% model) and Cape Verde win (33.5% vs 28.6% model). The dashboard makes no claim about which probability is more accurate; the discrepancies may reflect different risk models or sample composition among oddsmakers."
 }

@@ -3,9 +3,9 @@
   "home_team": "Uruguay",
   "away_team": "Cape Verde",
   "date": "2026-06-21",
-  "input_hash": "61e1a27496fdbbf69e0bb46bb9ae430ca1db931b",
-  "generated_at": "2026-06-17T06:34:15+00:00",
+  "input_hash": "668906eb7b2bd16608fdd8c0f995fa1c408ffd9d",
+  "generated_at": "2026-06-18T05:29:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assigns Uruguay a 74% chance of victory, with Cape Verde's win probability at just 5%. That 69-percentage-point gap reflects a substantial disparity in the forecast; the underdog's path to three points is narrow on the model's assessment.\n\nThe draw emerges as the secondary outcome in the model view, at 21%, suggesting meaningful competitive balance exists despite Uruguay's heavy favoritism. The win probabilities skew sharply toward the favorite, but the inclusion of a one-in-five draw chance indicates the match is not modeled as a foregone conclusion—Cape Verde retains realistic scope to avoid defeat.\n\nThe sportsbook consensus leans less heavily toward Uruguay, pricing the favorite at 64% versus the model's 74%. Bookmakers assign Cape Verde roughly 13% win probability, compared to the model's 5%—a gap of 8 percentage points. Polymarket aligns closer to the books. The dashboard does not adjudicate between these readings; the divergence suggests material disagreement on the underdog's ceiling."
+  "preview_text": "The model favors Uruguay at 74%, with Cape Verde at a modest 5% to upset on a neutral ground. The gap reflects a substantial differential in the underlying strength estimates, leaving the underdog with limited paths to victory.\n\nThe outcome distribution tilts decisively toward Uruguay, yet the draw carries meaningful likelihood at 21%. A narrow home-field effect is absent at a neutral venue, so the probabilities hinge on relative team quality alone. The match sits between lopsided and competitive—Uruguay enters as clear favorite but not overwhelming.\n\nThe model and market diverge meaningfully on Cape Verde's chances. Sportsbooks assign 12%, roughly double the model's 5%. The two sources align closely on Uruguay's win probability (model 74%, market 65%, Polymarket 66%) and are nearly identical on draws (21–23%). The dashboard does not adjudicate which reading of Cape Verde's strength is more accurate; the divergence warrants attention from users assessing tail risk."
 }

@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Iraq",
   "date": "2026-06-22",
-  "input_hash": "91a5925cae15a81cafb920d1f7d93ca09ab9416b",
-  "generated_at": "2026-06-17T06:34:19+00:00",
+  "input_hash": "310d70297b646877b263221e51fafe4964bb2860",
+  "generated_at": "2026-06-18T05:29:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors France with an 83.5% win probability, assigning Iraq only a 0.8% chance of victory. That gap reflects a substantial disparity in the forecast: France is rated as heavy favorite while Iraq faces odds that offer minimal margin for an upset.\n\nThe win-draw-loss spread shows France as dominant but not invincible. The draw is plausible at 16.7%, suggesting the match retains competitive texture and Iraq is not being ruled out entirely in the model's view. A France victory remains the clear baseline, but the residual draw probability indicates some live resistance is expected.\n\nThe sportsbook consensus and Polymarket align closely with each other but diverge meaningfully from the model on Iraq's chances. The market prices Iraq's win probability between 3.2% and 3.6%, roughly four to five times higher than the model's 0.8%. The market also assigns the draw notably lower weight (around 9%). The dashboard makes no claim about which assessment is correct; this divergence merits scrutiny before betting."
+  "preview_text": "The model rates France as a heavy favourite with an 83% win probability, leaving Iraq just under 1% chance of victory. The gap reflects a substantial quality differential in the statistical forecast, though Iraq retains a small theoretical path to an upset result.\n\nThe spread across outcomes shows France favoured but not dominant in absolute terms. A draw carries 16% probability in the model, making it a plausible intermediate outcome. The 83–16–1 split suggests France should control much of the match yet faces enough variance that a stalemate remains a realistic scenario rather than a long-shot contingency.\n\nThe model and market diverge on both France's win likelihood and the draw probability. Sportsbooks and Polymarket both assign France 87–89%, running 4–6 percentage points higher than the model, while compressing the draw to under 9%. The model sees draw risk as nearly twice as large. These gaps are meaningful enough to flag; the dashboard does not adjudicate which assessment is more accurate."
 }

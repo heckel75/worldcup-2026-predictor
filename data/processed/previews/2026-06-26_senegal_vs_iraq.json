@@ -3,9 +3,9 @@
   "home_team": "Senegal",
   "away_team": "Iraq",
   "date": "2026-06-26",
-  "input_hash": "d12709b765f5665bc2618f5a1fbb1998687c8dfa",
-  "generated_at": "2026-06-17T06:35:41+00:00",
+  "input_hash": "1610467251d0c1341bc47c5999147e723c339d71",
+  "generated_at": "2026-06-18T05:31:00+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Senegal at 61%, with Iraq given a 13% chance to pull off an upset. The market consensus—both sportsbook and Polymarket—is notably more confident in a Senegal victory, rating it near 71%, leaving Iraq with roughly 10%.\n\nThe model's spread suggests a moderately competitive match. Senegal's advantage is clear but not dominant; a draw at 27% is plausible and materially more likely than an Iraq win. The market tightens the outcome considerably, compressing the draw probability to around 19% and offering less upside to the underdog, implying higher confidence that Senegal will force a decisive result.\n\nThe two sources diverge meaningfully on Senegal's win probability, with the market roughly 10 percentage points higher than the model. That gap widens the daylight between a draw and an Iraq victory in the market's framing. The dashboard does not adjudicate which assessment is more accurate; the discrepancy may reflect different treatment of available information or underlying match dynamics not captured in the model inputs."
+  "preview_text": "The model favours Senegal at 61%, assigning them a clear but not dominant edge. Iraq's win probability stands at 13%, roughly one-fifth of Senegal's chance. The remaining outcome space—a draw—carries meaningful weight at 27%.\n\nThe W/D/L distribution suggests a moderately competitive match. The 48-percentage-point gap between the favourite and the underdog leaves room for upset, and the draw probability at 27% indicates the model expects a reasonably tight contest where stalemate is a plausible result. Neither team is heavily favoured to dominate decisively.\n\nThe market consensus (sportsbooks and Polymarket combined) diverges noticeably from the model. Both commercial sources rate Senegal's win probability 9–11 percentage points higher, at 70–72%, and compress the draw probability to 17–19%. The dashboard does not adjudicate which source is more accurate; the divergence likely reflects different statistical methods and market sentiment on available information."
 }

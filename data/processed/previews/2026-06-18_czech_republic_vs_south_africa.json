@@ -3,9 +3,9 @@
   "home_team": "Czech Republic",
   "away_team": "South Africa",
   "date": "2026-06-18",
-  "input_hash": "9119dd211e3894a31055314ab8b10763566e6e05",
-  "generated_at": "2026-06-17T06:33:28+00:00",
+  "input_hash": "a7e009b2f246ac02d502d34a654b2e661af75342",
+  "generated_at": "2026-06-18T05:28:52+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Czech Republic with a 54% win probability, placing them as clear but not overwhelming favorites. South Africa's 17% chance to win reflects their underdog status, while the draw probability of 29% sits between the two outcomes.\n\nThe spread suggests a competitive match with meaningful upset potential. Czech Republic's advantage is real but the 11-percentage-point gap to their loss probability leaves room for South Africa to emerge victorious or the match to finish level. A draw at 29% is plausible enough to warrant serious consideration alongside either team's outright win.\n\nThe model and sportsbook consensus are tightly aligned. Czech Republic win probabilities differ by less than 1 percentage point across all three sources. The draw sits slightly higher in the model at 29% versus 25–26% in the books and Polymarket, while South Africa's win probability is marginally higher in the sportsbooks. These gaps are within normal variance and suggest broad agreement on the match's competitive balance."
+  "preview_text": "The model favors Czech Republic with a 53% win probability, placing them as clear favorites on a neutral ground. South Africa's winning chance registers at 18%, creating a gap of roughly 35 percentage points in the favorite's direction.\n\nThe draw emerges as a meaningful outcome at 29%, narrowing the margin between outright Czech Republic victory and all other scenarios. The 24-point spread between a Czech Republic win and a South Africa win suggests competitive but asymmetric competition; a draw remains plausible enough to shape match strategy for both sides.\n\nThe model and market are closely aligned across all three outcomes. Czech Republic win probabilities differ by fewer than 2 percentage points, draws by under 3 points, and South Africa win chances by roughly 4 points. Polymarket pricing mirrors the sportsbook consensus, indicating broad agreement on the fundamental likelihood structure of this match."
 }

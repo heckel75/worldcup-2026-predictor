@@ -52,15 +52,15 @@
 <h1>Calibration</h1>
 <p class="lede">How well do the probabilities match what actually happened?</p>
 
-<h2 class="section-label">Backtest — Euro 2024 + Copa América (n&nbsp;=&nbsp;83)</h2>
+<h2 class="section-label">Live WC predictions (n&nbsp;=&nbsp;24)</h2>
 
 <div class="cal-stats">
   <div class="stat-card">
-    <span class="stat-val">0.583</span>
+    <span class="stat-val">0.682</span>
     <span class="stat-meta">Brier score — lower is better · random ≈ 0.667</span>
   </div>
   <div class="stat-card">
-    <span class="stat-val">53.0%</span>
+    <span class="stat-val">50.0%</span>
     <span class="stat-meta">Match accuracy · random ≈ 37%</span>
   </div>
 </div>
@@ -111,29 +111,29 @@
 
     <!-- bin dots -->
     
-    <circle cx="56.5" cy="213.6" r="8"
+    <circle cx="54.3" cy="189.1" r="5"
             fill="var(--accent)" opacity="0.75">
-      <title>11% predicted, 16% actual (n=69)</title>
+      <title>10% predicted, 27% actual (n=22)</title>
     </circle>
     
-    <circle cx="90.6" cy="185.7" r="12"
+    <circle cx="94.1" cy="203.3" r="5"
             fill="var(--accent)" opacity="0.75">
-      <title>27% predicted, 29% actual (n=104)</title>
+      <title>29% predicted, 21% actual (n=29)</title>
     </circle>
     
-    <circle cx="137.0" cy="157.1" r="5"
+    <circle cx="135.6" cy="86.0" r="5"
             fill="var(--accent)" opacity="0.75">
-      <title>49% predicted, 42% actual (n=38)</title>
+      <title>48% predicted, 75% actual (n=8)</title>
     </circle>
     
-    <circle cx="180.8" cy="97.7" r="5"
+    <circle cx="180.1" cy="152.0" r="5"
             fill="var(--accent)" opacity="0.75">
-      <title>69% predicted, 70% actual (n=23)</title>
+      <title>69% predicted, 44% actual (n=9)</title>
     </circle>
     
-    <circle cx="214.2" cy="104.0" r="5"
+    <circle cx="215.1" cy="140.0" r="5"
             fill="var(--accent)" opacity="0.75">
-      <title>84% predicted, 67% actual (n=15)</title>
+      <title>85% predicted, 50% actual (n=4)</title>
     </circle>
     
   </svg>
@@ -159,23 +159,23 @@
       
       <tr>
         <td>Home win</td>
-        <td>44.9%</td>
-        <td>38.6%</td>
-        <td>-6.4pp</td>
+        <td>45.7%</td>
+        <td>50.0%</td>
+        <td>+4.3pp</td>
       </tr>
       
       <tr class="cal-row-highlight">
         <td>Draw</td>
-        <td>21.9%</td>
-        <td>31.3%</td>
-        <td>+9.4pp</td>
+        <td>24.9%</td>
+        <td>37.5%</td>
+        <td>+12.6pp</td>
       </tr>
       
       <tr>
         <td>Away win</td>
-        <td>33.2%</td>
-        <td>30.1%</td>
-        <td>-3.0pp</td>
+        <td>29.4%</td>
+        <td>12.5%</td>
+        <td>-16.9pp</td>
       </tr>
       
     </tbody>
@@ -184,10 +184,8 @@
 
 <div class="cal-note">
   
-  <p>These figures come from a backtest on Euro 2024 and Copa América 2024 —
-     matches the model never saw during training. This page switches to live
-     World Cup data once enough results have accumulated for the reliability
-     diagram to be meaningful (20 of 24 so far).</p>
+  <p>Statistics are from live World Cup matches. The reliability diagram and table will
+     fill in as results come in.</p>
   
   <p>Known limitations: on Euro-like fields with clustered Elo ratings (the closest
      analog to World Cup group play) the model hits roughly 49% match accuracy and
@@ -202,10 +200,10 @@
 
   <footer class="site-footer">
     <p>
-      Forecast generated 2026-06-17 21:22 · snapshot 2026-06-17.
+      Forecast generated 2026-06-18 07:31 · snapshot 2026-06-18.
     </p>
     <p>
-      Updated once daily, before 10:00 Paris time — not live during matches. Last updated 17 June 2026.
+      Updated once daily, before 10:00 Paris time — not live during matches. Last updated 18 June 2026.
     </p>
     <p>
       Probabilities are model and market estimates, not statements of certainty.

@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Uzbekistan",
   "date": "2026-06-23",
-  "input_hash": "918f4275cf29c6a104b0b6f4a4df32ad8aa03890",
-  "generated_at": "2026-06-17T06:34:36+00:00",
+  "input_hash": "0b895ce61c98642bee606654fd2db65e64c869f5",
+  "generated_at": "2026-06-18T05:30:03+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Portugal at 66%, with Uzbekistan offered a 9% chance of victory. The sportsbook consensus is notably more bullish on Portugal, pricing a win at 77%, a gap of 11 percentage points wider than the model's assessment.\n\nThe model's implied spread shows Portugal as clear favorite but leaves meaningful room for alternative outcomes. A draw lands at 25%, making it a plausible scenario—roughly one in four matches. This suggests a competitive encounter rather than a heavily one-sided affair, with Uzbekistan's 9% win probability indicating the underdog retains a non-trivial path to the result.\n\nModel and market diverge substantially here. The sportsbook and Polymarket both shift probability mass away from draws and toward a Portugal victory compared to the model. The market's Portugal win probability sits 11–13 percentage points higher than the model's. The dashboard does not adjudicate which reading is correct; the gap warrants awareness for those tracking consensus shifts."
+  "preview_text": "The model favors Portugal at 66%, a substantial margin over Uzbekistan's 9% win probability. The gap reflects a clear hierarchy between the two sides on the statistical basis supplied to the forecast.\n\nThe expected match shape leans heavily toward a Portugal victory, but the model assigns nearly one quarter of scenarios to a draw. This modest draw probability—24.9%—suggests the contest carries enough competitive variance that a stalemate remains plausible, even if Portugal enters as heavy favorite. An Uzbekistan upset remains unlikely but non-negligible within the model's framework.\n\nThe sportsbook consensus and Polymarket both push Portugal's win probability substantially higher, to 79–80%, and compress the draw to 13–14%. This represents a meaningful divergence: the market is roughly 13–14 percentage points more confident in a Portugal win than the model, and correspondingly more skeptical of a draw outcome. The dashboard does not adjudicate between these estimates."
 }

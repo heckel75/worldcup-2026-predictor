@@ -3,9 +3,9 @@
   "home_team": "Algeria",
   "away_team": "Austria",
   "date": "2026-06-27",
-  "input_hash": "c012d5fdcf78fdf383282d5ff55191e6759c8ce5",
-  "generated_at": "2026-06-17T06:35:45+00:00",
+  "input_hash": "3944fc0779391a33547654f41e61ef54b4e5182f",
+  "generated_at": "2026-06-18T05:31:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Algeria at 38%, giving the side a modest edge over Austria's 30% win probability. The gap between favorite and underdog is narrow enough that the match carries genuine competitive uncertainty, with Austria holding a realistic path to victory.\n\nThe draw emerges as a plausible outcome at 32%, sitting between the two outright results and suggesting the teams are closely matched. No outcome commands overwhelming likelihood; the spread across W/D/L is relatively even, pointing toward a competitive encounter where result outcomes remain genuinely open.\n\nThe model and sportsbook consensus diverge meaningfully. Books rate Austria's win probability at 39%—nine percentage points above the model—while trimming Algeria's edge to 31%, a seven-point gap below the model. Polymarket prices align closely with the books on Austria and the draw, lending weight to that market view. The dashboard does not adjudicate which assessment is correct; both reflect legitimate analytical positions on a tightly balanced fixture."
+  "preview_text": "The model favors Algeria with a 38% win probability, placing them narrowly ahead of Austria at 30%. The underdog rating reflects a modest but meaningful edge for the North African side in the statistical forecast.\n\nThe spread across outcomes reveals a tightly bunched match. Draw probability sits at 32%, making it a genuine third outcome rather than a peripheral possibility. The gap between Algeria's win chance and Austria's spans only 8 percentage points, suggesting a competitive fixture where either team has a plausible path to victory and regulation time stalemate carries real weight.\n\nModel and market assessments diverge meaningfully. The sportsbook consensus tilts toward Austria at 37%, a 7-percentage-point lean away from the model's Algeria preference. Polymarket pricing aligns closely with bookmaker sentiment. The dashboard does not claim to know which interpretation is correct; the divergence reflects genuinely uncertain underlying match conditions and differing methodologies between statistical modeling and market pricing."
 }

@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "Senegal",
   "date": "2026-06-22",
-  "input_hash": "c8bf8418148bfb8aad939ac5372c7a9bef69a752",
-  "generated_at": "2026-06-17T06:34:23+00:00",
+  "input_hash": "eec3f05db888002757ca30d69d033e065ac6b56e",
+  "generated_at": "2026-06-18T05:29:52+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Norway with a 44% win probability against Senegal's 25%, a gap of roughly 18 percentage points. This positions Norway as the clear favorite in this neutral-venue fixture, though the underdog retains material chances.\n\nThe model's spread reflects a moderately competitive match. The draw sits at 31%, suggesting the outcome is far from predetermined: roughly one in three instances could see a level result. Norway's win probability substantially exceeds Senegal's, but the combined 56% chance of either a draw or a Senegal victory indicates the match remains genuinely contested.\n\nThe model and sportsbook consensus diverge in their assessment of Senegal's chances. The market prices Senegal 6–7 percentage points higher than the model, while implying a slightly lower Norway win probability and a narrower draw range. Polymarket prices align more closely with the model on Senegal and draw likelihood. This divergence is meaningful and suggests uncertainty about Senegal's chances; the dashboard does not adjudicate between statistical forecasting and market judgment."
+  "preview_text": "The model rates Norway as the slight favorite, assigning them a 43% win probability against Senegal's 26%. This narrow margin reflects a competitive matchup on a neutral ground where either outcome remains credible, though Norway hold the statistical edge.\n\nThe draw carries meaningful weight at 31%, suggesting the contest is unlikely to be decided by a wide margin. The win probabilities are compressed across the three outcomes, indicating neither team commands dominant control of the match space. A close, potentially deadlocked affair is the model's central scenario.\n\nThe sportsbook consensus and Polymarket prices align closely with the model across all three outcomes, with gaps under 3 percentage points. Market and model broadly agree that Norway lean slightly favored while remaining vulnerable to either a draw or an upset, indicating convergence on the competitive tightness of this fixture."
 }

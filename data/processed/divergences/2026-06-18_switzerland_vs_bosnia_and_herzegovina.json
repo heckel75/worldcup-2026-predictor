@@ -5,10 +5,10 @@
   "date": "2026-06-18",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 15.5,
-  "input_hash": "d02bf3288e91b5e38a5ba17223aad317b2036748",
-  "generated_at": "2026-06-16T07:50:38+00:00",
+  "max_gap_pp": 15.0,
+  "input_hash": "ba1e4d13af392c1c8b66e1dfa3b8075c8c6ae637",
+  "generated_at": "2026-06-18T05:31:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Switzerland a 77% win probability, while the sportsbook consensus sits at 61%—a 16-percentage-point gap favoring the model's confidence in a Swiss victory. The market also prices the Bosnia and Herzegovina upset at 16 percentage points higher than the model suggests, implying recent form, injury news, or lineup changes may be tempering confidence in the Swiss side or elevating Bosnia and Herzegovina's perceived chances. Both sources agree Switzerland is the clear favorite, but the market's higher hedge toward underdog outcomes and draws signals it is pricing information the Elo-based model cannot see. The dashboard surfaces this divergence as a signal worth monitoring rather than a verdict on which forecast is more accurate."
+  "commentary_text": "The model assigns Switzerland a 77% win probability while the market settles at 62%, a 15-percentage-point gap favoring the model's confidence in a Swiss victory. The market simultaneously elevates Bosnia and Herzegovina from 4% to 15%, suggesting real-money flows are pricing in scenarios of upset risk or competitive balance that the Elo-based model does not capture. Recent lineup changes, injuries to key players, or shift in form since the model's last update could plausibly account for this caution, though the dashboard itself contains no such information. The gap serves as a signal that market participants perceive uncertainty the statistical model underweights—whether justified by new information or simple disagreement on underlying strength remains an open question."
 }

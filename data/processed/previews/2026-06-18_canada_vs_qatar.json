@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Qatar",
   "date": "2026-06-18",
-  "input_hash": "61c8dab69e7d8dd1a075680e34c549b5f9884ce7",
-  "generated_at": "2026-06-17T06:33:41+00:00",
+  "input_hash": "a4abb842c74f47e2eee5849b0567c0b6b2267663",
+  "generated_at": "2026-06-18T05:29:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model projects a dominant Canada victory, assigning the side an 86% win probability on a neutral ground. Qatar faces only a 14% chance of drawing and effectively no modeled path to victory, a stark asymmetry that reflects the input data's implied gap in underlying strength.\n\nThe W/D/L spread reveals a fairly lopsided contest in expected terms. Canada's win probability towers over the draw likelihood, suggesting the model envisions a match unlikely to reach parity. A draw remains plausible at 14%, but Qatar's near-zero win probability indicates the forecast sees little genuine competitive balance; the outcome space is largely Canada win or stalemate.\n\nThe model and market diverge meaningfully. The model backs Canada at 86%, while sportsbooks settle at 75% and Polymarket at 75%—roughly an 11 percentage point gap favoring the model's confidence. Conversely, the market prices Qatar's chances at 9% to 8.5%, compared to the model's 0%. This dashboard makes no claim as to which source is correct; the gap reflects either model overconfidence in Canada or market inflation of Qatar's tail-case probability."
+  "preview_text": "The model favors Canada to win with 86% probability, leaving Qatar with no realistic chance of victory in its own right. The underdog faces a formidable gap: the model assigns it 0% win probability while Canada dominates the matchup decisively.\n\nThe expected output is heavily skewed toward a Canadian win. A draw remains possible at 14%, reflecting some baseline volatility, but Qatar's path to points is extremely narrow in the model's view. The match is unlikely to be competitive by the model's reckoning; Canada is projected as the clear superior force.\n\nThe sportsbook consensus diverges meaningfully from the model. Books assign Canada 74.8% and Qatar 8.4%, a gap of roughly 11 percentage points on either side of the model's estimate. Polymarket prices sit between the two, closer to the sportsbooks. The market credits Qatar with a non-negligible tail of outcomes the model effectively discounts. The dashboard does not adjudicate which assessment is correct."
 }

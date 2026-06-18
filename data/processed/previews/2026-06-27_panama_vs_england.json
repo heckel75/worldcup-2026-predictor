@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "d578e33fd7a7ad4836e39a27853fbd486d1a1e66",
-  "generated_at": "2026-06-17T06:35:53+00:00",
+  "input_hash": "ac3c1399a59084832aeff4234f8a010aef580de3",
+  "generated_at": "2026-06-18T05:31:19+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates England as clear favourite with a 63% win probability, while Panama's chances stand at 12%. The gap reflects an expected quality differential, though Panama retains a meaningful probability of an upset or stalemate.\n\nThe draw emerges as the second-most-likely outcome at 25%, suggesting the match could prove competitive enough to avoid decisive separation. England's win probability exceeds Panama's by roughly 51 percentage points, indicating a structured hierarchy, yet the presence of a quarter-probability on the draw and double-digit upset odds implies genuine uncertainty in the final scoreline.\n\nThe sportsbooks lean more heavily toward England, pricing a 75% win probability against Panama's 10%, and offer only 16% for a draw. This represents a meaningful divergence: the market is 11 percentage points more bullish on England and 9 points less convinced of a draw than the model. Polymarket prices align closely with the sportsbook consensus. The dashboard does not adjudicate between these forecasts."
+  "preview_text": "The model judges England the clear favorite at 63%, with Panama's win probability at 12%. The underdog's chance sits well below the favorite's, reflecting a substantial gap in assessed strength on a neutral ground.\n\nA draw occurs in roughly one quarter of the model's simulations, making it the second-most likely outcome. The 63–24–12 split suggests England should control most matches, but the 25% draw probability indicates the fixture retains genuine competitive uncertainty rather than a heavily one-sided affair.\n\nThe model and sportsbook consensus align closely on Panama's win probability (both 12%), but diverge on the terminal outcomes. The market assigns England 73% versus the model's 63%, a 10 percentage point gap that reflects the sportsbooks pricing in a lower draw likelihood (15% versus the model's 25%). Polymarket pricing tilts further toward England at 77%, consistent with the broader market lean. The dashboard offers no judgment on which forecast is more reliable."
 }

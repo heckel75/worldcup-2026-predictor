@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Haiti",
   "date": "2026-06-19",
-  "input_hash": "48d1d6067cd9bd9eb69b0592428d4643a58ece79",
-  "generated_at": "2026-06-16T07:48:15+00:00",
+  "input_hash": "663a8cc922e13154406b009e1ecd3771a0eb6d23",
+  "generated_at": "2026-06-18T05:29:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Brazil at 76%, while Haiti is assigned a 4% chance of victory. The gap between favorite and underdog is substantial, reflecting a significant disparity in the forecast probability space.\n\nThe expected outcome distribution shows Brazil as clear favorite, but the 20% draw probability suggests competitive phases are plausible within the match. The 76–20–4 split indicates Brazil should be dominant without the match being a formality; Haiti retains a measurable path to an upset or stalemate, though both remain unlikely relative to a Brazilian win.\n\nThe market consensus is notably more confident in Brazil, pricing a win at 87%, compared to the model's 76%—an 11-percentage-point gap. The market also compresses the draw probability to 9% versus the model's 20%, and prices Haiti's upset chance nearly identically to the model at 4%. This divergence suggests the sportsbook aggregate has greater conviction in Brazilian superiority. The dashboard does not adjudicate between these sources."
+  "preview_text": "The model rates Brazil as a heavy favorite at 76% to win, while Haiti's path to victory registers at just 4%. The gap reflects a substantial asymmetry in expected quality, though Brazil's win probability leaves meaningful room for an alternative outcome.\n\nThe draw probability of 20% indicates the model sees this as genuinely competitive in structure despite the heavy Brazil lean. A Haiti upset remains a low-probability tail event, but draws occur in roughly one match in five under this distribution. The match is not forecast as a rout but rather as one where Brazil enters as clear favorites in a contest with real uncertainty about the final result.\n\nThe sportsbook consensus and Polymarket prices both diverge noticeably from the model, assigning Brazil roughly 87% and pushing the draw down to around 8–9%. That gap of 10–11 percentage points on the Brazil win probability is material. The dashboard makes no claim about which forecast is more accurate; the divergence likely reflects different methodologies and information sets between the statistical model and market prices."
 }

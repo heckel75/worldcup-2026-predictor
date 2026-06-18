@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 23.9,
-  "input_hash": "0ba87307d04415c118172191069b55424e6669c0",
-  "generated_at": "2026-06-17T06:36:17+00:00",
+  "max_gap_pp": 24.1,
+  "input_hash": "487038d09488d26eb4a01524d83a6d950b8c7739",
+  "generated_at": "2026-06-18T05:31:47+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Japan a 69% win probability while the market puts it at 45%, a 24-percentage-point gap favoring the model's confidence. This divergence suggests the market is pricing in information the model cannot access—most likely recent lineup changes, injury news, or current form shifts for one or both teams—that moderates conviction in Japan's superiority. The sportsbook and Polymarket consensus agree closely with each other and diverge together from the model on all three outcomes, pointing to a genuine information gap rather than noise. The dashboard flags this as a signal worth monitoring; it does not indicate which source is better calibrated."
+  "commentary_text": "The model estimates Japan's win probability at 69%, while the sportsbook consensus places it at 45%—a 24-percentage-point gap favoring the model's confidence. The market also widens Sweden's win chances to 28% versus the model's 8%, suggesting skepticism about Japan's overwhelming superiority. This hedging could reflect information the model cannot access: recent lineup changes, injuries to key players, or unexpected shifts in form since the model's last update. Both sources agree Japan is favored, but the market's reluctance to commit to such a decisive edge signals real uncertainty about the matchup's underlying strength. The dashboard flags this divergence as a data point for decision-making, not as evidence that either source has misjudged the situation."
 }

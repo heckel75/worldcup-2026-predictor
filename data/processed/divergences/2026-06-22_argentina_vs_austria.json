@@ -5,10 +5,10 @@
   "date": "2026-06-22",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 17.4,
-  "input_hash": "feb734cbb902b26d4f40afdb1764019c384dc132",
-  "generated_at": "2026-06-16T07:50:43+00:00",
+  "max_gap_pp": 15.4,
+  "input_hash": "37cb2573c7b66ac23d6e37842bb099cfdf7f9046",
+  "generated_at": "2026-06-18T05:31:36+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Argentina a 76% win probability, while sportsbooks consensus sits at 59%—a 17-percentage-point gap favoring the model's confidence. This divergence suggests the market is hedging against scenarios the statistical baseline may not fully capture: recent form swings, injury concerns, or lineup changes that have emerged since the model's last training date. Both sources agree Argentina is the clear favorite, but the market's wider distribution across all outcomes signals uncertainty about team condition or availability that raw Elo ratings cannot see. The dashboard flags this gap as a signal worth monitoring rather than a judgment on which forecast is sounder."
+  "commentary_text": "The model assigns Argentina a 76% win probability versus the sportsbook consensus of 61%, a 15-percentage-point gap favoring the model's confidence in an Argentina victory. This divergence suggests the market may be pricing in information the model cannot access—recent lineup changes, injury updates, or shifts in form—that make Austria a more plausible threat than the statistical baseline implies. Conversely, the model's Elo ratings and goal-scoring framework may not yet reflect recent developments that bookmakers are actively monitoring. The dashboard surfaces this gap as a signal of genuine uncertainty between statistical priors and real-time market intelligence, without adjudicating which perspective will prove more accurate."
 }
