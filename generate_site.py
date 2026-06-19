@@ -342,10 +342,17 @@ def _headline_gap(row, home_name, away_name) -> str:
             f"{round(hi*100)}% vs {round(lo*100)}%.")
 
 
-def _load_divergence(key: str, row, home_name, away_name) -> dict | None:
+def _load_divergence(key: str, row, home_name, away_name, flagged: bool = True) -> dict | None:
     """Read divergences/<key>.json if present. Commentary rows get the
     computed headline + Claude paragraph; host 'note' rows get a muted
-    caveat; everything else has no file and returns None."""
+    caveat; everything else has no file and returns None.
+
+    `flagged` gates the commentary callout on the fixture's LIVE
+    divergence status: generate_divergences.py only refreshes flagged
+    matches, so a fixture that has since dropped below the flag threshold
+    keeps a stale commentary file on disk. Upcoming pages pass the live
+    triple_compare flag_divergent; played pages render the frozen
+    pre-match commentary unconditionally (default True)."""
     path = DIVERGENCES_DIR / f"{key}.json"
     if not path.exists():
         return None
@@ -356,6 +363,9 @@ def _load_divergence(key: str, row, home_name, away_name) -> dict | None:
 
     if rec.get("kind") == "note":
         return None  # stale pre-Session-33 cache; host advantage is now modelled
+
+    if not flagged:
+        return None  # de-flagged fixture; suppress the stale commentary
 
     has_book = pd.notna(row["p_home_book"])
     return {
@@ -538,7 +548,7 @@ def _build_match(row) -> dict:
         "date_human":   _date_human(row["date"]),
         "venue_label":  venue_label,
         "sources":      sources,
-        "divergence":   _load_divergence(key, row, home_d, away_d),
+        "divergence":   _load_divergence(key, row, home_d, away_d, flagged=flag_divergent),
         "scoreline":    _build_scoreline(row, home_d, away_d),
         "model_fav":    model_fav,
         "flag_divergent": flag_divergent,
