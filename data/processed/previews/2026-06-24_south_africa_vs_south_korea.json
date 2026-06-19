@@ -3,9 +3,9 @@
   "home_team": "South Africa",
   "away_team": "South Korea",
   "date": "2026-06-24",
-  "input_hash": "c2faf15a645381cbf07d58710c1fd91d6ddce366",
-  "generated_at": "2026-06-16T07:49:09+00:00",
+  "input_hash": "ae30c1012c6d3d52a5568055842b3d70512c9c25",
+  "generated_at": "2026-06-19T05:47:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea at 62%, leaving South Africa with only a 13% chance of victory. The draw carries a modest 25% probability, suggesting competitive but not evenly matched play.\n\nThe win-loss spread shows South Korea as a clear but not overwhelming favorite. A draw remains plausible at roughly one-in-four, indicating the match could unfold with either side capable of forcing a stalemate, though a South Korea victory is the most probable single outcome. South Africa's path to three points is narrow but not negligible.\n\nThe model and market are closely aligned. Sportsbooks assign South Korea a 60% win probability against the model's 62%, a gap of 2 percentage points. Polymarket pricing shows similar consensus, with spreads under 3 percentage points across all three outcomes. No meaningful divergence exists between the statistical forecast and market pricing on this fixture."
+  "preview_text": "The model favors South Korea with a 62% win probability, relegating South Africa to a 13% chance of victory. The underdog faces a substantial gap; a South Korea triumph is roughly five times more likely than a South African upset in the model's estimation.\n\nThe draw probability of 26% suggests a moderately competitive match where neither side dominates the forecast. The win probabilities split decisively toward South Korea, but the presence of a quarter-probability for a stalemate indicates the match carries genuine uncertainty rather than a foregone conclusion.\n\nThe model and market are closely aligned across all three outcomes. South Korea's win probability differs by 3 percentage points, the draw by 1 point, and South Africa's by 4 points—all well within typical consensus variation. Polymarket and sportsbook prices converge similarly. The dashboard does not adjudicate between these sources, but the broad agreement suggests consistent assessment of the matchup's structure."
 }

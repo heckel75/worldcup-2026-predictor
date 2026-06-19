@@ -3,9 +3,9 @@
   "home_team": "Tunisia",
   "away_team": "Netherlands",
   "date": "2026-06-25",
-  "input_hash": "3f9fe9b240fd5c1a23afd4b5965bd6886dd4d780",
-  "generated_at": "2026-06-18T05:30:39+00:00",
+  "input_hash": "cdc3acd199d52b94aeb97bfc7111ce7acd491adf",
+  "generated_at": "2026-06-19T05:47:48+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Netherlands as the clear favorite, assigning them a 70% win probability against Tunisia's 8.5%. This 61-percentage-point gap reflects a substantial disparity in the forecast, with the model viewing the Netherlands as the likely victors on a neutral ground.\n\nThe expected distribution tilts sharply toward a Netherlands victory, but the 22% draw probability indicates meaningful competitive space. A stalemate remains more likely than a Tunisia win, suggesting the match could remain close tactically even if Netherlands hold the upper hand in overall quality. The outcome is not a foregone conclusion, though one-sided results lean heavily toward the favorite.\n\nModel and market estimates are broadly aligned. Sportsbooks place Netherlands at 72% win (2.5 points above the model) and draw at 18% (4 points below), while Polymarket implies an even wider Netherlands edge at 74%. These small divergences sit within typical consensus variation and suggest no material disagreement between the statistical forecast and betting expectations on this fixture."
+  "preview_text": "The model favors Netherlands at 70% to win, with Tunisia given an 8.5% chance of victory. The underdog faces a substantial gap: a 61-percentage-point differential separates the two teams' win probabilities.\n\nThe draw carries meaningful weight at 22%, suggesting the match is unlikely to be a rout. The asymmetry in the W/D/L spread—with Netherlands heavily favored but a draw plausible and Tunisia not eliminated—indicates a competitive fixture rather than a mismatch, though the model marks clear separation in underlying quality.\n\nModel and market are closely aligned across all three outcomes. The sportsbook consensus (72% Netherlands, 18% draw, 10% Tunisia) sits within 2–3 percentage points of the model on each line. Polymarket prices show similar agreement. The broad consensus indicates confidence in the directional forecast without sharp disagreement among sources."
 }

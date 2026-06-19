@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 19.6,
-  "input_hash": "a7ab61131a76917050e11adf44e4b4613c684daa",
-  "generated_at": "2026-06-17T06:36:14+00:00",
+  "max_gap_pp": 20.3,
+  "input_hash": "fe9d576cd5c4eb1c738909fd3cfd7e3676e2cfc5",
+  "generated_at": "2026-06-19T05:48:48+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market gives Germany a 55% win probability versus the model's 36%, a 19-percentage-point gap favoring the favorite. This sharpening of conviction could reflect recent lineup news, injury updates, or current form dynamics that the model's Elo foundation cannot capture; conversely, the model's closer reading may signal value if those real-time inputs prove transient. Both sources agree Germany is favored, but the dashboard surfaces a meaningful tension in confidence—neither forecast should be read as settled truth."
+  "commentary_text": "The market is far more confident in a Germany win, pricing it at 56% versus the model's 36%, a 20-percentage-point gap favoring the favourite. The model sees this matchup as nearly a toss-up across all three outcomes, while sportsbooks and crypto markets have converged on stronger conviction in Germany. This divergence could reflect recent form, injury status, or lineup availability that has shifted since the model's last update—information real-money markets price in continuously but the statistical forecast cannot access. The dashboard surfaces this sharp disagreement as a signal worth monitoring, without adjudicating which source is interpreting the available evidence more accurately."
 }

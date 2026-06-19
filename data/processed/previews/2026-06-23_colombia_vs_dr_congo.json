@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "DR Congo",
   "date": "2026-06-23",
-  "input_hash": "8858f33679443ff0c901a652b4d957f1228c0fed",
-  "generated_at": "2026-06-18T05:30:07+00:00",
+  "input_hash": "0665c5954d663308e83b0525b04e6da8a214b740",
+  "generated_at": "2026-06-19T05:46:59+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Colombia at 75%, with DR Congo assigned only a 4% chance to win. The underdog's low probability reflects a substantial gap in the forecast; Colombia is heavily favored to take three points.\n\nThe model's win-draw-loss spread shows Colombia as commanding favorite, but the draw probability of 21% suggests the match retains meaningful competitive uncertainty. A stalemate is plausible enough to rank as a realistic outcome, though Colombia's victory dominates the distribution. The gap between Colombia's win chance and a DR Congo upset is wide.\n\nModel and market diverge notably. The model rates Colombia 11 percentage points higher than sportsbooks and Polymarket, which cluster near 64%. The model simultaneously assigns DR Congo roughly 9 percentage points less win probability than the consensus. No reconciliation between these views is claimed here; the dashboard presents both signals and does not adjudicate which better reflects underlying match strength."
+  "preview_text": "The model rates Colombia as a strong favorite with a 75% win probability, compared to a 4% chance for DR Congo. The implied gap reflects a heavily skewed matchup from a statistical standpoint, with Colombia's advantage substantial across the forecast.\n\nThe draw carries a meaningful 21% probability according to the model, suggesting the match is not a foregone conclusion despite the wide gap in outright win chances. The three-way distribution leaves room for competitive play, though DR Congo's low win probability indicates the model expects a decisive outcome tilted heavily toward Colombia.\n\nThe model and market diverge notably on DR Congo's prospects. The sportsbook consensus and Polymarket both assign the challenger roughly 13%, whereas the model sees only 4%—a gap of about 9 percentage points. Both the market and model agree Colombia is favored and a draw is plausible, but they diverge on the underdog's floor. The dashboard does not adjudicate which assessment is correct."
 }

@@ -3,9 +3,9 @@
   "home_team": "Senegal",
   "away_team": "Iraq",
   "date": "2026-06-26",
-  "input_hash": "1610467251d0c1341bc47c5999147e723c339d71",
-  "generated_at": "2026-06-18T05:31:00+00:00",
+  "input_hash": "dfe285cfeaf7f9e2a128a783b027c7a2c6867925",
+  "generated_at": "2026-06-19T05:48:08+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Senegal at 61%, assigning them a clear but not dominant edge. Iraq's win probability stands at 13%, roughly one-fifth of Senegal's chance. The remaining outcome space—a draw—carries meaningful weight at 27%.\n\nThe W/D/L distribution suggests a moderately competitive match. The 48-percentage-point gap between the favourite and the underdog leaves room for upset, and the draw probability at 27% indicates the model expects a reasonably tight contest where stalemate is a plausible result. Neither team is heavily favoured to dominate decisively.\n\nThe market consensus (sportsbooks and Polymarket combined) diverges noticeably from the model. Both commercial sources rate Senegal's win probability 9–11 percentage points higher, at 70–72%, and compress the draw probability to 17–19%. The dashboard does not adjudicate which source is more accurate; the divergence likely reflects different statistical methods and market sentiment on available information."
+  "preview_text": "The model favors Senegal at 61%, compared to Iraq's 12.5% win probability. Senegal enters as a clear favorite, though the model assigns Iraq a modest but non-negligible chance of an upset on the neutral ground.\n\nThe 27% draw probability suggests this match carries meaningful competitive balance despite the gap in win chances. The spread between Senegal (61%) and a draw (27%) indicates the model expects Senegal to control play, but Iraq's defensive capacity or set-piece threat may produce a stalemate result more often than a Senegal victory alone would imply. The outcome space remains reasonably distributed rather than heavily concentrated in one scenario.\n\nThe market consensus is considerably more bullish on Senegal than the model. Sportsbooks place Senegal at 72%, a gap of 11 percentage points, while assigning Iraq only 9.7% — nearly 3 points lower than the model's estimate. Polymarket prices are even more extreme, with Senegal at 74%. The dashboard does not adjudicate which view is more accurate; the divergence likely reflects differing assessments of squad strength or match conditions."
 }

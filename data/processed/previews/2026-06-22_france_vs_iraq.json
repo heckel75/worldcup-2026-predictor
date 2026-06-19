@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Iraq",
   "date": "2026-06-22",
-  "input_hash": "310d70297b646877b263221e51fafe4964bb2860",
-  "generated_at": "2026-06-18T05:29:49+00:00",
+  "input_hash": "8055d8f84a174ef0b9e5bf060f22a751a31b3cfd",
+  "generated_at": "2026-06-19T05:46:41+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates France as a heavy favourite with an 83% win probability, leaving Iraq just under 1% chance of victory. The gap reflects a substantial quality differential in the statistical forecast, though Iraq retains a small theoretical path to an upset result.\n\nThe spread across outcomes shows France favoured but not dominant in absolute terms. A draw carries 16% probability in the model, making it a plausible intermediate outcome. The 83–16–1 split suggests France should control much of the match yet faces enough variance that a stalemate remains a realistic scenario rather than a long-shot contingency.\n\nThe model and market diverge on both France's win likelihood and the draw probability. Sportsbooks and Polymarket both assign France 87–89%, running 4–6 percentage points higher than the model, while compressing the draw to under 9%. The model sees draw risk as nearly twice as large. These gaps are meaningful enough to flag; the dashboard does not adjudicate which assessment is more accurate."
+  "preview_text": "The model rates France as a heavy favorite with an 84% win probability, leaving Iraq just 1% chance of victory. The gap reflects a large disparity in the underlying Elo ratings and historical performance metrics embedded in the forecast. France's dominance is the centerpiece of this matchup.\n\nThe win-draw-loss spread underscores the asymmetry. A draw lands at 16%, meaningfully higher than the Iraq win probability, suggesting that if France fails to win, a stalemate is far more likely than an upset. The match carries little competitive uncertainty around the outcome; France's superiority is marked across the model's distribution.\n\nThe model and sportsbooks diverge notably on the draw. The books price it at 9% and Polymarket at 8%, both substantially below the model's 16%. Conversely, both betting sources elevate Iraq's chances to 3% or higher, roughly three to four times the model estimate. The dashboard does not adjudicate which is correct, but the disagreement on draw probability and the tail outcome is clear and material."
 }

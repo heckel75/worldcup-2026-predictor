@@ -3,9 +3,9 @@
   "home_team": "Netherlands",
   "away_team": "Sweden",
   "date": "2026-06-20",
-  "input_hash": "f616b27c08decfe3922279da8caab0d20b75605e",
-  "generated_at": "2026-06-18T05:29:29+00:00",
+  "input_hash": "84f4a4a2c806f5f858ca0ff710b237e63ddf7c0e",
+  "generated_at": "2026-06-19T05:46:24+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model backs Netherlands as clear favourite at 68%, leaving Sweden just 8% to win outright. That 60-percentage-point gap reflects a pronounced imbalance in the forecast; the underdog's chances rest almost entirely on a draw or an upset, neither of which the model rates as probable.\n\nThe win-draw-loss spread shows Netherlands favoured decisively, but a draw remains plausible at 24%. Sweden's path narrows considerably in this forecast—the model sees the match as competitive in structure (a draw is live) but tilted heavily toward a Netherlands victory rather than a genuinely close three-way contest.\n\nThe model and sportsbook diverge materially on Sweden's chances. Books strip to 20% for a Sweden win; the model halves that to 8%, a 12-percentage-point gap. Polymarket aligns closely with sportsbook consensus. The dashboard does not adjudicate which view of Sweden's upside is correct; the discrepancy is worth noting for users comparing statistical and market perspectives."
+  "preview_text": "The model favors the Netherlands at 68% to win, with Sweden offered just an 8% chance of victory. That 60-percentage-point gap reflects a strong asymmetry in the forecast, though the underdog retains non-trivial upside.\n\nThe spread shows a decisive lean toward a Dutch result but leaves meaningful room for either a draw or a Swedish upset. The 24% draw probability indicates the teams are not seen as vastly mismatched on the day, even if one is heavily preferred. A competitive match remains plausible despite the model's clear favorite.\n\nThe model and sportsbook consensus diverge noticeably on Sweden's chances. The market prices the Swedes at 20–21%, roughly 12 percentage points higher than the model's 8%. Both sources agree on a Netherlands edge and a draw probability near 24–25%. The dashboard does not adjudicate which interpretation is more accurate, only that the gap warrants awareness for users comparing forecasts."
 }

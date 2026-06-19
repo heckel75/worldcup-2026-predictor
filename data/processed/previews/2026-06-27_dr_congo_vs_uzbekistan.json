@@ -3,9 +3,9 @@
   "home_team": "DR Congo",
   "away_team": "Uzbekistan",
   "date": "2026-06-27",
-  "input_hash": "602343bf3954caafd6b5051f01027c3e09a9388d",
-  "generated_at": "2026-06-18T05:31:15+00:00",
+  "input_hash": "05ff288060836e9c1a846c055618989980f0a9de",
+  "generated_at": "2026-06-19T05:48:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Uzbekistan at 46%, while DR Congo is given only a 24% chance of victory. The underdog's path to three points remains available but requires overcoming a substantial gap in the forecast.\n\nThe 30% draw probability suggests a competitive match with realistic prospect of a stalemate, though Uzbekistan's win probability exceeds both other outcomes. The gap between Uzbekistan and a DR Congo victory spans roughly two percentage points in either direction from a draw—a moderately unbalanced matchup rather than an even contest.\n\nThe market consensus diverges sharply from the model. Sportsbooks place DR Congo's win probability at 44%, nearly double the model's 24%, while pricing Uzbekistan at 29%—17 percentage points below the model's 46%. Polymarket pricing aligns more closely with sportsbooks on both teams' win odds, though agreeing on the draw at roughly 25-27%. This represents a material disagreement on which team holds the edge; the dashboard offers the model's view without claiming superiority over market judgment."
+  "preview_text": "The model favors Uzbekistan at 46%, with DR Congo positioned as underdog at 24%. This 22-percentage-point gap reflects a substantial edge for Uzbekistan in the statistical forecast. DR Congo's path to victory is narrow but genuine; the model sees the underdog winning roughly one match in four.\n\nThe draw emerges as a plausible outcome at 30%, the modal result. This relatively high draw probability indicates competitive balance in expected match flow, even as Uzbekistan carries the edge. The win probabilities are distributed unevenly—Uzbekistan's advantage is clear, yet the presence of a sizeable draw likelihood suggests neither side is projected to dominate decisively.\n\nA stark divergence separates the model from both sportsbook and prediction market consensus. The market elevates DR Congo to 45%, nearly doubling the model's 24% figure, while compressing Uzbekistan to 29%. The disagreement spans roughly 20 percentage points on DR Congo and 17 points on Uzbekistan. This dashboard presents both estimates without adjudicating which reflects true match probability."
 }

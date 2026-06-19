@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 19.8,
-  "input_hash": "cbc1b02146a71052e86b630618807b9c3e65e777",
-  "generated_at": "2026-06-18T05:31:44+00:00",
+  "max_gap_pp": 20.2,
+  "input_hash": "d36a681f0dfcaf36a04ad74ca87e98beb8b0ec83",
+  "generated_at": "2026-06-19T05:48:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The most striking gap is on the Ivory Coast win: the market prices it at 84% while the model estimates 64%, a 20-percentage-point gap in the same direction. Both sources rank Ivory Coast as the heavy favorite, but sportsbooks and prediction markets are substantially more confident in that outcome. This sharper conviction could reflect recent form, lineup availability, or injury news that the model's training data does not yet capture. The dashboard flags this as a meaningful signal—the market may be pricing information about team readiness or momentum that the statistical baseline cannot see—though this remains a difference in confidence rather than a disagreement on direction."
+  "commentary_text": "The market is substantially more confident in an Ivory Coast win than the model: sportsbooks assign 84% versus the model's 64%, a 20-percentage-point gap. The model also sees a draw as nearly twice as likely as the market does (25% versus 11%). This sharpening of conviction toward Ivory Coast could reflect recent-form patterns, injury status, or lineup changes that the model has not incorporated since its last update. The dashboard flags this divergence as a signal worth monitoring; it does not indicate which assessment is more reliable."
 }

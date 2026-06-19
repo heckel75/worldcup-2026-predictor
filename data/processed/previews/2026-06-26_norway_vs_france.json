@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "France",
   "date": "2026-06-26",
-  "input_hash": "7c664603cba4ec01c261224051838480902648ae",
-  "generated_at": "2026-06-17T06:35:37+00:00",
+  "input_hash": "e4894041828b0e46bcc1bb1891034c20875d4349",
+  "generated_at": "2026-06-19T05:48:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours France at 54% to win, with Norway granted a 17% chance of victory. The remaining 28% probability falls to a draw, suggesting the match leans decisively toward the favourite without being a virtual certainty.\n\nThe win-loss gap of 37 percentage points indicates a substantially asymmetric contest. However, the draw probability of 28% is substantial enough to prevent the match from tilting heavily toward a definitive result. Norway's 17% win chance and France's 54% reflect a clear hierarchy, but the draw outcome sits closer to the underdog's victory probability than to the favourite's, widening the range of plausible outcomes.\n\nModel and market show close alignment across all three outcomes. The sportsbook consensus sits 5 percentage points above the model on Norway win probability, while France's edge narrows by 2 points in the market. Polymarket prices track similarly to sportsbooks, clustering within a tight band. The dashboard does not adjudicate between these sources; the minor divergences likely reflect differing information or risk appetite rather than material disagreement on the match's competitive balance."
+  "preview_text": "The model favors France at 55% to win, with Norway's probability of victory standing at 17%. France enters as a clear favorite, though the 37-percentage-point gap leaves meaningful room for an upset or a stalemate result.\n\nThe draw carries 28% probability in the model's forecast, making it the second-likeliest outcome. This relatively high draw likelihood reflects a match expected to be competitive rather than one-sided. The spread across all three outcomes indicates a moderately open contest where France holds genuine advantage but neither side is heavily favored to dominate play decisively.\n\nThe sportsbook consensus aligns closely with the model across all three outcomes. The market assigns France 52% (versus the model's 55%), Norway 22% (versus 17%), and a draw 25% (versus 28%). The gaps are all under 5 percentage points, suggesting broad agreement on the match's shape. Polymarket prices similarly cluster near the model and book estimates, with France at 54%."
 }

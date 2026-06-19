@@ -5,10 +5,10 @@
   "date": "2026-06-24",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 18.6,
-  "input_hash": "b5f6078111d47e6e481a99efbaa7bf858cb95b0f",
-  "generated_at": "2026-06-12T06:31:48+00:00",
+  "max_gap_pp": 28.2,
+  "input_hash": "407d37f297078e5af27301bee648b98f4861839a",
+  "generated_at": "2026-06-19T05:48:41+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Mexico a 71% win probability versus the sportsbook consensus of 52%, a 19-percentage-point gap favoring the model's confidence in a Mexican victory. This divergence suggests the market may be pricing in information the model cannot access—recent lineup changes, injury news, or current form shifts—that temper conviction in Mexico's superiority. Alternatively, the market's caution could reflect genuine uncertainty in a knockout-stage context where variance matters more than rating differentials. The dashboard surfaces this gap as a signal of conflicting assessments rather than evidence that either source has misread the match."
+  "commentary_text": "The model assigns Mexico a 71% win probability while the sportsbook consensus stands at 42%, a 28-percentage-point gap favoring the model's confidence in a Mexico victory. The market's more cautious stance on Mexico, combined with its substantially elevated assessment of Czech Republic chances at 31% versus the model's 7%, suggests real-money flows may be incorporating information the model cannot access—recent lineup changes, injury news, or current form developments that have shifted expectations away from the heavy model favorite. Both sources agree Mexico is the likeliest outcome, but the gap signals a meaningful wedge in conviction; the dashboard flags this divergence without adjudicating which perspective better reflects the true match dynamics."
 }

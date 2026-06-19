@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "ac3c1399a59084832aeff4234f8a010aef580de3",
-  "generated_at": "2026-06-18T05:31:19+00:00",
+  "input_hash": "35ef3d5003601b91a18b9a15cee6043ebef063bc",
+  "generated_at": "2026-06-19T05:48:26+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model judges England the clear favorite at 63%, with Panama's win probability at 12%. The underdog's chance sits well below the favorite's, reflecting a substantial gap in assessed strength on a neutral ground.\n\nA draw occurs in roughly one quarter of the model's simulations, making it the second-most likely outcome. The 63–24–12 split suggests England should control most matches, but the 25% draw probability indicates the fixture retains genuine competitive uncertainty rather than a heavily one-sided affair.\n\nThe model and sportsbook consensus align closely on Panama's win probability (both 12%), but diverge on the terminal outcomes. The market assigns England 73% versus the model's 63%, a 10 percentage point gap that reflects the sportsbooks pricing in a lower draw likelihood (15% versus the model's 25%). Polymarket pricing tilts further toward England at 77%, consistent with the broader market lean. The dashboard offers no judgment on which forecast is more reliable."
+  "preview_text": "The model favors England at 63%, with Panama's win probability at 12%. The underdog's chance sits well below the favorite's, reflecting a substantial quality gap in the statistical forecast.\n\nThe draw probability of 25% suggests a meaningful likelihood of a stalemate, making this a moderately competitive match rather than one expected to produce a decisive result with high frequency. England's 63% win rate leaves room for either team to avoid defeat, though Panama's path to victory remains narrow.\n\nThe market consensus—both sportsbooks and Polymarket—leans more decisively toward England, pricing a win at 75–78% versus the model's 63%. The books also compress the draw down to 14–16%, compared to the model's 25%. These gaps of roughly 10–15 percentage points suggest meaningful divergence between the statistical forecast and market pricing. The dashboard does not adjudicate which is more accurate."
 }

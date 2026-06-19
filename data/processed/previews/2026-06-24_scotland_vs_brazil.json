@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Brazil",
   "date": "2026-06-24",
-  "input_hash": "33d89871b596054cd53f742c4d2715cf49e111f8",
-  "generated_at": "2026-06-16T07:49:12+00:00",
+  "input_hash": "f2f538d639cdef1c85aa820635f3e070f1572160",
+  "generated_at": "2026-06-19T05:47:22+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Brazil at 63%, leaving Scotland with a modest 12% chance of victory. The underdog's path is narrow but not impossible; the gap between the two sides is substantial but does not eliminate Scotland's mathematical claim on an upset.\n\nThe draw probability of 25% suggests a genuinely competitive match with real plausibility for a stalemate result. Brazil's win probability exceeds Scotland's by roughly 51 percentage points, indicating a clear hierarchy in expected performance. The spread across all three outcomes remains fairly distributed, however — no single result dominates to the degree that would signal overwhelming dominance.\n\nModel and market show broad alignment. The sportsbook consensus places Brazil at 66%, only 3 percentage points higher than the model; Scotland's gap is similar (14% to 12%). Polymarket prices drift slightly further toward Brazil but stay within a narrow band. The three sources agree substantially on the fundamental shape of the match."
+  "preview_text": "The model favors Brazil at 63%, with Scotland's win probability at 12%. The underdog's chances are substantially lower, though the draw probability of 25% suggests the match retains meaningful competitive structure rather than appearing a foregone conclusion.\n\nThe gap between Brazil and Scotland is wide enough that the modal outcome leans decisively toward a Brazil victory. However, the draw sits at nearly one-quarter, indicating the model does not price a scenario where Scotland is heavily overmatched. The three-way spread reflects a contest where Brazil is favored but neither team's outcome is narrow or fragile.\n\nThe model and sportsbook consensus align closely across all three outcomes. Brazil's advantage is 4 percentage points higher in the book (67% vs 63%), while draws trade 5 points lower in the market (20% vs 25%). Polymarket prices sit between the two, with Brazil near 69%. The small divergences suggest no material disagreement on the fundamental probabilities."
 }

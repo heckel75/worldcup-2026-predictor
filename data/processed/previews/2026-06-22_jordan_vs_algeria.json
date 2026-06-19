@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Algeria",
   "date": "2026-06-22",
-  "input_hash": "6d76772970cc79095a58bbfd163f26139c34c485",
-  "generated_at": "2026-06-18T05:30:00+00:00",
+  "input_hash": "87fbe859822c2faf4e9a93ae704772e7af1e570d",
+  "generated_at": "2026-06-19T05:46:52+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Algeria as favourite with a 45% win probability, compared to Jordan's 24% chance. The 21 percentage point gap reflects a meaningful but not dominant edge; Algeria is preferred but faces genuine opposition.\n\nThe draw sits at 30%, the highest outcome probability in the forecast. This substantial draw likelihood suggests a competitive match where neither side is expected to run away with play. The even distribution across outcomes—no single result topping 46%—indicates the model sees genuine uncertainty in the result.\n\nThe sportsbook consensus and Polymarket prices both lean considerably more confident in Algeria, assigning it a 60–61% win probability versus the model's 45%. The market discounts Jordan's chances to 15–16% and the draw to 23–24%. These gaps of 8–15 percentage points represent material divergence. The dashboard makes no claim about which assessment is more reliable; traders and the model are working from identical input data yet reaching different conclusions about tail risk and match structure."
+  "preview_text": "The model favours Algeria at 45%, while Jordan carries a 25% chance of victory. The remaining probability—30%—falls to a draw, a non-trivial outcome that reflects competitive balance at the margins.\n\nThe win-loss spread is notably asymmetric. Algeria is a clear favourite, but the model assigns substantial combined probability to either a Jordan win or a stalemate. A draw ranks as the second-most-likely single outcome, suggesting the match could remain genuinely competitive through regulation.\n\nModel and market diverge materially. The sportsbook consensus rates Algeria at 61%, some 16 percentage points above the model's 45%. The market also narrows Jordan's win probability to 16%, versus the model's 25%. Polymarket pricing aligns closely with sportsbook consensus. The dashboard does not adjudicate between these sources; the gap likely reflects different information sets or risk pricing rather than forecast error."
 }

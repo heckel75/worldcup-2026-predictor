@@ -5,10 +5,10 @@
   "date": "2026-06-22",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 15.3,
-  "input_hash": "78c05f6c156dd2eca349c6d6c8465592868eef73",
-  "generated_at": "2026-06-18T05:31:39+00:00",
+  "max_gap_pp": 15.4,
+  "input_hash": "8bfa2dab2c6f228e9498290c6133b1afe671743b",
+  "generated_at": "2026-06-19T05:48:38+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Algeria a 60% win probability versus the model's 45%, a 15-percentage-point gap favoring the favorite. Both sources rank Algeria highest, but sportsbooks and Polymarket have moved substantially more conviction toward an Algeria victory, while compressing both Jordan's win odds and the draw proportionally. This sharpening could reflect recent form, injury status, or lineup news that arrived after the model's last update—information that real-money flows have incorporated but the statistical baseline cannot see. The dashboard flags this as a notable signal worth monitoring rather than a definitive answer about which assessment will prove more accurate."
+  "commentary_text": "The market is substantially more confident in an Algeria win, pricing it at 61% versus the model's 45%—a 16-point gap—while also cutting Jordan's chances to 16% from 25%. Both sources rank Algeria as favorite, but the sportsbook consensus and Polymarket show sharper conviction, likely reflecting information unavailable to the model such as recent form, injuries, or lineup changes that could meaningfully affect team strength. The dashboard flags this divergence as a signal worth monitoring rather than evidence that either source has correctly calibrated the match outcome."
 }

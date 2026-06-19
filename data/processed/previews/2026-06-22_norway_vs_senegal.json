@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "Senegal",
   "date": "2026-06-22",
-  "input_hash": "eec3f05db888002757ca30d69d033e065ac6b56e",
-  "generated_at": "2026-06-18T05:29:52+00:00",
+  "input_hash": "b69c10ea6bfbb65c7146af8ec57ca2442d5e12c0",
+  "generated_at": "2026-06-19T05:46:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Norway as the slight favorite, assigning them a 43% win probability against Senegal's 26%. This narrow margin reflects a competitive matchup on a neutral ground where either outcome remains credible, though Norway hold the statistical edge.\n\nThe draw carries meaningful weight at 31%, suggesting the contest is unlikely to be decided by a wide margin. The win probabilities are compressed across the three outcomes, indicating neither team commands dominant control of the match space. A close, potentially deadlocked affair is the model's central scenario.\n\nThe sportsbook consensus and Polymarket prices align closely with the model across all three outcomes, with gaps under 3 percentage points. Market and model broadly agree that Norway lean slightly favored while remaining vulnerable to either a draw or an upset, indicating convergence on the competitive tightness of this fixture."
+  "preview_text": "The model favours Norway, assigning them a 43% chance of victory. Senegal's win probability stands at 26%, leaving a gap of 17 percentage points between the two sides' likelihoods. This indicates a meaningful favourite–underdog split, though the margin is not extreme.\n\nThe draw carries 31% probability according to the model, making it a material outcome in this matchup. The win probabilities are separated by roughly a sixth each, and the substantial draw chance suggests the sides are sufficiently close in strength that a stalemate is plausible. The fixture is likely to be competitive without being evenly balanced.\n\nThe sportsbook consensus tilts slightly toward Senegal compared to the model, pricing their win probability at 31.5% versus the model's 26%—a gap of roughly 5 percentage points. The books rate Norway's chances at 41%, nearly aligned with the model's 43%. Polymarket prices align closely with the sportsbook consensus. The divergences are modest and within the range of ordinary disagreement between forecasting approaches."
 }

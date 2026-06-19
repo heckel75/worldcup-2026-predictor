@@ -3,9 +3,9 @@
   "home_team": "Croatia",
   "away_team": "Ghana",
   "date": "2026-06-27",
-  "input_hash": "14d58c67194af27da76cd514259e5a86012adf9f",
-  "generated_at": "2026-06-18T05:31:22+00:00",
+  "input_hash": "30b4432cf4fe5305c77bbf7f07b6e4d1637b96bf",
+  "generated_at": "2026-06-19T05:48:30+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model backs Croatia heavily, assigning a 79% win probability against a 3% chance for Ghana. This reflects a substantial gap between the two sides, leaving Ghana with minimal winning odds under the statistical framework.\n\nThe win-draw-loss spread shows Croatia as clear favourite, yet the draw carries meaningful weight at 19%. A competitive first half remains plausible, though the model expects Croatia to pull clear if the match develops. The outcome distribution suggests Ghana's path to points runs primarily through a stalemate rather than victory.\n\nThe model and market diverge significantly here. Sportsbooks price Croatia at 58% and Ghana at 17%, implying much tighter margins than the model's 79–3% split. Polymarket consensus lies between the two, at 60% Croatia and 15% Ghana. The dashboard does not claim to know which source better captures match reality; the gap warrants attention from users assessing their own conviction."
+  "preview_text": "The model backs Croatia heavily, assigning them a 79% chance of victory compared to Ghana's 3%. The gap reflects a substantial asymmetry in the forecast, with the model seeing this as a relatively one-sided contest on a neutral pitch.\n\nThe draw probability of 19% sits between the win probabilities, suggesting the model expects Croatia to control play but Ghana to have enough resilience to avoid defeat outright. The win spread is wide—76 percentage points separate the favorites from the underdog—indicating the model views the sides as far from evenly matched.\n\nThe market and Polymarket consensus diverge meaningfully from the model. Both assign Ghana roughly 16% to win, compared to the model's 3%—a gap of 13 percentage points. The sportsbooks rate Croatia at 58%, roughly 20pp lower than the model's 79%. The draw estimates align more closely across sources, clustering near 25%. The dashboard does not adjudicate which forecast is more accurate; the discrepancy warrants attention from users evaluating the full range of available information."
 }

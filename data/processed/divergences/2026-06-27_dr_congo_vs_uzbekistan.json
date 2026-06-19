@@ -5,10 +5,10 @@
   "date": "2026-06-27",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 20.2,
-  "input_hash": "01ba4ab2cc54612e997d968482a85443d7130491",
-  "generated_at": "2026-06-18T05:31:49+00:00",
+  "max_gap_pp": 21.1,
+  "input_hash": "212617b24d58342ccf56e8ec8cc2a46f3cd5354e",
+  "generated_at": "2026-06-19T05:48:54+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Uzbekistan at 46%, while the sportsbook consensus favors DR Congo at 44%. On the Uzbekistan win specifically, the gap is 17 percentage points—the model substantially higher. This divergence could reflect recent form, injuries, or lineup changes that the model has not yet incorporated, or conversely, information baked into real-money prices that the statistical forecast cannot access. The dashboard surfaces this disagreement as a signal worth monitoring, not as evidence that either source has misjudged the match."
+  "commentary_text": "The model favors Uzbekistan at 46%, while the sportsbook consensus favors DR Congo at 45%—a 21-percentage-point gap on the DR Congo win probability. The market also prices the draw substantially lower than the model does (27% versus 30%). These gaps could reflect recent lineup news, injuries, or current form unavailable to the model's last update, particularly information affecting either team's attacking or defensive capability. The dashboard flags this as a notable signal rather than an endorsement of either forecast."
 }

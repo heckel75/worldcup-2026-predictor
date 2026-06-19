@@ -5,10 +5,10 @@
   "date": "2026-06-24",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 15.3,
-  "input_hash": "0e357e4c25adb94141801150f14946de3bc90a12",
-  "generated_at": "2026-06-14T08:52:17+00:00",
+  "max_gap_pp": 20.7,
+  "input_hash": "cb775510040386adaeaa476631ec9f3b864b9a09",
+  "generated_at": "2026-06-19T05:48:43+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market favors Bosnia and Herzegovina to win by 15 percentage points more than the model does (62% versus 46%), while both sources rank a Qatar upset as unlikely—though the market assigns it just 15% compared to the model's 23%. This divergence in confidence could reflect real-time information the model cannot access: recent form, lineup changes, or injury status among key players that the sportsbooks have priced in but the Elo-based forecast has not. The draw probability also shifts downward in the market's view, concentrating conviction toward a Bosnia win. The dashboard flags this as a signal of asymmetric information between the two sources, without adjudicating which assessment is more sound."
+  "commentary_text": "The sportsbook consensus assigns Bosnia and Herzegovina a 67% win probability versus the model's 46%, a 21-percentage-point gap favoring the underdog read from the statistical forecast. This divergence suggests the market may be pricing in information the model cannot access—recent form trends, injury status, or lineup changes—that substantially favors Bosnia and Herzegovina's chances. The model's Elo and goal distribution remain locked to historical data; real-money markets continuously incorporate breaking team news and bettors' latest intelligence. The dashboard surfaces this gap as a signal worth monitoring rather than a judgment on which assessment will prove correct."
 }

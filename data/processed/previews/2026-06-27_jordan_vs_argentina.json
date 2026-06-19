@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Argentina",
   "date": "2026-06-27",
-  "input_hash": "dc207199afc5a4be8fb687edeb9d3129da0c71c2",
-  "generated_at": "2026-06-18T05:31:08+00:00",
+  "input_hash": "e8bfa4659e8daadd20cf57cc8a115d6f6a43b65b",
+  "generated_at": "2026-06-19T05:48:15+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Argentina as a heavy favorite, assigning them a 79.5% win probability. Jordan's chance sits at 4.0%, a gap of 75 percentage points that reflects a substantial disparity in the statistical forecast.\n\nThe model's draw probability of 16.6% is the most likely non-Argentina outcome, suggesting the match retains some volatility despite the favorite's dominance. The win-loss spread is wide, but the draw rate is high enough to indicate this is not a completely lopsided affair—Jordan has avenues to avoid defeat even if victory remains unlikely.\n\nModel and sportsbook consensus are closely aligned across all three outcomes. The market assigns Argentina 78.6%, nearly matching the model's 79.5%. Jordan's win probability diverges by 3.5 percentage points (model higher), and draw estimates differ by 2.7 pp (model higher). These gaps fall well within normal variance and suggest broad agreement on match structure."
+  "preview_text": "The model favors Argentina at 79.5% to win, with Jordan's chances at just 3.9%. The underdog faces a steep climb, though the inclusion of a draw probability—16.6%—suggests the match retains some competitive uncertainty rather than being a complete mismatch.\n\nThe win-loss gap is substantial, but the draw probability is neither trivial nor dominant. Argentina is heavily favored on the three-way spread, yet draws remain plausible at roughly one in six outcomes. The asymmetry reflects a strong favorite facing a weaker opponent on a neutral ground, without the dynamic collapsing into a near-certain result.\n\nThe model and sportsbook consensus are closely aligned. The market places Argentina at 78.8%, just 0.7 percentage points below the model; Jordan sits at 7.0% versus 3.9%, a gap of 3.1pp. Polymarket prices show slightly wider confidence in Argentina at 81.3%. These small divergences fall within typical variance and suggest broad agreement that Argentina enters as the clear favorite."
 }

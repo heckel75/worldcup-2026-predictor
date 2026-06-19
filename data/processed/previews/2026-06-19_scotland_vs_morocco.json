@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Morocco",
   "date": "2026-06-19",
-  "input_hash": "cc05e7e92d53c632cfbcc9e0ee8fda4b49cb69e4",
-  "generated_at": "2026-06-16T07:48:11+00:00",
+  "input_hash": "30cef368831f566ea48cd25dd6d98307dff5f3ce",
+  "generated_at": "2026-06-19T05:46:01+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Morocco as the clear favorite with a 61% win probability, while Scotland's chance stands at 13%. The gap between them reflects a substantial difference in forecast strength, with Morocco favored to claim three points on the neutral ground.\n\nThe model projects a draw at 26%, making it a genuine possibility despite Morocco's advantage. The win probabilities are separated by nearly 48 percentage points, indicating the match is expected to lean decisively toward one outcome rather than remain competitive across the full ninety minutes. A Scotland upset remains in the lower tail of outcomes.\n\nThe model and market are closely aligned across all three outcomes. Morocco's win probability differs by roughly 6 percentage points between the two sources, while draw odds and Scotland's chances remain nearly identical. The consensus across sportsbooks, Polymarket, and the statistical model suggests little disagreement on the fundamental shape of this fixture."
+  "preview_text": "The model favors Morocco at 61%, with Scotland positioned as a clear underdog at 13%. Morocco holds a decisive edge in the forecast, though Scotland's 13% baseline win probability suggests the match will not be a formality.\n\nThe win-loss spread reflects a substantially favored side, but the 26% draw probability indicates genuine competitive balance in the likely outcome distribution. A draw sits between the two outright results, implying Morocco enters as favorite but Scotland can realistically avoid defeat. The matchup is not a mismatch on the narrow margin—it is competitive in the sense that draws and upsets both remain plausible, even if Morocco's advantage is clear.\n\nThe model and sportsbook consensus diverge modestly on Morocco's chances, with the market offering 55% versus the model's 61%—a 6 percentage point gap that reflects uncertainty about which forecast is more accurate. Scotland's win probability diverges by a similar span. Draw probabilities align closely across all three sources, clustering near 27%. The dashboard does not adjudicate between model and market readings; both represent informed but fallible estimates."
 }

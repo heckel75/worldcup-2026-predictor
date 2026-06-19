@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Haiti",
   "date": "2026-06-19",
-  "input_hash": "663a8cc922e13154406b009e1ecd3771a0eb6d23",
-  "generated_at": "2026-06-18T05:29:09+00:00",
+  "input_hash": "48d1d6067cd9bd9eb69b0592428d4643a58ece79",
+  "generated_at": "2026-06-19T05:46:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Brazil as a heavy favorite at 76% to win, while Haiti's path to victory registers at just 4%. The gap reflects a substantial asymmetry in expected quality, though Brazil's win probability leaves meaningful room for an alternative outcome.\n\nThe draw probability of 20% indicates the model sees this as genuinely competitive in structure despite the heavy Brazil lean. A Haiti upset remains a low-probability tail event, but draws occur in roughly one match in five under this distribution. The match is not forecast as a rout but rather as one where Brazil enters as clear favorites in a contest with real uncertainty about the final result.\n\nThe sportsbook consensus and Polymarket prices both diverge noticeably from the model, assigning Brazil roughly 87% and pushing the draw down to around 8–9%. That gap of 10–11 percentage points on the Brazil win probability is material. The dashboard makes no claim about which forecast is more accurate; the divergence likely reflects different methodologies and information sets between the statistical model and market prices."
+  "preview_text": "The model projects Brazil as a strong favorite with a 76% win probability, leaving Haiti with just a 4% chance of victory. The gap between the two outcomes is substantial, reflecting an asymmetry in expected quality. Haiti's path to an upset remains narrow on this projection.\n\nThe model's outcome distribution suggests a decisive lean without flattening the probability entirely. A draw at 20% is the second-most-likely single outcome, indicating that while Brazil is favored to win, the margin is not so dominant as to rule out a competitive match. The three-way spread reflects material uncertainty around whether Brazil converts its advantage into victory or draws instead.\n\nThe model and sportsbook consensus diverge meaningfully on Brazil's win probability. Books set it at 87%, roughly 11 percentage points higher than the model's 76%. Both sources agree Haiti's win chance sits near 4%, and both assign the draw a relatively low probability—though the model gives it nearly twice the sportsbook odds. The dashboard does not adjudicate between these differing assessments."
 }
