@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "Portugal",
   "date": "2026-06-27",
-  "input_hash": "d9ae10bbe268a2e1d630e121666ad67bf3cc97d7",
-  "generated_at": "2026-06-19T05:48:19+00:00",
+  "input_hash": "5f4523c96bc7b2e987a971d71ec4d3759169383f",
+  "generated_at": "2026-06-20T07:15:15+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates this fixture as nearly even, favoring Portugal marginally at 35% to Colombia's 34%. The two teams sit within a single percentage point in the model's assessment, suggesting a closely matched contest with little separation in underlying strength according to the statistical forecast.\n\nThe draw emerges as a genuinely plausible outcome at 32%, reflecting the compressed gap between win probabilities. The W/D/L spread is narrow across all three outcomes, indicating the model expects a competitive match without a clear operational favorite. This compression means that while one side may prevail, the margin in true strength is modest.\n\nA meaningful divergence appears between the model and the market consensus. Sportsbooks collectively assess Portugal's win probability at 45%, a gap of 10 percentage points above the model's estimate. Polymarket pricing aligns closely with the books. The dashboard does not adjudicate which source better captures the true likelihood, but the sustained 10-point gap across multiple market sources suggests material disagreement about Portugal's advantage."
+  "preview_text": "The model rates this fixture nearly even, favouring Portugal marginally at 35% over Colombia's 34%, with a draw given 32% probability. The statistical forecast sees minimal separation between the three outcomes, suggesting a genuinely competitive match where any result carries substantial chance.\n\nThe W/D/L spread reinforces competitive balance. Portugal holds only a 1 percentage point model edge, and the draw probability of 32% reflects genuine uncertainty about the margin. All three outcomes sit within a tight band, indicating the match is expected to be closely contested rather than one-sided.\n\nMarket consensus diverges meaningfully from the model. Sportsbooks strip to 46% Portugal, compared to the model's 35%—an 11 percentage point gap. Polymarket prices align closely with the books. The dashboard does not adjudicate which assessment is correct; the gap suggests either market belief in Portugal's tournament positioning or model underestimation of that factor given only the numerical inputs available."
 }

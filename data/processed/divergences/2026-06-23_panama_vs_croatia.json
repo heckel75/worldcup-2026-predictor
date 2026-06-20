@@ -6,9 +6,9 @@
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
   "max_gap_pp": 15.5,
-  "input_hash": "59e6941bcd07d19c6230cf80a6fd98766d079ec7",
-  "generated_at": "2026-06-18T05:31:41+00:00",
+  "input_hash": "e0cd9511e3d7adc6d19544cea153d44f885b94ec",
+  "generated_at": "2026-06-20T07:15:35+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The largest gap appears on the Croatia win outcome, where the market prices it at 62% versus the model's 47%, a 15-percentage-point spread in the market's favor. The model's wider assignment of probability to Panama suggests it sees a tighter match; the sportsbooks' sharper Croatia conviction could reflect recent lineup changes, injury updates, or current form information unavailable to the model at its last update. Both sources agree Croatia is favored, but the gap signals the market has incorporated information the statistical baseline cannot see. The dashboard flags this divergence as a monitoring point, not a judgment on which assessment is more sound."
+  "commentary_text": "The largest divergence is on a Croatia win, where the sportsbook consensus gives 62% but the model assigns 46%, a 16-percentage-point gap in the market's favor. The model and market agree Croatia is the favorite, but books and traders are substantially more confident in that outcome. This sharpening of conviction typically reflects information the model cannot access—recent form, injury status, or lineup changes in the weeks before the match could be moving odds toward Croatia. The dashboard flags this as a signal worth monitoring, neither validating nor questioning which assessment will prove more accurate."
 }

@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Brazil",
   "date": "2026-06-24",
-  "input_hash": "f2f538d639cdef1c85aa820635f3e070f1572160",
-  "generated_at": "2026-06-19T05:47:22+00:00",
+  "input_hash": "3d0167f4eae132c82282fb10767a7115c0eec36b",
+  "generated_at": "2026-06-20T07:14:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Brazil at 63%, with Scotland's win probability at 12%. The underdog's chances are substantially lower, though the draw probability of 25% suggests the match retains meaningful competitive structure rather than appearing a foregone conclusion.\n\nThe gap between Brazil and Scotland is wide enough that the modal outcome leans decisively toward a Brazil victory. However, the draw sits at nearly one-quarter, indicating the model does not price a scenario where Scotland is heavily overmatched. The three-way spread reflects a contest where Brazil is favored but neither team's outcome is narrow or fragile.\n\nThe model and sportsbook consensus align closely across all three outcomes. Brazil's advantage is 4 percentage points higher in the book (67% vs 63%), while draws trade 5 points lower in the market (20% vs 25%). Polymarket prices sit between the two, with Brazil near 69%. The small divergences suggest no material disagreement on the fundamental probabilities."
+  "preview_text": "The model favours Brazil at 63% to win, with Scotland assigned an 12% chance of victory. The draw carries meaningful weight at 25%, suggesting a competitive match where either side could claim a point.\n\nThe win-loss spread reflects a clear but not overwhelming favourite. Brazil's edge is substantial, yet the 25% draw probability indicates the match is unlikely to be a rout. Scotland's 12% win chance and the draw's prominence together suggest Brazil will face genuine resistance, with the outcome unlikely to be settled comfortably.\n\nThe model and sportsbook consensus align closely across all three outcomes, with differences under 5 percentage points. Polymarket prices tell a similar story, with marginally higher Brazil odds and lower draw weight. The three sources move in lockstep, indicating broad agreement that Brazil enters as a clear but not dominant favourite on a neutral pitch."
 }

@@ -6,9 +6,9 @@
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
   "max_gap_pp": 21.1,
-  "input_hash": "212617b24d58342ccf56e8ec8cc2a46f3cd5354e",
-  "generated_at": "2026-06-19T05:48:54+00:00",
+  "input_hash": "cb66a7ed5ab78b9c9e6ace06feffcc21dff4aa9c",
+  "generated_at": "2026-06-20T07:15:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Uzbekistan at 46%, while the sportsbook consensus favors DR Congo at 45%—a 21-percentage-point gap on the DR Congo win probability. The market also prices the draw substantially lower than the model does (27% versus 30%). These gaps could reflect recent lineup news, injuries, or current form unavailable to the model's last update, particularly information affecting either team's attacking or defensive capability. The dashboard flags this as a notable signal rather than an endorsement of either forecast."
+  "commentary_text": "The model favors Uzbekistan at 46%, while the sportsbook consensus favors DR Congo at 45%—a reversal of favorites despite nearly identical market prices (Polymarket aligns with books on DR Congo). The largest single gap appears on the draw: the model assigns 30% versus the market's 26%, a 4-percentage-point spread. The divergence may reflect differences in how recent form, lineup changes, or injury news are weighted; the model's Elo-based approach cannot access information posted after its last update, whereas real-money markets continuously incorporate breaking news. This dashboard surfaces the disagreement as a signal worth monitoring, not as evidence either source has mispriced the match."
 }

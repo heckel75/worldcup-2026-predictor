@@ -3,9 +3,9 @@
   "home_team": "Belgium",
   "away_team": "Iran",
   "date": "2026-06-21",
-  "input_hash": "189ca7ec0ebff4f852228e77088eb0130bbc2887",
-  "generated_at": "2026-06-19T05:46:32+00:00",
+  "input_hash": "ab66b5b21af1f8a07e6e4171fe79333354a197e8",
+  "generated_at": "2026-06-20T07:13:35+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model backs Belgium to win at 38%, but marks this as a relatively modest favorite. Iran's win probability of 30% sits only 8 percentage points below Belgium's, positioning the underdog as a genuine threat rather than a long shot.\n\nThe 31% draw probability signals a competitive match with narrow margins expected across outcomes. The win probabilities cluster tightly—no outcome commands dominant likelihood—suggesting either team could reasonably advance or the fixture could remain level after 90 minutes. Belgium holds an edge but the model describes a genuinely uncertain contest.\n\nA substantial gap separates model and market. Sportsbooks and Polymarket both assign Belgium roughly 67% to win, some 29 percentage points higher than the model's estimate. The market correspondingly prices Iran at around 12%, half the model's 30%. This divergence is material and deliberate; the dashboard does not adjudicate which assessment is correct, only that consensus opinions diverge meaningfully from the statistical forecast."
+  "preview_text": "The model favours Belgium to win at 38%, but edges into closer territory than sportsbook consensus suggests. Iran's win probability of 30% sits only 8 percentage points below Belgium's in the forecast, making this a notably competitive fixture by the model's assessment. The underdog threat is material.\n\nThe draw at 32% represents the modal outcome in the model's distribution, indicating genuine uncertainty about the match result. The three outcomes cluster within a 8-point band—no outcome falls below 30%—suggesting the match could plausibly unfold in any direction. This reflects a tight competitive balance rather than a heavily tilted contest.\n\nThe model and market diverge substantially. Sportsbooks compress Belgium's win to 67%, assign the draw just 21%, and reduce Iran's chance to 13%. That represents roughly a 28-point gap in Belgium's favour between the two sources and a 19-point gap on the draw. The Polymarket prices align closely with sportsbook consensus. The dashboard makes no claim as to which view is correct; the disagreement itself flags material uncertainty in how this fixture will resolve."
 }

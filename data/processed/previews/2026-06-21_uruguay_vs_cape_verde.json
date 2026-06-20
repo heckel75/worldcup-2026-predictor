@@ -3,9 +3,9 @@
   "home_team": "Uruguay",
   "away_team": "Cape Verde",
   "date": "2026-06-21",
-  "input_hash": "668906eb7b2bd16608fdd8c0f995fa1c408ffd9d",
-  "generated_at": "2026-06-18T05:29:45+00:00",
+  "input_hash": "cc7e79b49c9f929f7fb15c78f0d57076d0beb576",
+  "generated_at": "2026-06-20T07:13:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Uruguay at 74%, with Cape Verde at a modest 5% to upset on a neutral ground. The gap reflects a substantial differential in the underlying strength estimates, leaving the underdog with limited paths to victory.\n\nThe outcome distribution tilts decisively toward Uruguay, yet the draw carries meaningful likelihood at 21%. A narrow home-field effect is absent at a neutral venue, so the probabilities hinge on relative team quality alone. The match sits between lopsided and competitive—Uruguay enters as clear favorite but not overwhelming.\n\nThe model and market diverge meaningfully on Cape Verde's chances. Sportsbooks assign 12%, roughly double the model's 5%. The two sources align closely on Uruguay's win probability (model 74%, market 65%, Polymarket 66%) and are nearly identical on draws (21–23%). The dashboard does not adjudicate which reading of Cape Verde's strength is more accurate; the divergence warrants attention from users assessing tail risk."
+  "preview_text": "The model favors Uruguay at 74%, leaving Cape Verde with a 5% chance of victory. The underdog's low win probability reflects a substantial gap in the forecast, though a draw registers at 21% and remains a meaningful outcome.\n\nThe win–draw–loss spread shows Uruguay as clear favorite, yet the draw probability suggests the match has room for a competitive contest. Cape Verde's 5% win chance indicates the model sees an asymmetric contest, but the 21% draw rate signals neither team is overwhelmingly favored to settle matters inside normal time.\n\nThe model and sportsbook diverge meaningfully on Cape Verde's chances. The market consensus places the underdog at 12%, some 7 percentage points above the model's 5%. The market also assigns slightly lower odds to a Uruguay win (66% vs 74%). Polymarket pricing aligns more closely with the model on the draw and underdog win probability. The dashboard does not claim to know which assessment is correct."
 }

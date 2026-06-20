@@ -3,9 +3,9 @@
   "home_team": "Netherlands",
   "away_team": "Sweden",
   "date": "2026-06-20",
-  "input_hash": "84f4a4a2c806f5f858ca0ff710b237e63ddf7c0e",
-  "generated_at": "2026-06-19T05:46:24+00:00",
+  "input_hash": "79c934b8a9ed0087a0b195e2e6408614fda086b5",
+  "generated_at": "2026-06-20T07:13:26+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors the Netherlands at 68% to win, with Sweden offered just an 8% chance of victory. That 60-percentage-point gap reflects a strong asymmetry in the forecast, though the underdog retains non-trivial upside.\n\nThe spread shows a decisive lean toward a Dutch result but leaves meaningful room for either a draw or a Swedish upset. The 24% draw probability indicates the teams are not seen as vastly mismatched on the day, even if one is heavily preferred. A competitive match remains plausible despite the model's clear favorite.\n\nThe model and sportsbook consensus diverge noticeably on Sweden's chances. The market prices the Swedes at 20–21%, roughly 12 percentage points higher than the model's 8%. Both sources agree on a Netherlands edge and a draw probability near 24–25%. The dashboard does not adjudicate which interpretation is more accurate, only that the gap warrants awareness for users comparing forecasts."
+  "preview_text": "The model favors Netherlands at 68% to win, leaving Sweden with an 8% chance of victory. This is a heavily asymmetric matchup according to the statistical forecast, positioning the Netherlands as a strong favorite on a neutral pitch.\n\nThe draw sits at 24%, suggesting modest but real likelihood of a stalemate. The 60-percentage-point gap between Netherlands' win probability and Sweden's reflects a one-sided expected outcome, though the 24% draw probability indicates the match is not a foregone conclusion. Competitive balance is low; the model sees Sweden as a substantial underdog.\n\nThe market consensus diverges notably from the model. Sportsbooks price Netherlands at 56% and Sweden at 20%—a 12-percentage-point gap favoring the Swedes relative to the model's assessment. Polymarket aligns closely with sportsbooks. The dashboard does not adjudicate which source is more accurate; the spread reflects genuine disagreement about Swedish prospects on the day."
 }

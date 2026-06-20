@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 24.3,
-  "input_hash": "d00980d28222b0c40b73b3c4f8961f3bd6be5d83",
-  "generated_at": "2026-06-19T05:48:51+00:00",
+  "max_gap_pp": 25.3,
+  "input_hash": "8c8e1c5328c54101750d62437b893ce02521c0d1",
+  "generated_at": "2026-06-20T07:15:48+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Japan a 69% win probability while the market settles at 45%, a 24-percentage-point gap favoring the model's confidence in Japan. The market also prices Sweden's chances at 28% versus the model's 7%, a 21-point spread in the opposite direction. Both sources agree Japan is the favorite, but the market substantially hedges that view. This divergence may reflect information unavailable to the model's last update—recent lineup changes, injury developments, or shifts in team form since the model was calibrated—that have shifted real-money assessments toward a more competitive match. The dashboard surfaces this gap as a signal worth monitoring; it does not resolve whether the model's structural advantage or the market's real-time information captures the true probabilities."
+  "commentary_text": "The model rates Japan's win probability at 69% while the sportsbook consensus stands at 44%—a 25-percentage-point gap favoring the model's confidence in Japan. This substantial divergence suggests the market may be pricing in information the statistical model cannot access, such as recent lineup changes, injury reports, or current form trends that have emerged since the model's last update. The market's more cautious stance on Japan and higher assessment of Sweden's chances (29% versus 8% in the model) indicates real-money flows may reflect concerns about Japan's readiness or Sweden's recent performance that the Elo-based framework does not capture. The dashboard surfaces this gap as a signal of asymmetric information, not a judgment on which forecast is more accurate."
 }

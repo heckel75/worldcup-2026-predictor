@@ -3,9 +3,9 @@
   "home_team": "South Africa",
   "away_team": "South Korea",
   "date": "2026-06-24",
-  "input_hash": "ae30c1012c6d3d52a5568055842b3d70512c9c25",
-  "generated_at": "2026-06-19T05:47:10+00:00",
+  "input_hash": "a4d4edcbe4a4bf66e665be8ae556ac33800d4cae",
+  "generated_at": "2026-06-20T07:14:20+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea with a 62% win probability, relegating South Africa to a 13% chance of victory. The underdog faces a substantial gap; a South Korea triumph is roughly five times more likely than a South African upset in the model's estimation.\n\nThe draw probability of 26% suggests a moderately competitive match where neither side dominates the forecast. The win probabilities split decisively toward South Korea, but the presence of a quarter-probability for a stalemate indicates the match carries genuine uncertainty rather than a foregone conclusion.\n\nThe model and market are closely aligned across all three outcomes. South Korea's win probability differs by 3 percentage points, the draw by 1 point, and South Africa's by 4 points—all well within typical consensus variation. Polymarket and sportsbook prices converge similarly. The dashboard does not adjudicate between these sources, but the broad agreement suggests consistent assessment of the matchup's structure."
+  "preview_text": "The model favors South Korea at 62%, with South Africa given a 13% chance of victory. That 49-percentage-point gap reflects a clear asymmetry in expected strength on a neutral pitch.\n\nThe draw carries modest weight at 26%, suggesting the match has scope for a competitive, goalless outcome or a low-scoring stalemate. South Korea's win probability substantially exceeds the combined underdog chances, but the draw probability—roughly one-quarter—indicates the result remains genuinely uncertain rather than predetermined.\n\nModel and sportsbook consensus align closely across all three outcomes. South Korea sits at 62% versus 59% in the market, South Africa at 13% versus 17%, and the draw at 26% versus 24%. Gaps are under 4 percentage points throughout, signaling broad agreement on the match's likely character."
 }

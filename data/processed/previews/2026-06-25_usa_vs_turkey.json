@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Turkey",
   "date": "2026-06-25",
-  "input_hash": "f68d22a7cd112dcfc3b9e3e68087e167426fac3d",
-  "generated_at": "2026-06-19T05:47:29+00:00",
+  "input_hash": "d6e1444d872346f82ba352a4b897080432bf3aef",
+  "generated_at": "2026-06-20T07:14:40+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Turkey as the slight favorite, assigning a 38% win probability against a 31% chance for the USA. The remaining 31% probability falls to a draw, indicating substantial uncertainty about the decisive outcome.\n\nThe distribution suggests a competitive match with meaningful chances across all three outcomes. No single result dominates the model's expectation; the win probabilities for both teams sit within a narrow band, and the draw likelihood is nearly as high as either team's outright win chance. This points to a relatively tight contest at a neutral venue.\n\nThe model and sportsbooks diverge notably on the draw. Bookmakers and Polymarket both compress draw probability to around 25%, while the model estimates 31%—a gap of roughly 6 percentage points. Conversely, sportsbooks lean more heavily toward a USA win than the model does, favoring the Americans by about 9 percentage points. The dashboard does not adjudicate which view is correct; the disagreement likely reflects different methodological assumptions about match dynamics and uncertainty."
+  "preview_text": "The model rates Turkey as the slight favorite, assigning the team a 38% win probability against USA's 31%. The remaining 31% probability rests on a draw, suggesting a closely matched encounter where all three outcomes retain meaningful likelihood.\n\nThe win-loss spread is narrow across all outcomes, with no result commanding overwhelming support. Turkey holds a modest edge, but the gap to USA is only 6 percentage points, and draws account for nearly a third of possible scenarios. The fixture is expected to be competitive rather than one-sided.\n\nThe sportsbook consensus diverges noticeably from the model. Books favor USA at 45%, some 14 percentage points above the model's 31%, and price Turkey 7 points lower at 31%. Polymarket pricing aligns closer to sportsbooks than to the model. The dashboard does not adjudicate which estimate is correct; this gap may reflect different data, methodologies, or market sentiment not captured by the statistical forecast."
 }

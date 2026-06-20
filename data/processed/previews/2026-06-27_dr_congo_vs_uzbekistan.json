@@ -3,9 +3,9 @@
   "home_team": "DR Congo",
   "away_team": "Uzbekistan",
   "date": "2026-06-27",
-  "input_hash": "05ff288060836e9c1a846c055618989980f0a9de",
-  "generated_at": "2026-06-19T05:48:23+00:00",
+  "input_hash": "bf15aaecc38a7713a3da21d96d95a86803c7bfdc",
+  "generated_at": "2026-06-20T07:15:19+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Uzbekistan at 46%, with DR Congo positioned as underdog at 24%. This 22-percentage-point gap reflects a substantial edge for Uzbekistan in the statistical forecast. DR Congo's path to victory is narrow but genuine; the model sees the underdog winning roughly one match in four.\n\nThe draw emerges as a plausible outcome at 30%, the modal result. This relatively high draw probability indicates competitive balance in expected match flow, even as Uzbekistan carries the edge. The win probabilities are distributed unevenly—Uzbekistan's advantage is clear, yet the presence of a sizeable draw likelihood suggests neither side is projected to dominate decisively.\n\nA stark divergence separates the model from both sportsbook and prediction market consensus. The market elevates DR Congo to 45%, nearly doubling the model's 24% figure, while compressing Uzbekistan to 29%. The disagreement spans roughly 20 percentage points on DR Congo and 17 points on Uzbekistan. This dashboard presents both estimates without adjudicating which reflects true match probability."
+  "preview_text": "The model favors Uzbekistan at 46%, while DR Congo registers only 24% to claim victory. The underdog's modest win probability reflects a significant structural disadvantage in the statistical forecast, though a draw emerges as the second-most likely outcome at 30%.\n\nThe spread reveals a competitive but asymmetric match. Uzbekistan's 22-point edge over DR Congo's win odds is substantial, yet the draw probability of 30% suggests the teams are closer in expected performance than the win odds alone imply. The match carries real uncertainty; Uzbekistan is not overwhelmingly favored to win outright, and a 1-1 or 0-0 result remains plausible.\n\nThe market consensus and Polymarket prices diverge sharply from the model. Both sportsbooks and crypto traders assign DR Congo roughly 45% to win—nearly double the model's estimate—and price Uzbekistan at roughly 29%, well below the model's 46%. These sources broadly align with each other but diverge meaningfully from the statistical forecast across all three outcomes. The dashboard does not adjudicate which view is correct."
 }

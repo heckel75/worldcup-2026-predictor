@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "input_hash": "395ed4771ab3b7d33c07c3453f0c36b2c770d038",
-  "generated_at": "2026-06-19T05:47:14+00:00",
+  "input_hash": "4e14303f4d1787d4a9ed0ed42fd14d2a875432d3",
+  "generated_at": "2026-06-20T07:14:24+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Canada as the marginal favorite with a 41% win probability, placing them 13 percentage points ahead of Switzerland at 28%. This represents a competitive fixture where neither side commands clear dominance, though the model's assessment tilts toward the North American team.\n\nThe draw sits at 31%, suggesting meaningful daylight between Canada's win probability and a stalemate outcome. The spread across the three outcomes is relatively balanced rather than sharply concentrated, indicating the model expects a genuinely contested match where multiple results remain plausible throughout regular time.\n\nThe model and market diverge substantially here. Sportsbooks collectively favour Switzerland at 40%, a gap of 12 percentage points above the model's assessment, while placing Canada at just 30%—an 11-point downward shift from the model. Polymarket prices align closely with the sportsbook consensus. The dashboard does not adjudicate which source better reflects true match probability; the disagreement is marked enough that bettors should note the conflict before acting."
+  "preview_text": "The model favors Canada at 41%, with Switzerland a 28% underdog. The gap of 13 percentage points reflects a meaningful but not decisive edge for the Canadian side in the forecast.\n\nThe draw emerges as a plausible outcome at 31%, nearly level with Canada's win probability. This clustering of outcomes in the 28–41% range indicates a competitive match unlikely to be settled by a dominant performance; the result remains genuinely open across all three possibilities.\n\nModel and market diverge noticeably here. The sportsbook consensus backs Switzerland at 39% and Canada at 30%—a reversal of the model's ranking, with a gap of roughly 11 percentage points on each side. Polymarket prices align closely with the books. The dashboard does not adjudicate between these sources; the disagreement reflects genuine uncertainty about which team holds the true edge."
 }

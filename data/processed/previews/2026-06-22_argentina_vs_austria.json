@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Austria",
   "date": "2026-06-22",
-  "input_hash": "c079ddc8ab01b17c0a4a4ad195c56f11242174f0",
-  "generated_at": "2026-06-19T05:46:48+00:00",
+  "input_hash": "b3941873ecca7ac219f808c73ab9fa79f5851f74",
+  "generated_at": "2026-06-20T07:13:58+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Argentina as a heavy favourite at 76%, leaving Austria just 4% to win. This represents a pronounced imbalance: the model sees Argentina as roughly 19 times more likely to emerge victorious than their opponent.\n\nThe model's W/D/L spread reflects a highly asymmetric contest. A draw at 20% remains a plausible outcome, but the fixture leans decisively toward an Argentina victory. Austria's 4% win probability suggests the model expects them to offer minimal resistance, though draws can compress win chances even for strong favourites.\n\nThe sportsbook consensus diverges materially from the model. Books price Austria's win probability at 16%, a gap of 12 percentage points above the model's estimate. Conversely, books assign Argentina only 60% versus the model's 76%—a 16-point shortfall. Polymarket prices align closer to the sportsbooks than to the model. The dashboard makes no claim about which source better forecasts the outcome; the divergence warrants attention from users weighing their own views."
+  "preview_text": "The model rates Argentina as the overwhelming favorite with a 76% chance of victory, leaving Austria just 4% to win. That asymmetry reflects a substantial quality gap in the forecast, though the underdog retains a non-trivial probability of an upset.\n\nThe win-draw-loss spread shows Argentina heavily favored but with meaningful draw probability at 20%. A stalemate is plausible enough to influence match strategy, yet the model's central case strongly leans toward an Argentine win rather than a competitive equilibrium. The gap between the favorite and underdog is wide rather than closely matched.\n\nThe model and market diverge meaningfully. Sportsbooks offer Argentina only 60%, roughly 16 percentage points lower than the model, while assigning Austria 16%—four times the model's estimate. Polymarket pricing falls between these two but sits closer to the books. The dashboard does not claim to know which source is right; the gap suggests material disagreement on Argentina's true advantage."
 }

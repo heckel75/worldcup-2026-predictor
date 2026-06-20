@@ -3,9 +3,9 @@
   "home_team": "Morocco",
   "away_team": "Haiti",
   "date": "2026-06-24",
-  "input_hash": "ce6d2cdc78e615950126c6a2b985f4c3652e8896",
-  "generated_at": "2026-06-19T05:47:25+00:00",
+  "input_hash": "6d2b001c48bdfe765119a6885250b87b37c616e1",
+  "generated_at": "2026-06-20T07:14:36+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Morocco at 74%, with Haiti given a 5% chance of victory. The 69-percentage-point gap reflects a heavily asymmetric contest in which the underdog enters as a substantial longshot.\n\nThe win-draw-loss spread shows Morocco as commanding favorite, though the 21% draw probability suggests the match carries meaningful competitive uncertainty. A draw remains plausible; Haiti's path to victory is narrow but not impossible within the forecast range.\n\nModel and sportsbook are tightly aligned on Morocco's win probability, differing by less than 1 percentage point. Both sources assign Haiti materially lower odds than the model does—roughly 4 percentage points lower on average across the three books—while crediting the draw at somewhat lower rates. The dashboard does not adjudicate between these minor divergences; both reflect extreme confidence in Morocco."
+  "preview_text": "The model rates Morocco as a clear favorite with a 74% win probability, compared to Haiti's 5% chance of victory. The gap reflects a substantial disparity in the teams' underlying strength according to the statistical forecast. Haiti faces a steep task on a neutral ground.\n\nThe draw emerges as a meaningful outcome in the model's assessment, hovering near one-in-five at 21%. This suggests Morocco is not so dominant that a stalemate becomes implausible, and Haiti's defensive shape could plausibly frustrate attacking play over ninety minutes. The win-probability spread indicates a competitive match within a lopsided matchup—Morocco favored but not overwhelmingly.\n\nThe sportsbook consensus and Polymarket prices both shade Morocco's chances higher, at 79% and 81% respectively, while compressing the draw to 14% and 14%. The model sits roughly 5 percentage points below the market on a Morocco win. The dashboard does not adjudicate which source better reflects reality; the divergence is moderate but persistent across both market samples."
 }

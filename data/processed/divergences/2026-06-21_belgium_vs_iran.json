@@ -5,10 +5,10 @@
   "date": "2026-06-21",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 28.9,
-  "input_hash": "6d220562ab427a94ef62854f6652926bae9f7f09",
-  "generated_at": "2026-06-19T05:48:33+00:00",
+  "max_gap_pp": 28.3,
+  "input_hash": "cb7c0f8357a6b09172810543804a8785dd3aca96",
+  "generated_at": "2026-06-20T07:15:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Belgium a 67% win probability versus the model's 38%, a 29-percentage-point gap favoring the favorite. The model sees Iran as competitive, pricing them at 30%, while the market credits them at just 12%—a 18-point spread suggesting real-money flows are pricing in information the model cannot access. Recent form, injuries, or lineup changes could all sharpen conviction in Belgium's superiority; the dashboard surfaces this as a meaningful signal without adjudicating which source has better visibility into such factors."
+  "commentary_text": "The sportsbooks assign Belgium a 67% win probability versus the model's 38%, a 29-percentage-point gap favoring the favorite. The market also compresses Iran's chances to 13% from the model's 30%, suggesting genuine information tightening Belgium's edge rather than random noise. Recent form, lineup availability, or injury status could account for this sharpening—the model's Elo baseline may not reflect current squad condition or momentum that real-money traders can observe. The dashboard flags this divergence as a significant signal worth monitoring; neither source is self-evidently correct, but the gap's direction and magnitude invite scrutiny of what changed since the model's last update."
 }
