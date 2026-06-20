@@ -31,6 +31,7 @@ import calibration
 import clock
 import make_og_cards
 import whats_changed
+from verdict import VERDICT_BUCKETS, _verdict
 
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -563,74 +564,9 @@ def _build_match(row) -> dict:
 
 _OUTCOME_SLOT = {"H": "home", "D": "draw", "A": "away"}
 
-
-def _verdict(rec: dict) -> dict | None:
-    """Which source's frozen pre-match forecast was closest to what happened.
-
-    A source "participates" if it froze all three probs; it "picked" the
-    outcome if its OWN argmax over (home, draw, away) equals the realized
-    result. Four ordered branches (after the <2-participant guard):
-      1. Fewer than two participating sources -> no contest, None.
-      2. No participating source picked the outcome -> "all_missed" (everyone
-         forecast the wrong result — an upset nobody saw), credits nobody.
-      3. Every participating source picked the outcome AND the top-two
-         on-outcome probs are within 2pp -> "wash" (sources agreed), credits
-         nobody. Tightened from Session 37: now requires ALL to have picked it,
-         so a 2-of-3 where the model missed no longer launders into a wash.
-      4. The two highest on-outcome probs are within 2pp of each other and BOTH
-         are markets (books + Polymarket), >2pp clear of the model -> "markets"
-         (the markets jointly beat the model). Credits NEITHER market
-         individually — counted in its own scoreboard bucket, no books/Poly
-         column bump (Session 37 "distinct wins only"). This is the USA-Australia
-         case the old logic mislabelled "sources agreed".
-      5. Otherwise the single source with the highest on-outcome prob, separated
-         by >2pp from the next -> "{source} closest", credits that source.
-
-    A bunched residual that none of 2-4 resolve (e.g. only one market present,
-    or the model tied with a single market) is too close to separate -> "wash",
-    credits nobody. Only a distinct source winner ("model"/"books"/"Polymarket")
-    credits the index scoreboard; "wash", "all_missed" and "markets" credit
-    nobody."""
-    slot = _OUTCOME_SLOT[rec["outcome"]]
-    slots = ("home", "draw", "away")
-    # (name, prob_on_outcome, picked_outcome)
-    entries = []
-    for name, tmpl in (("model", "p_{}"),
-                       ("books", "p_{}_book"),
-                       ("Polymarket", "p_{}_poly")):
-        vals = {s: rec.get(tmpl.format(s)) for s in slots}
-        if any(pd.isna(v) for v in vals.values()):
-            continue  # a source freezes all three probs or none
-        probs = {s: float(v) for s, v in vals.items()}
-        argmax = max(slots, key=lambda s: probs[s])
-        entries.append((name, probs[slot], argmax == slot))
-    if len(entries) < 2:                                          # branch 1
-        return None
-
-    parts = [f"{'Model gave this result' if name == 'model' else name} {_pct0(p)}"
-             for name, p, _ in entries]
-    body = ", ".join(parts)
-
-    if not any(picked for _, _, picked in entries):              # branch 2
-        return {"winner": "all_missed", "text": f"{body} — all sources missed."}
-
-    ranked = sorted(entries, key=lambda e: e[1], reverse=True)
-    bunched = (ranked[0][1] - ranked[1][1]) <= 0.02
-
-    if all(picked for _, _, picked in entries) and bunched:      # branch 3
-        return {"winner": "wash", "text": f"{body} — sources agreed."}
-
-    markets = {"books", "Polymarket"}
-    if (bunched and len(entries) >= 3                            # branch 4
-            and ranked[0][0] in markets and ranked[1][0] in markets
-            and (ranked[1][1] - ranked[2][1]) > 0.02):
-        return {"winner": "markets", "text": f"{body} — markets closest."}
-
-    if not bunched:                                              # branch 5
-        return {"winner": ranked[0][0], "text": f"{body} — {ranked[0][0]} closest."}
-
-    # Bunched residual nothing above resolved: credit nobody.
-    return {"winner": "wash", "text": f"{body} — sources agreed."}
+# _verdict + VERDICT_BUCKETS now live in src/verdict.py (Session DIVLOG-1) so the
+# index scoreboard and the Divergence Log attribution scoreboard share one
+# implementation. Imported at the top of this module.
 
 
 def _build_played_match(rec: dict) -> dict:
@@ -922,8 +858,7 @@ def build_site() -> None:
     # winner, so every possible winner must exist as a key or a verdict would
     # KeyError). "markets" counts joint-market wins without crediting books or
     # Polymarket individually.
-    verdict_counts = {"model": 0, "books": 0, "Polymarket": 0,
-                      "markets": 0, "wash": 0, "all_missed": 0}
+    verdict_counts = {b: 0 for b in VERDICT_BUCKETS}
     for m in played_matches:
         if m["verdict"]:
             verdict_counts[m["verdict"]["winner"]] += 1
