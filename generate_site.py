@@ -29,6 +29,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 import calibration
 import clock
+import divergence_log
 import make_og_cards
 import whats_changed
 from verdict import VERDICT_BUCKETS, _verdict
@@ -794,6 +795,99 @@ def _methodology_stats(primary_sum: dict, full_sum: dict) -> dict:
     }
 
 
+# ----------------------------------------------------------------------
+# Divergence Log (Session DIVLOG-1) — archive table + attribution scoreboard.
+# generate_site is the pure consumer/renderer; src/divergence_log.py owns the
+# computation (it returns internal names, this applies DISPLAY_NAMES + links).
+# ----------------------------------------------------------------------
+
+_GAP_BUCKET_LABEL = {key: label for key, label, _lo, _hi in divergence_log.GAP_BUCKETS}
+
+# Verdict winner -> archive display label (markets/wash/all_missed are the
+# no-credit buckets; mirrors the index scoreboard's vocabulary).
+_VERDICT_LABEL = {
+    "model":      "Model closest",
+    "books":      "Sportsbook closest",
+    "Polymarket": "Polymarket closest",
+    "markets":    "Markets closest",
+    "wash":       "Sources agreed",
+    "all_missed": "All missed",
+}
+
+
+def _divlog_prob_fmt(p: float) -> str:
+    return "—" if pd.isna(p) else f"{round(p * 100)}%"
+
+
+def _build_divlog() -> tuple[dict, pd.DataFrame]:
+    """Enrich divergence_log.build() output for the template + flat CSV.
+
+    Returns (template_context, csv_dataframe). CSV carries display names so the
+    public export is readable; the template gets the same rows plus link/data
+    attributes for client-side filtering and sorting."""
+    out = divergence_log.build(WC_PREDS_PATH)
+    rows = out["rows"]
+
+    csv_records = []
+    for r in rows:
+        r["home_display"] = disp(r["home_team"])
+        r["away_display"] = disp(r["away_team"])
+        r["match_label"] = f"{r['home_display']} v {r['away_display']}"
+        r["match_url"] = f"matches/{r['match_key']}.html"
+        r["date_human"] = _date_human(r["date"])
+        r["p_model_fmt"] = _divlog_prob_fmt(r["p_model"])
+        r["p_book_fmt"] = _divlog_prob_fmt(r["p_book"])
+        r["p_poly_fmt"] = _divlog_prob_fmt(r["p_poly"])
+        r["gap_pp"] = None if pd.isna(r["gap"]) else round(r["gap"] * 100)
+        r["gap_fmt"] = "—" if r["gap_pp"] is None else f"{r['gap_pp']}pp"
+        r["gap_sort"] = -1 if r["gap_pp"] is None else r["gap_pp"]
+        r["bucket_label"] = _GAP_BUCKET_LABEL.get(r["gap_bucket"], "No market")
+        r["bucket_attr"] = r["gap_bucket"] or "none"
+        r["div_type_label"] = DIV_LABELS.get(r["divergence_type"], "—")
+        r["div_type_attr"] = r["divergence_type"] or "none"
+        r["verdict_label"] = _VERDICT_LABEL.get(r["verdict_winner"], "—")
+
+        csv_records.append({
+            "date": r["date"],
+            "match": r["match_label"],
+            "stage": r["stage"],
+            "group": r["group"],
+            "outcome": r["outcome"],
+            "result": r["result_label"],
+            "score": r["score"] if r["score"] else "",
+            "p_model_on_outcome": "" if pd.isna(r["p_model"]) else round(r["p_model"], 4),
+            "p_sportsbook_on_outcome": "" if pd.isna(r["p_book"]) else round(r["p_book"], 4),
+            "p_polymarket_on_outcome": "" if pd.isna(r["p_poly"]) else round(r["p_poly"], 4),
+            "gap_pp": "" if r["gap_pp"] is None else r["gap_pp"],
+            "gap_bucket": r["bucket_label"] if r["gap_bucket"] else "",
+            "divergence_type": r["divergence_type"],
+            "flagged": r["flagged"],
+            "verdict": r["verdict_label"],
+        })
+
+    # Distinct stage values present, for the filter dropdown.
+    stages = sorted({r["stage"] for r in rows})
+
+    scoreboard = out["scoreboard"]
+    if scoreboard:
+        for s in scoreboard["sources"]:
+            s["win_rate_fmt"] = ("—" if s["win_rate"] is None
+                                 else f"{s['win_rate'] * 100:.0f}%")
+            s["brier_fmt"] = "—" if s["brier"] is None else f"{s['brier']:.3f}"
+            s["log_loss_fmt"] = "—" if s["log_loss"] is None else f"{s['log_loss']:.3f}"
+
+    context = {
+        "rows": rows,
+        "stages": stages,
+        "gap_buckets": [(key, label) for key, label, _lo, _hi in divergence_log.GAP_BUCKETS],
+        "div_types": list(DIV_LABELS.items()),
+        "scoreboard": scoreboard,
+        "n_played": out["n_played"],
+    }
+    csv_df = pd.DataFrame(csv_records)
+    return context, csv_df
+
+
 def build_site() -> None:
     snapshot = _latest_snapshot()
     snapshot_date = snapshot.stem  # filename is the date
@@ -1048,6 +1142,24 @@ def build_site() -> None:
         og_image=og_image,
     )
 
+    # --- divergence log (top-level: root="") + flat CSV export ---
+    divlog_ctx, divlog_csv = _build_divlog()
+    _render_page(
+        env, "divergence-log.html", OUTPUT_DIR / "divergence-log.html",
+        **divlog_ctx,
+        root="", generated_at=generated_at, snapshot_date=snapshot_date,
+        page_title="Divergence Log — model vs market, every result scored",
+        meta_description=(
+            "A match-by-match archive of where the statistical model, sportsbook "
+            "odds, and Polymarket agreed and diverged on the 2026 World Cup — and "
+            "which source called each result, with per-source Brier and log loss."
+        ),
+        canonical_url=f"{SITE_URL}/divergence-log.html",
+        og_image=og_image,
+    )
+    divlog_csv.to_csv(OUTPUT_DIR / "divergence-log.csv", index=False,
+                      encoding="utf-8")
+
     _copy_static()
     (OUTPUT_DIR / ".nojekyll").touch()
     (OUTPUT_DIR / "CNAME").write_text(CUSTOM_DOMAIN + "\n")
@@ -1057,6 +1169,7 @@ def build_site() -> None:
         f"{SITE_URL}/",
         f"{SITE_URL}/title-odds.html",
         f"{SITE_URL}/schedule.html",
+        f"{SITE_URL}/divergence-log.html",
         f"{SITE_URL}/calibration.html",
         f"{SITE_URL}/methodology.html",
     ] + [f"{SITE_URL}/matches/{m['key']}.html" for m in matches]
@@ -1079,7 +1192,7 @@ def build_site() -> None:
 
     print(f"Built site -> {OUTPUT_DIR}/")
     print(f"   snapshot : {snapshot.name} ({len(teams)} teams)")
-    print(f"   pages    : index.html + title-odds.html + schedule.html + calibration.html + methodology.html + {len(matches)} match pages")
+    print(f"   pages    : index.html + title-odds.html + schedule.html + divergence-log.html + calibration.html + methodology.html + {len(matches)} match pages")
 
 
 # ----------------------------------------------------------------------

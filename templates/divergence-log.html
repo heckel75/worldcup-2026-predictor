@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Divergence Log</h1>
+<p class="lede">
+  The site's namesake: every completed match, scored against all three sources.
+  Where did the statistical model, the sportsbook consensus, and Polymarket
+  agree — and where did they diverge? For each result we show what each source
+  put on the outcome that actually happened, the model-vs-market gap, and which
+  source called it.
+</p>
+
+{# ---- Attribution scoreboard --------------------------------------- #}
+{% if scoreboard %}
+<section class="changes scoreboard divlog-attr">
+  <p class="section-label">Who's been closer — attribution</p>
+  <p class="scoreboard-note">
+    Early days — rates and scores will stabilise as more matches are played
+    (n shown per source below).
+  </p>
+  <table class="divlog-scoreboard">
+    <thead>
+      <tr>
+        <th class="col-src-name">Source</th>
+        <th>Distinct verdict wins</th>
+        <th>Win rate</th>
+        <th>Brier</th>
+        <th>Log loss</th>
+        <th>Scored on</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for s in scoreboard.sources %}
+      <tr>
+        <td class="col-src-name">{{ s.name }}</td>
+        <td>{{ s.wins }}</td>
+        <td>{{ s.win_rate_fmt }}</td>
+        <td>{{ s.brier_fmt }}</td>
+        <td>{{ s.log_loss_fmt }}</td>
+        <td>n = {{ s.n }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="scoreboard-line">
+    Over {{ scoreboard.n_verdicts }} scored match{{ "es" if scoreboard.n_verdicts != 1 else "" }}:
+    no-credit verdicts — markets agreed {{ scoreboard.counts.markets }} ·
+    sources agreed {{ scoreboard.counts.wash }} ·
+    all missed {{ scoreboard.counts.all_missed }}.
+  </p>
+  <p class="scoreboard-note">
+    A "distinct verdict win" means that source put a clearly higher probability
+    (&gt; 2pp) on the actual outcome than every other source. When the two
+    markets jointly beat the model they share a no-credit "markets agreed"
+    verdict — neither book nor Polymarket is credited individually, so a market's
+    win count never double-counts. Brier and log loss score every source on every
+    match where it posted a price (lower is better), independent of the verdict.
+    See the <a href="{{ root }}methodology.html">methodology</a> and
+    <a href="{{ root }}calibration.html">calibration page</a>.
+  </p>
+</section>
+{% endif %}
+
+{# ---- Archive table ------------------------------------------------- #}
+<section class="divlog">
+  <p class="section-label">Match archive</p>
+
+  {% if rows %}
+  <div class="divlog-filters">
+    <label>Stage
+      <select id="f-stage">
+        <option value="all">All</option>
+        {% for st in stages %}<option value="{{ st }}">{{ st }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Gap
+      <select id="f-gap">
+        <option value="all">All</option>
+        {% for key, label in gap_buckets %}<option value="{{ key }}">{{ label }}</option>{% endfor %}
+        <option value="none">No market</option>
+      </select>
+    </label>
+    <label>Divergence type
+      <select id="f-type">
+        <option value="all">All</option>
+        {% for key, label in div_types %}<option value="{{ key }}">{{ label }}</option>{% endfor %}
+        <option value="none">No market</option>
+      </select>
+    </label>
+    <label class="divlog-check">
+      <input type="checkbox" id="f-modelwon"> Model-won verdicts only
+    </label>
+    <span class="divlog-count" id="divlog-count"></span>
+  </div>
+
+  <div class="tree-wrap">
+    <table class="divlog-table" id="divlog-table">
+      <thead>
+        <tr>
+          <th class="sortable" data-sort="date" data-type="str">Date</th>
+          <th>Match</th>
+          <th>Stage</th>
+          <th>Result</th>
+          <th class="num">Model</th>
+          <th class="num">Sportsbook</th>
+          <th class="num">Polymarket</th>
+          <th class="sortable num" data-sort="gap" data-type="num">Gap</th>
+          <th>Divergence</th>
+          <th>Verdict</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in rows %}
+        <tr data-stage="{{ r.stage }}" data-bucket="{{ r.bucket_attr }}"
+            data-divtype="{{ r.div_type_attr }}" data-modelwon="{{ 1 if r.model_won else 0 }}"
+            data-gap="{{ r.gap_sort }}" data-date="{{ r.date }}">
+          <td>{{ r.date_human }}</td>
+          <td><a href="{{ root }}{{ r.match_url }}">{{ r.match_label }}</a></td>
+          <td>{{ r.stage }}{% if r.group %} {{ r.group }}{% endif %}</td>
+          <td>{% if r.score %}<span class="dl-score">{{ r.score }}</span> {% endif %}{{ r.result_label }}</td>
+          <td class="num">{{ r.p_model_fmt }}</td>
+          <td class="num">{{ r.p_book_fmt }}</td>
+          <td class="num">{{ r.p_poly_fmt }}</td>
+          <td class="num{% if r.flagged %} dl-flagged{% endif %}">{{ r.gap_fmt }}</td>
+          <td>{{ r.div_type_label }}</td>
+          <td><span class="tr-verdict tr-verdict--{{ r.verdict_winner or 'none' }}">{{ r.verdict_label }}</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="method-context">
+    Probabilities are each source's <strong>frozen pre-match</strong> figure on
+    the outcome that actually occurred — read from the ledger, not recomputed
+    after the fact. "Gap" is the largest single-outcome difference between the
+    model and the sportsbook (the same metric the divergence flag uses; ≥ 15pp is
+    flagged). A dash means no market was posted for that match, so it can't be
+    scored. Download the full archive as
+    <a href="{{ root }}divergence-log.csv">CSV</a>.
+  </p>
+  {% else %}
+  <p class="method-context">No matches have been played yet — the archive fills
+    in as results come in.</p>
+  {% endif %}
+</section>
+
+{% if rows %}
+<script>
+(function () {
+  var table = document.getElementById("divlog-table");
+  var tbody = table.querySelector("tbody");
+  var allRows = Array.prototype.slice.call(tbody.querySelectorAll("tr"));
+  var fStage = document.getElementById("f-stage");
+  var fGap = document.getElementById("f-gap");
+  var fType = document.getElementById("f-type");
+  var fModelWon = document.getElementById("f-modelwon");
+  var countEl = document.getElementById("divlog-count");
+
+  function applyFilters() {
+    var st = fStage.value, gap = fGap.value, ty = fType.value, mw = fModelWon.checked;
+    var shown = 0;
+    allRows.forEach(function (tr) {
+      var ok = (st === "all" || tr.dataset.stage === st)
+            && (gap === "all" || tr.dataset.bucket === gap)
+            && (ty === "all" || tr.dataset.divtype === ty)
+            && (!mw || tr.dataset.modelwon === "1");
+      tr.style.display = ok ? "" : "none";
+      if (ok) shown++;
+    });
+    countEl.textContent = shown + " of " + allRows.length + " matches";
+  }
+
+  [fStage, fGap, fType].forEach(function (el) { el.addEventListener("change", applyFilters); });
+  fModelWon.addEventListener("change", applyFilters);
+
+  var sortState = {};
+  table.querySelectorAll("th.sortable").forEach(function (th) {
+    th.addEventListener("click", function () {
+      var key = th.dataset.sort, numeric = th.dataset.type === "num";
+      var asc = !sortState[key];
+      sortState = {}; sortState[key] = asc;
+      var rows = allRows.slice();
+      rows.sort(function (a, b) {
+        var av = a.dataset[key], bv = b.dataset[key];
+        if (numeric) { av = parseFloat(av); bv = parseFloat(bv); }
+        if (av < bv) return asc ? -1 : 1;
+        if (av > bv) return asc ? 1 : -1;
+        return 0;
+      });
+      rows.forEach(function (tr) { tbody.appendChild(tr); });
+    });
+  });
+
+  applyFilters();
+})();
+</script>
+{% endif %}
+{% endblock %}

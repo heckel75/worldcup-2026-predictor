@@ -992,3 +992,133 @@ h1 {
 }
 .to-cell--absent { background: transparent; }
 .to-cell--absent .to-val { color: var(--muted); }
+
+/* --- Divergence Log (Session DIVLOG-1) ----------------------------- *
+ * Attribution scoreboard + filterable/sortable match archive. Reuses    *
+ * .tree-wrap / .scoreboard / .disclosure shells; self-contained, safe   *
+ * to append. Verdict colours are scoped to .divlog-table so the index   *
+ * scoreboard stays visually unchanged.                                  */
+
+.divlog-attr { margin-bottom: 2rem; }
+
+.divlog-scoreboard {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 0.6rem 0 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+}
+.divlog-scoreboard thead th {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  text-align: right;
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1.5px solid var(--border);
+  white-space: nowrap;
+}
+.divlog-scoreboard th.col-src-name,
+.divlog-scoreboard td.col-src-name { text-align: left; }
+.divlog-scoreboard td {
+  text-align: right;
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+.divlog-scoreboard tbody tr:last-child td { border-bottom: none; }
+.divlog-scoreboard td.col-src-name { font-family: var(--font-body); font-weight: 600; }
+
+.divlog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem 1.2rem;
+  margin: 0.6rem 0 1rem;
+  font-size: 0.85rem;
+}
+.divlog-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.divlog-filters select {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+}
+.divlog-filters .divlog-check {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.85rem;
+}
+.divlog-count {
+  margin-left: auto;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.divlog-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  font-size: 0.88rem;
+}
+.divlog-table thead th {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  text-align: left;
+  padding: 0.6rem 0.7rem;
+  border-bottom: 1.5px solid var(--border);
+  white-space: nowrap;
+}
+.divlog-table th.num, .divlog-table td.num {
+  text-align: right;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+.divlog-table th.sortable { cursor: pointer; }
+.divlog-table th.sortable:hover { color: var(--accent); }
+.divlog-table td {
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.divlog-table tbody tr:last-child td { border-bottom: none; }
+.divlog-table tbody tr:hover td { background: #fbfaf4; }
+.divlog-table a { color: var(--accent); text-decoration: none; white-space: nowrap; }
+.divlog-table a:hover { text-decoration: underline; }
+.dl-score { font-family: var(--font-mono); font-weight: 600; }
+.dl-flagged { color: var(--accent-gold); font-weight: 600; }
+
+.divlog-table .tr-verdict--model { color: var(--accent); font-weight: 600; }
+.divlog-table .tr-verdict--books,
+.divlog-table .tr-verdict--Polymarket,
+.divlog-table .tr-verdict--markets { color: var(--text); }
+.divlog-table .tr-verdict--wash,
+.divlog-table .tr-verdict--all_missed,
+.divlog-table .tr-verdict--none { color: var(--muted); }

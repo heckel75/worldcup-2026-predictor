@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divergence Log — model vs market, every result scored</title>
+  <meta name="description" content="A match-by-match archive of where the statistical model, sportsbook odds, and Polymarket agreed and diverged on the 2026 World Cup — and which source called each result, with per-source Brier and log loss.">
+  <link rel="canonical" href="https://worldcup.divergencelog.com/divergence-log.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="World Cup 2026 Predictor">
+  <meta property="og:title" content="Divergence Log — model vs market, every result scored">
+  <meta property="og:description" content="A match-by-match archive of where the statistical model, sportsbook odds, and Polymarket agreed and diverged on the 2026 World Cup — and which source called each result, with per-source Brier and log loss.">
+  <meta property="og:url" content="https://worldcup.divergencelog.com/divergence-log.html">
+  <meta property="og:image" content="https://worldcup.divergencelog.com/launch.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Divergence Log — model vs market, every result scored">
+  <meta name="twitter:description" content="A match-by-match archive of where the statistical model, sportsbook odds, and Polymarket agreed and diverged on the 2026 World Cup — and which source called each result, with per-source Brier and log loss.">
+  <meta name="twitter:image" content="https://worldcup.divergencelog.com/launch.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500;600&display=swap">
+  <!-- GoatCounter analytics — swap GOATCOUNTER_CODE for your account slug after signup at goatcounter.com -->
+  <script data-goatcounter="https://worldcup-divergencelog.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="index.html">World&nbsp;Cup&nbsp;2026 Predictor</a>
+    <nav class="site-nav">
+      <a href="index.html">Tournament</a>
+      <a href="title-odds.html">Title odds</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="divergence-log.html">Divergence Log</a>
+      <a href="calibration.html">Calibration</a>
+      <a href="methodology.html">Methodology</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <div class="share-strip">
+      <span class="share-label">Share</span>
+      <a class="share-link" target="_blank" rel="noopener"
+         href="https://x.com/intent/tweet?url=https%3A//worldcup.divergencelog.com/divergence-log.html&amp;text=Divergence%20Log%20%E2%80%94%20model%20vs%20market%2C%20every%20result%20scored">X</a>
+      <a class="share-link" target="_blank" rel="noopener"
+         href="https://www.reddit.com/submit?url=https%3A//worldcup.divergencelog.com/divergence-log.html&amp;title=Divergence%20Log%20%E2%80%94%20model%20vs%20market%2C%20every%20result%20scored">Reddit</a>
+      <a class="share-link" target="_blank" rel="noopener"
+         href="https://www.facebook.com/sharer/sharer.php?u=https%3A//worldcup.divergencelog.com/divergence-log.html">Facebook</a>
+      <a class="share-link" target="_blank" rel="noopener"
+         href="https://wa.me/?text=Divergence%20Log%20%E2%80%94%20model%20vs%20market%2C%20every%20result%20scored%20https%3A//worldcup.divergencelog.com/divergence-log.html">WhatsApp</a>
+    </div>
+    
+<h1>Divergence Log</h1>
+<p class="lede">
+  The site's namesake: every completed match, scored against all three sources.
+  Where did the statistical model, the sportsbook consensus, and Polymarket
+  agree — and where did they diverge? For each result we show what each source
+  put on the outcome that actually happened, the model-vs-market gap, and which
+  source called it.
+</p>
+
+
+
+<section class="changes scoreboard divlog-attr">
+  <p class="section-label">Who's been closer — attribution</p>
+  <p class="scoreboard-note">
+    Early days — rates and scores will stabilise as more matches are played
+    (n shown per source below).
+  </p>
+  <table class="divlog-scoreboard">
+    <thead>
+      <tr>
+        <th class="col-src-name">Source</th>
+        <th>Distinct verdict wins</th>
+        <th>Win rate</th>
+        <th>Brier</th>
+        <th>Log loss</th>
+        <th>Scored on</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="col-src-name">Model</td>
+        <td>7</td>
+        <td>22%</td>
+        <td>0.611</td>
+        <td>0.984</td>
+        <td>n = 32</td>
+      </tr>
+      
+      <tr>
+        <td class="col-src-name">Sportsbook</td>
+        <td>0</td>
+        <td>0%</td>
+        <td>0.558</td>
+        <td>0.922</td>
+        <td>n = 32</td>
+      </tr>
+      
+      <tr>
+        <td class="col-src-name">Polymarket</td>
+        <td>0</td>
+        <td>0%</td>
+        <td>0.560</td>
+        <td>0.928</td>
+        <td>n = 32</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <p class="scoreboard-line">
+    Over 32 scored matches:
+    no-credit verdicts — markets agreed 2 ·
+    sources agreed 10 ·
+    all missed 13.
+  </p>
+  <p class="scoreboard-note">
+    A "distinct verdict win" means that source put a clearly higher probability
+    (&gt; 2pp) on the actual outcome than every other source. When the two
+    markets jointly beat the model they share a no-credit "markets agreed"
+    verdict — neither book nor Polymarket is credited individually, so a market's
+    win count never double-counts. Brier and log loss score every source on every
+    match where it posted a price (lower is better), independent of the verdict.
+    See the <a href="methodology.html">methodology</a> and
+    <a href="calibration.html">calibration page</a>.
+  </p>
+</section>
+
+
+
+<section class="divlog">
+  <p class="section-label">Match archive</p>
+
+  
+  <div class="divlog-filters">
+    <label>Stage
+      <select id="f-stage">
+        <option value="all">All</option>
+        <option value="Group stage">Group stage</option>
+      </select>
+    </label>
+    <label>Gap
+      <select id="f-gap">
+        <option value="all">All</option>
+        <option value="lt5">Under 5pp</option><option value="5to15">5–15pp</option><option value="ge15">15pp+</option>
+        <option value="none">No market</option>
+      </select>
+    </label>
+    <label>Divergence type
+      <select id="f-type">
+        <option value="all">All</option>
+        <option value="model_under_concentrated">Market more confident than the model</option><option value="model_over_concentrated">Market hedges more than the model</option><option value="disagree_on_favorite">Model and market disagree on the favourite</option>
+        <option value="none">No market</option>
+      </select>
+    </label>
+    <label class="divlog-check">
+      <input type="checkbox" id="f-modelwon"> Model-won verdicts only
+    </label>
+    <span class="divlog-count" id="divlog-count"></span>
+  </div>
+
+  <div class="tree-wrap">
+    <table class="divlog-table" id="divlog-table">
+      <thead>
+        <tr>
+          <th class="sortable" data-sort="date" data-type="str">Date</th>
+          <th>Match</th>
+          <th>Stage</th>
+          <th>Result</th>
+          <th class="num">Model</th>
+          <th class="num">Sportsbook</th>
+          <th class="num">Polymarket</th>
+          <th class="sortable num" data-sort="gap" data-type="num">Gap</th>
+          <th>Divergence</th>
+          <th>Verdict</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_over_concentrated" data-modelwon="1"
+            data-gap="5" data-date="2026-06-19">
+          <td>19 June 2026</td>
+          <td><a href="matches/2026-06-19_scotland_vs_morocco.html">Scotland v Morocco</a></td>
+          <td>Group stage C</td>
+          <td><span class="dl-score">0–1</span> Away win</td>
+          <td class="num">61%</td>
+          <td class="num">55%</td>
+          <td class="num">56%</td>
+          <td class="num">5pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--model">Model closest</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="11" data-date="2026-06-19">
+          <td>19 June 2026</td>
+          <td><a href="matches/2026-06-19_brazil_vs_haiti.html">Brazil v Haiti</a></td>
+          <td>Group stage C</td>
+          <td><span class="dl-score">3–0</span> Home win</td>
+          <td class="num">76%</td>
+          <td class="num">86%</td>
+          <td class="num">88%</td>
+          <td class="num">11pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--wash">Sources agreed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="ge15"
+            data-divtype="disagree_on_favorite" data-modelwon="0"
+            data-gap="26" data-date="2026-06-19">
+          <td>19 June 2026</td>
+          <td><a href="matches/2026-06-19_usa_vs_australia.html">USA v Australia</a></td>
+          <td>Group stage D</td>
+          <td><span class="dl-score">2–0</span> Home win</td>
+          <td class="num">34%</td>
+          <td class="num">60%</td>
+          <td class="num">61%</td>
+          <td class="num dl-flagged">26pp</td>
+          <td>Model and market disagree on the favourite</td>
+          <td><span class="tr-verdict tr-verdict--markets">Markets closest</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="lt5"
+            data-divtype="model_over_concentrated" data-modelwon="0"
+            data-gap="4" data-date="2026-06-19">
+          <td>19 June 2026</td>
+          <td><a href="matches/2026-06-19_turkey_vs_paraguay.html">Türkiye v Paraguay</a></td>
+          <td>Group stage D</td>
+          <td><span class="dl-score">0–1</span> Away win</td>
+          <td class="num">20%</td>
+          <td class="num">24%</td>
+          <td class="num">25%</td>
+          <td class="num">4pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="lt5"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="3" data-date="2026-06-18">
+          <td>18 June 2026</td>
+          <td><a href="matches/2026-06-18_czech_republic_vs_south_africa.html">Czechia v South Africa</a></td>
+          <td>Group stage A</td>
+          <td><span class="dl-score">1–1</span> Draw</td>
+          <td class="num">29%</td>
+          <td class="num">26%</td>
+          <td class="num">25%</td>
+          <td class="num">3pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_over_concentrated" data-modelwon="1"
+            data-gap="13" data-date="2026-06-18">
+          <td>18 June 2026</td>
+          <td><a href="matches/2026-06-18_mexico_vs_south_korea.html">Mexico v South Korea</a></td>
+          <td>Group stage A</td>
+          <td><span class="dl-score">1–0</span> Home win</td>
+          <td class="num">60%</td>
+          <td class="num">47%</td>
+          <td class="num">48%</td>
+          <td class="num">13pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--model">Model closest</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_over_concentrated" data-modelwon="1"
+            data-gap="15" data-date="2026-06-18">
+          <td>18 June 2026</td>
+          <td><a href="matches/2026-06-18_switzerland_vs_bosnia_and_herzegovina.html">Switzerland v Bosnia and Herzegovina</a></td>
+          <td>Group stage B</td>
+          <td><span class="dl-score">4–1</span> Home win</td>
+          <td class="num">76%</td>
+          <td class="num">62%</td>
+          <td class="num">62%</td>
+          <td class="num">15pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--model">Model closest</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_over_concentrated" data-modelwon="1"
+            data-gap="11" data-date="2026-06-18">
+          <td>18 June 2026</td>
+          <td><a href="matches/2026-06-18_canada_vs_qatar.html">Canada v Qatar</a></td>
+          <td>Group stage B</td>
+          <td><span class="dl-score">6–0</span> Home win</td>
+          <td class="num">86%</td>
+          <td class="num">75%</td>
+          <td class="num">75%</td>
+          <td class="num">11pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--model">Model closest</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_over_concentrated" data-modelwon="0"
+            data-gap="5" data-date="2026-06-17">
+          <td>17 June 2026</td>
+          <td><a href="matches/2026-06-17_portugal_vs_dr_congo.html">Portugal v DR Congo</a></td>
+          <td>Group stage K</td>
+          <td><span class="dl-score">1–1</span> Draw</td>
+          <td class="num">20%</td>
+          <td class="num">17%</td>
+          <td class="num">16%</td>
+          <td class="num">5pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="8" data-date="2026-06-17">
+          <td>17 June 2026</td>
+          <td><a href="matches/2026-06-17_uzbekistan_vs_colombia.html">Uzbekistan v Colombia</a></td>
+          <td>Group stage K</td>
+          <td><span class="dl-score">1–3</span> Away win</td>
+          <td class="num">61%</td>
+          <td class="num">69%</td>
+          <td class="num">71%</td>
+          <td class="num">8pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--wash">Sources agreed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="lt5"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="4" data-date="2026-06-17">
+          <td>17 June 2026</td>
+          <td><a href="matches/2026-06-17_england_vs_croatia.html">England v Croatia</a></td>
+          <td>Group stage L</td>
+          <td><span class="dl-score">4–2</span> Home win</td>
+          <td class="num">53%</td>
+          <td class="num">56%</td>
+          <td class="num">56%</td>
+          <td class="num">4pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--wash">Sources agreed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="ge15"
+            data-divtype="disagree_on_favorite" data-modelwon="0"
+            data-gap="38" data-date="2026-06-17">
+          <td>17 June 2026</td>
+          <td><a href="matches/2026-06-17_ghana_vs_panama.html">Ghana v Panama</a></td>
+          <td>Group stage L</td>
+          <td><span class="dl-score">1–0</span> Home win</td>
+          <td class="num">11%</td>
+          <td class="num">44%</td>
+          <td class="num">44%</td>
+          <td class="num dl-flagged">38pp</td>
+          <td>Model and market disagree on the favourite</td>
+          <td><span class="tr-verdict tr-verdict--markets">Markets closest</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="lt5"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="3" data-date="2026-06-16">
+          <td>16 June 2026</td>
+          <td><a href="matches/2026-06-16_france_vs_senegal.html">France v Senegal</a></td>
+          <td>Group stage I</td>
+          <td><span class="dl-score">3–1</span> Home win</td>
+          <td class="num">65%</td>
+          <td class="num">65%</td>
+          <td class="num">66%</td>
+          <td class="num">3pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--wash">Sources agreed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="ge15"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="15" data-date="2026-06-16">
+          <td>16 June 2026</td>
+          <td><a href="matches/2026-06-16_iraq_vs_norway.html">Iraq v Norway</a></td>
+          <td>Group stage I</td>
+          <td><span class="dl-score">1–4</span> Away win</td>
+          <td class="num">65%</td>
+          <td class="num">80%</td>
+          <td class="num">82%</td>
+          <td class="num dl-flagged">15pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--wash">Sources agreed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_over_concentrated" data-modelwon="1"
+            data-gap="6" data-date="2026-06-16">
+          <td>16 June 2026</td>
+          <td><a href="matches/2026-06-16_argentina_vs_algeria.html">Argentina v Algeria</a></td>
+          <td>Group stage J</td>
+          <td><span class="dl-score">3–0</span> Home win</td>
+          <td class="num">74%</td>
+          <td class="num">69%</td>
+          <td class="num">70%</td>
+          <td class="num">6pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--model">Model closest</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="ge15"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="27" data-date="2026-06-16">
+          <td>16 June 2026</td>
+          <td><a href="matches/2026-06-16_austria_vs_jordan.html">Austria v Jordan</a></td>
+          <td>Group stage J</td>
+          <td><span class="dl-score">3–1</span> Home win</td>
+          <td class="num">45%</td>
+          <td class="num">71%</td>
+          <td class="num">73%</td>
+          <td class="num dl-flagged">27pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--wash">Sources agreed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="5" data-date="2026-06-15">
+          <td>15 June 2026</td>
+          <td><a href="matches/2026-06-15_belgium_vs_egypt.html">Belgium v Egypt</a></td>
+          <td>Group stage G</td>
+          <td><span class="dl-score">1–1</span> Draw</td>
+          <td class="num">29%</td>
+          <td class="num">24%</td>
+          <td class="num">24%</td>
+          <td class="num">5pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_over_concentrated" data-modelwon="0"
+            data-gap="13" data-date="2026-06-15">
+          <td>15 June 2026</td>
+          <td><a href="matches/2026-06-15_iran_vs_new_zealand.html">Iran v New Zealand</a></td>
+          <td>Group stage G</td>
+          <td><span class="dl-score">2–2</span> Draw</td>
+          <td class="num">25%</td>
+          <td class="num">28%</td>
+          <td class="num">28%</td>
+          <td class="num">13pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="lt5"
+            data-divtype="model_over_concentrated" data-modelwon="0"
+            data-gap="4" data-date="2026-06-15">
+          <td>15 June 2026</td>
+          <td><a href="matches/2026-06-15_spain_vs_cape_verde.html">Spain v Cabo Verde</a></td>
+          <td>Group stage H</td>
+          <td><span class="dl-score">0–0</span> Draw</td>
+          <td class="num">9%</td>
+          <td class="num">8%</td>
+          <td class="num">7%</td>
+          <td class="num">4pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="lt5"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="3" data-date="2026-06-15">
+          <td>15 June 2026</td>
+          <td><a href="matches/2026-06-15_saudi_arabia_vs_uruguay.html">Saudi Arabia v Uruguay</a></td>
+          <td>Group stage H</td>
+          <td><span class="dl-score">1–1</span> Draw</td>
+          <td class="num">24%</td>
+          <td class="num">22%</td>
+          <td class="num">21%</td>
+          <td class="num">3pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="10" data-date="2026-06-14">
+          <td>14 June 2026</td>
+          <td><a href="matches/2026-06-14_germany_vs_cura_ao.html">Germany v Curaçao</a></td>
+          <td>Group stage E</td>
+          <td><span class="dl-score">7–1</span> Home win</td>
+          <td class="num">84%</td>
+          <td class="num">92%</td>
+          <td class="num">94%</td>
+          <td class="num">10pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--wash">Sources agreed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="ge15"
+            data-divtype="model_over_concentrated" data-modelwon="0"
+            data-gap="16" data-date="2026-06-14">
+          <td>14 June 2026</td>
+          <td><a href="matches/2026-06-14_ivory_coast_vs_ecuador.html">Côte d&#39;Ivoire v Ecuador</a></td>
+          <td>Group stage E</td>
+          <td><span class="dl-score">1–0</span> Home win</td>
+          <td class="num">17%</td>
+          <td class="num">26%</td>
+          <td class="num">26%</td>
+          <td class="num dl-flagged">16pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="disagree_on_favorite" data-modelwon="0"
+            data-gap="14" data-date="2026-06-14">
+          <td>14 June 2026</td>
+          <td><a href="matches/2026-06-14_netherlands_vs_japan.html">Netherlands v Japan</a></td>
+          <td>Group stage F</td>
+          <td><span class="dl-score">2–2</span> Draw</td>
+          <td class="num">32%</td>
+          <td class="num">27%</td>
+          <td class="num">27%</td>
+          <td class="num">14pp</td>
+          <td>Model and market disagree on the favourite</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="9" data-date="2026-06-14">
+          <td>14 June 2026</td>
+          <td><a href="matches/2026-06-14_sweden_vs_tunisia.html">Sweden v Tunisia</a></td>
+          <td>Group stage F</td>
+          <td><span class="dl-score">5–1</span> Home win</td>
+          <td class="num">41%</td>
+          <td class="num">50%</td>
+          <td class="num">51%</td>
+          <td class="num">9pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--wash">Sources agreed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="lt5"
+            data-divtype="model_over_concentrated" data-modelwon="0"
+            data-gap="3" data-date="2026-06-13">
+          <td>13 June 2026</td>
+          <td><a href="matches/2026-06-13_qatar_vs_switzerland.html">Qatar v Switzerland</a></td>
+          <td>Group stage B</td>
+          <td><span class="dl-score">1–1</span> Draw</td>
+          <td class="num">16%</td>
+          <td class="num">15%</td>
+          <td class="num">14%</td>
+          <td class="num">3pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="ge15"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="20" data-date="2026-06-13">
+          <td>13 June 2026</td>
+          <td><a href="matches/2026-06-13_brazil_vs_morocco.html">Brazil v Morocco</a></td>
+          <td>Group stage C</td>
+          <td><span class="dl-score">1–1</span> Draw</td>
+          <td class="num">32%</td>
+          <td class="num">25%</td>
+          <td class="num">24%</td>
+          <td class="num dl-flagged">20pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="ge15"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="16" data-date="2026-06-13">
+          <td>13 June 2026</td>
+          <td><a href="matches/2026-06-13_haiti_vs_scotland.html">Haiti v Scotland</a></td>
+          <td>Group stage C</td>
+          <td><span class="dl-score">0–1</span> Away win</td>
+          <td class="num">45%</td>
+          <td class="num">61%</td>
+          <td class="num">62%</td>
+          <td class="num dl-flagged">16pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--wash">Sources agreed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="ge15"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="20" data-date="2026-06-13">
+          <td>13 June 2026</td>
+          <td><a href="matches/2026-06-13_australia_vs_turkey.html">Australia v Türkiye</a></td>
+          <td>Group stage D</td>
+          <td><span class="dl-score">2–0</span> Home win</td>
+          <td class="num">32%</td>
+          <td class="num">19%</td>
+          <td class="num">17%</td>
+          <td class="num dl-flagged">20pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="ge15"
+            data-divtype="model_over_concentrated" data-modelwon="0"
+            data-gap="28" data-date="2026-06-12">
+          <td>12 June 2026</td>
+          <td><a href="matches/2026-06-12_canada_vs_bosnia_and_herzegovina.html">Canada v Bosnia and Herzegovina</a></td>
+          <td>Group stage B</td>
+          <td><span class="dl-score">1–1</span> Draw</td>
+          <td class="num">18%</td>
+          <td class="num">27%</td>
+          <td class="num">27%</td>
+          <td class="num dl-flagged">28pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--all_missed">All missed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="lt5"
+            data-divtype="model_under_concentrated" data-modelwon="0"
+            data-gap="5" data-date="2026-06-12">
+          <td>12 June 2026</td>
+          <td><a href="matches/2026-06-12_usa_vs_paraguay.html">USA v Paraguay</a></td>
+          <td>Group stage D</td>
+          <td><span class="dl-score">4–1</span> Home win</td>
+          <td class="num">44%</td>
+          <td class="num">49%</td>
+          <td class="num">50%</td>
+          <td class="num">5pp</td>
+          <td>Market more confident than the model</td>
+          <td><span class="tr-verdict tr-verdict--wash">Sources agreed</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="ge15"
+            data-divtype="model_over_concentrated" data-modelwon="1"
+            data-gap="15" data-date="2026-06-11">
+          <td>11 June 2026</td>
+          <td><a href="matches/2026-06-11_mexico_vs_south_africa.html">Mexico v South Africa</a></td>
+          <td>Group stage A</td>
+          <td><span class="dl-score">2–0</span> Home win</td>
+          <td class="num">83%</td>
+          <td class="num">68%</td>
+          <td class="num">69%</td>
+          <td class="num dl-flagged">15pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--model">Model closest</span></td>
+        </tr>
+        
+        <tr data-stage="Group stage" data-bucket="5to15"
+            data-divtype="model_over_concentrated" data-modelwon="1"
+            data-gap="11" data-date="2026-06-11">
+          <td>11 June 2026</td>
+          <td><a href="matches/2026-06-11_south_korea_vs_czech_republic.html">South Korea v Czechia</a></td>
+          <td>Group stage A</td>
+          <td><span class="dl-score">2–1</span> Home win</td>
+          <td class="num">47%</td>
+          <td class="num">36%</td>
+          <td class="num">36%</td>
+          <td class="num">11pp</td>
+          <td>Market hedges more than the model</td>
+          <td><span class="tr-verdict tr-verdict--model">Model closest</span></td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <p class="method-context">
+    Probabilities are each source's <strong>frozen pre-match</strong> figure on
+    the outcome that actually occurred — read from the ledger, not recomputed
+    after the fact. "Gap" is the largest single-outcome difference between the
+    model and the sportsbook (the same metric the divergence flag uses; ≥ 15pp is
+    flagged). A dash means no market was posted for that match, so it can't be
+    scored. Download the full archive as
+    <a href="divergence-log.csv">CSV</a>.
+  </p>
+  
+</section>
+
+
+<script>
+(function () {
+  var table = document.getElementById("divlog-table");
+  var tbody = table.querySelector("tbody");
+  var allRows = Array.prototype.slice.call(tbody.querySelectorAll("tr"));
+  var fStage = document.getElementById("f-stage");
+  var fGap = document.getElementById("f-gap");
+  var fType = document.getElementById("f-type");
+  var fModelWon = document.getElementById("f-modelwon");
+  var countEl = document.getElementById("divlog-count");
+
+  function applyFilters() {
+    var st = fStage.value, gap = fGap.value, ty = fType.value, mw = fModelWon.checked;
+    var shown = 0;
+    allRows.forEach(function (tr) {
+      var ok = (st === "all" || tr.dataset.stage === st)
+            && (gap === "all" || tr.dataset.bucket === gap)
+            && (ty === "all" || tr.dataset.divtype === ty)
+            && (!mw || tr.dataset.modelwon === "1");
+      tr.style.display = ok ? "" : "none";
+      if (ok) shown++;
+    });
+    countEl.textContent = shown + " of " + allRows.length + " matches";
+  }
+
+  [fStage, fGap, fType].forEach(function (el) { el.addEventListener("change", applyFilters); });
+  fModelWon.addEventListener("change", applyFilters);
+
+  var sortState = {};
+  table.querySelectorAll("th.sortable").forEach(function (th) {
+    th.addEventListener("click", function () {
+      var key = th.dataset.sort, numeric = th.dataset.type === "num";
+      var asc = !sortState[key];
+      sortState = {}; sortState[key] = asc;
+      var rows = allRows.slice();
+      rows.sort(function (a, b) {
+        var av = a.dataset[key], bv = b.dataset[key];
+        if (numeric) { av = parseFloat(av); bv = parseFloat(bv); }
+        if (av < bv) return asc ? -1 : 1;
+        if (av > bv) return asc ? 1 : -1;
+        return 0;
+      });
+      rows.forEach(function (tr) { tbody.appendChild(tr); });
+    });
+  });
+
+  applyFilters();
+})();
+</script>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Forecast generated 2026-06-20 11:26 · snapshot 2026-06-20.
+    </p>
+    <p>
+      Updated once daily, before 10:00 Paris time — not live during matches. Last updated 20 June 2026.
+    </p>
+    <p>
+      Probabilities are model and market estimates, not statements of certainty.
+      See the <a href="methodology.html">methodology</a>.
+    </p>
+    <p>
+      Questions or feedback: <a href="mailto:worldcup@divergencelog.com">worldcup@divergencelog.com</a>
+    </p>
+  </footer>
+</body>
+</html>
