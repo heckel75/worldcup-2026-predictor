@@ -567,21 +567,33 @@ _OUTCOME_SLOT = {"H": "home", "D": "draw", "A": "away"}
 def _verdict(rec: dict) -> dict | None:
     """Which source's frozen pre-match forecast was closest to what happened.
 
-    Three ordered branches (a source "participates" if it has frozen probs):
+    A source "participates" if it froze all three probs; it "picked" the
+    outcome if its OWN argmax over (home, draw, away) equals the realized
+    result. Four ordered branches (after the <2-participant guard):
       1. Fewer than two participating sources -> no contest, None.
-      2. No participating source's OWN argmax over (home, draw, away) matched
-         the realized outcome -> "all_missed" (everyone forecast the wrong
-         result; a blowout that everyone called and an upset nobody saw both
-         used to mislabel as "too close to call").
-      3. Otherwise rank participants by frozen prob on the actual outcome:
-         top two within 2pp -> "wash" (sources agreed); else the top source
-         is closest.
+      2. No participating source picked the outcome -> "all_missed" (everyone
+         forecast the wrong result — an upset nobody saw), credits nobody.
+      3. Every participating source picked the outcome AND the top-two
+         on-outcome probs are within 2pp -> "wash" (sources agreed), credits
+         nobody. Tightened from Session 37: now requires ALL to have picked it,
+         so a 2-of-3 where the model missed no longer launders into a wash.
+      4. The two highest on-outcome probs are within 2pp of each other and BOTH
+         are markets (books + Polymarket), >2pp clear of the model -> "markets"
+         (the markets jointly beat the model). Credits NEITHER market
+         individually — counted in its own scoreboard bucket, no books/Poly
+         column bump (Session 37 "distinct wins only"). This is the USA-Australia
+         case the old logic mislabelled "sources agreed".
+      5. Otherwise the single source with the highest on-outcome prob, separated
+         by >2pp from the next -> "{source} closest", credits that source.
 
-    Only a real source winner ("model"/"books"/"Polymarket") credits the index
-    scoreboard; "wash" and "all_missed" credit nobody."""
+    A bunched residual that none of 2-4 resolve (e.g. only one market present,
+    or the model tied with a single market) is too close to separate -> "wash",
+    credits nobody. Only a distinct source winner ("model"/"books"/"Polymarket")
+    credits the index scoreboard; "wash", "all_missed" and "markets" credit
+    nobody."""
     slot = _OUTCOME_SLOT[rec["outcome"]]
     slots = ("home", "draw", "away")
-    # (name, prob_on_outcome, predicted_outcome_correctly)
+    # (name, prob_on_outcome, picked_outcome)
     entries = []
     for name, tmpl in (("model", "p_{}"),
                        ("books", "p_{}_book"),
@@ -592,20 +604,33 @@ def _verdict(rec: dict) -> dict | None:
         probs = {s: float(v) for s, v in vals.items()}
         argmax = max(slots, key=lambda s: probs[s])
         entries.append((name, probs[slot], argmax == slot))
-    if len(entries) < 2:
+    if len(entries) < 2:                                          # branch 1
         return None
 
     parts = [f"{'Model gave this result' if name == 'model' else name} {_pct0(p)}"
              for name, p, _ in entries]
     body = ", ".join(parts)
 
-    if not any(correct for _, _, correct in entries):
+    if not any(picked for _, _, picked in entries):              # branch 2
         return {"winner": "all_missed", "text": f"{body} — all sources missed."}
 
     ranked = sorted(entries, key=lambda e: e[1], reverse=True)
-    if (ranked[0][1] - ranked[1][1]) <= 0.02:
+    bunched = (ranked[0][1] - ranked[1][1]) <= 0.02
+
+    if all(picked for _, _, picked in entries) and bunched:      # branch 3
         return {"winner": "wash", "text": f"{body} — sources agreed."}
-    return {"winner": ranked[0][0], "text": f"{body} — {ranked[0][0]} closest."}
+
+    markets = {"books", "Polymarket"}
+    if (bunched and len(entries) >= 3                            # branch 4
+            and ranked[0][0] in markets and ranked[1][0] in markets
+            and (ranked[1][1] - ranked[2][1]) > 0.02):
+        return {"winner": "markets", "text": f"{body} — markets closest."}
+
+    if not bunched:                                              # branch 5
+        return {"winner": ranked[0][0], "text": f"{body} — {ranked[0][0]} closest."}
+
+    # Bunched residual nothing above resolved: credit nobody.
+    return {"winner": "wash", "text": f"{body} — sources agreed."}
 
 
 def _build_played_match(rec: dict) -> dict:
@@ -892,11 +917,13 @@ def build_site() -> None:
     played_matches = [m for m in matches if m["played"]]
     unplayed_matches = [m for m in matches if not m["played"]]
 
-    # "wash" and "all_missed" are no-credit buckets — only a real source winner
-    # advances the per-source tally (the += below is keyed by winner, so both
-    # must exist as keys or an upset/blowout would KeyError).
+    # "markets", "wash" and "all_missed" are no-credit buckets — only a distinct
+    # source winner advances the per-source tally (the += below is keyed by
+    # winner, so every possible winner must exist as a key or a verdict would
+    # KeyError). "markets" counts joint-market wins without crediting books or
+    # Polymarket individually.
     verdict_counts = {"model": 0, "books": 0, "Polymarket": 0,
-                      "wash": 0, "all_missed": 0}
+                      "markets": 0, "wash": 0, "all_missed": 0}
     for m in played_matches:
         if m["verdict"]:
             verdict_counts[m["verdict"]["winner"]] += 1
@@ -1156,6 +1183,22 @@ def _test_verdict() -> None:
          "p_home_book": nan, "p_draw_book": nan, "p_away_book": nan,
          "p_home_poly": nan, "p_draw_poly": nan, "p_away_poly": nan}
     assert _verdict(r) is None, _verdict(r)
+
+    # 5. USA-Australia shape: both markets right and bunched, model missed
+    #    (its argmax is away) -> markets, no individual credit.
+    r = {"outcome": "H",
+         "p_home": 0.35, "p_draw": 0.20, "p_away": 0.45,
+         "p_home_book": 0.55, "p_draw_book": 0.25, "p_away_book": 0.20,
+         "p_home_poly": 0.54, "p_draw_poly": 0.26, "p_away_poly": 0.20}
+    assert _verdict(r)["winner"] == "markets", _verdict(r)
+
+    # 6. Markets right but one clearly higher than the other (>2pp), model
+    #    missed -> that market closest, credited.
+    r = {"outcome": "H",
+         "p_home": 0.35, "p_draw": 0.20, "p_away": 0.45,
+         "p_home_book": 0.55, "p_draw_book": 0.25, "p_away_book": 0.20,
+         "p_home_poly": 0.50, "p_draw_poly": 0.30, "p_away_poly": 0.20}
+    assert _verdict(r)["winner"] == "books", _verdict(r)
 
     print("generate_site.py _verdict self-tests passed")
 

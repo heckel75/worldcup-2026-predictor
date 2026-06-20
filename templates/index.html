@@ -65,14 +65,15 @@
   <p class="scoreboard-line">
     After {{ scoreboard.n }} match{{ "es" if scoreboard.n != 1 else "" }}:
     model {{ scoreboard.model }} · books {{ scoreboard.books }} ·
-    Polymarket {{ scoreboard.Polymarket }} · sources agreed {{ scoreboard.wash }} ·
-    all missed {{ scoreboard.all_missed }}
+    Polymarket {{ scoreboard.Polymarket }} · markets agreed {{ scoreboard.markets }} ·
+    sources agreed {{ scoreboard.wash }} · all missed {{ scoreboard.all_missed }}
   </p>
   <p class="scoreboard-note">
     Per match, the source whose frozen pre-match probability on the actual
-    result was highest. "Sources agreed" when the top two were within 2pp;
-    "all missed" when every source's favourite lost. See each played match's
-    page for the verdict.
+    result was highest. "Markets agreed" when the two markets jointly beat the
+    model (neither credited individually); "sources agreed" when every source
+    picked the result and the top two were within 2pp; "all missed" when every
+    source's favourite lost. See each played match's page for the verdict.
   </p>
 </section>
 {% endif %}
