@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "92c49df62f458dbec2cce188432274b3628c11d7",
-  "generated_at": "2026-06-20T07:15:22+00:00",
+  "input_hash": "4b322dfea039a8d1bc65840f12586f058821bba1",
+  "generated_at": "2026-06-21T06:18:33+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "England enter as the model's clear favorite, assigned a 63% win probability against Panama. The underdog is given a 12% chance to prevail, with a draw accounting for the remaining 25% of the distribution.\n\nThe spread reflects a substantial gap in expected strength. England's win probability sits roughly 50 percentage points above Panama's, suggesting the model expects England to control much of the match. A draw remains a material outcome at one-quarter probability, indicating the match carries enough competitive uncertainty to make a goalless result or equal scoring plausible even if England's superiority is pronounced.\n\nThe sportsbook consensus materially favors England beyond the model's assessment. Books price England's win at 76%, compared to the model's 63% — a gap of 13 percentage points. The market also assigns Panama only 9% to win versus the model's 12%, and shows little appetite for a draw at 15%. Polymarket prices align directionally with sportsbooks but push England's odds even higher. The dashboard makes no claim about which source is more accurate; the divergence merits attention from users seeking multiple forecasting perspectives."
+  "preview_text": "The model favors England at 63%, giving Panama a 12% chance of victory. England enters as the clear favorite, though the model assigns Panama roughly one-in-eight odds—a non-trivial upset probability.\n\nThe forecast distributes probability across all three outcomes, with draws at 25% suggesting meaningful competitive balance in the match itself. England's 39-point edge over Panama in win probability indicates the model sees a likely England victory, but the substantial draw probability and Panama's double-digit upset chance imply the gap in underlying strength is moderate rather than vast.\n\nThe sportsbook consensus shifts weight decisively toward England, pricing them at 77% and compressing Panama to 9% and draws to 14%. The market is 13 percentage points more bullish on England than the model and roughly half as confident in a draw. Polymarket prices align closely with the sportsbook view. The dashboard does not adjudicate which assessment of match uncertainty is correct."
 }

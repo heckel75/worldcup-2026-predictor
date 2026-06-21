@@ -3,9 +3,9 @@
   "home_team": "Senegal",
   "away_team": "Iraq",
   "date": "2026-06-26",
-  "input_hash": "9b8b21de0650b3591fabe3eb3387f1223cc12c27",
-  "generated_at": "2026-06-20T07:15:08+00:00",
+  "input_hash": "10e25ac4819a76037a0e8570db80a0767fffcaf1",
+  "generated_at": "2026-06-21T06:18:18+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model makes Senegal the clear favorite at 61%, while Iraq carries a 12% win probability and occupies underdog status. Senegal's baseline strength supports the margin, though the model assigns Iraq meaningful upside relative to a typical +3 underdog in tournament play.\n\nThe 27% draw probability the model generates indicates a reasonably competitive match with genuine chances for a stalemate result. The spread between Senegal win (61%) and Iraq win (12%) is substantial but not extreme; this is neither a mismatch nor a toss-up. A draw ranks as the second-most-likely single outcome, suggesting tactical balance or defensive solidity may shape play.\n\nThe sportsbook consensus and Polymarket both shift sharply toward Senegal, pricing the win probability at 73–75% and compressing the draw to 17–18%. The model is 12 percentage points more bullish on a draw and correspondingly less confident in Senegal's outright victory. This divergence is material. The dashboard does not adjudicate whether the market is overweighting Senegal's favorite status or whether the model is overestimating draw likelihood given tournament conditions."
+  "preview_text": "The model favors Senegal at 61%, with Iraq's win probability at 12%. The sportsbook consensus pushes Senegal notably higher to 73%, widening the gap to 12 percentage points in the favorite's direction.\n\nThe model sees a reasonably competitive match: a draw is plausible at 27%, suggesting meaningful uncertainty in the outcome. The 35-point spread between Senegal and Iraq indicates a clear lean but not a blowout expectation. The presence of draw probability at more than one-quarter reflects the contingency typical of knockout-stage football on neutral ground.\n\nModel and market diverge meaningfully here. The sportsbook consensus and Polymarket prices both assign Senegal closer to 73–75%, substantially above the model's 61%. The books also compress the draw to 17–16%, roughly 10 points below the model. This dashboard does not adjudicate which source better reflects the true probabilities; the spread suggests material disagreement on Senegal's strength relative to Iraqi chances and the likelihood of a stalemate."
 }

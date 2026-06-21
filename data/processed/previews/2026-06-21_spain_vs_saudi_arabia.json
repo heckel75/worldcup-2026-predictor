@@ -3,9 +3,9 @@
   "home_team": "Spain",
   "away_team": "Saudi Arabia",
   "date": "2026-06-21",
-  "input_hash": "5f2bc772ad0f4e2d7bcbd9299a3939510effa11a",
-  "generated_at": "2026-06-20T07:13:42+00:00",
+  "input_hash": "1fba172868af1c90df210a30585085a90956cd4f",
+  "generated_at": "2026-06-21T06:16:58+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Spain heavily, assigning an 89.5% win probability. Saudi Arabia's chance of victory registers at effectively zero in the statistical forecast, leaving the underdog reliant on an upset well outside the model's base-case distribution.\n\nThe forecast centers on a one-sided match. Spain's win column dominates the spread, while a draw carries a modest 10.5% probability—plausible enough to prevent the match from appearing foregone, but the gap between the favorite's win chance and all other outcomes is wide. A Saudi Arabia victory lies outside the model's meaningful range.\n\nThe model and sportsbook consensus align closely on Spain's win probability, separated by roughly 2 percentage points. Both sources agree on the broad shape: strong Spanish dominance with a small draw tail. The market assigns Saudi Arabia a 3.6% upset probability, compared to the model's near-zero, a divergence that reflects differences in tail-risk assumptions but does not materially alter the central narrative of heavy Spanish favoritism."
+  "preview_text": "The model rates Spain as a heavy favorite with an 89% win probability, leaving Saudi Arabia with a negligible 0% chance in its framework. This reflects a decisive gap between the two sides based on the statistical inputs available to the forecast.\n\nThe draw carries 10% implied probability under the model, making it the only realistic alternative to a Spain victory. The win-loss spread is wide, indicating the model expects Spain to control play and decision-making. A Saudi Arabia upset registers as structurally implausible within these parameters, though a low-scoring or defensive draw remains a plausible outcome.\n\nThe model and sportsbook consensus are closely aligned on the Spain win probability, differing by only 2 percentage points. The market assigns Saudi Arabia a 4% win chance compared to the model's 0%, and rates the draw 1 percentage point lower. These gaps suggest modest disagreement about tail risk and draw likelihood rather than fundamental conflict on the favorite's superiority."
 }

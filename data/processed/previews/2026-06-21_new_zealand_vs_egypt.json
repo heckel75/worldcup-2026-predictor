@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Egypt",
   "date": "2026-06-21",
-  "input_hash": "3f1dda213c0d9c05682224813c525e22acbee492",
-  "generated_at": "2026-06-20T07:13:38+00:00",
+  "input_hash": "9d21a12a00be36cf3943da6052ffda5ede858cbc",
+  "generated_at": "2026-06-21T06:16:54+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Egypt to win at 47%, compared to a 23% chance for New Zealand. The underdog's win probability sits roughly a quarter of the favourite's level, indicating a substantial gap in expected quality or capability.\n\nThe draw at 30% represents the single most likely outcome across the three results. This reflects genuine competitive balance in a match where the favourite's advantage is material but far from overwhelming. A one-goal margin would likely capture the modal scenario, suggesting a tightly contested fixture rather than a runaway result.\n\nThe model and market diverge meaningfully. The sportsbook consensus places Egypt's win probability 13 percentage points higher than the model, while rating both New Zealand's win and draw chances 6–7 points lower. Polymarket prices align closely with the books. The dashboard does not adjudicate which source better reflects the true probabilities, but the consistent separation warrants note."
+  "preview_text": "The model favors Egypt at 47%, with New Zealand trailing at 23% and a draw at 30%. Egypt enters as the statistical favorite, but the model assigns nearly one-in-four odds to a New Zealand upset, reflecting meaningful uncertainty in a fixture where neither side is prohibitive.\n\nThe W/D/L spread reveals a moderately competitive match. The draw probability at 30% indicates the teams are close enough that stalemate ranks as a plausible outcome, yet Egypt's win probability exceeds New Zealand's by 24 percentage points, suggesting a clear directional lean without dominance. The match is expected to be contested rather than one-sided.\n\nThe sportsbook consensus and Polymarket prices diverge from the model meaningfully. Both market sources place Egypt at 60%, roughly 13 percentage points higher than the model's 47%. Conversely, the market assigns New Zealand only 16%, about 7 points below the model, and draws at 24%, 6 points lower. The model sees Egypt as favored but less heavily; the markets have compressed New Zealand's chances and elevated Egypt further. The dashboard makes no claim about which assessment is more accurate."
 }

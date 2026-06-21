@@ -6,9 +6,9 @@
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
   "max_gap_pp": 20.2,
-  "input_hash": "d36a681f0dfcaf36a04ad74ca87e98beb8b0ec83",
-  "generated_at": "2026-06-19T05:48:46+00:00",
+  "input_hash": "a8ed627928a328d56125b751aa6da9e11f878663",
+  "generated_at": "2026-06-21T06:18:52+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market is substantially more confident in an Ivory Coast win than the model: sportsbooks assign 84% versus the model's 64%, a 20-percentage-point gap. The model also sees a draw as nearly twice as likely as the market does (25% versus 11%). This sharpening of conviction toward Ivory Coast could reflect recent-form patterns, injury status, or lineup changes that the model has not incorporated since its last update. The dashboard flags this divergence as a signal worth monitoring; it does not indicate which assessment is more reliable."
+  "commentary_text": "The market is substantially more confident in an Ivory Coast win, pricing it at 84% versus the model's 63%—a 21-percentage-point gap favoring the favorite. The sportsbook and Polymarket both align in this direction, suggesting real-money conviction behind Ivory Coast dominance. This sharpening beyond the model's baseline could reflect recent form, lineup availability, or injury status that the model has not yet incorporated. Both sources agree Curaçao is the clear underdog, but the market's tighter assessment of draw probability (11% versus 25%) suggests confidence in a decisive outcome rather than a competitive match. The dashboard flags this as a significant credence divergence worth monitoring as team news emerges."
 }

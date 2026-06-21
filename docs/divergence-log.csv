@@ -1,4 +1,8 @@
 date,match,stage,group,outcome,result,score,p_model_on_outcome,p_sportsbook_on_outcome,p_polymarket_on_outcome,gap_pp,gap_bucket,divergence_type,flagged,verdict
+2026-06-20,Germany v Côte d'Ivoire,Group stage,E,H,Home win,2–1,0.5983,0.6258,0.6418,6,5–15pp,model_under_concentrated,False,Sources agreed
+2026-06-20,Ecuador v Curaçao,Group stage,E,D,Draw,0–0,0.1643,0.0953,0.0941,7,5–15pp,model_under_concentrated,False,All missed
+2026-06-20,Netherlands v Sweden,Group stage,F,H,Home win,5–1,0.6747,0.5455,0.5522,13,5–15pp,model_over_concentrated,False,Model closest
+2026-06-20,Tunisia v Japan,Group stage,F,A,Away win,0–4,0.7066,0.6245,0.6318,8,5–15pp,model_over_concentrated,False,Model closest
 2026-06-19,Scotland v Morocco,Group stage,C,A,Away win,0–1,0.6095,0.5548,0.5622,5,5–15pp,model_over_concentrated,False,Model closest
 2026-06-19,Brazil v Haiti,Group stage,C,H,Home win,3–0,0.7588,0.8646,0.8793,11,5–15pp,model_under_concentrated,False,Sources agreed
 2026-06-19,USA v Australia,Group stage,D,H,Home win,2–0,0.3359,0.5966,0.6059,26,15pp+,disagree_on_favorite,True,Markets closest

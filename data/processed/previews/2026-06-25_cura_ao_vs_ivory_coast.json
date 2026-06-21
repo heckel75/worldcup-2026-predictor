@@ -3,9 +3,9 @@
   "home_team": "Curaçao",
   "away_team": "Ivory Coast",
   "date": "2026-06-25",
-  "input_hash": "5df76b02058447d4496a54928a779e9463cbe491",
-  "generated_at": "2026-06-19T05:47:36+00:00",
+  "input_hash": "e622dea567ccd1c41e9570804d7ae0624e7e96e8",
+  "generated_at": "2026-06-21T06:17:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Ivory Coast as a clear favorite at 64 percent, with Curaçao holding an 12 percent chance of victory. The underdog's path to a win is narrow but not negligible within the statistical framework.\n\nThe draw emerges as the second-most likely outcome in the model's distribution at 25 percent, suggesting a moderately competitive match. Ivory Coast's advantage is substantial, yet the gap between favorite and underdog is wide enough that the result remains probabilistically open—a one-goal margin either way would align with the forecasted range.\n\nThe sportsbook consensus and Polymarket prices both lean more heavily toward Ivory Coast, assigning them 84 percent and 85 percent respectively, while compressing draw odds to around 10–11 percent and Curaçao's win probability to 4–5 percent. The model's 12 percent underdog line and 25 percent draw probability diverge meaningfully from the market consensus. The dashboard does not adjudicate which assessment is more accurate; both reflect genuine uncertainty, though they weight outcomes differently."
+  "preview_text": "The model favors Ivory Coast at 63%, with Curaçao offered just 12% to win. The underdog's path to victory remains unlikely under the forecast, though not negligible.\n\nThe 24.8% draw probability suggests a competitive match within reasonable margins. Ivory Coast's 39-point edge over Curaçao in win probability indicates clear separation, yet the draw likelihood signals the teams are not drastically mismatched in expected performance. A narrow result is plausible.\n\nThe market diverges noticeably from the model. Sportsbooks price Ivory Coast at 84%, some 20 percentage points higher than the model's 63%, while compressing both Curaçao and draw odds substantially. Polymarket prices align closely with the book consensus, showing a marked preference for an Ivory Coast victory. The dashboard does not adjudicate which source better reflects true match probability, only that meaningful disagreement exists on the magnitude of the favorite's advantage."
 }

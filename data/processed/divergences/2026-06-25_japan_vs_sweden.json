@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 25.3,
-  "input_hash": "8c8e1c5328c54101750d62437b893ce02521c0d1",
-  "generated_at": "2026-06-20T07:15:48+00:00",
+  "max_gap_pp": 23.5,
+  "input_hash": "f9ccbd834fca4d91c60a98d463915094db0678e5",
+  "generated_at": "2026-06-21T06:18:55+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model rates Japan's win probability at 69% while the sportsbook consensus stands at 44%—a 25-percentage-point gap favoring the model's confidence in Japan. This substantial divergence suggests the market may be pricing in information the statistical model cannot access, such as recent lineup changes, injury reports, or current form trends that have emerged since the model's last update. The market's more cautious stance on Japan and higher assessment of Sweden's chances (29% versus 8% in the model) indicates real-money flows may reflect concerns about Japan's readiness or Sweden's recent performance that the Elo-based framework does not capture. The dashboard surfaces this gap as a signal of asymmetric information, not a judgment on which forecast is more accurate."
+  "commentary_text": "The model assigns Japan a 69% win probability while the sportsbook consensus settles at 45%, a 24-percentage-point gap favoring the model's confidence in a Japan victory. The market's more cautious stance—reflected in elevated probabilities for both a draw (29% vs. 24%) and a Sweden win (26% vs. 8%)—suggests real-money bettors may be pricing in information the model cannot access, such as recent form swings, injury news affecting key personnel, or lineup changes announced after the model's last update. The divergence surfaces this information gap but does not resolve which assessment better reflects true match likelihood."
 }

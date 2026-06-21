@@ -3,9 +3,9 @@
   "home_team": "South Africa",
   "away_team": "South Korea",
   "date": "2026-06-24",
-  "input_hash": "a4d4edcbe4a4bf66e665be8ae556ac33800d4cae",
-  "generated_at": "2026-06-20T07:14:20+00:00",
+  "input_hash": "4af5e9862a2e48171f5ce7e3d351999d6aab5652",
+  "generated_at": "2026-06-21T06:17:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea at 62%, with South Africa given a 13% chance of victory. That 49-percentage-point gap reflects a clear asymmetry in expected strength on a neutral pitch.\n\nThe draw carries modest weight at 26%, suggesting the match has scope for a competitive, goalless outcome or a low-scoring stalemate. South Korea's win probability substantially exceeds the combined underdog chances, but the draw probability—roughly one-quarter—indicates the result remains genuinely uncertain rather than predetermined.\n\nModel and sportsbook consensus align closely across all three outcomes. South Korea sits at 62% versus 59% in the market, South Africa at 13% versus 17%, and the draw at 26% versus 24%. Gaps are under 4 percentage points throughout, signaling broad agreement on the match's likely character."
+  "preview_text": "The model favors South Korea at 62% to win, leaving South Africa a 13% chance of victory. The underdog path is narrow but not implausible; a draw sits at 26%, indicating genuine competitive uncertainty despite Korea's clear edge.\n\nThe win-loss split shows Korea materially favored, yet the draw probability near one-quarter suggests the match has a realistic chance of remaining level through regulation. South Africa's modest win odds reflect an underdog position, though not one of overwhelming dominance by Korea. The gap between a Korea win and the combined alternatives (South Africa win plus draw at 39%) is substantial but the competition does not appear predetermined.\n\nModel and market are closely aligned. The sportsbook consensus puts Korea at 59%, only 3 percentage points below the model's 62%, with the draw nearly identical at 24% versus 26%. Polymarket prices track similarly. All three sources cluster within a tight band, suggesting broad agreement on Korea's advantage and the match's overall competitiveness."
 }

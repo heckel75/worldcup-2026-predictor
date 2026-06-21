@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Uzbekistan",
   "date": "2026-06-23",
-  "input_hash": "d4342df0916aca01e19c4bd9e06a51995d3c3e2c",
-  "generated_at": "2026-06-20T07:14:02+00:00",
+  "input_hash": "48b95ef465c69b98d9c64ce966cf4d1011b7cbc8",
+  "generated_at": "2026-06-21T06:17:12+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Portugal at 66%, leaving Uzbekistan with a 9% chance of victory. The sportsbook consensus and Polymarket both shift substantially toward the Portuguese side, pricing Portugal closer to 80%. The underdog faces long odds under all three estimates, but the model assigns it roughly 50% more probability than the market does.\n\nThe model's spread suggests a competitive fixture tilted clearly toward Portugal. The draw probability of 25% is material—more than twice the sportsbook's 14%—indicating the model sees meaningful room for a stalemate. The win gap of 41 percentage points between Portugal and Uzbekistan reflects a notable but not overwhelming favorite-underdog split in the model's view.\n\nThe model and market diverge meaningfully on this match. The sportsbook consensus and Polymarket are aligned with each other but both assign Portugal roughly 13–14 percentage points more win probability than the model does, while compressing the draw probability. The dashboard does not claim to know which assessment of the match is correct; users may wish to note the discrepancy when deciding how to weight these forecasts."
+  "preview_text": "The model favours Portugal at 66%, with Uzbekistan's win probability at 9%. The sportsbook consensus is considerably more confident in a Portugal victory, placing it at 79%, leaving the underdog just 7% implied chance across the two consensus sources.\n\nThe model's W/D/L distribution suggests a moderately competitive match. The draw probability of 25% indicates meaningful uncertainty about the outcome; it is neither a foregone conclusion nor a narrow affair. Portugal's edge is substantial but not overwhelming under the statistical framework.\n\nModel and market diverge noticeably here. The sportsbook consensus and Polymarket both assign Portugal roughly 13 percentage points higher win probability than the model does, and compress the draw likelihood to around 14%. This represents a meaningful gap. The dashboard does not adjudicate which reading is more accurate—the discrepancy may reflect information or risk preferences not captured in the statistical model."
 }

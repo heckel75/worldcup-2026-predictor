@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "Portugal",
   "date": "2026-06-27",
-  "input_hash": "5f4523c96bc7b2e987a971d71ec4d3759169383f",
-  "generated_at": "2026-06-20T07:15:15+00:00",
+  "input_hash": "582908444542063e3b751e503833cde167e51406",
+  "generated_at": "2026-06-21T06:18:25+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates this fixture nearly even, favouring Portugal marginally at 35% over Colombia's 34%, with a draw given 32% probability. The statistical forecast sees minimal separation between the three outcomes, suggesting a genuinely competitive match where any result carries substantial chance.\n\nThe W/D/L spread reinforces competitive balance. Portugal holds only a 1 percentage point model edge, and the draw probability of 32% reflects genuine uncertainty about the margin. All three outcomes sit within a tight band, indicating the match is expected to be closely contested rather than one-sided.\n\nMarket consensus diverges meaningfully from the model. Sportsbooks strip to 46% Portugal, compared to the model's 35%—an 11 percentage point gap. Polymarket prices align closely with the books. The dashboard does not adjudicate which assessment is correct; the gap suggests either market belief in Portugal's tournament positioning or model underestimation of that factor given only the numerical inputs available."
+  "preview_text": "The model rates this fixture as essentially competitive: Portugal edges the favorite line at 35%, but Colombia sits only 1 percentage point below at 34%, with a draw at 32%. The margin between the two outcomes is narrow, pointing to a closely matched contest where either team's victory remains well within the range of likely outcomes.\n\nThe spread across outcomes reflects genuine uncertainty. A draw accounts for roughly a third of scenarios, indicating that evenly balanced play is plausible. The model does not view either side as a clear-cut favorite; the difference between Colombia and Portugal sits within normal variance for evenly talented opponents on a neutral ground.\n\nThe market consensus diverges meaningfully from the model. Sportsbooks favor Portugal at 46%, a gap of 11 percentage points above the model's 35%, while condensing Colombia to 27% and dampening draw odds to 28%. Polymarket prices track similarly. The dashboard presents both estimates without asserting which is correct; the divergence reflects different underlying assessments of the teams' strengths."
 }

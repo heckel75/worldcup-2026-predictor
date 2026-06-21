@@ -5,10 +5,10 @@
   "date": "2026-06-26",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 23.6,
-  "input_hash": "faa335b1a6d84edde4d5d63b5f8005fc0febeaf1",
-  "generated_at": "2026-06-17T06:36:19+00:00",
+  "max_gap_pp": 23.9,
+  "input_hash": "4387e41a6e4acef29a476151a4d28f03f97efc5d",
+  "generated_at": "2026-06-21T06:18:57+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Iran at 48%, while sportsbooks and Polymarket both favor Egypt, who command 45% and 46% respectively. The sharpest single gap appears on the Iran win probability, where the model sits 23 percentage points above the consensus. This divergence could reflect differential weighting of recent form, lineup changes, or injury developments that have moved real money toward Egypt since the model's last update. The dashboard surfaces this structural disagreement as a signal worth monitoring, not as evidence that either side has mispriced the matchup."
+  "commentary_text": "The model favors Iran at 48%, while the sportsbook consensus favors Egypt at 46%. The sharpest single disagreement appears on the Iran win probability, where the model is 24 percentage points higher than the books. This gap might reflect differences in how recent form, injury status, or lineup availability factor into each assessment, or divergent weighting of historical strength indicators. The draw sits nearly identical across sources, suggesting agreement on the baseline competitiveness. The dashboard surfaces this structural divergence—opposing favorites—as a signal worth monitoring rather than a judgment on which framework better captures the true match likelihood."
 }

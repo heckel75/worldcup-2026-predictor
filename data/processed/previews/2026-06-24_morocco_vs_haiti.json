@@ -3,9 +3,9 @@
   "home_team": "Morocco",
   "away_team": "Haiti",
   "date": "2026-06-24",
-  "input_hash": "6d2b001c48bdfe765119a6885250b87b37c616e1",
-  "generated_at": "2026-06-20T07:14:36+00:00",
+  "input_hash": "9e5f40adc3bee87327554529ebf782b86f95a99f",
+  "generated_at": "2026-06-21T06:17:35+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Morocco as a clear favorite with a 74% win probability, compared to Haiti's 5% chance of victory. The gap reflects a substantial disparity in the teams' underlying strength according to the statistical forecast. Haiti faces a steep task on a neutral ground.\n\nThe draw emerges as a meaningful outcome in the model's assessment, hovering near one-in-five at 21%. This suggests Morocco is not so dominant that a stalemate becomes implausible, and Haiti's defensive shape could plausibly frustrate attacking play over ninety minutes. The win-probability spread indicates a competitive match within a lopsided matchup—Morocco favored but not overwhelmingly.\n\nThe sportsbook consensus and Polymarket prices both shade Morocco's chances higher, at 79% and 81% respectively, while compressing the draw to 14% and 14%. The model sits roughly 5 percentage points below the market on a Morocco win. The dashboard does not adjudicate which source better reflects reality; the divergence is moderate but persistent across both market samples."
+  "preview_text": "The model estimates Morocco as a clear favorite with a 74% win probability, compared to Haiti's 5% chance. This represents a substantial gap in expected performance across the two sides at a neutral venue.\n\nThe 21% draw probability suggests meaningful competitive distance—Morocco is favored but not overwhelmingly so in a single match context. The W/D/L spread (74/21/5) indicates the model sees Haiti as unlikely to win outright, though a stalemate carries genuine plausibility given the wide margin between the top two outcomes.\n\nThe market consensus sits notably higher on Morocco, at 80%, while compressing the draw to 14%. This 6-percentage-point gap between model and sportsbook on Morocco's win probability reflects meaningful disagreement; the market views Haiti's upset chance as slightly lower and a draw as less probable than the model suggests. The dashboard makes no claim about which assessment proves correct."
 }

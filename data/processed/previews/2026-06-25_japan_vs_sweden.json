@@ -3,9 +3,9 @@
   "home_team": "Japan",
   "away_team": "Sweden",
   "date": "2026-06-25",
-  "input_hash": "a110bc17df2622725407ab9eec73fdcb6b9c492e",
-  "generated_at": "2026-06-20T07:14:51+00:00",
+  "input_hash": "8ae192119fc132a8cef6f12a12b5c3bd13fc715c",
+  "generated_at": "2026-06-21T06:17:56+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Japan decisively, assigning a 69% win probability against Sweden's 8%. This represents a substantial gap: the model sees Japan as a clear favorite in a matchup where the underdog's chances are modest.\n\nThe model's spread reflects expected competitiveness constrained by its assessment of relative strength. A draw carries 24% probability, suggesting the teams are close enough that a stalemate is plausible but a Japan victory remains the most likely single outcome. The win probability advantage is wide enough to indicate Japan should be expected to control play, though the draw possibility prevents the prediction from approaching near-certainty.\n\nA meaningful divergence exists between the model and sportsbook consensus. Bookmakers place Japan at 44%, roughly 25 percentage points below the model, while assigning Sweden 29%—a sharp upward adjustment from the model's 8%. Polymarket prices align almost exactly with the sportsbook view. The dashboard does not adjudicate which assessment is correct; the large gap warrants attention from users comparing forecast sources."
+  "preview_text": "The statistical model favors Japan heavily, assigning them a 69% win probability compared to Sweden's modest 7.5% chance. The model sees this as a decisive matchup, with Japan substantially more likely to claim three points on a neutral pitch.\n\nThe model's spread reflects a fairly dominant picture: Japan's 69% win probability is roughly three times Sweden's. A draw registers at 23.5%, suggesting the outcome remains somewhat contested but a Swedish victory appears unlikely in this framework. The gap between favorite and underdog is pronounced, indicating the model expects Japan to control much of the match.\n\nThe market consensus diverges sharply from the model. Sportsbooks strip to 45.4% for Japan, 28.7% for a draw, and 25.9% for Sweden—a spread roughly 24 percentage points closer than the model's reading. Polymarket prices align closely with the book consensus. The dashboard does not adjudicate which assessment is more reliable, only that a substantial analytical gap exists here."
 }

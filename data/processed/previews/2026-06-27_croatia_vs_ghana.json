@@ -3,9 +3,9 @@
   "home_team": "Croatia",
   "away_team": "Ghana",
   "date": "2026-06-27",
-  "input_hash": "51664af1e353f38c181b096e88f5eab5dbca230a",
-  "generated_at": "2026-06-20T07:15:26+00:00",
+  "input_hash": "8444148d705be633c54bd70dd218b43e1fdfe8dd",
+  "generated_at": "2026-06-21T06:18:37+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Croatia to win with a probability of 78%, while Ghana's win chance registers at just 3%. This represents a substantial gap in the model's assessment, positioning Croatia as a clear favorite in what the model sees as a decisive matchup.\n\nThe win-draw-loss spread shows Croatia leading by a wide margin, though the model assigns a meaningful draw probability of 19%. This suggests the match has some competitive texture despite the overall imbalance—a draw remains plausible, but a Ghana victory is treated as unlikely by the statistical forecast.\n\nThe model and sportsbook consensus diverge notably. The market gives Ghana roughly six times higher win probability than the model does, while compressing Croatia's advantage to 59% from 78%—a gap of nearly 20 percentage points. Both the sportsbook consensus and Polymarket prices align closely with each other but significantly underweight Croatia compared to the model's forecast. The dashboard does not claim to know which assessment is more reliable."
+  "preview_text": "The model favors Croatia at 79%, with Ghana at just 3% to win outright. This represents a decisive gap in the forecast. Croatia enters as the clear statistical favorite on the neutral ground, though Ghana retains a small probability of an upset.\n\nThe model's win-draw-loss spread suggests Croatia is heavily favored but a draw remains plausible at 19%. The narrow 3% floor for Ghana reflects the extreme confidence in a Croatian victory. This is not a closely matched contest under the model; rather, it projects a likely Croatian control of the match with limited avenue for a Ghana win.\n\nThe model and sportsbook consensus diverge meaningfully. The market prices Croatia at 58%, roughly 20 percentage points lower than the model's 79%. Conversely, the market assigns Ghana 17% win probability against the model's 3%, and draws at 25% versus the model's 19%. Polymarket pricing aligns closely with sportsbook consensus. The dashboard does not adjudicate which source is correct; users should weigh both signals when forming their own view."
 }

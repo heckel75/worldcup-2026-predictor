@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Argentina",
   "date": "2026-06-27",
-  "input_hash": "e8bfa4659e8daadd20cf57cc8a115d6f6a43b65b",
-  "generated_at": "2026-06-19T05:48:15+00:00",
+  "input_hash": "6e481690c34a539a8ebcf450bf48dde0b1ec72b5",
+  "generated_at": "2026-06-21T06:18:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina at 79.5% to win, with Jordan's chances at just 3.9%. The underdog faces a steep climb, though the inclusion of a draw probability—16.6%—suggests the match retains some competitive uncertainty rather than being a complete mismatch.\n\nThe win-loss gap is substantial, but the draw probability is neither trivial nor dominant. Argentina is heavily favored on the three-way spread, yet draws remain plausible at roughly one in six outcomes. The asymmetry reflects a strong favorite facing a weaker opponent on a neutral ground, without the dynamic collapsing into a near-certain result.\n\nThe model and sportsbook consensus are closely aligned. The market places Argentina at 78.8%, just 0.7 percentage points below the model; Jordan sits at 7.0% versus 3.9%, a gap of 3.1pp. Polymarket prices show slightly wider confidence in Argentina at 81.3%. These small divergences fall within typical variance and suggest broad agreement that Argentina enters as the clear favorite."
+  "preview_text": "The model favors Argentina at 80%, assigning Jordan only a 4% chance of victory. The underdog's path is narrow but not impossible, with a draw at 17% representing the likeliest non-Argentina outcome.\n\nThe spread between the first and second outcome is substantial, indicating Argentina enters as a heavy favorite. However, Jordan's draw probability at 16–17% suggests the match carries enough competitive uncertainty that a stalemate remains plausible, even if an Argentina win dominates the baseline expectation.\n\nThe model and sportsbook consensus are closely aligned on Argentina (within 1 percentage point) and on the draw (differing by 2–3 points). The books assign Jordan slightly higher win odds at 7% versus the model's 4%, a gap of 3 percentage points. This disagreement is modest and may reflect book-specific edge assumptions rather than fundamental analytical divergence. No arbitrage opportunity is apparent."
 }

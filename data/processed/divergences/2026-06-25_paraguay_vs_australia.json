@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 18.4,
-  "input_hash": "902f3e273550b971d6b547d68f58fdc693fd1a4e",
-  "generated_at": "2026-06-20T07:15:42+00:00",
+  "max_gap_pp": 19.4,
+  "input_hash": "72752a5ce3c50faaea63adca68aa39e84d25dbb0",
+  "generated_at": "2026-06-21T06:18:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 44%, while the sportsbook consensus and Polymarket both back Paraguay as the likeliest outcome at 35%. On the Australia win specifically, the model runs 18 percentage points higher than the books. This gap could reflect recent lineup changes, injury updates, or current form that the model's last training data may not capture. Alternatively, the market could be pricing information about Paraguay's preparation or personnel that the statistical model does not access. The dashboard flags this as a meaningful signal worth monitoring rather than a judgment on which source proves correct."
+  "commentary_text": "The model favors Australia at 44%, while the sportsbook consensus favors a draw at 42%. On the Paraguay win, the gap widens further: books price it at 34% versus the model's 26%, an 8-percentage-point differential. This inversion across outcomes may reflect recent form, lineup changes, or injury news unavailable to the model at its last update. Polymarket prices align closely with the sportsbooks, reinforcing their skepticism toward the model's Australia lean. The dashboard surfaces this divergence as a signal worth monitoring, without adjudicating which source has captured intervening information more accurately."
 }

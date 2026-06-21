@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "DR Congo",
   "date": "2026-06-23",
-  "input_hash": "8c55f433793329ebd0675ccec20098bb2f0c72dc",
-  "generated_at": "2026-06-20T07:14:06+00:00",
+  "input_hash": "de339579d9cf6122d75f2d473d66e576c6be5e21",
+  "generated_at": "2026-06-21T06:17:16+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Colombia decisively, assigning them a 75% chance of victory. DR Congo's probability of winning stands at just 4%, leaving a substantial gap between the two sides in the model's assessment.\n\nThe expected match shape reflects Colombia's dominance: draws are plausible at 20%, but the win probabilities show a wide separation. The model sees this as a fairly one-sided contest, though draws occur often enough in football that a stalemate remains a meaningful outcome relative to either team's win chance.\n\nThe model and sportsbooks diverge meaningfully. The market consensus (63.7% Colombia win) sits roughly 11 percentage points below the model's estimate, while assigning DR Congo 13.5% rather than 4%. Polymarket prices align closely with the sportsbook draw probability but similarly favor DR Congo's chances relative to the model. The dashboard does not claim to know which forecast better captures the true match probabilities."
+  "preview_text": "The model rates Colombia as a heavy favorite, assigning a 75% win probability against a 4% chance for DR Congo. This 71-percentage-point gap suggests a contest with a clear hierarchical expectation, though DR Congo carries a small but non-negligible path to victory.\n\nThe win-draw-loss spread reflects Colombia's dominance: a draw at 20% is the second-most-likely outcome, indicating some competitive texture, but the gap between a Colombia win and either alternative is pronounced. A DR Congo upset or even a stalemate would constitute a notable deviation from the model's baseline forecast.\n\nThe model and sportsbook consensus diverge notably. The books assign Colombia only 63% to win—nearly 12 percentage points below the model—and credit DR Congo with 14% rather than 4%. Polymarket sits between the two, slightly closer to the books. The dashboard does not claim superiority over either source; the gap may reflect differences in information, methodology, or market efficiency."
 }
