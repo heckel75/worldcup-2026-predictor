@@ -3,9 +3,9 @@
   "home_team": "Egypt",
   "away_team": "Iran",
   "date": "2026-06-26",
-  "input_hash": "ba324c2e7262374e7f9e4d9f55b0fa3931bd3238",
-  "generated_at": "2026-06-21T06:18:03+00:00",
+  "input_hash": "0b1421b63138d64154fdc61a65542993756831cf",
+  "generated_at": "2026-06-22T06:05:30+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Iran, assigning it a 48% win probability against Egypt's 22%. That represents a substantial edge for Iran, which the model rates as the likely victor in a match played on neutral ground.\n\nThe W/D/L spread reveals meaningful competitive distance. Iran's win probability nearly doubles Egypt's, while a draw sits close to the probabilities of an Iranian victory in isolation. The gap between the favorite and underdog suggests the model expects Iran to control much of the match, though a stalemate remains a plausible outcome.\n\nThe model and market are sharply misaligned. Sportsbooks and Polymarket traders both favor Egypt, pricing its win probability near 46–47%, while assigning Iran only 23–24%. Both decentralized and bookmaker consensus agree that a draw is roughly even money. This represents a divergence of roughly 23 percentage points on the Egypt win line. The dashboard makes no claim as to which source is correct; the discrepancy indicates material disagreement on the teams' relative strength."
+  "preview_text": "The model favors Iran at 48% to win, compared to Egypt's 22% chance. This represents a substantial gap, positioning Iran as the clear statistical favorite on the bias-corrected forecast. Egypt enters as the underdog, though not without meaningful tournament prospects.\n\nThe draw probability of 30% reflects a moderately competitive fixture. The spread across outcomes—Iran's near-half likelihood versus Egypt's fifth—suggests the model expects Iran to control much of the match, but the elevated draw chance indicates sufficient competitive balance to make a stalemate plausible rather than a distant outcome.\n\nA marked divergence separates the model and sportsbook consensus. Books and Polymarket both lean heavily toward Egypt at 39% and 39% respectively, versus the model's 22%, while assigning Iran only 26% compared to the model's 48%. The gap exceeds 20 percentage points on Iran's win probability. The dashboard does not adjudicate between these conflicting signals; the discrepancy warrants scrutiny of both methodologies."
 }

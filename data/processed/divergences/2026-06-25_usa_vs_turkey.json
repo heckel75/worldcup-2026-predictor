@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 15.2,
-  "input_hash": "7c1968dada25791da06df337393a6176464e2c1a",
-  "generated_at": "2026-06-21T06:18:47+00:00",
+  "max_gap_pp": 17.9,
+  "input_hash": "020c7ce5b911f4b96c3f6e68547557b263dbf883",
+  "generated_at": "2026-06-22T06:06:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Turkey at 38% while the market favors USA at 46%, a 15-percentage-point gap on the USA win outcome. This reversal of favorites may reflect the market pricing in recent form, lineup news, or injury status that post-dates the model's last update. The model also assigns draw probability notably higher than the market does—31% versus 24%—suggesting either systematic differences in how each framework models close matches or real-time information the model cannot access. The dashboard flags these divergences as signals worth monitoring rather than verdicts on accuracy."
+  "commentary_text": "The model favors Turkey at 38%, while the sportsbook consensus favors USA at 49%—a 18-percentage-point gap on the USA win probability. The draw sits notably lower in the market (24%) than in the model (31%), another substantial divergence. These gaps suggest the market is pricing in either recent form shifts, injury or lineup changes, or news unavailable to the model's last update. The dashboard flags this configuration as a genuine signal worth monitoring; neither source has demonstrated superiority in real-time prediction, and the structural disagreement on which team is favored warrants attention from observers tracking pre-match information flow."
 }

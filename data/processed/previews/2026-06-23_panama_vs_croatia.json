@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "Croatia",
   "date": "2026-06-23",
-  "input_hash": "0fe8a2befcc95f2e3d155b0bf4ae3925c8f27820",
-  "generated_at": "2026-06-20T07:14:13+00:00",
+  "input_hash": "9b65034c92d7be6c14cdad198ec4bb133b20f677",
+  "generated_at": "2026-06-22T06:04:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Croatia as the favourite with a 46% win probability, while Panama is given a 24% chance of victory. That 22-percentage-point gap reflects a meaningful but not dominant edge; the teams are separated by material difference rather than a large chasm.\n\nThe 30% draw probability signals a moderately competitive match where stalemate remains a plausible outcome. The spread across all three outcomes—no single result commanding much above half the probability mass—suggests the fixture will likely be tactically cautious or closely matched in execution, with multiple paths to a result.\n\nThe model and market diverge notably. Sportsbooks and Polymarket both assign Panama only 13–14% win probability, roughly 10 percentage points below the model's estimate, and give Croatia 62–63%, roughly 15–16 points above. Both cite sources align closely on draws around 23–24%. The dashboard does not adjudicate which assessment is more accurate; the difference merits attention for those comparing forecasts."
+  "preview_text": "The model backs Croatia as the favored outcome, assigning the team a 46% win probability. Panama's chance sits at 23%, leaving a meaningful gap between the two sides in the model's estimation.\n\nThe draw emerges as the second-most-likely result at 30%, only 16 percentage points below Croatia's win probability. This suggests the match could prove competitive and close, with a stalemate as a plausible outcome rather than an unlikely contingency. The spread across the three outcomes is relatively balanced, indicating uncertainty in the final result.\n\nThe market diverges from the model in meaningful fashion. Sportsbooks assign Croatia a 62% win probability, roughly 16 percentage points higher than the model's figure, while compressing Panama's chance to 14% and the draw to 24%. Polymarket pricing aligns closely with the book consensus. The dashboard does not claim to know which assessment is correct; the discrepancy warrants attention from bettors assessing value."
 }

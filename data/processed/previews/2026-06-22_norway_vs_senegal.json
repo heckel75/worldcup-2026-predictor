@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "Senegal",
   "date": "2026-06-22",
-  "input_hash": "a05ae2859a3ccbacb2da6413ea8ee3c5a3c83ac4",
-  "generated_at": "2026-06-20T07:13:54+00:00",
+  "input_hash": "c2dfeaa454ba59dfcc72747f078210bc259840df",
+  "generated_at": "2026-06-22T06:04:30+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Norway at 43%, with Senegal trailing at 26%. The draw probability sits at 31%, suggesting a meaningful chance of level play. Norway holds a clear edge in the forecast, though not by the margin that would make Senegal's chances negligible.\n\nThe spread reveals a moderately competitive match. Norway's lead of 17 percentage points over Senegal reflects favourability, but the combined 57% probability for either a draw or a Senegal win indicates the outcome remains genuinely uncertain. A stalemate ranks as the second-most-likely single result, which points to a closely contested contest rather than a runaway fixture.\n\nThe model and sportsbooks are closely aligned across all three outcomes. The model's Norway win probability sits 2 percentage points above the consensus, while Senegal's gap runs 4 points in the opposite direction. Draw expectations diverge by 4 points. These gaps are within typical variance and suggest broad agreement on match texture. The dashboard makes no claim as to whether model or market has calibrated more accurately; both suggest a match in which Norway enters as modest favourite on a neutral field."
+  "preview_text": "The model rates Norway as the marginal favorite with a 43% win probability, while Senegal's chances stand at 26%—a gap of 17 percentage points. The Scandinavian side holds a modest edge in the statistical forecast, but the underdog retains a realistic path to victory on a neutral ground.\n\nThe draw emerges as the second-most likely outcome at 31%, suggesting this match could unfold as a competitive, even contest. The spread across outcomes indicates neither side is heavily favored to dominate; a single goal or defensive resilience could easily swing the result, making a stalemate plausible.\n\nThe model and sportsbook consensus are closely aligned across all three outcomes, with no gap exceeding 3 percentage points. Polymarket prices track similarly tight to both. This convergence suggests broad agreement on the competitive balance, and the dashboard registers no material divergence between statistical and market assessment."
 }

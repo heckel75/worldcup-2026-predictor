@@ -3,9 +3,9 @@
   "home_team": "Tunisia",
   "away_team": "Netherlands",
   "date": "2026-06-25",
-  "input_hash": "094c34f450d875b89368b28b0bd21a297967e9d3",
-  "generated_at": "2026-06-21T06:17:59+00:00",
+  "input_hash": "e3dc95114835724278306f5c49dd7ccf690e57b7",
+  "generated_at": "2026-06-22T06:05:26+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Netherlands as heavy favourite with a 70% win probability, while Tunisia's chances of victory stand at 9%. This reflects a substantial gap between the two sides according to the statistical forecast.\n\nThe draw carries meaningful plausibility at 22%, suggesting the match could remain competitive through regulation. Tunisia's 9% win probability indicates the underdog is not without a path to upset, though the spread between the favourites and challenger is pronounced. A Netherlands victory appears the most likely single outcome by a wide margin.\n\nModel and sportsbook consensus diverge noticeably. The market prices Netherlands roughly 10 percentage points higher than the model and Tunisia about 2 percentage points lower, while placing less weight on a draw. Polymarket pricing sits even further toward the Netherlands. The dashboard does not claim to know which source better reflects the true match probabilities."
+  "preview_text": "The model favors Netherlands at 70% to win, with Tunisia assigned an 8.5% chance of victory. The gap reflects a substantial disparity in expected quality, though the underdog's probability sits meaningfully above zero rather than in the margins.\n\nThe 22% draw probability suggests this matchup carries moderate competitive balance in its baseline shape, even as Netherlands enters as clear favorite. The spread between a Netherlands win and a draw (47 percentage points) indicates the model expects the Dutch to control play, yet draws remain a material outcome rather than an outlier scenario.\n\nThe market consensus diverges from the model. Sportsbook odds place Netherlands at 84%, roughly 15 percentage points higher than the model's estimate, while compressing Tunisia's win probability to 5% and the draw to 11%. Polymarket prices align closely with sportsbooks. The dashboard makes no claim about which assessment is correct; the divergence is substantial enough to warrant noting that different sources are pricing this match with notably different expectations about Dutch dominance."
 }

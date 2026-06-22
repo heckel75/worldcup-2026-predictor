@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Argentina",
   "date": "2026-06-27",
-  "input_hash": "6e481690c34a539a8ebcf450bf48dde0b1ec72b5",
-  "generated_at": "2026-06-21T06:18:21+00:00",
+  "input_hash": "bdbaa832ae71b7fed5534070574154339cb75bc5",
+  "generated_at": "2026-06-22T06:05:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina at 80%, assigning Jordan only a 4% chance of victory. The underdog's path is narrow but not impossible, with a draw at 17% representing the likeliest non-Argentina outcome.\n\nThe spread between the first and second outcome is substantial, indicating Argentina enters as a heavy favorite. However, Jordan's draw probability at 16–17% suggests the match carries enough competitive uncertainty that a stalemate remains plausible, even if an Argentina win dominates the baseline expectation.\n\nThe model and sportsbook consensus are closely aligned on Argentina (within 1 percentage point) and on the draw (differing by 2–3 points). The books assign Jordan slightly higher win odds at 7% versus the model's 4%, a gap of 3 percentage points. This disagreement is modest and may reflect book-specific edge assumptions rather than fundamental analytical divergence. No arbitrage opportunity is apparent."
+  "preview_text": "The model rates Argentina as a heavy favorite with a 79.5% win probability, leaving Jordan only a 3.9% chance of victory. The gap between the two sides is substantial, reflecting a marked disparity in the underlying statistics employed by the forecast.\n\nThe draw carries modest credibility at 16.5% according to the model, suggesting the match is unlikely to be tightly competitive throughout. Argentina's win probability is roughly 5 times that of Jordan's upset chance, indicating the model expects the match to be decided rather than left in doubt. A stalemate is plausible but would require a departure from the baseline expectation of Argentinian dominance.\n\nThe model and sportsbook consensus align closely on the outcome: both place Argentina at 79.5% to win. The books price Jordan's chances slightly higher at 6.9% versus the model's 3.9%—a gap of 3 percentage points—and rate the draw marginally lower at 13.6%. Polymarket prices lean toward Argentina at 81.8%, in line with the broader consensus direction."
 }

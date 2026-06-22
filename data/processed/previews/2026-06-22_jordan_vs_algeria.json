@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Algeria",
   "date": "2026-06-22",
-  "input_hash": "87fbe859822c2faf4e9a93ae704772e7af1e570d",
-  "generated_at": "2026-06-19T05:46:52+00:00",
+  "input_hash": "bf46bebf86380b03adcbfffb4f3845fea1d3a33f",
+  "generated_at": "2026-06-22T06:04:38+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Algeria at 45%, while Jordan carries a 25% chance of victory. The remaining probability—30%—falls to a draw, a non-trivial outcome that reflects competitive balance at the margins.\n\nThe win-loss spread is notably asymmetric. Algeria is a clear favourite, but the model assigns substantial combined probability to either a Jordan win or a stalemate. A draw ranks as the second-most-likely single outcome, suggesting the match could remain genuinely competitive through regulation.\n\nModel and market diverge materially. The sportsbook consensus rates Algeria at 61%, some 16 percentage points above the model's 45%. The market also narrows Jordan's win probability to 16%, versus the model's 25%. Polymarket pricing aligns closely with sportsbook consensus. The dashboard does not adjudicate between these sources; the gap likely reflects different information sets or risk pricing rather than forecast error."
+  "preview_text": "The model favors Algeria at 45%, while Jordan's win probability registers at 24%. Algeria enters as clear favorite, though the model assigns Jordan nearly a one-in-four chance of victory—substantially higher than the sportsbook consensus of 16%.\n\nThe draw emerges as a live outcome at 30%, the second-most probable result in the model's forecast. This suggests a competitive match with meaningful uncertainty around the outcome. The 21-percentage-point gap between Algeria's win chance and Jordan's reflects an asymmetry, but the elevated draw probability indicates the teams are not far apart in likely quality, and a stalemate remains plausible.\n\nThe model and market diverge meaningfully on Jordan's chances. The books price Jordan at 16% compared to the model's 24%—an 8-percentage-point gap. Conversely, the sportsbooks push Algeria to 61%, roughly 16 points above the model. Polymarket prices align closely with the book consensus. The dashboard does not adjudicate between these readings; users should weigh the differences when assessing value."
 }

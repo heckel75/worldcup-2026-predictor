@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Austria",
   "date": "2026-06-22",
-  "input_hash": "f9b3eaa63eef40ed5a06fb7d256917a6ab2acbef",
-  "generated_at": "2026-06-21T06:17:09+00:00",
+  "input_hash": "7b13b394d30f5dcaaf74a084d91436e99c9d9ba5",
+  "generated_at": "2026-06-22T06:04:34+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model ranks Argentina as a strong favorite at 76%, leaving Austria with only a 4% chance of victory. The gap reflects a substantial disparity in the forecast; Austria's path to three points appears unlikely under the statistical framework, though not impossible.\n\nThe draw carries meaningful probability at 20%, suggesting the match could prove competitive despite Argentina's advantage. The W/D/L spread—76/20/4—indicates a one-sided contest in expectation, yet a quarter of outcomes would avoid decisive resolution. Austria's low win probability does not preclude a tightly contested or goalless result.\n\nModel and market diverge meaningfully here. The sportsbook consensus credits Argentina at 61%, some 15 percentage points below the model, while assigning Austria 15%—more than triple the model's 4%. Polymarket sits between the two. The dashboard does not adjudicate which assessment is more accurate; the gap warrants attention from those seeking value."
+  "preview_text": "The model favors Argentina at 76%, assigning Austria only a 4% chance of victory. The underdog's path is narrow; the 72-percentage-point gap reflects a heavily skewed match dynamic in the model's view.\n\nThe 20% draw probability suggests the model sees meaningful defensive resilience from Austria, though Argentina's win odds dominate the outcome distribution. A competitive first half is plausible, but the model expects Argentina to pull clear. The spread between win and draw probabilities indicates this is not projected as a close contest overall.\n\nThe model and market diverge materially on Austria's prospects. The model assigns 4% to an Austrian win; sportsbooks and Polymarket both place Austria near 12–13%, a gap of roughly 8–9 percentage points. Both external sources align closely with each other on the draw (22–23%) and are more bullish on Argentina's chances than the model (64–66% vs. 76%). The dashboard does not adjudicate which assessment is more accurate; users should weigh the divergence when forming their own view."
 }

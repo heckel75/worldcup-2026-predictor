@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Brazil",
   "date": "2026-06-24",
-  "input_hash": "5be0b284a97afad906dd4e6afc5a1b701da4ebd4",
-  "generated_at": "2026-06-21T06:17:31+00:00",
+  "input_hash": "64f21522ecf638c90fb83159a1c8f450d8f5f1b7",
+  "generated_at": "2026-06-22T06:04:57+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Brazil, assigning a 63% chance of victory compared to Scotland's 12% win probability. Brazil enters as a substantial favorite on the neutral ground, though the underdog retains a meaningful albeit narrow path to an upset.\n\nThe draw emerges as the second-most likely outcome in the model's forecast at 25%, suggesting competitive balance in the early-game script despite Brazil's overall edge. The 52-percentage-point gap between the favorites' win probability and the underdog's reflects asymmetry, yet the inclusion of a quarter-chance for a stalemate indicates the match carries genuine competitive uncertainty rather than a predetermined result.\n\nThe model and sportsbooks show broad alignment. The market places Brazil at 69% and Scotland at 13%, within 5 percentage points of the model's central estimates. Polymarket prices track similarly. All three sources converge on Brazil as the clear favorite and a plausible draw outcome, though the market marginally downweights the stalemate relative to the model—a common difference across forecast sources."
+  "preview_text": "The model favors Brazil at 63%, with Scotland's win probability at 12%. Brazil enters as a heavy favorite, leaving the underdog with roughly one-in-eight odds of victory on a neutral surface.\n\nThe draw probability of 25% from the model suggests competitive balance in the tail scenarios, yet Brazil's advantage across the W/D/L spread is substantial. A Scotland win remains plausible but unlikely; draws and Brazil victories dominate the outcome space, indicating Brazil is expected to control much of the match.\n\nThe market consensus edges Brazil higher at 69%, roughly 5 percentage points above the model, while assigning draws lower at 19%. Polymarket prices align closely with the sportsbook view. The divergence reflects differing assumptions about Brazil's edge, though all three sources rank outcomes identically and treat Scotland as a clear underdog."
 }

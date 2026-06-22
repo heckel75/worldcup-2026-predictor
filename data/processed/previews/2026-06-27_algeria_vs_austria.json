@@ -3,9 +3,9 @@
   "home_team": "Algeria",
   "away_team": "Austria",
   "date": "2026-06-27",
-  "input_hash": "64bcebe7b203fd7868e0bd162c008ff28a7a427d",
-  "generated_at": "2026-06-20T07:15:11+00:00",
+  "input_hash": "4422ba3499dc77c901c0f051deb2b81f5bf113c7",
+  "generated_at": "2026-06-22T06:05:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Algeria at 38.5% to win, making them a modest statistical favorite. Austria's win probability stands at 30%, leaving a gap of roughly 8 percentage points between the two teams in the model's assessment.\n\nThe draw at 31.5% sits almost as a plausible middle outcome, narrowing the spread across all three results. The model sees this as a competitive match without a commanding favorite; Algeria edges ahead, but the distribution suggests genuine uncertainty and a material chance the sides leave level.\n\nThe model and market diverge meaningfully. Sportsbooks lean toward Austria (38.2%), inverting the model's ranking and opening a 7-point gap from the model's Algeria projection. Polymarket mirrors the sportsbook tilt. The dashboard does not adjudicate which source is correct; the disagreement warrants attention from those wagering."
+  "preview_text": "The model favours Algeria at 38–39%, giving the side a material edge over Austria's 30%. The probabilities are closely bunched, however: the draw sits at 32%, indicating a competitive fixture where no outcome commands strong consensus.\n\nThe narrow spread across all three outcomes reflects genuine uncertainty. Algeria's advantage in the model is modest—roughly 8 percentage points over Austria—and a draw remains a live outcome at nearly one-third probability. The match shape suggests a tight contest in which either team can prevail.\n\nThe model and market diverge notably. Sportsbooks and Polymarket both favour Austria at 38%, inverting the model's ranking and creating a 7–8 percentage point gap on the Algeria win probability. Both secondary sources align closely with each other on the draw (31%). This dashboard does not adjudicate between the two signals; users should weigh the divergence as material disagreement about team strength."
 }

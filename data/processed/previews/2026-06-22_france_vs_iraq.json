@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Iraq",
   "date": "2026-06-22",
-  "input_hash": "9764300ee8dd04fda3881f2a057e1593a7570622",
-  "generated_at": "2026-06-21T06:17:05+00:00",
+  "input_hash": "94bb3beae61802d2fc9f0a38fa313237c5fa77fc",
+  "generated_at": "2026-06-22T06:04:26+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates France as a heavy favorite with an 84% win probability, leaving Iraq with less than 1% chance of victory. The gap reflects a substantial disparity in the model's assessment of the two sides' relative strength.\n\nA draw registers at 16% in the model forecast, making it the only plausible alternative to a France victory. The win-loss spread is wide; Iraq's path to three points is remote, and even a draw would constitute a strong result for the underdog. France is expected to control the match decisively.\n\nThe market consensus diverges from the model on two counts. Sportsbooks assign France 88% and draws only 9%, implying greater confidence in a France win and lower belief in a stalemate. Polymarket prices lean even further toward France at 90%, with draws at 7%. Both sources rate Iraq's upset chances at roughly 3%, substantially above the model's 1%. The dashboard does not adjudicate which source better reflects ground truth."
+  "preview_text": "The model favors France at 84% to win, leaving Iraq with less than 1% probability of victory. The gap reflects a large expected asymmetry in quality or circumstance. Iraq's underdog position is pronounced under all three probability sources.\n\nThe model assigns a 16% chance to a draw, the highest probability outcome for any single result apart from a France win. This split suggests France are favored but not overwhelmingly so in absolute terms; competitive matches often settle via draws, and this one carries meaningful probability of that outcome. A France win remains the clear baseline, yet the match is not modeled as a formality.\n\nThe model and sportsbooks diverge noticeably on Iraq's chances. The model puts them at 0.8%, while the market consensus sits near 3%, a gap of roughly 2 percentage points. The market is also more bullish on France outright (89–90%) and more skeptical of draws (7–8%) than the model. The dashboard does not adjudicate which reading is more accurate; users may weigh both assessments in their own forecasts."
 }

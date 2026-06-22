@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Belgium",
   "date": "2026-06-26",
-  "input_hash": "fa945c5c9a1fdb08aad37df9fe76f0d902fb3830",
-  "generated_at": "2026-06-21T06:18:07+00:00",
+  "input_hash": "589ac3c39bce54ba59b50d044fa9b36d55525958",
+  "generated_at": "2026-06-22T06:05:34+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Belgium at 64%, with New Zealand's win probability at 11%. The underdog's chances are substantially lower than the favorite's, reflecting a clear disparity in the forecast.\n\nThe spread across outcomes suggests Belgium enters as a strong favorite, though the draw carries meaningful probability at 24%. This indicates the match is expected to be contested rather than one-sided, with draws plausible enough to represent a non-negligible portion of outcomes.\n\nThe market consensus diverges notably from the model. Sportsbooks price Belgium 12 percentage points higher than the model does, at 77%, while New Zealand and draw probabilities contract correspondingly. Polymarket prices show similar movement. The dashboard makes no claim about which forecast is more accurate; the divergence is simply noteworthy and may reflect information sources or risk appetite not embedded in the statistical model."
+  "preview_text": "The model favors Belgium at 65%, with New Zealand's win probability at 11%. The underdog's chances are modest but non-negligible; a draw is the second-most likely outcome at 24%, suggesting meaningful competitive balance.\n\nThe W/D/L spread reflects a clear hierarchy: Belgium leads substantially, yet draws account for nearly a quarter of outcomes. This implies the match is unlikely to be a rout, with New Zealand capable of containing Belgium for periods and forcing a stalemate, though the visitor's path to victory remains narrow.\n\nModel and market diverge meaningfully on Belgium's win probability—the market consensus at 78% sits some 13 percentage points above the model's 65%—and on draw likelihood, where the model assigns 24% against the market's 15%. The dashboard makes no claim about which assessment is correct; the divergence suggests bettors are pricing Belgium as stronger favorites than the statistical model does, while seeing draws as less probable."
 }

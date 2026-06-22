@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Uzbekistan",
   "date": "2026-06-23",
-  "input_hash": "48b95ef465c69b98d9c64ce966cf4d1011b7cbc8",
-  "generated_at": "2026-06-21T06:17:12+00:00",
+  "input_hash": "d4342df0916aca01e19c4bd9e06a51995d3c3e2c",
+  "generated_at": "2026-06-22T06:04:41+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Portugal at 66%, with Uzbekistan's win probability at 9%. The sportsbook consensus is considerably more confident in a Portugal victory, placing it at 79%, leaving the underdog just 7% implied chance across the two consensus sources.\n\nThe model's W/D/L distribution suggests a moderately competitive match. The draw probability of 25% indicates meaningful uncertainty about the outcome; it is neither a foregone conclusion nor a narrow affair. Portugal's edge is substantial but not overwhelming under the statistical framework.\n\nModel and market diverge noticeably here. The sportsbook consensus and Polymarket both assign Portugal roughly 13 percentage points higher win probability than the model does, and compress the draw likelihood to around 14%. This represents a meaningful gap. The dashboard does not adjudicate which reading is more accurate—the discrepancy may reflect information or risk preferences not captured in the statistical model."
+  "preview_text": "The model favors Portugal at 66%, a clear margin over Uzbekistan's 9% win probability. This reflects a substantial gap in the forecast, though the underdog retains a non-trivial chance of an upset.\n\nThe draw sits at 25%, a meaningful portion of the probability space. The model's distribution suggests a moderately competitive match rather than a heavily tilted affair; Uzbekistan's combined non-loss probability reaches 34%, indicating the match is unlikely to be one-sided despite Portugal's standing as favorite.\n\nThe market consensus diverges noticeably from the model. Sportsbooks push Portugal to 80%, some 14 percentage points higher, while compressing the draw to 14% and Uzbekistan's upset chance to 6%. Polymarket prices align closely with the sportsbook view. The dashboard does not adjudicate which assessment is more accurate; the difference may reflect market confidence, sharper information, or divergent modeling assumptions."
 }

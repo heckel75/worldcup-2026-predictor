@@ -3,9 +3,9 @@
   "home_team": "Morocco",
   "away_team": "Haiti",
   "date": "2026-06-24",
-  "input_hash": "9e5f40adc3bee87327554529ebf782b86f95a99f",
-  "generated_at": "2026-06-21T06:17:35+00:00",
+  "input_hash": "600e9a6cd79ad3afef5020955d2a6e710228b028",
+  "generated_at": "2026-06-22T06:05:01+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model estimates Morocco as a clear favorite with a 74% win probability, compared to Haiti's 5% chance. This represents a substantial gap in expected performance across the two sides at a neutral venue.\n\nThe 21% draw probability suggests meaningful competitive distance—Morocco is favored but not overwhelmingly so in a single match context. The W/D/L spread (74/21/5) indicates the model sees Haiti as unlikely to win outright, though a stalemate carries genuine plausibility given the wide margin between the top two outcomes.\n\nThe market consensus sits notably higher on Morocco, at 80%, while compressing the draw to 14%. This 6-percentage-point gap between model and sportsbook on Morocco's win probability reflects meaningful disagreement; the market views Haiti's upset chance as slightly lower and a draw as less probable than the model suggests. The dashboard makes no claim about which assessment proves correct."
+  "preview_text": "The model favours Morocco to win at 74%, with Haiti's win probability standing at just 5%. The 69-percentage-point gap reflects a substantial asymmetry in expected quality, though Morocco's three-in-four likelihood leaves room for upset outcomes or a stalemate.\n\nThe draw carries 21% probability in the model's forecast, a meaningful share of outcomes. This suggests the match carries competitive risk beyond a simple binary: while Morocco enters as clear favourite, the distribution indicates a draw remains plausible and Haiti's low win odds do not render them negligible opponents.\n\nThe sportsbook consensus and Polymarket prices both lean more decisively toward Morocco, pricing the win at 80–82% compared to the model's 74%. Both betting sources compress the draw to 12–14%, roughly half the model's estimate. The gaps of 6–8 percentage points on the favourite and 7–9 points on the draw represent meaningful divergence; the dashboard does not adjudicate which assessment is more accurate."
 }

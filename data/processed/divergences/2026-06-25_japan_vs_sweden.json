@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 23.5,
-  "input_hash": "f9ccbd834fca4d91c60a98d463915094db0678e5",
-  "generated_at": "2026-06-21T06:18:55+00:00",
+  "max_gap_pp": 19.5,
+  "input_hash": "7ba069fe8b6d3694ca60fdfe03076fe6d3d0f17b",
+  "generated_at": "2026-06-22T06:06:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Japan a 69% win probability while the sportsbook consensus settles at 45%, a 24-percentage-point gap favoring the model's confidence in a Japan victory. The market's more cautious stance—reflected in elevated probabilities for both a draw (29% vs. 24%) and a Sweden win (26% vs. 8%)—suggests real-money bettors may be pricing in information the model cannot access, such as recent form swings, injury news affecting key personnel, or lineup changes announced after the model's last update. The divergence surfaces this information gap but does not resolve which assessment better reflects true match likelihood."
+  "commentary_text": "The model assigns Japan a 69% win probability while sportsbooks settle on 49%, a 20-percentage-point gap favoring the model's confidence in a Japanese victory. This substantial hedging by the market could reflect recent lineup changes, injury concerns, or current form dynamics that the model's last update may not have captured. Conversely, the model's Elo-based approach might overweight historical strength in ways that real-money markets are discounting. Both sources agree Japan is the favorite, but the divergence signals genuine uncertainty about Japan's true edge in this matchup—worth monitoring as team news develops."
 }
