@@ -5,10 +5,10 @@
   "date": "2026-06-24",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 21.7,
-  "input_hash": "d71638722383c56eb08944745ca2848ec2d8e3d9",
-  "generated_at": "2026-06-22T06:06:02+00:00",
+  "max_gap_pp": 21.0,
+  "input_hash": "d980c67be24cba5e82d1af459b870c42b0d1f352",
+  "generated_at": "2026-06-23T06:34:22+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Mexico a 71% win probability, but the sportsbook consensus is substantially lower at 49%, a 22-percentage-point gap favoring the model's confidence in a Mexican victory. This divergence suggests the market may be pricing in information the model cannot access—such as recent form trends, lineup changes, or injury concerns that could dampen Mexico's prospects. Both sources agree Mexico is the favorite, but the market's hedged positioning across all three outcomes implies real-money flows are reflecting uncertainty that the statistical model, built on longer-term ratings, does not fully capture. The dashboard flags this as a notable tension between backward-looking fundamentals and forward-looking market intelligence."
+  "commentary_text": "The model assigns Mexico a 71% win probability while the sportsbook consensus settles at 50%, a 21-percentage-point gap favoring the model's confidence in a Mexico victory. This divergence suggests the market may be pricing in information the model cannot access—possibly recent lineup changes, injury concerns, or form shifts that have emerged since the model's last update. The model's statistical foundation in ratings and goal patterns reflects historical strength, but real-money flows often incorporate late-breaking team news. The dashboard surfaces this gap as a signal worth monitoring rather than a verdict on which source better captures the true probability."
 }

@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Uzbekistan",
   "date": "2026-06-23",
-  "input_hash": "d4342df0916aca01e19c4bd9e06a51995d3c3e2c",
-  "generated_at": "2026-06-22T06:04:41+00:00",
+  "input_hash": "cb106501ebcb7534f0899acf1c08209b1325c431",
+  "generated_at": "2026-06-23T06:32:31+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Portugal at 66%, a clear margin over Uzbekistan's 9% win probability. This reflects a substantial gap in the forecast, though the underdog retains a non-trivial chance of an upset.\n\nThe draw sits at 25%, a meaningful portion of the probability space. The model's distribution suggests a moderately competitive match rather than a heavily tilted affair; Uzbekistan's combined non-loss probability reaches 34%, indicating the match is unlikely to be one-sided despite Portugal's standing as favorite.\n\nThe market consensus diverges noticeably from the model. Sportsbooks push Portugal to 80%, some 14 percentage points higher, while compressing the draw to 14% and Uzbekistan's upset chance to 6%. Polymarket prices align closely with the sportsbook view. The dashboard does not adjudicate which assessment is more accurate; the difference may reflect market confidence, sharper information, or divergent modeling assumptions."
+  "preview_text": "The model favors Portugal at 66%, with Uzbekistan holding a 9% chance of victory. The sportsbook consensus is substantially more confident in a Portugal win, assigning it 83%—a gap of 17 percentage points—while pricing Uzbekistan at just 5%.\n\nThe model's forecast suggests a competitive match. Portugal's two-to-one edge in win probability leaves meaningful room for either an Uzbekistan upset or a draw at nearly one-in-four odds. The sportsbook spreads tell a different story: draws compress to 12%, and Uzbekistan's path to victory narrows considerably. The model sees this as a fairly open contest; the market views it as heavily tilted.\n\nThe divergence between model and market is substantial across all three outcomes. The model's draw probability exceeds the sportsbook's by 13 percentage points, while the sportsbook extends Portugal's advantage by 17 points. Polymarket pricing aligns closely with sportsbooks. The dashboard does not adjudicate which assessment is correct, only that they differ meaningfully on match competitiveness and draw likelihood."
 }

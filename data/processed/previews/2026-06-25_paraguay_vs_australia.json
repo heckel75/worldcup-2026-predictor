@@ -3,9 +3,9 @@
   "home_team": "Paraguay",
   "away_team": "Australia",
   "date": "2026-06-25",
-  "input_hash": "659b0d7b85e9444d61fcb1af822d6574d98253ee",
-  "generated_at": "2026-06-22T06:05:10+00:00",
+  "input_hash": "9e7e123f8893c7c0e283bbd6ab1baf29f065daf1",
+  "generated_at": "2026-06-23T06:33:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Australia at 44%, with Paraguay holding a 26% win probability. The draw sits at 31%, suggesting a relatively balanced match where the favorite's margin is modest rather than commanding.\n\nThe spread across outcomes reflects genuine competitive uncertainty. Australia's edge is real but modest—roughly 18 percentage points over Paraguay—and the draw probability of 31% indicates a plausible stalemate outcome. This is not a mismatch; the match profiles as closely contested with multiple viable results.\n\nModel and market diverge substantially. The sportsbook consensus and Polymarket prices align closely with each other at roughly 42% draw and 24% Australia win, but both assign Australia markedly lower odds than the model (down 19–20 percentage points) while raising Paraguay to 33%. The dashboard does not adjudicate which reading is correct, only that the disagreement is material and worth noting for users tracking forecast splits."
+  "preview_text": "The model favors Australia to win, assigning the team a 44% chance of victory compared to Paraguay's 26% win probability. Australia emerges as the statistical favorite, though the margin leaves meaningful room for an underdog result.\n\nThe model's outcome spread reflects a moderately competitive encounter. A draw carries 31% probability, suggesting the teams are sufficiently balanced that a stalemate ranks as a plausible outcome. Australia's advantage is notable but not overwhelming; Paraguay retains a quarter of the win probability, indicating the underdog cannot be readily dismissed.\n\nModel and market diverge substantially. The sportsbook consensus and Polymarket both assign Paraguay and draw outcomes considerably higher probability than the model does—roughly 7 to 12 percentage points higher for each—while rating Australia's win probability 19 to 20 points lower. This represents a meaningful disagreement. The dashboard does not adjudicate which source is correct; the discrepancy warrants attention from users building their own views."
 }

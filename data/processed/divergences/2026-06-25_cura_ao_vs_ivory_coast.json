@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 20.2,
-  "input_hash": "d36a681f0dfcaf36a04ad74ca87e98beb8b0ec83",
-  "generated_at": "2026-06-22T06:06:10+00:00",
+  "max_gap_pp": 19.5,
+  "input_hash": "029d6d6a743ff4d264a7269a1931cf5bbc1f4b04",
+  "generated_at": "2026-06-23T06:34:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market prices Ivory Coast's win probability at 84%, compared to the model's 63%—a 21-percentage-point gap favoring the market's stronger conviction in a runaway favorite. This compression of uncertainty could reflect recent form, injury status, or lineup changes that have shifted since the model's last update; such information might systematically favor one side in a way the statistical baseline alone cannot capture. The dashboard flags this divergence as a signal worth monitoring, though neither source can be deemed correct without match outcome data."
+  "commentary_text": "The market is substantially more confident in an Ivory Coast win than the model: 83% versus 64%, a 19-percentage-point gap favoring the heavy favorite. The sportsbook and Polymarket also compress the draw to 11–12% and cut Curaçao's chances to around 5%, versus the model's 25% and 12% respectively. This sharpening of conviction across all three outcomes could reflect recent form, injury news, or lineup changes that the model has not yet incorporated. The dashboard flags this as a signal worth monitoring—agreement on direction paired with divergent confidence levels often signals real-time information at work, though neither source is inherently correct until the match concludes."
 }

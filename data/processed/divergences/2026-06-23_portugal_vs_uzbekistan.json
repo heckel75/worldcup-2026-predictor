@@ -5,10 +5,10 @@
   "date": "2026-06-23",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 16.2,
-  "input_hash": "0cd3ab5bd0a3757a9b5ee7405ecd2c0198eed0d5",
-  "generated_at": "2026-05-20T12:49:49+00:00",
+  "max_gap_pp": 17.3,
+  "input_hash": "e380bec22a308c4984133bb1a0e19833e4e50ea5",
+  "generated_at": "2026-06-23T06:34:16+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market is notably more confident in Portugal's win, pricing it 16 percentage points higher than the model at 78% versus 62%. The market also compresses the draw and Uzbekistan win probabilities below the model's forecasts. This sharpened conviction could reflect recent form, injury status, or lineup news that the model has not yet incorporated—information typically available to sharp bettors and reflected in real-money flows. The dashboard surfaces this divergence as a signal worth monitoring, though it does not establish which assessment better reflects true match likelihood."
+  "commentary_text": "The sportsbook consensus assigns Portugal a 83% win probability versus the model's 66%, a 17-percentage-point gap favoring the favorite. Both sources rank Portugal clearly ahead, but the market has compressed the draw down to 12% and Uzbekistan to 5%, while the model sees materially higher upset and stalemate risk. This tightening could reflect recent lineup news, injury updates, or form trajectories that have reached the market but postdate the model's last calibration. The dashboard flags this as a signal: either the model is underweighting Portugal's current strength, or the market is overconfident in a neutral-venue environment where variance remains meaningful."
 }

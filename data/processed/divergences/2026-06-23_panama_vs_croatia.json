@@ -5,10 +5,10 @@
   "date": "2026-06-23",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 15.5,
-  "input_hash": "e0cd9511e3d7adc6d19544cea153d44f885b94ec",
-  "generated_at": "2026-06-20T07:15:35+00:00",
+  "max_gap_pp": 17.2,
+  "input_hash": "02d7cedc52c333dad6f5613580e7842232f57543",
+  "generated_at": "2026-06-23T06:34:20+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The largest divergence is on a Croatia win, where the sportsbook consensus gives 62% but the model assigns 46%, a 16-percentage-point gap in the market's favor. The model and market agree Croatia is the favorite, but books and traders are substantially more confident in that outcome. This sharpening of conviction typically reflects information the model cannot access—recent form, injury status, or lineup changes in the weeks before the match could be moving odds toward Croatia. The dashboard flags this as a signal worth monitoring, neither validating nor questioning which assessment will prove more accurate."
+  "commentary_text": "The model assigns Croatia a 46% win probability while the sportsbook consensus reaches 64%, a 18-percentage-point gap favoring the market's confidence in a Croatia victory. The market also narrows Panama's chances to 14% against the model's 23%, an 9-percentage-point divergence in the opposite direction. Both sources rank Croatia as favorite, but the market has substantially tightened the contest in Croatia's favor. This sharpening could reflect recent lineup news, injury updates, or current form information unavailable to the model's last training cycle. The dashboard surfaces this asymmetry as a signal of where real-money flows are concentrating conviction, without asserting which probability better reflects the true match outcome."
 }

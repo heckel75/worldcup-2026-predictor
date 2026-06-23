@@ -3,9 +3,9 @@
   "home_team": "South Africa",
   "away_team": "South Korea",
   "date": "2026-06-24",
-  "input_hash": "fd73bd9538a31b21f4b295ef64cdc7bc4feb8e69",
-  "generated_at": "2026-06-22T06:04:54+00:00",
+  "input_hash": "6d422dedc18752bfb64463b5e49fa2211d3ce104",
+  "generated_at": "2026-06-23T06:32:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea with a 61% win probability, leaving South Africa at 13% and a draw at 26%. South Korea holds a commanding edge of 48 percentage points over its opponent, placing the underdog in a difficult position.\n\nThe win-draw-loss spread reflects a heavily skewed matchup. South Korea's probability sits well clear of the field, while the draw at 26% remains plausible enough to suggest the match will not inevitably run away as a one-sided affair. Still, South Africa faces steep odds of emerging victorious; draws occur frequently enough in group-stage football that the outcome space is not entirely binary.\n\nModel and market are closely aligned across all three outcomes. The model's South Korea estimate sits 2.4 percentage points above the sportsbook consensus, while the draw probabilities match almost exactly. Polymarket sentiment tracks similarly to the consensus odds. The dashboard presents these as consistent signals, though the marginal gaps remain within typical variance between estimation methods."
+  "preview_text": "The model favors South Korea at 61%, with South Africa assigned a 13% chance of victory. The underdog faces a substantial probability gap, with the forecast pointing clearly toward a Korean advantage on a neutral pitch.\n\nThe win-draw-loss spread reflects a moderately competitive match shaped by Korea's edge. A draw at roughly 26% represents a plausible outcome, neither rare nor central to the expected result. The 48-point gap between Korea's win probability and South Africa's suggests Korea enters as clear favorite without the match being a foregone conclusion.\n\nThe model and sportsbook consensus are closely aligned across all three outcomes. The model places South Africa 4 percentage points lower than the market median, while Korea sits 3 points higher in the model's view. Polymarket prices track near-identically to the consensus. The minimal divergence across sources indicates broad agreement on match structure."
 }

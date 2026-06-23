@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-26_senegal_vs_iraq",
+  "home_team": "Senegal",
+  "away_team": "Iraq",
+  "date": "2026-06-26",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 15.4,
+  "input_hash": "85befbad82b2ead47411e7e72f4086d9438d448c",
+  "generated_at": "2026-06-23T06:34:41+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market prices a Senegal win at 76% while the model sits at 61%—a 15-percentage-point gap favoring the favorite. The model also assigns the draw 26% versus the market's 16%, another notable spread. These gaps suggest the market has incorporated information the model cannot access, such as recent team form, injury status, or lineup composition that sharpens confidence in a Senegal result. The dashboard flags this as a signal worth noting: sportsbooks and traders may be reading developments that strengthen conviction in the favorite beyond what Elo and goal-scoring patterns alone capture."
+}

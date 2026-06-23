@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-25_tunisia_vs_netherlands",
+  "home_team": "Tunisia",
+  "away_team": "Netherlands",
+  "date": "2026-06-25",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 15.3,
+  "input_hash": "e571ddf94bf88f10681463f4456c908bacb45f08",
+  "generated_at": "2026-06-23T06:34:38+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market assigns Netherlands a 84% win probability versus the model's 70%, a 14-percentage-point gap favoring the stronger favorite. The model sees wider room for Tunisia upsets and draws, pricing both outcomes substantially higher than sportsbooks do. This sharpening of conviction in the Netherlands could reflect recent lineup news, injury updates, or current form momentum that the model's Elo foundation cannot capture. The dashboard flags this as a signal of information asymmetry—real-money markets may have access to fresher tactical or personnel data—without adjudicating which source better reflects true match likelihood."
+}

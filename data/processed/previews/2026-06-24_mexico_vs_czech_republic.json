@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "Czech Republic",
   "date": "2026-06-24",
-  "input_hash": "e3dec78508358b93f33d5bdd4a2b57f0ed6ea4fc",
-  "generated_at": "2026-06-22T06:04:49+00:00",
+  "input_hash": "f47a91bd79f0eec4033312aa3a7ade0ad31c14fb",
+  "generated_at": "2026-06-23T06:32:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Mexico at 71%, assessing them as a strong favorite on a neutral ground. Czech Republic's win probability registers at 7%, leaving them as a clear underdog in the model's assessment.\n\nThe gap between Mexico's peak probability and a Czech Republic upset is substantial, though the model assigns a non-trivial 23% chance to a draw. This suggests the match carries meaningful competitive uncertainty in the middle outcome—a stalemate is plausible—but the modal result leans decisively toward a Mexico victory. The spread indicates Mexico as favorites rather than dominant.\n\nThe model and market diverge significantly. Sportsbooks and Polymarket both assign Czech Republic roughly 25% win probability, nearly four times the model's 7%. The market also substantially downgrades Mexico, setting their win odds around 50% versus the model's 71%. Both alternative sources converge on a tighter three-way race. The dashboard does not claim to know which assessment is correct; the disparity warrants attention from bettors and analysts evaluating the fixture."
+  "preview_text": "The model favors Mexico decisively, assigning them a 71% win probability compared to Czech Republic's 7%. The gap reflects a substantial edge for the favorite, though the underdog retains a non-negligible chance of an upset.\n\nThe forecast distributes outcomes unevenly across the draw and either team's victory. A draw ranks second-most likely at 23%, suggesting the match has competitive potential but the model leans toward a decisive result. Mexico's dominance in the win column points to an encounter where the model expects clear separation rather than a tightly contested affair.\n\nThe model and market diverge markedly on this fixture. Sportsbooks place Mexico at 50% and Czech Republic at 25%, a gap of roughly 21 percentage points from the model's 71% and 7% respectively. Polymarket aligns more closely with the books than with the model. The dashboard does not adjudicate between these sources; the disagreement may reflect differing assessments of team quality or match context."
 }

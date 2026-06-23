@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Turkey",
   "date": "2026-06-25",
-  "input_hash": "8f5ab9e6b0b837f346ff3ca7b7e002853a9fbc8c",
-  "generated_at": "2026-06-22T06:05:05+00:00",
+  "input_hash": "d474991cef51dc61b257b0e71a1c6312a9099f74",
+  "generated_at": "2026-06-23T06:33:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Turkey as the slight favorite at 37.5% to win, while the USA holds a 31.1% chance of victory. A draw appears nearly as probable as either outcome under the model's estimate, sitting at 31.4%.\n\nThe three outcomes are tightly bunched, suggesting a competitive match with genuine uncertainty across all results. Turkey carries only a 6-percentage-point edge over the USA in win probability, and the 31% draw probability indicates the teams are sufficiently matched that a stalemate is a plausible and substantial outcome. The match is expected to be closely contested rather than tilted decisively toward either side.\n\nThe market consensus diverges meaningfully from the model. Sportsbooks and Polymarket both favor the USA decisively—around 49–50% win probability—while assessing Turkey's chances at roughly 27%. The market also compresses the draw to 22–24%, well below the model's 31%. This represents roughly an 18-percentage-point gap on the USA and a 10-percentage-point gap on Turkey. The dashboard does not adjudicate which source is more accurate."
+  "preview_text": "The statistical model rates Turkey as a modest favorite, assigning the side a 38% chance of victory compared to 31% for the USA. The draw is nearly as likely as either team winning outright at 31%, suggesting a competitive fixture where a single-goal margin or stalemate are plausible outcomes.\n\nThe spread across outcomes is relatively balanced. No result commands overwhelming probability; the largest gap between any two outcomes is only 6 percentage points. This narrow distribution implies an evenly matched encounter where neither side enters with a commanding edge, and late-game swings or fine margins are likely to determine the result.\n\nThe sportsbook consensus and Polymarket both diverge meaningfully from the model, favoring the USA at around 50% compared to the model's 31%. They also compress the draw probability to roughly 23%, well below the model's 31%. These sources rate Turkey substantially lower than the statistical forecast does. The dashboard presents both views without claiming superiority for either; bettors and forecasters can weigh the discrepancy themselves."
 }

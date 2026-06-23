@@ -3,9 +3,9 @@
   "home_team": "Morocco",
   "away_team": "Haiti",
   "date": "2026-06-24",
-  "input_hash": "600e9a6cd79ad3afef5020955d2a6e710228b028",
-  "generated_at": "2026-06-22T06:05:01+00:00",
+  "input_hash": "5d9d5d68e237c2cbde59fa087fa0c5f0c4e7b3a2",
+  "generated_at": "2026-06-23T06:33:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Morocco to win at 74%, with Haiti's win probability standing at just 5%. The 69-percentage-point gap reflects a substantial asymmetry in expected quality, though Morocco's three-in-four likelihood leaves room for upset outcomes or a stalemate.\n\nThe draw carries 21% probability in the model's forecast, a meaningful share of outcomes. This suggests the match carries competitive risk beyond a simple binary: while Morocco enters as clear favourite, the distribution indicates a draw remains plausible and Haiti's low win odds do not render them negligible opponents.\n\nThe sportsbook consensus and Polymarket prices both lean more decisively toward Morocco, pricing the win at 80–82% compared to the model's 74%. Both betting sources compress the draw to 12–14%, roughly half the model's estimate. The gaps of 6–8 percentage points on the favourite and 7–9 points on the draw represent meaningful divergence; the dashboard does not adjudicate which assessment is more accurate."
+  "preview_text": "The model favours Morocco at 74%, a commanding baseline against Haiti's 5% win probability. The 69-percentage-point gap reflects a clear hierarchy, though the underdog retains a small but non-zero chance of an upset.\n\nThe forecast distribution shows Morocco as heavy favourite but leaves meaningful room for a draw at 21%. That gap between win and draw probabilities suggests a moderately competitive match in structure, not a foregone conclusion. Haiti's 5% win chance is low enough to make victory improbable, yet the 21% draw probability indicates Morocco may not dominate possession or create overwhelming chances.\n\nThe sportsbook consensus sits notably higher on Morocco, at 81%, a 7-percentage-point gap above the model. The market simultaneously compresses the draw to 13%, favouring decisive outcomes over stalemate. Polymarket prices align closely with the sportsbooks. The dashboard does not adjudicate between these sources; the divergence is modest but consistent in direction."
 }

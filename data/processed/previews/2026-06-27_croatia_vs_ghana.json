@@ -3,9 +3,9 @@
   "home_team": "Croatia",
   "away_team": "Ghana",
   "date": "2026-06-27",
-  "input_hash": "8444148d705be633c54bd70dd218b43e1fdfe8dd",
-  "generated_at": "2026-06-21T06:18:37+00:00",
+  "input_hash": "08cb0613d15bda8efb6362685b8eb8f5c72b9447",
+  "generated_at": "2026-06-23T06:34:11+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Croatia at 79%, with Ghana at just 3% to win outright. This represents a decisive gap in the forecast. Croatia enters as the clear statistical favorite on the neutral ground, though Ghana retains a small probability of an upset.\n\nThe model's win-draw-loss spread suggests Croatia is heavily favored but a draw remains plausible at 19%. The narrow 3% floor for Ghana reflects the extreme confidence in a Croatian victory. This is not a closely matched contest under the model; rather, it projects a likely Croatian control of the match with limited avenue for a Ghana win.\n\nThe model and sportsbook consensus diverge meaningfully. The market prices Croatia at 58%, roughly 20 percentage points lower than the model's 79%. Conversely, the market assigns Ghana 17% win probability against the model's 3%, and draws at 25% versus the model's 19%. Polymarket pricing aligns closely with sportsbook consensus. The dashboard does not adjudicate which source is correct; users should weigh both signals when forming their own view."
+  "preview_text": "The model favors Croatia decisively, assigning a 79% win probability against Ghana's 3%. This represents a sharp gap in assessed strength, with the underdog given minimal chances under the statistical framework.\n\nThe model's spread reflects limited competitive balance. Croatia's 79% win probability pairs with an 19% draw chance, leaving Ghana little room for success. The narrow draw probability suggests the model expects a decisive outcome when a decision occurs, rather than a tight, cagey contest.\n\nThe model and market diverge substantially. Sportsbooks price Ghana at 16%, roughly 13 percentage points higher than the model. Polymarket similarly prices Ghana at 15%. Both market sources treat the fixture as more competitive than the statistical forecast indicates, though they remain aligned with each other. The dashboard makes no claim about which assessment is correct."
 }

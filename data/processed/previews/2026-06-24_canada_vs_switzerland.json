@@ -3,9 +3,9 @@
   "home_team": "Canada",
   "away_team": "Switzerland",
   "date": "2026-06-24",
-  "input_hash": "4e14303f4d1787d4a9ed0ed42fd14d2a875432d3",
-  "generated_at": "2026-06-20T07:14:24+00:00",
+  "input_hash": "d05fa679651b963c1f6493f2ef9a09efb1e5d5c5",
+  "generated_at": "2026-06-23T06:32:54+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Canada at 41%, with Switzerland a 28% underdog. The gap of 13 percentage points reflects a meaningful but not decisive edge for the Canadian side in the forecast.\n\nThe draw emerges as a plausible outcome at 31%, nearly level with Canada's win probability. This clustering of outcomes in the 28–41% range indicates a competitive match unlikely to be settled by a dominant performance; the result remains genuinely open across all three possibilities.\n\nModel and market diverge noticeably here. The sportsbook consensus backs Switzerland at 39% and Canada at 30%—a reversal of the model's ranking, with a gap of roughly 11 percentage points on each side. Polymarket prices align closely with the books. The dashboard does not adjudicate between these sources; the disagreement reflects genuine uncertainty about which team holds the true edge."
+  "preview_text": "The model favors Canada at 41%, with Switzerland trailing at 28%. That 12-percentage-point gap reflects the model's assessment that Canada holds a material edge in this neutral-venue fixture. Switzerland's underdog position remains competitive but secondary in the statistical forecast.\n\nThe draw probability sits at 31%, nearly as high as Canada's win chance. This substantial draw likelihood indicates a closely matched contest where neither side is decisively favored. The three-way spread is moderately compressed, suggesting a competitive encounter without a runaway favorite. All three outcomes carry meaningful probability mass.\n\nA meaningful divergence appears between the model and sportsbook consensus. The market backs Switzerland at 40%, inverting the model's ranking and placing Canada at 29%—roughly an 11-percentage-point swing on either side. Polymarket pricing aligns with the sportsbooks. The dashboard does not adjudicate which assessment is correct; both interpretations reflect legitimate analytical disagreement about the match's likely flow."
 }

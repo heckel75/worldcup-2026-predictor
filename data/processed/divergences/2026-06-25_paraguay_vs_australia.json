@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 19.2,
-  "input_hash": "59ce2bc89cc1bfee3146258dd5b93ee55207b551",
-  "generated_at": "2026-06-22T06:06:07+00:00",
+  "max_gap_pp": 19.4,
+  "input_hash": "da0a11da9f4a18f4f96e534aeb010565c59216d1",
+  "generated_at": "2026-06-23T06:34:29+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 44% while the market favors the draw at 42%, creating a structural disagreement on the likely outcome. On the Australia win specifically, the model and market diverge by 19 percentage points, with the model substantially more confident in an Australian victory. Market pricing may reflect recent lineup changes, injury updates, or form shifts unavailable to the model's last training cycle. The dashboard flags this gap as meaningful signal worth monitoring rather than evidence that either forecast is miscalibrated."
+  "commentary_text": "The model favors Australia at 44% while the market favors the draw at 42%, revealing a fundamental disagreement on match structure. The sharpest single gap appears on the Australia win, where the model stands 19 percentage points higher than the sportsbook consensus at 24%. The market's tilt toward a stalemate and a Paraguay upset may reflect recent lineup changes, injury developments, or current form trends that the model's Elo foundation cannot capture. This divergence surfaces a genuine tension between statistical ratings and real-money pricing; neither source has privileged access to ground truth."
 }

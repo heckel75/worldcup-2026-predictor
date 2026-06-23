@@ -3,9 +3,9 @@
   "home_team": "Japan",
   "away_team": "Sweden",
   "date": "2026-06-25",
-  "input_hash": "4f93324155fa716cc9e2424e1ea5b2ec3fb4b552",
-  "generated_at": "2026-06-22T06:05:22+00:00",
+  "input_hash": "38d869fa58a6162cafbd8625bb09326c4e6b7893",
+  "generated_at": "2026-06-23T06:33:25+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Japan heavily, assigning the team a 69% win probability, while Sweden sits at just 8%. This is a substantial gap, with the model viewing Japan as the clear favorite on a neutral pitch.\n\nThe spread reflects a lopsided match according to the model's estimates. Japan's draw probability of 24% suggests the underdog could frustrate play into stalemate, but the 62-percentage-point gap between Japan's win chance and Sweden's win chance indicates the model expects the favorite to control the contest decisively. A Swedish upset remains possible but unlikely in this forecast.\n\nModel and market assessments diverge meaningfully here. The model's 69% for Japan win sits roughly 20 percentage points above sportsbook consensus at 49%, and about 18 points above Polymarket at 51%. Both betting sources regard the match as much closer than the statistical model does. The dashboard makes no claim about which view is correct; the divergence warrants attention from those building positions."
+  "preview_text": "The model favors Japan heavily, assigning a 69% win probability against Sweden's 8%. This represents a substantial edge in the forecast, reflecting a clear hierarchy between the two sides on the statistical basis alone.\n\nThe model's spread concentrates probability on a Japan victory, though a draw at 24% remains a meaningful outcome. The gap between favorite and underdog suggests a competitive match that Japan enters as a strong but not overwhelming favorite, with the draw as a plausible alternative to either team winning in regular time.\n\nModel and sportsbook consensus diverge meaningfully on this fixture. The market assigns Japan only 49%, roughly 20 percentage points lower than the model, while pricing Sweden at 23%—nearly three times the model's 8%. Polymarket prices align closer to the model but still show a material gap on the Japan win probability. The dashboard offers the model's statistical forecast without claiming superiority over market pricing; bettors face a genuine disagreement between these sources on match likelihoods."
 }

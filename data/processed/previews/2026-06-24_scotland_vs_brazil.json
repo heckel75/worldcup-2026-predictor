@@ -3,9 +3,9 @@
   "home_team": "Scotland",
   "away_team": "Brazil",
   "date": "2026-06-24",
-  "input_hash": "64f21522ecf638c90fb83159a1c8f450d8f5f1b7",
-  "generated_at": "2026-06-22T06:04:57+00:00",
+  "input_hash": "6d0dc9c433374d3eb1c00f92152550486ee48fc3",
+  "generated_at": "2026-06-23T06:33:01+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Brazil at 63%, with Scotland's win probability at 12%. Brazil enters as a heavy favorite, leaving the underdog with roughly one-in-eight odds of victory on a neutral surface.\n\nThe draw probability of 25% from the model suggests competitive balance in the tail scenarios, yet Brazil's advantage across the W/D/L spread is substantial. A Scotland win remains plausible but unlikely; draws and Brazil victories dominate the outcome space, indicating Brazil is expected to control much of the match.\n\nThe market consensus edges Brazil higher at 69%, roughly 5 percentage points above the model, while assigning draws lower at 19%. Polymarket prices align closely with the sportsbook view. The divergence reflects differing assumptions about Brazil's edge, though all three sources rank outcomes identically and treat Scotland as a clear underdog."
+  "preview_text": "The model favors Brazil at 63%, with Scotland's win probability at 12% — roughly a five-to-one underdog. The draw lands at 25%, suggesting a meaningful chance of a stalemate outcome that keeps the contest live.\n\nThe spread between Brazil's majority and Scotland's slim path tilts toward a decisive result. A draw at nearly one-quarter probability sits well above a marginal outcome, indicating competitive balance in the second half of the match even if Brazil enters as clear favorites. The three-way split reflects a match neither heavily skewed nor genuinely close across all outcomes.\n\nThe model and sportsbooks align closely on the Brazil win (63% vs. 69%) and Scotland upset (12% vs. 12%). The main divergence appears in draw probability: the model assigns 25% while the consensus sits at 19%. This 6-percentage-point gap suggests modest disagreement on whether stalemate or decisive Brazilian victory is likelier. No market consensus is available yet from Polymarket depth, though its Brazil-win estimate (71%) lies above the model."
 }
