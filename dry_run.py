@@ -18,6 +18,9 @@ Invariants checked every iteration:
   D. What-changed movers: non-empty from iteration 1 onward (when the feed
      contains at least one day's results and two dated snapshots exist to diff).
   E. Ledger (final run): 72 group-stage rows frozen, all scored.
+  F. Best-thirds selection (truth): the 8 third-placed teams that advance are
+     exactly the top 8 of the 12 thirds by FIFA criteria (points, GD, GF) —
+     not group-letter order. (Integration guard for the Session DRC-FIX bug.)
 
 Run from project root:
     python dry_run.py
@@ -299,6 +302,41 @@ def _check_what_changed(iteration: int, label: str) -> None:
     )
 
 
+def _check_third_place_selection(truth: dict) -> None:
+    """Invariant F: among the 12 third-placed teams, the 8 that advance must be
+    the top 8 by FIFA third-place criteria (points, GD, GF) — not group order.
+
+    This is the integration complement to the "4th-place teams never advance"
+    check. It re-ranks the thirds independently and compares to the set that
+    actually reached the knockout stage. Under the Session DRC-FIX bug
+    (rank_third_place zeroed every stat) the advancing thirds were always
+    groups A-H regardless of record; this assertion would have caught it.
+    """
+    # (letter, team, pts, gd, gf) for each group's third-placed team.
+    thirds = [
+        (letter, e["team"], e["pts"], e["gd"], e["gf"])
+        for letter, standings in truth["group_results"].items()
+        for e in standings if e["rank"] == 3
+    ]
+    # Mirror rank_third_place's input order (group-letter A..L) so any exact
+    # ties at the 8/9 boundary break identically and the comparison is exact.
+    thirds.sort(key=lambda x: x[0])
+    ranked = sorted(thirds, key=lambda x: (-x[2], -x[3], -x[4]))
+    expected_advancing = {t[1] for t in ranked[:8]}
+
+    actual_advancing = {
+        team for (_, team, *_rest) in thirds
+        if truth["team_furthest_round"][team] != "group_stage"
+    }
+    assert actual_advancing == expected_advancing, (
+        "FAIL invariant F: advancing thirds != top-8 by FIFA criteria.\n"
+        f"  expected (by record): {sorted(expected_advancing)}\n"
+        f"  actually advanced:    {sorted(actual_advancing)}"
+    )
+    print(f"  Invariant F OK: advancing thirds = top-8 by record "
+          f"({len(actual_advancing)} teams)")
+
+
 # ---------------------------------------------------------------------------
 # Ledger helpers
 # ---------------------------------------------------------------------------
@@ -392,6 +430,9 @@ def main() -> None:
     print(f"  Champion (truth): {champion}")
     print(f"  Schedule: {len(schedule)} matches across "
           f"{len({m['date'] for m in schedule})} unique dates")
+
+    # Invariant F: best-thirds selection is by record, not group-letter order.
+    _check_third_place_selection(truth)
 
     # ---- Prep --------------------------------------------------------------
     _init_temp_feed()

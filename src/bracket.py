@@ -266,7 +266,11 @@ def rank_third_place(
     stats: dict[str, dict[str, int]] = {}
     for t in third_place_teams:
         g = TEAM_TO_GROUP[t]
-        stats[t] = _aggregate_stats(group_matches_by_letter[g], {t})[t]
+        # Pass the FULL group team set: _aggregate_stats only counts a match
+        # when BOTH teams are in the set, so a single-team set {t} silently
+        # zeroes every stat (the team never plays itself) and the best-8
+        # selection collapses to group-letter order. See Session DRC-FIX.
+        stats[t] = _aggregate_stats(group_matches_by_letter[g], set(GROUPS[g]))[t]
 
     def key(t: str) -> tuple:
         s = stats[t]
@@ -447,6 +451,7 @@ def _sanity_check() -> bool:
     print("✅ R16/QF/SF source matches all reference earlier rounds correctly")
 
     _self_test_tiebreakers()
+    _self_test_third_place_selection()
     _self_test_annex_c()
     return True
 
@@ -470,6 +475,79 @@ def _self_test_tiebreakers() -> None:
     order = rank_group(teams, matches)
     assert order == ["B", "A", "C", "D"], f"tiebreaker self-test failed: {order}"
     print("✅ Tiebreaker self-test (3-way h2h cycle): order is B > A > C > D")
+
+
+def _self_test_third_place_selection() -> None:
+    """
+    rank_third_place must order the 12 third-placed teams by FIFA criteria
+    (points, then GD, then GF), NOT by group-letter order.
+
+    Regression for Session DRC-FIX: the old code passed a single-team set
+    {t} to _aggregate_stats, which zeroes every stat (a team never plays
+    itself), so the stable sort fell back to input order — group-letter
+    order A..L — and the best-8 selection was ALWAYS groups A-H regardless
+    of record.
+
+    Records are built deliberately reverse to letter order: each strong
+    third (groups E-L) has >=3 pts, each weak third (groups A-D) has <=2 pts,
+    so the top-8 by record is exactly {E,F,G,H,I,J,K,L}. The anchor is the
+    live case that exposed the bug: a Group-K third on 4 pts / +1 GD must
+    rank above a Group-A third on 1 pt / -4 GD.
+
+    The input `thirds` list is passed in group-letter order A..L (as
+    simulate.py builds it), so under the OLD code top-8 would be {A..H} and
+    this test fails; under the fix top-8 is {E..L} by record and it passes.
+    """
+    # letter -> the chosen third team's (t_goals, opp_goals) results vs
+    # distinct group-mates, and (in the comment) the implied pts/gd/gf.
+    spec: dict[str, list[tuple[int, int]]] = {
+        "A": [(0, 0), (0, 4)],          # 1 pt,  -4 gd, 0 gf   <- weak anchor
+        "B": [(1, 1), (0, 1)],          # 1 pt,  -1 gd, 1 gf
+        "C": [(0, 0), (0, 0)],          # 2 pts,  0 gd, 0 gf
+        "D": [(1, 1), (0, 0)],          # 2 pts,  0 gd, 1 gf
+        "E": [(2, 1), (0, 2)],          # 3 pts, -1 gd, 2 gf
+        "F": [(0, 0), (0, 0), (0, 0)],  # 3 pts,  0 gd, 0 gf
+        "G": [(1, 1), (1, 1), (1, 1)],  # 3 pts,  0 gd, 3 gf
+        "H": [(1, 0), (0, 1)],          # 3 pts,  0 gd, 1 gf
+        "I": [(3, 1)],                  # 3 pts, +2 gd, 3 gf
+        "J": [(1, 0)],                  # 3 pts, +1 gd, 1 gf
+        "K": [(2, 1), (1, 1)],          # 4 pts, +1 gd, 3 gf   <- strong anchor
+        "L": [(2, 0)],                  # 3 pts, +2 gd, 2 gf
+    }
+
+    thirds: list[str] = []
+    group_matches_by_letter: dict[str, list[dict]] = {}
+    for letter in "ABCDEFGHIJKL":            # group-letter order A..L
+        teams = GROUPS[letter]
+        third = teams[0]                     # any real group member will do
+        opponents = teams[1:]
+        matches = [
+            {"home_team": third, "away_team": opponents[i],
+             "home_score": tg, "away_score": og}
+            for i, (tg, og) in enumerate(spec[letter])
+        ]
+        thirds.append(third)
+        group_matches_by_letter[letter] = matches
+
+    ranked = rank_third_place(thirds, group_matches_by_letter)
+    top8 = set(ranked[:8])
+    expected_top8 = {GROUPS[L][0] for L in "EFGHIJKL"}
+    assert top8 == expected_top8, (
+        "third-place selection picked the wrong 8 — got "
+        f"{sorted(top8)}, expected the 8 best by record {sorted(expected_top8)}. "
+        "If this is {A..H}, rank_third_place is zeroing stats again "
+        "(single-team set bug)."
+    )
+
+    # Anchor: the Group-K third (4 pts/+1) must outrank the Group-A third
+    # (1 pt/-4), not merely lose to alphabetical order.
+    k_third, a_third = GROUPS["K"][0], GROUPS["A"][0]
+    assert ranked.index(k_third) < ranked.index(a_third), (
+        f"{k_third} (4 pts) should rank above {a_third} (1 pt); "
+        f"got order {ranked}"
+    )
+    print("✅ Third-place selection self-test: top-8 chosen by record "
+          "(E-L), not group-letter order (A-H)")
 
 
 def _self_test_annex_c() -> None:
