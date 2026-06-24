@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 20.8,
-  "input_hash": "ccf5f0b29555c2c6022fb6e79f2c2d3d511a4636",
-  "generated_at": "2026-06-20T07:15:45+00:00",
+  "max_gap_pp": 15.6,
+  "input_hash": "0208dfc1587939c7dee66a2db206747a8a63ace5",
+  "generated_at": "2026-06-24T06:26:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Germany a 56% win probability versus the model's 35%, a 21-percentage-point gap favoring the favorite. This sharpening of conviction could reflect recent form, injury status, or lineup changes that the model's last update did not capture. The model sees Ecuador as competitive, but real-money flows may be pricing in information about squad availability or recent performance that narrows the gap. The dashboard flags this divergence as a signal worth monitoring rather than evidence that either source has misprojudged the match."
+  "commentary_text": "The most striking gap is on the Germany win: the model assigns 36% while the sportsbook consensus reaches 51%, a 15-percentage-point spread favoring Germany at the betting counter. The model sees this as a tight three-way contest, but the market has substantially narrowed the range, cutting Ecuador's win probability from 33% to 25% and the draw from 32% to 24%. This sharper conviction on a Germany victory could reflect recent lineup news, injury status among key players, or current form heading into the match that the model's last update did not capture. The dashboard flags this as a signal worth monitoring rather than a judgment on which assessment proves correct."
 }

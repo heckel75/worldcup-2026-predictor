@@ -5,10 +5,10 @@
   "date": "2026-06-27",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 22.0,
-  "input_hash": "b904507eee413b933002cc345a25010ae2b83403",
-  "generated_at": "2026-06-21T06:18:59+00:00",
+  "max_gap_pp": 28.3,
+  "input_hash": "e73472e2864fc979617ca1fa9812f20b1d594ac1",
+  "generated_at": "2026-06-24T06:26:57+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Uzbekistan at 46%, while sportsbooks and Polymarket collectively favor DR Congo at 46%. On the draw, the model assigns 30% probability versus the market's 26%—a 4-percentage-point gap favoring higher draw odds in the model. The largest divergence sits on Uzbekistan's win probability, where the model is 18 percentage points higher than the sportsbook consensus. This inversion of favorites might reflect market pricing that incorporates recent form, injuries, or lineup changes unavailable to the model's last training update. The dashboard surfaces these competing signals without adjudicating which captures ground truth."
+  "commentary_text": "The model favors Uzbekistan at 46%, while the sportsbook consensus favors DR Congo at 52%—a 29-percentage-point gap on the DR Congo win outcome. The model assigns the draw substantially higher at 30% versus the market's 24%. These divergences could reflect differing assessments of recent form or squad availability, factors the statistical model may not fully capture if injuries or lineup changes have occurred since its last update. The dashboard flags this split between model and market consensus as a significant signal worth monitoring, without endorsing either view as the sounder forecast."
 }

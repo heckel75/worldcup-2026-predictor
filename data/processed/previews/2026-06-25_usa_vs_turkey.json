@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Turkey",
   "date": "2026-06-25",
-  "input_hash": "d474991cef51dc61b257b0e71a1c6312a9099f74",
-  "generated_at": "2026-06-23T06:33:10+00:00",
+  "input_hash": "442c625585372cc5717a14270c70428eb20b8189",
+  "generated_at": "2026-06-24T06:25:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The statistical model rates Turkey as a modest favorite, assigning the side a 38% chance of victory compared to 31% for the USA. The draw is nearly as likely as either team winning outright at 31%, suggesting a competitive fixture where a single-goal margin or stalemate are plausible outcomes.\n\nThe spread across outcomes is relatively balanced. No result commands overwhelming probability; the largest gap between any two outcomes is only 6 percentage points. This narrow distribution implies an evenly matched encounter where neither side enters with a commanding edge, and late-game swings or fine margins are likely to determine the result.\n\nThe sportsbook consensus and Polymarket both diverge meaningfully from the model, favoring the USA at around 50% compared to the model's 31%. They also compress the draw probability to roughly 23%, well below the model's 31%. These sources rate Turkey substantially lower than the statistical forecast does. The dashboard presents both views without claiming superiority for either; bettors and forecasters can weigh the discrepancy themselves."
+  "preview_text": "The statistical model rates Turkey as the narrow favorite, assigning them a 38% win probability against the USA's 31%. The remaining probability—31%—lies in a draw outcome, making this a genuinely competitive three-way contest rather than a heavily tilted affair.\n\nThe model's win-loss spread suggests a tight match. Turkey's edge over the USA is modest, and the substantial draw probability indicates both teams are likely to create reasonable defensive structures. Neither side is forecast as dominant, and the clustering of probabilities around 31–38% reinforces that the match outcome is genuinely uncertain.\n\nThe market consensus diverges markedly from the model. Sportsbooks and Polymarket both favor the USA substantially, assigning them roughly 50% win probability—a 19 percentage point gap versus the model. Both betting platforms also compress the draw probability to around 23%, well below the model's 31%. The dashboard does not adjudicate between these sources; the discrepancy warrants scrutiny before committing to either view."
 }

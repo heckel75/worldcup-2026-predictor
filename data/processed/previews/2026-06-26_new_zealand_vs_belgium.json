@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Belgium",
   "date": "2026-06-26",
-  "input_hash": "b4263862df72cfa23d9933fb150e3d3866fd694b",
-  "generated_at": "2026-06-23T06:33:36+00:00",
+  "input_hash": "bb107b640e0b3955aabd8678c03045744a6d07b5",
+  "generated_at": "2026-06-24T06:25:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Belgium as the clear favorite with a 65% win probability, while New Zealand's chances stand at 11%. The gap reflects an asymmetry in expected performance, though the underdog retains a non-trivial path to victory.\n\nThe draw probability of 24% suggests a moderately competitive contest rather than a lopsided affair. Belgium's edge is substantial but not overwhelming; the combined probability of a New Zealand win or draw reaches 35%, indicating the match carries meaningful uncertainty around the final outcome.\n\nThe market diverges noticeably from the model. Sportsbooks assign Belgium 79% and New Zealand only 7%, a gap of roughly 14 percentage points in Belgium's direction. Polymarket prices align closely with sportsbook consensus. The dashboard makes no claim about which assessment is correct; the divergence may reflect information sources, risk appetite, or systematic differences in how each framework weights the underlying data."
+  "preview_text": "The model rates Belgium as a clear favorite with a 65% win probability, while New Zealand's upset chance stands at 11%. The underdog faces a substantial headwind in this matchup on a neutral ground.\n\nThe 24% draw probability suggests competitive balance in the tail; a stalemate is nearly twice as likely as a New Zealand win. However, Belgium's outright victory is favored by a wide margin over either alternative outcome, indicating the model expects Belgium to control much of play and edge the result.\n\nThe market consensus diverges meaningfully from the model. Sportsbooks price Belgium at 80%, some 15 percentage points higher than the model, while compressing New Zealand to 7% and the draw to 13%. Polymarket mirrors this tilt. The dashboard does not adjudicate which source is correct, but the gap is substantial enough to warrant notice for users comparing forecasts."
 }

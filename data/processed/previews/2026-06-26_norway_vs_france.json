@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "France",
   "date": "2026-06-26",
-  "input_hash": "022e356d616fcce93561547587665d940ec902db",
-  "generated_at": "2026-06-23T06:33:46+00:00",
+  "input_hash": "c4aefbff22e8884478ff48b2c27405110e0fe232",
+  "generated_at": "2026-06-24T06:25:57+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates France as the clear favorite with a 55% win probability, while Norway has a 17% chance to prevail. The gap reflects a meaningful asymmetry in expected strength, though Norway's underdog position does not rule out a positive result.\n\nThe draw emerges as the second-likeliest outcome at 28%, indicating meaningful competitive balance despite France's edge. This 28-point gap between France's win probability and Norway's suggests a match tilted toward the favorite but not a runaway scenario; a drawn result remains plausible and would rank among the more probable endpoints.\n\nThe model and market show close alignment across all three outcomes. France's win probability differs by 1–2 percentage points, the draw by roughly 5 points in the model's favor, and Norway's by a similar small margin. No material divergence emerges, and the dashboard registers them as substantially consistent forecasts of match likelihood."
+  "preview_text": "The model favors France at 55%, with Norway given a 17% chance of victory and a draw at 28%. France enters as the clear favourite, though the model assigns the underdog odds that reflect meaningful uncertainty rather than elimination.\n\nThe 28-percentage-point gap between France and a Norway win indicates an asymmetric matchup, yet the draw probability of 28% is substantial—nearly matching Norway's win chance. This suggests the model expects a competitive fixture unlikely to be decided by a wide margin, with a draw standing as a plausible outcome for roughly one in four scenarios.\n\nThe market consensus aligns closely with the model across all three outcomes. France's advantage widens slightly to 58% in sportsbook prices, while Norway's win probability rises modestly to 20% and the draw contracts to 22%. These differences fall within normal consensus variance and do not signal material disagreement about the match structure."
 }

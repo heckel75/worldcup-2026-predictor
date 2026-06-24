@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "4b322dfea039a8d1bc65840f12586f058821bba1",
-  "generated_at": "2026-06-21T06:18:33+00:00",
+  "input_hash": "7ac6f2e6e15a6c9d76816bf037575c03d2aeb353",
+  "generated_at": "2026-06-24T06:26:23+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors England at 63%, giving Panama a 12% chance of victory. England enters as the clear favorite, though the model assigns Panama roughly one-in-eight odds—a non-trivial upset probability.\n\nThe forecast distributes probability across all three outcomes, with draws at 25% suggesting meaningful competitive balance in the match itself. England's 39-point edge over Panama in win probability indicates the model sees a likely England victory, but the substantial draw probability and Panama's double-digit upset chance imply the gap in underlying strength is moderate rather than vast.\n\nThe sportsbook consensus shifts weight decisively toward England, pricing them at 77% and compressing Panama to 9% and draws to 14%. The market is 13 percentage points more bullish on England than the model and roughly half as confident in a draw. Polymarket prices align closely with the sportsbook view. The dashboard does not adjudicate which assessment of match uncertainty is correct."
+  "preview_text": "The model favors England at 63%, with Panama's win probability at 12%. England enters as clear favorite, but the model assigns Panama better than one-in-ten chances—a meaningful underdog floor reflecting the inherent variance in knockout football.\n\nThe 63–12–25 spread points to a competitive match tilted toward England but not overwhelmingly so. A draw sits at nearly one-quarter probability, indicating the model expects close play where either side could force extra time. The gap between the top two outcomes is substantial enough to make England the likely winner, yet the distribution suggests Panama retains realistic paths to advance.\n\nThe sportsbook consensus diverges materially from the model. Books price England at 81%, compared to the model's 63%—an 18-point gap—while Panama drops to 7% and draws compress to 12%. Polymarket aligns closer to sportsbooks than the model. The dashboard does not adjudicate which assessment is more accurate; the divergence itself merits attention as meaningful disagreement among forecast sources."
 }

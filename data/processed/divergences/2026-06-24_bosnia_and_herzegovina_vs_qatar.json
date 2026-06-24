@@ -5,10 +5,10 @@
   "date": "2026-06-24",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 21.0,
-  "input_hash": "73654e572c4b11427fe0ba21904787b1c7903b10",
-  "generated_at": "2026-06-23T06:34:24+00:00",
+  "max_gap_pp": 21.7,
+  "input_hash": "8fe08170b97182b4a9431ff86d0d1c1a94b70d37",
+  "generated_at": "2026-06-24T06:26:31+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The sportsbook consensus gives Bosnia and Herzegovina a 21-percentage-point edge over the model on the home-team win, while assigning Qatar roughly half the probability the model projects. Both sources rank Bosnia and Herzegovina as favorite, but the market's conviction is substantially sharper. This gap could reflect recent form, injury updates, or lineup changes that have shifted odds since the model's last training update; the model has no visibility into such developments. The dashboard surfaces this divergence as a signal worth monitoring rather than evidence that either forecast is miscalibrated."
+  "commentary_text": "The sportsbook consensus assigns Bosnia and Herzegovina a 68% win probability versus the model's 47%—a 21-percentage-point gap favoring the home-side favorite. The market also prices Qatar significantly lower at 13% compared to the model's 23%. This sharpening of conviction toward Bosnia and Herzegovina could reflect recent lineup changes, injury developments, or current form shifts that the model's Elo-based framework has not yet incorporated. The dashboard presents this divergence as a signal for review; neither the statistical model nor the aggregate market has demonstrated reliable superiority on such matches."
 }

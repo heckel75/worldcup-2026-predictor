@@ -3,9 +3,9 @@
   "home_team": "Japan",
   "away_team": "Sweden",
   "date": "2026-06-25",
-  "input_hash": "38d869fa58a6162cafbd8625bb09326c4e6b7893",
-  "generated_at": "2026-06-23T06:33:25+00:00",
+  "input_hash": "2379931f40001e7f80c35d5804a6a0927b613c9c",
+  "generated_at": "2026-06-24T06:25:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Japan heavily, assigning a 69% win probability against Sweden's 8%. This represents a substantial edge in the forecast, reflecting a clear hierarchy between the two sides on the statistical basis alone.\n\nThe model's spread concentrates probability on a Japan victory, though a draw at 24% remains a meaningful outcome. The gap between favorite and underdog suggests a competitive match that Japan enters as a strong but not overwhelming favorite, with the draw as a plausible alternative to either team winning in regular time.\n\nModel and sportsbook consensus diverge meaningfully on this fixture. The market assigns Japan only 49%, roughly 20 percentage points lower than the model, while pricing Sweden at 23%—nearly three times the model's 8%. Polymarket prices align closer to the model but still show a material gap on the Japan win probability. The dashboard offers the model's statistical forecast without claiming superiority over market pricing; bettors face a genuine disagreement between these sources on match likelihoods."
+  "preview_text": "The model favors Japan at 69%, a substantial margin over Sweden's 8% win probability. This asymmetry reflects a clear gap in the statistical forecast, with Japan positioned as the heavy favorite on neutral ground.\n\nThe spread reveals a moderately competitive match in expected shape. Japan's win probability nearly three times that of Sweden's draw and loss combined suggests the model anticipates a fairly one-sided contest, though the 24% draw probability indicates the outcome is not predetermined. Matches of this structure typically see one team dominate possession and chances, though variance always permits surprises.\n\nThe model and sportsbook consensus diverge meaningfully. Bookmakers price Japan at 50%, roughly 19 percentage points below the model's 69%. Polymarket prices align closer to sportsbooks, at 52%. This gap suggests either that market participants assess the teams as nearer parity than the statistical model, or that the model's Elo inputs overstate Japan's edge. The dashboard does not adjudicate between these sources—only that they diverge substantially."
 }

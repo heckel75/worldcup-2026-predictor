@@ -1,8 +1,4 @@
 date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,neutral
-2026-06-23,Portugal,Uzbekistan,,,,FIFA World Cup,Houston,United States,True
-2026-06-23,Colombia,DR Congo,,,,FIFA World Cup,Zapopan,Mexico,True
-2026-06-23,England,Ghana,,,,FIFA World Cup,Foxborough,United States,True
-2026-06-23,Panama,Croatia,,,,FIFA World Cup,Toronto,Canada,True
 2026-06-24,Mexico,Czech Republic,,,,FIFA World Cup,Mexico City,Mexico,False
 2026-06-24,South Africa,South Korea,,,,FIFA World Cup,Guadalupe,Mexico,True
 2026-06-24,Canada,Switzerland,,,,FIFA World Cup,Vancouver,Canada,False

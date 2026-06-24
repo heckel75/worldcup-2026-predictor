@@ -5,10 +5,10 @@
   "date": "2026-06-27",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 20.4,
-  "input_hash": "0f621619b1f6bd29c8b2c8315455341dce049710",
-  "generated_at": "2026-06-23T06:34:45+00:00",
+  "max_gap_pp": 24.2,
+  "input_hash": "972c818c0b76fd1e0de945a27d53389fff01c020",
+  "generated_at": "2026-06-24T06:27:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Croatia a 79% win probability versus the market's 58%, a 20-percentage-point gap favoring the model's confidence in a Croatian victory. This substantial divergence suggests the market is pricing in information the model cannot access—most likely recent lineup changes, injury news, or current form that has softened expectations for Croatia or elevated Ghana's chances. The Polymarket crowd aligns closely with sportsbook consensus, indicating broad agreement that the match is more competitive than the statistical baseline implies. The dashboard flags this as a notable signal: both sources agree Croatia is favored, but they disagree sharply on by how much."
+  "commentary_text": "The model gives Croatia a 78% win probability while the sportsbook consensus stands at 54%—a 24-percentage-point gap favoring the model's confidence in a Croatian victory. This hedging by the market could reflect recent lineup changes, injury concerns, or current form issues that the model's Elo rating does not capture. Alternatively, the market may be pricing in elevated Ghana upside based on recent news unavailable to the statistical framework. Both sources agree Croatia is the favorite, but the divergence signals meaningful uncertainty about team readiness or personnel that deserves scrutiny before weighing either forecast heavily."
 }

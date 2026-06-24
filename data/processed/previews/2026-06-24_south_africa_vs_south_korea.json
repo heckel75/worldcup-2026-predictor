@@ -3,9 +3,9 @@
   "home_team": "South Africa",
   "away_team": "South Korea",
   "date": "2026-06-24",
-  "input_hash": "6d422dedc18752bfb64463b5e49fa2211d3ce104",
-  "generated_at": "2026-06-23T06:32:50+00:00",
+  "input_hash": "55bff583f260ca0bd9a9230734cad2d2d68853b7",
+  "generated_at": "2026-06-24T06:25:07+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors South Korea at 61%, with South Africa assigned a 13% chance of victory. The underdog faces a substantial probability gap, with the forecast pointing clearly toward a Korean advantage on a neutral pitch.\n\nThe win-draw-loss spread reflects a moderately competitive match shaped by Korea's edge. A draw at roughly 26% represents a plausible outcome, neither rare nor central to the expected result. The 48-point gap between Korea's win probability and South Africa's suggests Korea enters as clear favorite without the match being a foregone conclusion.\n\nThe model and sportsbook consensus are closely aligned across all three outcomes. The model places South Africa 4 percentage points lower than the market median, while Korea sits 3 points higher in the model's view. Polymarket prices track near-identically to the consensus. The minimal divergence across sources indicates broad agreement on match structure."
+  "preview_text": "The model favors South Korea with a 61% win probability, leaving South Africa with a 13% chance of victory. This represents a decisive tilt toward the Asian side, though the underdog retains a non-negligible path to three points.\n\nThe 26% draw probability sits between the two outright outcomes, suggesting a moderately competitive match. The gap between South Korea's win probability and South Africa's is substantial—roughly 48 percentage points—indicating the model expects the favorite to dominate possession and create better scoring opportunities, yet a stalemate remains plausible enough to rank second in the outcome distribution.\n\nThe sportsbook consensus aligns closely with the model across all three outcomes. South Korea's implied win probability sits 4 percentage points above the model's estimate, while the draw is nearly level and South Africa's implied price sits 5 percentage points higher. Polymarket pricing falls between the two in most categories, suggesting no material disagreement among the three data sources on the match structure."
 }

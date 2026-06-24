@@ -3,9 +3,9 @@
   "home_team": "Croatia",
   "away_team": "Ghana",
   "date": "2026-06-27",
-  "input_hash": "08cb0613d15bda8efb6362685b8eb8f5c72b9447",
-  "generated_at": "2026-06-23T06:34:11+00:00",
+  "input_hash": "652854cc34b7737c78e14bc6d7a158e3d76bdc90",
+  "generated_at": "2026-06-24T06:26:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Croatia decisively, assigning a 79% win probability against Ghana's 3%. This represents a sharp gap in assessed strength, with the underdog given minimal chances under the statistical framework.\n\nThe model's spread reflects limited competitive balance. Croatia's 79% win probability pairs with an 19% draw chance, leaving Ghana little room for success. The narrow draw probability suggests the model expects a decisive outcome when a decision occurs, rather than a tight, cagey contest.\n\nThe model and market diverge substantially. Sportsbooks price Ghana at 16%, roughly 13 percentage points higher than the model. Polymarket similarly prices Ghana at 15%. Both market sources treat the fixture as more competitive than the statistical forecast indicates, though they remain aligned with each other. The dashboard makes no claim about which assessment is correct."
+  "preview_text": "The model favors Croatia at 79%, assigning them a substantial edge. Ghana's modeled win probability stands at only 3%, a gap that reflects a large projected gap in match quality between the two sides.\n\nThe model's win-draw-loss spread shows Croatia as clear favorites but with a meaningful draw probability at 19%. This indicates a match unlikely to be tightly contested overall, though a stalemate remains a plausible outcome rather than a remote one. A Ghana upset is not ruled out by the model but carries minimal weight in the forecast.\n\nThe model and the market diverge notably. Sportsbooks price Croatia at 54% and Ghana at 18%, a difference of roughly 24 percentage points on the underdog. Polymarket prices align closely with sportsbooks. The dashboard does not adjudicate between these sources; the divergence suggests material disagreement on the true strength differential between the teams."
 }

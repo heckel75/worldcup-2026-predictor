@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-27_colombia_vs_portugal",
+  "home_team": "Colombia",
+  "away_team": "Portugal",
+  "date": "2026-06-27",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 15.0,
+  "input_hash": "ebd78a640ed0c9e2f2fe808ecf791d6698f1dc24",
+  "generated_at": "2026-06-24T06:26:55+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The most striking gap is on the Portugal win: the model places it at 35%, while the sportsbook consensus reaches 50%, a 15-percentage-point divergence in Portugal's favor. The model sees this match as nearly a three-way coin flip, whereas the market has substantially sharpened its conviction toward Portugal. This confidence differential could reflect recent lineup news, injury status, or current form dynamics that the model's last update did not capture. The dashboard flags this signal without asserting which assessment is more reliable; resolving the gap will depend on information available closer to kickoff."
+}
