@@ -5,10 +5,10 @@
   "date": "2026-06-27",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 18.0,
-  "input_hash": "08cc1b14c31ed80a5c5daec0173ea4ef32d5d49f",
-  "generated_at": "2026-06-24T06:27:00+00:00",
+  "max_gap_pp": 18.4,
+  "input_hash": "287019278fcd340ea234c959d15f9c52f00f754c",
+  "generated_at": "2026-06-25T05:58:28+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The sportsbook consensus assigns England a 81% win probability versus the model's 63%, a 18-percentage-point gap favoring the favorite. The market is also notably more pessimistic on Panama, pricing a 6.5% win chance against the model's 11.9%. This sharper conviction on England could reflect recent lineup developments, injury status, or form trends that the model has not yet incorporated; conversely, it may simply reflect real-money flows converging on the favorite in a match where historical or qualifying-stage data already tilt heavily toward England. Both sources agree on the direction—England is favored—but diverge on magnitude, making this gap a signal worth monitoring as team news emerges closer to match day."
+  "commentary_text": "The sportsbook consensus assigns England an 81.6% win probability versus the model's 63.3%—an 18-point gap favoring the market's confidence in an England victory. This sharper conviction could reflect recent lineup news, injury updates, or current form information unavailable to the model at its last update. The market also prices Panama's upset chances at 6.1% against the model's 11.9%, suggesting bookmakers may have specific intelligence dampening Panama's prospects. Both sources agree England is the clear favorite on a neutral ground, but the gap signals the market has incorporated newer intelligence that strengthens that case beyond what the model's rating-based forecast captures."
 }

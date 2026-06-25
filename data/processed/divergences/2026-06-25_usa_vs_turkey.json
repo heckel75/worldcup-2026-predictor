@@ -5,10 +5,10 @@
   "date": "2026-06-25",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 19.1,
-  "input_hash": "53616c599077aa9f833e0c5d96439b84a4370185",
-  "generated_at": "2026-06-24T06:26:34+00:00",
+  "max_gap_pp": 20.9,
+  "input_hash": "2f67931b05d9bdaf6b1d371dc2debdb25d1e9e0b",
+  "generated_at": "2026-06-25T05:58:03+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Turkey at 38% while the market favors USA at 50%, a 19-percentage-point gap on the USA win outcome. This reversal of favorites is the sharpest signal in the match. The sportsbook consensus may reflect recent lineup news, injury updates, or form information unavailable to the model's last training date; conversely, the model's structural rating of Turkey could capture longer-term strength the market has discounted. The dashboard flags this disagreement as a key divergence to monitor, without adjudicating which source has better information."
+  "commentary_text": "The model favors Turkey at 38% while the market favors USA at 52%, a 21-percentage-point gap on the USA win outcome. This sharp divergence suggests the market is pricing in information the model cannot access—possibly recent lineup changes, injuries to key players, or form shifts since the model's last update. The model's relatively balanced view across all three outcomes contrasts with the market's substantial confidence in a USA victory, though both sources agree a draw is less likely than either team winning outright. The dashboard flags this divergence as a notable signal worth monitoring rather than a judgment on which assessment will prove correct."
 }

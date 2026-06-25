@@ -1,4 +1,10 @@
 date,match,stage,group,outcome,result,score,p_model_on_outcome,p_sportsbook_on_outcome,p_polymarket_on_outcome,gap_pp,gap_bucket,divergence_type,flagged,verdict
+2026-06-24,Mexico v Czechia,Group stage,A,H,Home win,3–0,0.7071,0.4975,0.5127,21,15pp+,model_over_concentrated,True,Model closest
+2026-06-24,South Africa v South Korea,Group stage,A,H,Home win,1–0,0.1302,0.1725,0.1658,4,Under 5pp,model_over_concentrated,False,All missed
+2026-06-24,Canada v Switzerland,Group stage,B,A,Away win,1–2,0.2792,0.3983,0.403,12,5–15pp,disagree_on_favorite,False,Markets closest
+2026-06-24,Bosnia and Herzegovina v Qatar,Group stage,B,H,Home win,3–1,0.4651,0.6748,0.6816,21,15pp+,model_under_concentrated,True,Sources agreed
+2026-06-24,Scotland v Brazil,Group stage,C,A,Away win,0–3,0.6335,0.6942,0.7114,6,5–15pp,model_under_concentrated,False,Sources agreed
+2026-06-24,Morocco v Haiti,Group stage,C,H,Home win,4–2,0.7399,0.8084,0.8291,8,5–15pp,model_under_concentrated,False,Polymarket closest
 2026-06-23,Portugal v Uzbekistan,Group stage,K,H,Home win,5–0,0.6579,0.8007,0.8191,14,5–15pp,model_under_concentrated,False,Sources agreed
 2026-06-23,Colombia v DR Congo,Group stage,K,H,Home win,1–0,0.7515,0.6313,0.6482,12,5–15pp,model_over_concentrated,False,Model closest
 2026-06-23,England v Ghana,Group stage,L,D,Draw,0–0,0.1273,0.1462,0.1443,9,5–15pp,model_over_concentrated,False,All missed

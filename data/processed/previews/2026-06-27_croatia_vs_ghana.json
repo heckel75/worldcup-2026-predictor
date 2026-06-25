@@ -3,9 +3,9 @@
   "home_team": "Croatia",
   "away_team": "Ghana",
   "date": "2026-06-27",
-  "input_hash": "652854cc34b7737c78e14bc6d7a158e3d76bdc90",
-  "generated_at": "2026-06-24T06:26:27+00:00",
+  "input_hash": "4f1ae6b00e2b3041a02021f5cc1fe8a9ca6a5917",
+  "generated_at": "2026-06-25T05:57:59+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Croatia at 79%, assigning them a substantial edge. Ghana's modeled win probability stands at only 3%, a gap that reflects a large projected gap in match quality between the two sides.\n\nThe model's win-draw-loss spread shows Croatia as clear favorites but with a meaningful draw probability at 19%. This indicates a match unlikely to be tightly contested overall, though a stalemate remains a plausible outcome rather than a remote one. A Ghana upset is not ruled out by the model but carries minimal weight in the forecast.\n\nThe model and the market diverge notably. Sportsbooks price Croatia at 54% and Ghana at 18%, a difference of roughly 24 percentage points on the underdog. Polymarket prices align closely with sportsbooks. The dashboard does not adjudicate between these sources; the divergence suggests material disagreement on the true strength differential between the teams."
+  "preview_text": "The model heavily favors Croatia, assigning them a 78.5% win probability and viewing Ghana as a substantial underdog at 2.9%. This 75-percentage-point gap reflects the model's assessment that Croatia is the clear favorite, though a Ghana upset remains within the realm of possibility rather than negligible.\n\nThe win-draw-loss spread suggests a tilted but not entirely one-sided contest. Croatia's commanding win probability coexists with an 18.7% draw chance, indicating the model sees meaningful risk of a stalemate. Ghana's single-digit win probability implies the model anticipates limited paths to victory, though draws occur often enough in group play that neither side can be ruled out of advancing.\n\nThe model and sportsbook consensus diverge sharply. Books and prediction markets grant Ghana roughly 17% odds—six to seven times higher than the model's 2.9%—and assign draw probability near 29%, compared to the model's 18.7%. The dashboard offers no judgment on which forecast is correct. The gap warrants attention; it suggests either the model's Elo inputs or recency assumptions diverge materially from market expectations."
 }

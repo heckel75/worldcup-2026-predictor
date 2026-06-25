@@ -3,9 +3,9 @@
   "home_team": "New Zealand",
   "away_team": "Belgium",
   "date": "2026-06-26",
-  "input_hash": "bb107b640e0b3955aabd8678c03045744a6d07b5",
-  "generated_at": "2026-06-24T06:25:46+00:00",
+  "input_hash": "c4a405a10b016814431b526fa4b44d60debcd89a",
+  "generated_at": "2026-06-25T05:57:19+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Belgium as a clear favorite with a 65% win probability, while New Zealand's upset chance stands at 11%. The underdog faces a substantial headwind in this matchup on a neutral ground.\n\nThe 24% draw probability suggests competitive balance in the tail; a stalemate is nearly twice as likely as a New Zealand win. However, Belgium's outright victory is favored by a wide margin over either alternative outcome, indicating the model expects Belgium to control much of play and edge the result.\n\nThe market consensus diverges meaningfully from the model. Sportsbooks price Belgium at 80%, some 15 percentage points higher than the model, while compressing New Zealand to 7% and the draw to 13%. Polymarket mirrors this tilt. The dashboard does not adjudicate which source is correct, but the gap is substantial enough to warrant notice for users comparing forecasts."
+  "preview_text": "The model favors Belgium at 65%, but rates New Zealand's chance of victory substantially higher than the sportsbook consensus, which stands at 82% for Belgium. New Zealand's win probability diverges most sharply between the two sources: the model assigns 11%, while books average 6%. This 5 percentage point gap is the primary point of disagreement.\n\nThe model sees a competitive match with meaningful draw probability at 24%. Belgium's advantage is clear but not overwhelming in the model's view; a draw ranks as the second-likeliest outcome. The sportsbook consensus is more decisive, compressing the draw to 12% and widening Belgium's lead, suggesting a more one-sided contest is expected by the market.\n\nModel and market diverge noticeably on match shape. Books price Belgium's dominance 17 percentage points higher than the model does, while the model assigns New Zealand more than double the win probability books do. Both sources agree Belgium is favored, but they differ materially on the margin and the plausibility of an upset or stalemate. The dashboard makes no claim about which view is more accurate."
 }

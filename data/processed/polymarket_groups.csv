@@ -3,14 +3,14 @@ A,Mexico,1.0,536140
 A,South Korea,0.0,325250
 A,South Africa,0.0,459198
 A,Czech Republic,0.0,173153
-B,Canada,0.595,220156
-B,Switzerland,0.405,488979
+B,Switzerland,1.0,594765
+B,Canada,0.0,271949
 B,Qatar,0.0,161803
 B,Bosnia and Herzegovina,0.0,251288
-C,Brazil,0.6568,402362
-C,Morocco,0.321,376256
-C,Scotland,0.0217,358637
-C,Haiti,0.0005,118000
+C,Brazil,0.9995,592541
+C,Haiti,0.0005,120400
+C,Scotland,0.0,425328
+C,Morocco,0.0,520165
 D,USA,1.0,734299
 D,Paraguay,0.0,251530
 D,Turkey,0.0,598933
@@ -19,31 +19,31 @@ E,Germany,1.0,902813
 E,Curaçao,0.0,94297
 E,Ecuador,0.0,419180
 E,Ivory Coast,0.0,403974
-F,Netherlands,0.7746,338371
-F,Japan,0.1962,338729
-F,Sweden,0.0292,176937
+F,Netherlands,0.7761,407940
+F,Japan,0.194,347425
+F,Sweden,0.0299,186662
 F,Tunisia,0.0,106928
-G,Egypt,0.6332,201448
-G,Belgium,0.2482,321692
-G,Iran,0.1185,214431
+G,Egypt,0.6218,216193
+G,Belgium,0.2629,345359
+G,Iran,0.1153,216054
 G,New Zealand,0.0,135702
-H,Spain,0.8702,262783
-H,Uruguay,0.0956,163312
-H,Cape Verde,0.0342,190815
+H,Spain,0.8737,273485
+H,Uruguay,0.096,164727
+H,Cape Verde,0.0303,193962
 H,Saudi Arabia,0.0,299349
-I,France,0.799,720882
-I,Norway,0.201,244744
+I,France,0.795,725072
+I,Norway,0.205,252156
 I,Senegal,0.0,196415
 I,Iraq,0.0,142026
 J,Argentina,1.0,794478
 J,Algeria,0.0,319885
 J,Jordan,0.0,105285
 J,Austria,0.0,170050
-K,Portugal,0.5173,475345
-K,Colombia,0.4822,237498
-K,DR Congo,0.0005,127913
+K,Portugal,0.535,512975
+K,Colombia,0.465,264849
+K,DR Congo,0.0,127913
 K,Uzbekistan,0.0,76642
-L,England,0.8783,283419
-L,Croatia,0.0707,145364
-L,Ghana,0.051,94195
+L,England,0.8693,302439
+L,Croatia,0.0799,157539
+L,Ghana,0.0508,101101
 L,Panama,0.0,119081

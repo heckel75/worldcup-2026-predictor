@@ -5,10 +5,10 @@
   "date": "2026-06-26",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 15.5,
-  "input_hash": "0d35afe636b80b875164ceabbd0792399dd558d5",
-  "generated_at": "2026-06-24T06:26:50+00:00",
+  "max_gap_pp": 17.6,
+  "input_hash": "2d6bc27e28ff6b18f54411ca332faa57aeea0638",
+  "generated_at": "2026-06-25T05:58:18+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Belgium an 80% win probability versus the model's 65%, a 15-percentage-point gap favoring the favorite. This sharpening of conviction across sportsbooks and Polymarket suggests real-money flows are pricing in information the model cannot access—possibly recent form, lineup changes, or injury status that have moved since the model's last update. The model's broader assignment to the draw (24% versus the market's 13%) reflects greater uncertainty about match structure. Both sources rank Belgium as clear favorite, but the market's tighter distribution signals confidence in a decisive outcome that the model's Elo and goal-model framework does not yet reflect."
+  "commentary_text": "The market is sharply more confident in a Belgium win, pricing it at 82% versus the model's 65%—a 17-percentage-point gap in the same direction. This compression of uncertainty, particularly the market's near-halving of New Zealand's win probability to 6% from 11%, suggests sportsbooks and traders may be factoring in information the model cannot access: recent form disparities, injury status among key players, or lineup changes that have emerged since the model's last update. The dashboard flags this gap as a signal worth monitoring; it does not indicate which source better reflects true match conditions."
 }

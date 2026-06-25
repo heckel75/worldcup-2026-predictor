@@ -3,9 +3,9 @@
   "home_team": "Japan",
   "away_team": "Sweden",
   "date": "2026-06-25",
-  "input_hash": "2379931f40001e7f80c35d5804a6a0927b613c9c",
-  "generated_at": "2026-06-24T06:25:39+00:00",
+  "input_hash": "9fbd8bf2555c816b190c386d5975e3963a65982a",
+  "generated_at": "2026-06-25T05:57:11+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Japan at 69%, a substantial margin over Sweden's 8% win probability. This asymmetry reflects a clear gap in the statistical forecast, with Japan positioned as the heavy favorite on neutral ground.\n\nThe spread reveals a moderately competitive match in expected shape. Japan's win probability nearly three times that of Sweden's draw and loss combined suggests the model anticipates a fairly one-sided contest, though the 24% draw probability indicates the outcome is not predetermined. Matches of this structure typically see one team dominate possession and chances, though variance always permits surprises.\n\nThe model and sportsbook consensus diverge meaningfully. Bookmakers price Japan at 50%, roughly 19 percentage points below the model's 69%. Polymarket prices align closer to sportsbooks, at 52%. This gap suggests either that market participants assess the teams as nearer parity than the statistical model, or that the model's Elo inputs overstate Japan's edge. The dashboard does not adjudicate between these sources—only that they diverge substantially."
+  "preview_text": "The model favors Japan at 69%, substantially ahead of Sweden's 8% win probability. This is a decisive gap: the model sees Japan as a heavy favorite at a neutral venue, while Sweden enters as a clear underdog with minimal chances of victory.\n\nThe draw emerges as a genuine possibility at 24%, suggesting the match could settle into a competitive middle ground despite Japan's preference. The 61-percentage-point gap between the favorite and underdog indicates an asymmetric contest rather than an evenly matched fixture, though the meaningful draw probability keeps the outcome from appearing foregone.\n\nThe model and market diverge notably on Japan's chances. The market consensus strips to 51% for Japan, some 17 percentage points below the model's 69%. The market rates Sweden's win probability at 22%, nearly triple the model's 8%. Both sources agree a draw is plausible (around 27%), but differ sharply on the likelihood of a Japan victory. The dashboard does not adjudicate which assessment is more accurate."
 }

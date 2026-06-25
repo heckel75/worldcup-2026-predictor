@@ -3,9 +3,9 @@
   "home_team": "Curaçao",
   "away_team": "Ivory Coast",
   "date": "2026-06-25",
-  "input_hash": "645a0a8d05aeb6737b87291f9b4677872980eec5",
-  "generated_at": "2026-06-24T06:25:31+00:00",
+  "input_hash": "0641b440867a7e8ec96650440d7cc05e35611997",
+  "generated_at": "2026-06-25T05:57:03+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Ivory Coast to win at 64%, a commanding advantage over Curaçao's 12% win probability. The implied gap reflects a substantial mismatch in underlying strength between the two sides. Curaçao retains a narrow path to victory but enters as a heavy underdog by the model's assessment.\n\nThe match shape reveals meaningful competitive space. A draw carries 25% probability under the model, suggesting the fixture is not a foregone conclusion and carries genuine tactical uncertainty. Ivory Coast's advantage is clear, yet the width of the draw band indicates the teams could plausibly reach a stalemate, preventing either side from decisively controlling the contest from start to finish.\n\nThe sportsbook consensus and Polymarket prices align closely with each other but diverge notably from the model. Books and Polymarket both price Ivory Coast at 83%, versus the model's 64%—an 19-percentage-point gap. The market treats Curaçao (5%) and draws (12%) as substantially less likely than the model does. The dashboard does not adjudicate which source is correct; the divergence warrants awareness when assessing true match probability."
+  "preview_text": "The model favors Ivory Coast at 64%, but assigns Curaçao a meaningful 12% chance of victory. The underdog's probability is more than four times larger in the model's assessment than in the sportsbook consensus, which rates Curaçao at only 5%.\n\nThe model's spread reflects a moderately competitive match. A draw carries a plausible 25% probability, suggesting the teams could finish level in regular time. Ivory Coast is the clear favorite, but the model does not treat this as a heavily lopsided contest—Curaçao retains genuine upside relative to the market's view.\n\nThe sportsbook and Polymarket consensus align tightly with each other, both placing Ivory Coast near 83% and drawing at roughly 11%. Both diverge sharply from the model on Curaçao's chances, which the model rates 7 percentage points higher. The dashboard does not determine which source better reflects true match conditions; the gap merits attention from users interpreting the forecast."
 }

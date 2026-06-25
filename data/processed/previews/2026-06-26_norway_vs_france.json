@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "France",
   "date": "2026-06-26",
-  "input_hash": "c4aefbff22e8884478ff48b2c27405110e0fe232",
-  "generated_at": "2026-06-24T06:25:57+00:00",
+  "input_hash": "18a29392614e090fdb1dbd1783fdf4277a189093",
+  "generated_at": "2026-06-25T05:57:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors France at 55%, with Norway given a 17% chance of victory and a draw at 28%. France enters as the clear favourite, though the model assigns the underdog odds that reflect meaningful uncertainty rather than elimination.\n\nThe 28-percentage-point gap between France and a Norway win indicates an asymmetric matchup, yet the draw probability of 28% is substantial—nearly matching Norway's win chance. This suggests the model expects a competitive fixture unlikely to be decided by a wide margin, with a draw standing as a plausible outcome for roughly one in four scenarios.\n\nThe market consensus aligns closely with the model across all three outcomes. France's advantage widens slightly to 58% in sportsbook prices, while Norway's win probability rises modestly to 20% and the draw contracts to 22%. These differences fall within normal consensus variance and do not signal material disagreement about the match structure."
+  "preview_text": "The model favors France at 55%, with Norway priced as a clear underdog at 17%. The gap of roughly 37 percentage points reflects a substantial disparity in winning chances, though Norway retains a non-negligible path to victory rather than appearing eliminated.\n\nThe draw carries notable probability at 28%, making it the second-most-likely outcome. This suggests the match is unlikely to be a blowout; competitive equilibrium in midfield and defense could easily produce a stalemate. France's advantage manifests primarily in outright win probability rather than in dominating the full range of scenarios.\n\nModel and market show broad alignment. The sportsbook consensus places France at 58%, just 3 percentage points above the model, while Norway sits at 20% versus the model's 17%—a modest 3-point divergence in the opposite direction. Polymarket similarly clusters near these levels. The consensus across sources implies moderate confidence in a France victory without extreme conviction, consistent with the statistical forecast."
 }

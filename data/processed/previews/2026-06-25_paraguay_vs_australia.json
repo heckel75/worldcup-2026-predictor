@@ -3,9 +3,9 @@
   "home_team": "Paraguay",
   "away_team": "Australia",
   "date": "2026-06-25",
-  "input_hash": "25d0c67de305a889adf6a3f30b2050347f768854",
-  "generated_at": "2026-06-24T06:25:27+00:00",
+  "input_hash": "7f5afdd4eb272ad1c3a1ce0890784afbdb42049b",
+  "generated_at": "2026-06-25T05:56:59+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Australia at 44%, with Paraguay trailing at 26% and a draw occupying the middle ground at 31%. Australia holds an 18-percentage-point edge over Paraguay in the model's assessment, positioning the Socceroos as clear favorites on a neutral surface.\n\nThe 31% draw probability suggests a moderately competitive match where a stalemate carries genuine plausibility. The win probabilities show meaningful separation—Australia's advantage is substantial but not overwhelming, leaving Paraguay a realistic path to victory. The distribution indicates the model expects a decisive outcome more often than not, though draws will occur in roughly one contest in three.\n\nThe sportsbook consensus and Polymarket prices align closely with each other but diverge sharply from the model. Books price Australia at 24% and Paraguay at 32–33%, inverting the model's hierarchy and favoring Paraguay by roughly 8 percentage points. Both markets assign 43% to a draw. The dashboard makes no claim about which source is correct; the disagreement is substantial enough to warrant attention from users building their own forecasts."
+  "preview_text": "The model favors Australia at 44%, with Paraguay winning in roughly one quarter of simulations. The underdog carries a 26% win probability, leaving meaningful ground between the two sides in the forecast.\n\nThe draw is the modal outcome at 31%, suggesting a competitive, closely matched encounter. The spread across all three outcomes is relatively even, indicating the match could plausibly resolve in any direction. No single result dominates the distribution sufficiently to project high scoring or a clear tactical advantage for either side.\n\nThe model and sportsbooks diverge substantially. Books and crypto markets both assign Paraguay near 34% and Australia near 24%, essentially inverting the model's lean toward Australia by roughly 20 percentage points. The model's higher draw probability (31% versus 42%) also marks a notable gap. The dashboard makes no claim about which reading is correct; bettors should note this meaningful divergence before committing capital."
 }

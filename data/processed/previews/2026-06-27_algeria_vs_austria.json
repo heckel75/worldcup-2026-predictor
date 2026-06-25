@@ -3,9 +3,9 @@
   "home_team": "Algeria",
   "away_team": "Austria",
   "date": "2026-06-27",
-  "input_hash": "2d01227eef09124b3ace297cbe75977a74545430",
-  "generated_at": "2026-06-24T06:26:06+00:00",
+  "input_hash": "b7af508c7117dddf75c79b9ab1fb9a3244bc189e",
+  "generated_at": "2026-06-25T05:57:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Algeria as the slight favorite with a 38% win probability, while Austria's chances stand at 30%. This 8-percentage-point gap reflects moderate separation between the two sides in the statistical forecast. The underdog's path to victory remains meaningful but narrower than the favorite's.\n\nThe draw emerges as a genuinely plausible outcome at 32%, making this a relatively competitive three-way contest. The win probabilities are neither heavily skewed nor tightly bunched, suggesting a match where multiple results carry real probability weight. No single outcome is dominant, and the outcome distribution hints at a closely matched pairing.\n\nThe market consensus diverges from the model meaningfully. Sportsbooks and Polymarket both place Austria's chances several points higher (around 33–34%) and compress Algeria's lead to under 25%, while simultaneously pricing draws substantially higher at 41–42%. The gap between model and market ranges from 8 to 14 percentage points across outcomes. This dashboard presents both forecasts without adjudicating their relative accuracy."
+  "preview_text": "The model favors Algeria at 39% to win, compared to Austria's 30% chance. This assigns the North African side a clear edge, though the gap is moderate rather than decisive. Austria's probability trails by roughly 9 percentage points in the model's assessment.\n\nThe draw emerges as a plausible outcome at 32%, reflecting a relatively competitive fixture. The win probabilities are spread across all three results without extreme concentration, suggesting the match could develop in multiple directions. No single outcome dominates heavily; the gap between Algeria's lead and Austria's floor is within the range where draws and upsets retain meaningful probability.\n\nThe model and market diverge substantially here. The sportsbook consensus clips Algeria to 25% while elevating the draw to 42% and Austria to 34%. The divergence across all three outcomes is 13–14 percentage points on Algeria and the draw, signaling material disagreement about competitiveness. The dashboard presents both views; it does not adjudicate which source better reflects match reality."
 }

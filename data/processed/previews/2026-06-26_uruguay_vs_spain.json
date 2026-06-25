@@ -3,9 +3,9 @@
   "home_team": "Uruguay",
   "away_team": "Spain",
   "date": "2026-06-26",
-  "input_hash": "3047bb9c56fb100b5bf197f3a8e0f620e3e4f3fc",
-  "generated_at": "2026-06-24T06:25:53+00:00",
+  "input_hash": "436e5a03f3a5cd70acaa8de21e212f4492cd8c90",
+  "generated_at": "2026-06-25T05:57:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Spain enters as the model's clear favorite with a 71% win probability, leaving Uruguay with a modest 8% chance of victory. The gap reflects a substantial imbalance in expected quality, though the underdog is not assigned a negligible outcome.\n\nThe draw probability of 21% suggests meaningful competitive ground between the teams, yet the three-way spread is dominated by Spain's win scenario. A Uruguay victory would constitute an upset; most outcomes cluster around either a Spanish success or a stalemate that preserves the tie.\n\nModel and market diverge on Uruguay's win probability by roughly 5 percentage points, with sportsbooks and Polymarket both rating the underdog's chances materially higher than the model does. Draw and Spain win probabilities align closely across all three sources. The dashboard does not adjudicate which assessment of Uruguay's upside is correct, only that disagreement exists at the lower end of the outcome distribution."
+  "preview_text": "Spain enters as the model's strong favorite with a 71% win probability, leaving Uruguay with just 8% chance of victory. The gap between the two sides is substantial under the statistical forecast, though the underdog retains a plausible path to an upset.\n\nThe draw at 21% suggests a competitive match despite the gap in win probability. Spain's advantage is real but not overwhelming; a stalemate remains a meaningful outcome, and the 63-point margin between the favorite and underdog leaves room for tactical variation and match variance to influence the result.\n\nThe model and market diverge noticeably on Uruguay's chances. Sportsbooks and Polymarket both price the underdog 5–6 percentage points higher than the model does, at 13% and 12% respectively, while crediting Spain with 64–65% rather than 71%. Draw probabilities align across all three sources near 22%. The dashboard does not adjudicate which assessment is correct; the discrepancy may reflect different weighting of unmeasured factors."
 }
