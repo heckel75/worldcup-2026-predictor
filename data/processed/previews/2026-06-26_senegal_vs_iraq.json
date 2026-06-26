@@ -3,9 +3,9 @@
   "home_team": "Senegal",
   "away_team": "Iraq",
   "date": "2026-06-26",
-  "input_hash": "77d39c0fdc6587d7ab920a71fdfd1cf937d04298",
-  "generated_at": "2026-06-25T05:57:35+00:00",
+  "input_hash": "3fe5dd57666122484f933113609ea1447b3a0b84",
+  "generated_at": "2026-06-26T05:29:02+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Senegal at 61.0% to win, leaving Iraq with a 12.3% chance of victory. The sportsbook consensus is considerably more bullish on Senegal, pricing a win at 78.0%, implying a wider gap between the sides than the model's baseline forecast suggests.\n\nThe model's spread points to a genuinely competitive match. A draw at 27.0% is the second-most likely outcome, indicating substantial probability mass around a level result. The win probabilities are separated but not commanding; Senegal's advantage is real but not overwhelming, and Iraq's baseline chance of pulling an upset sits in the low-to-mid teen range.\n\nThe model and sportsbook consensus diverge meaningfully on Senegal's win probability: a gap of roughly 17 percentage points. The books and Polymarket are closely aligned with each other, both placing Senegal well above the model's estimate. This dashboard presents both readings without claiming which better reflects the true match likelihood. The discrepancy warrants attention from bettors comparing odds across sources."
+  "preview_text": "The model favors Senegal at 61%, a decisive edge over Iraq's 12% win probability. The market consensus is substantially more confident in a Senegal victory, placing it at 78%—a gap of 17 percentage points. Polymarket pricing aligns closely with the sportsbook view, suggesting broad agreement among commercial forecasters.\n\nThe model sees meaningful uncertainty in the outcome. A draw carries 27% probability, making it nearly as likely as an Iraq win when the two are combined. This spread indicates a competitive match where Senegal is favored but not overwhelmingly so. The model assigns roughly one-in-five odds to an upset, reflecting material parity beyond the headline win gap.\n\nThe divergence between model and market is substantial. Sportsbooks and Polymarket both compress Iraq's chances to 7–8% and the draw to 13–14%, implying greater confidence in a Senegal victory than the Dixon-Coles framework suggests. The dashboard does not adjudicate which source better reflects true match uncertainty; the gap warrants noting that commercial and statistical expectations diverge meaningfully here."
 }

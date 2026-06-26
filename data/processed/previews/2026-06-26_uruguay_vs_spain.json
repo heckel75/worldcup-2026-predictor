@@ -3,9 +3,9 @@
   "home_team": "Uruguay",
   "away_team": "Spain",
   "date": "2026-06-26",
-  "input_hash": "436e5a03f3a5cd70acaa8de21e212f4492cd8c90",
-  "generated_at": "2026-06-25T05:57:27+00:00",
+  "input_hash": "e19a07713d8ddaa30a040ece7b2817188a753349",
+  "generated_at": "2026-06-26T05:28:54+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Spain enters as the model's strong favorite with a 71% win probability, leaving Uruguay with just 8% chance of victory. The gap between the two sides is substantial under the statistical forecast, though the underdog retains a plausible path to an upset.\n\nThe draw at 21% suggests a competitive match despite the gap in win probability. Spain's advantage is real but not overwhelming; a stalemate remains a meaningful outcome, and the 63-point margin between the favorite and underdog leaves room for tactical variation and match variance to influence the result.\n\nThe model and market diverge noticeably on Uruguay's chances. Sportsbooks and Polymarket both price the underdog 5–6 percentage points higher than the model does, at 13% and 12% respectively, while crediting Spain with 64–65% rather than 71%. Draw probabilities align across all three sources near 22%. The dashboard does not adjudicate which assessment is correct; the discrepancy may reflect different weighting of unmeasured factors."
+  "preview_text": "Spain enters as a clear favorite, with the model assigning the European side a 71% chance of victory against Uruguay's 8%. The gap reflects a substantial disparity in the forecast—Spain is favored by more than eight-to-one odds in model probability terms.\n\nThe draw emerges as plausible at 22%, suggesting the match could prove competitive enough to avoid a decisive result, though Spain's win probability dominates the outcome space. The 71–22–8 split indicates Spain is heavily favored but a stalemate or upset remains within the range of likely events rather than negligible.\n\nThe model and market exhibit meaningful divergence. The sportsbooks assign Uruguay 5 percentage points more win probability than the model (13% versus 8%), while crediting Spain 8 percentage points less (63% versus 71%). Polymarket prices sit between the two, slightly closer to the consensus. The dashboard does not adjudicate between these sources; users should weigh the differences as they interpret the uncertainty."
 }

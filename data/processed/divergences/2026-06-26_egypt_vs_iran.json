@@ -5,10 +5,10 @@
   "date": "2026-06-26",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 22.8,
-  "input_hash": "3f43a6f89f12b774ad405367de4859f7cc68d9e1",
-  "generated_at": "2026-06-24T06:26:47+00:00",
+  "max_gap_pp": 23.1,
+  "input_hash": "38a7422a67564a6bb25ce3248b52c2e3193f347d",
+  "generated_at": "2026-06-26T05:43:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Iran at 48%, while the market favors Egypt at 39%, a 17-percentage-point gap on the Egypt win probability. This reversal suggests the market is pricing in information the statistical model cannot access—likely recent lineup changes, injury news, or current form in the lead-up to the match. The model's Elo-based forecast reflects only historical strength and goal patterns; sportsbooks integrate real-time team updates that shift expectations toward Egypt. The dashboard surfaces this disagreement as a notable signal, without claiming either source has captured the true match probability."
+  "commentary_text": "The model favors Iran at 48% while the market favors Egypt at 38–39%, a 16–point gap on the Egypt win probability. This inversion could reflect recent lineup changes, injury news, or current form information unavailable to the statistical model since its last update. The market also prices the draw notably higher than the model does, suggesting belief in a closer, more competitive match than the Elo-based forecast implies. The dashboard flags this as a meaningful structural disagreement rather than a resolution of which view will prove correct."
 }

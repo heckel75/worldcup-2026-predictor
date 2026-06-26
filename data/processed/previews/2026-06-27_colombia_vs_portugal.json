@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "Portugal",
   "date": "2026-06-27",
-  "input_hash": "37138ebff08a8c2a7a7c6c466de598965818a1a1",
-  "generated_at": "2026-06-25T05:57:48+00:00",
+  "input_hash": "a9722ed326b87561e06001b83127a2cff7dc5e9b",
+  "generated_at": "2026-06-26T05:29:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model identifies Portugal as a slight favorite at 35% to win, but the margin over Colombia is narrow—less than 2 percentage points. Colombia's 34% win probability positions this as a genuinely competitive fixture rather than a clear hierarchy between the two sides.\n\nThe win-draw-loss spread reflects a tightly balanced encounter. Draws account for 32% of the model's distribution, a substantial share that underscores how evenly matched these teams appear in the statistical forecast. The separation between any single outcome remains modest, suggesting the match could plausibly resolve in any direction.\n\nModel and market diverge meaningfully here. The sportsbook consensus grants Portugal 52% to win—17 percentage points above the model's 35%—while compressing Colombia to 23%. Polymarket pricing aligns closely with the books. The dashboard offers no judgment on which source is more accurate; bettors should note the substantial disagreement between the statistical forecast and the betting market consensus."
+  "preview_text": "The model rates this matchup as a near-toss-up, with Portugal edging Colombia at 35% to 34%. Colombia's 34% win probability places it within a percentage point of the favorite, suggesting the teams are closely matched in the statistical forecast. The underdog designation is marginal.\n\nThe draw emerges as a substantial outcome in the model's view, at 32% — nearly as likely as either team winning outright. This three-way spread indicates a competitive, tight contest where all outcomes carry meaningful probability. The model does not strongly separate the teams; margins between win chances are single-digit.\n\nModel and market diverge notably here. The sportsbook consensus elevates Portugal to 51% and reduces Colombia to 23%, a shift of roughly 17 percentage points in Portugal's favor relative to the model. Polymarket pricing aligns closely with the books. The dashboard does not claim to know which view is correct; the gap warrants attention from users building their own position."
 }

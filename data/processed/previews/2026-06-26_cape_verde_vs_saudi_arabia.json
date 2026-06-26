@@ -3,9 +3,9 @@
   "home_team": "Cape Verde",
   "away_team": "Saudi Arabia",
   "date": "2026-06-26",
-  "input_hash": "a7085489474c8d7ae84edf7c748e0a78a33aff0e",
-  "generated_at": "2026-06-25T05:57:23+00:00",
+  "input_hash": "5191639e51a2f30356c4a772e6b4750329e87fda",
+  "generated_at": "2026-06-26T05:28:50+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Saudi Arabia as the slight favorite with a 40% win probability, while Cape Verde has a 29% chance of victory. The gap between them is meaningful but not decisive, reflecting a match in which the underdog retains genuine upset potential.\n\nThe draw emerges as a plausible outcome in the model's assessment at 31%, the single most likely result. This suggests competitive balance: neither team dominates the projected distribution, and a stalemate ranks above either team's individual win chance. The spread indicates a close contest where a one-goal margin either way would align with the forecast.\n\nMarket consensus diverges notably from the model. Sportsbooks and Polymarket both favor Cape Verde more heavily than the model does—by roughly 10 percentage points—while assigning Saudi Arabia roughly 7 percentage points lower than the model's projection. The market also rates the draw slightly lower. These gaps are material enough to signal genuine disagreement on the match's competitive tenor. The dashboard does not adjudicate between the two sources."
+  "preview_text": "The model rates Saudi Arabia as the slight favorite with a 40% win probability, while Cape Verde has a 29% chance of victory. The draw sits at 31%, indicating genuine competitive balance underpinning the matchup. Saudi Arabia's edge is modest rather than decisive.\n\nThe spread across outcomes reveals a closely contested match. No single result dominates the probability distribution; the gap between favorite and underdog is only 11 percentage points. A draw emerges as a plausible outcome at nearly one-third likelihood, suggesting the teams are expected to be well-matched in a neutral setting.\n\nThe model and market diverge meaningfully on favorite identification. Sportsbooks and Polymarket both favor Cape Verde at 36%, a gap of 7 percentage points above the model's 29%. Conversely, the market rates Saudi Arabia's win probability 5 percentage points lower than the model does. Draw probabilities align closely across sources. The dashboard does not adjudicate between these framings, but the discrepancy warrants attention when making decisions against either estimate."
 }

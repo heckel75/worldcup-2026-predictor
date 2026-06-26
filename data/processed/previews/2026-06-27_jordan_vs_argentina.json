@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Argentina",
   "date": "2026-06-27",
-  "input_hash": "9e24dc0d28b43bdeadd56de3dad499fecae3a3d9",
-  "generated_at": "2026-06-25T05:57:44+00:00",
+  "input_hash": "8bb687ef5b42a194c794c05390a81b1862234ff6",
+  "generated_at": "2026-06-26T05:29:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Argentina as clear favorite with a 80% win probability, while Jordan's chances stand at 4%. This represents a substantial gap in expected strength; Argentina is favored to control the match decisively based on the statistical inputs.\n\nThe draw probability of 16% suggests the match carries meaningful competitive texture despite the favorites' dominance. Jordan's 4% win chance is low but not negligible, and a stalemate remains plausible—roughly one in six outcomes under the model. The distribution indicates Argentina should be expected to win comfortably, yet the result is not a foregone conclusion.\n\nModel and sportsbook consensus align closely across all three outcomes, with gaps under 3 percentage points on each. Polymarket prices show Argentina slightly higher at 83%, and assign the draw and Jordan win somewhat lower odds, but the divergences remain minor. The three sources show broad agreement on the match contours."
+  "preview_text": "Argentina enters as a decisive favorite with a model-derived win probability of 80%, while Jordan's chances of victory stand at just 4%. The underdog faces a steep climb despite competing on neutral ground; the 76-percentage-point gap reflects a substantial asymmetry in expected performance.\n\nThe draw emerges as the secondary outcome at 16%, making it a plausible result but one well below the likelihood of an Argentina win. The spread across outcomes—a commanding lead for the favorite, a slim but nonzero upset window, and a moderate draw probability—suggests a match where Argentina is expected to control proceedings without guaranteeing a decisive finish.\n\nThe model and sportsbook consensus align closely on Argentina's win probability, separated by just 1 percentage point. The market assigns slightly higher odds to a Jordan upset (6% vs. 4%) and slightly lower odds to a draw (13% vs. 16%). These gaps fall within typical variance and indicate broad agreement on match structure. Polymarket pricing leans slightly more bullish on Argentina but sits within the same general frame."
 }

@@ -5,10 +5,10 @@
   "date": "2026-06-27",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 30.9,
-  "input_hash": "7a43b5985400f6e0fa05329c2dfbcfd051b18f45",
-  "generated_at": "2026-06-25T05:58:25+00:00",
+  "max_gap_pp": 31.6,
+  "input_hash": "cfab331049ff558aad664d487b96d63545ed5c03",
+  "generated_at": "2026-06-26T05:29:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Uzbekistan at 46%, while the sportsbook consensus favors DR Congo at 55%—a 31-percentage-point gap on the home-win probability. This dramatic split suggests the market is pricing in information unavailable to the model's Elo-based framework: recent form swings, injury status among key players, or roster changes could all shift win probability substantially in DR Congo's favor. The draw estimates also diverge meaningfully, with the model at 30% and books at 24%. The dashboard flags this as a genuine signal of information asymmetry rather than a judgment on which source is more accurate."
+  "commentary_text": "The model favors Uzbekistan at 46%, while the market favors DR Congo at 55%. The 32-percentage-point gap on the DR Congo win is the most striking divergence. The sportsbook consensus may reflect recent lineup news, injury updates, or current form information unavailable to the model's last training cycle. Alternatively, real-money flows could be responding to public or sharper sentiment that diverges from the statistical baseline. The dashboard flags this as a notable signal rather than evidence that either source has mispriced the outcome."
 }

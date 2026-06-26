@@ -3,9 +3,9 @@
   "home_team": "Algeria",
   "away_team": "Austria",
   "date": "2026-06-27",
-  "input_hash": "b7af508c7117dddf75c79b9ab1fb9a3244bc189e",
-  "generated_at": "2026-06-25T05:57:39+00:00",
+  "input_hash": "a8109819018be7e270fa798640b0a394ca85766d",
+  "generated_at": "2026-06-26T05:29:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Algeria at 39% to win, compared to Austria's 30% chance. This assigns the North African side a clear edge, though the gap is moderate rather than decisive. Austria's probability trails by roughly 9 percentage points in the model's assessment.\n\nThe draw emerges as a plausible outcome at 32%, reflecting a relatively competitive fixture. The win probabilities are spread across all three results without extreme concentration, suggesting the match could develop in multiple directions. No single outcome dominates heavily; the gap between Algeria's lead and Austria's floor is within the range where draws and upsets retain meaningful probability.\n\nThe model and market diverge substantially here. The sportsbook consensus clips Algeria to 25% while elevating the draw to 42% and Austria to 34%. The divergence across all three outcomes is 13–14 percentage points on Algeria and the draw, signaling material disagreement about competitiveness. The dashboard presents both views; it does not adjudicate which source better reflects match reality."
+  "preview_text": "The model favours Algeria at 39% to win, compared with Austria's 30% chance. This represents a modest edge for Algeria in a relatively competitive matchup, with the underdog Austria considerably but not overwhelmingly behind.\n\nThe draw carries material probability at 32%, suggesting the match is likely to be closely contested. The win probabilities span only 9 percentage points between favourite and third-place finisher, indicating neither team is heavily favoured to settle the contest in regular time. A competitive, possibly tightly-fought encounter is the modal scenario.\n\nThe market diverges meaningfully from the model. Sportsbooks and Polymarket consensus both price Algeria substantially lower—around 24% compared to the model's 39%—while elevating the draw to 43%. This represents roughly a 15-percentage-point gap on Algeria's win probability. The dashboard does not adjudicate which assessment is more accurate; the discrepancy reflects genuine disagreement between statistical and market-based forecasters on this fixture."
 }

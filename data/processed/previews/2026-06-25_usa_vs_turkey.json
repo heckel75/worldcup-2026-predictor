@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Turkey",
   "date": "2026-06-25",
-  "input_hash": "508b271276da221cfba4e708b27647adcbfe37f1",
-  "generated_at": "2026-06-25T05:56:55+00:00",
+  "input_hash": "eb1ec0ae2677584fce3e9ba58aa1c74e77a5cba1",
+  "generated_at": "2026-06-26T05:28:38+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Turkey as a slight favorite, assigning the home nation a 38% win probability against a 31% chance for the USA. A draw is nearly as likely as either outcome, sitting at 31%, suggesting the match has material potential to end level.\n\nThe model's win-loss spread is narrow across all three outcomes. Turkey's 7-point edge over the USA reflects a relatively balanced contest; neither team's victory would constitute a major upset by the model's assessment. The draw probability—equal to the USA's outright win chance—underscores the competitive nature expected on a neutral pitch.\n\nThe sportsbook consensus and Polymarket prices diverge sharply from the model. Both the market and Polymarket favor the USA substantially, at 52–53% win probability, while assigning Turkey only 25%. The gap is meaningful: the market backs the USA by roughly 20 percentage points more than the model does, while depressing Turkey's chances by a similar margin. The dashboard does not adjudicate which assessment is correct."
+  "preview_text": "The model identifies Turkey as the marginal favorite, with a 37.5% win probability compared to the USA's 31.1%. The gap is narrow enough that the outcome remains genuinely uncertain; Turkey's advantage is real but modest.\n\nThe forecast distribution reflects a tightly competitive match. Draw probability stands at 31.4%, nearly equal to both outright win chances. This clustering suggests the teams are closely matched in underlying strength, and the result could plausibly resolve in any direction. The spread across all three outcomes is relatively flat, pointing to a competitive fixture rather than a heavily tilted one.\n\nNo sportsbook consensus is yet available. Polymarket data shows extreme concentration (100% on Turkey, 0% on USA and draw), but that reflection appears anomalous relative to the model's assessed probabilities and does not represent a functioning price discovery mechanism. The dashboard makes no claim about which source better reflects true match probability."
 }

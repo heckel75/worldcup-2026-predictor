@@ -5,10 +5,10 @@
   "date": "2026-06-27",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 16.8,
-  "input_hash": "f07376ccc116d2f6ff0d444462be6833f94633cf",
-  "generated_at": "2026-06-25T05:58:21+00:00",
+  "max_gap_pp": 16.5,
+  "input_hash": "44d824f26d885768c284fe2b0692ce47fd63e7d9",
+  "generated_at": "2026-06-26T05:29:30+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market assigns Portugal a 52% win probability versus the model's 35%, a 17-percentage-point gap favoring Portugal that dwarfs the model's near-parity assessment. The sportsbook and Polymarket consensus align closely, suggesting real-money flows are driving conviction toward Portugal that the model's Elo and goal-distribution framework does not capture. That gap could reflect recent lineup changes, injury news, or current form trends unavailable to the model at its last update. The dashboard surfaces this as a notable signal: either Portugal has strengthened or Colombia weakened in ways the statistical baseline has yet to absorb, or the market is overweighting one side on incomplete information. Neither interpretation is a verdict."
+  "commentary_text": "The market assigns Portugal a 51% win probability versus the model's 35%, a 16-percentage-point gap favoring Portugal that dominates the forecast divergence. Sportsbooks and crypto traders show near-identical conviction on this outcome, suggesting real-money flows have converged on similar information. The model sees an essentially three-way contest; the market sees a Portugal lean with material edge. This gap could reflect recent form, lineup availability, or injury status unknown to the model's last update—factors that would sharpen conviction around one side without necessarily changing the fundamental competitive balance. The dashboard flags this as a signal worth monitoring rather than a resolution of which view will prove correct."
 }

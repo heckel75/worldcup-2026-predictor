@@ -1,49 +1,27 @@
 group,team,p_winner,volume
-A,Mexico,1.0,536140
-A,South Korea,0.0,325250
-A,South Africa,0.0,459198
-A,Czech Republic,0.0,173153
-B,Switzerland,1.0,594765
-B,Canada,0.0,271949
-B,Qatar,0.0,161803
-B,Bosnia and Herzegovina,0.0,251288
-C,Brazil,0.9995,592541
-C,Haiti,0.0005,120400
-C,Scotland,0.0,425328
-C,Morocco,0.0,520165
 D,USA,1.0,734299
-D,Paraguay,0.0,251530
 D,Turkey,0.0,598933
-D,Australia,0.0,270362
-E,Germany,1.0,902813
-E,Curaçao,0.0,94297
-E,Ecuador,0.0,419180
-E,Ivory Coast,0.0,403974
-F,Netherlands,0.7761,407940
-F,Japan,0.194,347425
-F,Sweden,0.0299,186662
-F,Tunisia,0.0,106928
-G,Egypt,0.6218,216193
-G,Belgium,0.2629,345359
-G,Iran,0.1153,216054
+G,Egypt,0.5999,230784
+G,Belgium,0.3024,393388
+G,Iran,0.0977,222669
 G,New Zealand,0.0,135702
-H,Spain,0.8737,273485
-H,Uruguay,0.096,164727
-H,Cape Verde,0.0303,193962
+H,Spain,0.8663,286674
+H,Uruguay,0.0963,168550
+H,Cape Verde,0.0375,198806
 H,Saudi Arabia,0.0,299349
-I,France,0.795,725072
-I,Norway,0.205,252156
+I,France,0.8109,740681
+I,Norway,0.1891,264176
 I,Senegal,0.0,196415
 I,Iraq,0.0,142026
 J,Argentina,1.0,794478
 J,Algeria,0.0,319885
 J,Jordan,0.0,105285
 J,Austria,0.0,170050
-K,Portugal,0.535,512975
-K,Colombia,0.465,264849
+K,Portugal,0.5174,554414
+K,Colombia,0.4826,275906
 K,DR Congo,0.0,127913
 K,Uzbekistan,0.0,76642
-L,England,0.8693,302439
-L,Croatia,0.0799,157539
-L,Ghana,0.0508,101101
+L,England,0.8752,321070
+L,Croatia,0.0766,161498
+L,Ghana,0.0482,104523
 L,Panama,0.0,119081
