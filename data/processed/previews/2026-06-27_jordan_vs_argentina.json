@@ -3,9 +3,9 @@
   "home_team": "Jordan",
   "away_team": "Argentina",
   "date": "2026-06-27",
-  "input_hash": "8bb687ef5b42a194c794c05390a81b1862234ff6",
-  "generated_at": "2026-06-26T05:29:10+00:00",
+  "input_hash": "2070a9378a7f3b1f6ee1b221f9055b4362fc5633",
+  "generated_at": "2026-06-27T06:58:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Argentina enters as a decisive favorite with a model-derived win probability of 80%, while Jordan's chances of victory stand at just 4%. The underdog faces a steep climb despite competing on neutral ground; the 76-percentage-point gap reflects a substantial asymmetry in expected performance.\n\nThe draw emerges as the secondary outcome at 16%, making it a plausible result but one well below the likelihood of an Argentina win. The spread across outcomes—a commanding lead for the favorite, a slim but nonzero upset window, and a moderate draw probability—suggests a match where Argentina is expected to control proceedings without guaranteeing a decisive finish.\n\nThe model and sportsbook consensus align closely on Argentina's win probability, separated by just 1 percentage point. The market assigns slightly higher odds to a Jordan upset (6% vs. 4%) and slightly lower odds to a draw (13% vs. 16%). These gaps fall within typical variance and indicate broad agreement on match structure. Polymarket pricing leans slightly more bullish on Argentina but sits within the same general frame."
+  "preview_text": "The model favors Argentina at 80%, with Jordan assigned just 4% to win. That 76-point gap reflects a substantial quality differential. Jordan's underdog position is clear, though a draw remains plausible at 16%.\n\nThe W/D/L spread shows Argentina as a heavy favorite, yet the model does not treat the outcome as a near-certainty. A Jordan upset carries minimal probability, but the draw sits between the extremes, suggesting competitive intensity—or at least uncertainty in regulation time. Argentina's win is the dominant outcome by a wide margin.\n\nThe model and market are broadly aligned. The market puts Argentina at 83%, modestly higher than the model's 80%, while assigning Jordan a slightly elevated 6% chance compared to the model's 4%. Both sources treat this as an Argentina-favored match with limited upset room. The dashboard makes no claim about which source better reflects true match likelihood."
 }

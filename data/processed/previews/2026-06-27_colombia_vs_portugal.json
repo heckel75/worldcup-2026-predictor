@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "Portugal",
   "date": "2026-06-27",
-  "input_hash": "a9722ed326b87561e06001b83127a2cff7dc5e9b",
-  "generated_at": "2026-06-26T05:29:13+00:00",
+  "input_hash": "2496eba422fbd37119a6788e59ccfce58a7ddc0b",
+  "generated_at": "2026-06-27T06:58:14+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates this matchup as a near-toss-up, with Portugal edging Colombia at 35% to 34%. Colombia's 34% win probability places it within a percentage point of the favorite, suggesting the teams are closely matched in the statistical forecast. The underdog designation is marginal.\n\nThe draw emerges as a substantial outcome in the model's view, at 32% — nearly as likely as either team winning outright. This three-way spread indicates a competitive, tight contest where all outcomes carry meaningful probability. The model does not strongly separate the teams; margins between win chances are single-digit.\n\nModel and market diverge notably here. The sportsbook consensus elevates Portugal to 51% and reduces Colombia to 23%, a shift of roughly 17 percentage points in Portugal's favor relative to the model. Polymarket pricing aligns closely with the books. The dashboard does not claim to know which view is correct; the gap warrants attention from users building their own position."
+  "preview_text": "The model rates this fixture as nearly even, with Portugal favored marginally at 35% to Colombia's 34%, separated by just one percentage point. The draw probability stands at 32%, suggesting a competitive encounter where all three outcomes cluster within a narrow band.\n\nThe compressed win probabilities indicate genuine uncertainty about the outcome. The 31.6% draw chance reflects a match likely to be closely contested rather than one-sided, with neither team commanding a clear advantage in the model's assessment. The three outcomes span only 3 percentage points from lowest to highest, pointing to a closely matched pairing on the available evidence.\n\nThe sportsbook consensus diverges meaningfully from the model, favoring Portugal at 48% versus the model's 35%—a gap of roughly 13 percentage points. The market also prices Colombia substantially lower at 27% compared to the model's 34%. The dashboard does not adjudicate between these sources; the discrepancy suggests material disagreement on the relative strength of the two sides."
 }

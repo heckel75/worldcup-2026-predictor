@@ -3,9 +3,9 @@
   "home_team": "Panama",
   "away_team": "England",
   "date": "2026-06-27",
-  "input_hash": "5083f13c9cd1c2191effeb7886074c42d36d18cf",
-  "generated_at": "2026-06-26T05:29:21+00:00",
+  "input_hash": "72d57efbd525f030087312724626df1bc1aba430",
+  "generated_at": "2026-06-27T06:58:22+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors England at 63%, a substantial but not dominant margin. Panama's win probability stands at 12%, roughly five times lower than England's central estimate, reflecting the gap in underlying strength metrics captured by the forecast system.\n\nThe draw carries meaningful weight at 25%, suggesting the match has reasonable potential for a stalemate result. The 39-percentage-point separation between England's win and Panama's win probability indicates a moderately competitive contest rather than a mismatch, with draw odds implying genuine uncertainty about regulation outcomes.\n\nModel and market diverge notably here. The sportsbook consensus pushes England to 83% and compresses Panama to 6%, a gap of roughly 20 percentage points from the model's England estimate. Polymarket pricing aligns closely with sportsbooks. The dashboard makes no claim about which source better reflects true match likelihood; traders and bookmakers may hold information unavailable to the statistical model."
+  "preview_text": "The model rates England as a strong favorite, assigning them a 63% win probability against Panama's 12%. This represents a substantial gap, though the model grants Panama a non-trivial chance rather than treating the match as a foregone conclusion.\n\nThe draw carries meaningful weight in the model's assessment at 25%, suggesting a competitive match with plausible stalemate outcomes. The spread between England's win probability and Panama's reflects a clear hierarchy, but the combined 37% chance of either a draw or Panama victory indicates the underdog scenario is not negligible from a statistical standpoint.\n\nThe sportsbook consensus diverges notably from the model. Books price England's win at 82%, roughly 19 percentage points higher than the model, while assigning Panama just 6% and the draw 12%. Polymarket contracts show similar skepticism toward Panama. The dashboard makes no claim as to which assessment is more accurate; the divergence may reflect information not captured in the model's inputs or different risk appetites among market participants."
 }

@@ -1,4 +1,10 @@
 date,match,stage,group,outcome,result,score,p_model_on_outcome,p_sportsbook_on_outcome,p_polymarket_on_outcome,gap_pp,gap_bucket,divergence_type,flagged,verdict
+2026-06-26,Egypt v Iran,Group stage,G,D,Draw,1–1,0.298,0.3591,0.3632,23,15pp+,disagree_on_favorite,True,All missed
+2026-06-26,New Zealand v Belgium,Group stage,G,A,Away win,1–5,0.6473,0.823,0.8209,18,15pp+,model_under_concentrated,True,Sources agreed
+2026-06-26,Cabo Verde v Saudi Arabia,Group stage,H,D,Draw,0–0,0.3118,0.2812,0.2764,10,5–15pp,disagree_on_favorite,False,All missed
+2026-06-26,Uruguay v Spain,Group stage,H,A,Away win,0–1,0.7071,0.6396,0.6517,7,5–15pp,model_over_concentrated,False,Model closest
+2026-06-26,Norway v France,Group stage,I,A,Away win,1–4,0.5461,0.5825,0.602,6,5–15pp,model_under_concentrated,False,Sources agreed
+2026-06-26,Senegal v Iraq,Group stage,I,H,Home win,5–0,0.61,0.7802,0.7833,17,15pp+,model_under_concentrated,True,Sources agreed
 2026-06-25,USA v Türkiye,Group stage,D,D,Draw,2–2,0.314,0.2363,0.2261,19,15pp+,disagree_on_favorite,True,All missed
 2026-06-25,Paraguay v Australia,Group stage,D,D,Draw,0–0,0.3063,0.4317,0.4328,19,15pp+,disagree_on_favorite,True,Markets closest
 2026-06-25,Curaçao v Côte d'Ivoire,Group stage,E,A,Away win,0–2,0.6356,0.8311,0.8308,20,15pp+,model_under_concentrated,True,Sources agreed
