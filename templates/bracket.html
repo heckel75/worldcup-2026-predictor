@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Knockout bracket</h1>
+<p class="lede">
+  The road to the final. Once the group stage resolves the 32 qualifiers, this
+  fills in round by round as results come in — the advancing side highlighted,
+  the eliminated side dimmed.
+</p>
+
+{% if not show_bracket %}
+<section class="bracket-placeholder">
+  <p>
+    The bracket fills in when the group stage finishes and the Round of 32 is
+    set. Until then, see the
+    <a href="{{ root }}index.html">survival grid</a> for each team's projected
+    path through the tournament.
+  </p>
+</section>
+{% else %}
+<div class="bracket-wrap">
+  <div class="bracket-cols">
+    {% for rnd in bracket.rounds %}
+    <div class="bracket-col">
+      <p class="bracket-col-label">{{ rnd.label }}</p>
+      <div class="bracket-col-matches">
+        {% for m in rnd.matches %}
+        <div class="bracket-match{% if m.played %} bracket-match--played{% endif %}">
+          {% if m.key %}<a class="bracket-match-link" href="{{ root }}matches/{{ m.key }}.html">{% endif %}
+          {% for t in m.teams %}
+          <span class="bracket-team{% if t.won %} bracket-team--won{% elif t.out %} bracket-team--out{% elif t.tbd %} bracket-team--tbd{% endif %}">{{ t.name }}</span>
+          {% endfor %}
+          {% if m.key %}</a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% if bracket.third_place %}
+  <div class="bracket-third">
+    <p class="bracket-col-label">Third-place play-off</p>
+    {% set m = bracket.third_place %}
+    <div class="bracket-match{% if m.played %} bracket-match--played{% endif %}">
+      {% if m.key %}<a class="bracket-match-link" href="{{ root }}matches/{{ m.key }}.html">{% endif %}
+      {% for t in m.teams %}
+      <span class="bracket-team{% if t.won %} bracket-team--won{% elif t.out %} bracket-team--out{% elif t.tbd %} bracket-team--tbd{% endif %}">{{ t.name }}</span>
+      {% endfor %}
+      {% if m.key %}</a>{% endif %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+<p class="method-context">
+  The bracket follows FIFA's published structure, including the new Round of 32
+  and Annex&nbsp;C third-place placement. Tap any decided match for its full
+  forecast, result, and the model-vs-market verdict.
+</p>
+{% endif %}
+{% endblock %}

@@ -27,6 +27,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
+import bracket_resolve
 import calibration
 import clock
 import divergence_log
@@ -888,6 +889,76 @@ def _build_divlog() -> tuple[dict, pd.DataFrame]:
     return context, csv_df
 
 
+# ----------------------------------------------------------------------
+# Knockout bracket page (Session 38b) — survival grid → populated bracket.
+# Pure consumer of src/bracket_resolve (which reads played results only and
+# imports nothing from the sim/pipeline). The page always builds; the gate
+# below decides whether it shows the bracket or a placeholder.
+# ----------------------------------------------------------------------
+
+def _group_stage_complete() -> bool:
+    """True once no unplayed GROUP fixture remains, read from the live
+    triple_compare frontier (played fixtures drop out of triple_compare, §6).
+    A fixture is group-stage iff its two teams share a 2026 group; any such
+    pair still present means the group stage is unfinished. Independent of
+    bracket_resolve's own completeness flag so the gate's AND is genuinely
+    defensive (this reads triple_compare; bracket_resolve reads matches_clean)."""
+    if not TRIPLE_PATH.exists():
+        return False
+    df = pd.read_csv(TRIPLE_PATH)
+    for _, r in df.iterrows():
+        gh, ga = TEAM_GROUP.get(r["home_team"]), TEAM_GROUP.get(r["away_team"])
+        if gh is not None and gh == ga:
+            return False  # an unplayed group fixture remains
+    return True
+
+
+def _team_slot(name, winner, played: bool) -> dict:
+    """One team line in a bracket cell. None -> a muted TBD; once played, the
+    advancing side is flagged 'won' and the eliminated side 'out'."""
+    if not name:
+        return {"name": "TBD", "tbd": True, "won": False, "out": False}
+    return {"name": name, "tbd": False,
+            "won": played and name == winner,
+            "out": played and name != winner}
+
+
+def _load_bracket(pair_to_key: dict) -> dict:
+    """Resolve the knockout bracket and make it render-ready: internal names
+    mapped through DISPLAY_NAMES, each cell linked to its match page when one
+    exists (the fixture has been played and has a ledger-keyed page).
+
+    pair_to_key maps frozenset({home_display, away_display}) -> match_key."""
+    data = bracket_resolve.resolve_bracket()
+    if not data["complete"]:
+        return {"complete": False, "rounds": [], "third_place": None}
+
+    def _cell(node: dict) -> dict:
+        ta, tb = disp(node["team_a"]) if node["team_a"] else None, \
+                 disp(node["team_b"]) if node["team_b"] else None
+        winner = disp(node["winner"]) if node["winner"] else None
+        key = None
+        if ta and tb:
+            key = pair_to_key.get(frozenset({ta, tb}))
+        return {
+            "match_id": node["match_id"],
+            "played": node["played"],
+            "key": key,
+            "teams": [_team_slot(ta, winner, node["played"]),
+                      _team_slot(tb, winner, node["played"])],
+        }
+
+    rounds = [
+        {"label": r["label"], "matches": [_cell(m) for m in r["matches"]]}
+        for r in data["rounds"]
+    ]
+    return {
+        "complete": True,
+        "rounds": rounds,
+        "third_place": _cell(data["third_place"]) if data["third_place"] else None,
+    }
+
+
 def build_site() -> None:
     snapshot = _latest_snapshot()
     snapshot_date = snapshot.stem  # filename is the date
@@ -1007,6 +1078,21 @@ def build_site() -> None:
         }
     else:
         results_block = None
+
+    # --- knockout bracket (Session 38b) ---------------------------------
+    # Linkable pair -> match-page key, keyed by the DISPLAY-name pair to match
+    # the bracket cells (which carry display names). Built from every fixture
+    # context so a played KO match links to its page once one exists.
+    pair_to_key = {
+        frozenset({m["home_display"], m["away_display"]}): m["key"]
+        for m in matches
+    }
+    bracket = _load_bracket(pair_to_key)
+    # Show the populated bracket only when BOTH signals agree the group stage is
+    # done: the ledger/triple_compare frontier (no unplayed group fixture) AND
+    # bracket_resolve's own completeness (all 16 R32 cells resolved). The two
+    # read different data sources, so the AND survives a momentary disagreement.
+    show_bracket = _group_stage_complete() and bracket["complete"]
 
     env = _build_env()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -1142,6 +1228,20 @@ def build_site() -> None:
         og_image=og_image,
     )
 
+    # --- knockout bracket page (top-level: root="") ---
+    _render_page(
+        env, "bracket.html", OUTPUT_DIR / "bracket.html",
+        bracket=bracket, show_bracket=show_bracket,
+        root="", generated_at=generated_at, snapshot_date=snapshot_date,
+        page_title="Bracket — World Cup 2026 knockout tree",
+        meta_description=(
+            "The 2026 World Cup knockout bracket — Round of 32 through the "
+            "final — filled in from results as the tournament unfolds."
+        ),
+        canonical_url=f"{SITE_URL}/bracket.html",
+        og_image=og_image,
+    )
+
     # --- divergence log (top-level: root="") + flat CSV export ---
     divlog_ctx, divlog_csv = _build_divlog()
     _render_page(
@@ -1167,6 +1267,7 @@ def build_site() -> None:
     # --- sitemap.xml and robots.txt ---
     static_page_urls = [
         f"{SITE_URL}/",
+        f"{SITE_URL}/bracket.html",
         f"{SITE_URL}/title-odds.html",
         f"{SITE_URL}/schedule.html",
         f"{SITE_URL}/divergence-log.html",
@@ -1192,7 +1293,8 @@ def build_site() -> None:
 
     print(f"Built site -> {OUTPUT_DIR}/")
     print(f"   snapshot : {snapshot.name} ({len(teams)} teams)")
-    print(f"   pages    : index.html + title-odds.html + schedule.html + divergence-log.html + calibration.html + methodology.html + {len(matches)} match pages")
+    print(f"   pages    : index.html + bracket.html + title-odds.html + schedule.html + divergence-log.html + calibration.html + methodology.html + {len(matches)} match pages")
+    print(f"   bracket  : {'populated' if show_bracket else 'placeholder (group stage in progress)'}")
 
 
 # ----------------------------------------------------------------------

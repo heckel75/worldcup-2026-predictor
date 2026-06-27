@@ -1122,3 +1122,100 @@ h1 {
 .divlog-table .tr-verdict--wash,
 .divlog-table .tr-verdict--all_missed,
 .divlog-table .tr-verdict--none { color: var(--muted); }
+
+/* --- knockout bracket page (Session 38b) --------------------------- *
+ * Horizontal columns R32 → Final, each spread vertically so the funnel  *
+ * reads like a bracket without drawn connector lines. Scrolls sideways   *
+ * on narrow viewports (the full tree is wider than a phone). The third-  *
+ * place play-off sits in its own detached block beneath the columns.     *
+ * Self-contained, safe to append.                                        */
+
+.bracket-placeholder {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--muted);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.2rem 1.4rem;
+  max-width: 60ch;
+  color: var(--muted);
+}
+.bracket-placeholder p { margin: 0; }
+.bracket-placeholder a { color: var(--accent); }
+
+.bracket-wrap {
+  overflow-x: auto;                  /* the tree is wider than a phone */
+  padding-bottom: 0.5rem;
+}
+
+.bracket-cols {
+  display: flex;
+  gap: 1.1rem;
+  align-items: stretch;
+  min-width: min-content;            /* don't squash columns to fit */
+}
+
+.bracket-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 11rem;
+  flex: 1 0 11rem;
+}
+
+.bracket-col-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+  white-space: nowrap;
+}
+
+/* space-around makes each later (shorter) column centre its matches against
+   the pair that feeds it — the classic bracket funnel, no SVG connectors. */
+.bracket-col-matches {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  gap: 0.6rem;
+}
+
+.bracket-match {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.bracket-match--played { border-color: var(--accent); }
+
+.bracket-match-link { text-decoration: none; display: block; }
+
+.bracket-team {
+  display: block;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.86rem;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bracket-team + .bracket-team { border-top: 1px solid var(--border); }
+.bracket-team--won {
+  font-weight: 600;
+  background: var(--t-surv-1);
+  color: var(--accent);
+}
+.bracket-team--out { color: var(--muted); }
+.bracket-team--tbd { color: var(--muted); font-style: italic; }
+
+.bracket-match-link:hover .bracket-team { background: #fbfaf4; }
+.bracket-match-link:hover .bracket-team--won { background: var(--t-surv-2); }
+
+.bracket-third {
+  margin-top: 1.75rem;
+  max-width: 13rem;
+}
