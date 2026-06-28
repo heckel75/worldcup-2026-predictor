@@ -1,4 +1,10 @@
 date,match,stage,group,outcome,result,score,p_model_on_outcome,p_sportsbook_on_outcome,p_polymarket_on_outcome,gap_pp,gap_bucket,divergence_type,flagged,verdict
+2026-06-27,Algeria v Austria,Group stage,J,D,Draw,3–3,0.3151,0.4261,0.4328,15,5–15pp,disagree_on_favorite,False,Markets closest
+2026-06-27,Jordan v Argentina,Group stage,J,A,Away win,1–3,0.798,0.8093,0.8437,4,Under 5pp,model_under_concentrated,False,Polymarket closest
+2026-06-27,Colombia v Portugal,Group stage,K,D,Draw,0–0,0.3157,0.2585,0.2487,16,15pp+,model_under_concentrated,True,All missed
+2026-06-27,DR Congo v Uzbekistan,Group stage,K,H,Home win,3–1,0.2388,0.5551,0.5578,32,15pp+,disagree_on_favorite,True,Markets closest
+2026-06-27,Panama v England,Group stage,L,A,Away win,0–2,0.6317,0.825,0.8492,19,15pp+,model_under_concentrated,True,Polymarket closest
+2026-06-27,Croatia v Ghana,Group stage,L,H,Home win,2–1,0.7839,0.5354,0.5423,25,15pp+,model_over_concentrated,True,Model closest
 2026-06-26,Egypt v Iran,Group stage,G,D,Draw,1–1,0.298,0.3591,0.3632,23,15pp+,disagree_on_favorite,True,All missed
 2026-06-26,New Zealand v Belgium,Group stage,G,A,Away win,1–5,0.6473,0.823,0.8209,18,15pp+,model_under_concentrated,True,Sources agreed
 2026-06-26,Cabo Verde v Saudi Arabia,Group stage,H,D,Draw,0–0,0.3118,0.2812,0.2764,10,5–15pp,disagree_on_favorite,False,All missed

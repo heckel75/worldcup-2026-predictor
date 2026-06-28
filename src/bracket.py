@@ -238,8 +238,20 @@ def _break_by_overall(
     all_matches: Sequence[Mapping],
     fifa_ranks: Optional[Mapping[str, int]],
 ) -> list[str]:
-    """Final fallback: overall GD, goals, then FIFA world ranking."""
-    stats = _aggregate_stats(all_matches, set(teams))
+    """Final fallback: overall GD, goals, then FIFA world ranking.
+
+    "Overall" means each tied team's record across ALL its group matches, not
+    just the matches between the tied teams. _aggregate_stats only counts a
+    match when BOTH teams are in the set, so passing the tied subset `set(teams)`
+    silently restricts the totals to head-to-head games (for a 2-way tie, just
+    the one match they played) — the same narrow-team-set trap as Session 14 /
+    DRC-FIX. Aggregate over every team that appears in all_matches instead, then
+    rank only `teams`.
+    """
+    all_teams = {m["home_team"] for m in all_matches} | {
+        m["away_team"] for m in all_matches
+    }
+    stats = _aggregate_stats(all_matches, all_teams)
 
     def key(t: str) -> tuple:
         s = stats[t]
@@ -475,6 +487,41 @@ def _self_test_tiebreakers() -> None:
     order = rank_group(teams, matches)
     assert order == ["B", "A", "C", "D"], f"tiebreaker self-test failed: {order}"
     print("✅ Tiebreaker self-test (3-way h2h cycle): order is B > A > C > D")
+
+    _self_test_two_way_overall()
+
+
+def _self_test_two_way_overall() -> None:
+    """
+    Regression for the _break_by_overall narrow-team-set bug (2026-06-28).
+
+    Two teams tie on points and DREW their head-to-head, so head-to-head can't
+    separate them — FIFA's 2-way rule drops to overall goal difference. The old
+    code passed the tied subset to _aggregate_stats, which counts only matches
+    with both teams in the set: for a 2-way tie that's just the one h2h game
+    (a 0-0 draw → both GD 0), so it fell through to stable input order and
+    ranked the worse-GD team second. This was the live Group D / Group J bug
+    (Australia/Paraguay and Austria/Algeria slotted into the wrong R32 cells).
+
+    Mirrors the real shape: W beats everyone; B and C both go 1W-1D-1L on
+    4 pts, draw each other 0-0, but B's overall GD (+1) beats C's (-1) off
+    their other results. Input order is [W, C, B] so the OLD code would have
+    returned C ahead of B; the fix must return B ahead of C.
+    """
+    teams = ["W", "C", "B", "D"]  # deliberately C before B in input order
+    m = lambda h, a, hs, as_: {
+        "home_team": h, "away_team": a, "home_score": hs, "away_score": as_,
+    }
+    matches = [
+        m("W", "B", 1, 0), m("W", "C", 1, 0), m("W", "D", 1, 0),  # W: 9 pts
+        m("B", "C", 0, 0),                                        # h2h draw
+        m("B", "D", 2, 0),                                        # B overall GD +1
+        m("C", "D", 0, 0),                                        # C overall GD -1
+    ]
+    order = rank_group(teams, matches)
+    assert order == ["W", "B", "C", "D"], \
+        f"two-way overall tiebreak failed (expected W>B>C>D): {order}"
+    print("✅ Tiebreaker self-test (2-way tie → overall GD): order is W > B > C")
 
 
 def _self_test_third_place_selection() -> None:
