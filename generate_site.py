@@ -58,6 +58,19 @@ MIN_LIVE_N = 24
 CUSTOM_DOMAIN = "worldcup.divergencelog.com"
 SITE_URL = f"https://{CUSTOM_DOMAIN}"
 
+# Knockout-round date windows (display only — the model/sim are date-agnostic and
+# KO fixtures aren't in the pipeline yet, so these live here, not in a data file).
+# Keyed by the exact round labels resolve_bracket() emits, plus the third-place
+# play-off node. Used to date the next-round card (index) and the KO schedule.
+KO_ROUND_DATES: dict[str, tuple[dt.date, dt.date]] = {
+    "Round of 32":          (dt.date(2026, 6, 28), dt.date(2026, 7, 3)),
+    "Round of 16":          (dt.date(2026, 7, 4),  dt.date(2026, 7, 7)),
+    "Quarter-finals":       (dt.date(2026, 7, 9),  dt.date(2026, 7, 11)),
+    "Semi-finals":          (dt.date(2026, 7, 14), dt.date(2026, 7, 15)),
+    "Third-place play-off": (dt.date(2026, 7, 18), dt.date(2026, 7, 18)),
+    "Final":                (dt.date(2026, 7, 19), dt.date(2026, 7, 19)),
+}
+
 
 # ----------------------------------------------------------------------
 # Presentation constants (site layer owns these; model uses its own names)
@@ -158,6 +171,14 @@ def _date_human(date_iso: str) -> str:
     """'2026-06-13' -> '13 June 2026' (no %-d: that breaks on Windows)."""
     d = dt.date.fromisoformat(date_iso)
     return f"{d.day} {d.strftime('%B')} {d.year}"
+
+
+def _ko_date_range(label: str) -> str:
+    """KO round label -> '28 Jun – 3 Jul' (single day -> '18 Jul'). No %-d
+    (Windows-safe); en dash with surrounding spaces, matching the date style."""
+    start, end = KO_ROUND_DATES[label]
+    fmt = lambda d: f"{d.day} {d.strftime('%b')}"
+    return fmt(start) if start == end else f"{fmt(start)} – {fmt(end)}"
 
 
 # ----------------------------------------------------------------------
@@ -959,6 +980,65 @@ def _load_bracket(pair_to_key: dict) -> dict:
     }
 
 
+def _next_ko_round(bracket: dict) -> dict | None:
+    """The shallowest knockout round still to be decided, as a render-ready card.
+    Pure consumer of _load_bracket() output — NO clock, NO model import, so it is
+    deterministic on a given bracket (the index attaches the clock-based 'Up next'
+    vs 'In progress' lead-in separately). No per-match links: KO match pages don't
+    exist yet (A-pipeline), so every card points at bracket.html.
+
+    Returns one of:
+      {"kind": "round",    "label", "dates", "link"}  — round populated, undecided
+      {"kind": "champion", "team",  "link"}           — the final has been played
+      {"kind": "pending",  "label", "dates", "link"}  — group stage over but the
+                                                         bracket isn't resolved yet
+    """
+    link = "bracket.html"
+    if not bracket.get("complete"):
+        return {"kind": "pending", "label": "Knockouts",
+                "dates": _ko_date_range("Round of 32"), "link": link}
+    final = bracket["rounds"][-1]["matches"][0]
+    if final["played"]:
+        team = next((t["name"] for t in final["teams"] if t["won"]), None)
+        return {"kind": "champion", "team": team, "link": link}
+    for r in bracket["rounds"]:
+        populated = any(not t["tbd"] for m in r["matches"] for t in m["teams"])
+        complete = all(m["played"] for m in r["matches"])
+        if populated and not complete:
+            return {"kind": "round", "label": r["label"],
+                    "dates": _ko_date_range(r["label"]), "link": link}
+    # Unreachable while complete and final unplayed (some round is always
+    # populated-and-incomplete), but stay defensive rather than return None.
+    return {"kind": "pending", "label": "Knockouts",
+            "dates": _ko_date_range("Round of 32"), "link": link}
+
+
+def _ko_schedule_rows(bracket: dict) -> list[dict]:
+    """Full remaining KO schedule by round for the schedule page. Pure consumer.
+    Each row {label, dates, ties}: `ties` are 'A vs B' display strings for a
+    populated round (R32 once the groups finish), empty for a still-TBD round
+    (R16+ until their feeders are played — the template renders 'TBD'). The
+    third-place play-off is inserted chronologically just before the final."""
+    if not bracket.get("complete"):
+        return []
+
+    def _row(label: str, matches: list[dict]) -> dict:
+        ties = [
+            f'{m["teams"][0]["name"]} vs {m["teams"][1]["name"]}'
+            for m in matches
+            if not m["teams"][0]["tbd"] and not m["teams"][1]["tbd"]
+        ]
+        return {"label": label, "dates": _ko_date_range(label), "ties": ties}
+
+    rows: list[dict] = []
+    for r in bracket["rounds"]:
+        if r["label"] == "Final":
+            tp = bracket.get("third_place")
+            rows.append(_row("Third-place play-off", [tp] if tp else []))
+        rows.append(_row(r["label"], r["matches"]))
+    return rows
+
+
 def build_site() -> None:
     snapshot = _latest_snapshot()
     snapshot_date = snapshot.stem  # filename is the date
@@ -1094,6 +1174,20 @@ def build_site() -> None:
     # read different data sources, so the AND survives a momentary disagreement.
     show_bracket = _group_stage_complete() and bracket["complete"]
 
+    # A-display: once the group stage finishes, the KO fixtures aren't in the live
+    # pipeline yet (that's A-pipeline), so today_block/upcoming_days go empty and
+    # the page would read "tournament over." Surface the resolved bracket instead:
+    # a compact next-round card on the index, the full remaining KO tree on the
+    # schedule. Both are pure consumers of the already-loaded _load_bracket() data.
+    # next_round carries no per-match links (KO match pages don't exist yet) — it
+    # points at bracket.html. The clock-based "Up next" vs "In progress" lead-in is
+    # attached here (kept out of _next_ko_round so that helper stays clock-free).
+    next_round = _next_ko_round(bracket) if today_block is None else None
+    if next_round and next_round["kind"] == "round":
+        start, _ = KO_ROUND_DATES[next_round["label"]]
+        next_round["lead_in"] = "In progress" if clock.today() >= start else "Up next"
+    ko_schedule = _ko_schedule_rows(bracket) if show_bracket else []
+
     env = _build_env()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -1112,6 +1206,7 @@ def build_site() -> None:
         scoreboard=scoreboard,
         results_block=results_block,
         today_block=today_block,
+        next_round=next_round,
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
         page_title="World Cup 2026 Forecast — model vs market predictions",
         meta_description=(
@@ -1217,6 +1312,7 @@ def build_site() -> None:
         today_human=_date_human(today_iso),
         upcoming_days=upcoming_days,
         results_days=results_days,
+        ko_schedule=ko_schedule,
         root="", generated_at=generated_at, snapshot_date=snapshot_date,
         page_title="Schedule — World Cup 2026 match dates and predictions",
         meta_description=(
@@ -1353,8 +1449,63 @@ def _test_verdict() -> None:
     print("generate_site.py _verdict self-tests passed")
 
 
+def _test_next_ko_round() -> None:
+    """Pin _next_ko_round / _ko_schedule_rows on synthetic brackets — clock-free,
+    so deterministic regardless of WC_ASOF_DATE."""
+    def slot(name, won=False):
+        return {"name": name, "tbd": name is None, "won": won, "out": False}
+
+    def match(a, b, played=False, winner=None):
+        return {"match_id": 0, "played": played,
+                "teams": [slot(a, played and a == winner),
+                          slot(b, played and b == winner)]}
+
+    # Bracket not complete -> pending.
+    assert _next_ko_round({"complete": False})["kind"] == "pending"
+
+    # R32 populated, nothing played -> next round is R32.
+    r32 = [match("A", "B") for _ in range(16)]
+    bk = {"complete": True, "rounds": [
+        {"label": "Round of 32", "matches": r32},
+        {"label": "Round of 16", "matches": [match(None, None) for _ in range(8)]},
+        {"label": "Quarter-finals", "matches": [match(None, None) for _ in range(4)]},
+        {"label": "Semi-finals", "matches": [match(None, None) for _ in range(2)]},
+        {"label": "Final", "matches": [match(None, None)]},
+    ], "third_place": match(None, None)}
+    nr = _next_ko_round(bk)
+    assert nr["kind"] == "round" and nr["label"] == "Round of 32", nr
+    assert nr["dates"] == "28 Jun – 3 Jul", nr
+    assert nr["link"] == "bracket.html", nr
+
+    # R32 fully played, R16 populated -> next round skips to R16.
+    bk["rounds"][0]["matches"] = [match("A", "B", played=True, winner="A") for _ in range(16)]
+    bk["rounds"][1]["matches"] = [match("A", "C") for _ in range(8)]
+    assert _next_ko_round(bk)["label"] == "Round of 16", _next_ko_round(bk)
+
+    # Final played -> champion.
+    bk2 = {"complete": True, "rounds": [
+        {"label": "Round of 32", "matches": [match("A", "B", played=True, winner="A")]},
+        {"label": "Final", "matches": [match("A", "Z", played=True, winner="A")]},
+    ], "third_place": None}
+    champ = _next_ko_round(bk2)
+    assert champ["kind"] == "champion" and champ["team"] == "A", champ
+
+    # _ko_schedule_rows: R32 populated as pairs, later rounds TBD (empty ties),
+    # third-place inserted before the final.
+    rows = _ko_schedule_rows(bk)
+    labels = [r["label"] for r in rows]
+    assert labels[-2:] == ["Third-place play-off", "Final"], labels
+    r32_row = next(r for r in rows if r["label"] == "Round of 32")
+    assert r32_row["ties"] and r32_row["ties"][0] == "A vs B", r32_row
+    final_row = next(r for r in rows if r["label"] == "Final")
+    assert final_row["ties"] == [] and final_row["dates"] == "19 Jul", final_row
+
+    print("generate_site.py _next_ko_round / _ko_schedule_rows self-tests passed")
+
+
 if __name__ == "__main__":
     if "--test" in sys.argv:
         _test_verdict()
+        _test_next_ko_round()
     else:
         build_site()

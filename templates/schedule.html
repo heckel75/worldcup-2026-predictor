@@ -26,6 +26,7 @@
 </section>
 {% endif %}
 
+{% if upcoming_days %}
 <section class="schedule-section">
   <h2 class="section-label">Upcoming</h2>
   <div class="fixtures-groups">
@@ -44,6 +45,30 @@
     {% endfor %}
   </div>
 </section>
+{% elif ko_schedule %}
+<section class="schedule-section">
+  {# Group stage done: the remaining knockout schedule, derived from the bracket.
+     R32 carries populated pairs (plain text — KO match pages don't exist yet);
+     later rounds read TBD until their feeders are played. #}
+  <h2 class="section-label"><a href="{{ root }}bracket.html">Knockout stage</a></h2>
+  <div class="fixtures-groups">
+    {% for r in ko_schedule %}
+    <div class="fixtures-group">
+      <p class="fixtures-group-title">{{ r.label }} · {{ r.dates }}</p>
+      <ul class="fixtures-list">
+        {% if r.ties %}
+        {% for tie in r.ties %}
+        <li class="fixtures-item">{{ tie }}</li>
+        {% endfor %}
+        {% else %}
+        <li class="fixtures-item"><span class="fixtures-date">TBD</span></li>
+        {% endif %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 
 {% if results_days %}
 <section class="schedule-section">

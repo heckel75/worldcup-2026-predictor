@@ -27,7 +27,7 @@
     {% endif %}
   </div>
   <div class="tr-col">
-    <p class="section-label">{% if today_block and today_block.is_today %}Today{% else %}Up next{% endif %}</p>
+    <p class="section-label">{% if today_block and today_block.is_today %}Today{% elif next_round and next_round.kind == "champion" %}Champions{% elif next_round and next_round.kind == "round" %}{{ next_round.lead_in }}{% else %}Up next{% endif %}</p>
     {% if today_block %}
       {% if today_block.is_today %}
       <p class="tr-date">{{ today_block.date_human }}</p>
@@ -47,6 +47,14 @@
           {% endif %}
         </li>
         {% endfor %}
+      </ul>
+    {% elif next_round and next_round.kind == "champion" %}
+      <ul class="tr-list">
+        <li class="tr-item"><a href="{{ root }}{{ next_round.link }}">{{ next_round.team }} — World Cup 2026 champions</a></li>
+      </ul>
+    {% elif next_round %}
+      <ul class="tr-list">
+        <li class="tr-item"><a href="{{ root }}{{ next_round.link }}">{{ next_round.label }} · {{ next_round.dates }}</a></li>
       </ul>
     {% else %}
     <p class="tr-empty">No matches left — the tournament is complete.</p>
