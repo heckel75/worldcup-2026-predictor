@@ -113,6 +113,21 @@ def _update_ledger(log_fh) -> tuple[int, int]:
         triple_df = pd.read_csv(TRIPLE_PATH, parse_dates=["date"])
         played_df = pd.read_csv(_clean_output_path(), parse_dates=["date"])
 
+        # A-pipeline: once the group stage ends, fixtures_2026.csv is empty, so the
+        # FREEZE universe must also carry the active KO round's derived fixtures —
+        # otherwise KO forecasts never freeze and a played KO match has no frozen
+        # pre-match row (the Session 36 played-fixture gap, re-opened for KO).
+        # Same derive_ko_fixtures(resolve_bracket()) source triple_compare uses, so
+        # the freeze merge finds these rows' probs. (freeze_new_forecasts is itself
+        # match-agnostic; it just needs the KO fixtures in its fixture list.)
+        from bracket_resolve import resolve_bracket  # noqa: PLC0415
+        from ko_fixtures import derive_ko_fixtures    # noqa: PLC0415
+        ko_rows = derive_ko_fixtures(resolve_bracket())
+        if ko_rows:
+            ko_fx = pd.DataFrame(ko_rows)
+            ko_fx["date"] = pd.to_datetime(ko_fx["date"])
+            fixtures_df = pd.concat([fixtures_df, ko_fx], ignore_index=True)
+
         before_len = len(ledger_df)
 
         today = _clock_today()
