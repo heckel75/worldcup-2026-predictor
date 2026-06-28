@@ -1,11 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Group stage schedule</h1>
+<h1>Match schedule</h1>
 <p class="lede">
-  All 72 group-stage fixtures by date. Click any match for the
-  three-way forecast (model, sportsbook, Polymarket) — played matches
-  show the result against the frozen pre-match forecast.
+  Every fixture by date — the group stage plus the knockout rounds as they're
+  drawn and dated. Click any match for the three-way forecast (model, sportsbook,
+  Polymarket); played matches show the result against the frozen pre-match
+  forecast. Rounds not yet scheduled appear on the
+  <a href="{{ root }}bracket.html">bracket</a>.
 </p>
 
 {% if today_fixtures %}

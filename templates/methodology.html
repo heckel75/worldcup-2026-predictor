@@ -8,7 +8,7 @@
 <div class="method-prose">
   <p><strong>Step 1 — Elo ratings.</strong> Every team starts from a seeded rating drawn from
   <a href="https://www.eloratings.net/">eloratings.net</a> (January 2018), then the full match
-  history from 2018 through the most recent international break is replayed match by match.
+  history from 2018 through the latest completed matches is replayed match by match.
   Each result updates both teams' ratings with two modifications: a margin-of-victory multiplier
   (larger wins move ratings more) and a 60-point home-advantage adjustment. K factors vary by
   match type — 20 for friendlies, 30 for qualifiers, 50 for major tournaments, 60 for the World
@@ -146,8 +146,9 @@
   <li>
     <a href="https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017"
        target="_blank" rel="noopener">International Football Results (Kaggle)</a> —
-    historical match results from 1872, maintained through the March 2026 international break.
-    The model's training set.
+    historical international results from 1872, refreshed before each daily update. The model's
+    training set: matches from 2018 through the latest completed games, with World Cup results
+    added match-by-match as they're played.
   </li>
   <li>
     <a href="https://www.eloratings.net/" target="_blank" rel="noopener">eloratings.net</a> —
