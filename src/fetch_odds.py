@@ -45,6 +45,14 @@ MATCHES_PATH = PROCESSED_DIR / "sportsbook_odds.csv"
 OUTRIGHTS_PATH = PROCESSED_DIR / "sportsbook_outrights.csv"
 FIXTURES_PATH = PROCESSED_DIR / "fixtures_2026.csv"
 
+# SOFT floor for the outright file. The real fix for the fixtures-shrink cliff
+# is the wc_teams filter (Session OUTRIGHT-FIX); this is belt-and-suspenders
+# against a short/garbage API response writing over a good file. Floor is
+# deliberately tiny: the sportsbook outright legitimately shrinks as the book
+# drops eliminated teams (32 -> 16 -> 8 -> 4 -> 2 through the knockouts), so any
+# higher floor would freeze the file mid-tournament. < 2 means degenerate.
+MIN_OUTRIGHT_ROWS = 2
+
 # Sportsbook-name → our internal name. Internal names follow the Kaggle
 # dataset conventions (see TEAM_NAME_MAP in clean_data.py). Start with the
 # usual suspects; the script prints unmatched names at the end so we can
@@ -207,6 +215,30 @@ def parse_outright_events(events: list[dict]) -> pd.DataFrame:
 
 # --- main ----------------------------------------------------------------
 
+def save_outright_guarded(df_new, path: Path, label: str) -> bool:
+    """Write df_new to path unless it's degenerately short (< MIN_OUTRIGHT_ROWS)
+    AND a fuller file already exists on disk (then keep the existing one). SOFT —
+    never raises or aborts. Returns True if it wrote, False if it kept the stale
+    file. Mirrored verbatim in fetch_polymarket.py (§6 per-fetcher defensive)."""
+    n_new = len(df_new)
+    if n_new < MIN_OUTRIGHT_ROWS and path.exists():
+        try:
+            n_old = len(pd.read_csv(path))
+        except Exception:
+            n_old = 0
+        if n_old > n_new:
+            print(f"\n!! {label}: new outright file has only {n_new} row(s) "
+                  f"(< {MIN_OUTRIGHT_ROWS}); keeping the existing {n_old}-row "
+                  f"file, NOT overwriting.")
+            return False
+    df_new.to_csv(path, index=False)
+    if n_new < MIN_OUTRIGHT_ROWS:
+        print(f"\n!! {label}: outright file is short ({n_new} row(s) "
+              f"< {MIN_OUTRIGHT_ROWS}) with no fuller existing file — wrote anyway.")
+    print(f"\nSaved {n_new} teams -> {path}")
+    return True
+
+
 def main():
     api_key = get_api_key()
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
@@ -222,6 +254,18 @@ def main():
         for _, r in fx_df.iterrows():
             pair: frozenset = frozenset((r["home_team"], r["away_team"]))
             fixture_lookup[pair] = (r["home_team"], r["away_team"])
+
+    # The OUTRIGHT (title-winner) filter keys off the FIXED 48-team WC set, NOT
+    # fixtures_2026.csv. clean_data moves played fixtures out, so that file
+    # shrinks as the tournament runs (empty once the group stage ends) — keying
+    # the outright filter off it wrongly drops every already-advanced team
+    # (Spain, France, ...) from the title market. save_wc_ratings.py made the
+    # same correction (its comment: fixtures_2026 "is fragile because that file
+    # shrinks"). The per-match h2h path below deliberately keeps keying off the
+    # fixture list (fixture_lookup) — h2h is meant to shrink as matches play
+    # (PROJECT.md §6 "played fixtures leave the live pipeline by design").
+    from bracket import GROUPS
+    wc_teams = {t for teams in GROUPS.values() for t in teams}
 
     print("Discovering WC-related soccer sport keys (free call)...")
     wc_sports = list_world_cup_sports(api_key)
@@ -309,11 +353,12 @@ def main():
             print("\nAll Odds-API team names map to internal names. ✓")
 
     # Filter outrights to teams actually in the WC. Books quote futures on
-    # non-qualified teams (Italy, Denmark, ...) too; their mass slightly
-    # deflates qualified teams' probabilities, so drop and renormalise.
-    if not df_o.empty and qualified:
+    # non-WC teams (Italy, Denmark, ...) too; their mass slightly deflates WC
+    # teams' probabilities, so drop and renormalise. Filter against the fixed
+    # 48-team set (wc_teams) so already-advanced teams are never dropped.
+    if not df_o.empty:
         n_before = len(df_o)
-        df_o = df_o[df_o["team"].isin(qualified)].copy()
+        df_o = df_o[df_o["team"].isin(wc_teams)].copy()
         df_o["p_winner"] = df_o["p_winner"] / df_o["p_winner"].sum()
         df_o["p_winner"] = df_o["p_winner"].round(4)
         df_o = df_o.sort_values("p_winner", ascending=False).reset_index(drop=True)
@@ -323,9 +368,8 @@ def main():
                   f"renormalised over the {len(df_o)} qualified teams.")
 
     if not df_o.empty:
-        df_o.to_csv(OUTRIGHTS_PATH, index=False)
-        print(f"\nSaved {len(df_o)} teams -> {OUTRIGHTS_PATH}")
-        print(df_o.head(15).to_string(index=False))
+        if save_outright_guarded(df_o, OUTRIGHTS_PATH, "Sportsbook"):
+            print(df_o.head(15).to_string(index=False))
     else:
         print("\nNo outright odds returned.")
 

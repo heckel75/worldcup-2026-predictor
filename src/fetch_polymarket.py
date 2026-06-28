@@ -90,6 +90,12 @@ GROUPS_PATH = PROCESSED_DIR / "polymarket_groups.csv"
 MATCHES_PATH = PROCESSED_DIR / "polymarket_odds.csv"
 FIXTURES_PATH = PROCESSED_DIR / "fixtures_2026.csv"
 
+# SOFT floor for the outright file — see fetch_odds.py for the full rationale.
+# < 2 means degenerate; the floor stays tiny so a legitimately shrinking field
+# (the book drops eliminated teams) is never blocked. The wc_teams filter, not
+# this guard, is the real fix for the fixtures-shrink cliff.
+MIN_OUTRIGHT_ROWS = 2
+
 # Polymarket-name → our internal name. Mirrors fetch_odds.py's map.
 # Extend based on the diagnostic at the end if needed. Don't add names
 # pre-emptively — Polymarket's "name" field matches our internal convention
@@ -425,6 +431,30 @@ def fetch_match_events() -> list[dict]:
 
 # --- main ----------------------------------------------------------------
 
+def save_outright_guarded(df_new, path: Path, label: str) -> bool:
+    """Write df_new to path unless it's degenerately short (< MIN_OUTRIGHT_ROWS)
+    AND a fuller file already exists on disk (then keep the existing one). SOFT —
+    never raises or aborts. Returns True if it wrote, False if it kept the stale
+    file. Mirrors fetch_odds.py's helper (§6 per-fetcher defensive)."""
+    n_new = len(df_new)
+    if n_new < MIN_OUTRIGHT_ROWS and path.exists():
+        try:
+            n_old = len(pd.read_csv(path))
+        except Exception:
+            n_old = 0
+        if n_old > n_new:
+            print(f"\n!! {label}: new outright file has only {n_new} row(s) "
+                  f"(< {MIN_OUTRIGHT_ROWS}); keeping the existing {n_old}-row "
+                  f"file, NOT overwriting.")
+            return False
+    df_new.to_csv(path, index=False)
+    if n_new < MIN_OUTRIGHT_ROWS:
+        print(f"\n!! {label}: outright file is short ({n_new} row(s) "
+              f"< {MIN_OUTRIGHT_ROWS}) with no fuller existing file — wrote anyway.")
+    print(f"\nSaved {n_new} teams -> {path}")
+    return True
+
+
 def main() -> None:
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     RAW_DUMP_DIR.mkdir(parents=True, exist_ok=True)
@@ -436,6 +466,16 @@ def main() -> None:
         fx = pd.read_csv(FIXTURES_PATH)
         qualified = set(fx["home_team"]) | set(fx["away_team"])
         fixture_pairs = set(zip(fx["home_team"], fx["away_team"]))
+
+    # The OUTRIGHT (title-winner) filter keys off the FIXED 48-team WC set, NOT
+    # fixtures_2026.csv, which shrinks as clean_data moves played fixtures out
+    # (empty once the group stage ends) — keying off it wrongly drops every
+    # already-advanced team from the title market. Mirrors the fetch_odds.py
+    # fix (Session OUTRIGHT-FIX) and save_wc_ratings.py. Per-match h2h and the
+    # group-winner markets keep keying off `qualified`/`fixture_pairs` — those
+    # are tied to the group stage and are meant to wind down (PROJECT.md §6).
+    from bracket import GROUPS
+    wc_teams = {t for teams in GROUPS.values() for t in teams}
 
     # --- title winner ---
     print("\n=== Title winner ===")
@@ -503,22 +543,20 @@ def main() -> None:
         if not unmatched and not missing:
             print("\nAll 48 qualified team names map to Polymarket markets. ✓")
 
-    # --- filter to qualified, renormalise, save title ---
+    # --- filter to the fixed 48-team WC set, renormalise, save title ---
     if not df_title_raw.empty:
-        df_title = (df_title_raw[df_title_raw["team"].isin(qualified)].copy()
-                    if qualified else df_title_raw.copy())
+        df_title = df_title_raw[df_title_raw["team"].isin(wc_teams)].copy()
         n_dropped = len(df_title_raw) - len(df_title)
         if n_dropped:
-            print(f"\nTitle: dropped {n_dropped} non-qualified team(s) before renormalising.")
+            print(f"\nTitle: dropped {n_dropped} non-WC team(s) before renormalising.")
         if not df_title.empty:
             df_title = renormalise(df_title)
             df_title["volume"] = df_title["volume"].round(0).astype(int)
             df_title = (df_title[["team", "p_winner", "volume"]]
                           .sort_values("p_winner", ascending=False)
                           .reset_index(drop=True))
-            df_title.to_csv(OUTRIGHTS_PATH, index=False)
-            print(f"\nSaved {len(df_title)} teams -> {OUTRIGHTS_PATH}")
-            print(df_title.head(10).to_string(index=False))
+            if save_outright_guarded(df_title, OUTRIGHTS_PATH, "Polymarket"):
+                print(df_title.head(10).to_string(index=False))
 
     # --- groups: renormalise per group (each event is its own prob space) ---
     if not df_groups_raw.empty:
