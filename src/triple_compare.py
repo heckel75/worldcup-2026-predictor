@@ -36,6 +36,8 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).parent))
 from clock import today as _clock_today, divergence_snapshot_dir as _div_snap_dir
 from dixon_coles import predict_match
+from bracket_resolve import resolve_bracket
+from ko_fixtures import derive_ko_fixtures
 
 # --- configuration ----------------------------------------------------------
 
@@ -191,7 +193,23 @@ def main() -> None:
     ratings = dict(zip(ratings_df["team"], ratings_df["elo"]))
 
     fixtures = pd.read_csv(FIXTURES_PATH, parse_dates=["date"])
-    print(f"  fixtures:    {len(fixtures)} WC matches")
+    print(f"  fixtures:    {len(fixtures)} WC group matches")
+
+    # A-pipeline: once the group stage completes, group fixtures move to
+    # matches_clean (fixtures_2026.csv empties), but the knockout bracket is
+    # resolved — derive the active KO round's fixtures from it and forecast them
+    # too. The loop below is match-agnostic; KO rows only need
+    # date/home_team/away_team/neutral. KO is neutral=True (§6). ko_fixtures emits
+    # published-date rows only, so every row carries a date for match_key. The
+    # FATAL row-count assert (Decision 4) then derives its expected count from
+    # this combined set, so the legitimate group→KO transition can't trip it.
+    ko_rows = derive_ko_fixtures(resolve_bracket())
+    if ko_rows:
+        ko_df = pd.DataFrame(ko_rows)
+        ko_df["date"] = pd.to_datetime(ko_df["date"])
+        fixtures = pd.concat([fixtures, ko_df], ignore_index=True)
+        print(f"  KO fixtures: {len(ko_rows)} derived from the bracket "
+              f"(total to forecast: {len(fixtures)})")
 
     def _dedupe_market_rows(df: pd.DataFrame, source_name: str) -> pd.DataFrame:
         if df.empty:
@@ -229,8 +247,9 @@ def main() -> None:
     print(f"  draw: {bias['draw']:+.4f}")
     print(f"  away: {bias['away']:+.4f}")
 
-    # Early exit when the group stage is complete (fixtures_2026.csv is empty).
-    # All 72 group matches have been played and moved to matches_clean.csv.
+    # Early exit only when there is genuinely nothing to forecast: no group
+    # fixtures left AND no dated KO round active (group stage done and either the
+    # bracket isn't resolved or the active round has no published dates yet).
     # Write header-only outputs so downstream consumers have a stable schema.
     if len(fixtures) == 0:
         empty_cols = [
@@ -252,7 +271,8 @@ def main() -> None:
         div_snap_dir.mkdir(parents=True, exist_ok=True)
         div_snap_path = div_snap_dir / f"{_clock_today().isoformat()}.csv"
         empty_df.to_csv(div_snap_path, index=False)
-        print("\nGroup stage complete — no upcoming fixtures to compare.")
+        print("\nNo upcoming fixtures to compare (group stage complete; no dated "
+              "KO round active).")
         print(f"  Wrote header-only: {OUT_PATH}")
         print(f"  Wrote header-only: {div_snap_path}")
         return
@@ -362,7 +382,8 @@ def main() -> None:
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     if len(df) != len(fixtures):
         sys.exit(
-            f"FATAL: expected {len(fixtures)} rows in triple_compare, got {len(df)}. "
+            f"FATAL: expected {len(fixtures)} rows in triple_compare "
+            f"(group + derived KO), got {len(df)}. "
             "Aborting to prevent duplicate fixture publishing."
         )
     df.to_csv(OUT_PATH, index=False)

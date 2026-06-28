@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-29_germany_vs_paraguay",
+  "home_team": "Germany",
+  "away_team": "Paraguay",
+  "date": "2026-06-29",
+  "input_hash": "e45b37885720f6400c4202c1b90dc0fbe6c69e11",
+  "generated_at": "2026-06-28T09:04:04+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Germany as clear favorite with a 57% win probability, compared to Paraguay's 15% chance. The gap favors Germany by a substantial margin, though the model assigns neither team overwhelming dominance in isolation.\n\nThe win-draw-loss spread reflects competitive but uneven match. A draw carries meaningful probability at 28%, suggesting the teams may be close enough in execution that a stalemate remains plausible. However, Germany's win probability outpaces Paraguay's by more than 3-to-1, indicating the model expects the favorite to control possession and create the clearer scoring chances.\n\nThe sportsbook and Polymarket consensus diverge notably from the model. Both sources rate Germany's win probability 13–16 percentage points higher, while assigning Paraguay roughly 5 percentage points less. The model sees this match as more competitive than the market does. The dashboard makes no claim as to which assessment is correct; this gap merits attention from those weighing the forecast against available odds."
+}

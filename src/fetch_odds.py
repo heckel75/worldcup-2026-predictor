@@ -267,6 +267,21 @@ def main():
     from bracket import GROUPS
     wc_teams = {t for teams in GROUPS.values() for t in teams}
 
+    # A-pipeline: once the group stage ends, fixtures_2026.csv is empty, so the
+    # h2h orient/drop block below would be skipped and KO h2h saved RAW (no
+    # orientation, no drop). Register the active KO round's derived fixtures into
+    # fixture_lookup so KO h2h is oriented to the bracket and non-fixture pairs
+    # are dropped — the same §6 contract as group h2h (match on the unordered
+    # pair, orient to the fixture's home/away, swap to follow the team). KO is
+    # neutral, but orientation still follows the derived fixture for join
+    # consistency with triple_compare.
+    from bracket_resolve import resolve_bracket
+    from ko_fixtures import derive_ko_fixtures
+    for kfx in derive_ko_fixtures(resolve_bracket()):
+        pair = frozenset((kfx["home_team"], kfx["away_team"]))
+        fixture_lookup[pair] = (kfx["home_team"], kfx["away_team"])
+        qualified.update({kfx["home_team"], kfx["away_team"]})
+
     print("Discovering WC-related soccer sport keys (free call)...")
     wc_sports = list_world_cup_sports(api_key)
     for s in wc_sports:

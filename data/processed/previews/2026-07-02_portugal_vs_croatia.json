@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-02_portugal_vs_croatia",
+  "home_team": "Portugal",
+  "away_team": "Croatia",
+  "date": "2026-07-02",
+  "input_hash": "96f367e4f8aff5874da17dbed160a3fd8ef799ef",
+  "generated_at": "2026-06-28T09:04:39+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favours Portugal at 50.7%, edging out a draw at 29.8% and leaving Croatia with a 19.5% chance of victory. Portugal's margin over the underdog is narrow but consistent across methodologies, suggesting a competitive encounter rather than a dominant performance from the favourite.\n\nThe win-draw-loss spread reflects a match unlikely to be decided by a large margin. A draw remains a plausible outcome at nearly 30%, indicating the teams are close enough in strength that a stalemate carries meaningful probability. The gap between Portugal's win rate and Croatia's is modest—roughly 31 percentage points—consistent with a match where either outcome remains in play, though the favourite retains a clear edge.\n\nModel and sportsbook consensus align closely. The book market places Portugal at 51.7% and Croatia at 20.5%, diverging by about 1 percentage point on each side of the model's estimate. Both sources treat this as a Portugal lean in an otherwise competitive fixture. No Polymarket consensus is yet available for this match."
+}

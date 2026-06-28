@@ -16,7 +16,7 @@
       <ul class="fixtures-list">
         {% for f in today_fixtures %}
         <li class="fixtures-item">
-          <span class="fixtures-date">Gr.&nbsp;{{ f.group }}</span>
+          <span class="fixtures-date">{% if f.stage_short %}{{ f.stage_short }}{% else %}Gr.&nbsp;{{ f.group }}{% endif %}</span>
           <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} vs {{ f.away_display }}</a>
         </li>
         {% endfor %}
@@ -36,7 +36,7 @@
       <ul class="fixtures-list">
         {% for f in day.fixtures %}
         <li class="fixtures-item">
-          <span class="fixtures-date">Gr.&nbsp;{{ f.group }}</span>
+          <span class="fixtures-date">{% if f.stage_short %}{{ f.stage_short }}{% else %}Gr.&nbsp;{{ f.group }}{% endif %}</span>
           <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} vs {{ f.away_display }}</a>
         </li>
         {% endfor %}
@@ -80,7 +80,7 @@
       <ul class="fixtures-list">
         {% for f in day.fixtures %}
         <li class="fixtures-item">
-          <span class="fixtures-date">Gr.&nbsp;{{ f.group }}</span>
+          <span class="fixtures-date">{% if f.stage_short %}{{ f.stage_short }}{% else %}Gr.&nbsp;{{ f.group }}{% endif %}</span>
           <a href="{{ root }}matches/{{ f.key }}.html">{{ f.home_display }} {{ f.score or "vs" }} {{ f.away_display }}</a>
         </li>
         {% endfor %}

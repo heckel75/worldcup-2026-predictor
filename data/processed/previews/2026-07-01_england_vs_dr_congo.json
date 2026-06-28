@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-01_england_vs_dr_congo",
+  "home_team": "England",
+  "away_team": "DR Congo",
+  "date": "2026-07-01",
+  "input_hash": "605c0a3982e441778c67a57a81e95186cf98f53f",
+  "generated_at": "2026-06-28T09:04:28+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model forecasts England as a strong favorite at 78% to win, with DR Congo at just 3% to prevail. The underdog faces a steep climb in this matchup, though a draw remains a meaningful possibility at 19%.\n\nThe win-draw-loss spread reflects a heavily skewed contest. England's probability roughly 25 times that of DR Congo's, yet the draw percentage sits between them—a sign that competitive single-goal margins are plausible, even if the model leans decisively toward an England victory. The gap in win probability leaves little room for an upset.\n\nThe model and sportsbook consensus align closely on an England win, with a gap of 3 percentage points. The market assigns DR Congo slightly higher odds at 8% versus the model's 3%, suggesting bookmakers price a marginally wider range of outcomes. No Polymarket consensus is currently available. The dashboard makes no claim about which assessment is correct."
+}

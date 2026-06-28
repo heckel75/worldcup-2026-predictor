@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-30_ivory_coast_vs_norway",
+  "home_team": "Ivory Coast",
+  "away_team": "Norway",
+  "date": "2026-06-30",
+  "input_hash": "a22ce40b69867ed77833e1504b0d039363d798e9",
+  "generated_at": "2026-06-28T09:04:21+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Norway at 52% to win, compared to Ivory Coast's 19% win probability. This represents a substantial gap, positioning Norway as a clear favorite on the statistical forecast. Ivory Coast's path to victory is rated as the least likely of the three outcomes.\n\nThe model's spread suggests a moderately competitive match. The 29% draw probability indicates the teams are separated enough to produce a decisive result more often than not, yet draws remain plausible. Norway's advantage is meaningful but not overwhelming; the 32-percentage-point gap between their win chance and Ivory Coast's leaves room for upset potential or stalemate.\n\nThe sportsbook consensus diverges from the model. Books assign Norway 47%, a gap of roughly 5 percentage points below the model's 52%. Conversely, they credit Ivory Coast at 26%, about 6 points higher than the model. The draw sits near parity between sources at 27–29%. This dashboard does not adjudicate which reading is correct; the discrepancy is modest enough that both reflect a similar competitive arc, though with different confidence in the favorite."
+}

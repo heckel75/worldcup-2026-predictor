@@ -4,7 +4,7 @@
 <p class="crumb"><a href="{{ root }}index.html">← Tournament forecast</a></p>
 
 <header class="match-head">
-  <p class="match-meta">Group {{ m.group }} · {{ m.date_human }} · {{ m.venue_label }}{% if m.played %} · Full time{% endif %}</p>
+  <p class="match-meta">{% if m.stage %}{{ m.stage }}{% else %}Group {{ m.group }}{% endif %} · {{ m.date_human }} · {{ m.venue_label }}{% if m.played %} · Full time{% endif %}</p>
   <h1 class="match-title">
     <span class="mt-home">{{ m.home_display }}</span>
     {% if m.played and m.score %}<span class="mt-score">{{ m.score }}</span>{% else %}<span class="mt-v">v</span>{% endif %}

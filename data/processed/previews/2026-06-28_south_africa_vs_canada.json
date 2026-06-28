@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-28_south_africa_vs_canada",
+  "home_team": "South Africa",
+  "away_team": "Canada",
+  "date": "2026-06-28",
+  "input_hash": "04e19da6fda0c3dc37e09855ed8b5501e93c2df3",
+  "generated_at": "2026-06-28T09:04:00+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Canada at 65%, with South Africa positioned as a clear underdog at just 11%. The gap of 54 percentage points reflects a substantial disparity in expected competitive strength between the two sides.\n\nThe draw carries meaningful probability at 24%, suggesting that while Canada is the statistical favorite, a deadlock remains plausible. The win probabilities are wide-set rather than clustered, indicating the match is expected to be decisive rather than tightly matched, though draws occur frequently enough in football that one cannot be dismissed.\n\nThe model and sportsbooks diverge materially. The market assigns Canada only 58%, roughly 7 percentage points lower than the model, while crediting South Africa with 17% compared to the model's 11%. Polymarket prices align more closely with the model's Canada projection. The dashboard makes no claim as to which assessment is correct; the spread reflects genuine disagreement among information sources."
+}

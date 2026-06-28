@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-01_belgium_vs_senegal",
+  "home_team": "Belgium",
+  "away_team": "Senegal",
+  "date": "2026-07-01",
+  "input_hash": "7d30c309f78382b24924c7ec572e3042f7a2ed70",
+  "generated_at": "2026-06-28T09:04:35+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model forecasts Belgium as the narrow favorite with a 37% win probability, giving them a modest edge over Senegal's 31% chance of victory. The gap between the two outcomes is small—just six percentage points—suggesting competitive balance rather than a dominant favorite.\n\nThe draw emerges as a plausible outcome at 32%, nearly as likely as a Senegal win. This indicates the model sees the match as closely matched overall, with no team commanding a clear upper hand. The spread across all three outcomes is relatively flat, pointing toward a competitive fixture where multiple results carry meaningful probability.\n\nThe sportsbook consensus tilts more heavily toward Belgium, crediting them with a 45% win probability—a gap of 7 percentage points above the model. The books compress Senegal's chances to 26%, while keeping the draw at 30%. This represents a material divergence in how each source weights the favorite, though both agree the match is far from one-sided. The dashboard does not claim to know which assessment is more accurate."
+}

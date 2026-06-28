@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-02_switzerland_vs_algeria",
+  "home_team": "Switzerland",
+  "away_team": "Algeria",
+  "date": "2026-07-02",
+  "input_hash": "58c16dadd53ff2798de2f56aa07e9b47174a3334",
+  "generated_at": "2026-06-28T09:04:46+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Switzerland as the marginal favourite with a 40% win probability, while Algeria's chances sit at 28%. The gap between the two is modest, reflecting a competitive fixture on neutral ground rather than a clear hierarchy.\n\nThe draw carries substantial weight at 31%, suggesting the match may well be decided by fine margins. Switzerland's edge is real but not commanding; the spread across outcomes is relatively even, with no single result overwhelming the probabilities. A 1–1 finish or a narrow Switzerland victory are both plausible scenarios under the model's assessment.\n\nThe sportsbook consensus shifts the balance more decisively toward Switzerland, crediting them with a 50% win probability against Algeria's 23%. This 10-percentage-point gap between model and market represents a meaningful divergence; bookmakers are more confident in the favourite. The dashboard does not adjudicate between the two forecasts, though the discrepancy merits attention for those tracking which framework performs better over the tournament."
+}

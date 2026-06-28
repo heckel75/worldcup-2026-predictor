@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-03_colombia_vs_ghana",
+  "home_team": "Colombia",
+  "away_team": "Ghana",
+  "date": "2026-07-03",
+  "input_hash": "50fa7b5177c4760fb9b583a0652a2cf8eee11ea0",
+  "generated_at": "2026-06-28T09:04:54+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model strongly favors Colombia, assigning an 86% win probability against a 0% chance for Ghana. The underdog's only path in the forecast is a draw at 14%, a scenario the market judges as considerably more likely. This gap is the model's first notable signal: Colombia dominates the baseline matchup, but a stalemate is far from implausible.\n\nThe win-draw-loss spread reflects a heavily skewed contest. Colombia's large advantage in win probability coexists with a meaningful draw rate, suggesting the model expects either a comfortable Colombian victory or a tightly contested match that neither team breaks. Ghana's zero win probability is an outlier outcome in a probabilistic frame and indicates the model sees very limited paths to an upset.\n\nThe model and sportsbook consensus diverge sharply. Books price Colombia at 59%, nearly 27 percentage points lower than the model, while assigning Ghana 15% and elevating the draw to 26%. This is a substantial gap. The dashboard does not adjudicate which source better reflects true match likelihood; the divergence warrants noting for traders and bettors reviewing both signals."
+}

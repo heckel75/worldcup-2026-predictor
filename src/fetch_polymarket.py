@@ -477,6 +477,16 @@ def main() -> None:
     from bracket import GROUPS
     wc_teams = {t for teams in GROUPS.values() for t in teams}
 
+    # A-pipeline: register the active KO round's derived fixtures so KO h2h
+    # markets are matched + oriented to the bracket (and the per-match save drops
+    # everything else). Without this, KO events would fall through as "unmatched"
+    # and — until this session — were saved RAW. (recon §4)
+    from bracket_resolve import resolve_bracket
+    from ko_fixtures import derive_ko_fixtures
+    for kfx in derive_ko_fixtures(resolve_bracket()):
+        fixture_pairs.add((kfx["home_team"], kfx["away_team"]))
+        qualified.update({kfx["home_team"], kfx["away_team"]})
+
     # --- title winner ---
     print("\n=== Title winner ===")
     title_event = fetch_event_resilient(TITLE_EVENT_SLUG, "World Cup Winner", "winner")
@@ -594,8 +604,12 @@ def main() -> None:
         for row in df_matches_raw.to_dict("records"):
             fx_orientation = fixture_lookup.get(frozenset((row["home_team"], row["away_team"])))
             if fx_orientation is None:
+                # Drop, don't save: not a current fixture (played group / future
+                # KO round / non-WC). §6 "drop any pair not in the fixture set" —
+                # aligns Polymarket with fetch_odds' Fix 2. Previously these were
+                # saved RAW (unoriented), which only failed to bite because
+                # triple_compare joins on the exact pair.
                 unmatched.append(row)
-                oriented.append(row)
                 continue
             fx_home, fx_away = fx_orientation
             if (row["home_team"], row["away_team"]) == (fx_home, fx_away):
@@ -611,8 +625,8 @@ def main() -> None:
         df_matches = pd.DataFrame(oriented)
         if "slug" in df_matches.columns:
             df_matches = df_matches.drop(columns=["slug"])
-        n_matched = len(df_matches) - len(unmatched)
-        print(f"  {n_matched}/{len(df_matches)} events matched a fixture in fixtures_2026.csv")
+        print(f"  {len(df_matches)} event(s) matched a current fixture (group + "
+              f"derived KO) and were saved")
         if flipped:
             print(f"  Oriented {len(flipped)} event(s) to the fixture's home/away convention "
                   f"(host-match team-order disagreement; p_home/p_away swapped to follow "
@@ -620,8 +634,8 @@ def main() -> None:
             for pm_h, pm_a, fx_h, fx_a in flipped:
                 print(f"     Polymarket: {pm_h} vs {pm_a}  ->  fixture: {fx_h} vs {fx_a}")
         if unmatched:
-            print(f"  !! {len(unmatched)} event(s) did NOT match any fixture "
-                  f"(name-mapping issue, non-group-stage market, or already-played fixture):")
+            print(f"  Dropped {len(unmatched)} event(s) not in the current fixture set "
+                  f"(played group / future KO round / non-WC):")
             for r in unmatched:
                 print(f"     {r['home_team']} vs {r['away_team']}  ({r['commence_time']})")
 

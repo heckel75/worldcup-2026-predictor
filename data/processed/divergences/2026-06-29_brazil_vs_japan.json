@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-06-29_brazil_vs_japan",
+  "home_team": "Brazil",
+  "away_team": "Japan",
+  "date": "2026-06-29",
+  "kind": "commentary",
+  "divergence_type": "model_under_concentrated",
+  "max_gap_pp": 17.8,
+  "input_hash": "7201526a017a2508d45da94aae9d9bc8f58a1ca6",
+  "generated_at": "2026-06-28T09:05:02+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The market prices Brazil to win at 57%, while the model estimates 39%—an 18-percentage-point gap favoring the favorite. The model also sees the draw and Japan win as more plausible than sportsbooks do. This divergence suggests the market may be incorporating information the model cannot access: recent form trends, injury status among key players, or lineup changes that have shifted the competitive balance in Brazil's favor since the model's last update. The dashboard flags this gap as a signal worth monitoring; it does not indicate which source is better calibrated."
+}

@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-06-30_mexico_vs_ecuador",
+  "home_team": "Mexico",
+  "away_team": "Ecuador",
+  "date": "2026-06-30",
+  "input_hash": "f51995c23cead4ab13a18af31a83485ac083faf7",
+  "generated_at": "2026-06-28T09:04:24+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Mexico as narrow favorites with a 36% win probability, but Ecuador's 32% chance keeps the match genuinely competitive. The gap between the two teams is marginal, leaving plenty of scope for an upset or stalemate.\n\nA draw emerges as a substantial possibility at 32%, suggesting this encounter may lack a decisive outcome. The win probabilities are closely bunched—no team commands confidence, and the spread across all three outcomes reflects genuine uncertainty about which side will prevail.\n\nThe sportsbook consensus departs from the model meaningfully. Books assign Mexico 43% to win, a 7-percentage-point premium over the model's estimate, while pricing Ecuador at 25%—a notable 7-point markdown. Both sources agree on the draw at 32%. The divergence suggests the market sees a larger Mexico edge than the statistical forecast does; the dashboard does not adjudicate which view is more accurate. No Polymarket consensus is yet available."
+}

@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-01_usa_vs_bosnia_and_herzegovina",
+  "home_team": "USA",
+  "away_team": "Bosnia and Herzegovina",
+  "date": "2026-07-01",
+  "input_hash": "9066e0529b3af5d2f7cb8439cee07c6da4798558",
+  "generated_at": "2026-06-28T09:04:32+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors USA at 66% to win, with Bosnia and Herzegovina offered only a 9% chance. The draw probability sits at 25%, suggesting a competitive fixture despite the asymmetry in win chances.\n\nThe spread between the favorite and underdog is substantial, but the draw's presence at nearly one-quarter probability indicates the match is unlikely to be a blowout. Bosnia and Herzegovina enters as clear underdogs yet retains a non-trivial path to an upset or stalemate. The W/D/L distribution implies a contest where USA control remains likely but neither side is prohibitive.\n\nThe model and sportsbook consensus align closely across all three outcomes, with gaps of 4 percentage points or smaller on USA win and draw probabilities. Polymarket prices show similar alignment. The three sources converge on a USA-favored but genuinely competitive match, with no material disagreement worth flagging for the dashboard."
+}

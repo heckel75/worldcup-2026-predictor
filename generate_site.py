@@ -71,6 +71,19 @@ KO_ROUND_DATES: dict[str, tuple[dt.date, dt.date]] = {
     "Final":                (dt.date(2026, 7, 19), dt.date(2026, 7, 19)),
 }
 
+# Group fixtures (Jun 11–27) and the knockouts (Jun 28+) occupy disjoint date
+# ranges, so "date >= this" cleanly tells a KO match from a group match — robust
+# against the §6 case where two same-group teams meet again in the KO (the
+# unordered pair alone can't distinguish that group match from the KO rematch;
+# the date can).
+_KO_START_ISO = KO_ROUND_DATES["Round of 32"][0].isoformat()
+
+# Compact round labels for the schedule's date chip (full labels are too long).
+_KO_STAGE_SHORT = {
+    "Round of 32": "R32", "Round of 16": "R16", "Quarter-finals": "QF",
+    "Semi-finals": "SF", "Third-place play-off": "3rd", "Final": "Final",
+}
+
 
 # ----------------------------------------------------------------------
 # Presentation constants (site layer owns these; model uses its own names)
@@ -526,11 +539,12 @@ def _build_scoreline(src, home_d: str, away_d: str) -> dict | None:
     }
 
 
-def _build_match(row) -> dict:
+def _build_match(row, ko_stage: dict | None = None) -> dict:
     """Turn one triple_compare row into a render-ready match context."""
     home, away = row["home_team"], row["away_team"]
     home_d, away_d = disp(home), disp(away)
     key = match_key(row["date"], home, away)
+    stage, stage_short = _match_stage(row["date"], home, away, ko_stage or {})
 
     neutral_used = bool(row.get("neutral_used", True))
     venue_label = "neutral venue" if neutral_used else f"home venue — {home_d}"
@@ -568,6 +582,8 @@ def _build_match(row) -> dict:
         "home_display": home_d,
         "away_display": away_d,
         "group":        TEAM_GROUP.get(home, "?"),
+        "stage":        stage,
+        "stage_short":  stage_short,
         "date_iso":     row["date"],
         "date_human":   _date_human(row["date"]),
         "venue_label":  venue_label,
@@ -592,13 +608,14 @@ _OUTCOME_SLOT = {"H": "home", "D": "draw", "A": "away"}
 # implementation. Imported at the top of this module.
 
 
-def _build_played_match(rec: dict) -> dict:
+def _build_played_match(rec: dict, ko_stage: dict | None = None) -> dict:
     """Turn one scored ledger row into a render-ready match context. The
     probability bars are the FROZEN pre-match forecast; the preview and
     divergence caches persist on disk keyed by match_key."""
     home, away = rec["home_team"], rec["away_team"]
     home_d, away_d = disp(home), disp(away)
     key = rec["match_key"]
+    stage, stage_short = _match_stage(rec["date"], home, away, ko_stage or {})
 
     # neutral_used arrives as bool, "True"/"False" string, or NaN (legacy)
     neutral_used = str(rec.get("neutral_used")).lower() != "false"
@@ -642,6 +659,8 @@ def _build_played_match(rec: dict) -> dict:
         "home_display": home_d,
         "away_display": away_d,
         "group":        TEAM_GROUP.get(home, "?"),
+        "stage":        stage,
+        "stage_short":  stage_short,
         "date_iso":     rec["date"],
         "date_human":   _date_human(rec["date"]),
         "venue_label":  venue_label,
@@ -689,13 +708,14 @@ def _load_matches() -> list[dict]:
             f"{TRIPLE_PATH} not found. Run `python src/triple_compare.py` first."
         )
     played = _load_played()
+    ko_stage = _ko_stage_map()
     df = pd.read_csv(TRIPLE_PATH)
     matches = [
-        _build_match(row)
+        _build_match(row, ko_stage)
         for _, row in df.iterrows()
         if match_key(row["date"], row["home_team"], row["away_team"]) not in played
     ]
-    matches += [_build_played_match(rec) for rec in played.values()]
+    matches += [_build_played_match(rec, ko_stage) for rec in played.values()]
     matches.sort(key=lambda m: (m["date_iso"], m["key"]))
     return matches
 
@@ -978,6 +998,36 @@ def _load_bracket(pair_to_key: dict) -> dict:
         "rounds": rounds,
         "third_place": _cell(data["third_place"]) if data["third_place"] else None,
     }
+
+
+def _ko_stage_map() -> dict:
+    """{frozenset({team_a, team_b}): round_label} for every populated KO match in
+    the resolved bracket (internal names) — so KO match pages / schedule rows are
+    labelled by round ("Round of 32") instead of a group letter. Empty until the
+    bracket completes. Consumed via a date gate (_KO_START_ISO), so a group match
+    between two teams that later meet in the KO is never mislabelled."""
+    data = bracket_resolve.resolve_bracket()
+    if not data["complete"]:
+        return {}
+    out: dict = {}
+    for rnd in data["rounds"]:
+        for m in rnd["matches"]:
+            if m["team_a"] and m["team_b"]:
+                out[frozenset({m["team_a"], m["team_b"]})] = rnd["label"]
+    tp = data.get("third_place")
+    if tp and tp["team_a"] and tp["team_b"]:
+        out[frozenset({tp["team_a"], tp["team_b"]})] = "Third-place play-off"
+    return out
+
+
+def _match_stage(date_iso, home: str, away: str, ko_stage: dict) -> tuple:
+    """(stage, stage_short) for a match: the KO round label when the match is in
+    the knockout date window AND its pair is a resolved KO tie, else (None, None)
+    so the caller falls back to the group label."""
+    if str(date_iso) < _KO_START_ISO:
+        return None, None
+    stage = ko_stage.get(frozenset({home, away}))
+    return stage, (_KO_STAGE_SHORT.get(stage) if stage else None)
 
 
 def _next_ko_round(bracket: dict) -> dict | None:
