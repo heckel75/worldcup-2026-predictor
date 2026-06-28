@@ -6,9 +6,9 @@
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
   "max_gap_pp": 24.5,
-  "input_hash": "19d6187e48c8623bfb561fc60840c4f7981d30d2",
-  "generated_at": "2026-06-28T09:05:08+00:00",
+  "input_hash": "fff3d7c4e9e832719b8a867725e18f1eb5dec3c6",
+  "generated_at": "2026-06-28T21:05:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 54% to win, while the sportsbook consensus favors Egypt at 38%. On the draw, sources are closer: the model places it at 29%, the books at 33%, a 4-point gap. The 25-point divergence on the Australia win outcome is the sharpest signal here. Real-money markets may be pricing in recent lineup changes, injury developments, or current form that the statistical model—built on historical Elo ratings—cannot access. Alternatively, the model's assessment of Australia's underlying strength may not yet be reflected in betting flows. The dashboard flags this structural disagreement without claiming which source better captures tournament reality."
+  "commentary_text": "The model favors Australia at 54%, while the sportsbook consensus and Polymarket both favor Egypt at 38%. The largest single gap appears on the Australia win probability, where the model sits 24 percentage points above the consensus. This divergence could reflect recent lineup changes, injury developments, or form shifts that the model's training data does not capture, or conversely, information baked into the model's Elo ratings that real-money markets have not yet repriced. The dashboard flags this as a material disagreement in favorite designation; it is a signal to examine, not a pronouncement on which forecast is more reliable."
 }

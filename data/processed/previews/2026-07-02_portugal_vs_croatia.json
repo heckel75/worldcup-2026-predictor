@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Croatia",
   "date": "2026-07-02",
-  "input_hash": "96f367e4f8aff5874da17dbed160a3fd8ef799ef",
-  "generated_at": "2026-06-28T09:04:39+00:00",
+  "input_hash": "541a5036c1a244f6f68926c23ec0089664aa99bf",
+  "generated_at": "2026-06-28T21:04:58+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Portugal at 50.7%, edging out a draw at 29.8% and leaving Croatia with a 19.5% chance of victory. Portugal's margin over the underdog is narrow but consistent across methodologies, suggesting a competitive encounter rather than a dominant performance from the favourite.\n\nThe win-draw-loss spread reflects a match unlikely to be decided by a large margin. A draw remains a plausible outcome at nearly 30%, indicating the teams are close enough in strength that a stalemate carries meaningful probability. The gap between Portugal's win rate and Croatia's is modest—roughly 31 percentage points—consistent with a match where either outcome remains in play, though the favourite retains a clear edge.\n\nModel and sportsbook consensus align closely. The book market places Portugal at 51.7% and Croatia at 20.5%, diverging by about 1 percentage point on each side of the model's estimate. Both sources treat this as a Portugal lean in an otherwise competitive fixture. No Polymarket consensus is yet available for this match."
+  "preview_text": "The model favors Portugal at 51%, with Croatia the underdog at 20%. The remaining 30% probability centers on a draw, suggesting a competitive match where a stalemate result carries substantial likelihood.\n\nThe win-loss gap of 31 percentage points reflects a meaningful but not commanding edge for Portugal. A draw occupies the middle of the distribution, making the outcome genuinely three-sided rather than heavily tilted toward a single result. The contest appears likely to be closely contested in execution.\n\nModel and sportsbook consensus align closely. Portugal sits at 51–52% across both sources, draws at 28–30%, and Croatia at 19–21%, with all gaps under two percentage points. The dashboard treats these as consistent signals. Polymarket per-match odds are not yet available."
 }
