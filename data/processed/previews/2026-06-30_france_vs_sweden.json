@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Sweden",
   "date": "2026-06-30",
-  "input_hash": "e8e5c9ec20fa6df8b0b4ab7a3a42e6d0e8407628",
-  "generated_at": "2026-06-28T09:04:16+00:00",
+  "input_hash": "ed209bb63e5471080eeecf76d1ada14cf0f631e1",
+  "generated_at": "2026-06-29T06:01:41+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors France heavily, assigning them a 80% win probability. Sweden's chance sits at just 2%, leaving the underdog prospect minimal in this matchup on a neutral ground.\n\nThe forecast shows a pronounced asymmetry in the win-loss split, with France commanding the bulk of the probability mass. A draw remains plausible at 18%, suggesting that while France are clear favorites, the match retains some competitive shape rather than appearing a foregone conclusion. The 77-point gap between France's win probability and Sweden's reflects a substantial quality differential according to the model.\n\nThe model and sportsbook consensus diverge meaningfully on Sweden's chances. The model gives Sweden 2%, while the market consensus across 48 books reaches 9%—a 7-percentage-point gap. France's win probability aligns more closely (model 80%, market 75%), and draws sit within 2 points. This dashboard does not adjudicate which estimate better reflects underlying match conditions."
+  "preview_text": "The model rates France as a heavy favorite with a 80% win probability, leaving Sweden just a 2% chance of victory. This is an asymmetric matchup in which the underdog faces a steep hill. France's baseline strength translates to a large gap in the forecast.\n\nThe win-draw-loss spread reflects decisive modeling conviction. A draw carries 18% probability, the second-most-likely outcome, but still well below France's dominant win chance. Sweden's path to three points appears narrow rather than genuinely competitive. The match is expected to lean heavily toward a French result, though draws remain a plausible secondary scenario.\n\nThe model and sportsbook consensus diverge notably on Sweden's prospects. The market assigns the underdog 9% win probability compared to the model's 2%—a gap of roughly 7 percentage points. The model is more bullish on France's decisive edge. Polymarket pricing sits between the two, closer to the model but still granting Sweden more room than the statistical forecast. The dashboard does not adjudicate which view is correct."
 }

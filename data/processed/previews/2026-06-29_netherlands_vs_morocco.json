@@ -3,9 +3,9 @@
   "home_team": "Netherlands",
   "away_team": "Morocco",
   "date": "2026-06-29",
-  "input_hash": "8d9020f0d020d6a6f4348e8d212afbde56daf3d7",
-  "generated_at": "2026-06-28T09:04:08+00:00",
+  "input_hash": "ad72229199cb291d3a395432788b8cb0e26f5574",
+  "generated_at": "2026-06-29T06:01:34+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The statistical model favors Morocco by a narrow margin, assigning them a 35% win probability against the Netherlands' 33%. The gap is marginal, reflecting a tightly matched contest in which either side holds a realistic claim to victory.\n\nThe draw emerges as a plausible outcome at 32%, suggesting the teams are closely competitive across the win-loss spectrum. The spread across all three outcomes is relatively even, indicating high uncertainty and a match likely to hinge on fine margins rather than a pronounced imbalance in underlying strength.\n\nThe sportsbook consensus and Polymarket prices diverge notably from the model. Both betting sources favor the Netherlands substantially, crediting them an 11-percentage-point advantage over Morocco's chances -- a meaningful gap that the model does not detect. The draw estimate aligns across sources at roughly 30%. The dashboard offers no judgment on which assessment is correct; users should weigh the statistical model against market pricing according to their own confidence in each."
+  "preview_text": "The model rates Morocco a marginal favorite at 35%, with the Netherlands at 33% and a draw at 32%. The spread is tight: no outcome commands a clear majority, and the three possibilities occupy a narrow band around one-third each. This signals a closely matched encounter where variance will matter significantly.\n\nThe W/D/L distribution underscores competitive balance. The draw probability at 32% reflects genuine parity; neither team holds a decisive edge in the model's view. Morocco's 2-point lead over the Netherlands is modest enough that the fixture could plausibly unfold in any direction. All three outcomes remain live probabilities rather than longshots.\n\nThe sportsbook consensus diverges meaningfully from the model. Books favor the Netherlands at 43%, a 9-point gap above the model, and price Morocco at 27%, some 8 points below model estimates. The draw sits near consensus at 31%. The dashboard does not claim to know which assessment is correct; the discrepancy reflects genuine disagreement between statistical and market-derived expectations."
 }

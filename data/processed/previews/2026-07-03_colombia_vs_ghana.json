@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "Ghana",
   "date": "2026-07-03",
-  "input_hash": "50fa7b5177c4760fb9b583a0652a2cf8eee11ea0",
-  "generated_at": "2026-06-28T09:04:54+00:00",
+  "input_hash": "8ad9d5917fd709648c389883c37383b5fafbe24b",
+  "generated_at": "2026-06-29T06:02:20+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model strongly favors Colombia, assigning an 86% win probability against a 0% chance for Ghana. The underdog's only path in the forecast is a draw at 14%, a scenario the market judges as considerably more likely. This gap is the model's first notable signal: Colombia dominates the baseline matchup, but a stalemate is far from implausible.\n\nThe win-draw-loss spread reflects a heavily skewed contest. Colombia's large advantage in win probability coexists with a meaningful draw rate, suggesting the model expects either a comfortable Colombian victory or a tightly contested match that neither team breaks. Ghana's zero win probability is an outlier outcome in a probabilistic frame and indicates the model sees very limited paths to an upset.\n\nThe model and sportsbook consensus diverge sharply. Books price Colombia at 59%, nearly 27 percentage points lower than the model, while assigning Ghana 15% and elevating the draw to 26%. This is a substantial gap. The dashboard does not adjudicate which source better reflects true match likelihood; the divergence warrants noting for traders and bettors reviewing both signals."
+  "preview_text": "The model forecasts a commanding Colombia victory at 86%, leaving Ghana with a draw as its only realistic outcome at 14% and a win probability effectively zero. This represents a stark asymmetry in the matchup's underlying structure according to the statistical framework.\n\nThe W/D/L spread reflects high confidence in a Colombia result rather than a competitive contest. A draw carries just enough probability to prevent dismissal, but the model assigns Ghana minimal chance of taking points. The expected shape is heavily skewed toward a one-sided contest.\n\nThe sportsbook consensus and Polymarket prices diverge meaningfully from the model, with both assigning Ghana 13% win probability and draws around 24–25%. This gap—roughly 23 percentage points on Ghana's win odds and 10 points on draws—suggests the market sees considerably more competitive balance than the model does. The dashboard does not adjudicate which assessment is correct; users should weigh both before forming their own view."
 }

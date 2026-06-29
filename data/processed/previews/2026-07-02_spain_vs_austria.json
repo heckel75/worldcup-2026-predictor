@@ -3,9 +3,9 @@
   "home_team": "Spain",
   "away_team": "Austria",
   "date": "2026-07-02",
-  "input_hash": "427800b78d56f130d2eed20b07eb516f1474f3e1",
-  "generated_at": "2026-06-28T09:04:43+00:00",
+  "input_hash": "e34a8ff80b46a37de0bf2c5bbe557757700800bb",
+  "generated_at": "2026-06-29T06:02:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Spain as strong favorite, assigning a 80% win probability against an Austria side projected to win in only 2% of simulations. Austria's underdog status is severe; the model sees the match as heavily tilted toward Spain's victory.\n\nThe outcome distribution shows Spain's dominance reflected across the full range of scenarios. A draw registers at 18%, representing meaningful but secondary probability—plausible enough that one-in-five replications yield a tie, yet well below Spain's win likelihood. Austria's 2% win probability indicates the model treats an Austrian upset as a tail-risk event rather than a competitive baseline.\n\nThe sportsbook consensus aligns closely with the model on Spain and the draw, both within 5 percentage points. Sportsbooks assign Austria 7.3% win probability, however—substantially higher than the model's 2.4%, a gap of nearly 5 percentage points. This divergence suggests bookmakers see more viability in an Austrian upset than the statistical forecast does. The dashboard does not adjudicate which assessment better predicts the match outcome."
+  "preview_text": "The model favors Spain at 80% to win, leaving Austria just 2% on the underdog side. The 78-percentage-point gap reflects a heavily asymmetric contest in which the model sees little path to an Austrian victory.\n\nThe outcome distribution emphasizes Spain's dominance while keeping draws plausible. An 18% draw probability means the match carries material risk of a stalemate, but Austria's 2% win chance suggests the model expects Spain to control play and limit upset scope. The spread is wide enough to mark this as a clear favorite scenario rather than a closely matched knockout.\n\nThe sportsbook consensus assigns Austria nearly four times the model's win probability, at 8% versus 2%. This 6-percentage-point divergence is the main point of tension; both sources agree Spain is the strong favorite and a draw is realistic, but bookmakers see more Austrian upside than the statistical forecast does. Polymarket prices align more closely with the model across all three outcomes."
 }

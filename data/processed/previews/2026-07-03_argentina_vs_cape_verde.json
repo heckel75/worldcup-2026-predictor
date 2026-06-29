@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Cape Verde",
   "date": "2026-07-03",
-  "input_hash": "af1d3c20636d6c0117e3588624760164887b5951",
-  "generated_at": "2026-06-28T09:04:50+00:00",
+  "input_hash": "0fb241e656963c2a803b64abe43670c6c3923ac5",
+  "generated_at": "2026-06-29T06:02:16+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model forecasts Argentina to win with 90% probability, leaving Cape Verde with effectively no chance of victory on a neutral ground. The sportsbook consensus is notably less confident, assigning Argentina 84% and allowing 5% odds for a Cape Verde upset.\n\nThe model's output suggests a heavily one-sided affair, with draws representing the only realistic alternative to an Argentina victory. The 10% draw probability indicates some potential for a stalemate, but the win distribution is sharply skewed toward the favorite. A competitive match outcome appears unlikely under this forecast.\n\nThe model and sportsbooks diverge meaningfully: the model backs Argentina at 90% while the market sits at 84%, a 6-percentage-point gap. The market also assigns roughly 5 times more probability to a Cape Verde win than the model does. No consensus between the two methodologies exists here; the dashboard does not adjudicate which view is more accurate."
+  "preview_text": "The model assesses Argentina as a decisive favorite with a 90% win probability, leaving Cape Verde with virtually no chance of victory on a neutral pitch. The underdog is credited only with a 10% draw probability under the statistical forecast.\n\nThe outcome distribution reflects a highly asymmetric match. Argentina's win probability dominates so completely that competitive scenarios—draws or upsets—are compressed into the remaining 10% of outcomes. The model sees little realistic path to Cape Verde avoiding defeat.\n\nThe model and market diverge meaningfully on Cape Verde's prospects. The sportsbook consensus assigns the underdog a 5% win probability and 12% draw chance, totaling 17% non-loss probability compared to the model's 10%. Polymarket prices lie between the two, crediting Cape Verde with 3.7% win odds. The dashboard does not adjudicate which assessment better reflects the true competitive balance."
 }

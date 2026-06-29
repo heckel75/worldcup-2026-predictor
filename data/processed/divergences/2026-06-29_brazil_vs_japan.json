@@ -5,10 +5,10 @@
   "date": "2026-06-29",
   "kind": "commentary",
   "divergence_type": "model_under_concentrated",
-  "max_gap_pp": 17.8,
-  "input_hash": "7201526a017a2508d45da94aae9d9bc8f58a1ca6",
-  "generated_at": "2026-06-28T09:05:02+00:00",
+  "max_gap_pp": 17.5,
+  "input_hash": "73d0b1bbaecc2c00dc684e85ebf0ea0425f0edc9",
+  "generated_at": "2026-06-29T06:02:24+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The market prices Brazil to win at 57%, while the model estimates 39%—an 18-percentage-point gap favoring the favorite. The model also sees the draw and Japan win as more plausible than sportsbooks do. This divergence suggests the market may be incorporating information the model cannot access: recent form trends, injury status among key players, or lineup changes that have shifted the competitive balance in Brazil's favor since the model's last update. The dashboard flags this gap as a signal worth monitoring; it does not indicate which source is better calibrated."
+  "commentary_text": "The sportsbook consensus assigns Brazil a 56% win probability versus the model's 39%—a 17-percentage-point gap favoring the home side. The market also narrows the Japan upset case to 18%, while the model puts it at 30%. This sharpened confidence in Brazil could reflect recent form, lineup changes, or injury status that the model's last update did not capture. The polymarket prices align closely with the sportsbooks, suggesting real-money traders see similar signals. The divergence is real and substantial, but the dashboard surfaces it as a tension to monitor rather than a judgment on which source has better information."
 }

@@ -3,9 +3,9 @@
   "home_team": "Ivory Coast",
   "away_team": "Norway",
   "date": "2026-06-30",
-  "input_hash": "a22ce40b69867ed77833e1504b0d039363d798e9",
-  "generated_at": "2026-06-28T09:04:21+00:00",
+  "input_hash": "d4a872e9f6498f7dcae62271beb24dd210e3808b",
+  "generated_at": "2026-06-29T06:01:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Norway at 52% to win, compared to Ivory Coast's 19% win probability. This represents a substantial gap, positioning Norway as a clear favorite on the statistical forecast. Ivory Coast's path to victory is rated as the least likely of the three outcomes.\n\nThe model's spread suggests a moderately competitive match. The 29% draw probability indicates the teams are separated enough to produce a decisive result more often than not, yet draws remain plausible. Norway's advantage is meaningful but not overwhelming; the 32-percentage-point gap between their win chance and Ivory Coast's leaves room for upset potential or stalemate.\n\nThe sportsbook consensus diverges from the model. Books assign Norway 47%, a gap of roughly 5 percentage points below the model's 52%. Conversely, they credit Ivory Coast at 26%, about 6 points higher than the model. The draw sits near parity between sources at 27–29%. This dashboard does not adjudicate which reading is correct; the discrepancy is modest enough that both reflect a similar competitive arc, though with different confidence in the favorite."
+  "preview_text": "The model favors Norway at 52%, with Ivory Coast at 20% and a draw at 29%. Norway enters as a clear statistical favorite, though not by a dominant margin; Ivory Coast's win probability remains plausible rather than negligible.\n\nThe distribution suggests a competitive match centered on a draw outcome. The 29% draw probability indicates genuine uncertainty about a decisive result, with all three outcomes reasonably weighted. The gap between Norway's 52% win rate and Ivory Coast's 20% spans roughly 32 percentage points, making Norway the likeliest single outcome but leaving substantial room for upset or stalemate.\n\nThe sportsbook consensus (Norway 47%, draw 27%, Ivory Coast 26%) and Polymarket prices (Norway 49%, draw 27%, Ivory Coast 25%) both diverge from the model in the same direction: they assign Norway 4–6 percentage points lower than the model, while raising Ivory Coast's chances by a similar margin. The model and market remain broadly aligned on draw likelihood. The dashboard does not adjudicate which reading is more accurate."
 }

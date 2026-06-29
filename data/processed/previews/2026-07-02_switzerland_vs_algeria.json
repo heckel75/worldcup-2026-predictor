@@ -3,9 +3,9 @@
   "home_team": "Switzerland",
   "away_team": "Algeria",
   "date": "2026-07-02",
-  "input_hash": "979a7b3e8a2bd4071b8afda1116ab9c28125eb31",
-  "generated_at": "2026-06-28T21:05:01+00:00",
+  "input_hash": "ce0ce77f7e3747e095a75a02f0c745b496397813",
+  "generated_at": "2026-06-29T06:02:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Switzerland at 41% to win, while Algeria is given a 28% chance of victory. The remaining probability leans toward a draw at 31%, suggesting a fairly open contest that could plausibly finish level.\n\nThe win-draw-loss spread indicates a moderately competitive match. Switzerland holds a modest edge, but the draw probability is substantial—only 9 percentage points below the favorite's win probability. A stalemate remains a realistic outcome, and Algeria's baseline chance is not negligible, pointing to a contest where multiple results remain live.\n\nThe sportsbook consensus diverges meaningfully from the model. Books price Switzerland's win at 51%, roughly 10 percentage points higher than the model's 41%. Conversely, books assign Algeria only 23% compared to the model's 28%—a 5 percentage point gap in the underdog's favor according to the statistical forecast. No Polymarket consensus is yet available. The dashboard does not adjudicate which source better reflects true match probability."
+  "preview_text": "The model rates Switzerland as the favorite at 41%, but the margin is modest. Algeria trails at 28%, leaving meaningful room for an upset; the gap between the two sides sits at about 12 percentage points.\n\nThe outcome spread reveals a competitive fixture. Draws carry 31% probability under the model, making them nearly as likely as either team's win. The three-way split suggests the match will be close rather than lopsided, with no outcome heavily favored.\n\nThe market consensus diverges from the model meaningfully. Sportsbooks and Polymarket both push Switzerland to 48%—a 7-point premium over the model—while compressing Algeria to 24%, roughly 4 points below the model's estimate. The market is pricing Switzerland more confidently than the statistical forecast. The dashboard reports both signals without claiming which is correct."
 }

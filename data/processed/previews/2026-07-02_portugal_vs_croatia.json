@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Croatia",
   "date": "2026-07-02",
-  "input_hash": "541a5036c1a244f6f68926c23ec0089664aa99bf",
-  "generated_at": "2026-06-28T21:04:58+00:00",
+  "input_hash": "f76849f9c5549ffd1a522b1fcde8ead0f850bb21",
+  "generated_at": "2026-06-29T06:02:05+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Portugal at 51%, with Croatia the underdog at 20%. The remaining 30% probability centers on a draw, suggesting a competitive match where a stalemate result carries substantial likelihood.\n\nThe win-loss gap of 31 percentage points reflects a meaningful but not commanding edge for Portugal. A draw occupies the middle of the distribution, making the outcome genuinely three-sided rather than heavily tilted toward a single result. The contest appears likely to be closely contested in execution.\n\nModel and sportsbook consensus align closely. Portugal sits at 51–52% across both sources, draws at 28–30%, and Croatia at 19–21%, with all gaps under two percentage points. The dashboard treats these as consistent signals. Polymarket per-match odds are not yet available."
+  "preview_text": "The model favors Portugal at 50.8%, giving them a narrow edge over Croatia's 19.5% win probability. This gap reflects a modest model lean toward the Portuguese outcome, though the margin remains tight enough that Croatia enters the match with a meaningful chance to upset.\n\nThe draw probability of 29.7% indicates a fairly competitive encounter with genuine uncertainty about the decisive result. The model's spread suggests a contest where a single goal or defensive lapse could swing the outcome, rather than a match with a heavily favored path to victory. All three outcomes cluster in a plausible range, implying neither team is substantially outmatched in the model's view.\n\nThe sportsbook consensus aligns closely with the model, placing Portugal at 53.3% and draws at 26.9%—both within 3 percentage points of the model estimates. Polymarket prices fall similarly aligned. The slight tendency for the market to favor Portugal over the model's assessment is marginal and falls within typical consensus variance. No meaningful divergence between sources warrants attention here."
 }

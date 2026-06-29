@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Japan",
   "date": "2026-06-29",
-  "input_hash": "363f6152b5f49713dd69c7d4196f9ece69b72eb6",
-  "generated_at": "2026-06-28T09:04:12+00:00",
+  "input_hash": "91950ef851ef7c032146e8cf006f13131b878231",
+  "generated_at": "2026-06-29T06:01:37+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assesses Brazil as the marginal favorite with a 39% win probability, though the gap between Brazil and Japan narrows considerably. Japan's 30% chance to win leaves this match substantially more competitive than market pricing suggests, with the underdog positioned closer to parity than sportsbooks imply.\n\nThe draw emerges as a genuinely plausible outcome at 31% across the model's distribution, making this a three-way contest rather than a two-horse race. The win probabilities cluster tightly—no outcome commands a commanding share—indicating a closely matched affair where the result carries genuine uncertainty on a neutral ground.\n\nModel and market diverge meaningfully. The sportsbooks elevate Brazil to 57% while compressing Japan to 18%, a gap of 12 percentage points tighter than the model's reading. The draw splits the difference: books price it 6 percentage points lower. This dashboard does not adjudicate which source better captures the underlying probability, but the disparity signals material disagreement about match competitiveness."
+  "preview_text": "The model favors Brazil at 39%, but Japan's chance of 30% makes this a notably competitive fixture rather than a heavily tilted matchup. The underdog sits just 9 percentage points behind, suggesting meaningful vulnerability for the favorite.\n\nThe draw at 32% emerges as the modal outcome in the model's distribution, indicating the teams are closely matched in underlying strength. Brazil's modest win probability reflects a narrow advantage; a decisive result either way has similar plausibility, and the match appears likely to remain contested throughout.\n\nThe market diverges sharply from the model. Sportsbooks place Brazil at 56%, a gap of 17 percentage points above the model's 39%, and compress Japan to 18%—nearly half the model's estimate. Polymarket prices align closely with sportsbook consensus. The dashboard makes no claim about which source is correct; the discrepancy suggests materially different assessments of relative team quality."
 }
