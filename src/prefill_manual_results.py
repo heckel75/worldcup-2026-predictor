@@ -29,6 +29,10 @@ def main():
 
     if RAW_MANUAL_PATH.exists():
         manual = pd.read_csv(RAW_MANUAL_PATH, dtype=str)
+        # Ensure the free-text full-result column exists on older feeds (blank
+        # default, never overwritten — preserved like every other column).
+        if "result_note" not in manual.columns:
+            manual["result_note"] = ""
         existing_rows = len(manual)
     else:
         manual = pd.DataFrame(columns=[
@@ -42,6 +46,7 @@ def main():
             "city",
             "country",
             "neutral",
+            "result_note",
         ])
         existing_rows = 0
 

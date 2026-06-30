@@ -10,6 +10,9 @@
     {% if m.played and m.score %}<span class="mt-score">{{ m.score }}</span>{% else %}<span class="mt-v">v</span>{% endif %}
     <span class="mt-away">{{ m.away_display }}</span>
   </h1>
+  {%- if m.played and m.result_note %}
+  <p class="match-result-note">{{ m.result_note }}</p>
+  {%- endif %}
 </header>
 
 <section class="compare">

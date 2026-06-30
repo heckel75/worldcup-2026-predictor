@@ -624,6 +624,12 @@ def _build_played_match(rec: dict, ko_stage: dict | None = None) -> dict:
     hg, ag = rec.get("actual_home_score"), rec.get("actual_away_score")
     score = f"{int(hg)}–{int(ag)}" if pd.notna(hg) and pd.notna(ag) else None
 
+    # Full-result annotation (e.g. "won 4–3 on penalties", "2–1 a.e.t."): the
+    # score above grades on 90 minutes; this is display-only. Blank/NaN -> None.
+    _note = rec.get("result_note")
+    result_note = (str(_note).strip()
+                   if pd.notna(_note) and str(_note).strip() != "" else None)
+
     sources = [_source("Model", rec["p_home"], rec["p_draw"], rec["p_away"],
                        home_d, away_d, sub="bias-corrected")]
     if pd.notna(rec.get("p_home_book")):
@@ -655,6 +661,7 @@ def _build_played_match(rec: dict, ko_stage: dict | None = None) -> dict:
         "key":          key,
         "played":       True,
         "score":        score,
+        "result_note":  result_note,
         "verdict":      _verdict(rec),
         "home_display": home_d,
         "away_display": away_d,

@@ -796,6 +796,16 @@ h1 {
   letter-spacing: 0.02em;
 }
 
+/* Full-result annotation under the score (extra time / penalties). The score
+ * grades on 90 minutes; this line is display-only. */
+.match-result-note {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
 /* --- exact-score view (scoreline grid + top-3 + xG) ------------------- *
  * Reads persisted Dixon-Coles columns; raw (uncorrected) model. The 6x6  *
  * heatmap is [home][away]: rows = home goals, cols = away goals.         */

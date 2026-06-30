@@ -11,7 +11,10 @@ Schema (matches calibration.py's CANON, which selects by column name):
     p_home_poly, p_draw_poly, p_away_poly,       # frozen Polymarket (NaN if unposted)
     poly_volume, neutral_used,
     forecast_ts, outcome,         # outcome in {H, D, A} or "" when unplayed
-    actual_home_score, actual_away_score         # filled by attach_results
+    actual_home_score, actual_away_score,        # filled by attach_results
+    result_note                   # free-text full-result note (e.g. "won 4-3 on
+                                  # penalties"); attached, not frozen. Grading is
+                                  # on the 90-min scoreline; this is display only.
 
 Public API:
     freeze_new_forecasts(ledger_df, upcoming_fixtures_df, triple_df, today,
@@ -37,7 +40,7 @@ LEDGER_SCHEMA = [
     "poly_volume", "neutral_used",
     "lambda_home", "lambda_away", "scoreline_grid", "top_scorelines",
     "forecast_ts", "outcome",
-    "actual_home_score", "actual_away_score",
+    "actual_home_score", "actual_away_score", "result_note",
 ]
 
 # Frozen-at-freeze-time market columns, as named in triple_compare.csv (same
@@ -199,10 +202,22 @@ def attach_results(
 ) -> pd.DataFrame:
     """
     For each unscored ledger row (outcome == ""), check whether the match now
-    appears in played_df. If yes, set outcome to "H", "D", or "A". Also fills
-    actual_home_score / actual_away_score for any matched row whose score
-    cells are still NaN (idempotent — populated scores are never overwritten;
-    self-heals rows scored before the score columns existed).
+    appears in played_df. If yes, set outcome to "H", "D", or "A" — derived
+    PURELY from the entered scoreline. For knockout matches the scoreline is the
+    90-minute (incl. extra time) result, so a tie settled on penalties grades as
+    a draw; `advanced` (who progressed) is read elsewhere for the sim/bracket and
+    never as the W/D/L outcome here. Also fills actual_home_score /
+    actual_away_score for any matched row whose score cells are still NaN.
+
+    Fills result_note (a free-text full-result annotation, e.g. "won 4-3 on
+    penalties") from the played row for any row whose note is still blank and
+    that carries a non-blank note in played_df — keyed off the note column /
+    played-row presence (the score-loop pattern), NOT the outcome mask, so it
+    self-heals on rebuild and an already-scored row backfills its note. Display
+    only: never affects the graded outcome.
+
+    All three fills are idempotent — populated values are never overwritten; the
+    self-heal also fixes rows scored before these columns existed.
 
     Never changes p_home / p_draw / p_away / frozen market columns / forecast_ts.
     A match that was played but never frozen is not back-filled.
@@ -234,6 +249,19 @@ def attach_results(
         k: (int(h), int(a))
         for k, h, a in zip(played["_key"], played["home_score"], played["away_score"])
     }
+    # Free-text full-result notes (only non-blank ones — a blank note means
+    # "no annotation" and must never overwrite an existing note). played_df may
+    # predate the column (matches_clean built before the feed carried it), so
+    # .get() degrades to no notes rather than KeyError.
+    note_series = played.get("result_note")
+    note_map: dict[str, str] = (
+        {
+            k: str(n).strip()
+            for k, n in zip(played["_key"], note_series)
+            if pd.notna(n) and str(n).strip() != ""
+        }
+        if note_series is not None else {}
+    )
 
     ledger = ledger_df.copy()
     unscored_mask = ledger["outcome"].isna() | (ledger["outcome"] == "")
@@ -250,6 +278,15 @@ def attach_results(
             hg, ag = score_map[key]
             ledger.at[idx, "actual_home_score"] = hg
             ledger.at[idx, "actual_away_score"] = ag
+
+    # Fill the full-result note wherever it's still blank and a note exists in
+    # the feed (score-loop pattern: keyed off the note column being empty +
+    # played-row presence, not the outcome mask — self-heals on rebuild).
+    note_missing_mask = ledger["result_note"].isna() | (ledger["result_note"] == "")
+    for idx in ledger[note_missing_mask].index:
+        key = ledger.at[idx, "match_key"]
+        if key in note_map:
+            ledger.at[idx, "result_note"] = note_map[key]
 
     return ledger
 
@@ -395,5 +432,70 @@ if __name__ == "__main__":
     ledger4 = attach_results(ledger, never_frozen_played)
     assert key_c not in set(ledger4["match_key"]), \
         "Never-frozen match must not appear in ledger after attach_results"
+
+    # --- Test 5: KO penalty shootout grades on the 90-min scoreline (a draw),
+    #     and the full-result note attaches as display-only text ---
+    ko_fixtures = pd.DataFrame({
+        "date":      [pd.Timestamp(TODAY)],
+        "home_team": ["Theta"],
+        "away_team": ["Iota"],
+        "neutral":   [True],
+    })
+    ko_triple = pd.DataFrame({
+        "home_team":         ["Theta"],
+        "away_team":         ["Iota"],
+        "p_home_model_corr": [0.40],
+        "p_draw_model_corr": [0.30],
+        "p_away_model_corr": [0.30],
+    })
+    ko_ledger = freeze_new_forecasts(
+        pd.DataFrame(columns=LEDGER_SCHEMA), ko_fixtures, ko_triple,
+        TODAY, lookahead_days=0,
+    )
+    key_ko = make_match_key(TODAY.isoformat(), "Theta", "Iota")
+    assert key_ko in set(ko_ledger["match_key"]), "KO fixture should freeze"
+    assert ko_ledger.loc[ko_ledger["match_key"] == key_ko, "result_note"].isna().all(), \
+        "result_note is unset at freeze time (attached, not frozen)"
+
+    # Level after 90 min, advanced set, full-result note present — the pens case.
+    ko_played = pd.DataFrame({
+        "date":        [pd.Timestamp(TODAY)],
+        "home_team":   ["Theta"],
+        "away_team":   ["Iota"],
+        "home_score":  [1],
+        "away_score":  [1],
+        "advanced":    ["Theta"],            # progression only — must NOT grade
+        "result_note": ["won 4-3 on penalties"],
+        "tournament":  ["FIFA World Cup"],
+    })
+    ko_scored = attach_results(ko_ledger, ko_played)
+    row_ko = ko_scored.loc[ko_scored["match_key"] == key_ko].iloc[0]
+    assert row_ko["outcome"] == "D", \
+        f"pens match must grade as a draw on the 90-min score, got '{row_ko['outcome']}'"
+    assert row_ko["result_note"] == "won 4-3 on penalties", \
+        f"result_note must attach, got '{row_ko['result_note']}'"
+    assert int(row_ko["actual_home_score"]) == 1 and int(row_ko["actual_away_score"]) == 1, \
+        "actual scores should be the 90-min scoreline"
+
+    # Idempotent + never-overwrite: re-running with a different note keeps the first.
+    ko_played_b = ko_played.copy()
+    ko_played_b["result_note"] = ["won on penalties (re-report)"]
+    ko_scored_b = attach_results(ko_scored, ko_played_b)
+    assert ko_scored_b.loc[ko_scored_b["match_key"] == key_ko, "result_note"].iloc[0] \
+        == "won 4-3 on penalties", "Populated result_note must never be overwritten"
+
+    # A played row with a blank note leaves result_note unset (no annotation).
+    blank_note_played = pd.DataFrame({
+        "date":        [pd.Timestamp(TODAY)],
+        "home_team":   ["Alpha"],
+        "away_team":   ["Beta"],
+        "home_score":  [2],
+        "away_score":  [1],
+        "result_note": [""],
+        "tournament":  ["FIFA World Cup"],
+    })
+    blank_scored = attach_results(ledger, blank_note_played)
+    assert pd.isna(blank_scored.loc[blank_scored["match_key"] == key_a, "result_note"].iloc[0]), \
+        "A blank feed note must leave result_note unset (no annotation)"
 
     print("update_ledger.py self-tests passed")
