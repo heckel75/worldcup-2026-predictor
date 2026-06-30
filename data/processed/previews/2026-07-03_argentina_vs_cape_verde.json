@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Cape Verde",
   "date": "2026-07-03",
-  "input_hash": "0fb241e656963c2a803b64abe43670c6c3923ac5",
-  "generated_at": "2026-06-29T06:02:16+00:00",
+  "input_hash": "f9a7384ccebb4c126d5d0edf4bb8d093a8c7196b",
+  "generated_at": "2026-06-30T09:07:55+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assesses Argentina as a decisive favorite with a 90% win probability, leaving Cape Verde with virtually no chance of victory on a neutral pitch. The underdog is credited only with a 10% draw probability under the statistical forecast.\n\nThe outcome distribution reflects a highly asymmetric match. Argentina's win probability dominates so completely that competitive scenarios—draws or upsets—are compressed into the remaining 10% of outcomes. The model sees little realistic path to Cape Verde avoiding defeat.\n\nThe model and market diverge meaningfully on Cape Verde's prospects. The sportsbook consensus assigns the underdog a 5% win probability and 12% draw chance, totaling 17% non-loss probability compared to the model's 10%. Polymarket prices lie between the two, crediting Cape Verde with 3.7% win odds. The dashboard does not adjudicate which assessment better reflects the true competitive balance."
+  "preview_text": "The model favors Argentina heavily at 90%, assigning Cape Verde a negligible win probability of 0%. The sportsbook consensus is materially less confident, placing Argentina at 82% and crediting Cape Verde with a 5% upset chance.\n\nThe model's distribution skews decisively toward an Argentina victory, with draws accounting for less than 10% of outcomes. The sportsbook spread is wider across all three results, suggesting greater uncertainty about the match's competitive texture. A draw registers as plausible under the market view but peripheral in the model's assessment.\n\nThe two sources diverge by roughly 8 percentage points on Argentina's win probability, with the model more bullish. The sportsbook and Polymarket are closely aligned with each other, both implying meaningful Cape Verde tail risk that the model does not capture. The dashboard makes no claim as to which framing is correct; the divergence likely reflects different information sets or risk adjustments."
 }

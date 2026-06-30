@@ -3,9 +3,9 @@
   "home_team": "Spain",
   "away_team": "Austria",
   "date": "2026-07-02",
-  "input_hash": "e34a8ff80b46a37de0bf2c5bbe557757700800bb",
-  "generated_at": "2026-06-29T06:02:09+00:00",
+  "input_hash": "53a8658b3cb5c3d2daeb9f97e081e2a4d74f621c",
+  "generated_at": "2026-06-30T09:07:48+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Spain at 80% to win, leaving Austria just 2% on the underdog side. The 78-percentage-point gap reflects a heavily asymmetric contest in which the model sees little path to an Austrian victory.\n\nThe outcome distribution emphasizes Spain's dominance while keeping draws plausible. An 18% draw probability means the match carries material risk of a stalemate, but Austria's 2% win chance suggests the model expects Spain to control play and limit upset scope. The spread is wide enough to mark this as a clear favorite scenario rather than a closely matched knockout.\n\nThe sportsbook consensus assigns Austria nearly four times the model's win probability, at 8% versus 2%. This 6-percentage-point divergence is the main point of tension; both sources agree Spain is the strong favorite and a draw is realistic, but bookmakers see more Austrian upside than the statistical forecast does. Polymarket prices align more closely with the model across all three outcomes."
+  "preview_text": "The model favors Spain heavily at 80%, leaving Austria just 2% to win outright. This reflects a large asymmetry in the forecast: Spain is assigned roughly 33 times the win probability of its opponent, a gap consistent with a strong favorite facing a clear underdog.\n\nThe draw probability of 18% suggests meaningful competitive uncertainty despite Spain's dominance. The W/D/L spread—80/18/2—indicates the model expects Spain to control the match most often, but does not rule out a stalemate. An Austria victory remains a tail outcome in the model's view, compressed into a narrow 2% band.\n\nThe sportsbook consensus diverges notably from the model, assigning Austria 9% to win compared to the model's 2%—a spread of roughly 7 percentage points. The market also prices Spain slightly lower at 72% versus the model's 80%. Polymarket odds fall between these sources, closer to the sportsbook consensus. The dashboard makes no claim about which assessment is more accurate; the divergence reflects genuine disagreement among information sources."
 }

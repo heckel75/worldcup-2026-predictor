@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "DR Congo",
   "date": "2026-07-01",
-  "input_hash": "27a7e74bbd4eaa750ab9a2436ea3f3b01170be4a",
-  "generated_at": "2026-06-29T06:01:54+00:00",
+  "input_hash": "256511acb2531e642f98364fca0b3d6eb6810808",
+  "generated_at": "2026-06-30T09:07:32+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours England to win at 78%, with DR Congo's victory probability standing at just 3%. The underdog faces a steep deficit in the forecast, though the draw emerges as a material outcome at 19%.\n\nThe spread between England's win chance and DR Congo's is wide, reflecting a substantial quality gap in the model's assessment. A draw remains plausible given its near-one-in-five likelihood, suggesting England will need to convert dominance into goals rather than assume a comfortable result. The match is forecast as competitive in execution but heavily tilted in England's favour.\n\nThe model and market align closely on the headline outcome. England's win probability differs by fewer than 3 percentage points across sources. Both assign the draw in the 17–19% range. Sportsbooks rate DR Congo's chances materially higher at 7–8% compared to the model's 3%, a gap of 4–5 percentage points. The dashboard does not adjudicate between these views."
+  "preview_text": "The model rates England as a strong favorite with a 78% win probability, leaving DR Congo just a 3% chance of victory. This reflects a substantial gap in the forecast—one team is heavily favored while the underdog faces a steep climb.\n\nThe draw carries meaningful weight at 19%, suggesting the match may not be settled decisively despite England's advantage. The spread between England's win probability and the combined alternatives is wide, yet the presence of a near-one-in-five draw chance means a competitive outcome remains plausible rather than a foregone rout.\n\nThe model and sportsbooks are closely aligned. The consensus gives England 75%, compared to the model's 78%—a difference of 3 percentage points. Draw probabilities are nearly identical across both sources. The main divergence appears in the tail: books assign DR Congo a 7% underdog win rate versus the model's 3%, a gap the dashboard does not adjudicate. Both frameworks treat England as the clear favorite."
 }

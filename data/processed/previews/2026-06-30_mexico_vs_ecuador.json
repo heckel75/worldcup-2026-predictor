@@ -3,9 +3,9 @@
   "home_team": "Mexico",
   "away_team": "Ecuador",
   "date": "2026-06-30",
-  "input_hash": "83dfa7144c915f463279090412af8ca3ccc270eb",
-  "generated_at": "2026-06-29T06:01:49+00:00",
+  "input_hash": "09221ad3d3652cf964c8c2f3ef90f73ceba09561",
+  "generated_at": "2026-06-30T09:07:29+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Mexico at 36%, though the margin over Ecuador's 32% is modest. Ecuador's win probability trails by roughly 4 percentage points, situating this as a competitive encounter where the favorite remains far from a commanding position.\n\nThe outcome distribution reflects a closely contested match. A draw carries meaningful probability at 32%, suggesting the teams are well-matched in expected strength. The spread between Mexico's ceiling and Ecuador's floor spans only 4 percentage points, indicating the model sees little daylight between them and anticipates a competitive, possibly tight contest.\n\nThe sportsbook consensus departs notably from the model. Books price Mexico at 42% and Ecuador at 25%, a gap of 7 percentage points wider than the model's 4-point spread. Polymarket prices align more closely with the books than with the model. The dashboard does not adjudicate which view is correct; the divergence merits awareness for users evaluating the fixture."
+  "preview_text": "The model rates Mexico as the modest favorite at 36%, with Ecuador's win probability nearly matching at 32% and a draw at 32%. This is a tightly bunched outcome distribution, reflecting competitive balance rather than a pronounced edge for either side.\n\nThe compressed win probabilities indicate a match likely to be closely contested across all three outcomes. A draw represents a genuine possibility at nearly one-third likelihood, suggesting neither team is strongly positioned to dominate. The gap between Mexico's favorite status and Ecuador's underdog role spans only 4 percentage points, which underscores how evenly matched the forecast sees this encounter.\n\nThe sportsbook consensus departs meaningfully from the model. Books price Mexico's win at 42.5%—a 6-point premium over the model—while compressing Ecuador to 24.5%, roughly 8 points below the model's estimate. Polymarket pricing aligns closely with the sportsbooks. The dashboard does not adjudicate between these sources; the divergence suggests material disagreement about Mexico's edge and Ecuador's competitive standing."
 }

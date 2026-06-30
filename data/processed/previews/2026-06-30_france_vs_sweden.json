@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Sweden",
   "date": "2026-06-30",
-  "input_hash": "ed209bb63e5471080eeecf76d1ada14cf0f631e1",
-  "generated_at": "2026-06-29T06:01:41+00:00",
+  "input_hash": "e5eac3392f5b7b8a99f3c73bff7d5a073684a8ae",
+  "generated_at": "2026-06-30T09:07:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates France as a heavy favorite with a 80% win probability, leaving Sweden just a 2% chance of victory. This is an asymmetric matchup in which the underdog faces a steep hill. France's baseline strength translates to a large gap in the forecast.\n\nThe win-draw-loss spread reflects decisive modeling conviction. A draw carries 18% probability, the second-most-likely outcome, but still well below France's dominant win chance. Sweden's path to three points appears narrow rather than genuinely competitive. The match is expected to lean heavily toward a French result, though draws remain a plausible secondary scenario.\n\nThe model and sportsbook consensus diverge notably on Sweden's prospects. The market assigns the underdog 9% win probability compared to the model's 2%—a gap of roughly 7 percentage points. The model is more bullish on France's decisive edge. Polymarket pricing sits between the two, closer to the model but still granting Sweden more room than the statistical forecast. The dashboard does not adjudicate which view is correct."
+  "preview_text": "The model forecasts France as a heavy favourite, assigning a 80% win probability. Sweden's chance of victory stands at just 2%, positioning the visitors as substantial underdogs in this neutral-venue fixture.\n\nThe win-draw-loss distribution reflects a wide gap between the teams. France's dominance leaves limited room for competitive outcomes; draws carry an 18% probability, while Sweden's path to victory appears narrow. The match is not expected to be closely matched—France enters as a commanding favourite.\n\nThe model and sportsbook consensus diverge on the underdog. The model credits Sweden with only a 2% win probability, whereas the market consensus assigns 10%, a gap of approximately 8 percentage points. Polymarket prices sit between the two, at 8%. The dashboard does not adjudicate which assessment is correct; the divergence may reflect differing weights applied to squad depth, variance, or other unmeasured factors. On France's win probability, all three sources cluster tightly around 75–80%."
 }

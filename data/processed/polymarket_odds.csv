@@ -1,16 +1,16 @@
 commence_time,home_team,away_team,p_home,p_draw,p_away,volume,low_liquidity
-2026-06-29,Brazil,Japan,0.5721,0.2537,0.1741,5084829,False
-2026-06-29,Germany,Paraguay,0.7313,0.1841,0.0846,1253225,False
-2026-06-29,Netherlands,Morocco,0.4229,0.3134,0.2637,2179361,False
-2026-06-30,Mexico,Ecuador,0.4328,0.3333,0.2338,520513,False
-2026-06-30,France,Sweden,0.7789,0.1457,0.0754,912477,False
-2026-06-30,Ivory Coast,Norway,0.2462,0.2663,0.4874,840482,False
-2026-07-01,Belgium,Senegal,0.4472,0.2965,0.2563,75156,False
-2026-07-01,USA,Bosnia and Herzegovina,0.7214,0.1841,0.0945,492698,False
-2026-07-01,England,DR Congo,0.7612,0.1741,0.0647,249061,False
-2026-07-02,Switzerland,Algeria,0.4774,0.2864,0.2362,119281,False
-2026-07-02,Spain,Austria,0.7512,0.1741,0.0746,44101,False
-2026-07-02,Portugal,Croatia,0.5323,0.2736,0.194,212329,False
-2026-07-03,Argentina,Cape Verde,0.8486,0.1141,0.0372,578772,False
-2026-07-03,Australia,Egypt,0.2836,0.3333,0.3831,66995,False
-2026-07-03,Colombia,Ghana,0.6281,0.2462,0.1256,155490,False
+2026-06-29,Brazil,Japan,1.0,0.0,0.0,34011818,False
+2026-06-29,Germany,Paraguay,0.0,1.0,0.0,41402777,False
+2026-06-29,Netherlands,Morocco,0.0,1.0,0.0,27852195,False
+2026-06-30,Mexico,Ecuador,0.4328,0.3333,0.2338,1501094,False
+2026-06-30,France,Sweden,0.7688,0.1558,0.0754,3033871,False
+2026-06-30,Ivory Coast,Norway,0.2637,0.2836,0.4527,3883734,False
+2026-07-01,Belgium,Senegal,0.4428,0.2935,0.2637,458356,False
+2026-07-01,USA,Bosnia and Herzegovina,0.7186,0.1859,0.0955,582934,False
+2026-07-01,England,DR Congo,0.7612,0.1741,0.0647,444507,False
+2026-07-02,Switzerland,Algeria,0.4673,0.2965,0.2362,164191,False
+2026-07-02,Spain,Austria,0.7387,0.1759,0.0854,156870,False
+2026-07-02,Portugal,Croatia,0.5423,0.2736,0.1841,626247,False
+2026-07-03,Argentina,Cape Verde,0.8404,0.1144,0.0453,873145,False
+2026-07-03,Australia,Egypt,0.2836,0.3333,0.3831,94509,False
+2026-07-03,Colombia,Ghana,0.6382,0.2462,0.1156,192481,False
