@@ -88,6 +88,43 @@ def make_match_key(date_iso: str, home: str, away: str) -> str:
 # Core functions
 # ---------------------------------------------------------------------------
 
+def _freeze_p(val):
+    """Round a probability/lambda to 4dp, or pd.NA when missing."""
+    return round(float(val), 4) if pd.notna(val) else pd.NA
+
+
+def _refreeze_row(ledger_df: pd.DataFrame, idx, row, now_ts: str) -> None:
+    """Overwrite an UNLOCKED ledger row's forecast columns with this build's
+    triple_compare values (FREEZE-C re-freeze: "frozen = last published").
+
+    COLUMN-WISE NaN-SAFE: each column is written ONLY when the incoming value is
+    non-NaN; a NaN incoming value leaves the existing frozen value in place. This
+    is the guard that makes a re-freeze safe when a market has dropped to NaN —
+    a kicked-off match the fetchers no longer price (a "limbo" row) keeps its
+    good frozen book/poly instead of being nulled out.
+
+    Touches ONLY forecast columns (model probs, markets, scoreline, forecast_ts).
+    Never outcome / actual_home_score / actual_away_score / result_note — those
+    are attach_results-owned and define the lock.
+    """
+    for ledger_col, src_col in (("p_home", "p_home_model_corr"),
+                                ("p_draw", "p_draw_model_corr"),
+                                ("p_away", "p_away_model_corr")):
+        v = row.get(src_col)
+        if pd.notna(v):
+            ledger_df.at[idx, ledger_col] = round(float(v), 4)
+    for col in MARKET_COLS:
+        v = row.get(col)
+        if pd.notna(v):
+            ledger_df.at[idx, col] = round(float(v), 4) if col.startswith("p_") else v
+    for col in SCORELINE_COLS:
+        v = row.get(col)
+        if v is not None and pd.notna(v):
+            ledger_df.at[idx, col] = round(float(v), 4) if col.startswith("lambda_") else v
+    # forecast_ts records the LAST re-freeze (the binding pre-kickoff snapshot).
+    ledger_df.at[idx, "forecast_ts"] = now_ts
+
+
 def freeze_new_forecasts(
     ledger_df: pd.DataFrame,
     upcoming_fixtures_df: pd.DataFrame,
@@ -96,24 +133,41 @@ def freeze_new_forecasts(
     lookahead_days: int,
 ) -> pd.DataFrame:
     """
-    Append one ledger row per fixture whose date is within [today, today +
-    lookahead_days] and whose match_key is not already in the ledger.
+    Ensure every fixture in the freeze window [today, today + lookahead_days]
+    carries the LATEST pre-match forecast in the ledger, then return it.
 
-    Probabilities come from triple_df's bias-corrected model columns
-    (p_home_model_corr, p_draw_model_corr, p_away_model_corr), plus the
-    market columns (book/Polymarket probs, volume, neutral flag) frozen
-    from the same triple_compare row. Absent market data freezes as NaN.
+    FREEZE-C — re-freeze-until-played, then lock (replaces freeze-once):
+      - A windowed fixture with NO ledger row gets one CREATED (robustness: the
+        row exists well before kickoff, so a missed build can't lose the match).
+      - A windowed fixture with an UNLOCKED row gets its forecast columns
+        OVERWRITTEN with this build's triple_compare values, so the binding
+        freeze is the LAST build before kickoff ("frozen = last published").
+      - A row is permanently immutable (LOCKED) when EITHER:
+          (a) attach_results has written its outcome — the match was played; OR
+          (b) it has left the forecast set — no triple_compare row, so the
+              left-join leaves model probs (p_*_model_corr) NaN. (triple_compare
+              always computes model probs for a live fixture and drops played
+              matches, so NaN model ⟺ gone from the forecast set.)
+        Locked rows are never created and never overwritten.
 
-    Never modifies existing rows — a fixture already frozen keeps its row
-    untouched, including the market columns.
+    Because freeze runs BEFORE attach in a build (update.py), the entry build's
+    protection for a just-played match is lock-(b): clean_data / derive_ko_fixtures
+    have already removed it from triple_compare, so its merge model probs are NaN
+    and it is skipped. Lock-(a) then holds it on every subsequent build. The
+    column-wise NaN-safe overwrite (_refreeze_row) is the third layer: even a
+    row still in the window whose MARKET went NaN keeps its good frozen markets.
+
+    Probabilities come from triple_df's bias-corrected model columns plus the
+    market and scoreline columns from the same row. Never touches outcome /
+    actual scores / result_note (attach_results owns those).
     """
     ledger_df = _ensure_schema(ledger_df)
 
-    # Existing keys — guard against empty or missing column
-    if "match_key" in ledger_df.columns and len(ledger_df):
-        existing_keys: set[str] = set(ledger_df["match_key"].dropna())
-    else:
-        existing_keys = set()
+    # Map existing rows by key (first occurrence) for in-place re-freeze.
+    key_to_idx: dict[str, int] = {}
+    for i, k in zip(ledger_df.index, ledger_df["match_key"]):
+        if pd.notna(k) and k not in key_to_idx:
+            key_to_idx[k] = i
 
     # Resolve the date window
     cutoff_lo = pd.Timestamp(today)
@@ -137,17 +191,35 @@ def freeze_new_forecasts(
     triple = triple_df[triple_cols].copy()
     merged = window.merge(triple, on=["home_team", "away_team"], how="left")
 
-    def _freeze_p(val):
-        return round(float(val), 4) if pd.notna(val) else pd.NA
-
     now_ts = dt.datetime.now().isoformat(timespec="seconds")
     new_rows = []
+    created: set[str] = set()
+    refrozen = 0
     for _, row in merged.iterrows():
         date_iso = row["date"].date().isoformat()
         key = make_match_key(date_iso, row["home_team"], row["away_team"])
-        if key in existing_keys:
+
+        # Lock-(b): a fixture with no live model forecast (left-join NaN) has
+        # left the forecast set — never create, never overwrite.
+        if any(pd.isna(row.get(c)) for c in
+               ("p_home_model_corr", "p_draw_model_corr", "p_away_model_corr")):
             continue
-        existing_keys.add(key)
+
+        if key in key_to_idx:
+            idx = key_to_idx[key]
+            # Lock-(a): played. Once attach_results writes an outcome the row is
+            # permanently immutable — its frozen probs are the last pre-kickoff
+            # values and must never change.
+            outcome_val = ledger_df.at[idx, "outcome"]
+            if pd.notna(outcome_val) and str(outcome_val).strip() != "":
+                continue
+            _refreeze_row(ledger_df, idx, row, now_ts)
+            refrozen += 1
+            continue
+
+        if key in created:
+            continue  # defensive: same fixture appeared twice in this build
+
         rec = {
             "match_key":   key,
             "date":        date_iso,
@@ -176,6 +248,10 @@ def freeze_new_forecasts(
             else:
                 rec[col] = val if (val is not None and pd.notna(val)) else pd.NA
         new_rows.append(rec)
+        created.add(key)
+
+    if refrozen:
+        print(f"  Re-froze {refrozen} unlocked forecast row(s) to the latest pre-match values.")
 
     if not new_rows:
         # Ensure any legacy duplicates are collapsed even if no new rows were added.
@@ -291,6 +367,48 @@ def attach_results(
     return ledger
 
 
+def find_unfrozen_played(
+    ledger_df: pd.DataFrame,
+    played_df: pd.DataFrame,
+) -> list[str]:
+    """Return match_keys of played 2026 WC matches that have NO ledger row
+    (played-but-never-frozen) — the belt-and-suspenders detector for FREEZE-C.
+
+    With re-freeze-until-played, every match should get a ledger row created
+    well before kickoff, so this should always be empty. A non-empty result
+    means a match was played without ever freezing: its match page, verdict,
+    "Who's been closer" credit, calibration row and Divergence Log entry will
+    all be missing (the §6 played-but-never-frozen vanish), and the pre-match
+    forecast is unrecoverable. update.py logs a loud WARNING on a non-empty
+    return.
+
+    Date-bounded to 2026 (§6: matches_clean spans all WC editions).
+    """
+    if played_df is None or played_df.empty:
+        return []
+    played = played_df.copy()
+    played["date"] = pd.to_datetime(played["date"])
+    mask = (
+        (played.get("tournament") == "FIFA World Cup")
+        & (played["date"].dt.year == 2026)
+        & played["home_score"].notna()
+        & played["away_score"].notna()
+    )
+    played = played[mask]
+    if played.empty:
+        return []
+    ledger_keys = (
+        set(ledger_df["match_key"].dropna())
+        if "match_key" in ledger_df.columns else set()
+    )
+    missing = []
+    for _, r in played.iterrows():
+        key = make_match_key(r["date"].date().isoformat(), r["home_team"], r["away_team"])
+        if key not in ledger_keys:
+            missing.append(key)
+    return missing
+
+
 # ---------------------------------------------------------------------------
 # Self-test
 # ---------------------------------------------------------------------------
@@ -375,11 +493,18 @@ if __name__ == "__main__":
     assert json.loads(row_a["top_scorelines"]) == [{"score": "1-0", "prob": 0.12}], \
         "top_scorelines must round-trip through json.loads identically"
 
-    # --- Test 2: re-running freeze is a no-op ---
+    # --- Test 2: re-running freeze with IDENTICAL inputs adds no rows and leaves
+    #     values unchanged (FREEZE-C: re-freeze is idempotent on identical input) ---
+    p_home_a_before = float(ledger.loc[ledger["match_key"] == key_a, "p_home"].iloc[0])
+    book_a_before   = float(ledger.loc[ledger["match_key"] == key_a, "p_home_book"].iloc[0])
     ledger2 = freeze_new_forecasts(
         ledger, fixtures_df, triple_df, TODAY, lookahead_days=1
     )
     assert len(ledger2) == 2, "Re-freeze should not add duplicate rows"
+    assert float(ledger2.loc[ledger2["match_key"] == key_a, "p_home"].iloc[0]) == p_home_a_before, \
+        "Re-freeze with identical triple must leave model probs unchanged"
+    assert float(ledger2.loc[ledger2["match_key"] == key_a, "p_home_book"].iloc[0]) == book_a_before, \
+        "Re-freeze with identical triple must leave market probs unchanged"
 
     # --- Test 3: attach_results fills outcome without touching p_* ---
     p_home_before = float(ledger.loc[ledger["match_key"] == key_a, "p_home"].iloc[0])
@@ -497,5 +622,102 @@ if __name__ == "__main__":
     blank_scored = attach_results(ledger, blank_note_played)
     assert pd.isna(blank_scored.loc[blank_scored["match_key"] == key_a, "result_note"].iloc[0]), \
         "A blank feed note must leave result_note unset (no annotation)"
+
+    # =====================================================================
+    # FREEZE-C tests: re-freeze-while-unplayed, lock on play, NaN-safe guard.
+    # =====================================================================
+
+    # --- FC-1: re-freeze UPDATES an unlocked row when the triple changes ---
+    #     (the WC_ASOF_DATE "two consecutive pre-match builds" case, unit-level:
+    #      both calls pass `today` explicitly so no real build is needed.)
+    fc_fixtures = pd.DataFrame({
+        "date":      [pd.Timestamp(TODAY)],
+        "home_team": ["Kappa"], "away_team": ["Lambda"], "neutral": [True],
+    })
+    fc_triple_v1 = pd.DataFrame({
+        "home_team": ["Kappa"], "away_team": ["Lambda"],
+        "p_home_model_corr": [0.50], "p_draw_model_corr": [0.25], "p_away_model_corr": [0.25],
+        "p_home_book": [0.48], "p_draw_book": [0.27], "p_away_book": [0.25],
+        "p_home_poly": [0.47], "p_draw_poly": [0.28], "p_away_poly": [0.25],
+        "poly_volume": [100000], "neutral_used": [True],
+    })
+    fc = freeze_new_forecasts(pd.DataFrame(columns=LEDGER_SCHEMA), fc_fixtures,
+                              fc_triple_v1, TODAY, lookahead_days=1)
+    key_fc = make_match_key(TODAY.isoformat(), "Kappa", "Lambda")
+    assert float(fc.loc[fc["match_key"] == key_fc, "p_home"].iloc[0]) == 0.50
+    # Second pre-match build: model + markets moved.
+    fc_triple_v2 = fc_triple_v1.copy()
+    fc_triple_v2["p_home_model_corr"] = [0.60]
+    fc_triple_v2["p_home_book"] = [0.55]
+    fc2 = freeze_new_forecasts(fc, fc_fixtures, fc_triple_v2, TODAY, lookahead_days=1)
+    assert len(fc2) == 1, "re-freeze must not duplicate the row"
+    assert float(fc2.loc[fc2["match_key"] == key_fc, "p_home"].iloc[0]) == 0.60, \
+        "FC-1: unlocked row's model prob must UPDATE to the latest build, not stick"
+    assert float(fc2.loc[fc2["match_key"] == key_fc, "p_home_book"].iloc[0]) == 0.55, \
+        "FC-1: unlocked row's market must UPDATE to the latest build"
+
+    # --- FC-2: LOCK ON PLAY — once attach writes an outcome, a later build does
+    #     NOT overwrite the frozen probs (they hold the last pre-kickoff value) ---
+    fc_played = pd.DataFrame({
+        "date": [pd.Timestamp(TODAY)], "home_team": ["Kappa"], "away_team": ["Lambda"],
+        "home_score": [2], "away_score": [0], "tournament": ["FIFA World Cup"],
+    })
+    fc_locked = attach_results(fc2, fc_played)
+    assert fc_locked.loc[fc_locked["match_key"] == key_fc, "outcome"].iloc[0] == "H"
+    fc_triple_v3 = fc_triple_v1.copy()
+    fc_triple_v3["p_home_model_corr"] = [0.99]   # a build trying to clobber
+    fc_triple_v3["p_home_book"] = [0.99]
+    fc_after = freeze_new_forecasts(fc_locked, fc_fixtures, fc_triple_v3, TODAY, lookahead_days=1)
+    assert float(fc_after.loc[fc_after["match_key"] == key_fc, "p_home"].iloc[0]) == 0.60, \
+        "FC-2: a LOCKED (played) row's model prob must NOT change"
+    assert float(fc_after.loc[fc_after["match_key"] == key_fc, "p_home_book"].iloc[0]) == 0.55, \
+        "FC-2: a LOCKED (played) row's market must NOT change"
+
+    # --- FC-3: CLOBBER REFUSAL — frozen, then GONE from the forecast set (no
+    #     triple row -> left-join NaN model = lock-(b)). A build must not touch it,
+    #     even if it weren't yet outcome-locked. Use an UNLOCKED row to prove the
+    #     lock-(b) path alone (not relying on the outcome lock). ---
+    gone_triple = pd.DataFrame(columns=[
+        "home_team", "away_team",
+        "p_home_model_corr", "p_draw_model_corr", "p_away_model_corr",
+    ])  # the fixture is in the window but absent from triple -> NaN model on merge
+    fc_gone = freeze_new_forecasts(fc2, fc_fixtures, gone_triple, TODAY, lookahead_days=1)
+    assert float(fc_gone.loc[fc_gone["match_key"] == key_fc, "p_home"].iloc[0]) == 0.60, \
+        "FC-3: a row gone from the forecast set (NaN model) must NOT be overwritten"
+    assert float(fc_gone.loc[fc_gone["match_key"] == key_fc, "p_home_book"].iloc[0]) == 0.55, \
+        "FC-3: gone-from-set row's market must be preserved (no clobber)"
+
+    # --- FC-4: LIMBO / NaN-MARKET — an unlocked row still in window+triple with
+    #     VALID model but NaN incoming book/poly: model re-freezes, markets are
+    #     PRESERVED, not nulled. This is the guard protecting today's 6 KO rows. ---
+    limbo_triple = pd.DataFrame({
+        "home_team": ["Kappa"], "away_team": ["Lambda"],
+        "p_home_model_corr": [0.70], "p_draw_model_corr": [0.20], "p_away_model_corr": [0.10],
+        "p_home_book": [float("nan")], "p_draw_book": [float("nan")], "p_away_book": [float("nan")],
+        "p_home_poly": [float("nan")], "p_draw_poly": [float("nan")], "p_away_poly": [float("nan")],
+        "poly_volume": [float("nan")], "neutral_used": [True],
+    })
+    fc_limbo = freeze_new_forecasts(fc2, fc_fixtures, limbo_triple, TODAY, lookahead_days=1)
+    assert float(fc_limbo.loc[fc_limbo["match_key"] == key_fc, "p_home"].iloc[0]) == 0.70, \
+        "FC-4: model must re-freeze normally when only the market is NaN"
+    assert float(fc_limbo.loc[fc_limbo["match_key"] == key_fc, "p_home_book"].iloc[0]) == 0.55, \
+        "FC-4: a NaN incoming book must NOT null the good frozen book (limbo guard)"
+    assert float(fc_limbo.loc[fc_limbo["match_key"] == key_fc, "p_home_poly"].iloc[0]) == 0.47, \
+        "FC-4: a NaN incoming poly must NOT null the good frozen poly (limbo guard)"
+
+    # --- FC-5: detector finds a played-but-never-frozen match ---
+    detector_played = pd.DataFrame({
+        "date": [pd.Timestamp(TODAY), pd.Timestamp(TODAY)],
+        "home_team": ["Kappa", "Mu"], "away_team": ["Lambda", "Nu"],
+        "home_score": [2, 1], "away_score": [0, 1],
+        "tournament": ["FIFA World Cup", "FIFA World Cup"],
+    })
+    # fc2 has only Kappa-Lambda frozen; Mu-Nu is played-but-never-frozen.
+    missing = find_unfrozen_played(fc2, detector_played)
+    key_munu = make_match_key(TODAY.isoformat(), "Mu", "Nu")
+    assert missing == [key_munu], f"detector should flag Mu-Nu only, got {missing}"
+    # When every played match has a frozen row, the detector is silent.
+    assert find_unfrozen_played(fc_locked, fc_played) == [], \
+        "detector must be empty when the played match has a ledger row"
 
     print("update_ledger.py self-tests passed")

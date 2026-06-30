@@ -139,6 +139,15 @@ def _update_ledger(log_fh) -> tuple[int, int]:
         ledger_before_attach = ledger_df.copy()
         ledger_df = mod.attach_results(ledger_df, played_df)
 
+        # FREEZE-C belt-and-suspenders: a played WC match with no ledger row was
+        # never frozen — its page/verdict/scoreboard/calibration entry will be
+        # missing and the pre-match forecast is unrecoverable. With re-freeze-
+        # until-played this should never fire; if it does, the lock misbehaved.
+        unfrozen = mod.find_unfrozen_played(ledger_df, played_df)
+        if unfrozen:
+            _tee(f"  WARNING: {len(unfrozen)} played WC match(es) have NO frozen "
+                 f"ledger row (played-but-never-frozen): {', '.join(unfrozen)}", log_fh)
+
         # Count how many rows got a result filled in
         if len(ledger_before_attach) > 0 and "outcome" in ledger_before_attach.columns:
             was_empty = (ledger_before_attach["outcome"].isna()
