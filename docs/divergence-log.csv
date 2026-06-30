@@ -1,4 +1,5 @@
 date,match,stage,group,outcome,result,score,p_model_on_outcome,p_sportsbook_on_outcome,p_polymarket_on_outcome,gap_pp,gap_bucket,divergence_type,flagged,verdict
+2026-06-30,Côte d'Ivoire v Norway,Knockout,,A,Away win,1–2,0.5155,0.4494,0.4527,8,5–15pp,model_over_concentrated,False,Model closest
 2026-06-29,Germany v Paraguay,Knockout,,D,Draw,1–1,0.2807,0.1907,0.1859,13,5–15pp,model_under_concentrated,False,All missed
 2026-06-29,Netherlands v Morocco,Knockout,,D,Draw,1–1,0.3155,0.3034,0.3035,11,5–15pp,disagree_on_favorite,False,All missed
 2026-06-29,Brazil v Japan,Knockout,,H,Home win,2–1,0.3884,0.5663,0.5665,18,15pp+,model_under_concentrated,True,Sources agreed

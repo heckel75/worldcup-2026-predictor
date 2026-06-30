@@ -3,9 +3,9 @@
   "home_team": "Switzerland",
   "away_team": "Algeria",
   "date": "2026-07-02",
-  "input_hash": "d461811d214c57acc88181755a3fd3ec9aa54c9a",
-  "generated_at": "2026-06-30T09:07:52+00:00",
+  "input_hash": "51f979ef7865a64fa8df4a9c3d55ba11ee207255",
+  "generated_at": "2026-06-30T18:59:22+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Switzerland as the slight favorite at 40%, with Algeria trailing at 28%. The gap between them is modest; Switzerland's edge rests on a narrow margin rather than dominant superiority. Algeria's probability reflects genuine competitive potential in this matchup.\n\nThe draw emerges as a plausible outcome at 31%, sitting between the two win probabilities. This distribution suggests a closely contested match without a clear separation between likely and unlikely results. The spread across all three outcomes is relatively even, pointing toward a competitive encounter where any result carries meaningful probability.\n\nThe market consensus diverges notably from the model. Sportsbooks rate Switzerland's win probability at 47%—roughly 6 percentage points higher—while compressing Algeria's chances to 24%, about 4 points lower. Polymarket pricing aligns closely with bookmaker consensus. The model takes a more balanced view of this matchup; whether that reflects genuine edge or systematic bias remains unknown from the inputs alone."
+  "preview_text": "The model favors Switzerland at 41% to win, with Algeria trailing at 28%. The gap is modest: Switzerland holds a clear edge, but the underdog retains meaningful winning chances.\n\nThe spread across outcomes shows no dominant result. Draw probability sits at 31%, making a stalemate nearly as likely as an Algeria victory. The win-margin between the two sides is narrow enough that competitive, closely contested play is the modal forecast. The match leans toward the favorite but contains substantial uncertainty.\n\nModel and market show notable divergence. Sportsbooks and Polymarket both price Switzerland roughly 6 percentage points higher than the model, while pricing Algeria about 4 points lower. The two consensus sources (books and Polymarket) align tightly with each other. The dashboard does not claim to resolve which is correct; the discrepancy warrants awareness for users comparing sources."
 }
