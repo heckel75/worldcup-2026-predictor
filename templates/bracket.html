@@ -19,22 +19,24 @@
 </section>
 {% else %}
 <div class="bracket-wrap">
-  <div class="bracket-cols">
+  {# One flat grid: round headers in row 1, every match a direct child placed by
+     its computed grid-column / grid-row span so each later-round cell sits at the
+     vertical midpoint of its two feeders (the funnel), TBD cells included. #}
+  <div class="bracket-grid">
     {% for rnd in bracket.rounds %}
-    <div class="bracket-col">
-      <p class="bracket-col-label">{{ rnd.label }}</p>
-      <div class="bracket-col-matches">
-        {% for m in rnd.matches %}
-        <div class="bracket-match{% if m.played %} bracket-match--played{% endif %}">
-          {% if m.key %}<a class="bracket-match-link" href="{{ root }}matches/{{ m.key }}.html">{% endif %}
-          {% for t in m.teams %}
-          <span class="bracket-team{% if t.won %} bracket-team--won{% elif t.out %} bracket-team--out{% elif t.tbd %} bracket-team--tbd{% endif %}">{{ t.name }}</span>
-          {% endfor %}
-          {% if m.key %}</a>{% endif %}
-        </div>
+    <p class="bracket-col-label" style="grid-column: {{ rnd.col }};">{{ rnd.label }}</p>
+    {% endfor %}
+    {% for rnd in bracket.rounds %}
+      {% for m in rnd.matches %}
+      <div class="bracket-match{% if m.played %} bracket-match--played{% endif %}"
+           style="grid-column: {{ m.col }}; grid-row: {{ m.row_start }} / {{ m.row_end }};">
+        {% if m.key %}<a class="bracket-match-link" href="{{ root }}matches/{{ m.key }}.html">{% endif %}
+        {% for t in m.teams %}
+        <span class="bracket-team{% if t.won %} bracket-team--won{% elif t.out %} bracket-team--out{% elif t.tbd %} bracket-team--tbd{% endif %}">{{ t.name }}</span>
         {% endfor %}
+        {% if m.key %}</a>{% endif %}
       </div>
-    </div>
+      {% endfor %}
     {% endfor %}
   </div>
 

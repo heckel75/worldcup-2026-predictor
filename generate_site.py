@@ -971,6 +971,86 @@ def _team_slot(name, winner, played: bool) -> dict:
             "out": played and name != winner}
 
 
+# Knockout topology: match_id -> (feeder_a_id, feeder_b_id) for every node above
+# the Round of 32. Duplicated from bracket.py's R16/QF/SF/FINAL tables rather than
+# imported (Session-24 precedent: the generator stays decoupled from the model
+# layer, so this small immutable tree is restated here). R32 ids 73-88 are the 16
+# leaves; everything funnels up to the final (104). The third-place play-off (103)
+# renders in its own detached block, not in the grid, so it is deliberately absent.
+_KO_FEEDERS: dict[int, tuple[int, int]] = {
+    89: (74, 77), 90: (73, 75), 91: (76, 78), 92: (79, 80),
+    93: (83, 84), 94: (81, 82), 95: (86, 88), 96: (85, 87),
+    97: (89, 90), 98: (93, 94), 99: (91, 92), 100: (95, 96),
+    101: (97, 98), 102: (99, 100),
+    104: (101, 102),
+}
+_KO_FINAL_ID = 104
+
+
+def _ko_round_col(mid: int) -> int:
+    """Grid column (round depth, 1=R32 … 5=Final) for a knockout match id."""
+    if 73 <= mid <= 88:
+        return 1
+    if 89 <= mid <= 96:
+        return 2
+    if 97 <= mid <= 100:
+        return 3
+    if mid in (101, 102):
+        return 4
+    if mid == _KO_FINAL_ID:
+        return 5
+    raise ValueError(f"not a bracket-grid match id: {mid}")
+
+
+def _ko_layout() -> dict[int, dict]:
+    """Pure, topology-only single-grid placement for every knockout match
+    (R32→final), so each later-round cell vertically spans — and therefore centres
+    on — its two feeders (the classic funnel, exact at every level). Independent of
+    which teams/results are loaded, so a still-TBD R16+ cell lands at the correct
+    centred row-span.
+
+    Leaf order comes from a depth-first walk of the final's subtree, which
+    guarantees every match's descendants occupy a contiguous leaf run (planar, no
+    crossing lines).
+
+    Returns {match_id: {"col", "row_start", "row_end"}} where row_start/row_end are
+    1-based CSS grid-row lines into a grid whose row 1 is the round-header row and
+    rows 2..17 are the 16 leaf rows (so a leaf at 0-based position p spans grid line
+    p+2 to p+3; a cell over leaves lo..hi spans lo+2 to hi+3).
+    """
+    leaf_index: dict[int, int] = {}
+
+    def collect(mid: int) -> None:
+        if mid not in _KO_FEEDERS:           # R32 leaf
+            leaf_index[mid] = len(leaf_index)
+            return
+        a, b = _KO_FEEDERS[mid]
+        collect(a)                           # depth-first: a's subtree, then b's
+        collect(b)
+
+    collect(_KO_FINAL_ID)
+
+    span: dict[int, tuple[int, int]] = {}
+
+    def resolve(mid: int) -> tuple[int, int]:
+        if mid not in _KO_FEEDERS:
+            p = leaf_index[mid]
+            span[mid] = (p, p)
+            return span[mid]
+        a, b = _KO_FEEDERS[mid]
+        lo_a, hi_a = resolve(a)
+        lo_b, hi_b = resolve(b)
+        span[mid] = (min(lo_a, lo_b), max(hi_a, hi_b))
+        return span[mid]
+
+    resolve(_KO_FINAL_ID)
+
+    return {
+        mid: {"col": _ko_round_col(mid), "row_start": lo + 2, "row_end": hi + 3}
+        for mid, (lo, hi) in span.items()
+    }
+
+
 def _load_bracket(pair_to_key: dict) -> dict:
     """Resolve the knockout bracket and make it render-ready: internal names
     mapped through DISPLAY_NAMES, each cell linked to its match page when one
@@ -981,6 +1061,8 @@ def _load_bracket(pair_to_key: dict) -> dict:
     if not data["complete"]:
         return {"complete": False, "rounds": [], "third_place": None}
 
+    layout = _ko_layout()
+
     def _cell(node: dict) -> dict:
         ta, tb = disp(node["team_a"]) if node["team_a"] else None, \
                  disp(node["team_b"]) if node["team_b"] else None
@@ -988,16 +1070,22 @@ def _load_bracket(pair_to_key: dict) -> dict:
         key = None
         if ta and tb:
             key = pair_to_key.get(frozenset({ta, tb}))
+        place = layout.get(node["match_id"], {})  # third-place (103) absent — block, not grid
         return {
             "match_id": node["match_id"],
             "played": node["played"],
             "key": key,
+            "col": place.get("col"),
+            "row_start": place.get("row_start"),
+            "row_end": place.get("row_end"),
             "teams": [_team_slot(ta, winner, node["played"]),
                       _team_slot(tb, winner, node["played"])],
         }
 
     rounds = [
-        {"label": r["label"], "matches": [_cell(m) for m in r["matches"]]}
+        {"label": r["label"],
+         "col": layout[r["matches"][0]["match_id"]]["col"],
+         "matches": [_cell(m) for m in r["matches"]]}
         for r in data["rounds"]
     ]
     return {
@@ -1560,9 +1648,44 @@ def _test_next_ko_round() -> None:
     print("generate_site.py _next_ko_round / _ko_schedule_rows self-tests passed")
 
 
+def _test_ko_layout() -> None:
+    """Pin _ko_layout geometry: 16 single-row leaves, every internal node spans —
+    and is fed by adjacent feeders covering — exactly its two feeders, final spans
+    all 16, columns track round depth."""
+    layout = _ko_layout()
+
+    leaves = [m for m in range(73, 89)]
+    assert len(layout) == 31, len(layout)  # 16 + 8 + 4 + 2 + 1
+    for mid in leaves:
+        p = layout[mid]
+        assert p["col"] == 1, p
+        assert p["row_end"] - p["row_start"] == 1, (mid, p)  # one leaf row
+    assert len({(layout[m]["row_start"]) for m in leaves}) == 16  # distinct rows
+
+    # Each internal node = union of its two feeders, and the feeders are adjacent
+    # (feeder-a's bottom grid line == feeder-b's top grid line).
+    for mid, (a, b) in _KO_FEEDERS.items():
+        pa, pb, pm = layout[a], layout[b], layout[mid]
+        assert pa["row_end"] == pb["row_start"], (mid, pa, pb)
+        assert pm["row_start"] == min(pa["row_start"], pb["row_start"]), (mid, pm)
+        assert pm["row_end"] == max(pa["row_end"], pb["row_end"]), (mid, pm)
+
+    final = layout[_KO_FINAL_ID]
+    assert final["col"] == 5 and final["row_start"] == 2 and final["row_end"] == 18, final
+
+    cols = {1: range(73, 89), 2: range(89, 97), 3: range(97, 101),
+            4: (101, 102), 5: (104,)}
+    for col, ids in cols.items():
+        for mid in ids:
+            assert layout[mid]["col"] == col, (mid, col, layout[mid])
+
+    print("generate_site.py _ko_layout self-tests passed")
+
+
 if __name__ == "__main__":
     if "--test" in sys.argv:
         _test_verdict()
         _test_next_ko_round()
+        _test_ko_layout()
     else:
         build_site()

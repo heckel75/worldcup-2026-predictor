@@ -1158,19 +1158,26 @@ h1 {
   padding-bottom: 0.5rem;
 }
 
-.bracket-cols {
-  display: flex;
-  gap: 1.1rem;
-  align-items: stretch;
-  min-width: min-content;            /* don't squash columns to fit */
+/* One flat CSS grid: 5 round columns, a header row, then 16 leaf rows. Each
+   match carries an inline grid-column / grid-row span (computed in
+   generate_site._ko_layout) sized to its subtree's leaf range, and align-self:
+   center then drops it to the vertical midpoint of its two feeders — the funnel,
+   pinned exactly at every level, no drawn connectors. --bracket-row-h must be at
+   least one match card tall so spanning cards never overlap their neighbours. */
+:root { --bracket-row-h: 4.2rem; }   /* must exceed one card (~3.9rem) so a leaf
+                                        never overflows its track into its neighbour */
+
+.bracket-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(11rem, 1fr));
+  grid-template-rows: auto repeat(16, var(--bracket-row-h));
+  column-gap: 1.1rem;
+  row-gap: 0.5rem;                   /* separates the 16 R32 cells; uniform, so
+                                        deeper cells stay centred on their feeders */
+  min-width: 58rem;                  /* funnel stays intact; scrolls on phones */
 }
 
-.bracket-col {
-  display: flex;
-  flex-direction: column;
-  min-width: 11rem;
-  flex: 1 0 11rem;
-}
+.bracket-grid > .bracket-match { align-self: center; }
 
 .bracket-col-label {
   font-family: var(--font-body);
@@ -1183,15 +1190,7 @@ h1 {
   white-space: nowrap;
 }
 
-/* space-around makes each later (shorter) column centre its matches against
-   the pair that feeds it — the classic bracket funnel, no SVG connectors. */
-.bracket-col-matches {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex: 1;
-  gap: 0.6rem;
-}
+.bracket-grid > .bracket-col-label { grid-row: 1; align-self: end; }
 
 .bracket-match {
   background: var(--surface);
@@ -1208,6 +1207,8 @@ h1 {
   display: block;
   padding: 0.4rem 0.7rem;
   font-size: 0.86rem;
+  line-height: 1.3;                  /* tighter than the 1.55 body default — a
+                                        one-line name chip, keeps the card compact */
   color: var(--text);
   white-space: nowrap;
   overflow: hidden;
@@ -1228,4 +1229,19 @@ h1 {
 .bracket-third {
   margin-top: 1.75rem;
   max-width: 13rem;
+}
+
+/* Phones: keep all five columns scrollable (not hidden — the funnel only reads
+   if every round is reachable) but tighten column width and row height so more of
+   the tree is visible per swipe. .bracket-wrap keeps overflow-x, the grid keeps a
+   min-width, so it scrolls right and down normally. */
+@media (max-width: 640px) {
+  .bracket-grid {
+    --bracket-row-h: 3.7rem;         /* smaller cards on phones → snugger rows */
+    grid-template-columns: repeat(5, minmax(8.5rem, 1fr));
+    grid-template-rows: auto repeat(16, var(--bracket-row-h));
+    column-gap: 0.7rem;
+    min-width: 46rem;
+  }
+  .bracket-team { font-size: 0.8rem; padding: 0.35rem 0.55rem; }
 }
