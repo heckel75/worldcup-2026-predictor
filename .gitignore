@@ -10,3 +10,4 @@ data/raw/odds_api/
 logs/
 data/processed/og_cache/
 probe_polymarket.py
+.claude/settings.local.json
