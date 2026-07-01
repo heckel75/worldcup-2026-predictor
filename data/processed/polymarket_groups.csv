@@ -2,24 +2,14 @@ group,team,p_winner,volume
 A,Mexico,1.0,536140
 B,Switzerland,1.0,594765
 B,Bosnia and Herzegovina,0.0,251288
-C,Brazil,1.0,592541
-C,Morocco,0.0,520165
 D,USA,1.0,734299
-D,Paraguay,0.0,251530
 D,Australia,0.0,270362
-E,Germany,1.0,902813
 E,Ecuador,0.0,419180
-E,Ivory Coast,0.0,403974
-F,Netherlands,1.0,537689
-F,Japan,0.0,411286
-F,Sweden,0.0,204716
 G,Belgium,1.0,465592
 G,Egypt,0.0,322788
 H,Spain,1.0,419648
 H,Cape Verde,0.0,249686
-I,France,1.0,820706
 I,Senegal,0.0,196415
-I,Norway,0.0,360065
 J,Argentina,1.0,794478
 J,Algeria,0.0,319885
 J,Austria,0.0,170050

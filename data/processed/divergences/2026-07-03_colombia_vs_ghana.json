@@ -5,10 +5,10 @@
   "date": "2026-07-03",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 23.5,
-  "input_hash": "11000ef6e26e31e1bba29b451e915de352d12c98",
-  "generated_at": "2026-06-29T06:02:26+00:00",
+  "max_gap_pp": 23.3,
+  "input_hash": "8f5ad3dbafdd6536814c514ef381432873451521",
+  "generated_at": "2026-07-01T06:00:03+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Colombia a dominant 86% win probability, while the sportsbook consensus credits them with just 63%, a gap of 23 percentage points. The model also rules out a Ghana victory entirely, whereas the market prices it at 13%. This divergence suggests the market is hedging against scenarios the model's Elo and goal-distribution framework may not fully capture—possibly recent lineup changes, injury status, or form shifts that have moved probability mass away from the heavy Colombia favorite and toward both the draw and an upset. The dashboard surfaces this gap as a signal of information asymmetry; neither source should be treated as definitive."
+  "commentary_text": "The model assigns Colombia a dominant 86% win probability while the market settles at 63%, a 23-percentage-point gap on the Colombia outcome. This substantial divergence suggests the market is pricing in information the statistical model cannot access—most likely recent form swings, injury concerns, or lineup changes that have shifted expectations since the model's last update. The market's heavier hedging toward a Ghana upset (13% vs. the model's near-zero) signals real-money flows reflecting doubts about Colombia's underlying strength. The dashboard surfaces this gap as a signal worth monitoring: either the model's rating advantage for Colombia is robust, or the market has detected something concrete that renders the statistical edge illusory."
 }

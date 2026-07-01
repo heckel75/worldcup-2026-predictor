@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Bosnia and Herzegovina",
   "date": "2026-07-01",
-  "input_hash": "9066e0529b3af5d2f7cb8439cee07c6da4798558",
-  "generated_at": "2026-06-30T09:07:36+00:00",
+  "input_hash": "c12d3cfc857f9ba7a0548fd895c46d6619dbc3b3",
+  "generated_at": "2026-07-01T05:59:40+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours the USA to win at 66%, with Bosnia and Herzegovina given a 9% chance. The underdog holds meaningful but limited win probability, suggesting a clear favourite without dominance.\n\nThe draw emerges as the second-most-likely outcome at roughly one quarter, indicating that a stalemate is plausible and competitive. The spread across outcomes—a 57-percentage-point gap between the USA's central estimate and Bosnia and Herzegovina's—signals an asymmetric match where the USA are substantially favoured but not overwhelmingly so. A one-goal margin or defensive setup would tighten the result considerably.\n\nThe model and sportsbook consensus are closely aligned. The USA win probability differs by 3 percentage points, draw probabilities by 5 points, and underdog chances by 2 points—all within typical calibration tolerance. Polymarket prices sit slightly higher on the USA, though the divergence across all three sources remains modest. No meaningful arbitrage signal emerges between the model and the market."
+  "preview_text": "The model rates the USA as a clear favorite at 66% to win, with Bosnia and Herzegovina holding a 9% chance of an upset. The gap reflects a substantial difference in expected quality, though the underdog's probability is not negligible.\n\nThe draw probability of 25% suggests a moderately competitive match. The win/loss split is wide enough that the USA enters as the likely victor, yet the model assigns meaningful probability to a stalemate, indicating the match is not heavily skewed toward decisive play.\n\nModel and market are broadly aligned across all three outcomes. The sportsbook consensus places the USA at 69%, marginally higher than the model's 66%, and adjusts the draw down to 20% while raising Bosnia and Herzegovina to 11%. These gaps fall within typical market noise and do not indicate sharp disagreement. Polymarket prices align closely with the sportsbook view, suggesting consensus across pricing venues."
 }

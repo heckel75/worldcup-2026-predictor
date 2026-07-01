@@ -6,9 +6,9 @@
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
   "max_gap_pp": 25.2,
-  "input_hash": "d9e199ad823b6f0be03a7aa646358d52a9a3f7c5",
-  "generated_at": "2026-06-30T09:08:08+00:00",
+  "input_hash": "ab2e1a7b87674f150e8dceaebcd79200ea0e87fb",
+  "generated_at": "2026-07-01T06:00:06+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 54% while the market favors Egypt at 39%, a 21-percentage-point gap on the Egypt win outcome. This inversion could reflect real-time information unavailable to the model—recent form swings, lineup changes, or injury developments—that have shifted expectations toward Egypt. Alternatively, the market may be pricing in factors the statistical framework does not capture, or the divergence could represent genuine uncertainty between two plausible readings of the matchup. The dashboard flags this as a significant signal worth monitoring rather than a judgment on which source is better calibrated."
+  "commentary_text": "The model favors Australia at 54% while the market favors Egypt at 38%, a 21-percentage-point gap on the Egypt win probability. This fundamental disagreement on the match outcome could reflect market pricing for information the model cannot access—recent lineup changes, injury updates, or current form trends that have shifted expectations toward Egypt since the model's last training update. Alternatively, the market may be pricing in factors beyond historical strength ratings. The dashboard surfaces this divergence as a notable signal; neither source has privileged access to ground truth for a future match."
 }

@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Croatia",
   "date": "2026-07-02",
-  "input_hash": "c340112577a517cf6970a60f9ccd78b85b63f65f",
-  "generated_at": "2026-06-30T09:07:44+00:00",
+  "input_hash": "5a132b33ce767cbd900cdc62db7c320b54e75a73",
+  "generated_at": "2026-07-01T05:59:49+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Portugal as a narrow favorite at 51%, while Croatia holds a 19% chance of victory. The gap reflects a meaningful but not overwhelming advantage for Portugal; the underdog remains competitive in this matchup.\n\nThe expected outcome distribution suggests a moderately competitive encounter. A draw at 30% probability is a plausible result, indicating that the teams are close enough in strength that neither a Portugal win nor a stalemate would be surprising. The spread between the favorite and underdog is neither decisive nor razor-thin.\n\nThe model and sportsbook consensus are closely aligned. Portugal's win probability differs by just 3 percentage points, and the draw and Croatia win probabilities diverge by 2 points or fewer across all three sources. This convergence suggests broad agreement on the match's competitive balance, though the market leans slightly more bullish on Portugal than the model does."
+  "preview_text": "The model favors Portugal to win at 51%, with Croatia the underdog at 20%. The gap between the two is meaningful but not commanding, reflecting a competitive matchup rather than a heavily tilted encounter.\n\nThe draw probability of 30% indicates that a stalemate remains a substantive outcome. The win probabilities are separated by roughly 31 percentage points, suggesting Portugal enters as the stronger probability favorite, yet the draw's weight and Croatia's near-one-in-five chance mean the result remains genuinely uncertain across all three outcomes.\n\nThe model and sportsbooks align closely here. Portugal's win probability diverges by about 3 percentage points, while the draw and Croatia win differ by 2–3 points each. Both Polymarket prices and the 46-book consensus cluster tightly around these same figures, indicating broad agreement on the match's likelihoods. The dashboard does not claim to know which forecast is superior."
 }

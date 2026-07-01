@@ -3,9 +3,9 @@
   "home_team": "Australia",
   "away_team": "Egypt",
   "date": "2026-07-03",
-  "input_hash": "092b7655a36f88d2982019683dbc7affbda69ed6",
-  "generated_at": "2026-06-30T09:08:03+00:00",
+  "input_hash": "f40e670f2d97691696e127abfa85a22531c12431",
+  "generated_at": "2026-07-01T05:59:59+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Australia at 54% to win, compared to Egypt's 17% win probability. This represents a substantial gap, positioning Australia as the clear statistical favorite on neutral ground. Egypt's path to victory is materially narrower in the model's assessment.\n\nThe draw emerges as genuinely plausible at 29%, suggesting neither side is overwhelmingly dominant. The model's spread indicates competitive balance in the middle ground—Australia is favored but far from a heavy favorite, and a stalemate accounts for nearly three in ten outcomes. The match is forecast as contested rather than one-sided.\n\nThe model and market diverge significantly. Sportsbook consensus and Polymarket prices align closely with each other but lean heavily toward Egypt, giving it 38–39% win probability versus the model's 17%. The model assigns Australia roughly double the win probability that the market does. This dashboard presents both estimates without adjudicating which is correct; users should note the substantial disagreement and factor their own priors accordingly."
+  "preview_text": "The model favors Australia at 54%, a meaningful edge over Egypt's 17% win probability. The underdog has less than one chance in five to take three points on a neutral ground.\n\nThe 29% draw probability sits between the two outright outcomes, suggesting a moderately competitive match with genuine two-way uncertainty. The model's spread—Australia leading by 36 percentage points across win and draw combined—indicates the favorite is expected to control possession and chances, though Egypt retains a plausible path to a result.\n\nThe model and market diverge sharply. The sportsbook consensus inverts the outcome, favoring Egypt at 38% while rating Australia at only 28%—a 26 percentage point gap on the win market. Polymarket reflects identical odds to the sportsbook consensus. The dashboard presents both signals without claiming to resolve their disagreement; traders and algorithm weight the available information differently."
 }

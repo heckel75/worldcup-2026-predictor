@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "DR Congo",
   "date": "2026-07-01",
-  "input_hash": "256511acb2531e642f98364fca0b3d6eb6810808",
-  "generated_at": "2026-06-30T09:07:32+00:00",
+  "input_hash": "7dafc376789b82e2cb661a8e0022a2c8ff39ff33",
+  "generated_at": "2026-07-01T05:59:37+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates England as a strong favorite with a 78% win probability, leaving DR Congo just a 3% chance of victory. This reflects a substantial gap in the forecast—one team is heavily favored while the underdog faces a steep climb.\n\nThe draw carries meaningful weight at 19%, suggesting the match may not be settled decisively despite England's advantage. The spread between England's win probability and the combined alternatives is wide, yet the presence of a near-one-in-five draw chance means a competitive outcome remains plausible rather than a foregone rout.\n\nThe model and sportsbooks are closely aligned. The consensus gives England 75%, compared to the model's 78%—a difference of 3 percentage points. Draw probabilities are nearly identical across both sources. The main divergence appears in the tail: books assign DR Congo a 7% underdog win rate versus the model's 3%, a gap the dashboard does not adjudicate. Both frameworks treat England as the clear favorite."
+  "preview_text": "The model assigns England a 78% chance of victory, leaving DR Congo with only a 3% path to a win. The underdog faces a steep climb; the gap between the two outcomes reflects a heavily favored favorite.\n\nThe draw emerges as the most plausible alternative outcome at 19%, lending some competitive texture to the match. England's win probability is substantially higher than either the draw or a DR Congo victory, yet the 19-point margin to the draw suggests the match carries enough uncertainty to avoid being a near-certain blowout.\n\nModel and sportsbook consensus align closely across all three outcomes, with gaps of 3 percentage points or less. Polymarket pricing sits similarly tight to both. The three sources are in agreement: England is the clear favorite, a draw is credible, and a DR Congo upset remains a longshot."
 }
