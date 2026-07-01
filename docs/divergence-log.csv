@@ -1,4 +1,5 @@
 date,match,stage,group,outcome,result,score,p_model_on_outcome,p_sportsbook_on_outcome,p_polymarket_on_outcome,gap_pp,gap_bucket,divergence_type,flagged,verdict
+2026-07-01,England v DR Congo,Knockout,,H,Home win,2–1,0.778,0.7464,0.7612,4,Under 5pp,model_over_concentrated,False,Sources agreed
 2026-06-30,France v Sweden,Knockout,,H,Home win,3–0,0.796,0.7409,0.7688,7,5–15pp,model_over_concentrated,False,Model closest
 2026-06-30,Côte d'Ivoire v Norway,Knockout,,A,Away win,1–2,0.5155,0.4494,0.4527,8,5–15pp,model_over_concentrated,False,Model closest
 2026-06-30,Mexico v Ecuador,Knockout,,H,Home win,2–0,0.3614,0.4246,0.4328,8,5–15pp,model_under_concentrated,False,Sources agreed
