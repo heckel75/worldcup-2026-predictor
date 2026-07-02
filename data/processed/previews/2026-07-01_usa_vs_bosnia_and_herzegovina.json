@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Bosnia and Herzegovina",
   "date": "2026-07-01",
-  "input_hash": "c12d3cfc857f9ba7a0548fd895c46d6619dbc3b3",
-  "generated_at": "2026-07-01T05:59:40+00:00",
+  "input_hash": "8be02d3236f8e0ed4aaefa4517af711f34c59489",
+  "generated_at": "2026-07-02T06:11:57+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates the USA as a clear favorite at 66% to win, with Bosnia and Herzegovina holding a 9% chance of an upset. The gap reflects a substantial difference in expected quality, though the underdog's probability is not negligible.\n\nThe draw probability of 25% suggests a moderately competitive match. The win/loss split is wide enough that the USA enters as the likely victor, yet the model assigns meaningful probability to a stalemate, indicating the match is not heavily skewed toward decisive play.\n\nModel and market are broadly aligned across all three outcomes. The sportsbook consensus places the USA at 69%, marginally higher than the model's 66%, and adjusts the draw down to 20% while raising Bosnia and Herzegovina to 11%. These gaps fall within typical market noise and do not indicate sharp disagreement. Polymarket prices align closely with the sportsbook view, suggesting consensus across pricing venues."
+  "preview_text": "The model favors the USA with a 66.5% win probability, leaving Bosnia and Herzegovina with a slim 9.0% chance of victory. This reflects a substantial gap between the two sides according to the statistical forecast, though the underdog is not ruled out.\n\nThe 24.6% draw probability suggests the match has room for a stalemate outcome. The spread across all three results—with the USA's advantage meaningful but the draw plausible—indicates a competitive fixture rather than a heavily one-sided affair. Bosnia and Herzegovina's 9.0% suggests upset potential exists, albeit at modest odds.\n\nNo conventional sportsbook consensus is yet available for this fixture. The Polymarket prices show extreme readings (USA at 100%, both alternatives at 0%) that do not align with the model's forecast. The dashboard makes no claim about which source is correct; the divergence is notable and may reflect thin liquidity or information asymmetry in the prediction market at this stage."
 }

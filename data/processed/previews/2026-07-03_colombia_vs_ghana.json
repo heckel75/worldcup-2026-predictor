@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "Ghana",
   "date": "2026-07-03",
-  "input_hash": "201625b6c1796a7900b6501255496788d8061af0",
-  "generated_at": "2026-07-01T05:59:56+00:00",
+  "input_hash": "d75cf4f2a3b7ce76da10b087527dda53612c32f7",
+  "generated_at": "2026-07-02T06:12:17+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assigns Colombia a decisive 86% win probability, leaving Ghana with virtually no modelled path to victory. This represents a stark contrast to the underdog's nominal 0% chance in the statistical forecast, reflecting a very wide perceived quality gap between the two sides.\n\nThe model's win-draw-loss spread reveals minimal expectation of a draw at 14%, suggesting that Colombia is projected to dominate if the match reaches a conclusion. The compressed Ghana win probability indicates the model views a competitive contest as unlikely; outcomes where Ghana either wins or forces a draw are marginal in the forecast distribution.\n\nThe sportsbook consensus and Polymarket prices diverge notably from the model. Both market sources credit Ghana with meaningful win chances—12–13%—and price the draw substantially higher, around 24–25%. The gap between the model's 86% Colombia win and the sportsbook's 63% is approximately 23 percentage points, a material divergence. The dashboard does not adjudicate between these sources; the disparity suggests market assessments of Ghana's competitive likelihood differ substantially from the statistical baseline."
+  "preview_text": "The model rates Colombia as a heavy favorite, assigning an 86% win probability and relegating Ghana to a near-zero chance of victory. The underdog is given only a 14% probability in the draw column, implying the model expects a decisive Colombian result.\n\nThe W/D/L spread reflects a wide gap: the model sees Colombia as substantially more likely to win than either draw or Ghana victory. A draw remains the only plausible alternative to a Colombian win in the model's forecast; any Ghana upset falls outside the statistical margin. The match is not expected to be closely contested by these metrics.\n\nThe market consensus diverges sharply from the model. Sportsbooks assign Colombia 63% (23 percentage points lower than the model), while placing Ghana's win probability at 13% and a draw at 24%. Polymarket sentiment aligns closely with the books. The dashboard does not adjudicate which source better reflects match reality; the divergence is material and warrants attention."
 }

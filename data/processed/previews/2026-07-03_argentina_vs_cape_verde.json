@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Cape Verde",
   "date": "2026-07-03",
-  "input_hash": "f9a7384ccebb4c126d5d0edf4bb8d093a8c7196b",
-  "generated_at": "2026-06-30T09:07:55+00:00",
+  "input_hash": "1befbc59a29ea87aaf3c2ab0e0eb89eee053102f",
+  "generated_at": "2026-07-02T06:12:13+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina heavily at 90%, assigning Cape Verde a negligible win probability of 0%. The sportsbook consensus is materially less confident, placing Argentina at 82% and crediting Cape Verde with a 5% upset chance.\n\nThe model's distribution skews decisively toward an Argentina victory, with draws accounting for less than 10% of outcomes. The sportsbook spread is wider across all three results, suggesting greater uncertainty about the match's competitive texture. A draw registers as plausible under the market view but peripheral in the model's assessment.\n\nThe two sources diverge by roughly 8 percentage points on Argentina's win probability, with the model more bullish. The sportsbook and Polymarket are closely aligned with each other, both implying meaningful Cape Verde tail risk that the model does not capture. The dashboard makes no claim as to which framing is correct; the divergence likely reflects different information sets or risk adjustments."
+  "preview_text": "The model assigns Argentina a 90% win probability, leaving Cape Verde with almost no chance of victory at 0.0%. This represents a heavily asymmetric matchup in which the underdog's path to three points is treated as negligible by the statistical forecast.\n\nThe W/D/L spread reflects that imbalance. Argentina dominates the win column while the draw probability sits just under 10%, suggesting the model expects a decisive outcome if one occurs. The contest is unlikely to be competitive in a close-scoreline sense; the baseline forecast points toward a clear result rather than a tightly contested affair.\n\nThe market consensus diverges meaningfully from the model. Sportsbooks assign Argentina an 83% win probability—roughly 7 percentage points lower than the model—while crediting Cape Verde with a 5% upset chance. Polymarket prices align more closely with the model on Argentina's win probability (84%) but similarly allow a small possibility for the underdog. The dashboard makes no claim about which assessment is correct; the divergence may reflect information or risk preferences not captured in the statistical framework."
 }

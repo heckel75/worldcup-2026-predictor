@@ -3,9 +3,9 @@
   "home_team": "Switzerland",
   "away_team": "Algeria",
   "date": "2026-07-02",
-  "input_hash": "ef99849cf27f8e02568e2417e9b347e60d476faa",
-  "generated_at": "2026-07-01T05:59:52+00:00",
+  "input_hash": "42bbdf9acd61fa5c4890a6195617d246652a59fa",
+  "generated_at": "2026-07-02T06:12:09+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Switzerland as favorite with a 41% win probability, but the margin over Algeria is modest—a 13-point gap. Algeria's 28% chance reflects genuine competitive viability in this neutral-venue encounter. The draw sits at 31%, suggesting the model sees meaningful uncertainty in the outcome.\n\nThe win-draw-loss spread indicates a relatively tight contest. Switzerland's advantage is clear but not commanding; a draw remains more likely than an Algeria victory, yet the three-outcome distribution shows no outcome with overwhelming backing. The match should prove competitive rather than one-sided.\n\nThe sportsbook consensus and Polymarket prices both lean more bullish on Switzerland than the model, crediting the favorite with 47% rather than 41%—a gap of roughly 6 percentage points. Both markets trim Algeria's chances to 24%, narrower than the model's 28%. The two external sources align closely with each other. The dashboard makes no claim as to which reading is more accurate."
+  "preview_text": "The model rates Switzerland as the marginal favorite with a 41% win probability, while Algeria holds a 28% chance of victory. The gap between the two is modest rather than decisive, placing this match in competitive territory despite Switzerland's edge.\n\nThe draw probability of 31% suggests a notably plausible stalemate outcome. The spread across all three results is relatively even, with no single result commanding a clear majority. This distribution points to a closely matched encounter where either a Swiss victory, a draw, or an Algerian upset remain realistic scenarios within the model's forecast.\n\nThe sportsbook consensus diverges from the model by approximately 6 percentage points on a Swiss win, with books favoring Switzerland more heavily at 47% compared to the model's 41%. The market rates Algeria's chances lower at 23%, whereas the model assigns 28%. Draw probabilities align closely. The dashboard does not claim superiority between these sources; the divergence likely reflects different methodologies and information sets in play."
 }

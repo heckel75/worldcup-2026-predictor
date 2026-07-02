@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Croatia",
   "date": "2026-07-02",
-  "input_hash": "5a132b33ce767cbd900cdc62db7c320b54e75a73",
-  "generated_at": "2026-07-01T05:59:49+00:00",
+  "input_hash": "ea2daf567cddc85dcce028abf12721f754f833e6",
+  "generated_at": "2026-07-02T06:12:01+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Portugal to win at 51%, with Croatia the underdog at 20%. The gap between the two is meaningful but not commanding, reflecting a competitive matchup rather than a heavily tilted encounter.\n\nThe draw probability of 30% indicates that a stalemate remains a substantive outcome. The win probabilities are separated by roughly 31 percentage points, suggesting Portugal enters as the stronger probability favorite, yet the draw's weight and Croatia's near-one-in-five chance mean the result remains genuinely uncertain across all three outcomes.\n\nThe model and sportsbooks align closely here. Portugal's win probability diverges by about 3 percentage points, while the draw and Croatia win differ by 2–3 points each. Both Polymarket prices and the 46-book consensus cluster tightly around these same figures, indicating broad agreement on the match's likelihoods. The dashboard does not claim to know which forecast is superior."
+  "preview_text": "The model rates Portugal as a slight favorite with a 51% win probability, while Croatia enters with a 20% chance of victory. The gap reflects a modest edge for Portugal, but the outcome remains genuinely uncertain across the distribution.\n\nThe draw carries meaningful probability at 30%, suggesting the teams are close enough in quality that a stalemate represents a plausible result. The win probabilities are not separated by a wide margin, indicating a competitive match where either side retains a legitimate path to three points. A decisive result is marginally more likely than a draw, but only by a small margin.\n\nThe model and sportsbooks show modest alignment on the overall favorite but diverge in the details. Books price Portugal's win probability about 4 percentage points higher than the model, while the draw sits about 4 points lower. Polymarket prices cluster near the consensus. The divergence is small enough that both sources point to a tight contest, though market participants attach slightly more weight to a Portugal victory than the model does."
 }
