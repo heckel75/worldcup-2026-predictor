@@ -1,4 +1,5 @@
 date,match,stage,group,outcome,result,score,p_model_on_outcome,p_sportsbook_on_outcome,p_polymarket_on_outcome,gap_pp,gap_bucket,divergence_type,flagged,verdict
+2026-07-02,Spain v Austria,Knockout,,H,Home win,3–0,0.7962,0.7192,0.7422,8,5–15pp,model_over_concentrated,False,Model closest
 2026-07-01,England v DR Congo,Knockout,,H,Home win,2–1,0.778,0.7464,0.7612,4,Under 5pp,model_over_concentrated,False,Sources agreed
 2026-07-01,USA v Bosnia and Herzegovina,Knockout,,H,Home win,2–0,0.6623,0.6926,0.7015,5,5–15pp,model_under_concentrated,False,Sources agreed
 2026-07-01,Belgium v Senegal,Knockout,,H,Home win,3–2,0.3746,0.4424,0.4527,7,5–15pp,model_under_concentrated,False,Sources agreed
