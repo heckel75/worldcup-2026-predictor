@@ -3,9 +3,9 @@
   "home_team": "Colombia",
   "away_team": "Ghana",
   "date": "2026-07-03",
-  "input_hash": "d75cf4f2a3b7ce76da10b087527dda53612c32f7",
-  "generated_at": "2026-07-02T06:12:17+00:00",
+  "input_hash": "ae467ec114f5e5d3b2418d5b5dfc02fc667d99ce",
+  "generated_at": "2026-07-03T06:12:21+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Colombia as a heavy favorite, assigning an 86% win probability and relegating Ghana to a near-zero chance of victory. The underdog is given only a 14% probability in the draw column, implying the model expects a decisive Colombian result.\n\nThe W/D/L spread reflects a wide gap: the model sees Colombia as substantially more likely to win than either draw or Ghana victory. A draw remains the only plausible alternative to a Colombian win in the model's forecast; any Ghana upset falls outside the statistical margin. The match is not expected to be closely contested by these metrics.\n\nThe market consensus diverges sharply from the model. Sportsbooks assign Colombia 63% (23 percentage points lower than the model), while placing Ghana's win probability at 13% and a draw at 24%. Polymarket sentiment aligns closely with the books. The dashboard does not adjudicate which source better reflects match reality; the divergence is material and warrants attention."
+  "preview_text": "The model favors Colombia heavily, assigning an 86% win probability and leaving Ghana with virtually no chance. The underdog is estimated to secure a draw in 14% of simulations, while the model rules out an outright Ghana victory in its forecast.\n\nThe W/D/L spread reflects a large gap between the favorite and draw outcome. Colombia's dominant modeled edge means a decisive result is the likeliest scenario, though the 14% draw probability indicates the match retains some competitive structure rather than appearing predetermined. A Ghana win sits outside the model's credible range.\n\nA meaningful divergence separates model and market. The sportsbook consensus assigns Colombia only 67%, while assigning Ghana a 11% chance of victory—a gap of roughly 19 percentage points on the win market. Polymarket prices align more closely with the books than with the model. The dashboard does not adjudicate between these sources; the scale of disagreement warrants attention from users evaluating this fixture."
 }

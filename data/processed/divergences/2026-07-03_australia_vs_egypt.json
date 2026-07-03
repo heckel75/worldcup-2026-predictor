@@ -5,10 +5,10 @@
   "date": "2026-07-03",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 25.2,
-  "input_hash": "ab2e1a7b87674f150e8dceaebcd79200ea0e87fb",
-  "generated_at": "2026-07-01T06:00:06+00:00",
+  "max_gap_pp": 26.9,
+  "input_hash": "efde0d44dec0ba93657e154559040f6ea7f706e4",
+  "generated_at": "2026-07-03T06:12:31+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Australia at 54% while the market favors Egypt at 38%, a 21-percentage-point gap on the Egypt win probability. This fundamental disagreement on the match outcome could reflect market pricing for information the model cannot access—recent lineup changes, injury updates, or current form trends that have shifted expectations toward Egypt since the model's last training update. Alternatively, the market may be pricing in factors beyond historical strength ratings. The dashboard surfaces this divergence as a notable signal; neither source has privileged access to ground truth for a future match."
+  "commentary_text": "The model favors Australia at 54%, while the market favors Egypt at 40%. The largest single gap appears on the Australia win probability, where the model exceeds the sportsbook consensus by 27 percentage points. This inverted-favorite pattern might reflect market-available information on recent form, injuries, or lineup changes that the model's Elo foundation cannot capture. The dashboard flags this divergence as a signal worthy of scrutiny rather than evidence that either source has miscalibrated."
 }
