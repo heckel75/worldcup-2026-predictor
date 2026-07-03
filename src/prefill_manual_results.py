@@ -33,6 +33,11 @@ def main():
         # default, never overwritten — preserved like every other column).
         if "result_note" not in manual.columns:
             manual["result_note"] = ""
+        # Same for decided_in (regulation/et/pens; blank = regulation). A KO tie
+        # settled in ET or on penalties grades to 90 min as a draw — this column
+        # is the graded-outcome input read by update_ledger._outcome.
+        if "decided_in" not in manual.columns:
+            manual["decided_in"] = ""
         existing_rows = len(manual)
     else:
         manual = pd.DataFrame(columns=[
@@ -47,6 +52,7 @@ def main():
             "country",
             "neutral",
             "result_note",
+            "decided_in",
         ])
         existing_rows = 0
 

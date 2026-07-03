@@ -278,12 +278,14 @@ def attach_results(
 ) -> pd.DataFrame:
     """
     For each unscored ledger row (outcome == ""), check whether the match now
-    appears in played_df. If yes, set outcome to "H", "D", or "A" — derived
-    PURELY from the entered scoreline. For knockout matches the scoreline is the
-    90-minute (incl. extra time) result, so a tie settled on penalties grades as
-    a draw; `advanced` (who progressed) is read elsewhere for the sim/bracket and
-    never as the W/D/L outcome here. Also fills actual_home_score /
-    actual_away_score for any matched row whose score cells are still NaN.
+    appears in played_df. If yes, set outcome to "H", "D", or "A" graded to 90
+    minutes: a knockout tie decided in extra time or on penalties (the played
+    row's `decided_in` in {"et","pens"}) grades as the DRAW it was at 90,
+    regardless of the ET-inclusive scoreline entered for display; otherwise the
+    outcome is derived from the scoreline. `advanced` (who progressed) is read
+    elsewhere for the sim/bracket and never as the W/D/L outcome here. Also fills
+    actual_home_score / actual_away_score for any matched row whose score cells
+    are still NaN.
 
     Fills result_note (a free-text full-result annotation, e.g. "won 4-3 on
     penalties") from the played row for any row whose note is still blank and
@@ -307,6 +309,18 @@ def attach_results(
     played["date"] = pd.to_datetime(played["date"])
 
     def _outcome(row) -> str:
+        # Grade to 90 minutes. A knockout tie level after 90 that was settled in
+        # extra time or on penalties grades as the DRAW it was at 90, regardless
+        # of the ET-inclusive scoreline entered for display (decided_in in
+        # {"et","pens"}). `advanced` (progression) is read by the sim/bracket,
+        # never here. Blank / "regulation" / any other value → derive from the
+        # scoreline. .get() degrades safely for played_df frames that predate the
+        # column (self-tests, old matches_clean).
+        decided_raw = row.get("decided_in")
+        decided = ("" if (decided_raw is None or pd.isna(decided_raw))
+                   else str(decided_raw).strip().lower())
+        if decided in ("et", "pens"):
+            return "D"
         if row["home_score"] > row["away_score"]:
             return "H"
         if row["home_score"] < row["away_score"]:
@@ -590,6 +604,7 @@ if __name__ == "__main__":
         "home_score":  [1],
         "away_score":  [1],
         "advanced":    ["Theta"],            # progression only — must NOT grade
+        "decided_in":  ["pens"],             # explicit pens enum → draw
         "result_note": ["won 4-3 on penalties"],
         "tournament":  ["FIFA World Cup"],
     })
@@ -622,6 +637,50 @@ if __name__ == "__main__":
     blank_scored = attach_results(ledger, blank_note_played)
     assert pd.isna(blank_scored.loc[blank_scored["match_key"] == key_a, "result_note"].iloc[0]), \
         "A blank feed note must leave result_note unset (no annotation)"
+
+    # --- Test 6: ET-DECIDED KO (won in extra time, NOT level at 90 on the
+    #     entered ET-inclusive scoreline) grades to 90 as a DRAW via
+    #     decided_in="et", even though the scoreline is a home win. Display keeps
+    #     the ET score; advanced records the winner; result_note attaches. This
+    #     is the seam decided_in closes — a 3-2 aet grades D, not H. ---
+    et_fixtures = pd.DataFrame({
+        "date":      [pd.Timestamp(TODAY)],
+        "home_team": ["Xi"], "away_team": ["Omicron"], "neutral": [True],
+    })
+    et_triple = pd.DataFrame({
+        "home_team": ["Xi"], "away_team": ["Omicron"],
+        "p_home_model_corr": [0.40], "p_draw_model_corr": [0.30], "p_away_model_corr": [0.30],
+    })
+    et_ledger = freeze_new_forecasts(
+        pd.DataFrame(columns=LEDGER_SCHEMA), et_fixtures, et_triple,
+        TODAY, lookahead_days=0,
+    )
+    key_et = make_match_key(TODAY.isoformat(), "Xi", "Omicron")
+    et_played = pd.DataFrame({
+        "date":        [pd.Timestamp(TODAY)],
+        "home_team":   ["Xi"], "away_team": ["Omicron"],
+        "home_score":  [3], "away_score": [2],   # ET-inclusive display scoreline
+        "advanced":    ["Xi"],
+        "decided_in":  ["et"],
+        "result_note": ["After extra time"],
+        "tournament":  ["FIFA World Cup"],
+    })
+    et_scored = attach_results(et_ledger, et_played)
+    row_et = et_scored.loc[et_scored["match_key"] == key_et].iloc[0]
+    assert row_et["outcome"] == "D", \
+        f"ET-won KO must grade to 90 as a draw via decided_in, got '{row_et['outcome']}'"
+    assert int(row_et["actual_home_score"]) == 3 and int(row_et["actual_away_score"]) == 2, \
+        "displayed scoreline stays the ET-inclusive 3-2"
+    assert row_et["result_note"] == "After extra time", \
+        "result_note must attach untouched on an ET-decided KO"
+
+    # --- Test 6b: REGULATION (blank decided_in) still grades from the scoreline.
+    #     Re-attach onto the still-unscored et_ledger with decided_in blank. ---
+    reg_played = et_played.copy()
+    reg_played["decided_in"] = [""]          # blank = regulation
+    reg_scored = attach_results(et_ledger, reg_played)
+    assert reg_scored.loc[reg_scored["match_key"] == key_et, "outcome"].iloc[0] == "H", \
+        "regulation (blank decided_in) must grade from the scoreline (3-2 -> H)"
 
     # =====================================================================
     # FREEZE-C tests: re-freeze-while-unplayed, lock on play, NaN-safe guard.
