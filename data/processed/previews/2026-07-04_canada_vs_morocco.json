@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-04_canada_vs_morocco",
+  "home_team": "Canada",
+  "away_team": "Morocco",
+  "date": "2026-07-04",
+  "input_hash": "6141c978caa7ad2342ff78ce93dbb3fc0e042b6c",
+  "generated_at": "2026-07-04T08:00:43+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Morocco as the favored outcome with a 49% win probability, while Canada is positioned as the underdog at 22%. The gap of roughly 27 percentage points reflects a substantive difference in expected strength, though Canada retains a meaningful chance to upset at neutral venue conditions.\n\nThe draw emerges as a plausible result in the model's view at 30%, sitting between the two decisive outcomes. This spread suggests competitive balance on the margins—neither team dominates the tail of possible scorelines—but Morocco's win probability still comfortably exceeds either alternative, indicating the model leans toward a Morocco victory as the modal outcome.\n\nThe model and sportsbook consensus are closely aligned across all three outcomes. Canada win probabilities differ by 3 percentage points; draws by 2 percentage points; Morocco wins by 5 percentage points. Polymarket pricing shows similar agreement, with Morocco win odds within 5 percentage points of both the model and the consensus. This convergence suggests broad agreement on the underlying match structure."
+}

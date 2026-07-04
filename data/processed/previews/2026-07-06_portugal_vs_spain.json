@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-06_portugal_vs_spain",
+  "home_team": "Portugal",
+  "away_team": "Spain",
+  "date": "2026-07-06",
+  "input_hash": "a224f1b6771c8c8c6b7ba02f324c877098b16345",
+  "generated_at": "2026-07-04T08:00:55+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Spain, assigning them a 55% win probability. Portugal's chance stands at 17%, making Spain the clear favorite, though the 38-point gap leaves room for an upset.\n\nThe draw probability of 28% suggests a competitive match with meaningful variance around a Spain-leaning baseline. The win spread is wide enough that Spain's favored outcome is distinct, yet draws and Portuguese victories remain plausible enough to materially shape the match distribution. Spain's advantage is substantial but not overwhelming.\n\nThe market consensus—sportsbooks and Polymarket combined—leans more bullish on Portugal and less confident in Spain than the model does. Sportsbooks place Spain at 50%, roughly 5 percentage points below the model, while crediting Portugal with 24%, some 6 points higher. Draw probabilities align closely across all sources near 26–27%. The divergence is moderate and warrants noting: the dashboard does not adjudicate which reading of the match is more accurate."
+}

@@ -79,9 +79,11 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2026-06-30,France,Sweden,3,0,France,FIFA World Cup,,,TRUE,,
 2026-06-30,Mexico,Ecuador,2,0,Mexico,FIFA World Cup,,,TRUE,,
 2026-07-01,England,DR Congo,2,1,England,FIFA World Cup,,,TRUE,,
-2026-07-01,Belgium,Senegal,3,2,Belgium,FIFA World Cup,,,TRUE,After extra time,et
+2026-07-01,Belgium,Senegal,3,2,Belgium,FIFA World Cup,,,TRUE,After extra time (2–2 at 90'),et
 2026-07-01,USA,Bosnia and Herzegovina,2,0,USA,FIFA World Cup,,,TRUE,,
 2026-07-02,Spain,Austria,3,0,Spain,FIFA World Cup,,,TRUE,,
 2026-07-02,Portugal,Croatia,2,1,Portugal,FIFA World Cup,,,TRUE,,
 2026-07-02,Switzerland,Algeria,2,0,Switzerland,FIFA World Cup,,,TRUE,,
 2026-07-03,Australia,Egypt,1,1,Egypt,FIFA World Cup,,,TRUE,Egypt won 4-2 on penalties,pens
+2026-07-03,Argentina,Cape Verde,3,2,Argentina,FIFA World Cup,,,TRUE,After extra time (1–1 at 90'),et
+2026-07-03,Colombia,Ghana,1,0,Colombia,FIFA World Cup,,,TRUE,,

@@ -40,8 +40,22 @@ _R32_DATED_PAIRS: list[tuple[str, str, dt.date]] = [
     ("Colombia",     "Ghana",                   dt.date(2026, 7, 3)),
 ]
 
+# Published 2026 Round-of-16 schedule (dated per match slot 89–96). Added once
+# the R32 draw resolved the pairings — the "extend per-round" daily-checklist
+# step (§5a / §11). Order within each tuple is irrelevant (keyed by frozenset).
+_R16_DATED_PAIRS: list[tuple[str, str, dt.date]] = [
+    ("Paraguay",     "France",                  dt.date(2026, 7, 4)),   # match 89
+    ("Canada",       "Morocco",                 dt.date(2026, 7, 4)),   # match 90
+    ("Brazil",       "Norway",                  dt.date(2026, 7, 5)),   # match 91
+    ("Mexico",       "England",                 dt.date(2026, 7, 5)),   # match 92
+    ("Portugal",     "Spain",                   dt.date(2026, 7, 6)),   # match 93
+    ("USA",          "Belgium",                 dt.date(2026, 7, 6)),   # match 94
+    ("Argentina",    "Egypt",                   dt.date(2026, 7, 7)),   # match 95
+    ("Switzerland",  "Colombia",                dt.date(2026, 7, 7)),   # match 96
+]
+
 KO_MATCH_DATES: dict[frozenset, dt.date] = {
-    frozenset({a, b}): d for a, b, d in _R32_DATED_PAIRS
+    frozenset({a, b}): d for a, b, d in _R32_DATED_PAIRS + _R16_DATED_PAIRS
 }
 
 
@@ -91,7 +105,8 @@ def derive_ko_fixtures(bracket: dict) -> list[dict]:
 # ----------------------------------------------------------------------
 
 def _self_test() -> None:
-    assert len(KO_MATCH_DATES) == 16, f"expected 16 R32 dates, got {len(KO_MATCH_DATES)}"
+    assert len(KO_MATCH_DATES) == 24, \
+        f"expected 24 KO dates (16 R32 + 8 R16), got {len(KO_MATCH_DATES)}"
 
     def m(a, b, played=False, winner=None):
         return {"match_id": 0, "team_a": a, "team_b": b,
@@ -138,7 +153,8 @@ def _self_test() -> None:
     assert derive_ko_fixtures(bracket2) == [], derive_ko_fixtures(bracket2)
 
     print("ko_fixtures.py self-test passed "
-          "(16 R32 dates; shape; skip-played; omit-undated; bracket orientation)")
+          "(24 KO dates = 16 R32 + 8 R16; shape; skip-played; omit-undated; "
+          "bracket orientation)")
 
 
 if __name__ == "__main__":

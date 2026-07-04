@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-07_argentina_vs_egypt",
+  "home_team": "Argentina",
+  "away_team": "Egypt",
+  "date": "2026-07-07",
+  "input_hash": "02b5ca60eb9cf381891bfc1fb133799a833a1b3f",
+  "generated_at": "2026-07-04T08:01:05+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model strongly favors Argentina at 84% to win, with Egypt's chances at less than 1%. The underdog faces a steep climb: the model assigns a draw 15% probability, leaving Egypt with minimal room for an upset.\n\nThe spread reveals a heavily lopsided contest. Argentina's win probability dominates the outcome space, and while a draw is plausible at roughly 1-in-6 odds, an Egypt victory is treated as near-impossible by the statistical model. This match is expected to be competitive only in the sense that draws do occur; a decisive Argentina result is the base case.\n\nModel and sportsbook diverge meaningfully here. The market rates Argentina's win probability at 70%, some 14 percentage points lower than the model, and assigns Egypt nearly 10% chance to win compared to the model's sub-1% figure. The market implies considerably more uncertainty than the statistical forecast. The dashboard does not adjudicate between these estimates."
+}

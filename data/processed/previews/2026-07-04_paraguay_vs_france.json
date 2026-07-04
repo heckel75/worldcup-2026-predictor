@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-04_paraguay_vs_france",
+  "home_team": "Paraguay",
+  "away_team": "France",
+  "date": "2026-07-04",
+  "input_hash": "095689a08bf4a73afd231edb7345588faab247e1",
+  "generated_at": "2026-07-04T08:00:39+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors France to win with a probability of 69%, while Paraguay has an 8.7% chance of victory. The gap between the two outcomes reflects a substantial disparity in expected quality, though Paraguay's win probability remains above negligible.\n\nThe model's spread indicates a competitive but France-tilted match. A draw rates at 22.2%, suggesting the contest carries enough variance that stalemate ranks as a meaningful outcome—more plausible than a Paraguay victory. The distribution implies France enters as clear favorite but leaves room for an upset or a shared result.\n\nThe sportsbook consensus diverges meaningfully from the model. Books price France's win probability 12 percentage points higher and Paraguay's 3 points lower; the draw contracts from 22% to 13%. Polymarket prices align closely with the books. The dashboard does not assess which estimate is more accurate; the divergence may reflect either different methodology or market-specific information not available to the statistical model."
+}

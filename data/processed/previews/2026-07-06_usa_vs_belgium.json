@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-06_usa_vs_belgium",
+  "home_team": "USA",
+  "away_team": "Belgium",
+  "date": "2026-07-06",
+  "input_hash": "10667e799bf7038209248835e8d019b57b031270",
+  "generated_at": "2026-07-04T08:01:01+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Belgium at 43%, with the USA given a 26% chance of victory. That 17-percentage-point gap reflects Belgium as the stronger side in the forecast. The USA's path to a win is materially narrower than its opponent's, though far from impossible.\n\nThe draw probability sits at 31%, making it nearly as likely as a Belgium win. This substantial draw likelihood indicates a competitive, closely-matched contest where neither side is expected to dominate. The spread across outcomes is relatively even—no single result towers above the others—suggesting genuine uncertainty and a competitive fixture.\n\nThe sportsbook consensus diverges meaningfully from the model. Books assign USA a 35% win probability, roughly 9 percentage points higher than the model's 26%. Conversely, sportsbooks grade Belgium at 37%, compared to the model's 43%. Draw odds align closely between sources. The dashboard offers the model's view; whether market pricing reflects superior information or systematic bias remains an open question."
+}

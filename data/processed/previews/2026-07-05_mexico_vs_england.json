@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-05_mexico_vs_england",
+  "home_team": "Mexico",
+  "away_team": "England",
+  "date": "2026-07-05",
+  "input_hash": "a298adf760c8b224aa4d7585d4a7e8490a83d15a",
+  "generated_at": "2026-07-04T08:00:51+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors England at 45%, with Mexico trailing at 25% and a draw at 30%. England holds a meaningful edge in win probability, though the underdog's chances remain substantial enough to merit attention in a tournament knockout or group setting.\n\nThe spread across outcomes reveals a competitive fixture tilted toward England but without dominance. A draw at 30% sits only marginally below the favorites, suggesting the teams are sufficiently matched that a stalemate or extra time is a plausible outcome. The 20-percentage-point gap between England's win rate and Mexico's reflects real separation, but both sides retain realistic paths to victory.\n\nThe market consensus diverges from the model. Sportsbooks assign Mexico 31% and England 39%, narrowing England's advantage by 6 percentage points relative to the model's view. Polymarket pricing aligns closely with the book consensus. The dashboard does not claim to know which source is correct; the gap warrants scrutiny but remains within typical variance between statistical and market estimates."
+}

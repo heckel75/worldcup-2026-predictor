@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-07_switzerland_vs_colombia",
+  "home_team": "Switzerland",
+  "away_team": "Colombia",
+  "date": "2026-07-07",
+  "input_hash": "9252777548bee912c93cec1916493db37753c382",
+  "generated_at": "2026-07-04T08:01:09+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "Colombia enters as the model's favorite with a 49% win probability, while Switzerland holds a 22% chance of victory. The remaining 30% probability settles on a draw, leaving Colombia with a meaningful but not dominant edge over its opponent.\n\nThe spread across outcomes suggests a competitive match. The 27-percentage-point gap between Colombia's win probability and Switzerland's reflects a clear model lean, yet the substantial draw probability indicates the result remains genuinely uncertain. A draw outcome occurs in roughly three in ten simulations, meaning a single goal or defensive performance could easily shift the outcome.\n\nThe model and sportsbook consensus diverge modestly on the favorite. Books assign Colombia 43%, about 6 percentage points lower than the model's 49%, and give Switzerland 5 points more likelihood at 27%. Both sources treat a draw as plausible and nearly equivalent. The gap suggests some disagreement on Colombia's strength but broad alignment on the match's competitive texture. No Polymarket data is available yet for this fixture."
+}

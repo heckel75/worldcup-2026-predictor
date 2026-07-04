@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-05_brazil_vs_norway",
+  "home_team": "Brazil",
+  "away_team": "Norway",
+  "date": "2026-07-05",
+  "input_hash": "cfa572c4d01fa83bf573d7f4110856cbed9b1627",
+  "generated_at": "2026-07-04T08:00:47+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Brazil as the favored outcome at 46%, substantially ahead of Norway's 23% win probability. The sportsbook consensus amplifies Brazil's edge to 52%, reflecting tighter confidence in the favorite relative to the statistical forecast. Norway enters as a clear underdog, though not without a path to victory.\n\nThe gap between Brazil's win probability and a draw outcome is relatively modest—less than 16 percentage points by the model's assessment. This suggests a competitive match rather than a heavily one-sided affair. A draw at 31% sits as a genuinely plausible result, indicating the fixture is unlikely to be dominated by either team. The distribution implies multiple credible outcomes rather than a strong consensus toward a decisive finish.\n\nThe model and sportsbooks diverge on Brazil's true win probability by about 6 percentage points, with the market leaning more bullish on the favorite. Polymarket prices largely align with the sportsbook view. The dashboard does not adjudicate which source better captures match reality; the discrepancy merits tracking as additional information materializes."
+}
