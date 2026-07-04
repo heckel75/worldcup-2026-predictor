@@ -3,9 +3,9 @@
   "home_team": "Switzerland",
   "away_team": "Colombia",
   "date": "2026-07-07",
-  "input_hash": "c38c6d522e45f5576e064f6da4521ab5806bcd40",
-  "generated_at": "2026-07-04T19:05:18+00:00",
+  "input_hash": "25e3a2b17271d1c52d74d2429a2acc94881d06af",
+  "generated_at": "2026-07-04T23:06:46+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Colombia enters as the model's favorite with a 49% win probability, holding a substantial edge over Switzerland's 22% chance. The underdog has a realistic path to victory but faces a significant disadvantage in this matchup on a neutral ground.\n\nThe 29% draw probability indicates the teams are separated enough to produce a clear outcome more often than not, yet a stalemate remains plausible. The gap between Colombia's win chance and Switzerland's is roughly 27 percentage points, suggesting this is a competitive but notably asymmetric contest rather than an even affair. A draw would be neither surprising nor the most likely result.\n\nThe sportsbook consensus rates Switzerland's chances 6 percentage points higher than the model, at 27% versus 22%, while backing Colombia at 43% rather than 49%. Polymarket prices fall between these two sources, clustering near the bookmakers. The model leans more bullish on Colombia's advantage than either betting market, a divergence worth noting as the dashboard does not claim superiority over consensus judgment."
+  "preview_text": "The model favors Colombia, assigning a 49% win probability against Switzerland's 22%. That 27-percentage-point gap places Colombia as a clear favorite, though the outcome remains open enough that a Swiss victory is plausible at roughly one-in-five odds.\n\nThe draw sits at 30%, creating a competitive three-way split rather than a lopsided contest. Colombia's edge is material but not dominant; the model suggests a match where Switzerland retains realistic chances of avoiding defeat, with draws representing a meaningful outcome class.\n\nThe model and sportsbook consensus diverge modestly. Books lean toward Colombia by 7 percentage points less than the model does, while assigning Switzerland 5 points higher and the draw 1 point higher. Polymarket prices align more closely with the model's Colombia lean. These gaps fall within typical forecast variance; the dashboard does not adjudicate between them."
 }

@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Egypt",
   "date": "2026-07-07",
-  "input_hash": "616e76f5ef3ffaaffeddef689eb510f476504d39",
-  "generated_at": "2026-07-04T19:05:14+00:00",
+  "input_hash": "e93a4a3394e8e1604faade086bb22f59c621884e",
+  "generated_at": "2026-07-04T23:06:42+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina heavily, assigning them an 84% win probability. Egypt's chances stand at less than 1%, creating a stark asymmetry between the two sides in the statistical forecast.\n\nThe model's outcome distribution reflects a pronounced gap between the favorite and underdog. Argentina's 84% win probability combined with a 16% draw likelihood leaves Egypt with minimal paths to a positive result. This spread suggests the model expects Argentina to control the match, though a draw remains a plausible alternative outcome. A competitive contest in which Egypt emerges with a result appears unlikely under this projection.\n\nThe model and market diverge meaningfully. The sportsbook consensus assigns Argentina 70%, 14 percentage points lower than the model, while crediting Egypt with 10% — roughly 9 points higher. Polymarket prices align more closely with the model's Argentina probability at 71%. The dashboard does not adjudicate which assessment is more accurate; the discrepancy may reflect different weighting of available team information or risk appetite among market participants."
+  "preview_text": "The model strongly favors Argentina, assigning an 84% win probability against a 1% chance for Egypt. The underdog faces a steep hill; the model sees this as a heavily tilted matchup rather than a competitive contest.\n\nThe model's probability spread shows Argentina as the clear favorite, with a 15% draw probability that sits between the binary outcomes. The gap between Argentina and Egypt is substantial, leaving little room for an upset scenario in the model's assessment. A draw remains plausible but carries lower odds than an Argentina victory.\n\nThe model and sportsbooks diverge meaningfully on this match. The market assigns Argentina only 69%, roughly 15 percentage points below the model's 84% forecast. Correspondingly, the market prices Egypt at 10% compared to the model's 1%—a gap suggesting the books see considerably more upside for an upset than the statistical model does. The dashboard does not claim to know which assessment is correct."
 }

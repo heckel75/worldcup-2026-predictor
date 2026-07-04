@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Belgium",
   "date": "2026-07-06",
-  "input_hash": "fe44b2ef400440b10472ded826195399a2e16f2f",
-  "generated_at": "2026-07-04T19:05:10+00:00",
+  "input_hash": "6a17a0420065a0aa8e34a28ca1f2259cfcaafb33",
+  "generated_at": "2026-07-04T23:06:39+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Belgium as the favorite with a 44% win probability, while the USA's chance stands at 26%. This represents a meaningful gap, with the underdog facing a substantial climb to victory on a neutral ground.\n\nThe expected distribution suggests a competitive match tilted toward Belgium, but draws remain plausible at 31%. The 17-percentage-point margin between Belgium's win probability and the USA's indicates the model does not expect a closely matched contest, though the relatively high draw probability implies the teams are not far apart in overall strength.\n\nThe model and market diverge noticeably on the USA's chances. Sportsbooks rate American victory at 35%, nearly 9 percentage points higher than the model's 26%. Market and model align more closely on Belgium (43% vs 36%) and draws (31% vs 29%). The dashboard does not adjudicate which assessment is more reliable; the gap may reflect different information sets or risk preferences among traders versus the statistical model."
+  "preview_text": "The model rates Belgium as the favored outcome, assigning it a 44% win probability against a USA side given a 26% chance of victory. The 18-percentage-point gap reflects a substantial but not dominant edge for Belgium in the forecast.\n\nThe expected distribution tilts toward a Belgium win, yet the draw carries meaningful probability at 31%. This suggests a competitive match where neither team is heavily favored to prevail in regulation, and a stalemate remains a plausible result. The win probabilities for each side are separated enough to indicate a genuine favorite, but not so far as to imply a mismatch.\n\nThe model and market diverge noticeably on USA prospects. Sportsbooks and Polymarket both assign the USA roughly 34–35% win probability—about 9 percentage points above the model's forecast. Both betting sources also rate Belgium's chances lower than the model, near 36–37% rather than 44%. The draw estimates align closely across all three sources. The dashboard does not adjudicate which assessment is more accurate."
 }
