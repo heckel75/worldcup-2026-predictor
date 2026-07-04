@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Belgium",
   "date": "2026-07-06",
-  "input_hash": "10667e799bf7038209248835e8d019b57b031270",
-  "generated_at": "2026-07-04T08:01:01+00:00",
+  "input_hash": "fe44b2ef400440b10472ded826195399a2e16f2f",
+  "generated_at": "2026-07-04T19:05:10+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Belgium at 43%, with the USA given a 26% chance of victory. That 17-percentage-point gap reflects Belgium as the stronger side in the forecast. The USA's path to a win is materially narrower than its opponent's, though far from impossible.\n\nThe draw probability sits at 31%, making it nearly as likely as a Belgium win. This substantial draw likelihood indicates a competitive, closely-matched contest where neither side is expected to dominate. The spread across outcomes is relatively even—no single result towers above the others—suggesting genuine uncertainty and a competitive fixture.\n\nThe sportsbook consensus diverges meaningfully from the model. Books assign USA a 35% win probability, roughly 9 percentage points higher than the model's 26%. Conversely, sportsbooks grade Belgium at 37%, compared to the model's 43%. Draw odds align closely between sources. The dashboard offers the model's view; whether market pricing reflects superior information or systematic bias remains an open question."
+  "preview_text": "The model rates Belgium as the favorite with a 44% win probability, while the USA's chance stands at 26%. This represents a meaningful gap, with the underdog facing a substantial climb to victory on a neutral ground.\n\nThe expected distribution suggests a competitive match tilted toward Belgium, but draws remain plausible at 31%. The 17-percentage-point margin between Belgium's win probability and the USA's indicates the model does not expect a closely matched contest, though the relatively high draw probability implies the teams are not far apart in overall strength.\n\nThe model and market diverge noticeably on the USA's chances. Sportsbooks rate American victory at 35%, nearly 9 percentage points higher than the model's 26%. Market and model align more closely on Belgium (43% vs 36%) and draws (31% vs 29%). The dashboard does not adjudicate which assessment is more reliable; the gap may reflect different information sets or risk preferences among traders versus the statistical model."
 }

@@ -1,7 +1,9 @@
 commence_time,home_team,away_team,p_home,p_draw,p_away,volume,low_liquidity
-2026-07-04,Canada,Morocco,0.1759,0.2864,0.5377,5408999,False
-2026-07-04,Paraguay,France,0.0448,0.1244,0.8308,2363315,False
-2026-07-05,Brazil,Norway,0.5323,0.2637,0.204,1310805,False
-2026-07-05,Mexico,England,0.3035,0.3035,0.393,1882364,False
-2026-07-06,USA,Belgium,0.3333,0.2935,0.3731,1191222,False
-2026-07-06,Portugal,Spain,0.2239,0.2637,0.5124,308560,False
+2026-07-04,Canada,Morocco,0.0005,0.0005,0.999,50012854,False
+2026-07-04,Paraguay,France,0.0448,0.1244,0.8308,4286620,False
+2026-07-05,Brazil,Norway,0.5323,0.2637,0.204,1524420,False
+2026-07-05,Mexico,England,0.3035,0.3035,0.393,2234059,False
+2026-07-06,USA,Belgium,0.3399,0.2906,0.3695,1364030,False
+2026-07-06,Portugal,Spain,0.2315,0.2611,0.5074,460109,False
+2026-07-07,Argentina,Egypt,0.7114,0.194,0.0945,46218,False
+2026-07-07,Switzerland,Colombia,0.2637,0.3035,0.4328,35498,False

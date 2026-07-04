@@ -73,8 +73,8 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2026-06-27,Croatia,Ghana,2,1,,FIFA World Cup,Philadelphia,United States,True,,
 2026-06-28,South Africa,Canada,0,1,Canada,FIFA World Cup,,,True,,
 2026-06-29,Brazil,Japan,2,1,Brazil,FIFA World Cup,,,True,,
-2026-06-29,Germany,Paraguay,1,1,Paraguay,FIFA World Cup,,,True,Paraguay won 4-3 on penalties,pens
-2026-06-29,Netherlands,Morocco,1,1,Morocco,FIFA World Cup,,,True,Morocco won 3-2 on penalties,pens
+2026-06-29,Germany,Paraguay,1,1,Paraguay,FIFA World Cup,,,True,Paraguay won 3-4 on penalties,pens
+2026-06-29,Netherlands,Morocco,1,1,Morocco,FIFA World Cup,,,True,Morocco won 2-3 on penalties,pens
 2026-06-30,Ivory Coast,Norway,1,2,Norway,FIFA World Cup,,,True,,
 2026-06-30,France,Sweden,3,0,France,FIFA World Cup,,,True,,
 2026-06-30,Mexico,Ecuador,2,0,Mexico,FIFA World Cup,,,True,,
@@ -87,6 +87,7 @@ date,home_team,away_team,home_score,away_score,advanced,tournament,city,country,
 2026-07-03,Australia,Egypt,1,1,Egypt,FIFA World Cup,,,True,Egypt won 4-2 on penalties,pens
 2026-07-03,Argentina,Cape Verde,3,2,Argentina,FIFA World Cup,,,True,After extra time (1–1 at 90'),et
 2026-07-03,Colombia,Ghana,1,0,Colombia,FIFA World Cup,,,True,,
+2026-07-04,Canada,Morocco,0,3,Morocco,FIFA World Cup,,,True,,
 2018-01-02,Iraq,United Arab Emirates,0,0,,Gulf Cup,Kuwait City,Kuwait,True,,
 2018-01-02,Oman,Bahrain,1,0,,Gulf Cup,Kuwait City,Kuwait,True,,
 2018-01-05,Oman,United Arab Emirates,0,0,,Gulf Cup,Kuwait City,Kuwait,True,,
