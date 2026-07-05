@@ -3,9 +3,9 @@
   "home_team": "Switzerland",
   "away_team": "Colombia",
   "date": "2026-07-07",
-  "input_hash": "25e3a2b17271d1c52d74d2429a2acc94881d06af",
-  "generated_at": "2026-07-04T23:06:46+00:00",
+  "input_hash": "7ae8130245c2651c3965fd7cee37d4020f84d8e4",
+  "generated_at": "2026-07-05T07:43:27+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Colombia, assigning a 49% win probability against Switzerland's 22%. That 27-percentage-point gap places Colombia as a clear favorite, though the outcome remains open enough that a Swiss victory is plausible at roughly one-in-five odds.\n\nThe draw sits at 30%, creating a competitive three-way split rather than a lopsided contest. Colombia's edge is material but not dominant; the model suggests a match where Switzerland retains realistic chances of avoiding defeat, with draws representing a meaningful outcome class.\n\nThe model and sportsbook consensus diverge modestly. Books lean toward Colombia by 7 percentage points less than the model does, while assigning Switzerland 5 points higher and the draw 1 point higher. Polymarket prices align more closely with the model's Colombia lean. These gaps fall within typical forecast variance; the dashboard does not adjudicate between them."
+  "preview_text": "Colombia enters as the model's favorite with a 49% win probability, substantially ahead of Switzerland's 22%. The gap reflects a meaningful advantage, though the underdog remains far from eliminated at roughly one-in-five odds.\n\nThe draw carries notable weight at 30%, indicating the match is expected to be competitive rather than one-sided. Switzerland's path to victory is narrow but plausible; the distribution suggests a match in which all three outcomes retain material probability, with Colombia favored but neither side dominant enough to render alternatives implausible.\n\nThe model and market show modest alignment. The sportsbook consensus rates Colombia 6 percentage points lower than the model (43% vs. 49%), while crediting Switzerland 5 points higher (27% vs. 22%). Polymarket prices track closely to the books and similarly favor Colombia by a smaller margin than the model does. The dashboard does not adjudicate which estimate better reflects the true probabilities."
 }

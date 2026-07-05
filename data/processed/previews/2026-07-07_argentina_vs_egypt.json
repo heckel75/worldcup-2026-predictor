@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Egypt",
   "date": "2026-07-07",
-  "input_hash": "e93a4a3394e8e1604faade086bb22f59c621884e",
-  "generated_at": "2026-07-04T23:06:42+00:00",
+  "input_hash": "699a932d3932d3f23ad37369b8dacf166f03f1c1",
+  "generated_at": "2026-07-05T07:43:24+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model strongly favors Argentina, assigning an 84% win probability against a 1% chance for Egypt. The underdog faces a steep hill; the model sees this as a heavily tilted matchup rather than a competitive contest.\n\nThe model's probability spread shows Argentina as the clear favorite, with a 15% draw probability that sits between the binary outcomes. The gap between Argentina and Egypt is substantial, leaving little room for an upset scenario in the model's assessment. A draw remains plausible but carries lower odds than an Argentina victory.\n\nThe model and sportsbooks diverge meaningfully on this match. The market assigns Argentina only 69%, roughly 15 percentage points below the model's 84% forecast. Correspondingly, the market prices Egypt at 10% compared to the model's 1%—a gap suggesting the books see considerably more upside for an upset than the statistical model does. The dashboard does not claim to know which assessment is correct."
+  "preview_text": "The model assesses Argentina as a strong favorite with an 84% win probability, compared to Egypt's 1% chance of victory. This asymmetry reflects a substantial gap in the forecast likelihood of each team's success. Egypt enters with minimal modeled odds of taking three points.\n\nThe draw probability sits at 16% under the model, suggesting the match carries a meaningful chance of stalemate but is shaped primarily around an Argentina triumph. The outcome distribution indicates a heavily one-sided contest in expectation, with little competitive tension forecasted between the two probabilities.\n\nThe model and sportsbook consensus diverge notably. Bookmakers assign Egypt a 10% win probability—roughly nine percentage points higher than the model—and credit Argentina with 70% rather than 84%. Polymarket pricing aligns closely with the sportsbook consensus on Egypt and draw outcomes. The dashboard does not adjudicate which source is more accurate; the gap warrants attention for those tracking model performance against market prices."
 }

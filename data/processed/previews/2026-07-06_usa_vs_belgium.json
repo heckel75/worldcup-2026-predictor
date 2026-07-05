@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Belgium",
   "date": "2026-07-06",
-  "input_hash": "6a17a0420065a0aa8e34a28ca1f2259cfcaafb33",
-  "generated_at": "2026-07-04T23:06:39+00:00",
+  "input_hash": "62e90c6891460080d726745a331a49bb31e5d6ea",
+  "generated_at": "2026-07-05T07:43:20+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Belgium as the favored outcome, assigning it a 44% win probability against a USA side given a 26% chance of victory. The 18-percentage-point gap reflects a substantial but not dominant edge for Belgium in the forecast.\n\nThe expected distribution tilts toward a Belgium win, yet the draw carries meaningful probability at 31%. This suggests a competitive match where neither team is heavily favored to prevail in regulation, and a stalemate remains a plausible result. The win probabilities for each side are separated enough to indicate a genuine favorite, but not so far as to imply a mismatch.\n\nThe model and market diverge noticeably on USA prospects. Sportsbooks and Polymarket both assign the USA roughly 34–35% win probability—about 9 percentage points above the model's forecast. Both betting sources also rate Belgium's chances lower than the model, near 36–37% rather than 44%. The draw estimates align closely across all three sources. The dashboard does not adjudicate which assessment is more accurate."
+  "preview_text": "The model favors Belgium at 44% to win, leaving the USA with a 26% chance of victory. That 18-percentage-point gap reflects a substantial asymmetry in the forecast, though the USA is not dismissed entirely.\n\nThe draw sits at 31%, the single most likely outcome. This relatively high draw probability signals a competitive match where neither side is strongly favored to force a result within ninety minutes. The 44–31–26 spread suggests Belgium enters as clear favorite, but with meaningful space for either an upset or a stalemate.\n\nThe sportsbook consensus diverges notably from the model. Books price both teams nearly even at 36% each, stripping about 10 percentage points from Belgium's modeled edge and transferring it to the USA. Polymarket aligns more closely with the model's Belgium lean. The dashboard does not adjudicate which view is correct; the gap indicates material disagreement on relative strength."
 }

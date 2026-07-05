@@ -3,9 +3,9 @@
   "home_team": "Brazil",
   "away_team": "Norway",
   "date": "2026-07-05",
-  "input_hash": "cfa572c4d01fa83bf573d7f4110856cbed9b1627",
-  "generated_at": "2026-07-04T08:00:47+00:00",
+  "input_hash": "05cb7ec07f5e92ba4985ae443609d020266e7fa7",
+  "generated_at": "2026-07-05T07:43:11+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Brazil as the favored outcome at 46%, substantially ahead of Norway's 23% win probability. The sportsbook consensus amplifies Brazil's edge to 52%, reflecting tighter confidence in the favorite relative to the statistical forecast. Norway enters as a clear underdog, though not without a path to victory.\n\nThe gap between Brazil's win probability and a draw outcome is relatively modest—less than 16 percentage points by the model's assessment. This suggests a competitive match rather than a heavily one-sided affair. A draw at 31% sits as a genuinely plausible result, indicating the fixture is unlikely to be dominated by either team. The distribution implies multiple credible outcomes rather than a strong consensus toward a decisive finish.\n\nThe model and sportsbooks diverge on Brazil's true win probability by about 6 percentage points, with the market leaning more bullish on the favorite. Polymarket prices largely align with the sportsbook view. The dashboard does not adjudicate which source better captures match reality; the discrepancy merits tracking as additional information materializes."
+  "preview_text": "The model rates Brazil as the modest favorite at 46%, while Norway's win probability stands at 23%. Brazil's advantage is real but constrained; the model assigns neither team a commanding position in a neutral-venue match.\n\nThe 31% draw probability suggests competitive balance. A draw is a plausible outcome, and the win-probability spread between Brazil and Norway narrows when accounting for the likelihood of a stalemate. The match is forecast to be reasonably close across all three outcomes, rather than heavily skewed toward either team winning in regulation.\n\nThe market consensus diverges noticeably from the model. Sportsbooks place Brazil at 53%, roughly 7 percentage points higher than the model's 46%, and rate Norway at 21% compared to the model's 23%. Polymarket pricing aligns closely with the sportsbooks. The dashboard does not adjudicate between these sources; the gap may reflect differing underlying assumptions or information sets, and bettors should note the divergence before committing capital."
 }
