@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Egypt",
   "date": "2026-07-07",
-  "input_hash": "699a932d3932d3f23ad37369b8dacf166f03f1c1",
-  "generated_at": "2026-07-05T07:43:24+00:00",
+  "input_hash": "25c0fbf9ed4185ebbc78d5565742606dcb8155a0",
+  "generated_at": "2026-07-06T06:17:01+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assesses Argentina as a strong favorite with an 84% win probability, compared to Egypt's 1% chance of victory. This asymmetry reflects a substantial gap in the forecast likelihood of each team's success. Egypt enters with minimal modeled odds of taking three points.\n\nThe draw probability sits at 16% under the model, suggesting the match carries a meaningful chance of stalemate but is shaped primarily around an Argentina triumph. The outcome distribution indicates a heavily one-sided contest in expectation, with little competitive tension forecasted between the two probabilities.\n\nThe model and sportsbook consensus diverge notably. Bookmakers assign Egypt a 10% win probability—roughly nine percentage points higher than the model—and credit Argentina with 70% rather than 84%. Polymarket pricing aligns closely with the sportsbook consensus on Egypt and draw outcomes. The dashboard does not adjudicate which source is more accurate; the gap warrants attention for those tracking model performance against market prices."
+  "preview_text": "The model favours Argentina at 84%, with Egypt's win probability at less than 1%. This represents a heavily asymmetric matchup from the statistical perspective. Egypt's underdog position is stark in the model's output, though it does assign a non-trivial 16% chance of a draw.\n\nThe spread between Argentina's dominance and Egypt's near-zero win probability reflects expected control and conversion patterns rather than a close contest. A draw emerges as the only plausible alternative to an Argentina victory; the 84% to 1% win split suggests the model sees this as a mismatch in quality or execution. Competitive parity is minimal according to these numbers.\n\nThe model and sportsbooks diverge meaningfully here. Books collectively price Argentina at 69%, roughly 15 percentage points lower than the model, and assign Egypt a 10–11% win probability compared to the model's 0.7%. Both draw assessments align closely near 20%. The dashboard makes no claim about which source better predicts the outcome; the divergence suggests material disagreement about tail-event risk for the underdog."
 }

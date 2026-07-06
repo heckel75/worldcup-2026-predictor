@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Spain",
   "date": "2026-07-06",
-  "input_hash": "be30ec6d61442608d924212dec4037c796fcbb72",
-  "generated_at": "2026-07-04T19:05:07+00:00",
+  "input_hash": "4d766bec4422f2213cfc75b9c9c91f81d7fc694c",
+  "generated_at": "2026-07-06T06:16:53+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Spain at 55%, with Portugal underdogs at 17%. The gap is substantial: Spain's win probability exceeds Portugal's by roughly 38 percentage points, placing this match firmly in the category of a likely favorite outcome rather than a competitive contest.\n\nThe draw probability of 28% sits between the two outright outcomes, suggesting the match has meaningful potential for a stalemate. However, the wide gap between Spain's win chances and Portugal's reflects a clear hierarchy in the model's assessment. A Spain victory remains the dominant scenario, though draws are plausible enough to prevent a one-sided probability landscape.\n\nThe sportsbook consensus departs from the model in Spain's favor. Books assign Spain 50%, nearly 5 percentage points lower than the model, while Portugal draws 24%, about 7 points higher. Polymarket prices fall between these two sources, closer to the sportsbook view. The dashboard does not adjudicate which source better represents match reality, only that material disagreement exists on the magnitude of Spain's advantage."
+  "preview_text": "The model favors Spain at 56% to lift this match on a neutral ground, leaving Portugal with a 17% win probability. That represents a substantial gap; Spain enters as clear favorite while Portugal faces steep odds of an outright victory.\n\nThe draw probability of 28% suggests competitive balance in the middle ground—neither team dominates the scenario space decisively. The 39-point spread between Spain's peak and Portugal's trough indicates meaningful separation in quality or capability, yet the draw's meaningful share implies this is not a mismatch. Roughly one in four outcomes sees neither side break through.\n\nThe market consensus prices Spain noticeably lower than the model does, at 50% versus 56%, and simultaneously assigns Portugal 6 percentage points higher at 24%. The sportsbook and Polymarket figures align closely with each other but diverge from the model estimate on the Spain win by around 5–6 points. The dashboard does not adjudicate which reading of the match is correct."
 }
