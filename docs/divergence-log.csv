@@ -1,4 +1,6 @@
 date,match,stage,group,outcome,result,score,p_model_on_outcome,p_sportsbook_on_outcome,p_polymarket_on_outcome,gap_pp,gap_bucket,divergence_type,flagged,verdict
+2026-07-06,Portugal v Spain,Knockout,,A,Away win,0–1,0.5547,0.4987,0.5124,7,5–15pp,model_over_concentrated,False,Model closest
+2026-07-06,USA v Belgium,Knockout,,A,Away win,1–4,0.4368,0.335,0.3367,13,5–15pp,disagree_on_favorite,False,Model closest
 2026-07-05,Brazil v Norway,Knockout,,A,Away win,1–2,0.2303,0.2085,0.194,7,5–15pp,model_under_concentrated,False,All missed
 2026-07-05,Mexico v England,Knockout,,A,Away win,2–3,0.4523,0.3947,0.397,6,5–15pp,model_over_concentrated,False,Model closest
 2026-07-04,Paraguay v France,Knockout,,A,Away win,0–1,0.6912,0.8064,0.8308,12,5–15pp,model_under_concentrated,False,Polymarket closest

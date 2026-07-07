@@ -3,9 +3,9 @@
   "home_team": "Switzerland",
   "away_team": "Colombia",
   "date": "2026-07-07",
-  "input_hash": "98bb707acca7da11c8a8156323cd48e6651f2952",
-  "generated_at": "2026-07-06T06:17:05+00:00",
+  "input_hash": "6124449b0b911e945978b024b2b21cb9c07c88f5",
+  "generated_at": "2026-07-07T06:06:51+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "Colombia enters as the statistical favorite with a 48% win probability according to the model, substantially ahead of Switzerland's 22% chance. The underdog path for Switzerland remains plausible but narrow, requiring a significant upset on a neutral ground.\n\nThe forecast suggests a competitive match with meaningful probability across all three outcomes. A draw sits at 30%, indicating the teams are neither heavily mismatched nor perfectly balanced—Colombia holds a clear edge, yet the width of the draw band signals genuine uncertainty about the decisive result.\n\nThe sportsbook consensus diverges from the model by roughly 5–7 percentage points in Switzerland's favor, with books pricing the upset at 27% versus the model's 22%. Polymarket pricing aligns more closely with the model's Colombia assessment. The dashboard does not adjudicate between these sources; the gap is modest but worth noting for users comparing probabilities across venues."
+  "preview_text": "Colombia enters as the model's clear favorite at 48%, with Switzerland given a 22% chance of victory. The remaining probability—30%—lands on a draw, making a stalemate more likely than a Swiss win on the day.\n\nThe gap between Colombia's modal outcome and Switzerland's reflects moderate separation. A draw sits between the two win probabilities, indicating the match is competitive but tilted. Colombia's 26-point advantage over Switzerland in win probability suggests the model expects Colombia to control play, yet draws occur frequently enough in knockout-stage football that one remains a plausible result.\n\nThe model and sportsbook consensus align closely on the decisive result: both place Colombia's win probability in the low-to-mid 40s, with Switzerland in the mid-20s. The draw predictions cluster around 30–31%. Polymarket prices track the consensus equally well. No meaningful divergence signals disagreement across sources on this fixture's likely outcome."
 }

@@ -3,9 +3,9 @@
   "home_team": "Portugal",
   "away_team": "Spain",
   "date": "2026-07-06",
-  "input_hash": "4d766bec4422f2213cfc75b9c9c91f81d7fc694c",
-  "generated_at": "2026-07-06T06:16:53+00:00",
+  "input_hash": "c50bfe3a4f3aa1fe04057bb4b4aff566cf1e560b",
+  "generated_at": "2026-07-06T16:00:33+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Spain at 56% to lift this match on a neutral ground, leaving Portugal with a 17% win probability. That represents a substantial gap; Spain enters as clear favorite while Portugal faces steep odds of an outright victory.\n\nThe draw probability of 28% suggests competitive balance in the middle ground—neither team dominates the scenario space decisively. The 39-point spread between Spain's peak and Portugal's trough indicates meaningful separation in quality or capability, yet the draw's meaningful share implies this is not a mismatch. Roughly one in four outcomes sees neither side break through.\n\nThe market consensus prices Spain noticeably lower than the model does, at 50% versus 56%, and simultaneously assigns Portugal 6 percentage points higher at 24%. The sportsbook and Polymarket figures align closely with each other but diverge from the model estimate on the Spain win by around 5–6 points. The dashboard does not adjudicate which reading of the match is correct."
+  "preview_text": "Spain enters as the model's clear favorite with a 56% chance of victory, while Portugal's win probability stands at 17%, leaving the underdog substantial ground to make up on a neutral pitch.\n\nThe 28-percentage-point gap between Spain's win rate and Portugal's reflects an asymmetric matchup in the model's assessment. Draws carry meaningful weight at 28%, suggesting competitive play is plausible, but Spain's advantage in outright win probability is sizable rather than marginal.\n\nThe model and sportsbook consensus diverge notably on Spain's win probability—the market assigns 50% versus the model's 56%, a 6-percentage-point spread. Both sources align closely on draw likelihood (27–28%) and largely agree Portugal sits in the 17–23% range. The model leans more bullish on Spain than the consensus does; the dashboard does not adjudicate which assessment better reflects underlying match dynamics."
 }

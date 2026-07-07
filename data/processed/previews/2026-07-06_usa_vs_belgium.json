@@ -3,9 +3,9 @@
   "home_team": "USA",
   "away_team": "Belgium",
   "date": "2026-07-06",
-  "input_hash": "d328a238886c8ad7eb4ea82edc24b510528ad6a7",
-  "generated_at": "2026-07-06T06:16:57+00:00",
+  "input_hash": "8b8a0463521c0b8addfcf04d5555bbbcd8015b1e",
+  "generated_at": "2026-07-06T16:00:37+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The statistical model favors Belgium at 44%, while the USA is given a 26% win probability. That 18-point gap reflects Belgium's edge in the forecast, though a draw at 31% remains the single most likely outcome—suggesting neither side is heavily favored to secure three points.\n\nThe win-draw-loss spread shows Belgium positioned as slight favorite but without dominance. The draw probability of roughly 31% indicates a competitive match where regulation stalemate is plausible. The USA's 26% win chance reflects genuine underdog status yet not hopelessness; Belgium's 44% win probability means the model assigns them a modest rather than commanding advantage.\n\nA notable divergence exists between the model and market consensus. The sportsbooks lean toward the USA at 37% to win, roughly 11 points higher than the model's 26%, while pricing Belgium at 35%—about 9 points below the model's 44%. The Polymarket prices align closely with sportsbooks on all three outcomes. The dashboard does not adjudicate which assessment is correct; the gap may reflect differing information, risk pricing, or genuine forecast disagreement."
+  "preview_text": "The model rates Belgium as the favorite with a 44% chance of victory, compared to a 26% probability assigned to a USA win. That 18-percentage-point gap reflects a meaningful but not insurmountable gap in the model's estimated strength between the two sides at this neutral venue.\n\nThe draw outcome carries a 31% probability in the model, making it nearly as likely as a Belgium win. The spread across all three outcomes suggests a moderately competitive match rather than a heavily one-sided affair, though the model leans clearly toward the away-from-USA scenarios combined.\n\nThe market consensus diverges notably from the model. Sportsbooks place Belgium at 34%, substantially lower than the model's 44%, while shifting USA to 39%, an increase of 13 percentage points. Polymarket pricing aligns closely with the sportsbook consensus. The dashboard does not claim to determine which assessment is correct; the disagreement likely reflects different underlying assumptions about relative team strength or match conditions."
 }
