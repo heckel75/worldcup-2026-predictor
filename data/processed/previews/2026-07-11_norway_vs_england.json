@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-11_norway_vs_england",
+  "home_team": "Norway",
+  "away_team": "England",
+  "date": "2026-07-11",
+  "input_hash": "df25af68ae0b7660c73b997fb2acb35ccaff9462",
+  "generated_at": "2026-07-07T23:11:57+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors England with a 49% win probability, while Norway's chance stands at 22%. The outcome hinges substantially on whether the match is decided in regular time or extends to a draw, which carries notable weight at 30%.\n\nThe spread between the top two outcomes spans 19 percentage points, indicating a competitive fixture where England hold a clear edge but Norway retain genuine prospect of avoiding defeat. A draw emerges as the second-most-probable result, suggesting neither side is heavily favored to break through decisively.\n\nModel and market show close alignment across all three outcomes. Sportsbook consensus sits within 2–4 percentage points of the model on each result, and Polymarket prices fall similarly tight. The dashboard registers consistent agreement that England are favorites without dominance, and that a stalemate remains plausible."
+}

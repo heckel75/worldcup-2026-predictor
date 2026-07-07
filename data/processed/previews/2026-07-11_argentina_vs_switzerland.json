@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-11_argentina_vs_switzerland",
+  "home_team": "Argentina",
+  "away_team": "Switzerland",
+  "date": "2026-07-11",
+  "input_hash": "cf5b929a249b8cea1801d00b26c18ea701354592",
+  "generated_at": "2026-07-07T23:12:00+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Argentina at 69%, a substantial margin over Switzerland's 7% win probability. The statistical forecast sees a clear hierarchy, with Argentina's chances nearly ten times those of the underdog. Switzerland is not eliminated in the model's view but remains a long shot.\n\nThe draw emerges as the second-most likely outcome at 23%, suggesting the match has room for stalemate but that Argentina's superiority in the model's assessment shapes a lopsided win distribution. The gap between the favorite's win probability and the combined chances of draw-or-loss is pronounced, indicating a competitive asymmetry rather than a toss-up.\n\nThe model and sportsbook consensus diverge meaningfully. Books assign Argentina only 56% win probability—13 percentage points lower than the model—while crediting Switzerland with 18% rather than 7%. The market sees a more competitive contest; the model remains more confident in Argentina. The dashboard does not adjudicate which view is correct, only that they diverge."
+}

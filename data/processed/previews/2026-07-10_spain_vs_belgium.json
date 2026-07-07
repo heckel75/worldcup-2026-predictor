@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-10_spain_vs_belgium",
+  "home_team": "Spain",
+  "away_team": "Belgium",
+  "date": "2026-07-10",
+  "input_hash": "d340f021b111858c2c937c6421269559a254ad42",
+  "generated_at": "2026-07-07T23:11:54+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates Spain as a heavy favorite with a 75% win probability, leaving Belgium just 4% to prevail. The gap reflects a substantial projected edge, though the underdog's chance remains non-zero. The sportsbook consensus is far less confident in Spain, assigning them only 59%, a gap of 16 percentage points below the model's assessment.\n\nThe model's distribution skews decisively toward a Spanish victory. A draw sits at 20%, meaningful but secondary; Belgium's path to three points appears narrow under the statistical forecast. By contrast, the market sees a more competitive contest, with the win probabilities bunched closer together and a draw rated slightly higher at 24%. The model implies Spain should control the match; the market suggests tighter competition and greater upset risk.\n\nA significant divergence separates the two sources. The model favors Spain by 16 points relative to the sportsbook consensus, while both assign similar draw odds (20–24%). The Polymarket crowd aligns much closer to the books than to the model, backing Spain at 60% and Belgium at 16%. The dashboard does not adjudicate which view is correct; traders and oddsmakers may incorporate information or uncertainty not captured in the model's inputs."
+}

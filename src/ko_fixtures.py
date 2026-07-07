@@ -54,8 +54,21 @@ _R16_DATED_PAIRS: list[tuple[str, str, dt.date]] = [
     ("Switzerland",  "Colombia",                dt.date(2026, 7, 7)),   # match 96
 ]
 
+# Published 2026 Quarter-final schedule (dated per match slot 97–100). Added once
+# the R16 results resolved the pairings — the "extend per-round" daily-checklist
+# step (§5a / §11). Order within each tuple is irrelevant (keyed by frozenset).
+# Argentina–Switzerland shares Jul 11 with Norway–England; the venue-local kickoff
+# rolls past midnight in some timezones but it's the same tournament match day.
+_QF_DATED_PAIRS: list[tuple[str, str, dt.date]] = [
+    ("France",       "Morocco",                 dt.date(2026, 7, 9)),    # match 97
+    ("Spain",        "Belgium",                 dt.date(2026, 7, 10)),   # match 99
+    ("Norway",       "England",                 dt.date(2026, 7, 11)),   # match 98
+    ("Argentina",    "Switzerland",             dt.date(2026, 7, 11)),   # match 100
+]
+
 KO_MATCH_DATES: dict[frozenset, dt.date] = {
-    frozenset({a, b}): d for a, b, d in _R32_DATED_PAIRS + _R16_DATED_PAIRS
+    frozenset({a, b}): d
+    for a, b, d in _R32_DATED_PAIRS + _R16_DATED_PAIRS + _QF_DATED_PAIRS
 }
 
 
@@ -105,8 +118,8 @@ def derive_ko_fixtures(bracket: dict) -> list[dict]:
 # ----------------------------------------------------------------------
 
 def _self_test() -> None:
-    assert len(KO_MATCH_DATES) == 24, \
-        f"expected 24 KO dates (16 R32 + 8 R16), got {len(KO_MATCH_DATES)}"
+    assert len(KO_MATCH_DATES) == 28, \
+        f"expected 28 KO dates (16 R32 + 8 R16 + 4 QF), got {len(KO_MATCH_DATES)}"
 
     def m(a, b, played=False, winner=None):
         return {"match_id": 0, "team_a": a, "team_b": b,
@@ -153,7 +166,7 @@ def _self_test() -> None:
     assert derive_ko_fixtures(bracket2) == [], derive_ko_fixtures(bracket2)
 
     print("ko_fixtures.py self-test passed "
-          "(24 KO dates = 16 R32 + 8 R16; shape; skip-played; omit-undated; "
+          "(28 KO dates = 16 R32 + 8 R16 + 4 QF; shape; skip-played; omit-undated; "
           "bracket orientation)")
 
 
