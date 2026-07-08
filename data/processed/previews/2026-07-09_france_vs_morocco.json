@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Morocco",
   "date": "2026-07-09",
-  "input_hash": "02c55eab4afb2b2a649c49aec0f51b4158a70fdb",
-  "generated_at": "2026-07-07T23:11:49+00:00",
+  "input_hash": "eac038042c5810c18d4ff8571b4abd1d747f3ea1",
+  "generated_at": "2026-07-08T06:35:17+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates France as the favoured outcome at 49%, though only narrowly. Morocco's win probability stands at 21%, leaving substantial ground between the two teams but not an overwhelming gap. The implied quality spread suggests France enters with a meaningful but modest edge in this neutral-venue fixture.\n\nThe 30% draw probability indicates the model sees genuine competitive balance. A stalemate ranks as the second-most-likely single outcome, ahead of a Morocco victory. This profile points toward a closely contested match where a one-goal result or a scoreless draw are both plausible scenarios, rather than a runaway favourite dominating proceedings.\n\nThe sportsbook consensus diverges notably from the model. Books price France's win probability 11 percentage points higher at 60%, while compressing both the draw and Morocco win chances downward. Polymarket prices align closely with the bookmaker view. The dashboard does not adjudicate which assessment is correct; the gap warrants flagging for users comparing model-driven and market-driven forecasts."
+  "preview_text": "The model assigns France a 49% win probability, making them slight favorites, while Morocco's chance stands at 21%. The margin reflects France's edge but remains modest enough that the underdog enters with material winning chances rather than token odds.\n\nThe draw emerges as notably plausible at 30%, suggesting competitive balance and a realistic outcome where neither team breaks through. The win probabilities, separated by roughly 28 percentage points, indicate the match leans toward France but remains genuinely contested. A scoreless or low-scoring result appears as likely as a clear France victory, pointing to a tightly matched contest.\n\nThe sportsbooks and Polymarket both assign France 60–61%, meaningfully higher than the model's 49%. The gap of around 11 percentage points represents a material disagreement. The model and market converge on the draw (24–30%) and align that Morocco is the underdog, but diverge on France's baseline strength. The dashboard makes no claim about which assessment is correct."
 }

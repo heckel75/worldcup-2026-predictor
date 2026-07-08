@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Switzerland",
   "date": "2026-07-11",
-  "input_hash": "cf5b929a249b8cea1801d00b26c18ea701354592",
-  "generated_at": "2026-07-07T23:12:00+00:00",
+  "input_hash": "bb6a3c8f3367a5ba31aa84534e8dae4a384606f2",
+  "generated_at": "2026-07-08T06:35:20+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina at 69%, a substantial margin over Switzerland's 7% win probability. The statistical forecast sees a clear hierarchy, with Argentina's chances nearly ten times those of the underdog. Switzerland is not eliminated in the model's view but remains a long shot.\n\nThe draw emerges as the second-most likely outcome at 23%, suggesting the match has room for stalemate but that Argentina's superiority in the model's assessment shapes a lopsided win distribution. The gap between the favorite's win probability and the combined chances of draw-or-loss is pronounced, indicating a competitive asymmetry rather than a toss-up.\n\nThe model and sportsbook consensus diverge meaningfully. Books assign Argentina only 56% win probability—13 percentage points lower than the model—while crediting Switzerland with 18% rather than 7%. The market sees a more competitive contest; the model remains more confident in Argentina. The dashboard does not adjudicate which view is correct, only that they diverge."
+  "preview_text": "Argentina enters as a clear favourite with a 69% win probability according to the model, leaving Switzerland just 7% to claim victory. The gap between the two reflects a substantial disparity in the statistical forecast, though Switzerland is not without a path to the upset.\n\nThe draw sits at 23% in the model's view, suggesting a competitive match where a stalemate represents a meaningful outcome. The win probabilities are separated enough that Argentina holds a decisive edge, yet the presence of a sizeable draw probability indicates the match carries genuine uncertainty rather than a foregone conclusion.\n\nThe model and sportsbooks diverge notably on this fixture. The market assigns Argentina only 56% to win—13 percentage points lower than the model—while awarding Switzerland 18% versus the model's 7%. Books price the draw marginally higher at 27%. These gaps suggest material disagreement on the likely outcome; the dashboard makes no claim about which assessment is more accurate."
 }
