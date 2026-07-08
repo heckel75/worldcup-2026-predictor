@@ -1904,5 +1904,6 @@ if __name__ == "__main__":
         _test_next_ko_round()
         _test_ko_layout()
         divergence_log._test()   # round-naming + bucket + rolling-series tests
+        whats_changed._test()    # movers (stage switch) + top-divergences
     else:
         build_site()

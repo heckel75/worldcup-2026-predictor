@@ -561,6 +561,18 @@ h1 {
 /* current top-divergences panel (Session 37) reuses .fresh-div-* rows */
 .top-divs .fresh-div-list { margin-top: 0.2rem; }
 .td-fav { color: var(--muted); font-size: 0.82rem; font-style: italic; }
+/* ≥15pp flag: highlight the gap + a small gold pill (Session INDEX-KO) */
+.td-flagged .fresh-div-gap { color: var(--accent-gold); font-weight: 600; }
+.td-flag-badge {
+  display: inline-block;
+  padding: 0.02rem 0.4rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  border-radius: 999px;
+  vertical-align: middle;
+}
 
 /* --- results + today block (Session 37) ----------------------------- *
  * Two columns: most-recent results (with the who-was-closer verdict) and  *

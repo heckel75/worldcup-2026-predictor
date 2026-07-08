@@ -143,20 +143,27 @@
   {% endif %}
 </section>
 
-{# ---- Current top divergences (Session 37) ------------------------ #}
+{# ---- Remaining matches by divergence (Session 37 / INDEX-KO) ----- #}
 {% if top_divergences %}
 <section class="changes top-divs">
-  <p class="section-label">Biggest model–market gaps right now</p>
+  <p class="section-label">Remaining matches, by divergence</p>
   <ul class="fresh-div-list">
     {% for d in top_divergences %}
-    <li class="fresh-div-item">
+    <li class="fresh-div-item{% if d.flag_divergent %} td-flagged{% endif %}">
       <a href="{{ root }}{{ d.match_url }}">{{ d.home_display }} vs {{ d.away_display }}</a>
       <span class="fresh-div-gap">{{ d.magnitude_fmt }} gap</span>
       <span class="fresh-div-type">{{ d.div_type_label }}</span>
       <span class="td-fav">model favours {{ d.favorite }}</span>
+      {% if d.flag_divergent %}<span class="td-flag-badge">15pp+</span>{% endif %}
     </li>
     {% endfor %}
   </ul>
+  <p class="method-context">
+    Every remaining fixture, sorted by the model-vs-sportsbook gap; a
+    <span class="td-flag-badge">15pp+</span> row clears the divergence flag. The
+    full match-by-match archive and the biggest calls live on the
+    <a href="{{ root }}divergence-log.html">Divergence Log</a>.
+  </p>
 </section>
 {% endif %}
 

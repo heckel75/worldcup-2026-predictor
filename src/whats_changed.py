@@ -160,32 +160,32 @@ def compute_fresh_divergences(
 
 def compute_top_divergences(
     curr_div_df: Optional[pd.DataFrame],
-    top_n: int = 5,
+    top_n: Optional[int] = None,
 ) -> list[dict]:
-    """Top-N currently-flagged divergences among the remaining fixtures,
-    ranked by div_model_book_max descending.
+    """All remaining fixtures, ranked by the model-vs-best-market divergence
+    magnitude (div_model_book_max) descending — NOT filtered to flagged rows.
 
-    Unlike compute_fresh_divergences (newly-flagged vs yesterday), this is the
-    steady, always-populated signal: every flagged fixture is a candidate, not
-    just the new ones. Reuses flag_divergent — the established detector that
-    already offsets the ~4pp draw/away bias (§6) — rather than a fresh
-    magnitude cutoff, so the panel surfaces exactly the gaps the detector
-    already trusts, just sorted. Each row also carries the model's favoured
-    outcome ("home"/"draw"/"away") for the generator to resolve to a name.
+    Late in the tournament only a handful of fixtures remain and most days none
+    clear the ≥15pp flag, so a flagged-only panel starves (that was the Session
+    INDEX-KO bug). This surfaces every remaining fixture sorted by the same gap
+    metric triple_compare already computes; the caller renders the ≥15pp flag
+    purely as a highlight (flag_divergent is carried through per row, not used as
+    a gate). top_n=None shows all remaining; a cap is available for earlier
+    rounds. Each row carries the model's favoured outcome ("home"/"draw"/"away")
+    for the generator to resolve to a name.
 
-    Returns [] when the frame is None/empty, lacks the flag column, or nothing
-    is flagged (late tournament: header-only triple_compare once the group
-    stage's flagged fixtures have all been played)."""
+    Returns [] when the frame is None/empty or lacks the magnitude column
+    (header-only triple_compare once every fixture has been played)."""
     if curr_div_df is None or curr_div_df.empty:
         return []
-    if "flag_divergent" not in curr_div_df.columns:
+    if _COL_MAG not in curr_div_df.columns:
         return []
-    flagged = curr_div_df[curr_div_df["flag_divergent"] == True].copy()
-    if flagged.empty:
-        return []
-    flagged = flagged.sort_values(_COL_MAG, ascending=False)
+    ranked = curr_div_df.sort_values(_COL_MAG, ascending=False)
+    if top_n is not None:
+        ranked = ranked.head(top_n)
+    has_flag = "flag_divergent" in curr_div_df.columns
     out = []
-    for _, row in flagged.head(top_n).iterrows():
+    for _, row in ranked.iterrows():
         probs = (row["p_home_model_corr"],
                  row["p_draw_model_corr"],
                  row["p_away_model_corr"])
@@ -197,15 +197,16 @@ def compute_top_divergences(
             "divergence_type": row["divergence_type"],
             "magnitude":       float(row[_COL_MAG]),
             "fav_outcome":     fav,
+            "flag_divergent":  bool(row["flag_divergent"]) if has_flag else False,
         })
     return out
 
 
 # ---------------------------------------------------------------------------
-# Self-tests
+# Self-tests (callable so generate_site.py --test can run them as one gate)
 # ---------------------------------------------------------------------------
 
-if __name__ == "__main__":
+def _test() -> None:
     import tempfile
 
     # --- _two_newest --------------------------------------------------------
@@ -359,27 +360,42 @@ if __name__ == "__main__":
     assert compute_top_divergences(None) == [], "None → []"
     assert compute_top_divergences(pd.DataFrame()) == [], "empty df → []"
 
-    # sorted by magnitude desc; unflagged England (highest-strength row dropped)
-    td = compute_top_divergences(top_div, top_n=5)
-    assert len(td) == 3, f"expected 3 flagged, got {len(td)}"
-    assert [d["home_team"] for d in td] == ["Brazil", "Spain", "France"], \
+    # ALL remaining rows, sorted by magnitude desc — NOT filtered to flagged.
+    td = compute_top_divergences(top_div)
+    assert len(td) == 4, f"expected all 4 remaining, got {len(td)}"
+    assert [d["home_team"] for d in td] == ["Brazil", "Spain", "France", "England"], \
         f"wrong sort order: {[d['home_team'] for d in td]}"
     assert td[0]["magnitude"] == 0.25, "top magnitude should be Brazil's 0.25"
+
+    # flag_divergent carried through for the highlight (not a gate).
+    assert td[0]["flag_divergent"] is True, "Brazil flagged"
+    assert td[-1]["flag_divergent"] is False, "England unflagged (0.16 < 15pp)"
 
     # model favourite outcome resolved correctly
     assert td[1]["fav_outcome"] == "home", "Spain 0.70 home → fav home"
     assert td[2]["fav_outcome"] == "away", "France 0.40 away → fav away"
 
-    # N-capping
+    # N-capping still available for earlier rounds
     assert len(compute_top_divergences(top_div, top_n=2)) == 2, "top_n should cap"
 
-    # nothing flagged → []
+    # nothing flagged → still returns all rows (flag is a highlight, not a gate)
     none_flagged = top_div.copy()
     none_flagged["flag_divergent"] = False
-    assert compute_top_divergences(none_flagged) == [], "no flagged → []"
+    nf = compute_top_divergences(none_flagged)
+    assert len(nf) == 4, "flag is not a gate — all rows returned"
+    assert all(d["flag_divergent"] is False for d in nf), "all unflagged"
 
-    # missing flag column → [] (header-only / malformed frame)
-    assert compute_top_divergences(top_div.drop(columns=["flag_divergent"])) == [], \
-        "missing flag_divergent column should return []"
+    # missing flag column → rows still returned, flag defaults False
+    no_flag = compute_top_divergences(top_div.drop(columns=["flag_divergent"]))
+    assert len(no_flag) == 4 and all(d["flag_divergent"] is False for d in no_flag), \
+        "missing flag column: rows still returned, flag False"
 
-    print("All self-tests passed.")
+    # missing magnitude column → [] (can't rank)
+    assert compute_top_divergences(top_div.drop(columns=[_COL_MAG])) == [], \
+        "missing magnitude column should return []"
+
+    print("whats_changed.py self-tests passed")
+
+
+if __name__ == "__main__":
+    _test()
