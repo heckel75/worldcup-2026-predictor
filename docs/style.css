@@ -1133,6 +1133,39 @@ h1 {
 .divlog-table .tr-verdict--all_missed,
 .divlog-table .tr-verdict--none { color: var(--muted); }
 
+/* --- DIVLOG-2: gap-size buckets + rolling calibration chart -------- *
+ * Buckets reuse the .divlog-scoreboard table shell; the chart is a     *
+ * hand-built inline SVG (three cumulative-Brier lines) in the _cal_svg  *
+ * idiom. Line colours reuse existing tokens (accent / gold / clay) —    *
+ * no new colour tokens. Self-contained, safe to append.                */
+.divlog-buckets, .divlog-rolling { margin-bottom: 2rem; }
+
+.divlog-bucket-table .divlog-srcn {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+.divlog-thin { color: var(--muted); font-size: 0.72rem; font-weight: 400; }
+
+.divlog-rolling-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin: 0.2rem 0 0.7rem;
+  font-size: 0.82rem;
+}
+.divlog-legend-item { display: inline-flex; align-items: center; gap: 0.4rem; }
+.divlog-legend-swatch {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 2px;
+  display: inline-block;
+  flex: none;
+}
+.divlog-chart-wrap { overflow-x: auto; }
+.divlog-chart-wrap svg { max-width: 100%; height: auto; }
+
 /* --- knockout bracket page (Session 38b) --------------------------- *
  * Horizontal columns R32 → Final, each spread vertically so the funnel  *
  * reads like a bracket without drawn connector lines. Scrolls sideways   *

@@ -868,6 +868,96 @@ def _divlog_prob_fmt(p: float) -> str:
     return "—" if pd.isna(p) else f"{round(p * 100)}%"
 
 
+# Named-round display order for the stage filter (tournament progression, not
+# alphabetical). "Knockout" is the defensive coarse fallback; anything unknown
+# sorts last.
+_STAGE_ORDER = ["Group", "Round of 32", "Round of 16", "Quarter-final",
+                "Semi-final", "Third place", "Final", "Knockout"]
+
+# Rolling-chart per-source colours — existing tokens only (no new color tokens).
+_DIVLOG_SRC_COLOR = {"": "var(--accent)",       # Model  — pitch green
+                     "_book": "var(--accent-gold)",  # Sportsbook — gold
+                     "_poly": "var(--away)"}     # Polymarket — clay
+_DIVLOG_THIN_N = 10   # per-bucket "early, n=X" caveat threshold
+
+
+def _fmt_src_brier(sc: dict) -> dict:
+    """Format a _source_scores dict (brier + n) for a bucket cell."""
+    return {"brier": "—" if sc["brier"] is None else f"{sc['brier']:.3f}",
+            "n": sc["n"]}
+
+
+# Rolling-calibration chart geometry (hand-built inline SVG, _cal_svg idiom).
+_ROLL_W, _ROLL_H = 660, 300
+_ROLL_PAD_L, _ROLL_PAD_R, _ROLL_PAD_T, _ROLL_PAD_B = 48, 90, 16, 34
+# Omit the first few cumulative points: a running Brier over 1-4 results is
+# noise-dominated and stretches the axis, compressing the meaningful late
+# convergence. Lines are DRAWN from match 5 onward, but the plotted values stay
+# the true cumulative (the earlier matches are still counted, just not drawn).
+_ROLL_DRAWN_START = 4   # 0-based match index; draw from the 5th match onward
+
+
+def _divlog_rolling_svg(rolling: dict) -> dict | None:
+    """Convert the cumulative-Brier series to SVG pixel coords (three lines on a
+    shared match-progression x-axis; lower y = better calibration). Drawn from
+    match 5 onward (_ROLL_DRAWN_START); the y-axis is fit to the drawn band, not
+    floor-clamped. Returns None when there's too little to plot."""
+    if not rolling:
+        return None
+    drawn = {s["suffix"]: [p for p in s["points"] if p["i"] >= _ROLL_DRAWN_START]
+             for s in rolling["series"]}
+    pts_all = [p for pts in drawn.values() for p in pts]
+    if len(pts_all) < 2:
+        return None
+    idxs = [p["i"] for p in pts_all]
+    i_lo, i_hi = min(idxs), max(idxs)
+    if i_hi == i_lo:
+        return None
+    ys = [p["brier"] for p in pts_all]
+    lo_raw, hi_raw = min(ys), max(ys)
+    span = max(hi_raw - lo_raw, 0.02)
+    ylo, yhi = lo_raw - span * 0.12, hi_raw + span * 0.12   # fit the drawn band
+    plot_w = _ROLL_W - _ROLL_PAD_L - _ROLL_PAD_R
+    plot_h = _ROLL_H - _ROLL_PAD_T - _ROLL_PAD_B
+    base_y = _ROLL_PAD_T + plot_h
+
+    def sx(i: int) -> float:
+        return round(_ROLL_PAD_L + (i - i_lo) / (i_hi - i_lo) * plot_w, 1)
+
+    def sy(b: float) -> float:
+        return round(_ROLL_PAD_T + (yhi - b) / (yhi - ylo) * plot_h, 1)
+
+    series = []
+    for s in rolling["series"]:
+        pts = drawn[s["suffix"]]
+        if not pts:
+            continue
+        last = pts[-1]
+        series.append({
+            "name": s["name"],
+            "color": _DIVLOG_SRC_COLOR[s["suffix"]],
+            "points": " ".join(f"{sx(p['i'])},{sy(p['brier'])}" for p in pts),
+            "end_x": sx(last["i"]),
+            "end_y": sy(last["brier"]),
+            "end_label": f"{last['brier']:.3f}",
+        })
+
+    yticks = [{"y": sy(ylo + (yhi - ylo) * t / 2),
+               "label": f"{ylo + (yhi - ylo) * t / 2:.2f}"} for t in range(3)]
+
+    model_pts = drawn[""]   # Model prices every match -> spans the full drawn range
+    return {
+        "w": _ROLL_W, "h": _ROLL_H,
+        "pad_l": _ROLL_PAD_L, "pad_r": _ROLL_PAD_R,
+        "pad_t": _ROLL_PAD_T, "base_y": base_y,
+        "plot_h": plot_h,
+        "series": series,
+        "yticks": yticks,
+        "x0_label": _date_human(model_pts[0]["date"]) if model_pts else "",
+        "x1_label": _date_human(model_pts[-1]["date"]) if model_pts else "",
+    }
+
+
 def _build_divlog() -> tuple[dict, pd.DataFrame]:
     """Enrich divergence_log.build() output for the template + flat CSV.
 
@@ -914,8 +1004,10 @@ def _build_divlog() -> tuple[dict, pd.DataFrame]:
             "verdict": r["verdict_label"],
         })
 
-    # Distinct stage values present, for the filter dropdown.
-    stages = sorted({r["stage"] for r in rows})
+    # Distinct stage values present, ordered by tournament progression.
+    stages = sorted({r["stage"] for r in rows},
+                    key=lambda s: (_STAGE_ORDER.index(s)
+                                   if s in _STAGE_ORDER else len(_STAGE_ORDER)))
 
     scoreboard = out["scoreboard"]
     if scoreboard:
@@ -925,6 +1017,19 @@ def _build_divlog() -> tuple[dict, pd.DataFrame]:
             s["brier_fmt"] = "—" if s["brier"] is None else f"{s['brier']:.3f}"
             s["log_loss_fmt"] = "—" if s["log_loss"] is None else f"{s['log_loss']:.3f}"
 
+    # Gap-size buckets (Part B): the site's thesis made measurable.
+    buckets = []
+    for b in out["buckets"]:
+        buckets.append({
+            "label": b["label"],
+            "n": b["n"],
+            "model_wins": b["model_wins"],
+            "model": _fmt_src_brier(b["model"]),
+            "book": _fmt_src_brier(b["book"]),
+            "poly": _fmt_src_brier(b["poly"]),
+            "caveat": f"early, n={b['n']}" if 0 < b["n"] < _DIVLOG_THIN_N else "",
+        })
+
     context = {
         "rows": rows,
         "stages": stages,
@@ -932,6 +1037,8 @@ def _build_divlog() -> tuple[dict, pd.DataFrame]:
         "div_types": list(DIV_LABELS.items()),
         "scoreboard": scoreboard,
         "n_played": out["n_played"],
+        "buckets": buckets,
+        "rolling_svg": _divlog_rolling_svg(out["rolling"]),
     }
     csv_df = pd.DataFrame(csv_records)
     return context, csv_df
@@ -1687,5 +1794,6 @@ if __name__ == "__main__":
         _test_verdict()
         _test_next_ko_round()
         _test_ko_layout()
+        divergence_log._test()   # round-naming + bucket + rolling-series tests
     else:
         build_site()

@@ -14,7 +14,8 @@ Each row recomputes, on the frozen corrected-model + market triples:
   * gap  = div_model_book_max  (triple_compare's definition, §5)
   * divergence_type            (triple_compare.classify_divergence, replicated)
   * flag_divergent             (the full verified predicate, §5)
-  * stage                      (derived via bracket: same-group -> Group stage)
+  * stage                      (date-gated named round — Group / Round of 32 /
+                                … / Final — see derive_stage, DIVLOG-2)
   * the three sources' frozen prob ON THE ACTUAL OUTCOME
   * the _verdict (imported from verdict.py — single source of truth)
 
@@ -29,7 +30,7 @@ from pathlib import Path
 
 import pandas as pd
 
-import bracket
+import bracket_resolve
 import calibration
 from verdict import VERDICT_BUCKETS, _verdict
 
@@ -49,22 +50,69 @@ GAP_BUCKETS = [
 
 
 # ----------------------------------------------------------------------
-# Stage — derived via bracket's read-only group structure.
+# Stage — date-gated named rounds (DIVLOG-2).
 # ----------------------------------------------------------------------
-# bracket maps each team to a group letter but carries NO date or pair->round
-# map for the knockout stage (KO pairings are dynamic and resolved by results).
-# So "via bracket" cleanly distinguishes the group stage (an intra-group pair)
-# from everything else; specific KO rounds (R32/R16/...) are deferred to
-# DIVLOG-2/3 once KO fixtures (with dates) exist in the feed. Today every played
-# row is a group match, so this is exact; it degrades to a coarse "Knockout"
-# bucket rather than guessing a round from a hardcoded (possibly wrong) date.
-def derive_stage(home: str, away: str) -> tuple[str, str]:
-    """Return (stage_label, group_letter). group_letter is '' for KO."""
-    gh = bracket.TEAM_TO_GROUP.get(home)
-    ga = bracket.TEAM_TO_GROUP.get(away)
-    if gh and ga and gh == ga:
-        return "Group stage", gh
-    return "Knockout", ""
+# The group stage and the knockout stage occupy DISJOINT date windows (group
+# fixtures Jun 11-27, KO from Jun 28 — §6), so the match DATE, not the team-pair,
+# is the robust group-vs-KO discriminator: a same-group KO rematch (two teams who
+# shared a 2026 group meeting again in the bracket) would fool a pair-based test.
+# A group row's letter still comes from the team->group map; a KO row's round is
+# resolved by matching its unordered pair into the populated bracket and mapping
+# the match_id to a round name via the published id ranges. If a KO pair can't be
+# found in the bracket (shouldn't happen for a played row) we fall back to a
+# coarse "Knockout" rather than crash. Everything bracket-related is read through
+# bracket_resolve (allowed, read-only) — this module imports no model/sim code.
+_LAST_GROUP_DATE = "2026-06-27"   # last group-stage match day (ISO, inclusive)
+
+
+def _ko_round_name(match_id: int) -> str:
+    """Published FIFA 2026 match-id ranges -> round name (38-RECON)."""
+    if 73 <= match_id <= 88:
+        return "Round of 32"
+    if 89 <= match_id <= 96:
+        return "Round of 16"
+    if 97 <= match_id <= 100:
+        return "Quarter-final"
+    if 101 <= match_id <= 102:
+        return "Semi-final"
+    if match_id == 103:
+        return "Third place"
+    if match_id == 104:
+        return "Final"
+    return "Knockout"
+
+
+def build_ko_round_map() -> dict[frozenset, str]:
+    """Unordered team-pair -> KO round name, from the populated bracket.
+
+    Reads played results through bracket_resolve.resolve_bracket(); every
+    determined node (played or not) contributes its pairing, so a played ledger
+    KO row always resolves. Empty until the group stage completes (resolve_bracket
+    holds its placeholder pre-completion), which is correct — pre-KO there are no
+    KO rows to classify anyway."""
+    bk = bracket_resolve.resolve_bracket()
+    nodes = [m for rnd in bk.get("rounds", []) for m in rnd["matches"]]
+    tp = bk.get("third_place")
+    if tp:
+        nodes.append(tp)
+    out: dict[frozenset, str] = {}
+    for m in nodes:
+        a, b = m["team_a"], m["team_b"]
+        if a and b:
+            out[frozenset((a, b))] = _ko_round_name(m["match_id"])
+    return out
+
+
+def derive_stage(home: str, away: str, date: str,
+                 ko_round_map: dict[frozenset, str]) -> tuple[str, str]:
+    """Return (stage_label, group_letter). group_letter is '' for KO rounds.
+
+    Date-gated (see the block comment): a group-window date -> "Group" + the home
+    team's group letter; a later date -> the named KO round from ko_round_map, or
+    coarse "Knockout" if the pair can't be resolved."""
+    if str(date) <= _LAST_GROUP_DATE:
+        return "Group", (bracket_resolve.TEAM_TO_GROUP.get(home) or "")
+    return ko_round_map.get(frozenset((home, away)), "Knockout"), ""
 
 
 # ----------------------------------------------------------------------
@@ -143,24 +191,118 @@ def _source_scores(df: pd.DataFrame, suffix: str) -> dict:
 
 
 # ----------------------------------------------------------------------
+# Performance by divergence size (DIVLOG-2 Part B) — the site's thesis made
+# measurable: does a larger model-vs-market gap track better or worse
+# calibration? Partition played matches by the SAME gap metric the archive/flag
+# use (recompute_gap) into GAP_BUCKETS. A row with no book has a NaN gap and lands
+# in no bucket (a model-vs-book gap is undefined without a book) — consistent with
+# the archive, so the buckets pool exactly the priced matches the scoreboard scores.
+# ----------------------------------------------------------------------
+def gap_size_buckets(df: pd.DataFrame) -> list[dict]:
+    """One summary row per gap bucket (coarsest-gap questions first).
+
+    Per bucket: n (played matches whose gap falls in the bucket), model
+    distinct-verdict-win count (honouring the no-credit contract — only a "model"
+    verdict counts, exactly as the scoreboard tallies), and per-source Brier over
+    the bucket's matches (books/poly drop their NaN rows via _source_scores, so
+    each source reports its own n)."""
+    records = df.to_dict("records")
+    gaps = [recompute_gap(r) for r in records]
+    buckets: list[dict] = []
+    for key, label, lo, hi in GAP_BUCKETS:
+        idx = [i for i, g in enumerate(gaps) if pd.notna(g) and lo <= g < hi]
+        sub = df.iloc[idx]
+        model_wins = 0
+        for i in idx:
+            v = _verdict(records[i])
+            if v is not None and v["winner"] == "model":
+                model_wins += 1
+        buckets.append({
+            "key": key,
+            "label": label,
+            "n": len(idx),
+            "model_wins": model_wins,
+            "model": _source_scores(sub, ""),
+            "book": _source_scores(sub, "_book"),
+            "poly": _source_scores(sub, "_poly"),
+        })
+    return buckets
+
+
+# ----------------------------------------------------------------------
+# Rolling calibration by source (DIVLOG-2 Part C) — cumulative per-source Brier
+# over played matches in tournament order (date, then match_key for a stable
+# within-day order; the ledger carries no match_id). Cumulative (not windowed) is
+# cleaner at this n and needs no window choice. A market's running Brier only
+# advances on matches it priced (NaN-market rows skipped); the model advances on
+# every match. All three series share the match-progression x-index so the lines
+# are comparable in time. Reuses calibration.brier_multiclass — the SAME primitive
+# the scoreboard and buckets use, applied to the growing prefix each step.
+# ----------------------------------------------------------------------
+def rolling_calibration(df: pd.DataFrame) -> dict:
+    """Return {"n": total_played, "series": [{name, suffix, points:[...]}]}.
+
+    Each point is {"i", "date", "label", "brier", "n"} where i is the shared
+    match index in tournament order and brier is that source's cumulative Brier
+    up to and including match i (over the matches it has priced so far)."""
+    ordered = df.sort_values(["date", "match_key"]).reset_index(drop=True)
+    n = int(len(ordered))
+    series: list[dict] = []
+    for name, suffix in (("Model", ""), ("Sportsbook", "_book"),
+                         ("Polymarket", "_poly")):
+        cols = [f"p_home{suffix}", f"p_draw{suffix}", f"p_away{suffix}"]
+        scored: list[dict] = []   # canonical-schema rows accumulated in order
+        points: list[dict] = []
+        for i, rec in ordered.iterrows():
+            vals = [rec[c] for c in cols]
+            if any(pd.isna(v) for v in vals):
+                continue          # source didn't price this match
+            scored.append({
+                "p_home": float(vals[0]), "p_draw": float(vals[1]),
+                "p_away": float(vals[2]), "outcome": rec["outcome"],
+            })
+            brier = calibration.brier_multiclass(pd.DataFrame(scored))
+            points.append({
+                "i": int(i),
+                "date": rec["date"],
+                "label": f"{rec['home_team']} v {rec['away_team']}",
+                "brier": round(float(brier), 4),
+                "n": len(scored),
+            })
+        series.append({"name": name, "suffix": suffix, "points": points})
+    return {"n": n, "series": series}
+
+
+# ----------------------------------------------------------------------
 # Build
 # ----------------------------------------------------------------------
-def build(preds_path: str | Path) -> dict:
-    """Read the frozen ledger; return archive rows + attribution scoreboard.
+def _empty() -> dict:
+    return {"rows": [], "scoreboard": None, "n_played": 0,
+            "buckets": [], "rolling": None}
+
+
+def build(preds_path: str | Path, ko_round_map: dict | None = None) -> dict:
+    """Read the frozen ledger; return archive rows + attribution scoreboard +
+    gap-size buckets + rolling calibration series.
 
     Returns internal team names (generate_site applies DISPLAY_NAMES + links —
     keeps this module out of the site layer). Empty/absent ledger -> empty
-    structures, never raises."""
+    structures, never raises. ko_round_map is the unordered-pair -> round-name
+    map (build_ko_round_map() by default); injectable so the self-test stays
+    isolated from live matches_clean.csv."""
     path = Path(preds_path)
     if not path.exists():
-        return {"rows": [], "scoreboard": None, "n_played": 0}
+        return _empty()
 
     df = pd.read_csv(path)
     if "outcome" not in df.columns:
-        return {"rows": [], "scoreboard": None, "n_played": 0}
+        return _empty()
     df = df[df["outcome"].isin(["H", "D", "A"])].copy()
     if df.empty:
-        return {"rows": [], "scoreboard": None, "n_played": 0}
+        return _empty()
+
+    if ko_round_map is None:
+        ko_round_map = build_ko_round_map()
 
     rows: list[dict] = []
     counts = {b: 0 for b in VERDICT_BUCKETS}
@@ -168,7 +310,7 @@ def build(preds_path: str | Path) -> dict:
 
     for rec in df.to_dict("records"):
         home, away = rec["home_team"], rec["away_team"]
-        stage, group = derive_stage(home, away)
+        stage, group = derive_stage(home, away, rec["date"], ko_round_map)
         gap = recompute_gap(rec)
         v = _verdict(rec)
         if v is not None:
@@ -220,7 +362,13 @@ def build(preds_path: str | Path) -> dict:
         ],
     } if n_verdicts else None
 
-    return {"rows": rows, "scoreboard": scoreboard, "n_played": int(len(df))}
+    return {
+        "rows": rows,
+        "scoreboard": scoreboard,
+        "n_played": int(len(df)),
+        "buckets": gap_size_buckets(df),
+        "rolling": rolling_calibration(df),
+    }
 
 
 # ----------------------------------------------------------------------
@@ -230,11 +378,22 @@ def _test() -> None:
     import tempfile
     import verdict
 
-    # Stage derivation: intra-group vs cross-group.
-    assert derive_stage("Mexico", "South Africa") == ("Group stage", "A"), \
-        derive_stage("Mexico", "South Africa")
-    assert derive_stage("Mexico", "Brazil")[0] == "Knockout", \
-        derive_stage("Mexico", "Brazil")
+    # Stage: date-gated named rounds (DIVLOG-2). A group-window date -> "Group" +
+    # the home team's group letter; a KO-window date -> the round from the
+    # pair-map; an unknown KO pair -> coarse "Knockout" (never crash).
+    gmap = {frozenset(("France", "Morocco")): "Round of 16"}
+    assert derive_stage("Mexico", "South Africa", "2026-06-11", gmap) == ("Group", "A"), \
+        derive_stage("Mexico", "South Africa", "2026-06-11", gmap)
+    assert derive_stage("France", "Morocco", "2026-07-04", gmap) == ("Round of 16", ""), \
+        derive_stage("France", "Morocco", "2026-07-04", gmap)
+    assert derive_stage("France", "Morocco", "2026-07-04", {}) == ("Knockout", "")
+    # match-id ranges -> round names (38-RECON id map).
+    assert _ko_round_name(73) == "Round of 32" and _ko_round_name(88) == "Round of 32"
+    assert _ko_round_name(89) == "Round of 16" and _ko_round_name(96) == "Round of 16"
+    assert _ko_round_name(97) == "Quarter-final" and _ko_round_name(100) == "Quarter-final"
+    assert _ko_round_name(101) == "Semi-final" and _ko_round_name(102) == "Semi-final"
+    assert _ko_round_name(103) == "Third place"
+    assert _ko_round_name(104) == "Final"
 
     # gap / divergence_type / flag replicate triple_compare on frozen probs.
     row = {"p_home": 0.60, "p_draw": 0.25, "p_away": 0.15,
@@ -262,8 +421,9 @@ def _test() -> None:
     assert gap_bucket(0.15) == "ge15"
     assert gap_bucket(float("nan")) is None
 
-    # End-to-end build on a tiny synthetic ledger: one model-distinct win, one
-    # all-missed upset, one no-market row (verdict None -> not counted).
+    # End-to-end build on a tiny synthetic ledger: one model-distinct win (ge15
+    # gap), one all-missed upset (5to15 gap), one no-market row (verdict None,
+    # NaN gap, no bucket), one KO-date row (lt5 gap) exercising the round-map.
     cols = ["match_key", "date", "home_team", "away_team",
             "p_home", "p_draw", "p_away",
             "p_home_book", "p_draw_book", "p_away_book",
@@ -271,38 +431,77 @@ def _test() -> None:
             "outcome", "actual_home_score", "actual_away_score"]
     nan = float("nan")
     data = [
-        # model clearly closest on a home win
+        # model clearly closest on a home win — gap 0.15 -> ge15 bucket
         ["d1", "2026-06-11", "Mexico", "South Africa",
          0.55, 0.25, 0.20, 0.40, 0.35, 0.25, 0.41, 0.34, 0.25, "H", 2, 0],
-        # everyone favoured away/draw, home won -> all_missed
+        # everyone favoured away/draw, home won -> all_missed — gap 0.05 -> 5to15
         ["d2", "2026-06-12", "South Korea", "Czech Republic",
          0.20, 0.30, 0.50, 0.25, 0.30, 0.45, 0.25, 0.30, 0.45, "H", 1, 0],
-        # no market frozen -> verdict None, gap NaN
+        # no market frozen -> verdict None, gap NaN, no bucket
         ["d3", "2026-06-13", "Brazil", "Morocco",
          0.70, 0.20, 0.10, nan, nan, nan, nan, nan, nan, "H", 3, 0],
+        # KO-date row -> round from the injected map — gap 0.02 -> lt5 bucket
+        ["d4", "2026-07-04", "Argentina", "Brazil",
+         0.50, 0.25, 0.25, 0.48, 0.27, 0.25, 0.49, 0.26, 0.25, "H", 1, 0],
     ]
     with tempfile.NamedTemporaryFile("w", suffix=".csv", delete=False,
                                      newline="", encoding="utf-8") as f:
         pd.DataFrame(data, columns=cols).to_csv(f, index=False)
         tmp = f.name
-    out = build(tmp)
+    # Inject the round-map so the test never touches live matches_clean.csv.
+    ko = {frozenset(("Argentina", "Brazil")): "Final"}
+    out = build(tmp, ko_round_map=ko)
     Path(tmp).unlink()
 
-    assert out["n_played"] == 3, out["n_played"]
-    assert out["scoreboard"]["n_verdicts"] == 2, out["scoreboard"]["n_verdicts"]
+    assert out["n_played"] == 4, out["n_played"]
+    assert out["scoreboard"]["n_verdicts"] == 3, out["scoreboard"]["n_verdicts"]
     assert out["scoreboard"]["counts"]["model"] == 1
     assert out["scoreboard"]["counts"]["all_missed"] == 1
     # rows newest-first
-    assert [r["match_key"] for r in out["rows"]] == ["d3", "d2", "d1"]
+    assert [r["match_key"] for r in out["rows"]] == ["d4", "d3", "d2", "d1"]
+    d4 = next(r for r in out["rows"] if r["match_key"] == "d4")
+    assert d4["stage"] == "Final" and d4["group"] == "", d4["stage"]
+    d1 = next(r for r in out["rows"] if r["match_key"] == "d1")
+    assert d1["stage"] == "Group" and d1["group"] == "A", d1["stage"]
     d3 = next(r for r in out["rows"] if r["match_key"] == "d3")
     assert pd.isna(d3["gap"]) and d3["gap_bucket"] is None
     assert d3["verdict_winner"] is None
-    d1 = next(r for r in out["rows"] if r["match_key"] == "d1")
     assert d1["model_won"] is True and d1["verdict_winner"] == "model"
-    # model scored on all 3; markets on the 2 with frozen probs
+    # model scored on all 4; markets on the 3 with frozen probs
     model_src = out["scoreboard"]["sources"][0]
     poly_src = out["scoreboard"]["sources"][2]
-    assert model_src["n"] == 3 and poly_src["n"] == 2
+    assert model_src["n"] == 4 and poly_src["n"] == 3
+
+    # ---- Gap-size buckets (Part B) ----
+    buckets = out["buckets"]
+    assert [b["key"] for b in buckets] == ["lt5", "5to15", "ge15"], buckets
+    by_key = {b["key"]: b for b in buckets}
+    assert by_key["lt5"]["n"] == 1 and by_key["5to15"]["n"] == 1 and by_key["ge15"]["n"] == 1
+    # the 3 book-carrying matches are partitioned across the buckets (d3 dropped)
+    assert sum(b["n"] for b in buckets) == 3
+    assert by_key["ge15"]["model_wins"] == 1        # d1's distinct model win
+    # Reconciliation: book Brier pooled over buckets == scoreboard book Brier
+    # (both over exactly the 3 book-carrying rows). Model/poly differ from the
+    # scoreboard only because d3 has no book, so it's in the scoreboard's model
+    # scoring set but in no bucket — the legitimate book-less case.
+    book_sb = out["scoreboard"]["sources"][1]["brier"]
+    num = sum(b["book"]["brier"] * b["book"]["n"] for b in buckets if b["book"]["n"])
+    den = sum(b["book"]["n"] for b in buckets)
+    assert abs(num / den - book_sb) < 1e-9, (num / den, book_sb)
+
+    # ---- Rolling calibration (Part C) ----
+    roll = out["rolling"]
+    assert roll["n"] == 4, roll["n"]
+    rs = {s["name"]: s for s in roll["series"]}
+    assert len(rs["Model"]["points"]) == 4          # priced every match
+    assert len(rs["Sportsbook"]["points"]) == 3     # d3 unpriced
+    assert len(rs["Polymarket"]["points"]) == 3
+    # points ordered by the shared match index; model covers 0..3
+    assert [p["i"] for p in rs["Model"]["points"]] == [0, 1, 2, 3]
+    assert [p["i"] for p in rs["Sportsbook"]["points"]] == [0, 1, 3]  # skips d3 at i=2
+    # the final cumulative point == the scoreboard's overall Brier for that source
+    assert abs(rs["Model"]["points"][-1]["brier"] - model_src["brier"]) < 1e-3
+    assert abs(rs["Sportsbook"]["points"][-1]["brier"] - book_sb) < 1e-3
 
     # Also exercise the shared verdict logic from here.
     verdict._test_verdict()

@@ -61,6 +61,106 @@
 </section>
 {% endif %}
 
+{# ---- Performance by divergence size (DIVLOG-2) -------------------- #}
+{% if buckets %}
+<section class="changes divlog-buckets">
+  <p class="section-label">Performance by divergence size</p>
+  <p class="scoreboard-note">
+    The site's central question, made measurable: when the model and the market
+    disagree most, who is right? Each row groups completed matches by the size of
+    the model-vs-sportsbook gap on the outcome that actually happened. Brier and
+    log loss score every source that posted a price; <strong>lower is better</strong>.
+  </p>
+  <table class="divlog-scoreboard divlog-bucket-table">
+    <thead>
+      <tr>
+        <th class="col-src-name">Model–market gap</th>
+        <th>Matches</th>
+        <th>Model verdict wins</th>
+        <th>Model Brier</th>
+        <th>Sportsbook Brier</th>
+        <th>Polymarket Brier</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for b in buckets %}
+      <tr>
+        <td class="col-src-name">{{ b.label }}{% if b.caveat %}
+          <span class="divlog-thin">({{ b.caveat }})</span>{% endif %}</td>
+        <td>{{ b.n }}</td>
+        <td>{{ b.model_wins }}</td>
+        <td>{{ b.model.brier }} <span class="divlog-srcn">n={{ b.model.n }}</span></td>
+        <td>{{ b.book.brier }} <span class="divlog-srcn">n={{ b.book.n }}</span></td>
+        <td>{{ b.poly.brier }} <span class="divlog-srcn">n={{ b.poly.n }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="scoreboard-note">
+    "Verdict wins" counts only matches where the model put a clearly higher
+    probability (&gt; 2pp) on the actual outcome than every other source. The
+    largest-gap bucket is where the model most backs itself against the market —
+    the honest test of whether those disagreements pay off.
+  </p>
+</section>
+{% endif %}
+
+{# ---- Rolling calibration by source (DIVLOG-2) -------------------- #}
+{% if rolling_svg %}
+<section class="changes divlog-rolling">
+  <p class="section-label">Rolling calibration by source</p>
+  <p class="scoreboard-note">
+    Cumulative Brier score per source, from match 5 onward — the first four are
+    omitted because a running average over 1–4 results is noise-dominated. Each
+    market's line advances only on matches it priced. <strong>Lower is better</strong>
+    — a line drifting up over time means calibration is getting worse.
+  </p>
+  <div class="divlog-rolling-legend">
+    {% for s in rolling_svg.series %}
+    <span class="divlog-legend-item">
+      <span class="divlog-legend-swatch" style="background: {{ s.color }};"></span>{{ s.name }}
+    </span>
+    {% endfor %}
+  </div>
+  <div class="divlog-chart-wrap">
+    <svg width="{{ rolling_svg.w }}" height="{{ rolling_svg.h }}"
+         viewBox="0 0 {{ rolling_svg.w }} {{ rolling_svg.h }}"
+         aria-label="Cumulative Brier score by source over the tournament (lower is better)">
+      {# axes #}
+      <line x1="{{ rolling_svg.pad_l }}" y1="{{ rolling_svg.pad_t }}"
+            x2="{{ rolling_svg.pad_l }}" y2="{{ rolling_svg.base_y }}"
+            stroke="var(--border)" stroke-width="1"/>
+      <line x1="{{ rolling_svg.pad_l }}" y1="{{ rolling_svg.base_y }}"
+            x2="{{ rolling_svg.w - rolling_svg.pad_r }}" y2="{{ rolling_svg.base_y }}"
+            stroke="var(--border)" stroke-width="1"/>
+      {# y ticks + labels #}
+      {% for t in rolling_svg.yticks %}
+      <line x1="{{ rolling_svg.pad_l - 4 }}" y1="{{ t.y }}"
+            x2="{{ rolling_svg.pad_l }}" y2="{{ t.y }}" stroke="var(--border)"/>
+      <text x="{{ rolling_svg.pad_l - 7 }}" y="{{ t.y }}" text-anchor="end"
+            dominant-baseline="middle" font-size="10" fill="var(--muted)">{{ t.label }}</text>
+      {% endfor %}
+      {# y caption #}
+      <text x="12" y="{{ rolling_svg.pad_t + rolling_svg.plot_h // 2 }}"
+            text-anchor="middle" font-size="9" fill="var(--muted)"
+            transform="rotate(-90, 12, {{ rolling_svg.pad_t + rolling_svg.plot_h // 2 }})">Cumulative Brier</text>
+      {# x end labels (first / last match date) #}
+      <text x="{{ rolling_svg.pad_l }}" y="{{ rolling_svg.base_y + 16 }}"
+            text-anchor="start" font-size="10" fill="var(--muted)">{{ rolling_svg.x0_label }}</text>
+      <text x="{{ rolling_svg.w - rolling_svg.pad_r }}" y="{{ rolling_svg.base_y + 16 }}"
+            text-anchor="end" font-size="10" fill="var(--muted)">{{ rolling_svg.x1_label }}</text>
+      {# one polyline + end label per source #}
+      {% for s in rolling_svg.series %}
+      <polyline points="{{ s.points }}" fill="none" stroke="{{ s.color }}"
+                stroke-width="2" opacity="0.9"/>
+      <text x="{{ s.end_x + 6 }}" y="{{ s.end_y }}" dominant-baseline="middle"
+            font-size="10" font-weight="600" fill="{{ s.color }}">{{ s.end_label }}</text>
+      {% endfor %}
+    </svg>
+  </div>
+</section>
+{% endif %}
+
 {# ---- Archive table ------------------------------------------------- #}
 <section class="divlog">
   <p class="section-label">Match archive</p>
