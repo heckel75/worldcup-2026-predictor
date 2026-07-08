@@ -366,6 +366,11 @@ def _load_title_odds(snapshot: Path) -> list[dict]:
     """Top-N contenders by model p_champion, each with the three source
     probabilities (model / sportsbook / Polymarket) and a model−book gap."""
     model = pd.read_csv(snapshot)[["team", "p_champion"]]
+    # Alive-only: a team with 0 championship probability is out of the tournament,
+    # so it doesn't belong on a title-odds page. One rule for every stage — pre-KO
+    # this is the top-16 of the >0 set; deep in the knockouts it's the handful of
+    # teams still able to win (8 today).
+    model = model[model["p_champion"] > _ALIVE_TOL]
     sb = _load_outright(SB_OUTRIGHTS_PATH)
     pm = _load_outright(PM_OUTRIGHTS_PATH)
 
