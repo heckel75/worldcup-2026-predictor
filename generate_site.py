@@ -1443,6 +1443,19 @@ def build_site() -> None:
     n_verdicts = sum(verdict_counts.values())
     scoreboard = {"n": n_verdicts, **verdict_counts} if n_verdicts else None
 
+    # Aggregate calibration (Brier) for the who's-been-closer card — SINGLE
+    # source of truth: the Divergence Log scoreboard. divergence_log.build is a
+    # pure read of the frozen ledger, so these byte-match the divergence-log
+    # page. Sorted best (lowest Brier) first; None when the ledger has no rows.
+    brier_sources = None
+    if WC_PREDS_PATH.exists():
+        _dl_scoreboard = divergence_log.build(WC_PREDS_PATH)["scoreboard"]
+        if _dl_scoreboard:
+            _srcs = [s for s in _dl_scoreboard["sources"] if s["brier"] is not None]
+            _srcs.sort(key=lambda s: s["brier"])
+            brier_sources = [{"name": s["name"], "brier": f"{s['brier']:.3f}"}
+                             for s in _srcs]
+
     today_iso = clock.today().isoformat()
     today_fixtures = [m for m in unplayed_matches if m["date_iso"] <= today_iso]
     upcoming_days = _by_date([m for m in unplayed_matches if m["date_iso"] > today_iso])
@@ -1538,6 +1551,7 @@ def build_site() -> None:
         fresh_divergences=fresh_divs,
         top_divergences=top_divergences,
         scoreboard=scoreboard,
+        brier_sources=brier_sources,
         results_block=results_block,
         today_block=today_block,
         next_round=next_round,

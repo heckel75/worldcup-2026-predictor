@@ -934,6 +934,15 @@ h1 {
   margin: 0;
 }
 
+/* aggregate-Brier line under the verdict counts (Session INDEX-KO) */
+.scoreboard-brier {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+.scoreboard-brier a { color: var(--accent); }
+
 .schedule-section { margin-top: 2rem; }
 
 /* --- title-odds page (Session TITLE-ODDS) --------------------------- *

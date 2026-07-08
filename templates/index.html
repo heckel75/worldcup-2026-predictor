@@ -76,6 +76,13 @@
     Polymarket {{ scoreboard.Polymarket }} · markets agreed {{ scoreboard.markets }} ·
     sources agreed {{ scoreboard.wash }} · all missed {{ scoreboard.all_missed }}
   </p>
+  {% if brier_sources %}
+  <p class="scoreboard-brier">
+    <a href="{{ root }}divergence-log.html">Aggregate calibration</a>
+    (Brier, lower is better):
+    {% for s in brier_sources %}{{ s.name }} {{ s.brier }}{% if not loop.last %} · {% endif %}{% endfor %}
+  </p>
+  {% endif %}
   <p class="scoreboard-note">
     Per match, the source whose frozen pre-match probability on the actual
     result was highest. "Markets agreed" when the two markets jointly beat the
