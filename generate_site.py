@@ -212,12 +212,55 @@ def _latest_snapshot() -> Path:
     return snaps[-1]
 
 
-def _load_teams(snapshot: Path) -> list[dict]:
-    """Load a snapshot into ranked, render-ready per-team dicts.
+# ----------------------------------------------------------------------
+# Survival-grid alive/eliminated split (Session INDEX-KO). Once the knockout
+# stage arrives the grid is dominated by teams already out, so we split it: teams
+# still able to win (champion prob > 0) stay full-size at the top; eliminated
+# teams collapse into a <details>, grouped by the round they went out in. The
+# exit round is read from the newest snapshot's realized reached-round probs
+# (pinned results make them exact 1.0/0.0, but we compare with a tolerance,
+# never float equality).
+# ----------------------------------------------------------------------
+_ALIVE_TOL = 1e-9        # champion prob above this => still alive
+_REALIZED  = 0.999       # a realized (pinned) reached-round 1.0, noise-tolerant
 
-    Each dict carries the display name, group letter, the five survival
-    cells (text + green-tier class), and the champion cell (text + gold-tier
-    class). The template just iterates — no formatting or bucketing in Jinja.
+# Reached-round columns, shallow -> deep. The deepest one that reads as realized
+# (>= _REALIZED) is the round a team last reached, i.e. where it went out.
+_REACH_COLS = ["p_advance", "p_r16", "p_qf", "p_sf", "p_final"]
+
+# Exit buckets, DEEPEST first (render order inside the eliminated <details>).
+# Keys are the reached-round column ("group" = never advanced); labels are shown.
+_EXIT_ORDER: list[tuple[str, str]] = [
+    ("p_final",   "Out in the final"),
+    ("p_sf",      "Out in the semi-finals"),
+    ("p_qf",      "Out in the quarter-finals"),
+    ("p_r16",     "Out in the Round of 16"),
+    ("p_advance", "Out in the Round of 32"),
+    ("group",     "Out in the group stage"),
+]
+
+
+def _grid_bucket(rec: dict) -> str:
+    """Return 'alive' (champion prob > 0) or the exit-round bucket key: the
+    deepest realized reached-round column, or 'group' if the team never advanced.
+    Pure — a snapshot record in, a bucket key out."""
+    if rec["p_champion"] > _ALIVE_TOL:
+        return "alive"
+    deepest = "group"
+    for col in _REACH_COLS:
+        if rec[col] >= _REALIZED:
+            deepest = col
+    return deepest
+
+
+def _load_teams(snapshot: Path) -> dict:
+    """Load a snapshot into the render-ready survival grid, split into teams
+    still alive (full-size, ranked) and eliminated teams grouped by exit round.
+
+    Returns {"alive": [team dict], "eliminated": [{label, teams}],
+    "eliminated_count": int}. Each team dict carries the display name, group
+    letter, the five survival cells (text + green-tier class), and the champion
+    cell (text + gold-tier class). The template just iterates.
     """
     df = pd.read_csv(snapshot)
 
@@ -240,15 +283,14 @@ def _load_teams(snapshot: Path) -> list[dict]:
 
     records = sorted(df.to_dict("records"), key=_sort_key)
 
-    teams: list[dict] = []
-    for rec in records:
+    def _render(rec: dict) -> dict:
         name = rec["team"]
         survival = [
             {"text": _fmt(rec[col]), "tier": f"t-surv-{_tier(rec[col], _SURV_CUTS)}"}
             for col, _label in SURVIVAL_COLS
         ]
         champ_p = rec["p_champion"]
-        teams.append({
+        return {
             "name":  disp(name),
             "group": TEAM_GROUP.get(name, "?"),
             "survival": survival,
@@ -256,8 +298,26 @@ def _load_teams(snapshot: Path) -> list[dict]:
                 "text": _fmt(champ_p),
                 "tier": f"t-champ-{_tier(champ_p, _CHAMP_CUTS)}",
             },
-        })
-    return teams
+        }
+
+    alive: list[dict] = []
+    by_bucket: dict[str, list[dict]] = {}
+    for rec in records:                       # already in cascade order
+        bucket = _grid_bucket(rec)
+        if bucket == "alive":
+            alive.append(_render(rec))
+        else:
+            by_bucket.setdefault(bucket, []).append(_render(rec))
+
+    eliminated = [
+        {"label": label, "teams": by_bucket[key]}
+        for key, label in _EXIT_ORDER if by_bucket.get(key)
+    ]
+    return {
+        "alive": alive,
+        "eliminated": eliminated,
+        "eliminated_count": sum(len(g["teams"]) for g in eliminated),
+    }
 
 
 # ----------------------------------------------------------------------
@@ -1659,7 +1719,8 @@ def build_site() -> None:
     )
 
     print(f"Built site -> {OUTPUT_DIR}/")
-    print(f"   snapshot : {snapshot.name} ({len(teams)} teams)")
+    print(f"   snapshot : {snapshot.name} "
+          f"({len(teams['alive'])} alive + {teams['eliminated_count']} eliminated)")
     print(f"   pages    : index.html + bracket.html + title-odds.html + schedule.html + divergence-log.html + calibration.html + methodology.html + {len(matches)} match pages")
     print(f"   bracket  : {'populated' if show_bracket else 'placeholder (group stage in progress)'}")
 
@@ -1669,6 +1730,31 @@ def build_site() -> None:
 # invocation a pure build. _verdict() is the one piece of non-trivial logic
 # in this consumer worth pinning.
 # ----------------------------------------------------------------------
+
+def _test_grid_bucket() -> None:
+    """Survival-grid exit-round classification (Session INDEX-KO)."""
+    def rec(champ, adv, r16, qf, sf=0.0, final=0.0):
+        return {"p_champion": champ, "p_advance": adv, "p_r16": r16,
+                "p_qf": qf, "p_sf": sf, "p_final": final}
+
+    assert _grid_bucket(rec(0.30, 1, 1, 1)) == "alive"          # champion > 0
+    assert _grid_bucket(rec(0.0, 1, 1, 0)) == "p_r16"           # reached R16, not QF
+    assert _grid_bucket(rec(0.0, 1, 0, 0)) == "p_advance"       # reached R32, not R16
+    assert _grid_bucket(rec(0.0, 0, 0, 0)) == "group"           # never advanced
+    # robustness as the tournament deepens (no such rows today, but must classify):
+    assert _grid_bucket(rec(0.0, 1, 1, 1, 0, 0)) == "p_qf"      # reached QF, out
+    assert _grid_bucket(rec(0.0, 1, 1, 1, 1, 0)) == "p_sf"      # reached SF, out
+    assert _grid_bucket(rec(0.0, 1, 1, 1, 1, 1)) == "p_final"   # runner-up
+
+    # live-shape counts: 8 alive / 8 R16 / 16 R32 / 16 group.
+    from collections import Counter
+    rows = ([rec(0.3, 1, 1, 1)] * 8 + [rec(0, 1, 1, 0)] * 8
+            + [rec(0, 1, 0, 0)] * 16 + [rec(0, 0, 0, 0)] * 16)
+    c = Counter(_grid_bucket(r) for r in rows)
+    assert c["alive"] == 8 and c["p_r16"] == 8, c
+    assert c["p_advance"] == 16 and c["group"] == 16, c
+    print("generate_site.py _grid_bucket self-tests passed")
+
 
 def _test_verdict() -> None:
     nan = float("nan")
@@ -1810,6 +1896,7 @@ def _test_ko_layout() -> None:
 
 if __name__ == "__main__":
     if "--test" in sys.argv:
+        _test_grid_bucket()
         _test_verdict()
         _test_next_ko_round()
         _test_ko_layout()

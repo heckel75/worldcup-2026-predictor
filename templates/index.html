@@ -181,7 +181,7 @@
         </tr>
       </thead>
       <tbody>
-        {% for t in teams %}
+        {% for t in teams.alive %}
         <tr>
           <td class="col-rank">{{ loop.index }}</td>
           <td class="col-team">
@@ -197,5 +197,45 @@
       </tbody>
     </table>
   </div>
+
+  {% if teams.eliminated_count %}
+  <details class="grid-eliminated">
+    <summary>Eliminated ({{ teams.eliminated_count }})</summary>
+    <div class="tree-wrap">
+      <table class="tree">
+        <thead>
+          <tr>
+            <th class="col-rank">#</th>
+            <th class="col-team">Team</th>
+            {% for label in survival_labels %}
+            <th>{{ label }}</th>
+            {% endfor %}
+            <th class="col-champ">Champion</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for grp in teams.eliminated %}
+          <tr class="grid-elim-group">
+            <td colspan="{{ survival_labels|length + 3 }}">{{ grp.label }}</td>
+          </tr>
+          {% for t in grp.teams %}
+          <tr>
+            <td class="col-rank">{{ loop.index }}</td>
+            <td class="col-team">
+              <span class="team-name">{{ t.name }}</span>
+              <span class="group-badge">{{ t.group }}</span>
+            </td>
+            {% for c in t.survival %}
+            <td class="prob {{ c.tier }}">{{ c.text }}</td>
+            {% endfor %}
+            <td class="prob col-champ {{ t.champ.tier }}">{{ t.champ.text }}</td>
+          </tr>
+          {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </details>
+  {% endif %}
 </section>
 {% endblock %}

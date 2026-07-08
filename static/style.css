@@ -198,6 +198,26 @@ h1 {
   vertical-align: middle;
 }
 
+/* eliminated teams — collapsed below the alive grid (Session INDEX-KO) */
+.grid-eliminated { margin-top: 1rem; }
+.grid-eliminated > summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.4rem 0;
+}
+.grid-eliminated .team-name { color: var(--muted); }
+.grid-elim-group td {
+  text-align: left;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  padding-top: 0.9rem;
+  background: transparent;
+}
+
 /* probability cells — mono figures so digits line up across rows */
 .prob {
   font-family: var(--font-mono);
