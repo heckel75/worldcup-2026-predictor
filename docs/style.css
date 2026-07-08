@@ -198,6 +198,26 @@ h1 {
   vertical-align: middle;
 }
 
+/* eliminated teams — collapsed below the alive grid (Session INDEX-KO) */
+.grid-eliminated { margin-top: 1rem; }
+.grid-eliminated > summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.4rem 0;
+}
+.grid-eliminated .team-name { color: var(--muted); }
+.grid-elim-group td {
+  text-align: left;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  padding-top: 0.9rem;
+  background: transparent;
+}
+
 /* probability cells — mono figures so digits line up across rows */
 .prob {
   font-family: var(--font-mono);
@@ -541,6 +561,18 @@ h1 {
 /* current top-divergences panel (Session 37) reuses .fresh-div-* rows */
 .top-divs .fresh-div-list { margin-top: 0.2rem; }
 .td-fav { color: var(--muted); font-size: 0.82rem; font-style: italic; }
+/* ≥15pp flag: highlight the gap + a small gold pill (Session INDEX-KO) */
+.td-flagged .fresh-div-gap { color: var(--accent-gold); font-weight: 600; }
+.td-flag-badge {
+  display: inline-block;
+  padding: 0.02rem 0.4rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  border-radius: 999px;
+  vertical-align: middle;
+}
 
 /* --- results + today block (Session 37) ----------------------------- *
  * Two columns: most-recent results (with the who-was-closer verdict) and  *
@@ -901,6 +933,15 @@ h1 {
   font-size: 0.8rem;
   margin: 0;
 }
+
+/* aggregate-Brier line under the verdict counts (Session INDEX-KO) */
+.scoreboard-brier {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+.scoreboard-brier a { color: var(--accent); }
 
 .schedule-section { margin-top: 2rem; }
 

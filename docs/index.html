@@ -112,6 +112,13 @@
     Polymarket 5 · markets agreed 6 ·
     sources agreed 31 · all missed 31
   </p>
+  
+  <p class="scoreboard-brier">
+    <a href="divergence-log.html">Aggregate calibration</a>
+    (Brier, lower is better):
+    Polymarket 0.484 · Sportsbook 0.485 · Model 0.520
+  </p>
+  
   <p class="scoreboard-note">
     Per match, the source whose frozen pre-match probability on the actual
     result was highest. "Markets agreed" when the two markets jointly beat the
@@ -166,9 +173,41 @@
         
       </div>
       <div>
-        <p class="changes-block-title">Advance from group</p>
+        <p class="changes-block-title">Reach the final</p>
         
-        <p class="changes-empty">No moves above threshold today.</p>
+        <table class="movers-table">
+          
+          <tr>
+            <td class="mover-name">Colombia</td>
+            <td class="mover-arrow mover-down">↓</td>
+            <td class="mover-delta mover-down">-13.0pp</td>
+          </tr>
+          
+          <tr>
+            <td class="mover-name">Argentina</td>
+            <td class="mover-arrow mover-up">↑</td>
+            <td class="mover-delta mover-up">+11.1pp</td>
+          </tr>
+          
+          <tr>
+            <td class="mover-name">Switzerland</td>
+            <td class="mover-arrow mover-up">↑</td>
+            <td class="mover-delta mover-up">+4.4pp</td>
+          </tr>
+          
+          <tr>
+            <td class="mover-name">England</td>
+            <td class="mover-arrow mover-down">↓</td>
+            <td class="mover-delta mover-down">-2.1pp</td>
+          </tr>
+          
+          <tr>
+            <td class="mover-name">Egypt</td>
+            <td class="mover-arrow mover-down">↓</td>
+            <td class="mover-delta mover-down">-0.6pp</td>
+          </tr>
+          
+        </table>
         
       </div>
     </div>
@@ -192,17 +231,48 @@
 
 
 <section class="changes top-divs">
-  <p class="section-label">Biggest model–market gaps right now</p>
+  <p class="section-label">Remaining matches, by divergence</p>
   <ul class="fresh-div-list">
     
-    <li class="fresh-div-item">
+    <li class="fresh-div-item td-flagged">
       <a href="matches/2026-07-10_spain_vs_belgium.html">Spain vs Belgium</a>
       <span class="fresh-div-gap">17pp gap</span>
       <span class="fresh-div-type">Market hedges more than the model</span>
       <span class="td-fav">model favours Spain</span>
+      <span class="td-flag-badge">15pp+</span>
+    </li>
+    
+    <li class="fresh-div-item">
+      <a href="matches/2026-07-11_argentina_vs_switzerland.html">Argentina vs Switzerland</a>
+      <span class="fresh-div-gap">14pp gap</span>
+      <span class="fresh-div-type">Market hedges more than the model</span>
+      <span class="td-fav">model favours Argentina</span>
+      
+    </li>
+    
+    <li class="fresh-div-item">
+      <a href="matches/2026-07-09_france_vs_morocco.html">France vs Morocco</a>
+      <span class="fresh-div-gap">11pp gap</span>
+      <span class="fresh-div-type">Market more confident than the model</span>
+      <span class="td-fav">model favours France</span>
+      
+    </li>
+    
+    <li class="fresh-div-item">
+      <a href="matches/2026-07-11_norway_vs_england.html">Norway vs England</a>
+      <span class="fresh-div-gap">4pp gap</span>
+      <span class="fresh-div-type">Market more confident than the model</span>
+      <span class="td-fav">model favours England</span>
+      
     </li>
     
   </ul>
+  <p class="method-context">
+    Every remaining fixture, sorted by the model-vs-sportsbook gap; a
+    <span class="td-flag-badge">15pp+</span> row clears the divergence flag. The
+    full match-by-match archive and the biggest calls live on the
+    <a href="divergence-log.html">Divergence Log</a>.
+  </p>
 </section>
 
 
@@ -396,816 +466,862 @@
           <td class="prob col-champ t-champ-1">1.1%</td>
         </tr>
         
-        <tr>
-          <td class="col-rank">9</td>
-          <td class="col-team">
-            <span class="team-name">Brazil</span>
-            <span class="group-badge">C</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">10</td>
-          <td class="col-team">
-            <span class="team-name">Canada</span>
-            <span class="group-badge">B</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">11</td>
-          <td class="col-team">
-            <span class="team-name">Colombia</span>
-            <span class="group-badge">K</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">12</td>
-          <td class="col-team">
-            <span class="team-name">Egypt</span>
-            <span class="group-badge">G</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">13</td>
-          <td class="col-team">
-            <span class="team-name">Mexico</span>
-            <span class="group-badge">A</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">14</td>
-          <td class="col-team">
-            <span class="team-name">Paraguay</span>
-            <span class="group-badge">D</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">15</td>
-          <td class="col-team">
-            <span class="team-name">Portugal</span>
-            <span class="group-badge">K</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">16</td>
-          <td class="col-team">
-            <span class="team-name">USA</span>
-            <span class="group-badge">D</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">17</td>
-          <td class="col-team">
-            <span class="team-name">Algeria</span>
-            <span class="group-badge">J</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">18</td>
-          <td class="col-team">
-            <span class="team-name">Australia</span>
-            <span class="group-badge">D</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">19</td>
-          <td class="col-team">
-            <span class="team-name">Austria</span>
-            <span class="group-badge">J</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">20</td>
-          <td class="col-team">
-            <span class="team-name">Bosnia and Herzegovina</span>
-            <span class="group-badge">B</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">21</td>
-          <td class="col-team">
-            <span class="team-name">Cabo Verde</span>
-            <span class="group-badge">H</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">22</td>
-          <td class="col-team">
-            <span class="team-name">Croatia</span>
-            <span class="group-badge">L</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">23</td>
-          <td class="col-team">
-            <span class="team-name">Côte d&#39;Ivoire</span>
-            <span class="group-badge">E</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">24</td>
-          <td class="col-team">
-            <span class="team-name">DR Congo</span>
-            <span class="group-badge">K</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">25</td>
-          <td class="col-team">
-            <span class="team-name">Ecuador</span>
-            <span class="group-badge">E</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">26</td>
-          <td class="col-team">
-            <span class="team-name">Germany</span>
-            <span class="group-badge">E</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">27</td>
-          <td class="col-team">
-            <span class="team-name">Ghana</span>
-            <span class="group-badge">L</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">28</td>
-          <td class="col-team">
-            <span class="team-name">Japan</span>
-            <span class="group-badge">F</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">29</td>
-          <td class="col-team">
-            <span class="team-name">Netherlands</span>
-            <span class="group-badge">F</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">30</td>
-          <td class="col-team">
-            <span class="team-name">Senegal</span>
-            <span class="group-badge">I</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">31</td>
-          <td class="col-team">
-            <span class="team-name">South Africa</span>
-            <span class="group-badge">A</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">32</td>
-          <td class="col-team">
-            <span class="team-name">Sweden</span>
-            <span class="group-badge">F</span>
-          </td>
-          
-          <td class="prob t-surv-5">100.0%</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">33</td>
-          <td class="col-team">
-            <span class="team-name">Curaçao</span>
-            <span class="group-badge">E</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">34</td>
-          <td class="col-team">
-            <span class="team-name">Czechia</span>
-            <span class="group-badge">A</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">35</td>
-          <td class="col-team">
-            <span class="team-name">Haiti</span>
-            <span class="group-badge">C</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">36</td>
-          <td class="col-team">
-            <span class="team-name">Iran</span>
-            <span class="group-badge">G</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">37</td>
-          <td class="col-team">
-            <span class="team-name">Iraq</span>
-            <span class="group-badge">I</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">38</td>
-          <td class="col-team">
-            <span class="team-name">Jordan</span>
-            <span class="group-badge">J</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">39</td>
-          <td class="col-team">
-            <span class="team-name">New Zealand</span>
-            <span class="group-badge">G</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">40</td>
-          <td class="col-team">
-            <span class="team-name">Panama</span>
-            <span class="group-badge">L</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">41</td>
-          <td class="col-team">
-            <span class="team-name">Qatar</span>
-            <span class="group-badge">B</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">42</td>
-          <td class="col-team">
-            <span class="team-name">Saudi Arabia</span>
-            <span class="group-badge">H</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">43</td>
-          <td class="col-team">
-            <span class="team-name">Scotland</span>
-            <span class="group-badge">C</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">44</td>
-          <td class="col-team">
-            <span class="team-name">South Korea</span>
-            <span class="group-badge">A</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">45</td>
-          <td class="col-team">
-            <span class="team-name">Tunisia</span>
-            <span class="group-badge">F</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">46</td>
-          <td class="col-team">
-            <span class="team-name">Türkiye</span>
-            <span class="group-badge">D</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">47</td>
-          <td class="col-team">
-            <span class="team-name">Uruguay</span>
-            <span class="group-badge">H</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
-        <tr>
-          <td class="col-rank">48</td>
-          <td class="col-team">
-            <span class="team-name">Uzbekistan</span>
-            <span class="group-badge">K</span>
-          </td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob t-surv-0">—</td>
-          
-          <td class="prob col-champ t-champ-0">—</td>
-        </tr>
-        
       </tbody>
     </table>
   </div>
+
+  
+  <details class="grid-eliminated">
+    <summary>Eliminated (40)</summary>
+    <div class="tree-wrap">
+      <table class="tree">
+        <thead>
+          <tr>
+            <th class="col-rank">#</th>
+            <th class="col-team">Team</th>
+            
+            <th>R32</th>
+            
+            <th>R16</th>
+            
+            <th>QF</th>
+            
+            <th>SF</th>
+            
+            <th>Final</th>
+            
+            <th class="col-champ">Champion</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="grid-elim-group">
+            <td colspan="8">Out in the Round of 16</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">1</td>
+            <td class="col-team">
+              <span class="team-name">Brazil</span>
+              <span class="group-badge">C</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">2</td>
+            <td class="col-team">
+              <span class="team-name">Canada</span>
+              <span class="group-badge">B</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">3</td>
+            <td class="col-team">
+              <span class="team-name">Colombia</span>
+              <span class="group-badge">K</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">4</td>
+            <td class="col-team">
+              <span class="team-name">Egypt</span>
+              <span class="group-badge">G</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">5</td>
+            <td class="col-team">
+              <span class="team-name">Mexico</span>
+              <span class="group-badge">A</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">6</td>
+            <td class="col-team">
+              <span class="team-name">Paraguay</span>
+              <span class="group-badge">D</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">7</td>
+            <td class="col-team">
+              <span class="team-name">Portugal</span>
+              <span class="group-badge">K</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">8</td>
+            <td class="col-team">
+              <span class="team-name">USA</span>
+              <span class="group-badge">D</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          
+          <tr class="grid-elim-group">
+            <td colspan="8">Out in the Round of 32</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">1</td>
+            <td class="col-team">
+              <span class="team-name">Algeria</span>
+              <span class="group-badge">J</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">2</td>
+            <td class="col-team">
+              <span class="team-name">Australia</span>
+              <span class="group-badge">D</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">3</td>
+            <td class="col-team">
+              <span class="team-name">Austria</span>
+              <span class="group-badge">J</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">4</td>
+            <td class="col-team">
+              <span class="team-name">Bosnia and Herzegovina</span>
+              <span class="group-badge">B</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">5</td>
+            <td class="col-team">
+              <span class="team-name">Cabo Verde</span>
+              <span class="group-badge">H</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">6</td>
+            <td class="col-team">
+              <span class="team-name">Croatia</span>
+              <span class="group-badge">L</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">7</td>
+            <td class="col-team">
+              <span class="team-name">Côte d&#39;Ivoire</span>
+              <span class="group-badge">E</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">8</td>
+            <td class="col-team">
+              <span class="team-name">DR Congo</span>
+              <span class="group-badge">K</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">9</td>
+            <td class="col-team">
+              <span class="team-name">Ecuador</span>
+              <span class="group-badge">E</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">10</td>
+            <td class="col-team">
+              <span class="team-name">Germany</span>
+              <span class="group-badge">E</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">11</td>
+            <td class="col-team">
+              <span class="team-name">Ghana</span>
+              <span class="group-badge">L</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">12</td>
+            <td class="col-team">
+              <span class="team-name">Japan</span>
+              <span class="group-badge">F</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">13</td>
+            <td class="col-team">
+              <span class="team-name">Netherlands</span>
+              <span class="group-badge">F</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">14</td>
+            <td class="col-team">
+              <span class="team-name">Senegal</span>
+              <span class="group-badge">I</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">15</td>
+            <td class="col-team">
+              <span class="team-name">South Africa</span>
+              <span class="group-badge">A</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">16</td>
+            <td class="col-team">
+              <span class="team-name">Sweden</span>
+              <span class="group-badge">F</span>
+            </td>
+            
+            <td class="prob t-surv-5">100.0%</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          
+          <tr class="grid-elim-group">
+            <td colspan="8">Out in the group stage</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">1</td>
+            <td class="col-team">
+              <span class="team-name">Curaçao</span>
+              <span class="group-badge">E</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">2</td>
+            <td class="col-team">
+              <span class="team-name">Czechia</span>
+              <span class="group-badge">A</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">3</td>
+            <td class="col-team">
+              <span class="team-name">Haiti</span>
+              <span class="group-badge">C</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">4</td>
+            <td class="col-team">
+              <span class="team-name">Iran</span>
+              <span class="group-badge">G</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">5</td>
+            <td class="col-team">
+              <span class="team-name">Iraq</span>
+              <span class="group-badge">I</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">6</td>
+            <td class="col-team">
+              <span class="team-name">Jordan</span>
+              <span class="group-badge">J</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">7</td>
+            <td class="col-team">
+              <span class="team-name">New Zealand</span>
+              <span class="group-badge">G</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">8</td>
+            <td class="col-team">
+              <span class="team-name">Panama</span>
+              <span class="group-badge">L</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">9</td>
+            <td class="col-team">
+              <span class="team-name">Qatar</span>
+              <span class="group-badge">B</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">10</td>
+            <td class="col-team">
+              <span class="team-name">Saudi Arabia</span>
+              <span class="group-badge">H</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">11</td>
+            <td class="col-team">
+              <span class="team-name">Scotland</span>
+              <span class="group-badge">C</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">12</td>
+            <td class="col-team">
+              <span class="team-name">South Korea</span>
+              <span class="group-badge">A</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">13</td>
+            <td class="col-team">
+              <span class="team-name">Tunisia</span>
+              <span class="group-badge">F</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">14</td>
+            <td class="col-team">
+              <span class="team-name">Türkiye</span>
+              <span class="group-badge">D</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">15</td>
+            <td class="col-team">
+              <span class="team-name">Uruguay</span>
+              <span class="group-badge">H</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          <tr>
+            <td class="col-rank">16</td>
+            <td class="col-team">
+              <span class="team-name">Uzbekistan</span>
+              <span class="group-badge">K</span>
+            </td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob t-surv-0">—</td>
+            
+            <td class="prob col-champ t-champ-0">—</td>
+          </tr>
+          
+          
+        </tbody>
+      </table>
+    </div>
+  </details>
+  
 </section>
 
   </main>
 
   <footer class="site-footer">
     <p>
-      Forecast generated 2026-07-08 13:10 · snapshot 2026-07-08.
+      Forecast generated 2026-07-08 14:43 · snapshot 2026-07-08.
     </p>
     <p>
       Updated once daily, before 10:00 Paris time — not live during matches. Last updated 8 July 2026.
