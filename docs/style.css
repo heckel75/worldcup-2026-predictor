@@ -1166,6 +1166,53 @@ h1 {
 .divlog-chart-wrap { overflow-x: auto; }
 .divlog-chart-wrap svg { max-width: 100%; height: auto; }
 
+/* --- DIVLOG-3: divergence hall of fame ----------------------------- *
+ * Two lists (came in / missed) of the biggest-gap matches. Reuses the  *
+ * .dl-score / .divlog-thin / muted classes and existing tokens — no    *
+ * new colour tokens, no new prob bar (compact mono percentages).       */
+.divlog-hof { margin-bottom: 2rem; }
+.divlog-hof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.divlog-hof-head {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+.divlog-hof-list { list-style: none; margin: 0; padding: 0; }
+.divlog-hof-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.divlog-hof-entry:last-child { border-bottom: none; }
+.divlog-hof-match {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.divlog-hof-match:hover { text-decoration: underline; }
+.divlog-hof-meta { color: var(--muted); font-size: 0.76rem; }
+.divlog-hof-result { font-size: 0.85rem; }
+.divlog-hof-probs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  .divlog-hof-grid { grid-template-columns: 1fr; }
+}
+
 /* --- knockout bracket page (Session 38b) --------------------------- *
  * Horizontal columns R32 → Final, each spread vertically so the funnel  *
  * reads like a bracket without drawn connector lines. Scrolls sideways   *

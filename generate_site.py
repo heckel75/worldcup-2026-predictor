@@ -887,6 +887,17 @@ def _fmt_src_brier(sc: dict) -> dict:
             "n": sc["n"]}
 
 
+def _hof_note(shown: int, total: int) -> str:
+    """Honest count phrase for a hall-of-fame list (same thin-n register as the
+    buckets/scoreboard). "" when empty, "n=N" when the whole list is shown,
+    "showing top S of N" when truncated."""
+    if total == 0:
+        return ""
+    if total <= shown:
+        return f"n={total}"
+    return f"showing top {shown} of {total}"
+
+
 # Rolling-calibration chart geometry (hand-built inline SVG, _cal_svg idiom).
 _ROLL_W, _ROLL_H = 660, 300
 _ROLL_PAD_L, _ROLL_PAD_R, _ROLL_PAD_T, _ROLL_PAD_B = 48, 90, 16, 34
@@ -1030,6 +1041,11 @@ def _build_divlog() -> tuple[dict, pd.DataFrame]:
             "caveat": f"early, n={b['n']}" if 0 < b["n"] < _DIVLOG_THIN_N else "",
         })
 
+    # Hall of fame (DIVLOG-3): a filter+sort over the SAME row dicts, so the
+    # entries carry the display fields the enrichment loop above already added
+    # (match_label / match_url / date_human / p_*_fmt / stage / score).
+    hof = out["hall_of_fame"]
+
     context = {
         "rows": rows,
         "stages": stages,
@@ -1039,6 +1055,9 @@ def _build_divlog() -> tuple[dict, pd.DataFrame]:
         "n_played": out["n_played"],
         "buckets": buckets,
         "rolling_svg": _divlog_rolling_svg(out["rolling"]),
+        "hall_of_fame": hof,
+        "hof_wins_note": _hof_note(len(hof["wins"]), hof["n_wins"]),
+        "hof_misses_note": _hof_note(len(hof["misses"]), hof["n_misses"]),
     }
     csv_df = pd.DataFrame(csv_records)
     return context, csv_df

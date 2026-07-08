@@ -169,6 +169,23 @@ def _prob_on_outcome(row: dict, suffix: str) -> float:
     return row.get(f"p_{slot}{suffix}")
 
 
+def _model_missed(row: dict) -> bool:
+    """True iff the model's own argmax over its frozen (H,D,A) probs != the
+    realized outcome — the model committed to a call and reality went elsewhere.
+
+    Mirrors verdict._verdict's "did this source pick the outcome" reading exactly
+    (argmax over the three slots vs the outcome slot, same ("home","draw","away")
+    tie-order). verdict.py is read-only here, and it doesn't expose the per-source
+    picked flag, so this reproduces that one line rather than inventing a new
+    criterion. NaN model probs (never for a played row) -> not a miss."""
+    slots = ("home", "draw", "away")
+    probs = {s: row.get(f"p_{s}") for s in slots}
+    if any(pd.isna(v) for v in probs.values()):
+        return False
+    argmax = max(slots, key=lambda s: float(probs[s]))
+    return argmax != _OUTCOME_SLOT[row["outcome"]]
+
+
 # ----------------------------------------------------------------------
 # Per-source Brier + log loss — path (a): rename a source's frozen triple into
 # calibration's expected p_home/p_draw/p_away frame and reuse its primitives,
@@ -274,11 +291,43 @@ def rolling_calibration(df: pd.DataFrame) -> dict:
 
 
 # ----------------------------------------------------------------------
+# Hall of fame (DIVLOG-3) — the biggest model-vs-market gaps, split by how they
+# turned out. A pure filter+sort over the already-assembled archive rows (NOT a
+# new computation path), so a hall-of-fame entry can never disagree with its own
+# archive row. "Large gap" reuses the GAP_BUCKETS ge15 bucket (no second 15
+# hardcode); a win reuses the verdict's distinct-"model" credit (the no-credit
+# contract holds — a markets/wash/all_missed verdict is not a win); a miss reuses
+# _model_missed (the model's argmax != outcome), deliberately independent of
+# whether any market was right — the story is "the model committed and was wrong".
+# ----------------------------------------------------------------------
+def hall_of_fame(rows: list[dict], top_n: int = 3) -> dict:
+    """Return {"wins", "n_wins", "misses", "n_misses"} over the archive rows.
+
+    wins  = large-gap (ge15) matches the verdict credited the model, gap desc.
+    misses = large-gap matches where the model's own argmax != the outcome, gap
+             desc. n_* is the FULL qualifying count; the lists are the top_n.
+    The two criteria are independent (locked in the work order), so a match can
+    in principle appear in both; in practice a distinct model win means the model
+    was closest on the outcome, which rarely coincides with its argmax being
+    elsewhere."""
+    large = [r for r in rows if r.get("gap_bucket") == "ge15"]
+    wins = sorted((r for r in large if r.get("verdict_winner") == "model"),
+                  key=lambda r: r["gap"], reverse=True)
+    misses = sorted((r for r in large if r.get("model_missed")),
+                    key=lambda r: r["gap"], reverse=True)
+    return {
+        "wins": wins[:top_n], "n_wins": len(wins),
+        "misses": misses[:top_n], "n_misses": len(misses),
+    }
+
+
+# ----------------------------------------------------------------------
 # Build
 # ----------------------------------------------------------------------
 def _empty() -> dict:
     return {"rows": [], "scoreboard": None, "n_played": 0,
-            "buckets": [], "rolling": None}
+            "buckets": [], "rolling": None,
+            "hall_of_fame": {"wins": [], "n_wins": 0, "misses": [], "n_misses": 0}}
 
 
 def build(preds_path: str | Path, ko_round_map: dict | None = None) -> dict:
@@ -341,6 +390,7 @@ def build(preds_path: str | Path, ko_round_map: dict | None = None) -> dict:
             "verdict_winner":  v["winner"] if v else None,
             "verdict_text":    v["text"] if v else None,
             "model_won":       bool(v and v["winner"] == "model"),
+            "model_missed":    _model_missed(rec),
         })
 
     # newest first for the archive
@@ -368,6 +418,7 @@ def build(preds_path: str | Path, ko_round_map: dict | None = None) -> dict:
         "n_played": int(len(df)),
         "buckets": gap_size_buckets(df),
         "rolling": rolling_calibration(df),
+        "hall_of_fame": hall_of_fame(rows),
     }
 
 
@@ -502,6 +553,39 @@ def _test() -> None:
     # the final cumulative point == the scoreboard's overall Brier for that source
     assert abs(rs["Model"]["points"][-1]["brier"] - model_src["brier"]) < 1e-3
     assert abs(rs["Sportsbook"]["points"][-1]["brier"] - book_sb) < 1e-3
+
+    # ---- Hall of fame (DIVLOG-3) ----
+    # _model_missed mirrors the verdict's argmax reading (argmax vs outcome slot).
+    assert _model_missed({"p_home": 0.2, "p_draw": 0.3, "p_away": 0.5, "outcome": "H"}) is True
+    assert _model_missed({"p_home": 0.5, "p_draw": 0.3, "p_away": 0.2, "outcome": "H"}) is False
+    # End-to-end on the synthetic ledger: d1 is the only ge15 row and is a distinct
+    # model win; its model argmax (home) == outcome so it is not a miss.
+    hof = out["hall_of_fame"]
+    assert hof["n_wins"] == 1 and [e["match_key"] for e in hof["wins"]] == ["d1"]
+    assert hof["n_misses"] == 0 and hof["misses"] == []
+
+    # Pure filter+sort over synthetic archive rows.
+    def _mkrow(key, gap, bucket, verd, missed):
+        return {"match_key": key, "gap": gap, "gap_bucket": bucket,
+                "verdict_winner": verd, "model_missed": missed}
+    hrows = [
+        _mkrow("W",   0.20, "ge15",  "model",      False),  # large + model win
+        _mkrow("M",   0.25, "ge15",  "all_missed", True),   # large + model argmax wrong
+        _mkrow("sub", 0.10, "5to15", "model",      False),  # below threshold -> neither
+        _mkrow("nom", nan,  None,    None,         False),  # no market -> neither
+    ]
+    h = hall_of_fame(hrows, top_n=3)
+    assert [e["match_key"] for e in h["wins"]] == ["W"] and h["n_wins"] == 1
+    assert [e["match_key"] for e in h["misses"]] == ["M"] and h["n_misses"] == 1
+    seen = {e["match_key"] for e in h["wins"] + h["misses"]}
+    assert "sub" not in seen and "nom" not in seen, seen
+    # fewer-than-3: 4 large model wins -> full count 4, top 3 by gap desc.
+    big = [_mkrow(f"w{i}", 0.15 + 0.01 * i, "ge15", "model", False) for i in range(4)]
+    hb = hall_of_fame(big, top_n=3)
+    assert hb["n_wins"] == 4 and [e["match_key"] for e in hb["wins"]] == ["w3", "w2", "w1"]
+    # empty -> empty structure, no crash.
+    assert hall_of_fame([], top_n=3) == {
+        "wins": [], "n_wins": 0, "misses": [], "n_misses": 0}
 
     # Also exercise the shared verdict logic from here.
     verdict._test_verdict()

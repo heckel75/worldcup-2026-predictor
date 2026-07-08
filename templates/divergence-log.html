@@ -161,6 +161,57 @@
 </section>
 {% endif %}
 
+{# ---- Hall of fame (DIVLOG-3) -------------------------------------- #}
+{% if hall_of_fame and (hall_of_fame.wins or hall_of_fame.misses) %}
+<section class="changes divlog-hof">
+  <p class="section-label">Where the model diverged most — and how it turned out</p>
+  <p class="scoreboard-note">
+    The biggest model-vs-market gaps (15pp+), split by result. Percentages are
+    each source's frozen pre-match probability on the outcome that actually
+    happened. For the full reliability picture across all matches, see the
+    <a href="{{ root }}calibration.html">calibration page</a>.
+  </p>
+  <div class="divlog-hof-grid">
+    <div class="divlog-hof-col">
+      <h3 class="divlog-hof-head">Biggest calls that came in{% if hof_wins_note %}
+        <span class="divlog-thin">({{ hof_wins_note }})</span>{% endif %}</h3>
+      {% if hall_of_fame.wins %}
+      <ul class="divlog-hof-list">
+        {% for e in hall_of_fame.wins %}
+        <li class="divlog-hof-entry">
+          <a class="divlog-hof-match" href="{{ root }}{{ e.match_url }}">{{ e.match_label }}</a>
+          <span class="divlog-hof-meta">{{ e.stage }}{% if e.group %} {{ e.group }}{% endif %} · {{ e.date_human }} · gap {{ e.gap_fmt }}</span>
+          <span class="divlog-hof-result">{% if e.score %}<span class="dl-score">{{ e.score }}</span> {% endif %}{{ e.result_label }}</span>
+          <span class="divlog-hof-probs"><span>Model {{ e.p_model_fmt }}</span><span>Sportsbook {{ e.p_book_fmt }}</span><span>Polymarket {{ e.p_poly_fmt }}</span></span>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="method-context">No qualifying matches yet.</p>
+      {% endif %}
+    </div>
+    <div class="divlog-hof-col">
+      <h3 class="divlog-hof-head">Biggest calls that missed{% if hof_misses_note %}
+        <span class="divlog-thin">({{ hof_misses_note }})</span>{% endif %}</h3>
+      {% if hall_of_fame.misses %}
+      <ul class="divlog-hof-list">
+        {% for e in hall_of_fame.misses %}
+        <li class="divlog-hof-entry">
+          <a class="divlog-hof-match" href="{{ root }}{{ e.match_url }}">{{ e.match_label }}</a>
+          <span class="divlog-hof-meta">{{ e.stage }}{% if e.group %} {{ e.group }}{% endif %} · {{ e.date_human }} · gap {{ e.gap_fmt }}</span>
+          <span class="divlog-hof-result">{% if e.score %}<span class="dl-score">{{ e.score }}</span> {% endif %}{{ e.result_label }}</span>
+          <span class="divlog-hof-probs"><span>Model {{ e.p_model_fmt }}</span><span>Sportsbook {{ e.p_book_fmt }}</span><span>Polymarket {{ e.p_poly_fmt }}</span></span>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="method-context">No qualifying matches yet.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 {# ---- Archive table ------------------------------------------------- #}
 <section class="divlog">
   <p class="section-label">Match archive</p>
