@@ -31,6 +31,7 @@ MIN_MOVE_PP = 0.5
 
 _COL_CHAMPION = "p_champion"         # sums to 1.0 across the 48-team snapshot
 _COL_ADVANCE  = "p_advance"          # sums to 32.0 (32 group-stage advancers)
+_COL_FINAL    = "p_final"            # reach-the-final column (KO-stage 2nd list)
 _COL_MAG      = "div_model_book_max" # per-match divergence magnitude column
 
 
@@ -51,21 +52,23 @@ def _two_newest(
     return csvs[-2], csvs[-1]
 
 
-def compute_title_movers(
+def _column_movers(
     prev_df: Optional[pd.DataFrame],
     curr_df: pd.DataFrame,
+    col: str,
     top_n: int = 5,
 ) -> list[dict]:
-    """Top-N title-odds movers: Δ = curr.p_champion − prev.p_champion,
-    joined on team name. Drops moves below MIN_MOVE_PP; ranks by |Δ|.
-    Returns [] when prev_df is None (baseline / first run)."""
+    """Top-N movers on a single snapshot column: Δ = curr[col] − prev[col],
+    joined on team, |Δ| ≥ MIN_MOVE_PP, ranked by |Δ| desc. Returns [] when
+    prev_df is None (baseline / first run). Shared by the title and second
+    mover lists so the diff/floor/ranking is defined exactly once."""
     if prev_df is None:
         return []
-    merged = curr_df[["team", _COL_CHAMPION]].merge(
-        prev_df[["team", _COL_CHAMPION]],
+    merged = curr_df[["team", col]].merge(
+        prev_df[["team", col]],
         on="team", suffixes=("_curr", "_prev"),
     )
-    merged["delta"] = merged[f"{_COL_CHAMPION}_curr"] - merged[f"{_COL_CHAMPION}_prev"]
+    merged["delta"] = merged[f"{col}_curr"] - merged[f"{col}_prev"]
     merged = merged[merged["delta"].abs() * 100 >= MIN_MOVE_PP]
     merged = (merged
               .assign(_abs=merged["delta"].abs())
@@ -74,45 +77,48 @@ def compute_title_movers(
     return [
         {
             "team":      row["team"],
-            "prev":      row[f"{_COL_CHAMPION}_prev"],
-            "curr":      row[f"{_COL_CHAMPION}_curr"],
+            "prev":      row[f"{col}_prev"],
+            "curr":      row[f"{col}_curr"],
             "delta":     row["delta"],
             "direction": "up" if row["delta"] > 0 else "down",
         }
         for _, row in merged.head(top_n).iterrows()
     ]
+
+
+def compute_title_movers(
+    prev_df: Optional[pd.DataFrame],
+    curr_df: pd.DataFrame,
+    top_n: int = 5,
+) -> list[dict]:
+    """Top-N title-odds movers (p_champion). [] on baseline / first run."""
+    return _column_movers(prev_df, curr_df, _COL_CHAMPION, top_n)
+
+
+def _advance_settled(curr_df: pd.DataFrame) -> bool:
+    """True once every p_advance value is a realized 0 or 1 — the group stage
+    is over and nothing can move on that column any more."""
+    return bool(curr_df[_COL_ADVANCE].isin([0.0, 1.0]).all())
 
 
 def compute_advance_movers(
     prev_df: Optional[pd.DataFrame],
     curr_df: pd.DataFrame,
     top_n: int = 5,
-) -> list[dict]:
-    """Top-N group-advance movers: Δ = curr.p_advance − prev.p_advance.
-    Same floor and ranking as compute_title_movers. Returns [] when
-    prev_df is None."""
-    if prev_df is None:
-        return []
-    merged = curr_df[["team", _COL_ADVANCE]].merge(
-        prev_df[["team", _COL_ADVANCE]],
-        on="team", suffixes=("_curr", "_prev"),
-    )
-    merged["delta"] = merged[f"{_COL_ADVANCE}_curr"] - merged[f"{_COL_ADVANCE}_prev"]
-    merged = merged[merged["delta"].abs() * 100 >= MIN_MOVE_PP]
-    merged = (merged
-              .assign(_abs=merged["delta"].abs())
-              .sort_values("_abs", ascending=False)
-              .drop(columns="_abs"))
-    return [
-        {
-            "team":      row["team"],
-            "prev":      row[f"{_COL_ADVANCE}_prev"],
-            "curr":      row[f"{_COL_ADVANCE}_curr"],
-            "delta":     row["delta"],
-            "direction": "up" if row["delta"] > 0 else "down",
-        }
-        for _, row in merged.head(top_n).iterrows()
-    ]
+) -> dict:
+    """The second mover list, with a stage-aware column AND label.
+
+    Pre-KO it tracks 'Advance from group' (p_advance). Once the group stage is
+    settled (every p_advance is 0/1) that column is frozen, so it switches to
+    'Reach the final' (p_final). Returns {"label", "movers"} so the template
+    renders the heading from data — no stage logic in Jinja, and "Advance from
+    group" is never hard-coded. Same MIN_MOVE_PP floor/ranking as the title list
+    (both route through _column_movers)."""
+    if _advance_settled(curr_df):
+        col, label = _COL_FINAL, "Reach the final"
+    else:
+        col, label = _COL_ADVANCE, "Advance from group"
+    return {"label": label, "movers": _column_movers(prev_df, curr_df, col, top_n)}
 
 
 def compute_fresh_divergences(
@@ -236,7 +242,7 @@ if __name__ == "__main__":
 
     # prev=None returns []
     assert compute_title_movers(None, curr_snap) == [], "None prev → []"
-    assert compute_advance_movers(None, curr_snap) == [], "None prev → []"
+    assert compute_advance_movers(None, curr_snap)["movers"] == [], "None prev → []"
 
     # correct ordering: Spain (−2pp) and France (+2pp) are top movers
     title_movers = compute_title_movers(prev_snap, curr_snap)
@@ -267,10 +273,31 @@ if __name__ == "__main__":
     assert any(m["team"] == "England" for m in edge_movers), \
         "exactly-at-floor move (0.5pp) should be included"
 
-    # advance movers: Brazil Δ = 0 → excluded
-    adv_movers = compute_advance_movers(prev_snap, curr_snap)
-    assert not any(m["team"] == "Brazil" for m in adv_movers), \
+    # advance movers: unsettled p_advance → "Advance from group", Brazil Δ=0 excluded
+    adv_block = compute_advance_movers(prev_snap, curr_snap)
+    assert adv_block["label"] == "Advance from group", adv_block["label"]
+    assert not any(m["team"] == "Brazil" for m in adv_block["movers"]), \
         "Brazil unchanged should not appear in advance movers"
+
+    # --- compute_advance_movers stage switch (Session INDEX-KO) -------------
+    # Once every p_advance is a realized 0/1, the second list switches to
+    # "Reach the final" and diffs p_final instead.
+    settled_prev = pd.DataFrame({
+        "team": teams,
+        _COL_ADVANCE: [1.0, 1.0, 1.0, 0.0, 0.0],
+        _COL_FINAL:   [0.30, 0.10, 0.20, 0.0, 0.0],
+    })
+    settled_curr = pd.DataFrame({
+        "team": teams,
+        _COL_ADVANCE: [1.0, 1.0, 1.0, 0.0, 0.0],    # all 0/1 → settled
+        _COL_FINAL:   [0.34, 0.12, 0.18, 0.0, 0.0],  # Spain +4pp, France +2, Arg −2
+    })
+    fin_block = compute_advance_movers(settled_prev, settled_curr)
+    assert fin_block["label"] == "Reach the final", fin_block["label"]
+    assert fin_block["movers"], "settled snapshot should produce final-column movers"
+    assert fin_block["movers"][0]["team"] == "Spain", fin_block["movers"][0]
+    # unsettled path still yields the old label
+    assert compute_advance_movers(settled_prev, curr_snap)["label"] == "Advance from group"
 
     # --- compute_fresh_divergences -----------------------------------------
     curr_div = pd.DataFrame({

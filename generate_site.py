@@ -1387,7 +1387,9 @@ def build_site() -> None:
     curr_div_df = pd.read_csv(TRIPLE_PATH) if TRIPLE_PATH.exists() else None
 
     title_movers   = whats_changed.compute_title_movers(prev_snap_df, curr_snap_df)
-    advance_movers = whats_changed.compute_advance_movers(prev_snap_df, curr_snap_df)
+    advance_block  = whats_changed.compute_advance_movers(prev_snap_df, curr_snap_df)
+    advance_movers = advance_block["movers"]
+    advance_label  = advance_block["label"]   # "Advance from group" or "Reach the final"
     fresh_divs = (
         whats_changed.compute_fresh_divergences(prev_div_df, curr_div_df)
         if curr_div_df is not None else []
@@ -1532,6 +1534,7 @@ def build_site() -> None:
         survival_labels=[label for _, label in SURVIVAL_COLS],
         title_movers=title_movers,
         advance_movers=advance_movers,
+        advance_label=advance_label,
         fresh_divergences=fresh_divs,
         top_divergences=top_divergences,
         scoreboard=scoreboard,
