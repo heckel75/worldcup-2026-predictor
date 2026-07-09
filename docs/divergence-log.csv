@@ -1,4 +1,5 @@
 date,match,stage,group,outcome,result,score,p_model_on_outcome,p_sportsbook_on_outcome,p_polymarket_on_outcome,gap_pp,gap_bucket,divergence_type,flagged,verdict
+2026-07-09,France v Morocco,Quarter-final,,H,Home win,2–0,0.4912,0.6061,0.6181,11,5–15pp,model_under_concentrated,False,Sources agreed
 2026-07-07,Argentina v Egypt,Round of 16,,H,Home win,3–2,0.8363,0.7116,0.7214,12,5–15pp,model_over_concentrated,False,Model closest
 2026-07-07,Switzerland v Colombia,Round of 16,,D,Draw,0–0,0.2971,0.3074,0.3134,6,5–15pp,model_over_concentrated,False,All missed
 2026-07-06,Portugal v Spain,Round of 16,,A,Away win,0–1,0.5547,0.4987,0.5124,7,5–15pp,model_over_concentrated,False,Model closest
