@@ -5,10 +5,10 @@
   "date": "2026-07-10",
   "kind": "commentary",
   "divergence_type": "model_over_concentrated",
-  "max_gap_pp": 16.5,
-  "input_hash": "457865c1dc13eddccb4c87387285c10065e1413a",
-  "generated_at": "2026-07-07T23:12:05+00:00",
+  "max_gap_pp": 16.9,
+  "input_hash": "c2e3cf117ab1684ed5b38c96cb189dea09cb2134",
+  "generated_at": "2026-07-09T06:20:33+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model assigns Spain a 75% win probability, but the sportsbook consensus—at 59%—pulls back by 16 percentage points, instead boosting Belgium to 17% versus the model's 4%. Both sources agree Spain are favorites, yet the market hedges substantially more. This gap could reflect real-time information the model cannot access: recent injuries or lineup changes affecting either side's depth, or shifts in form since the model's last training update. The dashboard flags this divergence as a signal worth monitoring rather than evidence that one forecast is superior to the other."
+  "commentary_text": "The model assigns Spain a 75% win probability while sportsbooks price them at 58%—a 17-percentage-point gap favoring the model's confidence in a Spanish victory. This gap could reflect recent form or injury news that has reached the market but not the model's last training update; lineups or squad availability changes announced closer to the match would naturally dampen bookmaker conviction even if underlying Elo ratings remain stable. Alternatively, the market may be pricing in late-breaking information about either team's condition or readiness. The dashboard surfaces this divergence as a signal worth monitoring: it shows real money is hedging against the model's high Spain win probability, but both sources agree Spain is the clear favorite."
 }

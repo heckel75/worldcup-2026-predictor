@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Morocco",
   "date": "2026-07-09",
-  "input_hash": "eac038042c5810c18d4ff8571b4abd1d747f3ea1",
-  "generated_at": "2026-07-08T06:35:17+00:00",
+  "input_hash": "92942bcdab37e29e119af77e0b8d245b986454bf",
+  "generated_at": "2026-07-09T06:20:19+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model assigns France a 49% win probability, making them slight favorites, while Morocco's chance stands at 21%. The margin reflects France's edge but remains modest enough that the underdog enters with material winning chances rather than token odds.\n\nThe draw emerges as notably plausible at 30%, suggesting competitive balance and a realistic outcome where neither team breaks through. The win probabilities, separated by roughly 28 percentage points, indicate the match leans toward France but remains genuinely contested. A scoreless or low-scoring result appears as likely as a clear France victory, pointing to a tightly matched contest.\n\nThe sportsbooks and Polymarket both assign France 60–61%, meaningfully higher than the model's 49%. The gap of around 11 percentage points represents a material disagreement. The model and market converge on the draw (24–30%) and align that Morocco is the underdog, but diverge on France's baseline strength. The dashboard makes no claim about which assessment is correct."
+  "preview_text": "The model favors France at 49%, with Morocco's winning chance at 21%. This represents a modest edge rather than a decisive one; the gap between the two sides is approximately 28 percentage points in France's favour, reflecting meaningful uncertainty about the outcome.\n\nThe 30% draw probability indicates the match is likely to be competitive and closely contested. The spread across outcomes—France 49%, draw 30%, Morocco 21%—suggests a relatively balanced matchup in which a stalemate is a genuine possibility, neither side overwhelming the other in the model's assessment.\n\nThe sportsbook consensus departs notably from the model. Books price France at 61% and Morocco at 15%, a gap of roughly 11–12 percentage points wider than the model projects in France's favor. Polymarket aligns closely with the sportsbooks. The dashboard does not adjudicate between these sources; users should note the divergence and form their own judgment about which better reflects the underlying competitive balance."
 }
