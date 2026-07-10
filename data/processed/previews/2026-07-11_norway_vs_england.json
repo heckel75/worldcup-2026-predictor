@@ -3,9 +3,9 @@
   "home_team": "Norway",
   "away_team": "England",
   "date": "2026-07-11",
-  "input_hash": "140e9dce53e15c781c7a6fafea1115f3f50f414d",
-  "generated_at": "2026-07-10T06:55:05+00:00",
+  "input_hash": "a8bdc24dfda5af34e3d3e2c0d2930f8d22dc1741",
+  "generated_at": "2026-07-10T21:01:14+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors England at 49% to win, with Norway holding a 22% chance and a draw at 30%. England emerges as clear but not dominant favorite on these neutral grounds, leaving substantial probability mass for either an upset or a stalemate.\n\nThe spread suggests a competitive match unlikely to be one-sided. England's near-50% win rate leaves room for meaningful resistance from Norway, while the draw probability at 30% indicates the teams are close enough in capability that a split result is a plausible outcome. The three outcomes remain distributed across a range rather than heavily concentrated in one.\n\nModel and sportsbook consensus track closely across all three outcomes, with gaps under 2 percentage points. Polymarket prices align similarly. The three forecasting sources show broad agreement that this is a moderately unbalanced fixture tilted toward England but far from settled. The dashboard does not arbitrate between them; all three suggest comparable competitive balance."
+  "preview_text": "England enters as the model's favorite with a 49% win probability, while Norway's chance of victory stands at 22%. The underdog has a modest but real path to three points, though England's superiority in the forecast is clear.\n\nThe draw emerges as a competitive outcome at 30%, suggesting this match may not resolve decisively. The 27-percentage-point gap between England and Norway win probabilities indicates asymmetry, yet the elevated draw probability implies the teams are close enough that a stalemate remains plausible. Neither side is overwhelmingly favored to win in open play.\n\nThe model and market are closely aligned. England's win probability differs by 2 percentage points, the draw by 4 points, and Norway's by 2 points. Polymarket prices track the model even more tightly. These minor divergences fall well within consensus bounds and suggest broad agreement on the competitive balance of this fixture."
 }
