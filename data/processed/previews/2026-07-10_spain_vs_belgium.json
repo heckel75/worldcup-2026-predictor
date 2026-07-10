@@ -3,9 +3,9 @@
   "home_team": "Spain",
   "away_team": "Belgium",
   "date": "2026-07-10",
-  "input_hash": "9bc868943242ab972d61b7a0c43aaeca19257401",
-  "generated_at": "2026-07-09T22:02:55+00:00",
+  "input_hash": "45a2626b7dfe4f74f098876995d5a976f52bdbea",
+  "generated_at": "2026-07-10T06:55:01+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Spain heavily at 75%, leaving Belgium just 4% to win outright. That 71-percentage-point gap reflects a stark asymmetry: the model sees Spain as commanding favorites, while Belgium's upset probability sits near zero by this measure.\n\nThe spread reveals how the model constructs that dominance. Spain's 75% win rate and 20% draw rate combine to give it a 95% chance of avoiding defeat. Belgium's path runs almost entirely through a draw, which accounts for most of its 24% not-a-loss scenario. A decisive contest favoring one side appears most likely under the model, but a stalemate remains plausible at roughly one-in-five odds.\n\nThe model and sportsbooks diverge sharply. Books price Spain at 58%, some 17 percentage points below the model's 75%, and they assign Belgium 17%—more than four times the model's 4%. Polymarket pricing aligns closer to sportsbooks than to the model. This dashboard presents both views without adjudicating which better reflects match reality."
+  "preview_text": "The model favors Spain decisively, assigning them a 75% win probability. Belgium's chance stands at just 4%, leaving a substantial gap between the two outcomes.\n\nThe model sees this as a heavily tilted affair. Spain's 75% win rate and 20% draw probability together account for 95% of outcomes, leaving little room for a Belgium upset. The draw is plausible but not the likeliest result; the match is expected to tilt toward a Spanish victory rather than remain genuinely competitive.\n\nThe model and market diverge meaningfully. Sportsbooks and Polymarket both price Spain closer to 59%, roughly 16 percentage points lower than the model's 75%. Both market sources converge around a 17% Belgium win probability—roughly four times the model's 4% assessment. This gap reflects a material disagreement about Spain's superiority. The dashboard does not adjudicate between these sources."
 }
