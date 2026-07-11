@@ -3,9 +3,9 @@
   "home_team": "Argentina",
   "away_team": "Switzerland",
   "date": "2026-07-11",
-  "input_hash": "1b65da27e9526ece112e9687836920ef77a32874",
-  "generated_at": "2026-07-09T22:02:59+00:00",
+  "input_hash": "81b2e9a195d561d2b8bfd2e3bb432d78f3b155b8",
+  "generated_at": "2026-07-11T04:07:14+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates Argentina as a clear favourite with a 69% win probability, substantially ahead of Switzerland's 7% chance. The implied gap reflects a significant disparity in the forecast strength of the two sides according to the statistical approach.\n\nThe draw probability of 23% indicates meaningful competitive balance in the match outcome distribution. While Argentina is favoured, the model does not compress Switzerland's chances to negligible levels, suggesting a match where a stalemate carries real plausibility and the underdog retains a measurable path to points.\n\nThe model and market diverge meaningfully on Argentina's win probability—a gap of 13 percentage points—with the model substantially more confident in an Argentina victory. The market and Polymarket consensus align closely with each other, both pricing Switzerland's chances roughly double the model's assessment. The dashboard does not adjudicate between these views; the divergence reflects genuine disagreement on match outcome likelihood between the two forecast sources."
+  "preview_text": "The model favours Argentina at 69%, leaving Switzerland with only a 7% chance of victory. That gap reflects a substantial difference in expected quality between the two sides, though the model's assessment is notably more confident than the sportsbook consensus, which credits Switzerland with a 17% win probability.\n\nThe draw carries meaningful probability in the model's spread at 23%, suggesting the match could remain undecided through regular time. The 46-percentage-point gap between Argentina's win probability and Switzerland's indicates a clear hierarchy, yet the plausible draw outcome means the fixture is not a foregone conclusion and carries legitimate competitive stakes.\n\nThe model and sportsbook diverge meaningfully. The model assigns Argentina 13 percentage points more win probability than the market consensus, while the market simultaneously rates Switzerland 9 points higher. Polymarket prices align closely with sportsbook consensus. The dashboard does not claim to know which assessment is correct; the gap suggests material disagreement about the relative strength of these sides."
 }
