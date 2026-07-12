@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-15_england_vs_argentina",
+  "home_team": "England",
+  "away_team": "Argentina",
+  "date": "2026-07-15",
+  "input_hash": "f569be3b399debe0ad5a11e463a42d245e01d1ad",
+  "generated_at": "2026-07-12T08:53:16+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Argentina at 48%, substantially ahead of England's 22% win probability. England enters as the underdog by a wide margin in the statistical forecast, while Argentina commands a clear edge based on the available numerical inputs.\n\nThe 48-31-22 spread suggests a competitive match with meaningful draw probability at 30%. Argentina's advantage is substantial but not overwhelming; England retains realistic paths to victory or stalemate, and the draw outcome sits between the two outright results, indicating the match could plausibly flow in any direction.\n\nThe model and market diverge sharply. The market gives England 38% to win—16 percentage points higher than the model—and rates Argentina at 31%, 17 points below the model's forecast. Both sources agree a draw sits near 31%, but they split fundamentally on the binary outcome. The dashboard presents both readings without claiming superiority for either; bettors should weigh the divergence carefully."
+}

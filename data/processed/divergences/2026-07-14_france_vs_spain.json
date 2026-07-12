@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-07-14_france_vs_spain",
+  "home_team": "France",
+  "away_team": "Spain",
+  "date": "2026-07-14",
+  "kind": "commentary",
+  "divergence_type": "disagree_on_favorite",
+  "max_gap_pp": 19.2,
+  "input_hash": "2c707963356599bce16b706c4eab4df04a92d794",
+  "generated_at": "2026-07-12T08:53:23+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model favors Spain at 48%, while the sportsbook consensus favors France at 42%. This 19-percentage-point gap on the France win is the largest divergence. The draw probability is nearly identical across sources around 29%. Recent form, injury status, or lineup changes since the model's last update could account for a material shift in confidence around France's prospects. The dashboard flags this disagreement as a signal worth monitoring rather than evidence that either source has correctly priced the match."
+}

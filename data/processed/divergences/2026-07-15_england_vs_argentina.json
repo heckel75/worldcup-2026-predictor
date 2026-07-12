@@ -1,0 +1,14 @@
+{
+  "match_key": "2026-07-15_england_vs_argentina",
+  "home_team": "England",
+  "away_team": "Argentina",
+  "date": "2026-07-15",
+  "kind": "commentary",
+  "divergence_type": "disagree_on_favorite",
+  "max_gap_pp": 17.5,
+  "input_hash": "5b34be79f1ef59fec45eac02650fab896aa86a61",
+  "generated_at": "2026-07-12T08:53:25+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 2,
+  "commentary_text": "The model favors Argentina at 48%, while the market favors England at 38%, a 16-percentage-point gap on the England win. The gap on Argentina's win is 17 percentage points in the opposite direction, with the model substantially higher. Market pricing could reflect recent lineup developments, injury news, or current form shifts that the model's last update did not capture. The dashboard presents this divergence as a notable signal: two sources rank the favorites in opposite order, suggesting material information asymmetry worth monitoring as match day approaches."
+}

@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-14_france_vs_spain",
+  "home_team": "France",
+  "away_team": "Spain",
+  "date": "2026-07-14",
+  "input_hash": "bbc1b78128822c1c1230dd6d68957145615d9593",
+  "generated_at": "2026-07-12T08:53:12+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model favors Spain, assigning them a 48% win probability against France's 22%. This represents a substantial gap: Spain emerge as clear favorites on the forecast, while France are positioned as the underdog despite their historical standing in major tournaments.\n\nThe draw looms large in this matchup. At 30%, it ranks as the modal outcome across both model and market estimates, suggesting the teams are capable of canceling each other out. The model's spread—a 26-percentage-point gap between Spain and France—indicates Spain should control much of the match, yet the elevated draw probability implies competitive balance in execution rather than a runaway favorite scenario.\n\nModel and market diverge markedly here. Sportsbooks and Polymarket both assign France roughly 41–42% win odds, nearly double the model's 22%, while crediting Spain only 29–30% compared to the model's 48%. This 19–26 percentage-point divergence across both outcomes is substantial. The dashboard makes no claim about which source is correct; it notes the disagreement for users to weigh independently."
+}

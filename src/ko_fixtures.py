@@ -66,9 +66,18 @@ _QF_DATED_PAIRS: list[tuple[str, str, dt.date]] = [
     ("Argentina",    "Switzerland",             dt.date(2026, 7, 11)),   # match 100
 ]
 
+# Published 2026 Semi-final schedule (dated per match slot 101–102). Added once
+# the QF results resolved the pairings — the "extend per-round" daily-checklist
+# step (§5a / §11). Order within each tuple is irrelevant (keyed by frozenset).
+_SF_DATED_PAIRS: list[tuple[str, str, dt.date]] = [
+    ("France",       "Spain",                   dt.date(2026, 7, 14)),   # match 101
+    ("England",      "Argentina",               dt.date(2026, 7, 15)),   # match 102
+]
+
 KO_MATCH_DATES: dict[frozenset, dt.date] = {
     frozenset({a, b}): d
     for a, b, d in _R32_DATED_PAIRS + _R16_DATED_PAIRS + _QF_DATED_PAIRS
+                   + _SF_DATED_PAIRS
 }
 
 
@@ -118,8 +127,8 @@ def derive_ko_fixtures(bracket: dict) -> list[dict]:
 # ----------------------------------------------------------------------
 
 def _self_test() -> None:
-    assert len(KO_MATCH_DATES) == 28, \
-        f"expected 28 KO dates (16 R32 + 8 R16 + 4 QF), got {len(KO_MATCH_DATES)}"
+    assert len(KO_MATCH_DATES) == 30, \
+        f"expected 30 KO dates (16 R32 + 8 R16 + 4 QF + 2 SF), got {len(KO_MATCH_DATES)}"
 
     def m(a, b, played=False, winner=None):
         return {"match_id": 0, "team_a": a, "team_b": b,
@@ -166,8 +175,8 @@ def _self_test() -> None:
     assert derive_ko_fixtures(bracket2) == [], derive_ko_fixtures(bracket2)
 
     print("ko_fixtures.py self-test passed "
-          "(28 KO dates = 16 R32 + 8 R16 + 4 QF; shape; skip-played; omit-undated; "
-          "bracket orientation)")
+          "(30 KO dates = 16 R32 + 8 R16 + 4 QF + 2 SF; shape; skip-played; "
+          "omit-undated; bracket orientation)")
 
 
 if __name__ == "__main__":
