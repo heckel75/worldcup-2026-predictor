@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "Argentina",
   "date": "2026-07-15",
-  "input_hash": "f569be3b399debe0ad5a11e463a42d245e01d1ad",
-  "generated_at": "2026-07-12T08:53:16+00:00",
+  "input_hash": "3cb5609d138770f5d59b0c2b5437de8b378c6c95",
+  "generated_at": "2026-07-13T20:59:45+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina at 48%, substantially ahead of England's 22% win probability. England enters as the underdog by a wide margin in the statistical forecast, while Argentina commands a clear edge based on the available numerical inputs.\n\nThe 48-31-22 spread suggests a competitive match with meaningful draw probability at 30%. Argentina's advantage is substantial but not overwhelming; England retains realistic paths to victory or stalemate, and the draw outcome sits between the two outright results, indicating the match could plausibly flow in any direction.\n\nThe model and market diverge sharply. The market gives England 38% to win—16 percentage points higher than the model—and rates Argentina at 31%, 17 points below the model's forecast. Both sources agree a draw sits near 31%, but they split fundamentally on the binary outcome. The dashboard presents both readings without claiming superiority for either; bettors should weigh the divergence carefully."
+  "preview_text": "The model favors Argentina at 48%, substantially ahead of England's 22% win probability. The market consensus across sportsbooks and prediction markets clusters England and Argentina much closer, with England at 36% and Argentina at 32%—a meaningful divergence from the statistical forecast.\n\nThe model's distribution points toward a competitive but Argentina-leaning contest, with draws at 30% suggesting genuine uncertainty in the outcome. England's 22% win chance indicates the model rates them as clear underdogs. The sportsbook and Polymarket spreads, by contrast, show a tighter three-way race in which no outcome dominates strongly.\n\nThe two sources diverge significantly. The model assigns Argentina a 16-point edge over England; the market gives England a 5-point advantage. Sportsbooks and Polymarket align closely with each other but differ from the model by roughly 14 percentage points on Argentina and 15 on England. The dashboard offers both views without claiming either is correct."
 }

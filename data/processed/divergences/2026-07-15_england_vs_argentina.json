@@ -5,10 +5,10 @@
   "date": "2026-07-15",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 17.5,
-  "input_hash": "5b34be79f1ef59fec45eac02650fab896aa86a61",
-  "generated_at": "2026-07-12T08:53:25+00:00",
+  "max_gap_pp": 16.9,
+  "input_hash": "87a12565d43d78957fe786fdd2a7ff1116fe5372",
+  "generated_at": "2026-07-13T20:59:51+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Argentina at 48%, while the market favors England at 38%, a 16-percentage-point gap on the England win. The gap on Argentina's win is 17 percentage points in the opposite direction, with the model substantially higher. Market pricing could reflect recent lineup developments, injury news, or current form shifts that the model's last update did not capture. The dashboard presents this divergence as a notable signal: two sources rank the favorites in opposite order, suggesting material information asymmetry worth monitoring as match day approaches."
+  "commentary_text": "The model favors Argentina at 48%, while the sportsbook consensus favors England at 36%, a 14-percentage-point gap on the England win probability. The market also prices Argentina substantially lower, at 32%, suggesting real-money flows have shifted conviction toward England relative to the statistical baseline. Recent form, lineup news, or injury developments affecting either team could account for the market's upward reassessment of England's chances, but the model has no access to such information. The dashboard flags this as a material divergence between structural forecasts and live market pricing—a signal worth monitoring, not an indicator of which source is correct."
 }
