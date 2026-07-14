@@ -5,10 +5,10 @@
   "date": "2026-07-15",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 16.9,
-  "input_hash": "87a12565d43d78957fe786fdd2a7ff1116fe5372",
-  "generated_at": "2026-07-13T20:59:51+00:00",
+  "max_gap_pp": 16.8,
+  "input_hash": "12db26341f55d684d5ebf459a0cb370d6bf05b5d",
+  "generated_at": "2026-07-14T18:02:43+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Argentina at 48%, while the sportsbook consensus favors England at 36%, a 14-percentage-point gap on the England win probability. The market also prices Argentina substantially lower, at 32%, suggesting real-money flows have shifted conviction toward England relative to the statistical baseline. Recent form, lineup news, or injury developments affecting either team could account for the market's upward reassessment of England's chances, but the model has no access to such information. The dashboard flags this as a material divergence between structural forecasts and live market pricing—a signal worth monitoring, not an indicator of which source is correct."
+  "commentary_text": "The model favors Argentina at 48%, while sportsbooks and crypto markets both favor England, pricing the English win at 36%. The gap on the England win—roughly 14 percentage points—is the largest single divergence. The model's heavier weighting of Argentina could reflect differences in how recent form, lineup changes, or injury status are incorporated into the two forecasting approaches, or the model may not yet reflect information flowing into the betting markets. The market consensus across traditional and decentralized venues suggests real-money participants see England's chances as materially higher than the statistical model does. This dashboard flags the disagreement as a signal; neither source has proven more reliable in advance."
 }

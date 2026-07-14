@@ -5,10 +5,10 @@
   "date": "2026-07-14",
   "kind": "commentary",
   "divergence_type": "disagree_on_favorite",
-  "max_gap_pp": 18.0,
-  "input_hash": "1a150e3818ae8cc06648d125e6ee5199b144dc4c",
-  "generated_at": "2026-07-13T20:59:48+00:00",
+  "max_gap_pp": 17.2,
+  "input_hash": "2714125d4f0516bec628edfe7ff2ad417b0b88cc",
+  "generated_at": "2026-07-14T18:02:40+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 2,
-  "commentary_text": "The model favors Spain at 48% while the sportsbook consensus favors France at 40%, a 18-percentage-point gap on the France win probability. The market's elevated France odds may reflect recent lineup developments, injury status, or current form that the model's last training update cannot capture. Conversely, the model's Spain lean could reflect structural strength in the underlying Elo ratings that has yet to shift with breaking news. The dashboard surfaces this substantial split as a signal worth monitoring rather than a confirmation of either view."
+  "commentary_text": "The model favors Spain at 48%, while sportsbooks favor France at 38%, a 16-percentage-point gap on the France win probability. Polymarket prices align closely with sportsbook consensus. The gap could reflect recent lineup news, injury developments, or form shifts that the model has not yet incorporated into its Elo-based estimates. The dashboard surfaces this substantial divergence as a signal for monitoring rather than an indication of which source is more reliable."
 }
