@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "Spain",
   "date": "2026-07-14",
-  "input_hash": "c9f8e778dd2f0e01e8ee377301703be5d26764c0",
-  "generated_at": "2026-07-14T18:02:32+00:00",
+  "input_hash": "07f094ef680024220bdce0f4d734b542c923793d",
+  "generated_at": "2026-07-14T21:49:01+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favours Spain at 48%, with France rated at just 22% to win. This represents a substantial gap; Spain is judged more than twice as likely to take the match. France's underdog position is marked, though the draw probability at 30% suggests competitive equilibrium over ninety minutes remains plausible.\n\nThe win-draw-loss spread reflects Spain's clear advantage but also the pronounced role of stalemate. A draw is nearly as probable as a Spanish victory, indicating the teams are expected to be closely matched tactically despite the model's lean toward Spain. The gap between Spain's win probability and France's suggests an asymmetric contest, yet draws remain the single most likely outcome under the model.\n\nThe model and sportsbooks diverge markedly. Bookmakers and Polymarket assign France roughly 38–38% to win and Spain 31–30%, inverting the model's assessment almost entirely. The gap between model and consensus for France exceeds 15 percentage points, with Spain showing a comparable inversion. No clear alignment exists here; the dashboard does not adjudicate which assessment is more reliable."
+  "preview_text": "The model favors Spain at 48%, with France positioned as a clear underdog at 22%. The remaining probability mass—nearly 30%—clusters in a draw outcome, suggesting the match could settle either way beyond a straightforward Spain victory.\n\nThe 26-percentage-point gap between the favorite and underdog indicates a competitive but asymmetric contest. A draw sits between the two outright results in likelihood, which means the match shape is moderately dispersed across all three outcomes rather than heavily concentrated. Spain enters as the likeliest single result, but the combined probability of a France win or draw (52%) remains substantial.\n\nNo sportsbook consensus is currently available. The Polymarket prices—assigning 100% to Spain and 0% to both France and a draw—are extreme outliers and do not represent a functional market for analytical comparison. The dashboard makes no claim about which source reflects true match probability; such extreme pricing typically indicates illiquidity or data anomalies rather than informed consensus."
 }

@@ -3,9 +3,9 @@
   "home_team": "England",
   "away_team": "Argentina",
   "date": "2026-07-15",
-  "input_hash": "2b83bcec505484f6dc8eee88363b2767bd292e91",
-  "generated_at": "2026-07-14T18:02:36+00:00",
+  "input_hash": "36a967a62fc83671785f78afd48a516a7e0aae01",
+  "generated_at": "2026-07-14T21:49:04+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Argentina at 48%, while England's win probability stands at 22%. Argentina enters as clear favorite, though a 29% draw probability indicates this match carries substantial competitive balance despite the gap separating the two outright outcomes.\n\nThe spread reveals a moderately wide gap between Argentina's most likely result and England's. Draw odds at nearly 30% suggest the teams are closer in execution than headline win probabilities might imply. A scoreless or tied finish remains plausible; Argentina's advantage lies in frequency of victory rather than dominance of expected margin or margin distribution.\n\nThe market and model diverge meaningfully. Sportsbooks place England's win probability 14 percentage points higher than the model, while estimating Argentina's at 17 points lower. Polymarket prices align closely with sportsbook consensus. The dashboard does not adjudicate which source is more accurate; the discrepancy likely reflects different weighting of unmeasured factors or model-specific limitations in capturing team quality at this stage."
+  "preview_text": "The model favors Argentina at 48%, more than double England's 22% win probability. This represents a substantial gap: the model sees Argentina as the clear favorite, while England enters as a meaningful underdog in this neutral-venue encounter.\n\nThe draw emerges as a plausible outcome at 30% under the model, suggesting competitive balance in play despite Argentina's overall edge. The spread between Argentina's win probability and England's is wide enough to indicate a tilted match, yet the draw frequency indicates neither team is overwhelmingly dominant—a tightly contested fixture is the statistical expectation.\n\nThe model and market diverge materially. Sportsbooks and Polymarket both price England at roughly 35%, nearly 13 percentage points above the model's 22%. They see Argentina and the draw as closer (32% and 33% respectively), whereas the model leans heavily toward Argentina at 48%. The dashboard does not adjudicate which assessment is correct; the divergence merits attention when forming an independent view."
 }
