@@ -1,0 +1,11 @@
+{
+  "match_key": "2026-07-18_france_vs_england",
+  "home_team": "France",
+  "away_team": "England",
+  "date": "2026-07-18",
+  "input_hash": "11924e20a2c463547659fa779f92020243fc7515",
+  "generated_at": "2026-07-15T22:33:50+00:00",
+  "model": "claude-haiku-4-5-20251001",
+  "prompt_version": 3,
+  "preview_text": "The model rates France as the favorite with a 41% win probability, while England's chances stand at 28%. The gap reflects a modest edge rather than a dominant superiority; the underdog remains competitive within the forecast range.\n\nThe draw is substantive at 31%, making this a three-way contest. France's advantage compresses when draws are included—the model suggests roughly equal cumulative chances for either team to avoid defeat, indicating a closely matched encounter rather than a lopsided affair.\n\nThe sportsbook consensus leans more heavily toward a France victory at 47%, a 5-point gap above the model. Both sources agree England is roughly a 27–28% proposition and treat draws as secondary outcomes. The divergence on France's win probability is modest but meaningful; the dashboard does not adjudicate which assessment is more accurate."
+}

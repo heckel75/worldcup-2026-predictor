@@ -74,52 +74,78 @@ _SF_DATED_PAIRS: list[tuple[str, str, dt.date]] = [
     ("England",      "Argentina",               dt.date(2026, 7, 15)),   # match 102
 ]
 
+# Published 2026 Third-place play-off + Final schedule (match slots 103–104).
+# Added once the semi-finals resolved the pairings — the "extend per-round"
+# daily-checklist step (§5a / §11). The third-place match (node 103) is contested
+# by the two SF losers; the final (104) by the two SF winners. Order within each
+# tuple is irrelevant (keyed by frozenset).
+_FINAL_DATED_PAIRS: list[tuple[str, str, dt.date]] = [
+    ("France",       "England",                 dt.date(2026, 7, 18)),   # match 103 (3rd place)
+    ("Spain",        "Argentina",               dt.date(2026, 7, 19)),   # match 104 (final)
+]
+
 KO_MATCH_DATES: dict[frozenset, dt.date] = {
     frozenset({a, b}): d
     for a, b, d in _R32_DATED_PAIRS + _R16_DATED_PAIRS + _QF_DATED_PAIRS
-                   + _SF_DATED_PAIRS
+                   + _SF_DATED_PAIRS + _FINAL_DATED_PAIRS
 }
+
+
+def _ko_fixture_row(m: dict) -> dict | None:
+    """A forecastable fixture row for a single resolved-but-unplayed, dated KO
+    match dict (a bracket_resolve node), or None when it isn't ready — a slot
+    still TBD, the match already played, or its unordered pair has no published
+    date in KO_MATCH_DATES yet (a later round — 5a).
+
+    Row shape: {"date": "YYYY-MM-DD", "home_team", "away_team", "neutral": True}
+    — internal team names from the bracket (home = team_a, away = team_b), neutral
+    True per §6 (KO venues aren't a modelled home advantage; orientation is kept
+    only for stable joins).
+    """
+    a, b = m["team_a"], m["team_b"]
+    if not a or not b or m["played"]:
+        return None
+    d = KO_MATCH_DATES.get(frozenset({a, b}))
+    if d is None:
+        return None
+    return {"date": d.isoformat(), "home_team": a, "away_team": b, "neutral": True}
 
 
 def derive_ko_fixtures(bracket: dict) -> list[dict]:
     """Forecastable KO fixture rows for the shallowest populated-but-incomplete
-    round of `bracket` (a bracket_resolve.resolve_bracket() output dict).
+    round of `bracket` (a bracket_resolve.resolve_bracket() output dict), plus the
+    third-place play-off once its feeders are resolved.
 
-    Each row: {"date": "YYYY-MM-DD", "home_team", "away_team", "neutral": True}
-    — internal team names from the bracket (home = team_a, away = team_b), neutral
-    True per §6 (KO venues aren't a modelled home advantage; orientation is kept
-    only for stable joins). A match is emitted only when both teams are resolved,
-    it hasn't been played, AND its unordered pair has a published date in
-    KO_MATCH_DATES; pairs without a date yet (later rounds — 5a) are omitted so no
-    dateless row ever reaches match_key.
+    A match is emitted only when both teams are resolved, it hasn't been played,
+    AND its unordered pair has a published date in KO_MATCH_DATES; pairs without a
+    date yet (later rounds — 5a) are omitted so no dateless row ever reaches
+    match_key. See _ko_fixture_row for the row shape.
 
-    Returns [] when the bracket isn't complete (group stage unfinished) or the
-    active round has no dated, unplayed, populated matches.
+    The third-place play-off (node 103) lives in bracket["third_place"], NOT in
+    bracket["rounds"], so it is emitted independently: it becomes forecastable the
+    moment the two semi-finals are played (its feeders are the SF losers), which
+    coincides with the final being the active round. It is kept separate from the
+    round loop so it still surfaces if the final is entered before it.
+
+    Returns [] when the bracket isn't complete (group stage unfinished) or nothing
+    is currently dated, unplayed, and populated.
     """
     if not bracket.get("complete"):
         return []
+    out: list[dict] = []
     for rnd in bracket["rounds"]:
         matches = rnd["matches"]
         populated = any(m["team_a"] and m["team_b"] for m in matches)
         complete = all(m["played"] for m in matches)
-        if not (populated and not complete):
-            continue
-        out: list[dict] = []
-        for m in matches:
-            a, b = m["team_a"], m["team_b"]
-            if not a or not b or m["played"]:
-                continue
-            d = KO_MATCH_DATES.get(frozenset({a, b}))
-            if d is None:
-                continue  # later round, date not published into the constant yet
-            out.append({
-                "date": d.isoformat(),
-                "home_team": a,
-                "away_team": b,
-                "neutral": True,
-            })
-        return out
-    return []
+        if populated and not complete:
+            out = [r for m in matches if (r := _ko_fixture_row(m)) is not None]
+            break
+    tp = bracket.get("third_place")
+    if tp is not None:
+        r = _ko_fixture_row(tp)
+        if r is not None:
+            out.append(r)
+    return out
 
 
 # ----------------------------------------------------------------------
@@ -127,8 +153,9 @@ def derive_ko_fixtures(bracket: dict) -> list[dict]:
 # ----------------------------------------------------------------------
 
 def _self_test() -> None:
-    assert len(KO_MATCH_DATES) == 30, \
-        f"expected 30 KO dates (16 R32 + 8 R16 + 4 QF + 2 SF), got {len(KO_MATCH_DATES)}"
+    assert len(KO_MATCH_DATES) == 32, \
+        f"expected 32 KO dates (16 R32 + 8 R16 + 4 QF + 2 SF + 2 final/3rd), " \
+        f"got {len(KO_MATCH_DATES)}"
 
     def m(a, b, played=False, winner=None):
         return {"match_id": 0, "team_a": a, "team_b": b,
@@ -174,9 +201,31 @@ def _self_test() -> None:
     }
     assert derive_ko_fixtures(bracket2) == [], derive_ko_fixtures(bracket2)
 
+    # Final active + third-place play-off both emitted. SFs are complete (so the
+    # Final is the shallowest incomplete round in `rounds`), and the third-place
+    # node — which is NOT in `rounds` — is appended independently.
+    bracket3 = {
+        "complete": True,
+        "rounds": [
+            {"label": "Semi-finals", "matches": [
+                m("France", "Spain", played=True, winner="Spain"),
+                m("England", "Argentina", played=True, winner="Argentina")]},
+            {"label": "Final", "matches": [m("Spain", "Argentina")]},
+        ],
+        "third_place": m("France", "England"),
+    }
+    fx3 = derive_ko_fixtures(bracket3)
+    assert len(fx3) == 2, fx3
+    fin = next(r for r in fx3
+               if {r["home_team"], r["away_team"]} == {"Spain", "Argentina"})
+    assert fin["date"] == "2026-07-19", fin
+    tpr = next(r for r in fx3
+               if {r["home_team"], r["away_team"]} == {"France", "England"})
+    assert tpr["date"] == "2026-07-18", tpr
+
     print("ko_fixtures.py self-test passed "
-          "(30 KO dates = 16 R32 + 8 R16 + 4 QF + 2 SF; shape; skip-played; "
-          "omit-undated; bracket orientation)")
+          "(32 KO dates = 16 R32 + 8 R16 + 4 QF + 2 SF + 2 final/3rd; shape; "
+          "skip-played; omit-undated; bracket orientation; final+3rd-place)")
 
 
 if __name__ == "__main__":

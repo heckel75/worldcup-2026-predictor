@@ -180,7 +180,14 @@ def compute_top_divergences(
         return []
     if _COL_MAG not in curr_div_df.columns:
         return []
-    ranked = curr_div_df.sort_values(_COL_MAG, ascending=False)
+    # A row with no market carries a NaN divergence (nothing to diverge from) —
+    # it can't be ranked or formatted, so drop it. When every remaining fixture
+    # lacks a market (e.g. the final/3rd-place before those markets post), the
+    # panel is legitimately empty.
+    ranked = (curr_div_df.dropna(subset=[_COL_MAG])
+              .sort_values(_COL_MAG, ascending=False))
+    if ranked.empty:
+        return []
     if top_n is not None:
         ranked = ranked.head(top_n)
     has_flag = "flag_divergent" in curr_div_df.columns
@@ -393,6 +400,18 @@ def _test() -> None:
     # missing magnitude column → [] (can't rank)
     assert compute_top_divergences(top_div.drop(columns=[_COL_MAG])) == [], \
         "missing magnitude column should return []"
+
+    # NaN-magnitude rows (no market) are dropped, not formatted
+    with_nan = top_div.copy()
+    with_nan[_COL_MAG] = [0.22, float("nan"), 0.25, float("nan")]
+    tn = compute_top_divergences(with_nan)
+    assert [d["home_team"] for d in tn] == ["Brazil", "Spain"], \
+        f"NaN-magnitude rows should be dropped: {[d['home_team'] for d in tn]}"
+    # every remaining fixture lacks a market → panel legitimately empty
+    all_nan = top_div.copy()
+    all_nan[_COL_MAG] = float("nan")
+    assert compute_top_divergences(all_nan) == [], \
+        "all-NaN magnitude (no markets) should return []"
 
     print("whats_changed.py self-tests passed")
 

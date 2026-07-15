@@ -1,4 +1,5 @@
 date,match,stage,group,outcome,result,score,p_model_on_outcome,p_sportsbook_on_outcome,p_polymarket_on_outcome,gap_pp,gap_bucket,divergence_type,flagged,verdict
+2026-07-15,England v Argentina,Semi-final,,A,Away win,1–2,0.4837,0.3179,0.3159,17,15pp+,disagree_on_favorite,True,Model closest
 2026-07-14,France v Spain,Semi-final,,A,Away win,0–2,0.4785,0.3063,1.0,17,15pp+,disagree_on_favorite,True,Polymarket closest
 2026-07-11,Norway v England,Quarter-final,,D,Draw,1–2,0.2961,0.2592,0.2571,4,Under 5pp,model_under_concentrated,False,All missed
 2026-07-11,Argentina v Switzerland,Quarter-final,,D,Draw,3–1,0.2331,0.2671,0.2664,13,5–15pp,model_over_concentrated,False,All missed
