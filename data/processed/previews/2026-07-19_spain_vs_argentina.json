@@ -3,9 +3,9 @@
   "home_team": "Spain",
   "away_team": "Argentina",
   "date": "2026-07-19",
-  "input_hash": "0c0cc6671b3abaddb6d11abefdfb06cc0bd53b2e",
-  "generated_at": "2026-07-15T22:33:40+00:00",
+  "input_hash": "30e8352455a6e7296762c423c96af47b852eed31",
+  "generated_at": "2026-07-16T10:16:43+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model favors Spain at 41%, with Argentina at 28% and a draw at 31%. Spain hold a clear edge, though the underdog carries meaningful chances and a tie is a plausible outcome given the modest separation in the probabilities.\n\nThe gap between Spain's win probability and Argentina's is 13 percentage points, reflecting a competitive but decidedly uneven matchup. The draw probability of 31% sits between the two outright outcomes, indicating neither team is expected to dominate decisively and suggesting a close contest where a stalemate represents a genuine possibility rather than a surprise.\n\nModel and sportsbook consensus align closely across all three outcomes. Spain's win probability differs by 1 percentage point, the draw by 0.4 points, and Argentina's by 1.3 points. This tight agreement suggests broad consensus on the match structure, though bettors should recognize that small gaps at these probability levels can reflect genuine uncertainty about which source better captures true likelihood."
+  "preview_text": "The model favors Spain at 41%, with Argentina trailing at 28% — a 13-percentage-point gap. Spain emerges as the modest favorite in this neutral-venue encounter, though the margin leaves Argentina with a realistic path to victory.\n\nThe draw probability of 31% sits roughly a third of the match probability space, indicating a competitive fixture unlikely to be decided by a large margin. The win probabilities are not dramatically separated, suggesting Spain's edge is real but not commanding. A stalemate after 90 minutes remains a plausible outcome.\n\nModel and market align closely across all three outcomes. The sportsbook consensus sits within 1 percentage point of the model on each line, while Polymarket prices are similarly tight. This convergence suggests broad agreement on the match dynamics, with no material divergence between the statistical forecast and betting consensus to highlight."
 }

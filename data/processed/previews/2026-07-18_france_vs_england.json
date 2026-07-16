@@ -3,9 +3,9 @@
   "home_team": "France",
   "away_team": "England",
   "date": "2026-07-18",
-  "input_hash": "11924e20a2c463547659fa779f92020243fc7515",
-  "generated_at": "2026-07-15T22:33:50+00:00",
+  "input_hash": "2e5542dd4f0c51b7c485b87feffc11ec1abc95cd",
+  "generated_at": "2026-07-16T10:16:47+00:00",
   "model": "claude-haiku-4-5-20251001",
   "prompt_version": 3,
-  "preview_text": "The model rates France as the favorite with a 41% win probability, while England's chances stand at 28%. The gap reflects a modest edge rather than a dominant superiority; the underdog remains competitive within the forecast range.\n\nThe draw is substantive at 31%, making this a three-way contest. France's advantage compresses when draws are included—the model suggests roughly equal cumulative chances for either team to avoid defeat, indicating a closely matched encounter rather than a lopsided affair.\n\nThe sportsbook consensus leans more heavily toward a France victory at 47%, a 5-point gap above the model. Both sources agree England is roughly a 27–28% proposition and treat draws as secondary outcomes. The divergence on France's win probability is modest but meaningful; the dashboard does not adjudicate which assessment is more accurate."
+  "preview_text": "The model favours France at 41%, a modest edge over England's 28% win probability. The gap between the two reflects statistical expectation rather than a strong consensus; France holds roughly a 13-point advantage, leaving England a realistic path to victory on a neutral ground.\n\nThe draw emerges as a meaningful outcome in the model's view, at 31%, nearly matching England's win probability. This suggests the match shape leans toward competitive rather than one-sided—neither team is projected to dominate decisively, and a stalemate ranks as plausible as an England upset.\n\nModel and market diverge noticeably on France's chances. The sportsbook consensus and Polymarket both price France substantially higher, near 50%, creating a 9-point spread between the model and consensus forecasts. The market also compresses the draw probability to around 25%, roughly 6 points below the model. The dashboard does not claim to resolve which view is correct; the divergence merits note when assessing odds."
 }
